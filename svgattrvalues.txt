@@ -1,0 +1,1427 @@
+#   Copyright 2017 Google Inc. All Rights Reserved.
+#   Licensed under the Apache License, Version 2.0 (the "License");
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
+
+
+<svgattr_accumulate_value> = sum
+<svgattr_accumulate_value> = none
+
+<svgattr_additive_value> = sum
+<svgattr_additive_value> = replace
+
+<svgattr_alignment-baseline_value> = alphabetic
+<svgattr_alignment-baseline_value> = baseline
+
+<svgattr_alphabetic_value> = <fuzzint>
+
+<svgattr_alt_value> = icon
+
+<svgattr_amplitude_value> = <fuzzint>
+
+<svgattr_arabic-form_value> = isolated
+
+<svgattr_aria-label_value> = face
+<svgattr_aria-label_value> = left-eye
+<svgattr_aria-label_value> = right-eye
+<svgattr_aria-label_value> = nose
+<svgattr_aria-label_value> = smile
+
+<svgattr_ascent_value> = <fuzzint>
+
+<svgattr_attributeName_value> = visibility
+<svgattr_attributeName_value> = width
+<svgattr_attributeName_value> = x
+<svgattr_attributeName_value> = cy
+<svgattr_attributeName_value> = fill
+<svgattr_attributeName_value> = display
+<svgattr_attributeName_value> = stroke
+<svgattr_attributeName_value> = points
+<svgattr_attributeName_value> = rotate
+<svgattr_attributeName_value> = d
+<svgattr_attributeName_value> = gradientUnits
+<svgattr_attributeName_value> = y
+<svgattr_attributeName_value> = dx
+<svgattr_attributeName_value> = dy
+<svgattr_attributeName_value> = spreadMethod
+<svgattr_attributeName_value> = transform
+<svgattr_attributeName_value> = patternContentUnits
+<svgattr_attributeName_value> = fy
+<svgattr_attributeName_value> = fr
+<svgattr_attributeName_value> = viewBox
+<svgattr_attributeName_value> = height
+<svgattr_attributeName_value> = fx
+<svgattr_attributeName_value> = patternTransform
+<svgattr_attributeName_value> = cx
+<svgattr_attributeName_value> = patternUnits
+<svgattr_attributeName_value> = gradientTransform
+<svgattr_attributeName_value> = r
+<svgattr_attributeName_value> = preserveAspectRatio
+<svgattr_attributeName_value> = result
+<svgattr_attributeName_value> = preserveAlpha
+<svgattr_attributeName_value> = filterUnits
+<svgattr_attributeName_value> = opacity
+<svgattr_attributeName_value> = orient
+<svgattr_attributeName_value> = kernelUnitLength
+<svgattr_attributeName_value> = divisor
+<svgattr_attributeName_value> = kernelMatrix
+<svgattr_attributeName_value> = order
+<svgattr_attributeName_value> = targetX
+<svgattr_attributeName_value> = values
+<svgattr_attributeName_value> = stroke-width
+<svgattr_attributeName_value> = fill-rule
+<svgattr_attributeName_value> = text-anchor
+<svgattr_attributeName_value> = font-size
+<svgattr_attributeName_value> = font-family
+<svgattr_attributeName_value> = font-style
+<svgattr_attributeName_value> = font-weight
+<svgattr_attributeName_value> = xlink:href
+<svgattr_attributeName_value> = color
+<svgattr_attributeName_value> = rx
+<svgattr_attributeName_value> = ry
+<svgattr_attributeName_value> = stop-color
+<svgattr_attributeName_value> = stop-opacity
+<svgattr_attributeName_value> = limitingConeAngle
+<svgattr_attributeName_value> = fill-opacity
+<svgattr_attributeName_value> = stroke-linecap
+<svgattr_attributeName_value> = stroke-linejoin
+<svgattr_attributeName_value> = stroke-miterlimit
+<svgattr_attributeName_value> = stroke-dashoffset
+<svgattr_attributeName_value> = refY
+
+<svgattr_attributeType_value> = XML
+<svgattr_attributeType_value> = CSS
+<svgattr_attributeType_value> = auto
+
+<svgattr_azimuth_value> = <fuzzint>
+
+<svgattr_baseFrequency_value> = <fuzzint> <fuzzint>
+<svgattr_baseFrequency_value> = <fuzzint>
+<svgattr_baseFrequency_value> = <float>
+
+<svgattr_baseProfile_value> = tiny
+<svgattr_baseProfile_value> = basic
+<svgattr_baseProfile_value> = full
+
+<svgattr_baseline-shift_value> = <fuzzint>
+<svgattr_baseline-shift_value> = -<percentage>%
+<svgattr_baseline-shift_value> = <percentage>%
+<svgattr_baseline-shift_value> = sub
+<svgattr_baseline-shift_value> = super
+<svgattr_baseline-shift_value> = baseline
+
+<svgattr_bbox_value> = <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+
+<svgattr_begin_value> = <fuzzint>s
+<svgattr_begin_value> = <float>s
+<svgattr_begin_value> = <fuzzint>
+<svgattr_begin_value> = <float>
+<svgattr_begin_value> = <svgelementid>.begin
+<svgattr_begin_value> = <svgelementid>.end
+<svgattr_begin_value> = indefinite
+<svgattr_begin_value> = <svgelementid>.repeat(<fuzzint>)
+<svgattr_begin_value> = <fuzzint>s; <fuzzint>s
+<svgattr_begin_value> = <svgelementid>.repeatEvent
+<svgattr_begin_value> = <svgelementid>.beginEvent
+<svgattr_begin_value> = <svgelementid>.endEvent
+
+<svgattr_by_value> = <color>
+<svgattr_by_value> = currentColor
+<svgattr_by_value> = <fuzzint>, <fuzzint>
+<svgattr_by_value> = <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+<svgattr_by_value> = M<fuzzint>,<fuzzint> L<fuzzint>,<fuzzint> L<fuzzint>,<fuzzint> L<fuzzint>,<fuzzint> Z
+<svgattr_by_value> = <fuzzint> <fuzzint> <fuzzint>   <fuzzint> <fuzzint> <fuzzint>   <fuzzint> <fuzzint> <fuzzint>
+<svgattr_by_value> = <fuzzint>,<fuzzint> <fuzzint>,<fuzzint> <fuzzint>,<fuzzint> <fuzzint>,<fuzzint>
+<svgattr_by_value> = <float>
+<svgattr_by_value> = true
+<svgattr_by_value> = userSpaceOnUse
+
+<svgattr_calcMode_value> = linear
+<svgattr_calcMode_value> = paced
+<svgattr_calcMode_value> = discrete
+<svgattr_calcMode_value> = spline
+
+<svgattr_cap-height_value> = <fuzzint>
+
+<svgattr_class_value> = <class>
+
+<svgattr_click_value> = none
+
+<svgattr_clip_value> = url(<hash><svgelementid>)
+
+<svgattr_clip-path_value> = url(<hash><svgelementid>)
+
+<svgattr_clip-rule_value> = evenodd
+<svgattr_clip-rule_value> = nonzero
+
+<svgattr_clipPathUnits_value> = objectBoundingBox
+<svgattr_clipPathUnits_value> = userSpaceOnUse
+
+<svgattr_color_value> = <color>
+<svgattr_color_value> = ActiveBorder
+<svgattr_color_value> = ActiveCaption
+<svgattr_color_value> = AppWorkspace
+<svgattr_color_value> = Background
+<svgattr_color_value> = ButtonFace
+<svgattr_color_value> = ButtonHighlight
+<svgattr_color_value> = ButtonShadow
+<svgattr_color_value> = ButtonText
+<svgattr_color_value> = CaptionText
+<svgattr_color_value> = GrayText
+<svgattr_color_value> = Highlight
+<svgattr_color_value> = HighlightText
+<svgattr_color_value> = InactiveBorder
+<svgattr_color_value> = InactiveCaption
+<svgattr_color_value> = InactiveCaptionText
+<svgattr_color_value> = InfoBackground
+<svgattr_color_value> = InfoText
+<svgattr_color_value> = Menu
+<svgattr_color_value> = MenuText
+<svgattr_color_value> = Scrollbar
+<svgattr_color_value> = ThreeDDarkShadow
+<svgattr_color_value> = ThreeDFace
+<svgattr_color_value> = ThreeDHighlight
+<svgattr_color_value> = ThreeDLightShadow
+<svgattr_color_value> = ThreeDShadow
+<svgattr_color_value> = Window
+<svgattr_color_value> = WindowFrame
+<svgattr_color_value> = WindowText
+<svgattr_color_value> = inherit
+
+<svgattr_color-interpolation_value> = linearRGB
+<svgattr_color-interpolation_value> = sRGB
+
+<svgattr_color-interpolation-filters_value> = auto
+<svgattr_color-interpolation-filters_value> = sRGB
+<svgattr_color-interpolation-filters_value> = linearRGB
+
+<svgattr_color-profile_value> = changeColor
+
+<svgattr_contentScriptType_value> = text/ecmascript
+
+<svgattr_contentStyleType_value> = text/css
+
+<svgattr_cursor_value> = default
+<svgattr_cursor_value> = help
+<svgattr_cursor_value> = url(<hash><svgelementid>)
+<svgattr_cursor_value> = move
+<svgattr_cursor_value> = crosshair
+<svgattr_cursor_value> = pointer
+<svgattr_cursor_value> = text
+<svgattr_cursor_value> = wait
+<svgattr_cursor_value> = nw-resize
+<svgattr_cursor_value> = ne-resize
+<svgattr_cursor_value> = se-resize
+<svgattr_cursor_value> = sw-resize
+<svgattr_cursor_value> = e-resize
+<svgattr_cursor_value> = w-resize
+<svgattr_cursor_value> = n-resize
+<svgattr_cursor_value> = s-resize
+
+<svgattr_cx_value> = <fuzzint>
+<svgattr_cx_value> = <fuzzint>px
+<svgattr_cx_value> = <percentage>%
+<svgattr_cx_value> = <float>
+
+<svgattr_cy_value> = <fuzzint>
+<svgattr_cy_value> = <fuzzint>px
+<svgattr_cy_value> = <percentage>%
+<svgattr_cy_value> = <float>
+
+<svgattr_d_value> = M<fuzzint> <fuzzint> L <fuzzint> <fuzzint>
+<svgattr_d_value> = M <fuzzint> <fuzzint> h <fuzzint> v <fuzzint> h <fuzzint> z
+<svgattr_d_value> = M<fuzzint>,<fuzzint>h<fuzzint>h<fuzzint>
+<svgattr_d_value> = M<fuzzint>,+<fuzzint>h<fuzzint>h<fuzzint>
+<svgattr_d_value> = M <fuzzint>,<fuzzint> h <fuzzint> v <fuzzint> l <fuzzint> <fuzzint> l <fuzzint> <fuzzint> v <fuzzint> h <fuzzint> z
+<svgattr_d_value> = M <fuzzint> <fuzzint> L <fuzzint> <fuzzint> L <fuzzint> <fuzzint> z
+<svgattr_d_value> = M <fuzzint> <fuzzint> L <fuzzint> <fuzzint> L <fuzzint> <fuzzint>
+<svgattr_d_value> = M<fuzzint> <fuzzint> l<fuzzint> <fuzzint>
+<svgattr_d_value> = M<fuzzint> <fuzzint> q<fuzzint> <fuzzint> <fuzzint> <fuzzint>
+<svgattr_d_value> = M<fuzzint> <fuzzint> l<fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint>z
+<svgattr_d_value> = M<fuzzint> <fuzzint>L<fuzzint> <fuzzint>L<fuzzint> <fuzzint>L<fuzzint> <fuzzint>Z
+<svgattr_d_value> = M <fuzzint> <fuzzint> L <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+<svgattr_d_value> = M <fuzzint> <fuzzint> l <fuzzint> <fuzzint> l <fuzzint> <fuzzint> l <fuzzint> <fuzzint> Z
+<svgattr_d_value> = M<fuzzint>,<fuzzint>h<fuzzint>v<fuzzint>h<fuzzint>z
+<svgattr_d_value> = M<fuzzint>,<fuzzint> L<fuzzint>,<fuzzint> L<fuzzint>,<fuzzint> M<fuzzint>,<fuzzint> C<fuzzint>,<fuzzint> <fuzzint>,<fuzzint> <fuzzint>,<fuzzint>
+<svgattr_d_value> = M<fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> C <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+<svgattr_d_value> = M<fuzzint> <fuzzint> L<fuzzint> <fuzzint>
+<svgattr_d_value> = M<fuzzint> <fuzzint> Q<fuzzint> <fuzzint> <fuzzint> <fuzzint> T<fuzzint> <fuzzint>Z
+<svgattr_d_value> = M <fuzzint> <fuzzint> L <fuzzint> <fuzzint> L <fuzzint> <fuzzint> L <fuzzint> <fuzzint> Z
+<svgattr_d_value> = M <fuzzint> <fuzzint> L <fuzzint> <fuzzint> 
+<svgattr_d_value> = M <fuzzint>,<fuzzint> L <fuzzint>,<fuzzint>
+<svgattr_d_value> = M <fuzzint>,<fuzzint> L <fuzzint>,<fuzzint>e+<fuzzint>
+<svgattr_d_value> = M <fuzzint> <fuzzint> L <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> Z
+<svgattr_d_value> = M<fuzzint> <fuzzint>
+<svgattr_d_value> = M <fuzzint> <fuzzint> C <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> C <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> C <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+<svgattr_d_value> = M <fuzzint> <fuzzint> L <fuzzint> <fuzzint> L <fuzzint> <fuzzint> L <fuzzint> <fuzzint> z
+<svgattr_d_value> = M<fuzzint> <fuzzint> C<fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint><float> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint>      <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint><float> <fuzzint> <fuzzint>
+<svgattr_d_value> = M <fuzzint> <fuzzint> m <fuzzint> <fuzzint>
+<svgattr_d_value> = M <fuzzint> <fuzzint> Q <fuzzint> <fuzzint> <fuzzint> <fuzzint> S <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+<svgattr_d_value> = M <fuzzint> <fuzzint> C <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> T <fuzzint> <fuzzint>
+<svgattr_d_value> = M<fuzzint> <fuzzint>L<fuzzint> <fuzzint>
+<svgattr_d_value> = m <fuzzint> <fuzzint> l <fuzzint> <fuzzint>
+<svgattr_d_value> = M<fuzzint>,<fuzzint> z
+<svgattr_d_value> = m <fuzzint> <fuzzint> L <fuzzint> <fuzzint>
+<svgattr_d_value> = M<fuzzint> <fuzzint> <fuzzint> <fuzzint> a<fuzzint>,<fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> L <fuzzint> <fuzzint> <fuzzint> <fuzzint> a<fuzzint>,<fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> L<fuzzint> <fuzzint> a<fuzzint>,<fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+<svgattr_d_value> = M<fuzzint> <fuzzint> Q<fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> z
+<svgattr_d_value> = M<fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> z
+<svgattr_d_value> = M<fuzzint> <fuzzint> C<fuzzint> <fuzzint> <fuzzint> <fuzzint>  <fuzzint> <fuzzint>
+<svgattr_d_value> = M<fuzzint> <fuzzint> C<fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+<svgattr_d_value> = M <fuzzint> <float> L <fuzzint> <fuzzint> L <fuzzint> <fuzzint>
+<svgattr_d_value> = M <fuzzint>,<fuzzint> C <fuzzint>,<fuzzint> <fuzzint>,<fuzzint> <fuzzint>,<fuzzint>
+<svgattr_d_value> = M <fuzzint> <fuzzint>
+<svgattr_d_value> = M <fuzzint> <fuzzint> A <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+<svgattr_d_value> = M <fuzzint> <fuzzint> V <fuzzint> H <fuzzint> V <fuzzint> Z
+<svgattr_d_value> = M <fuzzint> <fuzzint> H <fuzzint> V <fuzzint> H <fuzzint> V <fuzzint> Z
+<svgattr_d_value> = M <fuzzint> <fuzzint> L <fuzzint> <fuzzint> L <fuzzint> <fuzzint>  L <fuzzint> <fuzzint> Z
+<svgattr_d_value> = M<fuzzint>,<fuzzint> C<fuzzint>,<fuzzint> <fuzzint>,<fuzzint> <fuzzint>,<fuzzint> z
+<svgattr_d_value> = M<fuzzint> <fuzzint>h<fuzzint>v<fuzzint>h<fuzzint>z
+
+<svgattr_descent_value> = <fuzzint>
+
+<svgattr_diffuseConstant_value> = <fuzzint>
+
+<svgattr_direction_value> = ltr
+<svgattr_direction_value> = rtl
+
+<svgattr_display_value> = table-caption
+<svgattr_display_value> = none
+<svgattr_display_value> = block
+<svgattr_display_value> = inherit
+<svgattr_display_value> = inline
+
+<svgattr_divisor_value> = <fuzzint>
+
+<svgattr_dominant-baseline_value> = central
+<svgattr_dominant-baseline_value> = auto
+<svgattr_dominant-baseline_value> = use-script
+<svgattr_dominant-baseline_value> = no-change
+<svgattr_dominant-baseline_value> = reset-size
+<svgattr_dominant-baseline_value> = ideographic
+<svgattr_dominant-baseline_value> = alphabetic
+<svgattr_dominant-baseline_value> = hanging
+<svgattr_dominant-baseline_value> = mathematical
+<svgattr_dominant-baseline_value> = middle
+<svgattr_dominant-baseline_value> = text-after-edge
+<svgattr_dominant-baseline_value> = text-before-edge
+
+<svgattr_dur_value> = <fuzzint>s
+<svgattr_dur_value> = <float>s
+<svgattr_dur_value> = <float>
+<svgattr_dur_value> = indefinite
+<svgattr_dur_value> = <fuzzint>
+<svgattr_dur_value> = media
+
+<svgattr_dx_value> = <fuzzint>,<fuzzint>,<fuzzint>
+<svgattr_dx_value> = <fuzzint>,<fuzzint>,<fuzzint>,<fuzzint>,<fuzzint>
+<svgattr_dx_value> = <fuzzint>
+<svgattr_dx_value> = <fuzzint> <fuzzint> <fuzzint>
+<svgattr_dx_value> = <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+<svgattr_dx_value> = <fuzzint>em
+<svgattr_dx_value> = <float>
+<svgattr_dx_value> = <fuzzint>,<fuzzint>,<fuzzint>,<fuzzint>,<fuzzint>,<fuzzint>
+<svgattr_dx_value> = <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+
+<svgattr_dy_value> = <fuzzint>
+<svgattr_dy_value> = <fuzzint>em
+<svgattr_dy_value> = <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+<svgattr_dy_value> = <fuzzint><float>
+<svgattr_dy_value> = <float>
+<svgattr_dy_value> = <fuzzint>ex
+
+<svgattr_edgeMode_value> = none
+<svgattr_edgeMode_value> = duplicate
+
+<svgattr_elevation_value> = <fuzzint>
+
+<svgattr_enable-background_value> = new <fuzzint> <fuzzint> <fuzzint> <fuzzint><float>
+<svgattr_enable-background_value> = new <float> <float> <fuzzint> <fuzzint>
+<svgattr_enable-background_value> = new
+<svgattr_enable-background_value> = new <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+
+<svgattr_end_value> = <fuzzint>s
+<svgattr_end_value> = indefinite
+<svgattr_end_value> = <fuzzint>;<fuzzint>
+<svgattr_end_value> = <fuzzint>s; <fuzzint>s
+<svgattr_end_value> = <svgelementid>.begin + <fuzzint>s
+<svgattr_end_value> = <svgelementid>.end - <fuzzint>s
+<svgattr_end_value> = <svgelementid>.end
+<svgattr_end_value> = <svgelementid>.repeat(<fuzzint>)
+<svgattr_end_value> = <svgelementid>.repeat(<fuzzint>) + <fuzzint>s
+
+<svgattr_exponent_value> = <fuzzint>
+<svgattr_exponent_value> = <float>
+
+<svgattr_externalResourcesRequired_value> = true
+
+<svgattr_fill_value> = <color>
+<svgattr_fill_value> = none
+<svgattr_fill_value> = url(<hash><svgelementid>) <color>
+<svgattr_fill_value> = url(<hash><svgelementid>) red
+<svgattr_fill_value> = url(<hash><svgelementid>)
+<svgattr_fill_value> = url(<hash><svgelementid>) none
+<svgattr_fill_value> = url(<hash><svgelementid>) currentColor
+
+<svgattr_fill-opacity_value> = <float>
+<svgattr_fill-opacity_value> = <fuzzint>
+
+<svgattr_fill-rule_value> = nonzero
+<svgattr_fill-rule_value> = evenodd
+<svgattr_fill-rule_value> = inherit
+
+<svgattr_filter_value> = url(<hash><svgelementid>)
+<svgattr_filter_value> = none
+
+<svgattr_filterPrimitiveUnits_value> = userSpaceOnUse
+
+<svgattr_filterRes_value> = <fuzzint>
+
+<svgattr_filterUnits_value> = objectBoundingBox
+<svgattr_filterUnits_value> = userSpaceOnUse
+
+<svgattr_flood-color_value> = <color>
+<svgattr_flood-color_value> = ActiveBorder
+<svgattr_flood-color_value> = ActiveCaption
+<svgattr_flood-color_value> = AppWorkspace
+<svgattr_flood-color_value> = Background
+<svgattr_flood-color_value> = ButtonFace
+<svgattr_flood-color_value> = ButtonHighlight
+<svgattr_flood-color_value> = ButtonShadow
+<svgattr_flood-color_value> = ButtonText
+<svgattr_flood-color_value> = CaptionText
+<svgattr_flood-color_value> = GrayText
+<svgattr_flood-color_value> = Highlight
+<svgattr_flood-color_value> = HighlightText
+<svgattr_flood-color_value> = InactiveBorder
+<svgattr_flood-color_value> = InactiveCaption
+<svgattr_flood-color_value> = InactiveCaptionText
+<svgattr_flood-color_value> = InfoBackground
+<svgattr_flood-color_value> = InfoText
+<svgattr_flood-color_value> = Menu
+<svgattr_flood-color_value> = MenuText
+<svgattr_flood-color_value> = Scrollbar
+<svgattr_flood-color_value> = ThreeDDarkShadow
+<svgattr_flood-color_value> = ThreeDFace
+<svgattr_flood-color_value> = ThreeDHighlight
+<svgattr_flood-color_value> = ThreeDLightShadow
+<svgattr_flood-color_value> = ThreeDShadow
+<svgattr_flood-color_value> = Window
+<svgattr_flood-color_value> = WindowFrame
+<svgattr_flood-color_value> = WindowText
+<svgattr_flood-color_value> = currentColor
+
+<svgattr_flood-opacity_value> = <fuzzint>
+<svgattr_flood-opacity_value> = <float>
+
+<svgattr_font-family_value> = Arial
+<svgattr_font-family_value> = Verdana
+<svgattr_font-family_value> = serif
+<svgattr_font-family_value> = sans-serif 
+<svgattr_font-family_value> = monospace 
+
+<svgattr_font-rendering_value> = optimizeLegibility
+
+<svgattr_font-size_value> = <fuzzint>
+<svgattr_font-size_value> = <fuzzint>px
+<svgattr_font-size_value> = inherit
+<svgattr_font-size_value> = <percentage>%
+
+<svgattr_font-stretch_value> = normal
+
+<svgattr_font-style_value> = normal
+<svgattr_font-style_value> = italic
+<svgattr_font-style_value> = inherit
+<svgattr_font-style_value> = oblique
+
+<svgattr_font-variant_value> = small-caps
+
+<svgattr_font-weight_value> = bold
+<svgattr_font-weight_value> = <fuzzint>
+<svgattr_font-weight_value> = normal
+<svgattr_font-weight_value> = bolder
+<svgattr_font-weight_value> = lighter
+<svgattr_font-weight_value> = inherit
+
+<svgattr_fr_value> = <fuzzint>
+<svgattr_fr_value> = <percentage>%
+
+<svgattr_from_value> = <fuzzint>
+<svgattr_from_value> = <color>
+<svgattr_from_value> = currentColor
+<svgattr_from_value> = <fuzzint>,<fuzzint>
+<svgattr_from_value> = <fuzzint> <fuzzint>
+<svgattr_from_value> = <fuzzint> <fuzzint> <fuzzint>
+<svgattr_from_value> = <fuzzint>, <fuzzint>
+<svgattr_from_value> = inherit
+<svgattr_from_value> = visible
+<svgattr_from_value> = none
+<svgattr_from_value> = hidden
+<svgattr_from_value> = inline
+
+<svgattr_fx_value> = <percentage>%
+<svgattr_fx_value> = <fuzzint>
+<svgattr_fx_value> = <float>
+
+<svgattr_fy_value> = <percentage>%
+<svgattr_fy_value> = <fuzzint>
+<svgattr_fy_value> = <float>
+
+<svgattr_g1_value> = V
+<svgattr_g1_value> = B
+<svgattr_g1_value> = a
+<svgattr_g1_value> = i
+<svgattr_g1_value> = ti
+
+<svgattr_g2_value> = G
+<svgattr_g2_value> = a
+<svgattr_g2_value> = t
+<svgattr_g2_value> = ti
+<svgattr_g2_value> = k
+
+<svgattr_glyph-name_value> = a
+<svgattr_glyph-name_value> = b
+<svgattr_glyph-name_value> = c
+
+<svgattr_glyph-orientation-horizontal_value> = <fuzzint>
+
+<svgattr_glyph-orientation-vertical_value> = <fuzzint>
+<svgattr_glyph-orientation-vertical_value> = auto
+<svgattr_glyph-orientation-vertical_value> = <fuzzint>deg
+
+<svgattr_glyphRef_value> = blah
+
+<svgattr_gradientTransform_value> = matrix(<fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>)
+<svgattr_gradientTransform_value> = translate(<fuzzint> <fuzzint>) scale(<float>)
+<svgattr_gradientTransform_value> = translate(<fuzzint>,<fuzzint>) skewX(<fuzzint>)
+<svgattr_gradientTransform_value> = matrix(<float> <float> <float> <float> <fuzzint> <fuzzint>)
+
+<svgattr_gradientUnits_value> = objectBoundingBox
+<svgattr_gradientUnits_value> = userSpaceOnUse
+
+<svgattr_hanging_value> = <fuzzint>
+
+<svgattr_height_value> = <percentage>%
+<svgattr_height_value> = <fuzzint>
+<svgattr_height_value> = <fuzzint>px
+<svgattr_height_value> = <float>
+<svgattr_height_value> = <fuzzint>in
+<svgattr_height_value> = <fuzzint>em
+<svgattr_height_value> = <fuzzint>cm
+
+<svgattr_horiz-adv-x_value> = <fuzzint>
+
+<svgattr_horiz-origin-x_value> = <fuzzint>
+
+<svgattr_href_value> = x
+
+<svgattr_ideographic_value> = <fuzzint>
+
+<svgattr_in_value> = SourceAlpha
+<svgattr_in_value> = Texture
+<svgattr_in_value> = SourceGraphic
+<svgattr_in_value> = Drop
+<svgattr_in_value> = pair
+<svgattr_in_value> = grey-input
+<svgattr_in_value> = Transformed
+<svgattr_in_value> = ofs
+<svgattr_in_value> = blur
+<svgattr_in_value> = tile
+<svgattr_in_value> = offOut
+<svgattr_in_value> = BackgroundAlpha
+<svgattr_in_value> = <color>
+<svgattr_in_value> = specOut
+<svgattr_in_value> = offsetBlur
+<svgattr_in_value> = litPaint
+<svgattr_in_value> = flood
+<svgattr_in_value> = comp
+
+<svgattr_in2_value> = Map
+<svgattr_in2_value> = blur
+<svgattr_in2_value> = Offset
+<svgattr_in2_value> = displacement-map
+<svgattr_in2_value> = Gaussian
+<svgattr_in2_value> = red
+<svgattr_in2_value> = ofs
+<svgattr_in2_value> = SourceGraphic
+<svgattr_in2_value> = mix
+<svgattr_in2_value> = SourceAlpha
+<svgattr_in2_value> = alpha
+<svgattr_in2_value> = specOut
+<svgattr_in2_value> = blurOut
+<svgattr_in2_value> = light
+<svgattr_in2_value> = <color>
+<svgattr_in2_value> = offsetBlur
+<svgattr_in2_value> = BackgroundImage
+<svgattr_in2_value> = shadow
+
+<svgattr_intercept_value> = <float>
+<svgattr_intercept_value> = <fuzzint>
+
+<svgattr_k_value> = <fuzzint>
+
+<svgattr_k1_value> = <float>
+<svgattr_k1_value> = <fuzzint>
+<svgattr_k1_value> = .<fuzzint>
+
+<svgattr_k2_value> = <fuzzint>
+<svgattr_k2_value> = <float>
+
+<svgattr_k3_value> = <fuzzint>
+
+<svgattr_k4_value> = <float>
+<svgattr_k4_value> = <fuzzint>
+
+<svgattr_kernelMatrix_value> = <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+<svgattr_kernelMatrix_value> = <float> <float> <float> <float> <float> <float> <float> <float> <float>
+<svgattr_kernelMatrix_value> = <float> <float> <float>
+
+<svgattr_kernelUnitLength_value> = <fuzzint> <fuzzint>
+
+<svgattr_keyPoints_value> = <fuzzint>
+<svgattr_keyPoints_value> = <fuzzint>;<fuzzint>
+<svgattr_keyPoints_value> = <fuzzint>;<fuzzint>;<fuzzint>;<fuzzint>
+
+<svgattr_keySplines_value> = <fuzzint>
+<svgattr_keySplines_value> = <fuzzint>,<fuzzint>,<fuzzint>,<fuzzint>;<fuzzint>,<fuzzint>,<fuzzint>,<fuzzint>;<fuzzint>,<fuzzint>,<fuzzint>,<fuzzint>
+
+<svgattr_keyTimes_value> = <fuzzint>;<fuzzint>;<fuzzint>;<fuzzint>
+<svgattr_keyTimes_value> = <fuzzint>;<fuzzint>
+
+<svgattr_lang_value> = en-us
+
+<svgattr_lengthAdjust_value> = spacing
+<svgattr_lengthAdjust_value> = spacingAndGlyphs
+
+<svgattr_letter-spacing_value> = <fuzzint>mm
+<svgattr_letter-spacing_value> = <fuzzint>px
+<svgattr_letter-spacing_value> = <fuzzint>
+
+<svgattr_lighting-color_value> = <color>
+<svgattr_lighting-color_value> = ActiveBorder
+<svgattr_lighting-color_value> = ActiveCaption
+<svgattr_lighting-color_value> = AppWorkspace
+<svgattr_lighting-color_value> = Background
+<svgattr_lighting-color_value> = ButtonFace
+<svgattr_lighting-color_value> = ButtonHighlight
+<svgattr_lighting-color_value> = ButtonShadow
+<svgattr_lighting-color_value> = ButtonText
+<svgattr_lighting-color_value> = CaptionText
+<svgattr_lighting-color_value> = GrayText
+<svgattr_lighting-color_value> = Highlight
+<svgattr_lighting-color_value> = HighlightText
+<svgattr_lighting-color_value> = InactiveBorder
+<svgattr_lighting-color_value> = InactiveCaption
+<svgattr_lighting-color_value> = InactiveCaptionText
+<svgattr_lighting-color_value> = InfoBackground
+<svgattr_lighting-color_value> = InfoText
+<svgattr_lighting-color_value> = Menu
+<svgattr_lighting-color_value> = MenuText
+<svgattr_lighting-color_value> = Scrollbar
+<svgattr_lighting-color_value> = ThreeDDarkShadow
+<svgattr_lighting-color_value> = ThreeDFace
+<svgattr_lighting-color_value> = ThreeDHighlight
+<svgattr_lighting-color_value> = ThreeDLightShadow
+<svgattr_lighting-color_value> = ThreeDShadow
+<svgattr_lighting-color_value> = Window
+<svgattr_lighting-color_value> = WindowFrame
+<svgattr_lighting-color_value> = WindowText
+<svgattr_lighting-color_value> = currentColor
+
+<svgattr_limitingConeAngle_value> = <fuzzint>
+
+<svgattr_line-width_value> = <fuzzint>
+
+<svgattr_marker-end_value> = url(<hash><svgelementid>)
+
+<svgattr_marker-mid_value> = url(<hash><svgelementid>)
+
+<svgattr_marker-start_value> = url(<hash><svgelementid>)
+
+<svgattr_markerHeight_value> = <fuzzint>
+
+<svgattr_markerUnits_value> = strokeWidth
+<svgattr_markerUnits_value> = userSpaceOnUse
+
+<svgattr_markerWidth_value> = <fuzzint>
+
+<svgattr_mask_value> = url(<hash><svgelementid>)
+
+<svgattr_mask-type_value> = alpha
+<svgattr_mask-type_value> = luminance
+
+<svgattr_maskContentUnits_value> = objectBoundingBox
+<svgattr_maskContentUnits_value> = userSpaceOnUse
+
+<svgattr_maskUnits_value> = userSpaceOnUse
+<svgattr_maskUnits_value> = objectBoundingBox
+
+<svgattr_mathematical_value> = <fuzzint>
+
+<svgattr_max_value> = media
+<svgattr_max_value> = <fuzzint>s
+
+<svgattr_min_value> = <fuzzint>s
+<svgattr_min_value> = media
+
+<svgattr_mode_value> = normal
+<svgattr_mode_value> = multiply
+<svgattr_mode_value> = screen
+<svgattr_mode_value> = darken
+<svgattr_mode_value> = lighten
+
+<svgattr_name_value> = Courier
+<svgattr_name_value> = FirstFont
+<svgattr_name_value> = SVGraffiti
+<svgattr_name_value> = Font
+<svgattr_name_value> = VeryUnlikelyToExistFont
+<svgattr_name_value> = changeColor
+<svgattr_name_value> = HappySad
+
+<svgattr_numOctaves_value> = <fuzzint>
+
+<svgattr_offset_value> = <fuzzint>
+<svgattr_offset_value> = <percentage>%
+<svgattr_offset_value> = <float>
+
+<svgattr_onactivate_value> = <eventhandler>
+
+<svgattr_onbegin_value> = <eventhandler>
+
+<svgattr_onclick_value> = <eventhandler>
+
+<svgattr_onend_value> = <eventhandler>
+
+<svgattr_onerror_value> = <eventhandler>
+
+<svgattr_onfocusin_value> = <eventhandler>
+
+<svgattr_onfocusout_value> = <eventhandler>
+
+<svgattr_onload_value> = <eventhandler>
+
+<svgattr_onmousedown_value> = <eventhandler>
+
+<svgattr_onmousemove_value> = <eventhandler>
+
+<svgattr_onmouseout_value> = <eventhandler>
+
+<svgattr_onmouseover_value> = <eventhandler>
+
+<svgattr_onmouseup_value> = <eventhandler>
+
+<svgattr_onrepeat_value> = <eventhandler>
+
+<svgattr_opacity_value> = <float>
+<svgattr_opacity_value> = <fuzzint>
+
+<svgattr_operator_value> = over
+<svgattr_operator_value> = in
+<svgattr_operator_value> = out
+<svgattr_operator_value> = atop
+<svgattr_operator_value> = xor
+<svgattr_operator_value> = arithmetic
+<svgattr_operator_value> = lighter
+<svgattr_operator_value> = erode
+<svgattr_operator_value> = dilate
+
+<svgattr_order_value> = <fuzzint> <fuzzint>
+<svgattr_order_value> = <fuzzint>
+<svgattr_order_value> = <float>
+
+<svgattr_orient_value> = auto
+<svgattr_orient_value> = <fuzzint>
+<svgattr_orient_value> = <fuzzint>deg
+<svgattr_orient_value> = <fuzzint>rad
+<svgattr_orient_value> = <float>turn
+<svgattr_orient_value> = <fuzzint>turn
+<svgattr_orient_value> = auto-start-reverse
+
+<svgattr_overflow_value> = visible
+<svgattr_overflow_value> = auto
+<svgattr_overflow_value> = scroll
+<svgattr_overflow_value> = hidden
+
+<svgattr_panose-1_value> = <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+
+<svgattr_path_value> = M<fuzzint>,<fuzzint>c<fuzzint>,<fuzzint> <fuzzint>,<fuzzint> <fuzzint>,<fuzzint>
+<svgattr_path_value> = M<fuzzint>,<fuzzint>L<fuzzint>,<fuzzint> <fuzzint>,<fuzzint> <fuzzint>,<fuzzint> <fuzzint>,<fuzzint>
+<svgattr_path_value> = m<fuzzint>,<fuzzint> h<fuzzint>
+<svgattr_path_value> = M <fuzzint> <fuzzint> L <fuzzint> <fuzzint>
+<svgattr_path_value> = M<fuzzint>,<fuzzint> C<fuzzint>,<fuzzint> <fuzzint>,<fuzzint> <fuzzint>,<fuzzint>
+<svgattr_path_value> = M <fuzzint> <fuzzint> l <fuzzint> <fuzzint>
+<svgattr_path_value> = M <fuzzint>,<fuzzint> L <fuzzint>,<fuzzint> <fuzzint>,<fuzzint> <fuzzint>,<fuzzint>
+
+<svgattr_pathLength_value> = <fuzzint>
+
+<svgattr_patternContentUnits_value> = objectBoundingBox
+<svgattr_patternContentUnits_value> = userSpaceOnUse
+
+<svgattr_patternTransform_value> = scale(<fuzzint>,<float>), skewX(<fuzzint>)
+<svgattr_patternTransform_value> = translate(<fuzzint>, <fuzzint>) scale(<float>)
+<svgattr_patternTransform_value> = scale(<float>,<float>)
+<svgattr_patternTransform_value> = skewX(<fuzzint>)
+<svgattr_patternTransform_value> = scale(<fuzzint>)
+<svgattr_patternTransform_value> = scale(<fuzzint>) skewX(<fuzzint>) translate(<fuzzint>,<fuzzint>)
+<svgattr_patternTransform_value> = translate(<fuzzint> <fuzzint>) scale(<fuzzint>) skewX(<fuzzint>)
+
+<svgattr_patternUnits_value> = userSpaceOnUse
+<svgattr_patternUnits_value> = objectBoundingBox
+
+<svgattr_pointer-events_value> = all
+<svgattr_pointer-events_value> = none
+<svgattr_pointer-events_value> = painted
+<svgattr_pointer-events_value> = fill
+
+<svgattr_points_value> = <fuzzint>,<fuzzint> <fuzzint>,<fuzzint>
+<svgattr_points_value> = <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+<svgattr_points_value> = <fuzzint>
+
+<svgattr_pointsAtX_value> = <fuzzint>
+
+<svgattr_pointsAtY_value> = <fuzzint>
+
+<svgattr_pointsAtZ_value> = <fuzzint>
+
+<svgattr_preserveAlpha_value> = false
+<svgattr_preserveAlpha_value> = true
+
+<svgattr_preserveAspectRatio_value> = none
+<svgattr_preserveAspectRatio_value> = defer
+<svgattr_preserveAspectRatio_value> = defer meet
+<svgattr_preserveAspectRatio_value> = xMidYMid meet  
+<svgattr_preserveAspectRatio_value> = xMinYMid
+<svgattr_preserveAspectRatio_value> = xMinYMin meet
+<svgattr_preserveAspectRatio_value> = xMidYMin meet
+<svgattr_preserveAspectRatio_value> = xMaxYMin meet
+<svgattr_preserveAspectRatio_value> = xMinYMid meet
+<svgattr_preserveAspectRatio_value> = xMaxYMid meet
+<svgattr_preserveAspectRatio_value> = xMinYMax meet
+<svgattr_preserveAspectRatio_value> = xMidYMax meet
+<svgattr_preserveAspectRatio_value> = xMaxYMax meet
+<svgattr_preserveAspectRatio_value> = xMinYMin slice
+<svgattr_preserveAspectRatio_value> = xMidYMin slice
+<svgattr_preserveAspectRatio_value> = xMaxYMin slice
+<svgattr_preserveAspectRatio_value> = xMinYMid slice
+<svgattr_preserveAspectRatio_value> = xMidYMid slice
+<svgattr_preserveAspectRatio_value> = xMaxYMid slice
+<svgattr_preserveAspectRatio_value> = xMinYMax slice
+<svgattr_preserveAspectRatio_value> = xMidYMax slice
+<svgattr_preserveAspectRatio_value> = xMaxYMax slice
+<svgattr_preserveAspectRatio_value> = xMinYMin
+<svgattr_preserveAspectRatio_value> = xMinYMax
+<svgattr_preserveAspectRatio_value> = xMidYMin
+<svgattr_preserveAspectRatio_value> = xMidYMid
+<svgattr_preserveAspectRatio_value> = xMidYMax
+<svgattr_preserveAspectRatio_value> = xMaxYMin
+<svgattr_preserveAspectRatio_value> = xMaxYMid
+<svgattr_preserveAspectRatio_value> = xMaxYMax
+<svgattr_preserveAspectRatio_value> = none meet
+<svgattr_preserveAspectRatio_value> = none slice
+
+<svgattr_primitiveUnits_value> = objectBoundingBox
+<svgattr_primitiveUnits_value> = userSpaceOnUse
+
+<svgattr_r_value> = <fuzzint>
+<svgattr_r_value> = <percentage>%
+<svgattr_r_value> = <fuzzint>px
+<svgattr_r_value> = <float>
+
+<svgattr_radius_value> = <fuzzint>
+
+<svgattr_refX_value> = <fuzzint>
+
+<svgattr_refY_value> = <fuzzint>
+
+<svgattr_repeatCount_value> = <fuzzint>
+<svgattr_repeatCount_value> = indefinite
+<svgattr_repeatCount_value> = <float>
+
+<svgattr_repeatDur_value> = <fuzzint>s
+<svgattr_repeatDur_value> = indefinite
+
+<svgattr_requiredExtensions_value> = x
+
+<svgattr_requiredFeatures_value> = x
+
+<svgattr_restart_value> = always
+<svgattr_restart_value> = whenNotActive
+<svgattr_restart_value> = never
+
+<svgattr_result_value> = Map
+<svgattr_result_value> = Texture
+<svgattr_result_value> = blur
+<svgattr_result_value> = Offset
+<svgattr_result_value> = Drop
+<svgattr_result_value> = pair
+<svgattr_result_value> = grey-input
+<svgattr_result_value> = displacement-map
+<svgattr_result_value> = Transformed
+<svgattr_result_value> = Gaussian
+<svgattr_result_value> = red
+<svgattr_result_value> = ofs
+<svgattr_result_value> = mix
+<svgattr_result_value> = tile
+<svgattr_result_value> = tmp
+<svgattr_result_value> = alpha
+<svgattr_result_value> = specOut
+<svgattr_result_value> = offOut
+<svgattr_result_value> = blurOut
+<svgattr_result_value> = light
+<svgattr_result_value> = <color>
+<svgattr_result_value> = offsetBlur
+<svgattr_result_value> = offset
+<svgattr_result_value> = litPaint
+<svgattr_result_value> = flood
+<svgattr_result_value> = comp
+<svgattr_result_value> = shadow
+
+<svgattr_role_value> = button
+
+<svgattr_rotate_value> = <fuzzint>,<fuzzint>
+<svgattr_rotate_value> = <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+<svgattr_rotate_value> = <fuzzint>,<fuzzint>,<fuzzint>
+<svgattr_rotate_value> = <fuzzint> <fuzzint> <fuzzint>
+<svgattr_rotate_value> = <fuzzint>
+<svgattr_rotate_value> = <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+<svgattr_rotate_value> = auto
+<svgattr_rotate_value> = auto-reverse
+
+<svgattr_rx_value> = <fuzzint>
+<svgattr_rx_value> = <percentage>%
+
+<svgattr_ry_value> = <fuzzint>
+<svgattr_ry_value> = <percentage>%
+
+<svgattr_scale_value> = <fuzzint>
+<svgattr_scale_value> = <float>
+
+<svgattr_seed_value> = <fuzzint>
+<svgattr_seed_value> = <float>
+
+<svgattr_shape-rendering_value> = crispEdges
+<svgattr_shape-rendering_value> = optimizeSpeed
+<svgattr_shape-rendering_value> = geometricPrecision
+
+<svgattr_slope_value> = <fuzzint>
+<svgattr_slope_value> = <float>
+
+<svgattr_specularConstant_value> = <fuzzint>
+
+<svgattr_specularExponent_value> = <fuzzint>
+
+<svgattr_spreadMethod_value> = reflect
+<svgattr_spreadMethod_value> = repeat
+<svgattr_spreadMethod_value> = pad
+
+<svgattr_startOffset_value> = <fuzzint>
+<svgattr_startOffset_value> = <percentage>%
+
+<svgattr_stdDeviation_value> = <fuzzint>
+<svgattr_stdDeviation_value> = <fuzzint> <fuzzint>
+<svgattr_stdDeviation_value> = <float> <float>
+
+<svgattr_stitchTiles_value> = stitch
+
+<svgattr_stop-color_value> = <color>
+<svgattr_stop-color_value> = ActiveBorder
+<svgattr_stop-color_value> = ActiveCaption
+<svgattr_stop-color_value> = AppWorkspace
+<svgattr_stop-color_value> = Background
+<svgattr_stop-color_value> = ButtonFace
+<svgattr_stop-color_value> = ButtonHighlight
+<svgattr_stop-color_value> = ButtonShadow
+<svgattr_stop-color_value> = ButtonText
+<svgattr_stop-color_value> = CaptionText
+<svgattr_stop-color_value> = GrayText
+<svgattr_stop-color_value> = Highlight
+<svgattr_stop-color_value> = HighlightText
+<svgattr_stop-color_value> = InactiveBorder
+<svgattr_stop-color_value> = InactiveCaption
+<svgattr_stop-color_value> = InactiveCaptionText
+<svgattr_stop-color_value> = InfoBackground
+<svgattr_stop-color_value> = InfoText
+<svgattr_stop-color_value> = Menu
+<svgattr_stop-color_value> = MenuText
+<svgattr_stop-color_value> = Scrollbar
+<svgattr_stop-color_value> = ThreeDDarkShadow
+<svgattr_stop-color_value> = ThreeDFace
+<svgattr_stop-color_value> = ThreeDHighlight
+<svgattr_stop-color_value> = ThreeDLightShadow
+<svgattr_stop-color_value> = ThreeDShadow
+<svgattr_stop-color_value> = Window
+<svgattr_stop-color_value> = WindowFrame
+<svgattr_stop-color_value> = WindowText
+<svgattr_stop-color_value> = currentColor
+<svgattr_stop-color_value> = inherit
+
+<svgattr_stop-offset_value> = <fuzzint>
+
+<svgattr_stop-opacity_value> = <float>
+<svgattr_stop-opacity_value> = <fuzzint>
+<svgattr_stop-opacity_value> = inherit
+
+<svgattr_stroke_value> = none
+<svgattr_stroke_value> = <color>
+<svgattr_stroke_value> = url(<hash><svgelementid>)
+<svgattr_stroke_value> = url(<hash><svgelementid>) <color>
+<svgattr_stroke_value> = currentColor
+
+<svgattr_stroke-dasharray_value> = <fuzzint> <fuzzint>
+<svgattr_stroke-dasharray_value> = <fuzzint>,<fuzzint>,<fuzzint>,<fuzzint>
+<svgattr_stroke-dasharray_value> = <fuzzint>
+<svgattr_stroke-dasharray_value> = inherit
+
+<svgattr_stroke-dashoffset_value> = <fuzzint>
+<svgattr_stroke-dashoffset_value> = inherit
+
+<svgattr_stroke-join_value> = round
+
+<svgattr_stroke-linecap_value> = round
+<svgattr_stroke-linecap_value> = butt
+<svgattr_stroke-linecap_value> = square
+<svgattr_stroke-linecap_value> = inherit
+
+<svgattr_stroke-linejoin_value> = round
+<svgattr_stroke-linejoin_value> = miter
+<svgattr_stroke-linejoin_value> = bevel
+<svgattr_stroke-linejoin_value> = inherit
+
+<svgattr_stroke-miterlimit_value> = <fuzzint>
+<svgattr_stroke-miterlimit_value> = inherit
+
+<svgattr_stroke-opacity_value> = <float>
+<svgattr_stroke-opacity_value> = <fuzzint>
+
+<svgattr_stroke-width_value> = <fuzzint>
+<svgattr_stroke-width_value> = <float>
+<svgattr_stroke-width_value> = <fuzzint>px
+<svgattr_stroke-width_value> = <percentage>%
+<svgattr_stroke-width_value> = inherit
+
+<svgattr_style_value> = <import from=cssgrammar symbol=declaration5>
+
+<svgattr_surfaceScale_value> = <fuzzint>
+
+<svgattr_systemLanguage_value> = af
+<svgattr_systemLanguage_value> = am
+<svgattr_systemLanguage_value> = ar
+<svgattr_systemLanguage_value> = bg
+<svgattr_systemLanguage_value> = bn
+<svgattr_systemLanguage_value> = ca
+<svgattr_systemLanguage_value> = cs
+<svgattr_systemLanguage_value> = cy
+<svgattr_systemLanguage_value> = da
+<svgattr_systemLanguage_value> = de-DE
+<svgattr_systemLanguage_value> = el
+<svgattr_systemLanguage_value> = en
+<svgattr_systemLanguage_value> = es
+<svgattr_systemLanguage_value> = eu
+<svgattr_systemLanguage_value> = fa
+<svgattr_systemLanguage_value> = fi
+<svgattr_systemLanguage_value> = fr
+<svgattr_systemLanguage_value> = gd
+<svgattr_systemLanguage_value> = gu
+<svgattr_systemLanguage_value> = he
+<svgattr_systemLanguage_value> = hi
+<svgattr_systemLanguage_value> = hr
+<svgattr_systemLanguage_value> = hu
+<svgattr_systemLanguage_value> = hy
+<svgattr_systemLanguage_value> = id
+<svgattr_systemLanguage_value> = is
+<svgattr_systemLanguage_value> = it
+<svgattr_systemLanguage_value> = iu
+<svgattr_systemLanguage_value> = ja-JP
+<svgattr_systemLanguage_value> = jw
+<svgattr_systemLanguage_value> = ka
+<svgattr_systemLanguage_value> = kk
+<svgattr_systemLanguage_value> = kn
+<svgattr_systemLanguage_value> = ko
+<svgattr_systemLanguage_value> = ky
+<svgattr_systemLanguage_value> = lt
+<svgattr_systemLanguage_value> = mk
+<svgattr_systemLanguage_value> = mr
+<svgattr_systemLanguage_value> = nl
+<svgattr_systemLanguage_value> = no
+<svgattr_systemLanguage_value> = or
+<svgattr_systemLanguage_value> = pl
+<svgattr_systemLanguage_value> = pt-PT
+<svgattr_systemLanguage_value> = pt-BR
+<svgattr_systemLanguage_value> = pt
+<svgattr_systemLanguage_value> = ro
+<svgattr_systemLanguage_value> = ru
+<svgattr_systemLanguage_value> = sa
+<svgattr_systemLanguage_value> = sr
+<svgattr_systemLanguage_value> = si
+<svgattr_systemLanguage_value> = sl
+<svgattr_systemLanguage_value> = sq
+<svgattr_systemLanguage_value> = sv
+<svgattr_systemLanguage_value> = ta
+<svgattr_systemLanguage_value> = te
+<svgattr_systemLanguage_value> = tg
+<svgattr_systemLanguage_value> = th
+<svgattr_systemLanguage_value> = tl
+<svgattr_systemLanguage_value> = tr
+<svgattr_systemLanguage_value> = tt
+<svgattr_systemLanguage_value> = uk
+<svgattr_systemLanguage_value> = ur-IN
+<svgattr_systemLanguage_value> = ur-PK
+<svgattr_systemLanguage_value> = uz
+<svgattr_systemLanguage_value> = vi
+<svgattr_systemLanguage_value> = yi
+<svgattr_systemLanguage_value> = zh-CN
+<svgattr_systemLanguage_value> = zh-TW
+
+<svgattr_tabindex_value> = <fuzzint>
+
+<svgattr_tableValues_value> = <fuzzint>
+<svgattr_tableValues_value> = <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+<svgattr_tableValues_value> = <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+
+<svgattr_target_value> = _self
+<svgattr_target_value> = foo
+
+<svgattr_targetX_value> = <fuzzint>
+
+<svgattr_targetY_value> = <fuzzint>
+
+<svgattr_text-anchor_value> = middle
+<svgattr_text-anchor_value> = start
+<svgattr_text-anchor_value> = end
+<svgattr_text-anchor_value> = inherit
+
+<svgattr_text-decoration_value> = line-through
+<svgattr_text-decoration_value> = underline
+<svgattr_text-decoration_value> = overline
+<svgattr_text-decoration_value> = underline overline
+<svgattr_text-decoration_value> = line-through underline overline
+<svgattr_text-decoration_value> = none
+
+<svgattr_text-rendering_value> = geometricPrecision
+
+<svgattr_textLength_value> = <fuzzint>
+
+<svgattr_to_value> = <percentage>%
+<svgattr_to_value> = <fuzzint>
+<svgattr_to_value> = currentColor
+<svgattr_to_value> = <color>
+<svgattr_to_value> = none
+<svgattr_to_value> = visible
+<svgattr_to_value> = repeat
+<svgattr_to_value> = <fuzzint> <fuzzint>
+<svgattr_to_value> = red
+<svgattr_to_value> = objectBoundingBox
+<svgattr_to_value> = <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+<svgattr_to_value> = inline
+<svgattr_to_value> = <fuzzint> <fuzzint> <fuzzint>
+<svgattr_to_value> = inherit
+<svgattr_to_value> = <fuzzint>, <fuzzint>
+<svgattr_to_value> = xMaxYMin
+<svgattr_to_value> = <float>
+<svgattr_to_value> = hidden
+<svgattr_to_value> = end
+<svgattr_to_value> = serif
+<svgattr_to_value> = italic
+<svgattr_to_value> = bold
+<svgattr_to_value> = evenodd
+<svgattr_to_value> = round
+<svgattr_to_value> = bevel
+
+<svgattr_transform_value> = matrix(<fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint>)
+<svgattr_transform_value> = translate(<fuzzint>, <fuzzint>)
+<svgattr_transform_value> = scale(<fuzzint>)
+<svgattr_transform_value> = scale(<fuzzint>) skewY(<fuzzint>) skewX(<fuzzint>)
+<svgattr_transform_value> = translate(<fuzzint> <fuzzint>) rotate(<fuzzint>)
+<svgattr_transform_value> = rotate(<fuzzint> <fuzzint> <fuzzint>)
+<svgattr_transform_value> = translate(<fuzzint> <fuzzint>)
+<svgattr_transform_value> = translate(<fuzzint>,<fuzzint>)
+<svgattr_transform_value> = translate(<fuzzint>,<fuzzint>) scale(<float>)
+<svgattr_transform_value> = scale(<fuzzint>,<fuzzint>) 
+<svgattr_transform_value> = scale(<float>,<fuzzint>)
+<svgattr_transform_value> = translate(<fuzzint>,<fuzzint>) scale(<float>,<fuzzint>)
+<svgattr_transform_value> = translate(<fuzzint>, <fuzzint>) scale(<float>,<fuzzint>)
+<svgattr_transform_value> = translate(<fuzzint>, <fuzzint>) scale(<float>,<fuzzint>) skewX(<fuzzint>)
+<svgattr_transform_value> = translate(<fuzzint>, <fuzzint>) scale(<float>,<fuzzint>) skewY(<fuzzint>)
+<svgattr_transform_value> = scale(.<fuzzint>)
+<svgattr_transform_value> = translate(<fuzzint>, <fuzzint>) scale(<float>) rotate(<fuzzint>) translate(<fuzzint>, <fuzzint>)
+<svgattr_transform_value> = translate(<fuzzint>, <fuzzint>) scale(<float>) skewX(<fuzzint>) translate(<fuzzint>, <fuzzint>)
+<svgattr_transform_value> = rotate(<fuzzint>, <fuzzint>, <fuzzint>)
+<svgattr_transform_value> = translate(<fuzzint>)
+<svgattr_transform_value> = translate(<fuzzint>, <fuzzint>) scale(<fuzzint>, <fuzzint>)
+<svgattr_transform_value> = rotate(<fuzzint>, .<fuzzint>, .<fuzzint>)
+<svgattr_transform_value> = translate(<fuzzint>, <fuzzint>) rotate(<fuzzint>)
+<svgattr_transform_value> = rotate(<fuzzint>)
+<svgattr_transform_value> = translate(<fuzzint>, <fuzzint>), rotate(<fuzzint>)
+<svgattr_transform_value> = scale(<fuzzint>,<fuzzint>) scale(<fuzzint>,<fuzzint>,<fuzzint>) translate(<fuzzint>,<fuzzint>)
+<svgattr_transform_value> = translate(<fuzzint>,<fuzzint>) scale(<fuzzint>)
+<svgattr_transform_value> = scale(<fuzzint>) translate(<fuzzint>, <fuzzint>)
+<svgattr_transform_value> = translate(<fuzzint>,<fuzzint><float>)
+<svgattr_transform_value> = translate(<fuzzint><float>,<fuzzint>)
+<svgattr_transform_value> = translate(<fuzzint>,<fuzzint>), scale(<fuzzint>)
+<svgattr_transform_value> = scale(<float>)
+<svgattr_transform_value> = scale(<fuzzint>,<fuzzint>,<fuzzint>)
+<svgattr_transform_value> = translate(<fuzzint>,<fuzzint>,<fuzzint>)
+<svgattr_transform_value> = translate(<fuzzint> <fuzzint>) scale(<fuzzint>) translate(<fuzzint> <fuzzint>)
+<svgattr_transform_value> = translate(<float>, <float>)
+<svgattr_transform_value> = rotate(<fuzzint>,<fuzzint>,<fuzzint>)
+<svgattr_transform_value> = matrix(<fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint><float> <fuzzint>)
+<svgattr_transform_value> = matrix(<fuzzint> <fuzzint> <fuzzint> <fuzzint> <fuzzint><float> <fuzzint><float>)
+<svgattr_transform_value> = matrix(<float> <float> <float> <float> <fuzzint><float> <fuzzint><float>)
+<svgattr_transform_value> = translate(<fuzzint>,<fuzzint>) scale(<fuzzint>,<fuzzint>)
+<svgattr_transform_value> = scale(<float> <float>)
+<svgattr_transform_value> = scale(<fuzzint> <fuzzint>)
+<svgattr_transform_value> = scale(<fuzzint>) translate(<fuzzint>, <fuzzint>) 
+<svgattr_transform_value> = skewY(<fuzzint>)
+<svgattr_transform_value> = scale(<fuzzint>,<fuzzint>)
+<svgattr_transform_value> = scale(<fuzzint> <fuzzint>) rotate(<fuzzint>)
+<svgattr_transform_value> = skewX(<fuzzint>)
+<svgattr_transform_value> = skewX(<fuzzint>) skewX(<fuzzint>)
+<svgattr_transform_value> = skewY(<fuzzint>) skewY(<fuzzint>)
+<svgattr_transform_value> = translate(<fuzzint> <fuzzint>) scale(<fuzzint> <fuzzint>)
+<svgattr_transform_value> = translate(<fuzzint>, <fuzzint>) scale(<float>)
+<svgattr_transform_value> = translate(<fuzzint>)rotate(<fuzzint>)
+<svgattr_transform_value> = scale(<fuzzint>) scale(<fuzzint>)
+<svgattr_transform_value> = translate(<fuzzint>,<fuzzint>) scale(<fuzzint>) scale(<float>, <float>) translate(<fuzzint>, <fuzzint>)
+<svgattr_transform_value> = translate(<fuzzint>,<fuzzint>) rotate(<fuzzint>) scale(<fuzzint>) scale(<float>, <float>) translate(<fuzzint>, <fuzzint>)
+
+<svgattr_type_value> = matrix
+<svgattr_type_value> = identity
+<svgattr_type_value> = linear
+<svgattr_type_value> = table
+<svgattr_type_value> = discrete
+<svgattr_type_value> = gamma
+<svgattr_type_value> = skewY
+<svgattr_type_value> = scale
+<svgattr_type_value> = rotate
+<svgattr_type_value> = translate
+<svgattr_type_value> = skewX
+<svgattr_type_value> = saturate
+<svgattr_type_value> = hueRotate
+<svgattr_type_value> = turbulence
+<svgattr_type_value> = fractalNoise
+<svgattr_type_value> = luminanceToAlpha
+
+<svgattr_underline-position_value> = <fuzzint>
+
+<svgattr_underline-thickness_value> = <fuzzint>
+
+<svgattr_unicode_value> = A
+
+<svgattr_unicode-bidi_value> = bidi-override
+<svgattr_unicode-bidi_value> = embed
+<svgattr_unicode-bidi_value> = normal
+
+<svgattr_unicode-range_value> = U+<hex><hex><hex><hex>-U+<hex><hex><hex><hex>
+
+<svgattr_units-per-em_value> = <fuzzint>
+
+<svgattr_values_value> = <fuzzint>,<fuzzint>
+<svgattr_values_value> = <fuzzint>,<fuzzint>;<fuzzint>,<fuzzint>
+<svgattr_values_value> = m<fuzzint>,<fuzzint> <fuzzint>,<fuzzint>z; m<fuzzint>,<fuzzint> <fuzzint>,<fuzzint>z; m<fuzzint>,<fuzzint>z
+<svgattr_values_value> = <fuzzint>,<fuzzint>,<fuzzint>,<fuzzint>;<fuzzint>,<fuzzint>,<fuzzint>,<fuzzint>
+<svgattr_values_value> = <fuzzint>; <fuzzint>,<fuzzint>,<fuzzint>,<fuzzint>; <fuzzint>
+<svgattr_values_value> = <fuzzint>; <fuzzint>; <fuzzint> <fuzzint>; <fuzzint>
+<svgattr_values_value> = <fuzzint> <fuzzint>; <fuzzint> <fuzzint>; <fuzzint>
+<svgattr_values_value> = <color>
+<svgattr_values_value> = <color>;<color>
+<svgattr_values_value> = <fuzzint>;<fuzzint>;<fuzzint>;<fuzzint>
+<svgattr_values_value> = <fuzzint>,<fuzzint>; <fuzzint>,<fuzzint>
+<svgattr_values_value> = <fuzzint>; <fuzzint>; <fuzzint>
+<svgattr_values_value> = <fuzzint>
+<svgattr_values_value> = <fuzzint>;<fuzzint>;<fuzzint>
+<svgattr_values_value> = <fuzzint> <fuzzint> <fuzzint>
+<svgattr_values_value> = <fuzzint>,<fuzzint>;<fuzzint>,<fuzzint>;<fuzzint>,<fuzzint>
+<svgattr_values_value> = <fuzzint>,<fuzzint>,<fuzzint>;<fuzzint>,<fuzzint>,<fuzzint>;<fuzzint>,<fuzzint>,<fuzzint>
+<svgattr_values_value> = nonzero; evenodd; evenodd; evenodd
+<svgattr_values_value> = evenodd; nonzero; evenodd; evenodd
+<svgattr_values_value> = evenodd; evenodd; nonzero; evenodd
+<svgattr_values_value> = evenodd; evenodd; evenodd; nonzero
+<svgattr_values_value> = end;middle;start
+<svgattr_values_value> = sans-serif;serif;sans-serif
+<svgattr_values_value> = normal;italic;normal
+<svgattr_values_value> = bold;normal;bold
+<svgattr_values_value> = <fuzzint>; <fuzzint>; <fuzzint>; <fuzzint>
+<svgattr_values_value> = <fuzzint>;<fuzzint>;<fuzzint>;<fuzzint>
+<svgattr_values_value> = inherit; none; inherit
+<svgattr_values_value> = inline; none; inline
+<svgattr_values_value> = inherit; hidden; inherit
+<svgattr_values_value> = visible; hidden; visible
+
+<svgattr_vector-effect_value> = non-scaling-stroke
+
+<svgattr_version_value> = <fuzzint>
+
+<svgattr_vert-origin-y_value> = <fuzzint>
+
+<svgattr_viewBox_value> = <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+
+<svgattr_viewTarget_value> = polygon-object
+
+<svgattr_viewbox_value> = <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+
+<svgattr_visibility_value> = hidden
+<svgattr_visibility_value> = visible
+<svgattr_visibility_value> = inherit
+
+<svgattr_width_value> = <percentage>%
+<svgattr_width_value> = <fuzzint>
+<svgattr_width_value> = <fuzzint>px
+<svgattr_width_value> = <float>
+<svgattr_width_value> = <fuzzint>in
+<svgattr_width_value> = <fuzzint>em
+<svgattr_width_value> = <fuzzint>cm
+
+<svgattr_word-spacing_value> = <fuzzint>
+<svgattr_word-spacing_value> = <fuzzint>em
+
+<svgattr_writing-mode_value> = tb
+
+<svgattr_x_value> = <fuzzint>
+<svgattr_x_value> = <float>
+<svgattr_x_value> = <fuzzint>px
+<svgattr_x_value> = <percentage>%
+<svgattr_x_value> = <fuzzint>,<fuzzint>,<fuzzint>
+<svgattr_x_value> = <fuzzint>,<fuzzint>
+<svgattr_x_value> = <fuzzint>em
+<svgattr_x_value> = <fuzzint>,<fuzzint>,<fuzzint>,<fuzzint>
+
+<svgattr_x-height_value> = <fuzzint>
+
+<svgattr_x1_value> = <percentage>%
+<svgattr_x1_value> = <fuzzint>
+<svgattr_x1_value> = <fuzzint>px
+
+<svgattr_x2_value> = <percentage>%
+<svgattr_x2_value> = <fuzzint>
+<svgattr_x2_value> = <float>
+
+<svgattr_xChannelSelector_value> = R
+<svgattr_xChannelSelector_value> = B
+<svgattr_xChannelSelector_value> = G
+
+<svgattr_y_value> = <fuzzint>
+<svgattr_y_value> = <float>
+<svgattr_y_value> = <fuzzint>px
+<svgattr_y_value> = <fuzzint>in
+<svgattr_y_value> = <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+<svgattr_y_value> = <fuzzint> <fuzzint> <fuzzint>
+<svgattr_y_value> = <fuzzint> <fuzzint>
+
+<svgattr_y1_value> = <percentage>%
+<svgattr_y1_value> = <fuzzint>
+<svgattr_y1_value> = <float>
+<svgattr_y1_value> = <fuzzint>px
+
+<svgattr_y2_value> = <percentage>%
+<svgattr_y2_value> = <fuzzint>
+<svgattr_y2_value> = <fuzzint>px
+<svgattr_y2_value> = <float>
+
+<svgattr_yChannelSelector_value> = G
+<svgattr_yChannelSelector_value> = A
+<svgattr_yChannelSelector_value> = B
+
+<svgattr_z_value> = <fuzzint>
+
+<svgattr_zoomAndPan_value> = disable
+<svgattr_zoomAndPan_value> = magnify
+
+<svgattr_xlink_actuate_value> = onRequest
+
+<svgattr_xlink_href_value> = <hash><svgelementid>
+
+<svgattr_xlink_show_value> = new
+<svgattr_xlink_show_value> = replace
+
+<svgattr_xlink_title_value> = foo
+
+<svgattr_xlink_type_value> = simple
+
+<svgattr_xml_id_value> = svg-root
+<svgattr_xml_id_value> = test-title
+<svgattr_xml_id_value> = test-body-content
+<svgattr_xml_id_value> = revision
+<svgattr_xml_id_value> = test-frame
+<svgattr_xml_id_value> = draft-watermark
+
+<svgattr_xml_lang_value> = ar
+<svgattr_xml_lang_value> = af
+<svgattr_xml_lang_value> = en
+<svgattr_xml_lang_value> = am
+<svgattr_xml_lang_value> = ar-SA
+<svgattr_xml_lang_value> = bg
+<svgattr_xml_lang_value> = bn
+<svgattr_xml_lang_value> = cs
+<svgattr_xml_lang_value> = cy
+<svgattr_xml_lang_value> = da
+<svgattr_xml_lang_value> = de-DE
+<svgattr_xml_lang_value> = el-GR
+<svgattr_xml_lang_value> = en-US
+<svgattr_xml_lang_value> = es-ES
+<svgattr_xml_lang_value> = eu
+<svgattr_xml_lang_value> = fa
+<svgattr_xml_lang_value> = fi
+<svgattr_xml_lang_value> = fr-fR
+<svgattr_xml_lang_value> = gd
+<svgattr_xml_lang_value> = gu
+<svgattr_xml_lang_value> = he
+<svgattr_xml_lang_value> = hi
+<svgattr_xml_lang_value> = hr
+<svgattr_xml_lang_value> = hu
+<svgattr_xml_lang_value> = hy
+<svgattr_xml_lang_value> = id
+<svgattr_xml_lang_value> = is
+<svgattr_xml_lang_value> = it
+<svgattr_xml_lang_value> = iu
+<svgattr_xml_lang_value> = ja-JP
+<svgattr_xml_lang_value> = jw
+<svgattr_xml_lang_value> = ka
+<svgattr_xml_lang_value> = kk
+<svgattr_xml_lang_value> = kn
+<svgattr_xml_lang_value> = ko
+<svgattr_xml_lang_value> = ky
+<svgattr_xml_lang_value> = lt
+<svgattr_xml_lang_value> = mk
+<svgattr_xml_lang_value> = mr
+<svgattr_xml_lang_value> = nl
+<svgattr_xml_lang_value> = no
+<svgattr_xml_lang_value> = or
+<svgattr_xml_lang_value> = pl
+<svgattr_xml_lang_value> = pt-PT
+<svgattr_xml_lang_value> = pt-BR
+<svgattr_xml_lang_value> = ro
+<svgattr_xml_lang_value> = ru
+<svgattr_xml_lang_value> = sa
+<svgattr_xml_lang_value> = sr
+<svgattr_xml_lang_value> = si
+<svgattr_xml_lang_value> = sl
+<svgattr_xml_lang_value> = sq
+<svgattr_xml_lang_value> = sv
+<svgattr_xml_lang_value> = ta
+<svgattr_xml_lang_value> = te
+<svgattr_xml_lang_value> = tg
+<svgattr_xml_lang_value> = th
+<svgattr_xml_lang_value> = tl
+<svgattr_xml_lang_value> = tr
+<svgattr_xml_lang_value> = tt
+<svgattr_xml_lang_value> = uk
+<svgattr_xml_lang_value> = ur-IN
+<svgattr_xml_lang_value> = ur-PK
+<svgattr_xml_lang_value> = uz
+<svgattr_xml_lang_value> = vi
+<svgattr_xml_lang_value> = yi
+<svgattr_xml_lang_value> = zh-CN
+<svgattr_xml_lang_value> = zh-TW
+<svgattr_xml_lang_value> = fr
+<svgattr_xml_lang_value> = fr-CA
+
+<svgattr_xml_space_value> = default
+<svgattr_xml_space_value> = preserve
+

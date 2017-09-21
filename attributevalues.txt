@@ -1,0 +1,1352 @@
+#   Copyright 2017 Google Inc. All Rights Reserved.
+#   Licensed under the Apache License, Version 2.0 (the "License");
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
+
+
+<charset> = <attributestring>
+<charset> = UTF-7
+<charset> = UTF-8
+<charset> = UTF-16
+<charset> = UTF-32
+<charset> = EUC-JP
+<charset> = ISO-2022-JP
+<charset> = iso-8859-1
+<charset> = Big5
+<charset> = Shift_JIS
+<charset> = UTF-8
+<charset> = US-ASCII
+
+<onoff> = on
+<onoff> = off
+
+<abbr_value> = <attributestring>
+
+<accept_value> = <attributestring>
+<accept_value> = audio/*
+<accept_value> = video/*
+<accept_value> = image/*
+
+<accept-charset_value> = <charset>
+
+<accepts-touch_value> = synthetic
+<accepts-touch_value> = raw
+
+<accesskey_value> = <attributechar>
+
+<accumulate_value> = sum
+<accumulate_value> = none
+
+#<action_value> = <attributestring>
+
+<additive_value> = sum
+<additive_value> = replace
+
+<align_value> = 
+<align_value> = char
+<align_value> = LEFT
+<align_value> = right
+<align_value> = center
+<align_value> = bottom
+<align_value> = foobar
+<align_value> = top
+<align_value> = BOTTOM
+<align_value> = MIDDLE
+<align_value> = ABSMIDDLE
+<align_value> = Right
+<align_value> = middle
+<align_value> = bad
+<align_value> = RIGHT
+<align_value> = Left
+<align_value> = absmiddle
+<align_value> = left
+<align_value> = CENTER
+<align_value> = justify
+
+<alink_value> = <color>
+
+<allowfullscreen_value> = <boolean>
+
+<alt_value> = <attributestring>
+
+<archive_value> = <attributestring>
+
+<aria-activedescendant_value> = <elementid>
+
+<aria-autocomplete_value> = list
+
+<aria-atomic_value> = <boolean>
+
+<aria-busy_value> = <boolean>
+
+<aria-checked_value> = mixed
+<aria-checked_value> = <boolean>
+
+<aria-controls_value> = <elementid>
+
+<aria-describedby_value> = <elementid>
+
+<aria-disabled_value> = <boolean>
+
+<aria-dropeffect_value> = copy
+<aria-dropeffect_value> = move
+<aria-dropeffect_value> = link
+<aria-dropeffect_value> = popup
+<aria-dropeffect_value> = execute
+<aria-dropeffect_value> = none
+
+<aria-expanded_value> = <boolean>
+
+<aria-flowto_value> = <elementid>
+
+<aria-grabbed_value> = <boolean>
+
+<aria-haspopup_value> = <boolean>
+
+<aria-help_value> = <elementid>
+
+<aria-hidden_value> = <boolean>
+
+<aria-invalid_value> = <boolean>
+
+<aria-label_value> = <attributestring>
+
+<aria-labeledby_value> = <elementid>
+
+<aria-labelledby_value> = <elementid>
+
+<aria-level_value> = <fuzzint>
+
+<aria-live_value> = off
+<aria-live_value> = polite
+<aria-live_value> = assertive
+
+<aria-multiline_value> = <boolean>
+
+<aria-multiselectable_value> = <boolean>
+
+<aria-name_value> = <attributestring>
+
+<aria-orientation_value> = horizontal
+<aria-orientation_value> = vertical
+
+<aria-owns_value> = <elementid>
+
+<aria-posinset_value> = <fuzzint>
+
+<aria-pressed_value> = <boolean>
+
+<aria-readonly_value> = <boolean>
+
+<aria-relevant_value> = additions
+<aria-relevant_value> = removals
+<aria-relevant_value> = text
+<aria-relevant_value> = all
+
+<aria-required_value> = <boolean>
+
+<aria-selected_value> = <boolean>
+
+<aria-setsize_value> = <fuzzint>
+
+<aria-sort_value> = ascending
+<aria-sort_value> = descending
+
+<aria-valuemax_value> = <fuzzint>
+
+<aria-valuemin_value> = <fuzzint>
+
+<aria-valuenow_value> = <fuzzint>
+
+<aria-valuetext_value> = <attributestring>
+
+<as_value> = style
+<as_value> = audio
+<as_value> = script
+<as_value> = track
+<as_value> = media
+<as_value> = image
+<as_value> = video
+<as_value> = font
+
+<async_value> = <boolean>
+
+<autocomplete_value> = <onoff>
+
+<autofocus_value> = autofocus
+
+<autoload_value> = autoload
+
+<autoplay_value> = autoplay
+
+<axis_value> = <attributestring>
+
+<azimuth_value> = <fuzzint>
+
+<background_value> = <attributestring>
+
+<background-color_value> = <color>
+
+<basefrequency_value> = <float>
+
+<baseprofile_value> = full
+<baseprofile_value> = tiny
+
+<behavior_value> = slide
+<behavior_value> = alternate
+<behavior_value> = scroll
+
+<bgcolor_value> = <color>
+
+<bgproperties_value> = fixed
+
+<border_value> = 0
+<border_value> = 1
+<border_value> = <fuzzint>px
+
+<bordercolor_value> = <color>
+
+<buffered-rendering_value> = dynamic
+<buffered-rendering_value> = static
+
+<can-process-drag_value> = <boolean>
+
+<case_value> = second
+<case_value> = first
+
+<capture_value> = capture
+
+<cellpadding_value> = <fuzzint>
+
+<cellspacing_value> = <fuzzint>
+
+<challange_value> = <attributestring>
+
+<char_value> = <attributechar>
+
+<charoff_value> = <fuzzint>
+
+<charset_value> = <charset>
+
+<checked_value> = checked
+
+<cite_value> = <attributestring>
+
+<class_value> = <class>
+
+<classid_value> = <attributestring>
+
+<clear_value> = none
+<clear_value> = left
+<clear_value> = ALL
+<clear_value> = all
+
+<code_value> = <attributestring>
+
+<codebase_value> = <attributestring>
+
+<codetype_value> = image/gif
+
+<color_value> = <color>
+
+<cols_value> = <fuzzint>
+<cols_value> = <fuzzint>,<fuzzint>
+
+<colspan_value> = <fuzzint>
+
+<compact_value> = compact
+
+<content_value> = <attributestring>
+
+<contenteditable_value> = false
+<contenteditable_value> = inherit
+<contenteditable_value> = plaintext-only
+<contenteditable_value> = true
+
+<contextmenu_value> = <elementid>
+
+<controls_value> = controls
+
+<coords_value> = <fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>
+
+<crossorigin_value> = crossorigin
+
+<data_value> = <attributestring>
+
+<datetime_value> = January 2, 2002
+<datetime_value> = January 1, 2002
+<datetime_value> = 2000-02-01T03:04:05Z
+
+<declare_value> = declare
+
+<default_value> = <attributestring>
+
+<defer_value> = defer
+
+<desc_value> = <attributestring>
+
+<description_value> = <attributestring>
+
+<dir_value> = LTR
+<dir_value> = auto
+<dir_value> = ltr
+<dir_value> = RTL
+<dir_value> = rtl
+
+<direction_value> = ltr
+<direction_value> = rtl
+
+<dirname_value> = <attributestring>
+
+<disabled_value> = disabled
+
+<display_value> = none
+<display_value> = block
+
+<disposition_value> = attachment
+
+<download_value> = <attributestring>
+
+<draggable_value> = <boolean>
+
+<encoding_value> = TEXT/HTML
+<encoding_value> = text/html
+<encoding_value> = TeX
+<encoding_value> = MathML-Presentation
+<encoding_value> = foo
+<encoding_value> = application/xhtml+xml
+
+<enctype_value> = multipart/form-data
+<enctype_value> = text/plain
+<enctype_value> = application/x-www-form-urlencoded
+
+<expanded_value> = <boolean>
+
+<face_value> = Arial, helvetica
+<face_value> = Arial
+<face_value> = ms sans serif, helvetica
+<face_value> = Helvetica
+<face_value> = Verdana
+<face_value> = Arial,Helvetica
+<face_value> = fantasy
+<face_value> = arial,helvetica,sans-serif
+<face_value> = Helvetica, Arial
+<face_value> = sans-serif, arial
+<face_value> = Arial,Helvetica,sans-serif
+<face_value> = arial
+<face_value> = Courier
+<face_value> = helvetica
+<face_value> = verdana
+<face_value> = Arial,helvetica
+<face_value> = Times New Roman
+<face_value> =  helvetica
+<face_value> = monospace
+<face_value> = Arial, sans-serif
+<face_value> = Lucida Grande
+<face_value> = ARIAL,HELVETICA
+<face_value> = serif
+<face_value> = Monaco
+<face_value> = arial,helvetica
+<face_value> = Verdana, Arial
+<face_value> = 'courier new', monospace
+<face_value> = arial, sans-serif
+<face_value> = sans-serif
+<face_value> = Comic Sans MS
+<face_value> = n8 n26
+<face_value> = ariel,helvetica
+<face_value> = cursive
+<face_value> = Times
+
+<focus_value> = <boolean>
+
+<focused_value> = <boolean>
+
+<for_value> = <elementid>
+
+<form_value> = <elementid>
+
+<formaction_value> = <eventhandler>
+
+<formenctype_value> = text/plain
+
+<formmethod_value> = post
+<formmethod_value> = get
+
+<formnovalidate_value> = formnovalidate
+
+<formtarget_value> = <elementid>
+
+<frame_value> = box
+<frame_value> = BOX
+<frame_value> = vsides
+<frame_value> = hsides
+<frame_value> = void
+<frame_value> = below
+<frame_value> = lhs
+<frame_value> = above
+<frame_value> = border
+<frame_value> = rhs
+
+<frameborder_value> = 1
+<frameborder_value> = 0
+
+<framemargin_value> = 0
+<framemargin_value> = 1
+
+<framespacing_value> = 1
+<framespacing_value> = 0
+
+<headers_value> = <elementid>
+
+<height_value> = <fuzzint>
+
+<hidden_value> = hidden
+
+<high_value> = <fuzzint>
+
+<href_value> = <attributestring>
+
+<hreflang_value> = <lang_value>
+
+<hspace_value> = <fuzzint>
+
+<http-equiv_value> = Content-Security-Policy
+<http-equiv_value> = Content-Language
+<http-equiv_value> = Content-Style-Type
+<http-equiv_value> = cache-control
+<http-equiv_value> = Accept-CH
+<http-equiv_value> = Content-Script-Type
+<http-equiv_value> = Refresh
+<http-equiv_value> = Content-Security-Policy-Report-Only
+<http-equiv_value> = pragma
+<http-equiv_value> = origin-trial
+<http-equiv_value> = Suborigin
+<http-equiv_value> = refresh
+<http-equiv_value> = X-UA-Compatible
+<http-equiv_value> = Content-Type
+
+<icon_value> = <attributestring>
+
+#<id_value> = <elementid>
+
+<incremental_value> = incremental
+
+<indeterminate_value> = <boolean>
+
+<inner_value> = 1
+
+<inputmode_value> = verbatim
+<inputmode_value> = latin
+<inputmode_value> = latin-name
+<inputmode_value> = latin-prose
+<inputmode_value> = full-width-latin
+<inputmode_value> = kana
+<inputmode_value> = katakana
+<inputmode_value> = numeric
+<inputmode_value> = tel
+<inputmode_value> = email
+<inputmode_value> = url
+
+<is_value> = x-pass
+<is_value> = x-body
+<is_value> = x-bar
+<is_value> = x-iframe
+<is_value> = x-g
+<is_value> = x-rect
+<is_value> = x-a
+<is_value> = x-x
+<is_value> = x-green
+<is_value> = x-y
+
+<ismap_value> = ismap
+
+<item_value> = <attributestring>
+
+<itemid_value> = <attributestring>
+
+<itemprop_value> = <attributestring>
+
+<itemref_value> = <elementid>
+
+<itemscope_value> = <attributestring>
+
+<itemtype_value> = <attributestring>
+
+<keytype_value> = RSA
+
+<kind_value> = captions
+<kind_value> = chapters
+<kind_value> = descriptions
+<kind_value> = metadata
+<kind_value> = subtitles
+
+<label_value> = <attributestring>
+
+<lang_value> = fr-CH
+<lang_value> = gu
+<lang_value> = tr_TR
+<lang_value> = fr-CA
+<lang_value> = nd
+<lang_value> = ru-ru
+<lang_value> = rof
+<lang_value> = zh-Hant
+<lang_value> = shi
+<lang_value> = sv
+<lang_value> = twq
+<lang_value> = mfe
+<lang_value> = en-GB
+<lang_value> = lg
+<lang_value> = xog
+<lang_value> = ln
+<lang_value> = lo
+<lang_value> = nus
+<lang_value> = tr
+<lang_value> = ko-kr
+<lang_value> = de-CH
+<lang_value> = CUSTOM
+<lang_value> = lv
+<lang_value> = en-au
+<lang_value> = lt
+<lang_value> = ksf
+<lang_value> = dje
+<lang_value> = th
+<lang_value> = ksb
+<lang_value> = he
+<lang_value> = ta
+<lang_value> = en-HanT
+<lang_value> = en-HanS
+<lang_value> = yo
+<lang_value> = lt-LT
+<lang_value> = ja-latn
+<lang_value> = lt@foo=bar
+<lang_value> = de
+<lang_value> = mgo
+<lang_value> = da
+<lang_value> = dav
+<lang_value> = dyo
+<lang_value> = dz
+<lang_value> = el-GR
+<lang_value> = kkj
+<lang_value> = ja-jp
+<lang_value> = vi-vn
+<lang_value> = qs
+<lang_value> = ko-Hang
+<lang_value> = bas
+<lang_value> = tr@foo=bar
+<lang_value> = zh-hant
+<lang_value> = shi-Tfng
+<lang_value> = guz
+<lang_value> = ja-Hrkt
+<lang_value> = sw
+<lang_value> = el
+<lang_value> = en
+<lang_value> = zh
+<lang_value> = az-AZ
+<lang_value> = teo
+<lang_value> = en-TW
+<lang_value> = kde
+<lang_value> = zh_Hans
+<lang_value> = mas
+<lang_value> = zh-HK
+<lang_value> = bg
+<lang_value> = el@foo=bar
+<lang_value> = eu
+<lang_value> = et
+<lang_value> = vun
+<lang_value> = es
+<lang_value> = seh
+<lang_value> = en-gb
+<lang_value> = ru
+<lang_value> = rw
+<lang_value> = jgo
+<lang_value> = ff
+<lang_value> = luy
+<lang_value> = chr
+<lang_value> = ti-ER
+<lang_value> = zh-cn
+<lang_value> = mua
+<lang_value> = und-Zxxx
+<lang_value> = rn
+<lang_value> = ro
+<lang_value> = luo
+<lang_value> = EL
+<lang_value> = sbp
+<lang_value> = az@foo=bar
+<lang_value> = ko-Kore
+<lang_value> = bm
+<lang_value> = bn
+<lang_value> = cgg
+<lang_value> = az-Cyrl
+<lang_value> = y-test
+<lang_value> = nmg
+<lang_value> = asa
+<lang_value> = kea
+<lang_value> = br
+<lang_value> = mer
+<lang_value> = ja
+<lang_value> = ms
+<lang_value> = ebu
+<lang_value> = ko-KR
+<lang_value> = LT
+<lang_value> = en-fr
+<lang_value> = dua
+<lang_value> = en-GB-wa
+<lang_value> = en-HanS-JP
+<lang_value> = xh
+<lang_value> = yav
+<lang_value> = cn
+<lang_value> = brx
+<lang_value> = ca
+<lang_value> = en-us
+<lang_value> = en-CN
+<lang_value> = xx
+<lang_value> = en-KR
+<lang_value> = cs
+<lang_value> = ses
+<lang_value> = x-test
+<lang_value> = vai
+<lang_value> = pt
+<lang_value> = to
+<lang_value> = az_AZ
+<lang_value> = zh-tw
+<lang_value> = swc
+<lang_value> = nnh
+<lang_value> = lt_LT
+<lang_value> = custom
+<lang_value> = ee
+<lang_value> = de-de
+<lang_value> = lu
+<lang_value> = tr-TR
+<lang_value> = vi
+<lang_value> = ja-Jpan
+<lang_value> = pt-PT
+<lang_value> = he-il
+<lang_value> = pl
+<lang_value> = hr
+<lang_value> = en-US
+<lang_value> = hu
+<lang_value> = hi
+<lang_value> = en-JP
+<lang_value> = jmc
+<lang_value> = ha
+<lang_value> = ja-Kana
+<lang_value> = en-HanT-JP
+<lang_value> = ar-eg
+<lang_value> = mg
+<lang_value> = te
+<lang_value> = bem
+<lang_value> = ml
+<lang_value> = kln
+<lang_value> = mk
+<lang_value> = ur
+<lang_value> = bez
+<lang_value> = zh-CN
+<lang_value> = sr
+<lang_value> = sr-Latn
+<lang_value> = tr-US
+<lang_value> = mr
+<lang_value> = my
+<lang_value> = sq
+<lang_value> = af
+<lang_value> = khq
+<lang_value> = ak
+<lang_value> = am
+<lang_value> = it
+<lang_value> = en-Hixie
+<lang_value> = ar-AE
+<lang_value> = ar
+<lang_value> = fr-fr
+<lang_value> = zu
+<lang_value> = el_GR
+<lang_value> = saq
+<lang_value> = ja-JP
+<lang_value> = tzm
+<lang_value> = id
+<lang_value> = ig
+<lang_value> = az
+<lang_value> = nl
+<lang_value> = nn
+<lang_value> = no
+<lang_value> = nb
+<lang_value> = bs-Cyrl
+<lang_value> = TR
+<lang_value> = ne
+<lang_value> = vai-Latn
+<lang_value> = lt-US
+<lang_value> = hi-in
+<lang_value> = naq
+<lang_value> = nyn
+<lang_value> = z-test
+<lang_value> = kab
+<lang_value> = fr
+<lang_value> = rwk
+<lang_value> = en-HK
+<lang_value> = lag
+<lang_value> = kam
+<lang_value> = fa
+<lang_value> = ja-Hira
+<lang_value> = el-gr
+<lang_value> = x
+<lang_value> = fi
+<lang_value> = uk
+<lang_value> = xyzzy
+<lang_value> = gsw
+<lang_value> = zh-TW
+<lang_value> = ki
+<lang_value> = ewo
+<lang_value> = ko
+<lang_value> = kn
+<lang_value> = km
+<lang_value> = sk
+<lang_value> = si
+<lang_value> = so
+<lang_value> = sn
+<lang_value> = sl
+<lang_value> = sg
+<lang_value> = el-US
+<lang_value> = agq
+
+<language_value> = javascript
+<language_value> = vbscript
+
+<layout_value> = auto
+<layout_value> = fixed
+
+<left_value> = <fuzzint>
+
+<leftmargin_value> = <fuzzint>
+
+<link_value> = <color>
+
+<list_value> = <elementid>
+
+<longdesc_value> = <attributestring>
+
+<loop_value> = <fuzzint>
+
+<loopend_value> = <fuzzint>
+
+<loopstart_value> = <fuzzint>
+
+<low_value> = <fuzzint>
+
+<lowsrc_value> = <attributestring>
+
+<manifest_value> = <attributestring>
+
+<margin_value> = <fuzzint>px <fuzzint>px
+
+<marginheight_value> = <fuzzint>
+
+<marginwidth_value> = <fuzzint>
+
+<max_value> = <fuzzint>
+
+<maxlength_value> = <fuzzint>
+
+<mayscript_value> = <boolean>
+
+<media_value> = all
+<media_value> = aural
+<media_value> = braille
+<media_value> = handheld
+<media_value> = projection
+<media_value> = print
+<media_value> = screen
+<media_value> = tty
+<media_value> = tv
+<media_value> = screen and (min-width:<fuzzint>px)
+<media_value> = screen and (max-width:<fuzzint>px)
+<media_value> = screen and (min-height:<fuzzint>px)
+<media_value> = screen and (max-height:<fuzzint>px)
+
+<menu_value> = <elementid>
+
+<method_value> = get
+<method_value> = put
+<method_value> = post
+
+<min_value> = <fuzzint>
+
+<minlength_value> = <fuzzint>
+
+<mode_value> = multiply
+<mode_value> = screen
+<mode_value> = showing
+<mode_value> = normal
+
+<multiple_value> = multiple
+
+<muted_value> = muted
+
+<name_value> = <attributestring>
+
+<nohref_value> = nohref
+
+<nonce_value> = nonce
+
+<noresize_value> = noresize
+
+<noshade_value> = noshade
+
+<novalidate_value> = novalidate
+
+<nowrap_value> = nowrap
+
+<open_value> = true
+
+<optimum_value> = <fuzzint>
+
+<pattern_value> = <attributestring>
+
+<ping_value> = <attributestring>
+
+<placeholder_value> = <attributestring>
+
+<playcount_value> = <fuzzint>
+
+<pluginspage_value> = <attributestring>
+
+<poster_value> = <attributestring>
+
+<preload_value> = auto
+<preload_value> = none
+<preload_value> = metadata
+
+<profile_value> = <attributestring>
+
+<prompt_value> = <attributestring>
+
+<quality_value> = high
+
+<radiogroup_value> = group
+
+<readonly_value> = readonly
+
+<ref_value> = author
+
+<referrerpolicy_value> = origin
+<referrerpolicy_value> = unsafe-url
+<referrerpolicy_value> = origin-when-crossorigin
+<referrerpolicy_value> = never
+<referrerpolicy_value> = no-referrer
+<referrerpolicy_value> = no-referrer-when-downgrade
+
+<rel_value> = alternate
+<rel_value> = author
+<rel_value> = bookmark
+<rel_value> = external
+<rel_value> = help
+<rel_value> = license
+<rel_value> = next
+<rel_value> = nofollow
+<rel_value> = noreferrer
+<rel_value> = noopener
+<rel_value> = prev
+<rel_value> = search
+<rel_value> = tag
+
+<required_value> = required
+
+<results_value> = <fuzzint>
+
+<rev_value> = alternate
+<rev_value> = stylesheet
+<rev_value> = start
+<rev_value> = next
+<rev_value> = prev
+<rev_value> = contents
+<rev_value> = index
+<rev_value> = glossary
+<rev_value> = copyright
+<rev_value> = chapter
+<rev_value> = section
+<rev_value> = subsection
+<rev_value> = appendix
+<rev_value> = help
+<rev_value> = bookmark
+
+<reversed_value> = reversed
+
+<right_value> = <fuzzint>
+
+<rightmargin_value> = <fuzzint>
+
+<role_value> = treegrid
+<role_value> = checkbox
+<role_value> = radiogroup
+<role_value> = text
+<role_value> = menuitemcheckbox
+<role_value> = spinbutton
+<role_value> = radio
+<role_value> = slider
+<role_value> = tab
+<role_value> = listbox
+<role_value> = unknownrole checkbox
+<role_value> = textbox
+<role_value> = group
+<role_value> = log
+<role_value> = img
+<role_value> = combobox
+<role_value> = columnheader
+<role_value> = tooltip
+<role_value> = note
+<role_value> = application
+<role_value> = listitem
+<role_value> = row
+<role_value> = presentation
+<role_value> = menuitem
+<role_value> = searchbox
+<role_value> = treeitem
+<role_value> = status
+<role_value> = main
+<role_value> = rowheader
+<role_value> = option
+<role_value> = form
+<role_value> = complementary
+<role_value> = gridcell
+<role_value> = contentinfo
+<role_value> = none
+<role_value> = alert
+<role_value> = alertdialog
+<role_value> = link
+<role_value> = x
+<role_value> = article
+<role_value> = banner
+<role_value> = toolbar
+<role_value> = menuitemradio
+<role_value> = definition
+<role_value> = search
+<role_value> = document
+<role_value> = tree
+<role_value> = marquee
+<role_value> = menubar
+<role_value> = button
+<role_value> = list
+<role_value> = timer
+<role_value> = progressbar
+<role_value> = scrollbar
+<role_value> = separator
+<role_value> = math
+<role_value> = dialog
+<role_value> = menu
+<role_value> = directory
+<role_value> = grid
+<role_value> = tablist
+<role_value> = region
+<role_value> = navigation
+<role_value> = heading
+<role_value> = tabpanel
+
+<row_value> = <fuzzint>
+
+<rows_value> = <fuzzint>
+<rows_value> = <fuzzint>,<fuzzint>
+
+<rowspan_value> = <fuzzint>
+
+<rules_value> = none
+<rules_value> = rows
+<rules_value> = all
+<rules_value> = cols
+<rules_value> = groups
+
+<sandbox_value> = allowScripts allowSameOrigin allowFoobarbloop
+<sandbox_value> = allow-forms allow-scripts
+<sandbox_value> = allow-same-origin allow-scripts
+<sandbox_value> = allow-script allow-same-origin
+<sandbox_value> = allow-same-origin allow-forms allow-scripts
+<sandbox_value> = AlLoW-sCrIpTs allow-same-origin
+<sandbox_value> = allow-scripts allow-same-origin
+<sandbox_value> = allow-pointer-lock allow-scripts
+<sandbox_value> = allow-scripts allow-forms allow-same-origin
+<sandbox_value> = allow-scripts allow-popups allow-forms
+<sandbox_value> = allow-scripts allow-forms allow-same-origin allow-popups
+<sandbox_value> = allow-scripts allow-top-navigation
+<sandbox_value> = allow-same-origin
+<sandbox_value> = allowScripts
+<sandbox_value> = allowScripts allow-same-origin
+<sandbox_value> = allow-scripts allow-same-origin allow-orientation-lock
+<sandbox_value> = allows-cripts allow-same-origin
+<sandbox_value> = aallow-scripts allow-same-origin
+<sandbox_value> = allowscripts allow-same-origin
+<sandbox_value> = allow-scriptss allow-same-origin
+<sandbox_value> = allow-scripts allow-top-navigation allow-same-origin
+<sandbox_value> = allow_scripts allow-same-origin
+<sandbox_value> = allow-scripts allow-same-origin
+<sandbox_value> = allow-scripts allow-popups
+<sandbox_value> = allow-scripts allow-same-origin allow-presentation
+<sandbox_value> = allow-scripts
+
+<scheme_value> = NIST
+
+<scope_value> = colgroup
+<scope_value> = col
+<scope_value> = rowgroup
+<scope_value> = row
+
+<scoped_value> = scoped
+
+<scrollamount_value> = <fuzzint>
+
+<scrolldelay_value> = <fuzzint>
+
+<scrolling_value> = auto
+<scrolling_value> = no
+<scrolling_value> = yes
+
+<seamless_value> = seamless
+
+<seed_value> = <fuzzint>
+
+<select_value> = .<class>
+<select_value> = <hash><elementid>
+
+<selected_value> = selected
+
+<shape_value> = default
+<shape_value> = poly
+<shape_value> = rect
+<shape_value> = circle
+
+<shouldfocus_value> = false
+<shouldfocus_value> = true
+
+<size_value> = <fuzzint>
+
+<sizes_value> = <fuzzint>px
+<sizes_value> = <fuzzint>vw
+
+<slope_value> = -10000
+<slope_value> = 0.5
+<slope_value> = 1
+<slope_value> = 10000
+<slope_value> = 0
+
+<slot_value> = slot1
+<slot_value> = slot2
+
+<span_value> = <fuzzint>
+
+<spellcheck_value> = false
+<spellcheck_value> = true
+
+<src_value> = <imgsrc>
+<src_value> = <audiosrc>
+<src_value> = <videosrc>
+<src_value> = <framesrc>
+
+<srcdoc_value> = <attributestring>
+
+<srcset_value> = <attributestring>
+
+<srclang_value> = <lang_value>
+
+<standby_value> = <attributestring>
+
+<start_value> = <fuzzint>
+
+<startoffset_value> = <float>
+
+<startval_value> = <attributestring>
+
+<step_value> = <fuzzint>
+
+<style_value> = <import from=cssgrammar symbol=declaration5>
+
+<summary_value> = <attributestring>
+
+<tabindex_value> = <fuzzint>
+
+<target_value> = <elementid>
+
+<text_value> = <color>
+
+<title_value> = <attributestring>
+
+<topmargin_value> = <fuzzint>
+
+<translate_value> = yes
+<translate_value> = no
+
+<truespeed_value> = <boolean>
+
+<type_value> = checkbox
+<type_value> = decimal
+<type_value> = text
+<type_value> = image/png
+<type_value> = image/foo
+<type_value> = jscript  1.0 
+<type_value> = datetime
+<type_value> = disc
+<type_value> = radio
+<type_value> = application/x-jscript
+<type_value> = CHECKBOX
+<type_value> = application/x-non-existent
+<type_value> = javascript 1.0 x
+<type_value> = disk
+<type_value> = not-a-number
+<type_value> = text/x-javascript
+<type_value> = password
+<type_value> = text/JAVASCRIPT
+<type_value> = menu
+<type_value> = ecmascript 1
+<type_value> = disabled_javascript
+<type_value> = video/x-chicken-face
+<type_value> = video/webm
+<type_value> = video/quicktime
+<type_value> = input
+<type_value> = circle
+<type_value> = application/x-ecmascript
+<type_value> = bogus
+<type_value> = JavaScript 1.5
+<type_value> = javascript1.1
+<type_value> = upper-roman
+<type_value> = text/javascript 
+<type_value> = JavaScript1.5
+<type_value> = text/javascript;x-test=abc
+<type_value> = x-shader/x-vertex
+<type_value> = text/livescript
+<type_value> = JavaScript1.0
+<type_value> = JavaScript1.3
+<type_value> = application/jscript
+<type_value> = turbulence
+<type_value> = text/javascript1
+<type_value> = month
+<type_value> = JavaScript1.2
+<type_value> = JavaScript 1.1.1
+<type_value> = xxxjavascriptxxx
+<type_value> = rotate
+<type_value> = text/javascript
+<type_value> = text/html
+<type_value> = button
+<type_value> = isindex
+<type_value> = application/x-missing-plugin
+<type_value> = text/x-ecmascript
+<type_value> = audio/x-chicken-face
+<type_value> = text/javascript1.0
+<type_value> = text/javascript1.1
+<type_value> = text/vbscript
+<type_value> = text/javascript1.4
+<type_value> = text/javascript1.5
+<type_value> = CIRCLE
+<type_value> = round
+<type_value> = jscript 1
+<type_value> = JavaScript 2.1
+<type_value> = text/xml
+<type_value> = tel
+<type_value> = FILE
+<type_value> = livescript 1
+<type_value> = text/ecmascript
+<type_value> = image/x-icon
+<type_value> = JAVASCRIPT
+<type_value> = module
+<type_value> = popup
+<type_value> = JavaScript1.1
+<type_value> = text/worker
+<type_value> = image/gif;encodings=
+<type_value> = ROUND
+<type_value> = blue
+<type_value> = text/javascript1.2
+<type_value> = NONE
+<type_value> = scale
+<type_value> = matrix
+<type_value> = audio/x-higglety-pigglety
+<type_value> = text/javascript1.3
+<type_value> = something-not-js
+<type_value> = application/x-shockwave-flash
+<type_value> = ecmascript 1.0
+<type_value> = application/x-unavailable
+<type_value> = text/x-isolate
+<type_value> = text/vbs
+<type_value> = JavaScript 1.4
+<type_value> = unknown/unknown
+<type_value> = application/pdf
+<type_value> = application/xml
+<type_value> = text/javascript1.6
+<type_value> = image/webp
+<type_value> = time 
+<type_value> = email
+<type_value> = date-time
+<type_value> = fractalNoise
+<type_value> = image/gif;encodings
+<type_value> = linear
+<type_value> = text/javaScript
+<type_value> = JavaScript 1.0
+<type_value> = javascript
+<type_value> = application/octet-stream
+<type_value> = application/x-blink-test-plugin'
+<type_value> = JavaScript 1.3
+<type_value> = toolbar
+<type_value> = datetime-local
+<type_value> = search
+<type_value> = lower-roman
+<type_value> = TEXT/JAVASCRIPT
+<type_value> = text/something-not-javascript
+<type_value> = BUTTON
+<type_value> = image/*
+<type_value> = video/mp4
+<type_value> = javascript_1.0
+<type_value> = range
+<type_value> = image/png;bla=bla
+<type_value> = application/not-a-real-applet
+<type_value> = context
+<type_value> = HIDDEN
+<type_value> = UPPER-ROMAN
+<type_value> = gamma
+<type_value> = video/mpeg; codecs='avc1.4D400C'
+<type_value> = image/svg+xml
+<type_value> = color
+<type_value> = image
+<type_value> = number
+<type_value> = JavaScript1.4.1
+<type_value> = image/x-unsupported
+<type_value> = JavaScript1.7
+<type_value> = livescript1.1
+<type_value> = table
+<type_value> = livescript 1.0
+<type_value> = application/x-webkit-test-webplugin-persistent
+<type_value> = video/blahblah
+<type_value> = gif
+<type_value> = .gif
+<type_value> = unknown
+<type_value> = *
+<type_value> = upper-alpha
+<type_value> = JavaScript 10.0
+<type_value> = submit
+<type_value> = image/gif
+<type_value> = application/javascript
+<type_value> = border: 4px solid black; padding: 10px;
+<type_value> = text/plain
+<type_value> = ConText
+<type_value> = translate
+<type_value> = cite
+<type_value> = JavaScript 10
+<type_value> = javascript/frame-script
+<type_value> = JavaScript
+<type_value> = 1.0 javascript
+<type_value> = square
+<type_value> = DECIMAL
+<type_value> = text/
+<type_value> = application/x-invalid-type
+<type_value> = application/x-plugin-placeholder-test
+<type_value> = TEXT
+<type_value> = application/x-javascript
+<type_value> = SQUARE
+<type_value> = JavaScript 2
+<type_value> = LOWER-ROMAN
+<type_value> = textfield
+<type_value> = application/x-java-applet
+<type_value> = hidden
+<type_value> = 3D'text/css'
+<type_value> = application/xhtml+xml
+<type_value> = reset
+<type_value> = application/x-blink-deprecated-test-plugin
+<type_value> = none
+<type_value> = text/JavaScript
+<type_value> = image/jp2
+<type_value> = image/gif image/png
+<type_value> = Text
+<type_value> = JavaScript1
+<type_value> = video/ogg
+<type_value> = SUBMIT
+<type_value> = image\gif
+<type_value> = video/mpeg
+<type_value> = RADIO
+<type_value> = text/css
+<type_value> = application/javascript1.2
+<type_value> = image/gif 
+<type_value> = application/x-blink-test-plugin
+<type_value> = image/jpeg
+<type_value> = jscript
+<type_value> = video/mp4; codecs='avc1.4D400C'
+<type_value> = telephone
+<type_value> = Submit
+<type_value> = LOWER-ALPHA
+<type_value> = jscript 1.0
+<type_value> = DISC
+<type_value> = file
+<type_value> = image/gif;
+<type_value> = application/x-no-such-plugin
+<type_value> = */*
+<type_value> = x-shader/x-fragment
+<type_value> = data:text/html
+<type_value> = DISK
+<type_value> = application/x-xstandard
+<type_value> = text/html; charset=utf-8
+<type_value> = IMAGE
+<type_value> = ecmascript
+<type_value> = invalid
+<type_value> = html
+<type_value> = application/x-webkit-test-webplugin
+<type_value> = video/x-higglety-pigglety
+<type_value> = test
+<type_value> = text/invalid
+<type_value> = text/javascript;charset=UTF-8
+<type_value> = application/x-livescript
+<type_value> = week
+<type_value> = JavaScript 1.8
+<type_value> = JavaScript 1.9
+<type_value> = livescript
+<type_value> = JavaScript 1.6
+<type_value> = JavaScript 1.7
+<type_value> = application/livescript
+<type_value> = JavaScript 1.1
+<type_value> = 3D'cite'
+<type_value> = lower-alpha
+<type_value> = application/nonexistent
+<type_value> = isolated/world
+<type_value> = Application/x-webkit-test-webplugin
+<type_value> = JavaScript1.6
+<type_value> = date
+<type_value> = data
+<type_value> = identity
+<type_value> = text/worklet
+<type_value> = JavaScript1.4
+<type_value> = url
+<type_value> = text/jscript
+<type_value> = UPPER-ALPHA
+<type_value> = application/x-javascript1.2
+<type_value> = video/ogg; codecs='theora,vorbis'
+<type_value> = image/bar
+<type_value> = image/gif, image/png
+<type_value> = block
+<type_value> = time
+<type_value> = JavaScript 1
+<type_value> = application/ecmascript
+
+<usemap_value> = <hash><elementid>
+
+<valign_value> = middle
+<valign_value> = top
+<valign_value> = bottom
+<valign_value> = baseline
+<valign_value> = center
+
+<value_value> = <attributestring>
+
+<valuetype_value> = ref
+
+<version_value> = 1
+<version_value> = -//W3C//DTD HTML 4.01 Transitional//EN
+<version_value> = 1.0
+<version_value> = 1.1
+
+<vlink_value> = <color>
+
+<vspace_value> = <fuzzint>
+
+<width_value> = <fuzzint>
+
+<wrap_value> = soft
+<wrap_value> = hard
+<wrap_value> = off
+

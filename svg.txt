@@ -1,0 +1,2395 @@
+#   Copyright 2017 Google Inc. All Rights Reserved.
+#   Licensed under the Apache License, Version 2.0 (the "License");
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
+
+
+<svgelement_svg> = <lt>svg <svgattrs_svg><gt><newline><svgchildren_svg><lt>/svg<gt>
+<svgchildren_svg> = <svgchild_svg><svgchild_svg><svgchild_svg><svgchild_svg><svgchild_svg><svgchild_svg><svgchild_svg><svgchild_svg><svgchild_svg><svgchild_svg>
+
+<svgchild_svg> = <svgelement_title>
+<svgchild_svg> = <svgelement_g>
+<svgchild_svg> = <svgelement_rect>
+<svgchild_svg> = <svgelement_defs>
+<svgchild_svg> = <svgelement_linearGradient>
+<svgchild_svg> = <svgelement_text>
+<svgchild_svg> = <svgelement_path>
+<svgchild_svg> = <svgelement_pattern>
+<svgchild_svg> = <svgelement_circle>
+<svgchild_svg> = <svgelement_symbol>
+<svgchild_svg> = <svgelement_use>
+<svgchild_svg> = <svgelement_desc>
+<svgchild_svg> = <svgelement_foreignObject>
+<svgchild_svg> = <svgelement_radialGradient>
+<svgchild_svg> = <svgelement_marker>
+<svgchild_svg> = <svgelement_image>
+<svgchild_svg> = <svgelement_animateMotion>
+<svgchild_svg> = <svgelement_ellipse>
+<svgchild_svg> = <svgelement_line>
+<svgchild_svg> = <svgelement_mask>
+<svgchild_svg> = <svgelement_clipPath>
+<svgchild_svg> = <svgelement_font>
+<svgchild_svg> = <svgelement_filter>
+<svgchild_svg> = <svgelement_polyline>
+<svgchild_svg> = <svgelement_stop>
+<svgchild_svg> = <svgelement_a>
+<svgchild_svg> = <svgelement_switch>
+<svgchild_svg> = <svgelement_set>
+<svgchild_svg> = <svgelement_font-face>
+<svgchild_svg> = <svgelement_polygon>
+<svgchild_svg> = <svgelement_tspan>
+<svgchild_svg> = <svgelement_tref>
+<svgchild_svg> = <svgelement_textPath>
+<svgchild_svg> = <svgelement_metadata>
+<svgchild_svg> = <svgelement_discard>
+<svgchild_svg> = <svgelement_animate>
+<svgchild_svg> = <svgelement_feConvolveMatrix>
+<svgchild_svg> = <svgelement_animateTransform>
+<svgchild_svg> = <svgelement_feDistantLight>
+<svgchild_svg> = <svgelement_glyph>
+<svgchild_svg> = <svgelement_cursor>
+<svgchild_svg> = <svgelement_font-face-uri>
+<svgchild_svg> = <svgelement_view>
+<svgchild_svg> = <svgelement>
+
+<svgattrs_svg> = <svgattrx_svg> <svgattrx_svg> <svgattrx_svg> <svgattrx_svg> <svgattrx_svg> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_svg> = <svgattr_width>
+<svgattrx_svg> = <svgattr_version>
+<svgattrx_svg> = <svgattr_baseProfile>
+<svgattrx_svg> = <svgattr_xml_id>
+<svgattrx_svg> = <svgattr_viewBox>
+<svgattrx_svg> = <svgattr_height>
+<svgattrx_svg> = <svgattr_onload>
+<svgattrx_svg> = <svgattr_stroke>
+<svgattrx_svg> = <svgattr_stroke-linecap>
+<svgattrx_svg> = <svgattr_marker-end>
+<svgattrx_svg> = <svgattr_marker-start>
+<svgattrx_svg> = <svgattr_marker-mid>
+<svgattrx_svg> = <svgattr_style>
+<svgattrx_svg> = <svgattr_xml_space>
+<svgattrx_svg> = <svgattr_fill>
+<svgattrx_svg> = <svgattr_preserveAspectRatio>
+<svgattrx_svg> = <svgattr_font-size>
+<svgattrx_svg> = <svgattr_y>
+<svgattrx_svg> = <svgattr_x>
+<svgattrx_svg> = <svgattr_overflow>
+<svgattrx_svg> = <svgattr_onclick>
+<svgattrx_svg> = <svgattr_opacity>
+<svgattrx_svg> = <svgattr_zoomAndPan>
+<svgattrx_svg> = <svgattr_contentStyleType>
+<svgattrx_svg> = <svgattr_enable-background>
+<svgattrx_svg> = <svgattr_contentScriptType>
+<svgattrx_svg> = <svgattr_clip-path>
+<svgattrx_svg> = <svgattr_text-anchor>
+<svgattrx_svg> = <svgattr_externalResourcesRequired>
+<svgattrx_svg> = <svgattr_transform>
+<svgattrx_svg> = <svgattr_filter>
+<svgattrx_svg> = <svgattr_viewbox>
+
+
+<svgelement> = <svgelement_a>
+<svgelement> = <svgelement_altGlyph>
+<svgelement> = <svgelement_altGlyphDef>
+<svgelement> = <svgelement_altGlyphItem>
+<svgelement> = <svgelement_animate>
+<svgelement> = <svgelement_animateColor>
+<svgelement> = <svgelement_animateMotion>
+<svgelement> = <svgelement_animateTransform>
+<svgelement> = <svgelement_circle>
+<svgelement> = <svgelement_clipPath>
+<svgelement> = <svgelement_color-profile>
+<svgelement> = <svgelement_cursor>
+<svgelement> = <svgelement_defs>
+<svgelement> = <svgelement_desc>
+<svgelement> = <svgelement_discard>
+<svgelement> = <svgelement_ellipse>
+<svgelement> = <svgelement_feBlend>
+<svgelement> = <svgelement_feColorMatrix>
+<svgelement> = <svgelement_feComponentTransfer>
+<svgelement> = <svgelement_feComposite>
+<svgelement> = <svgelement_feConvolveMatrix>
+<svgelement> = <svgelement_feDiffuseLighting>
+<svgelement> = <svgelement_feDisplacementMap>
+<svgelement> = <svgelement_feDistantLight>
+<svgelement> = <svgelement_feDropShadow>
+<svgelement> = <svgelement_feFlood>
+<svgelement> = <svgelement_feFuncA>
+<svgelement> = <svgelement_feFuncB>
+<svgelement> = <svgelement_feFuncG>
+<svgelement> = <svgelement_feFuncR>
+<svgelement> = <svgelement_feGaussianBlur>
+<svgelement> = <svgelement_feImage>
+<svgelement> = <svgelement_feMerge>
+<svgelement> = <svgelement_feMergeNode>
+<svgelement> = <svgelement_feMorphology>
+<svgelement> = <svgelement_feOffset>
+<svgelement> = <svgelement_fePointLight>
+<svgelement> = <svgelement_feSpecularLighting>
+<svgelement> = <svgelement_feSpotLight>
+<svgelement> = <svgelement_feTile>
+<svgelement> = <svgelement_feTurbulence>
+<svgelement> = <svgelement_filter>
+<svgelement> = <svgelement_font>
+<svgelement> = <svgelement_font-face>
+<svgelement> = <svgelement_font-face-format>
+<svgelement> = <svgelement_font-face-name>
+<svgelement> = <svgelement_font-face-src>
+<svgelement> = <svgelement_font-face-uri>
+<svgelement> = <svgelement_foreignObject>
+<svgelement> = <svgelement_g>
+<svgelement> = <svgelement_glyph>
+<svgelement> = <svgelement_glyphRef>
+<svgelement> = <svgelement_hatch>
+<svgelement> = <svgelement_hatchpath>
+<svgelement> = <svgelement_hkern>
+<svgelement> = <svgelement_image>
+<svgelement> = <svgelement_line>
+<svgelement> = <svgelement_linearGradient>
+<svgelement> = <svgelement_marker>
+<svgelement> = <svgelement_mask>
+<svgelement> = <svgelement_mesh>
+<svgelement> = <svgelement_meshgradient>
+<svgelement> = <svgelement_meshpatch>
+<svgelement> = <svgelement_meshrow>
+<svgelement> = <svgelement_metadata>
+<svgelement> = <svgelement_missing-glyph>
+<svgelement> = <svgelement_mpath>
+<svgelement> = <svgelement_path>
+<svgelement> = <svgelement_pattern>
+<svgelement> = <svgelement_polygon>
+<svgelement> = <svgelement_polyline>
+<svgelement> = <svgelement_radialGradient>
+<svgelement> = <svgelement_rect>
+<svgelement> = <svgelement_set>
+<svgelement> = <svgelement_solidcolor>
+<svgelement> = <svgelement_stop>
+<svgelement> = <svgelement_switch>
+<svgelement> = <svgelement_symbol>
+<svgelement> = <svgelement_text>
+<svgelement> = <svgelement_textPath>
+<svgelement> = <svgelement_title>
+<svgelement> = <svgelement_tref>
+<svgelement> = <svgelement_tspan>
+<svgelement> = <svgelement_unknown>
+<svgelement> = <svgelement_use>
+<svgelement> = <svgelement_view>
+<svgelement> = <svgelement_vkern>
+
+
+<svgelement_a> = <lt>a <svgattrs_a> /<gt><newline>
+<svgelement_a> = <lt>a <svgattrs_a><gt><newline><svgchildren_a><lt>/a<gt><newline>
+<svgchildren_a nonrecursive=true p=0.5> = <svgchild_a>
+<svgchildren_a> = <svgchild_a><svgchildren_a>
+<svgchild_a> = <svgelement>
+
+<svgattrs_a> = <svgattrx_a> <svgattrx_a> <svgattrx_a> <svgattrx_a> <svgattrx_a> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_a> = <svgattr_xlink_href>
+<svgattrx_a> = <svgattr_href>
+<svgattrx_a> = <svgattr_name>
+<svgattrx_a> = <svgattr_font-size>
+<svgattrx_a> = <svgattr_font-weight>
+<svgattrx_a> = <svgattr_transform>
+<svgattrx_a> = <svgattr_text-anchor>
+<svgattrx_a> = <svgattr_xlink_show>
+<svgattrx_a> = <svgattr_fill>
+<svgattrx_a> = <svgattr_xlink_title>
+<svgattrx_a> = <svgattr_target>
+<svgattrx_a> = <svgattr_xlink_actuate>
+<svgattrx_a> = <svgattr_xlink_type>
+<svgattrx_a> = <svgattr_stroke>
+<svgattrx_a> = <svgattr_font-family>
+
+
+<svgelement_altGlyph> = <lt>altGlyph <svgattrs_altGlyph><gt><newline>A<lt>/altGlyph<gt><newline>
+
+<svgattrs_altGlyph> = <svgattrx_altGlyph> <svgattrx_altGlyph> <svgattrx_altGlyph> <svgattrx_altGlyph> <svgattrx_altGlyph> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_altGlyph> = <svgattr_xlink_href>
+<svgattrx_altGlyph> = <svgattr_glyphRef>
+<svgattrx_altGlyph> = <svgattr_color-interpolation-filters>
+
+
+<svgelement_altGlyphDef> = <lt>altGlyphDef <svgattrs_altGlyphDef><gt><newline><svgchildren_altGlyphDef><lt>/altGlyphDef<gt><newline>
+<svgchildren_altGlyphDef nonrecursive=true p=0.5> = <svgchild_altGlyphDef>
+<svgchildren_altGlyphDef> = <svgchild_altGlyphDef><svgchildren_altGlyphDef>
+<svgchild_altGlyphDef> = <svgelement_glyphRef>
+<svgchild_altGlyphDef> = <svgelement>
+
+<svgattrs_altGlyphDef> = <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+
+
+<svgelement_altGlyphItem> = <lt>altGlyphItem <svgattrs_altGlyphItem> /<gt><newline>
+<svgelement_altGlyphItem> = <lt>altGlyphItem <svgattrs_altGlyphItem><gt><newline><svgchildren_altGlyphItem><lt>/altGlyphItem<gt><newline>
+<svgchildren_altGlyphItem nonrecursive=true p=0.5> = <svgchild_altGlyphItem>
+<svgchildren_altGlyphItem> = <svgchild_altGlyphItem><svgchildren_altGlyphItem>
+<svgchild_altGlyphItem> = <svgelement>
+
+<svgattrs_altGlyphItem> = <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+
+
+<svgelement_animate> = <lt>animate <svgattrs_animate> /<gt><newline>
+<svgelement_animate> = <lt>animate <animateattr> <svgattrs_animate> /<gt><newline>
+
+<animateattr> = attributeName="visibility" from="<svgattr_visibility_value>" to="<svgattr_visibility_value>"
+<animateattr> = attributeName="width" from="<svgattr_width_value>" to="<svgattr_width_value>"
+<animateattr> = attributeName="x" from="<svgattr_x_value>" to="<svgattr_x_value>"
+<animateattr> = attributeName="cy" from="<svgattr_cy_value>" to="<svgattr_cy_value>"
+<animateattr> = attributeName="fill" from="<svgattr_fill_value>" to="<svgattr_fill_value>"
+<animateattr> = attributeName="display" from="<svgattr_display_value>" to="<svgattr_display_value>"
+<animateattr> = attributeName="stroke" from="<svgattr_stroke_value>" to="<svgattr_stroke_value>"
+<animateattr> = attributeName="points" from="<svgattr_points_value>" to="<svgattr_points_value>"
+<animateattr> = attributeName="rotate" from="<svgattr_rotate_value>" to="<svgattr_rotate_value>"
+<animateattr> = attributeName="d" from="<svgattr_d_value>" to="<svgattr_d_value>"
+<animateattr> = attributeName="gradientUnits" from="<svgattr_gradientUnits_value>" to="<svgattr_gradientUnits_value>"
+<animateattr> = attributeName="y" from="<svgattr_y_value>" to="<svgattr_y_value>"
+<animateattr> = attributeName="dx" from="<svgattr_dx_value>" to="<svgattr_dx_value>"
+<animateattr> = attributeName="dy" from="<svgattr_dy_value>" to="<svgattr_dy_value>"
+<animateattr> = attributeName="spreadMethod" from="<svgattr_spreadMethod_value>" to="<svgattr_spreadMethod_value>"
+<animateattr> = attributeName="transform" from="<svgattr_transform_value>" to="<svgattr_transform_value>"
+<animateattr> = attributeName="patternContentUnits" from="<svgattr_patternContentUnits_value>" to="<svgattr_patternContentUnits_value>"
+<animateattr> = attributeName="fy" from="<svgattr_fy_value>" to="<svgattr_fy_value>"
+<animateattr> = attributeName="fr" from="<svgattr_fr_value>" to="<svgattr_fr_value>"
+<animateattr> = attributeName="viewBox" from="<svgattr_viewBox_value>" to="<svgattr_viewBox_value>"
+<animateattr> = attributeName="height" from="<svgattr_height_value>" to="<svgattr_height_value>"
+<animateattr> = attributeName="fx" from="<svgattr_fx_value>" to="<svgattr_fx_value>"
+<animateattr> = attributeName="patternTransform" from="<svgattr_patternTransform_value>" to="<svgattr_patternTransform_value>"
+<animateattr> = attributeName="cx" from="<svgattr_cx_value>" to="<svgattr_cx_value>"
+<animateattr> = attributeName="patternUnits" from="<svgattr_patternUnits_value>" to="<svgattr_patternUnits_value>"
+<animateattr> = attributeName="gradientTransform" from="<svgattr_gradientTransform_value>" to="<svgattr_gradientTransform_value>"
+<animateattr> = attributeName="r" from="<svgattr_r_value>" to="<svgattr_r_value>"
+<animateattr> = attributeName="preserveAspectRatio" from="<svgattr_preserveAspectRatio_value>" to="<svgattr_preserveAspectRatio_value>"
+<animateattr> = attributeName="result" from="<svgattr_result_value>" to="<svgattr_result_value>"
+<animateattr> = attributeName="preserveAlpha" from="<svgattr_preserveAlpha_value>" to="<svgattr_preserveAlpha_value>"
+<animateattr> = attributeName="filterUnits" from="<svgattr_filterUnits_value>" to="<svgattr_filterUnits_value>"
+<animateattr> = attributeName="opacity" from="<svgattr_opacity_value>" to="<svgattr_opacity_value>"
+<animateattr> = attributeName="orient" from="<svgattr_orient_value>" to="<svgattr_orient_value>"
+<animateattr> = attributeName="kernelUnitLength" from="<svgattr_kernelUnitLength_value>" to="<svgattr_kernelUnitLength_value>"
+<animateattr> = attributeName="divisor" from="<svgattr_divisor_value>" to="<svgattr_divisor_value>"
+<animateattr> = attributeName="kernelMatrix" from="<svgattr_kernelMatrix_value>" to="<svgattr_kernelMatrix_value>"
+<animateattr> = attributeName="order" from="<svgattr_order_value>" to="<svgattr_order_value>"
+<animateattr> = attributeName="targetX" from="<svgattr_targetX_value>" to="<svgattr_targetX_value>"
+<animateattr> = attributeName="values" from="<svgattr_values_value>" to="<svgattr_values_value>"
+<animateattr> = attributeName="stroke-width" from="<svgattr_stroke-width_value>" to="<svgattr_stroke-width_value>"
+<animateattr> = attributeName="fill-rule" from="<svgattr_fill-rule_value>" to="<svgattr_fill-rule_value>"
+<animateattr> = attributeName="text-anchor" from="<svgattr_text-anchor_value>" to="<svgattr_text-anchor_value>"
+<animateattr> = attributeName="font-size" from="<svgattr_font-size_value>" to="<svgattr_font-size_value>"
+<animateattr> = attributeName="font-family" from="<svgattr_font-family_value>" to="<svgattr_font-family_value>"
+<animateattr> = attributeName="font-style" from="<svgattr_font-style_value>" to="<svgattr_font-style_value>"
+<animateattr> = attributeName="font-weight" from="<svgattr_font-weight_value>" to="<svgattr_font-weight_value>"
+<animateattr> = attributeName="xlink:href" from="<svgattr_xlink_href_value>" to="<svgattr_xlink_href_value>"
+<animateattr> = attributeName="color" from="<svgattr_color_value>" to="<svgattr_color_value>"
+<animateattr> = attributeName="rx" from="<svgattr_rx_value>" to="<svgattr_rx_value>"
+<animateattr> = attributeName="ry" from="<svgattr_ry_value>" to="<svgattr_ry_value>"
+<animateattr> = attributeName="stop-color" from="<svgattr_stop-color_value>" to="<svgattr_stop-color_value>"
+<animateattr> = attributeName="stop-opacity" from="<svgattr_stop-opacity_value>" to="<svgattr_stop-opacity_value>"
+<animateattr> = attributeName="limitingConeAngle" from="<svgattr_limitingConeAngle_value>" to="<svgattr_limitingConeAngle_value>"
+<animateattr> = attributeName="fill-opacity" from="<svgattr_fill-opacity_value>" to="<svgattr_fill-opacity_value>"
+<animateattr> = attributeName="stroke-linecap" from="<svgattr_stroke-linecap_value>" to="<svgattr_stroke-linecap_value>"
+<animateattr> = attributeName="stroke-linejoin" from="<svgattr_stroke-linejoin_value>" to="<svgattr_stroke-linejoin_value>"
+<animateattr> = attributeName="stroke-miterlimit" from="<svgattr_stroke-miterlimit_value>" to="<svgattr_stroke-miterlimit_value>"
+<animateattr> = attributeName="stroke-dashoffset" from="<svgattr_stroke-dashoffset_value>" to="<svgattr_stroke-dashoffset_value>"
+<animateattr> = attributeName="refY" from="<svgattr_refY_value>" to="<svgattr_refY_value>"
+
+<svgattrs_animate> = <svgattrx_animate> <svgattrx_animate> <svgattrx_animate> <svgattrx_animate> <svgattrx_animate> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_animate> = <svgattr_to>
+<svgattrx_animate> = <svgattr_attributeName>
+<svgattrx_animate> = <svgattr_begin>
+<svgattrx_animate> = <svgattr_from>
+<svgattrx_animate> = <svgattr_dur>
+<svgattrx_animate> = <svgattr_fill>
+<svgattrx_animate> = <svgattr_by>
+<svgattrx_animate> = <svgattr_accumulate>
+<svgattrx_animate> = <svgattr_additive>
+<svgattrx_animate> = <svgattr_repeatCount>
+<svgattrx_animate> = <svgattr_values>
+<svgattrx_animate> = <svgattr_attributeType>
+<svgattrx_animate> = <svgattr_onrepeat>
+<svgattrx_animate> = <svgattr_calcMode>
+<svgattrx_animate> = <svgattr_end>
+<svgattrx_animate> = <svgattr_onend>
+<svgattrx_animate> = <svgattr_onbegin>
+<svgattrx_animate> = <svgattr_repeatDur>
+<svgattrx_animate> = <svgattr_xlink_href>
+<svgattrx_animate> = <svgattr_keyTimes>
+<svgattrx_animate> = <svgattr_keySplines>
+
+
+<svgelement_animateColor> = <lt>animateColor <svgattrs_animateColor> /<gt><newline>
+
+<svgattrs_animateColor> = <svgattrx_animateColor> <svgattrx_animateColor> <svgattrx_animateColor> <svgattrx_animateColor> <svgattrx_animateColor> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_animateColor> = <svgattr_begin>
+<svgattrx_animateColor> = <svgattr_from>
+<svgattrx_animateColor> = <svgattr_repeatCount>
+<svgattrx_animateColor> = <svgattr_attributeName>
+<svgattrx_animateColor> = <svgattr_to>
+<svgattrx_animateColor> = <svgattr_accumulate>
+<svgattrx_animateColor> = <svgattr_additive>
+<svgattrx_animateColor> = <svgattr_dur>
+<svgattrx_animateColor> = <svgattr_fill>
+<svgattrx_animateColor> = <svgattr_values>
+<svgattrx_animateColor> = <svgattr_by>
+
+
+<svgelement_animateMotion> = <lt>animateMotion <svgattrs_animateMotion> /<gt><newline>
+
+<svgattrs_animateMotion> = <svgattrx_animateMotion> <svgattrx_animateMotion> <svgattrx_animateMotion> <svgattrx_animateMotion> <svgattrx_animateMotion> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_animateMotion> = <svgattr_dur>
+<svgattrx_animateMotion> = <svgattr_begin>
+<svgattrx_animateMotion> = <svgattr_attributeName>
+<svgattrx_animateMotion> = <svgattr_xlink_href>
+<svgattrx_animateMotion> = <svgattr_values>
+<svgattrx_animateMotion> = <svgattr_fill>
+<svgattrx_animateMotion> = <svgattr_additive>
+<svgattrx_animateMotion> = <svgattr_accumulate>
+<svgattrx_animateMotion> = <svgattr_repeatCount>
+<svgattrx_animateMotion> = <svgattr_to>
+<svgattrx_animateMotion> = <svgattr_from>
+<svgattrx_animateMotion> = <svgattr_by>
+<svgattrx_animateMotion> = <svgattr_path>
+<svgattrx_animateMotion> = <svgattr_repeatDur>
+<svgattrx_animateMotion> = <svgattr_rotate>
+<svgattrx_animateMotion> = <svgattr_keyPoints>
+<svgattrx_animateMotion> = <svgattr_calcMode>
+<svgattrx_animateMotion> = <svgattr_keyTimes>
+<svgattrx_animateMotion> = <svgattr_keySplines>
+
+
+<svgelement_animateTransform> = <lt>animateTransform <svgattrs_animateTransform> /<gt><newline>
+
+<svgattrs_animateTransform> = <svgattrx_animateTransform> <svgattrx_animateTransform> <svgattrx_animateTransform> <svgattrx_animateTransform> <svgattrx_animateTransform> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_animateTransform> = <svgattr_to>
+<svgattrx_animateTransform> = <svgattr_begin>
+<svgattrx_animateTransform> = <svgattr_from>
+<svgattrx_animateTransform> = <svgattr_type>
+<svgattrx_animateTransform> = <svgattr_dur>
+<svgattrx_animateTransform> = <svgattr_attributeName>
+<svgattrx_animateTransform> = <svgattr_fill>
+<svgattrx_animateTransform> = <svgattr_additive>
+<svgattrx_animateTransform> = <svgattr_repeatCount>
+<svgattrx_animateTransform> = <svgattr_accumulate>
+<svgattrx_animateTransform> = <svgattr_by>
+<svgattrx_animateTransform> = <svgattr_attributeType>
+<svgattrx_animateTransform> = <svgattr_values>
+<svgattrx_animateTransform> = <svgattr_xlink_href>
+<svgattrx_animateTransform> = <svgattr_calcMode>
+
+
+<svgelement_circle> = <lt>circle <svgattr_cx> <svgattr_cy> <svgattr_r> <svgattrs_circle> /<gt><newline>
+<svgelement_circle> = <lt>circle <svgattr_cx> <svgattr_cy> <svgattr_r> <svgattrs_circle><gt><newline><svgchildren_circle><lt>/circle<gt><newline>
+<svgchildren_circle nonrecursive=true p=0.5> = <svgchild_circle>
+<svgchildren_circle> = <svgchild_circle><svgchildren_circle>
+<svgchild_circle> = <svgelement_animate>
+<svgchild_circle> = <svgelement_animateMotion>
+<svgchild_circle> = <svgelement_set>
+<svgchild_circle> = <svgelement_animateColor>
+<svgchild_circle> = <svgelement_animateTransform>
+<svgchild_circle> = <svgelement>
+
+<svgattrs_circle> = <svgattrx_circle> <svgattrx_circle> <svgattrx_circle> <svgattrx_circle> <svgattrx_circle> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_circle> = <svgattr_stroke>
+<svgattrx_circle> = <svgattr_fill>
+<svgattrx_circle> = <svgattr_style>
+<svgattrx_circle> = <svgattr_class>
+<svgattrx_circle> = <svgattr_shape-rendering>
+<svgattrx_circle> = <svgattr_opacity>
+<svgattrx_circle> = <svgattr_onclick>
+<svgattrx_circle> = <svgattr_onmousedown>
+<svgattrx_circle> = <svgattr_fill-opacity>
+<svgattrx_circle> = <svgattr_mask>
+<svgattrx_circle> = <svgattr_stroke-width>
+<svgattrx_circle> = <svgattr_stroke-dasharray>
+<svgattrx_circle> = <svgattr_transform>
+<svgattrx_circle> = <svgattr_clip-rule>
+<svgattrx_circle> = <svgattr_clip-path>
+<svgattrx_circle> = <svgattr_lang>
+<svgattrx_circle> = <svgattr_display>
+<svgattrx_circle> = <svgattr_font-style>
+<svgattrx_circle> = <svgattr_filter>
+<svgattrx_circle> = <svgattr_onmouseover>
+<svgattrx_circle> = <svgattr_onmouseout>
+<svgattrx_circle> = <svgattr_visibility>
+<svgattrx_circle> = <svgattr_stroke-opacity>
+<svgattrx_circle> = <svgattr_aria-label>
+<svgattrx_circle> = <svgattr_role>
+
+
+<svgelement_clipPath> = <lt>clipPath <svgattrs_clipPath> /<gt><newline>
+<svgelement_clipPath> = <lt>clipPath <svgattrs_clipPath><gt><newline><svgchildren_clipPath><lt>/clipPath<gt><newline>
+<svgchildren_clipPath nonrecursive=true p=0.5> = <svgchild_clipPath>
+<svgchildren_clipPath> = <svgchild_clipPath><svgchildren_clipPath>
+<svgchild_clipPath> = <svgelement>
+
+<svgattrs_clipPath> = <svgattrx_clipPath> <svgattrx_clipPath> <svgattrx_clipPath> <svgattrx_clipPath> <svgattrx_clipPath> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_clipPath> = <svgattr_clipPathUnits>
+<svgattrx_clipPath> = <svgattr_clip-path>
+<svgattrx_clipPath> = <svgattr_transform>
+<svgattrx_clipPath> = <svgattr_style>
+<svgattrx_clipPath> = <svgattr_clip-rule>
+<svgattrx_clipPath> = <svgattr_lighting-color>
+
+
+<svgelement_color-profile> = <lt>color-profile <svgattrs_color-profile> /<gt><newline>
+
+<svgattrs_color-profile> = <svgattrx_color-profile> <svgattrx_color-profile> <svgattrx_color-profile> <svgattrx_color-profile> <svgattrx_color-profile> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_color-profile> = <svgattr_xlink_href>
+<svgattrx_color-profile> = <svgattr_name>
+
+
+<svgelement_cursor> = <lt>cursor <svgattrs_cursor> /<gt><newline>
+
+<svgattrs_cursor> = <svgattrx_cursor> <svgattrx_cursor> <svgattrx_cursor> <svgattrx_cursor> <svgattrx_cursor> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_cursor> = <svgattr_xlink_href>
+<svgattrx_cursor> = <svgattr_x>
+<svgattrx_cursor> = <svgattr_y>
+
+
+<svgelement_defs> = <lt>defs <svgattrs_defs> /<gt><newline>
+<svgelement_defs> = <lt>defs <svgattrs_defs><gt><newline><svgchildren_defs><lt>/defs<gt><newline>
+<svgchildren_defs nonrecursive=true p=0.5> = <svgchild_defs>
+<svgchildren_defs> = <svgchild_defs><svgchildren_defs>
+<svgchild_defs> = <svgelement>
+
+<svgattrs_defs> = <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+
+
+<svgelement_desc> = <lt>desc <svgattrs_desc><gt><htmlsafestring min=32 max=126><lt>/desc<gt><newline>
+<svgattrs_desc> = <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+
+
+<svgelement_discard> = <lt>discard <svgattrs_discard> /<gt><newline>
+
+<svgattrs_discard> = <svgattrx_discard> <svgattrx_discard> <svgattrx_discard> <svgattrx_discard> <svgattrx_discard> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_discard> = <svgattr_begin>
+<svgattrx_discard> = <svgattr_xlink_href>
+
+
+<svgelement_ellipse> = <lt>ellipse <svgattr_cx> <svgattr_cy> <svgattr_rx> <svgattr_ry> <svgattrs_ellipse> /<gt><newline>
+<svgelement_ellipse> = <lt>ellipse <svgattr_cx> <svgattr_cy> <svgattr_rx> <svgattr_ry> <svgattrs_ellipse><gt><newline><svgchildren_ellipse><lt>/ellipse<gt><newline>
+<svgchildren_ellipse nonrecursive=true p=0.5> = <svgchild_ellipse>
+<svgchildren_ellipse> = <svgchild_ellipse><svgchildren_ellipse>
+<svgchild_ellipse> = <svgelement_animate>
+<svgchild_ellipse> = <svgelement>
+
+<svgattrs_ellipse> = <svgattrx_ellipse> <svgattrx_ellipse> <svgattrx_ellipse> <svgattrx_ellipse> <svgattrx_ellipse> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_ellipse> = <svgattr_stroke>
+<svgattrx_ellipse> = <svgattr_fill>
+<svgattrx_ellipse> = <svgattr_transform>
+<svgattrx_ellipse> = <svgattr_font-variant>
+<svgattrx_ellipse> = <svgattr_stroke-width>
+<svgattrx_ellipse> = <svgattr_aria-label>
+<svgattrx_ellipse> = <svgattr_role>
+
+
+<svgelement_feBlend> = <lt>feBlend <svgattrs_feBlend> /<gt><newline>
+
+<svgattrs_feBlend> = <svgattrx_feBlend> <svgattrx_feBlend> <svgattrx_feBlend> <svgattrx_feBlend> <svgattrx_feBlend> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_feBlend> = <svgattr_mode>
+<svgattrx_feBlend> = <svgattr_in2>
+<svgattrx_feBlend> = <svgattr_in>
+
+
+<svgelement_feColorMatrix> = <lt>feColorMatrix <svgattrs_feColorMatrix> /<gt><newline>
+<svgelement_feColorMatrix> = <lt>feColorMatrix <svgattrs_feColorMatrix><gt><newline><svgchildren_feColorMatrix><lt>/feColorMatrix<gt><newline>
+<svgchildren_feColorMatrix nonrecursive=true p=0.5> = <svgchild_feColorMatrix>
+<svgchildren_feColorMatrix> = <svgchild_feColorMatrix><svgchildren_feColorMatrix>
+<svgchild_feColorMatrix> = <svgelement_animate>
+<svgchild_feColorMatrix> = <svgelement>
+
+<svgattrs_feColorMatrix> = <svgattrx_feColorMatrix> <svgattrx_feColorMatrix> <svgattrx_feColorMatrix> <svgattrx_feColorMatrix> <svgattrx_feColorMatrix> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_feColorMatrix> = <svgattr_type>
+<svgattrx_feColorMatrix> = <svgattr_values>
+<svgattrx_feColorMatrix> = <svgattr_result>
+<svgattrx_feColorMatrix> = <svgattr_in>
+<svgattrx_feColorMatrix> = <svgattr_color-interpolation-filters>
+
+
+<svgelement_feComponentTransfer> = <lt>feComponentTransfer <svgattrs_feComponentTransfer> /<gt><newline>
+<svgelement_feComponentTransfer> = <lt>feComponentTransfer <svgattrs_feComponentTransfer><gt><newline><svgchildren_feComponentTransfer><lt>/feComponentTransfer<gt><newline>
+<svgchildren_feComponentTransfer nonrecursive=true p=0.5> = <svgchild_feComponentTransfer>
+<svgchildren_feComponentTransfer> = <svgchild_feComponentTransfer><svgchildren_feComponentTransfer>
+<svgchild_feComponentTransfer> = <svgelement_feFuncR>
+<svgchild_feComponentTransfer> = <svgelement_feFuncG>
+<svgchild_feComponentTransfer> = <svgelement_feFuncB>
+<svgchild_feComponentTransfer> = <svgelement_feFuncA>
+<svgchild_feComponentTransfer> = <svgelement>
+
+<svgattrs_feComponentTransfer> = <svgattrx_feComponentTransfer> <svgattrx_feComponentTransfer> <svgattrx_feComponentTransfer> <svgattrx_feComponentTransfer> <svgattrx_feComponentTransfer> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_feComponentTransfer> = <svgattr_y>
+<svgattrx_feComponentTransfer> = <svgattr_x>
+<svgattrx_feComponentTransfer> = <svgattr_width>
+<svgattrx_feComponentTransfer> = <svgattr_height>
+<svgattrx_feComponentTransfer> = <svgattr_result>
+<svgattrx_feComponentTransfer> = <svgattr_in>
+
+
+<svgelement_feComposite> = <lt>feComposite <svgattrs_feComposite> /<gt><newline>
+
+<svgattrs_feComposite> = <svgattrx_feComposite> <svgattrx_feComposite> <svgattrx_feComposite> <svgattrx_feComposite> <svgattrx_feComposite> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_feComposite> = <svgattr_in2>
+<svgattrx_feComposite> = <svgattr_in>
+<svgattrx_feComposite> = <svgattr_operator>
+<svgattrx_feComposite> = <svgattr_width>
+<svgattrx_feComposite> = <svgattr_result>
+<svgattrx_feComposite> = <svgattr_y>
+<svgattrx_feComposite> = <svgattr_x>
+<svgattrx_feComposite> = <svgattr_height>
+<svgattrx_feComposite> = <svgattr_k4>
+<svgattrx_feComposite> = <svgattr_k1>
+<svgattrx_feComposite> = <svgattr_k3>
+<svgattrx_feComposite> = <svgattr_k2>
+
+
+<svgelement_feConvolveMatrix> = <lt>feConvolveMatrix <svgattrs_feConvolveMatrix> /<gt><newline>
+
+<svgattrs_feConvolveMatrix> = <svgattrx_feConvolveMatrix> <svgattrx_feConvolveMatrix> <svgattrx_feConvolveMatrix> <svgattrx_feConvolveMatrix> <svgattrx_feConvolveMatrix> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_feConvolveMatrix> = <svgattr_kernelMatrix>
+<svgattrx_feConvolveMatrix> = <svgattr_preserveAlpha>
+<svgattrx_feConvolveMatrix> = <svgattr_targetX>
+<svgattrx_feConvolveMatrix> = <svgattr_order>
+<svgattrx_feConvolveMatrix> = <svgattr_divisor>
+<svgattrx_feConvolveMatrix> = <svgattr_kernelUnitLength>
+<svgattrx_feConvolveMatrix> = <svgattr_targetY>
+<svgattrx_feConvolveMatrix> = <svgattr_edgeMode>
+
+
+<svgelement_feDiffuseLighting> = <lt>feDiffuseLighting <svgattrs_feDiffuseLighting> /<gt><newline>
+<svgelement_feDiffuseLighting> = <lt>feDiffuseLighting <svgattrs_feDiffuseLighting><gt><newline><svgchildren_feDiffuseLighting><lt>/feDiffuseLighting<gt><newline>
+<svgchildren_feDiffuseLighting nonrecursive=true p=0.5> = <svgchild_feDiffuseLighting>
+<svgchildren_feDiffuseLighting> = <svgchild_feDiffuseLighting><svgchildren_feDiffuseLighting>
+<svgchild_feDiffuseLighting> = <svgelement_feDistantLight>
+<svgchild_feDiffuseLighting> = <svgelement_fePointLight>
+<svgchild_feDiffuseLighting> = <svgelement_feSpotLight>
+<svgchild_feDiffuseLighting> = <svgelement>
+
+<svgattrs_feDiffuseLighting> = <svgattrx_feDiffuseLighting> <svgattrx_feDiffuseLighting> <svgattrx_feDiffuseLighting> <svgattrx_feDiffuseLighting> <svgattrx_feDiffuseLighting> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_feDiffuseLighting> = <svgattr_lighting-color>
+<svgattrx_feDiffuseLighting> = <svgattr_result>
+<svgattrx_feDiffuseLighting> = <svgattr_in>
+<svgattrx_feDiffuseLighting> = <svgattr_color>
+<svgattrx_feDiffuseLighting> = <svgattr_surfaceScale>
+<svgattrx_feDiffuseLighting> = <svgattr_diffuseConstant>
+
+
+<svgelement_feDisplacementMap> = <lt>feDisplacementMap <svgattrs_feDisplacementMap> /<gt><newline>
+
+<svgattrs_feDisplacementMap> = <svgattrx_feDisplacementMap> <svgattrx_feDisplacementMap> <svgattrx_feDisplacementMap> <svgattrx_feDisplacementMap> <svgattrx_feDisplacementMap> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_feDisplacementMap> = <svgattr_in2>
+<svgattrx_feDisplacementMap> = <svgattr_scale>
+<svgattrx_feDisplacementMap> = <svgattr_yChannelSelector>
+<svgattrx_feDisplacementMap> = <svgattr_xChannelSelector>
+<svgattrx_feDisplacementMap> = <svgattr_in>
+<svgattrx_feDisplacementMap> = <svgattr_height>
+<svgattrx_feDisplacementMap> = <svgattr_width>
+<svgattrx_feDisplacementMap> = <svgattr_y>
+<svgattrx_feDisplacementMap> = <svgattr_x>
+<svgattrx_feDisplacementMap> = <svgattr_color-interpolation-filters>
+
+
+<svgelement_feDistantLight> = <lt>feDistantLight <svgattrs_feDistantLight> /<gt><newline>
+
+<svgattrs_feDistantLight> = <svgattrx_feDistantLight> <svgattrx_feDistantLight> <svgattrx_feDistantLight> <svgattrx_feDistantLight> <svgattrx_feDistantLight> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_feDistantLight> = <svgattr_elevation>
+<svgattrx_feDistantLight> = <svgattr_azimuth>
+
+
+<svgelement_feDropShadow> = <lt>feDropShadow <svgattrs_feDropShadow> /<gt><newline>
+
+<svgattrs_feDropShadow> = <svgattrx_feDropShadow> <svgattrx_feDropShadow> <svgattrx_feDropShadow> <svgattrx_feDropShadow> <svgattrx_feDropShadow> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_feDropShadow> = <svgattr_in>
+<svgattrx_feDropShadow> = <svgattr_flood-color>
+<svgattrx_feDropShadow> = <svgattr_height>
+<svgattrx_feDropShadow> = <svgattr_width>
+<svgattrx_feDropShadow> = <svgattr_result>
+<svgattrx_feDropShadow> = <svgattr_dx>
+<svgattrx_feDropShadow> = <svgattr_dy>
+<svgattrx_feDropShadow> = <svgattr_y>
+<svgattrx_feDropShadow> = <svgattr_x>
+<svgattrx_feDropShadow> = <svgattr_stdDeviation>
+<svgattrx_feDropShadow> = <svgattr_flood-opacity>
+
+
+<svgelement_feFlood> = <lt>feFlood <svgattrs_feFlood> /<gt><newline>
+
+<svgattrs_feFlood> = <svgattrx_feFlood> <svgattrx_feFlood> <svgattrx_feFlood> <svgattrx_feFlood> <svgattrx_feFlood> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_feFlood> = <svgattr_flood-color>
+<svgattrx_feFlood> = <svgattr_flood-opacity>
+<svgattrx_feFlood> = <svgattr_y>
+<svgattrx_feFlood> = <svgattr_x>
+<svgattrx_feFlood> = <svgattr_width>
+<svgattrx_feFlood> = <svgattr_height>
+<svgattrx_feFlood> = <svgattr_result>
+<svgattrx_feFlood> = <svgattr_color-interpolation-filters>
+<svgattrx_feFlood> = <svgattr_color>
+<svgattrx_feFlood> = <svgattr_in>
+<svgattrx_feFlood> = <svgattr_style>
+
+
+<svgelement_feFuncA> = <lt>feFuncA <svgattrs_feFuncA> /<gt><newline>
+
+<svgattrs_feFuncA> = <svgattrx_feFuncA> <svgattrx_feFuncA> <svgattrx_feFuncA> <svgattrx_feFuncA> <svgattrx_feFuncA> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_feFuncA> = <svgattr_slope>
+<svgattrx_feFuncA> = <svgattr_intercept>
+<svgattrx_feFuncA> = <svgattr_type>
+
+
+<svgelement_feFuncB> = <lt>feFuncB <svgattrs_feFuncB> /<gt><newline>
+
+<svgattrs_feFuncB> = <svgattrx_feFuncB> <svgattrx_feFuncB> <svgattrx_feFuncB> <svgattrx_feFuncB> <svgattrx_feFuncB> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_feFuncB> = <svgattr_slope>
+<svgattrx_feFuncB> = <svgattr_intercept>
+<svgattrx_feFuncB> = <svgattr_type>
+<svgattrx_feFuncB> = <svgattr_tableValues>
+<svgattrx_feFuncB> = <svgattr_exponent>
+<svgattrx_feFuncB> = <svgattr_amplitude>
+<svgattrx_feFuncB> = <svgattr_offset>
+
+
+<svgelement_feFuncG> = <lt>feFuncG <svgattrs_feFuncG> /<gt><newline>
+
+<svgattrs_feFuncG> = <svgattrx_feFuncG> <svgattrx_feFuncG> <svgattrx_feFuncG> <svgattrx_feFuncG> <svgattrx_feFuncG> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_feFuncG> = <svgattr_slope>
+<svgattrx_feFuncG> = <svgattr_intercept>
+<svgattrx_feFuncG> = <svgattr_type>
+<svgattrx_feFuncG> = <svgattr_tableValues>
+<svgattrx_feFuncG> = <svgattr_exponent>
+<svgattrx_feFuncG> = <svgattr_amplitude>
+<svgattrx_feFuncG> = <svgattr_offset>
+
+
+<svgelement_feFuncR> = <lt>feFuncR <svgattrs_feFuncR> /<gt><newline>
+
+<svgattrs_feFuncR> = <svgattrx_feFuncR> <svgattrx_feFuncR> <svgattrx_feFuncR> <svgattrx_feFuncR> <svgattrx_feFuncR> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_feFuncR> = <svgattr_type>
+<svgattrx_feFuncR> = <svgattr_slope>
+<svgattrx_feFuncR> = <svgattr_intercept>
+<svgattrx_feFuncR> = <svgattr_tableValues>
+<svgattrx_feFuncR> = <svgattr_exponent>
+<svgattrx_feFuncR> = <svgattr_amplitude>
+<svgattrx_feFuncR> = <svgattr_offset>
+
+
+<svgelement_feGaussianBlur> = <lt>feGaussianBlur <svgattrs_feGaussianBlur> /<gt><newline>
+
+<svgattrs_feGaussianBlur> = <svgattrx_feGaussianBlur> <svgattrx_feGaussianBlur> <svgattrx_feGaussianBlur> <svgattrx_feGaussianBlur> <svgattrx_feGaussianBlur> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_feGaussianBlur> = <svgattr_stdDeviation>
+<svgattrx_feGaussianBlur> = <svgattr_in>
+<svgattrx_feGaussianBlur> = <svgattr_result>
+<svgattrx_feGaussianBlur> = <svgattr_height>
+<svgattrx_feGaussianBlur> = <svgattr_width>
+<svgattrx_feGaussianBlur> = <svgattr_dx>
+<svgattrx_feGaussianBlur> = <svgattr_dy>
+<svgattrx_feGaussianBlur> = <svgattr_y>
+<svgattrx_feGaussianBlur> = <svgattr_x>
+
+
+<svgelement_feImage> = <lt>feImage <svgattrs_feImage> /<gt><newline>
+
+<svgattrs_feImage> = <svgattrx_feImage> <svgattrx_feImage> <svgattrx_feImage> <svgattrx_feImage> <svgattrx_feImage> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_feImage> = <svgattr_xlink_href>
+<svgattrx_feImage> = <svgattr_width>
+<svgattrx_feImage> = <svgattr_result>
+<svgattrx_feImage> = <svgattr_height>
+<svgattrx_feImage> = <svgattr_y>
+<svgattrx_feImage> = <svgattr_x>
+<svgattrx_feImage> = <svgattr_preserveAspectRatio>
+
+
+<svgelement_feMerge> = <lt>feMerge <svgattrs_feMerge> /<gt><newline>
+<svgelement_feMerge> = <lt>feMerge <svgattrs_feMerge><gt><newline><svgchildren_feMerge><lt>/feMerge<gt><newline>
+<svgchildren_feMerge nonrecursive=true p=0.5> = <svgchild_feMerge>
+<svgchildren_feMerge> = <svgchild_feMerge><svgchildren_feMerge>
+<svgchild_feMerge> = <svgelement_feMergeNode>
+<svgchild_feMerge> = <svgelement>
+
+<svgattrs_feMerge> = <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+
+
+<svgelement_feMergeNode> = <lt>feMergeNode <svgattrs_feMergeNode> /<gt><newline>
+<svgelement_feMergeNode> = <lt>feMergeNode <svgattrs_feMergeNode><gt><newline><svgchildren_feMergeNode><lt>/feMergeNode<gt><newline>
+<svgchildren_feMergeNode nonrecursive=true p=0.5> = <svgchild_feMergeNode>
+<svgchildren_feMergeNode> = <svgchild_feMergeNode><svgchildren_feMergeNode>
+<svgchild_feMergeNode> = <svgelement>
+
+<svgattrs_feMergeNode> = <svgattr_in> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+
+
+<svgelement_feMorphology> = <lt>feMorphology <svgattrs_feMorphology> /<gt><newline>
+
+<svgattrs_feMorphology> = <svgattrx_feMorphology> <svgattrx_feMorphology> <svgattrx_feMorphology> <svgattrx_feMorphology> <svgattrx_feMorphology> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_feMorphology> = <svgattr_operator>
+<svgattrx_feMorphology> = <svgattr_radius>
+
+
+<svgelement_feOffset> = <lt>feOffset <svgattrs_feOffset> /<gt><newline>
+
+<svgattrs_feOffset> = <svgattrx_feOffset> <svgattrx_feOffset> <svgattrx_feOffset> <svgattrx_feOffset> <svgattrx_feOffset> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_feOffset> = <svgattr_in>
+<svgattrx_feOffset> = <svgattr_result>
+<svgattrx_feOffset> = <svgattr_dx>
+<svgattrx_feOffset> = <svgattr_dy>
+<svgattrx_feOffset> = <svgattr_y>
+<svgattrx_feOffset> = <svgattr_x>
+<svgattrx_feOffset> = <svgattr_width>
+<svgattrx_feOffset> = <svgattr_height>
+
+
+<svgelement_fePointLight> = <lt>fePointLight <svgattrs_fePointLight> /<gt><newline>
+
+<svgattrs_fePointLight> = <svgattrx_fePointLight> <svgattrx_fePointLight> <svgattrx_fePointLight> <svgattrx_fePointLight> <svgattrx_fePointLight> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_fePointLight> = <svgattr_y>
+<svgattrx_fePointLight> = <svgattr_x>
+<svgattrx_fePointLight> = <svgattr_z>
+
+
+<svgelement_feSpecularLighting> = <lt>feSpecularLighting <svgattrs_feSpecularLighting> /<gt><newline>
+<svgelement_feSpecularLighting> = <lt>feSpecularLighting <svgattrs_feSpecularLighting><gt><newline><svgchildren_feSpecularLighting><lt>/feSpecularLighting<gt><newline>
+<svgchildren_feSpecularLighting nonrecursive=true p=0.5> = <svgchild_feSpecularLighting>
+<svgchildren_feSpecularLighting> = <svgchild_feSpecularLighting><svgchildren_feSpecularLighting>
+<svgchild_feSpecularLighting> = <svgelement_feDistantLight>
+<svgchild_feSpecularLighting> = <svgelement_fePointLight>
+<svgchild_feSpecularLighting> = <svgelement>
+
+<svgattrs_feSpecularLighting> = <svgattrx_feSpecularLighting> <svgattrx_feSpecularLighting> <svgattrx_feSpecularLighting> <svgattrx_feSpecularLighting> <svgattrx_feSpecularLighting> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_feSpecularLighting> = <svgattr_lighting-color>
+<svgattrx_feSpecularLighting> = <svgattr_specularExponent>
+<svgattrx_feSpecularLighting> = <svgattr_specularConstant>
+<svgattrx_feSpecularLighting> = <svgattr_surfaceScale>
+<svgattrx_feSpecularLighting> = <svgattr_result>
+<svgattrx_feSpecularLighting> = <svgattr_in>
+
+
+<svgelement_feSpotLight> = <lt>feSpotLight <svgattrs_feSpotLight> /<gt><newline>
+<svgelement_feSpotLight> = <lt>feSpotLight <svgattrs_feSpotLight><gt><newline><svgchildren_feSpotLight><lt>/feSpotLight<gt><newline>
+<svgchildren_feSpotLight nonrecursive=true p=0.5> = <svgchild_feSpotLight>
+<svgchildren_feSpotLight> = <svgchild_feSpotLight><svgchildren_feSpotLight>
+<svgchild_feSpotLight> = <svgelement_animate>
+<svgchild_feSpotLight> = <svgelement>
+
+<svgattrs_feSpotLight> = <svgattrx_feSpotLight> <svgattrx_feSpotLight> <svgattrx_feSpotLight> <svgattrx_feSpotLight> <svgattrx_feSpotLight> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_feSpotLight> = <svgattr_z>
+<svgattrx_feSpotLight> = <svgattr_specularExponent>
+<svgattrx_feSpotLight> = <svgattr_x>
+<svgattrx_feSpotLight> = <svgattr_y>
+<svgattrx_feSpotLight> = <svgattr_pointsAtZ>
+<svgattrx_feSpotLight> = <svgattr_pointsAtY>
+<svgattrx_feSpotLight> = <svgattr_pointsAtX>
+<svgattrx_feSpotLight> = <svgattr_limitingConeAngle>
+
+
+<svgelement_feTile> = <lt>feTile <svgattrs_feTile> /<gt><newline>
+
+<svgattrs_feTile> = <svgattrx_feTile> <svgattrx_feTile> <svgattrx_feTile> <svgattrx_feTile> <svgattrx_feTile> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_feTile> = <svgattr_in>
+<svgattrx_feTile> = <svgattr_result>
+
+
+<svgelement_feTurbulence> = <lt>feTurbulence <svgattrs_feTurbulence> /<gt><newline>
+
+<svgattrs_feTurbulence> = <svgattrx_feTurbulence> <svgattrx_feTurbulence> <svgattrx_feTurbulence> <svgattrx_feTurbulence> <svgattrx_feTurbulence> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_feTurbulence> = <svgattr_numOctaves>
+<svgattrx_feTurbulence> = <svgattr_baseFrequency>
+<svgattrx_feTurbulence> = <svgattr_seed>
+<svgattrx_feTurbulence> = <svgattr_type>
+<svgattrx_feTurbulence> = <svgattr_width>
+<svgattrx_feTurbulence> = <svgattr_y>
+<svgattrx_feTurbulence> = <svgattr_x>
+<svgattrx_feTurbulence> = <svgattr_stitchTiles>
+<svgattrx_feTurbulence> = <svgattr_height>
+
+
+<svgelement_filter> = <lt>filter <svgattrs_filter> /<gt><newline>
+<svgelement_filter> = <lt>filter <svgattrs_filter><gt><newline><svgchildren_filter><lt>/filter<gt><newline>
+<svgchildren_filter nonrecursive=true p=0.5> = <svgchild_filter>
+<svgchildren_filter> = <svgchild_filter><svgchildren_filter>
+<svgchild_filter> = <svgelement_feMerge>
+<svgchild_filter> = <svgelement_feOffset>
+<svgchild_filter> = <svgelement_feConvolveMatrix>
+<svgchild_filter> = <svgelement_feGaussianBlur>
+<svgchild_filter> = <svgelement_feColorMatrix>
+<svgchild_filter> = <svgelement_feComponentTransfer>
+<svgchild_filter> = <svgelement_feImage>
+<svgchild_filter> = <svgelement_a>
+<svgchild_filter> = <svgelement_feDisplacementMap>
+<svgchild_filter> = <svgelement_feComposite>
+<svgchild_filter> = <svgelement_rect>
+<svgchild_filter> = <svgelement_feFlood>
+<svgchild_filter> = <svgelement_feTurbulence>
+<svgchild_filter> = <svgelement_feDropShadow>
+<svgchild_filter> = <svgelement_feSpecularLighting>
+<svgchild_filter> = <svgelement_feTile>
+<svgchild_filter> = <svgelement_feDiffuseLighting>
+<svgchild_filter> = <svgelement_feMorphology>
+<svgchild_filter> = <svgelement_feBlend>
+<svgchild_filter> = <svgelement_set>
+<svgchild_filter> = <svgelement>
+
+<svgattrs_filter> = <svgattrx_filter> <svgattrx_filter> <svgattrx_filter> <svgattrx_filter> <svgattrx_filter> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_filter> = <svgattr_width>
+<svgattrx_filter> = <svgattr_y>
+<svgattrx_filter> = <svgattr_x>
+<svgattrx_filter> = <svgattr_filterUnits>
+<svgattrx_filter> = <svgattr_height>
+<svgattrx_filter> = <svgattr_filterRes>
+<svgattrx_filter> = <svgattr_filter>
+<svgattrx_filter> = <svgattr_xlink_href>
+<svgattrx_filter> = <svgattr_primitiveUnits>
+<svgattrx_filter> = <svgattr_color-interpolation-filters>
+<svgattrx_filter> = <svgattr_filterPrimitiveUnits>
+
+
+<svgelement_font> = <lt>font <svgattrs_font> /<gt><newline>
+<svgelement_font> = <lt>font <svgattrs_font><gt><newline><svgchildren_font><lt>/font<gt><newline>
+<svgchildren_font nonrecursive=true p=0.5> = <svgchild_font>
+<svgchildren_font> = <svgchild_font><svgchildren_font>
+<svgchild_font> = <svgelement_font-face>
+<svgchild_font> = <svgelement_missing-glyph>
+<svgchild_font> = <svgelement_glyph>
+<svgchild_font> = <svgelement_hkern>
+<svgchild_font> = <svgelement>
+
+<svgattrs_font> = <svgattrx_font> <svgattrx_font> <svgattrx_font> <svgattrx_font> <svgattrx_font> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_font> = <svgattr_horiz-adv-x>
+<svgattrx_font> = <svgattr_horiz-origin-x>
+<svgattrx_font> = <svgattr_vert-origin-y>
+
+
+<svgelement_font-face> = <lt>font-face <svgattrs_font-face> /<gt><newline>
+<svgelement_font-face> = <lt>font-face <svgattrs_font-face><gt><newline><svgchildren_font-face><lt>/font-face<gt><newline>
+<svgchildren_font-face nonrecursive=true p=0.5> = <svgchild_font-face>
+<svgchildren_font-face> = <svgchild_font-face><svgchildren_font-face>
+<svgchild_font-face> = <svgelement_font-face-src>
+<svgchild_font-face> = <svgelement>
+
+<svgattrs_font-face> = <svgattrx_font-face> <svgattrx_font-face> <svgattrx_font-face> <svgattrx_font-face> <svgattrx_font-face> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_font-face> = <svgattr_font-family>
+<svgattrx_font-face> = <svgattr_mathematical>
+<svgattrx_font-face> = <svgattr_ideographic>
+<svgattrx_font-face> = <svgattr_descent>
+<svgattrx_font-face> = <svgattr_cap-height>
+<svgattrx_font-face> = <svgattr_alphabetic>
+<svgattrx_font-face> = <svgattr_units-per-em>
+<svgattrx_font-face> = <svgattr_hanging>
+<svgattrx_font-face> = <svgattr_x-height>
+<svgattrx_font-face> = <svgattr_font-weight>
+<svgattrx_font-face> = <svgattr_ascent>
+<svgattrx_font-face> = <svgattr_font-style>
+<svgattrx_font-face> = <svgattr_panose-1>
+<svgattrx_font-face> = <svgattr_unicode-range>
+<svgattrx_font-face> = <svgattr_underline-position>
+<svgattrx_font-face> = <svgattr_font-stretch>
+<svgattrx_font-face> = <svgattr_bbox>
+<svgattrx_font-face> = <svgattr_underline-thickness>
+
+
+<svgelement_font-face-format> = <lt>font-face-format <svgattrs_font-face-format> /<gt><newline>
+<svgelement_font-face-format> = <lt>font-face-format <svgattrs_font-face-format><gt><newline><svgchildren_font-face-format><lt>/font-face-format<gt><newline>
+<svgchildren_font-face-format nonrecursive=true p=0.5> = <svgchild_font-face-format>
+<svgchildren_font-face-format> = <svgchild_font-face-format><svgchildren_font-face-format>
+<svgchild_font-face-format> = <svgelement>
+
+<svgattrs_font-face-format> = <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+
+
+<svgelement_font-face-name> = <lt>font-face-name <svgattrs_font-face-name> /<gt><newline>
+<svgelement_font-face-name> = <lt>font-face-name <svgattrs_font-face-name><gt><newline><svgchildren_font-face-name><lt>/font-face-name<gt><newline>
+<svgchildren_font-face-name nonrecursive=true p=0.5> = <svgchild_font-face-name>
+<svgchildren_font-face-name> = <svgchild_font-face-name><svgchildren_font-face-name>
+<svgchild_font-face-name> = <svgelement>
+
+<svgattrs_font-face-name> = <svgattrx_font-face-name> <svgattrx_font-face-name> <svgattrx_font-face-name> <svgattrx_font-face-name> <svgattrx_font-face-name> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_font-face-name> = <svgattr_name>
+
+
+<svgelement_font-face-src> = <lt>font-face-src <svgattrs_font-face-src> /<gt><newline>
+<svgelement_font-face-src> = <lt>font-face-src <svgattrs_font-face-src><gt><newline><svgchildren_font-face-src><lt>/font-face-src<gt><newline>
+<svgchildren_font-face-src nonrecursive=true p=0.5> = <svgchild_font-face-src>
+<svgchildren_font-face-src> = <svgchild_font-face-src><svgchildren_font-face-src>
+<svgchild_font-face-src> = <svgelement_font-face-name>
+<svgchild_font-face-src> = <svgelement_foreignObject>
+<svgchild_font-face-src> = <svgelement_font-face-uri>
+<svgchild_font-face-src> = <svgelement>
+
+<svgattrs_font-face-src> = <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+
+
+<svgelement_font-face-uri> = <lt>font-face-uri <svgattrs_font-face-uri> /<gt><newline>
+<svgelement_font-face-uri> = <lt>font-face-uri <svgattrs_font-face-uri><gt><newline><svgchildren_font-face-uri><lt>/font-face-uri<gt><newline>
+<svgchildren_font-face-uri nonrecursive=true p=0.5> = <svgchild_font-face-uri>
+<svgchildren_font-face-uri> = <svgchild_font-face-uri><svgchildren_font-face-uri>
+<svgchild_font-face-uri> = <svgelement>
+
+<svgattrs_font-face-uri> = <svgattrx_font-face-uri> <svgattrx_font-face-uri> <svgattrx_font-face-uri> <svgattrx_font-face-uri> <svgattrx_font-face-uri> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_font-face-uri> = <svgattr_xlink_href>
+
+
+<svgelement_foreignObject> = <lt>foreignObject <svgattrs_foreignObject><gt><lt>body xmlns="http://www.w3.org/1999/xhtml"<gt><newline><innerelements><lt>/body<gt><lt>/foreignObject<gt><newline>
+
+<svgattrs_foreignObject> = <svgattrx_foreignObject> <svgattrx_foreignObject> <svgattrx_foreignObject> <svgattrx_foreignObject> <svgattrx_foreignObject> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_foreignObject> = <svgattr_width>
+<svgattrx_foreignObject> = <svgattr_y>
+<svgattrx_foreignObject> = <svgattr_x>
+<svgattrx_foreignObject> = <svgattr_transform>
+<svgattrx_foreignObject> = <svgattr_height>
+<svgattrx_foreignObject> = <svgattr_display>
+<svgattrx_foreignObject> = <svgattr_style>
+
+
+<svgelement_g> = <lt>g <svgattrs_g> /<gt><newline>
+<svgelement_g> = <lt>g <svgattrs_g><gt><newline><svgchildren_g><lt>/g<gt><newline>
+<svgchildren_g nonrecursive=true p=0.5> = <svgchild_g>
+<svgchildren_g> = <svgchild_g><svgchildren_g>
+<svgchild_g> = <svgelement>
+
+<svgattrs_g> = <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+
+
+<svgelement_glyph> = <lt>glyph <svgattrs_glyph> /<gt><newline>
+<svgelement_glyph> = <lt>glyph <svgattrs_glyph><gt><newline><svgchildren_glyph><lt>/glyph<gt><newline>
+<svgchildren_glyph nonrecursive=true p=0.5> = <svgchild_glyph>
+<svgchildren_glyph> = <svgchild_glyph><svgchildren_glyph>
+<svgchild_glyph> = <svgelement_g>
+<svgchild_glyph> = <svgelement_path>
+<svgchild_glyph> = <svgelement>
+
+<svgattrs_glyph> = <svgattrx_glyph> <svgattrx_glyph> <svgattrx_glyph> <svgattrx_glyph> <svgattrx_glyph> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_glyph> = <svgattr_d>
+<svgattrx_glyph> = <svgattr_unicode>
+<svgattrx_glyph> = <svgattr_horiz-adv-x>
+<svgattrx_glyph> = <svgattr_glyph-name>
+<svgattrx_glyph> = <svgattr_arabic-form>
+
+
+<svgelement_glyphRef> = <lt>glyphRef <svgattrs_glyphRef> /<gt><newline>
+<svgattrs_glyphRef> = <svgattr_xlink_href> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+
+
+<svgelement_hatch> = <lt>hatch <svgattrs_hatch> /<gt><newline>
+<svgelement_hatch> = <lt>hatch <svgattrs_hatch><gt><newline><svgchildren_hatch><lt>/hatch<gt><newline>
+<svgchildren_hatch nonrecursive=true p=0.5> = <svgchild_hatch>
+<svgchildren_hatch> = <svgchild_hatch><svgchildren_hatch>
+<svgchild_hatch> = <svgelement>
+
+<svgattrs_hatch> = <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+
+
+<svgelement_hatchpath> = <lt>hatchpath <svgattrs_hatchpath> /<gt><newline>
+<svgelement_hatchpath> = <lt>hatchpath <svgattrs_hatchpath><gt><newline><svgchildren_hatchpath><lt>/hatchpath<gt><newline>
+<svgchildren_hatchpath nonrecursive=true p=0.5> = <svgchild_hatchpath>
+<svgchildren_hatchpath> = <svgchild_hatchpath><svgchildren_hatchpath>
+<svgchild_hatchpath> = <svgelement>
+
+<svgattrs_hatchpath> = <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+
+
+<svgelement_hkern> = <lt>hkern <svgattrs_hkern> /<gt><newline>
+
+<svgattrs_hkern> = <svgattrx_hkern> <svgattrx_hkern> <svgattrx_hkern> <svgattrx_hkern> <svgattrx_hkern> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_hkern> = <svgattr_k>
+<svgattrx_hkern> = <svgattr_g2>
+<svgattrx_hkern> = <svgattr_g1>
+
+
+<svgelement_image> = <lt>image <svgattrs_image> /<gt><newline>
+<svgelement_image> = <lt>image <svgattrs_image><gt><newline><svgchildren_image><lt>/image<gt><newline>
+<svgchildren_image nonrecursive=true p=0.5> = <svgchild_image>
+<svgchildren_image> = <svgchild_image><svgchildren_image>
+<svgchild_image> = <svgelement_title>
+<svgchild_image> = <svgelement_set>
+<svgchild_image> = <svgelement_animate>
+<svgchild_image> = <svgelement_animateTransform>
+<svgchild_image> = <svgelement>
+
+<svgattrs_image> = <svgattrx_image> <svgattrx_image> <svgattrx_image> <svgattrx_image> <svgattrx_image> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_image> = <svgattr_y>
+<svgattrx_image> = <svgattr_x>
+<svgattrx_image> = <svgattr_xlink_href>
+<svgattrx_image> = <svgattr_width>
+<svgattrx_image> = <svgattr_height>
+<svgattrx_image> = <svgattr_filter>
+<svgattrx_image> = <svgattr_clip-path>
+<svgattrx_image> = <svgattr_transform>
+<svgattrx_image> = <svgattr_class>
+<svgattrx_image> = <svgattr_onload>
+<svgattrx_image> = <svgattr_display>
+<svgattrx_image> = <svgattr_pointer-events>
+<svgattrx_image> = <svgattr_onmousedown>
+<svgattrx_image> = <svgattr_style>
+<svgattrx_image> = <svgattr_fill>
+<svgattrx_image> = <svgattr_preserveAspectRatio>
+<svgattrx_image> = <svgattr_color-profile>
+<svgattrx_image> = <svgattr_onerror>
+<svgattrx_image> = <svgattr_alt>
+
+
+<svgelement_line> = <lt>line <svgattr_x1> <svgattr_y1> <svgattr_x2> <svgattr_y2> <svgattrs_line> /<gt><newline>
+<svgelement_line> = <lt>line <svgattr_x1> <svgattr_y1> <svgattr_x2> <svgattr_y2> <svgattrs_line><gt><newline><svgchildren_line><lt>/line<gt><newline>
+<svgchildren_line nonrecursive=true p=0.5> = <svgchild_line>
+<svgchildren_line> = <svgchild_line><svgchildren_line>
+<svgchild_line> = <svgelement_animate>
+<svgchild_line> = <svgelement_set>
+<svgchild_line> = <svgelement_animateTransform>
+<svgchild_line> = <svgelement>
+
+<svgattrs_line> = <svgattrx_line> <svgattrx_line> <svgattrx_line> <svgattrx_line> <svgattrx_line> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_line> = <svgattr_stroke>
+<svgattrx_line> = <svgattr_fill>
+<svgattrx_line> = <svgattr_style>
+<svgattrx_line> = <svgattr_marker-end>
+<svgattrx_line> = <svgattr_stroke-width>
+<svgattrx_line> = <svgattr_vector-effect>
+<svgattrx_line> = <svgattr_transform>
+<svgattrx_line> = <svgattr_opacity>
+<svgattrx_line> = <svgattr_stroke-linecap>
+<svgattrx_line> = <svgattr_pointer-events>
+<svgattrx_line> = <svgattr_stroke-dasharray>
+<svgattrx_line> = <svgattr_stroke-dashoffset>
+<svgattrx_line> = <svgattr_visibility>
+
+
+<svgelement_linearGradient> = <lt>linearGradient <svgattrs_linearGradient> /<gt><newline>
+<svgelement_linearGradient> = <lt>linearGradient <svgattrs_linearGradient><gt><newline><svgchildren_linearGradient><lt>/linearGradient<gt><newline>
+<svgchildren_linearGradient nonrecursive=true p=0.5> = <svgchild_linearGradient>
+<svgchildren_linearGradient> = <svgchild_linearGradient><svgchildren_linearGradient>
+<svgchild_linearGradient> = <svgelement_stop>
+<svgchild_linearGradient> = <svgelement_set>
+<svgchild_linearGradient> = <svgelement_animateTransform>
+<svgchild_linearGradient> = <svgelement>
+
+<svgattrs_linearGradient> = <svgattrx_linearGradient> <svgattrx_linearGradient> <svgattrx_linearGradient> <svgattrx_linearGradient> <svgattrx_linearGradient> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_linearGradient> = <svgattr_xlink_href>
+<svgattrx_linearGradient> = <svgattr_y1>
+<svgattrx_linearGradient> = <svgattr_x1>
+<svgattrx_linearGradient> = <svgattr_x2>
+<svgattrx_linearGradient> = <svgattr_y2>
+<svgattrx_linearGradient> = <svgattr_gradientUnits>
+<svgattrx_linearGradient> = <svgattr_display>
+<svgattrx_linearGradient> = <svgattr_gradientTransform>
+<svgattrx_linearGradient> = <svgattr_color-interpolation>
+<svgattrx_linearGradient> = <svgattr_color>
+<svgattrx_linearGradient> = <svgattr_spreadMethod>
+
+
+<svgelement_marker> = <lt>marker <svgattrs_marker> /<gt><newline>
+<svgelement_marker> = <lt>marker <svgattrs_marker><gt><newline><svgchildren_marker><lt>/marker<gt><newline>
+<svgchildren_marker nonrecursive=true p=0.5> = <svgchild_marker>
+<svgchildren_marker> = <svgchild_marker><svgchildren_marker>
+<svgchild_marker> = <svgelement>
+
+<svgattrs_marker> = <svgattrx_marker> <svgattrx_marker> <svgattrx_marker> <svgattrx_marker> <svgattrx_marker> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_marker> = <svgattr_refY>
+<svgattrx_marker> = <svgattr_refX>
+<svgattrx_marker> = <svgattr_markerWidth>
+<svgattrx_marker> = <svgattr_markerHeight>
+<svgattrx_marker> = <svgattr_viewBox>
+<svgattrx_marker> = <svgattr_markerUnits>
+<svgattrx_marker> = <svgattr_orient>
+<svgattrx_marker> = <svgattr_style>
+<svgattrx_marker> = <svgattr_stroke-opacity>
+<svgattrx_marker> = <svgattr_fill-opacity>
+<svgattrx_marker> = <svgattr_overflow>
+<svgattrx_marker> = <svgattr_display>
+<svgattrx_marker> = <svgattr_fill>
+
+
+<svgelement_mask> = <lt>mask <svgattrs_mask> /<gt><newline>
+<svgelement_mask> = <lt>mask <svgattrs_mask><gt><newline><svgchildren_mask><lt>/mask<gt><newline>
+<svgchildren_mask nonrecursive=true p=0.5> = <svgchild_mask>
+<svgchildren_mask> = <svgchild_mask><svgchildren_mask>
+<svgchild_mask> = <svgelement>
+
+<svgattrs_mask> = <svgattrx_mask> <svgattrx_mask> <svgattrx_mask> <svgattrx_mask> <svgattrx_mask> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_mask> = <svgattr_width>
+<svgattrx_mask> = <svgattr_y>
+<svgattrx_mask> = <svgattr_x>
+<svgattrx_mask> = <svgattr_maskUnits>
+<svgattrx_mask> = <svgattr_height>
+<svgattrx_mask> = <svgattr_mask>
+<svgattrx_mask> = <svgattr_maskContentUnits>
+<svgattrx_mask> = <svgattr_color-interpolation>
+<svgattrx_mask> = <svgattr_mask-type>
+
+
+<svgelement_mesh> = <lt>mesh <svgattrs_mesh> /<gt><newline>
+<svgelement_mesh> = <lt>mesh <svgattrs_mesh><gt><newline><svgchildren_mesh><lt>/mesh<gt><newline>
+<svgchildren_mesh nonrecursive=true p=0.5> = <svgchild_mesh>
+<svgchildren_mesh> = <svgchild_mesh><svgchildren_mesh>
+<svgchild_mesh> = <svgelement>
+
+<svgattrs_mesh> = <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+
+
+<svgelement_meshgradient> = <lt>meshgradient <svgattrs_meshgradient> /<gt><newline>
+<svgelement_meshgradient> = <lt>meshgradient <svgattrs_meshgradient><gt><newline><svgchildren_meshgradient><lt>/meshgradient<gt><newline>
+<svgchildren_meshgradient nonrecursive=true p=0.5> = <svgchild_meshgradient>
+<svgchildren_meshgradient> = <svgchild_meshgradient><svgchildren_meshgradient>
+<svgchild_meshgradient> = <svgelement>
+
+<svgattrs_meshgradient> = <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+
+
+<svgelement_meshpatch> = <lt>meshpatch <svgattrs_meshpatch> /<gt><newline>
+<svgelement_meshpatch> = <lt>meshpatch <svgattrs_meshpatch><gt><newline><svgchildren_meshpatch><lt>/meshpatch<gt><newline>
+<svgchildren_meshpatch nonrecursive=true p=0.5> = <svgchild_meshpatch>
+<svgchildren_meshpatch> = <svgchild_meshpatch><svgchildren_meshpatch>
+<svgchild_meshpatch> = <svgelement>
+
+<svgattrs_meshpatch> = <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+
+
+<svgelement_meshrow> = <lt>meshrow <svgattrs_meshrow> /<gt><newline>
+<svgelement_meshrow> = <lt>meshrow <svgattrs_meshrow><gt><newline><svgchildren_meshrow><lt>/meshrow<gt><newline>
+<svgchildren_meshrow nonrecursive=true p=0.5> = <svgchild_meshrow>
+<svgchildren_meshrow> = <svgchild_meshrow><svgchildren_meshrow>
+<svgchild_meshrow> = <svgelement>
+
+<svgattrs_meshrow> = <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+
+
+<svgelement_metadata> = <lt>metadata <svgattrs_metadata> /<gt><newline>
+<svgelement_metadata> = <lt>metadata <svgattrs_metadata><gt><newline><svgchildren_metadata><lt>/metadata<gt><newline>
+<svgchildren_metadata nonrecursive=true p=0.5> = <svgchild_metadata>
+<svgchildren_metadata> = <svgchild_metadata><svgchildren_metadata>
+<svgchild_metadata> = <svgelement>
+
+<svgattrs_metadata> =  <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+
+
+<svgelement_missing-glyph> = <lt>missing-glyph <svgattrs_missing-glyph> /<gt><newline>
+
+<svgattrs_missing-glyph> = <svgattrx_missing-glyph> <svgattrx_missing-glyph> <svgattrx_missing-glyph> <svgattrx_missing-glyph> <svgattrx_missing-glyph> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_missing-glyph> = <svgattr_d>
+<svgattrx_missing-glyph> = <svgattr_horiz-adv-x>
+
+
+<svgelement_mpath> = <lt>mpath <svgattrs_mpath> /<gt><newline>
+
+<svgattrs_mpath> = <svgattrx_mpath> <svgattrx_mpath> <svgattrx_mpath> <svgattrx_mpath> <svgattrx_mpath> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_mpath> = <svgattr_xlink_href>
+
+
+<svgelement_path> = <lt>path <svgattr_d> <svgattrs_path> /<gt><newline>
+<svgelement_path> = <lt>path <svgattr_d> <svgattrs_path><gt><newline><svgchildren_path><lt>/path<gt><newline>
+<svgchildren_path nonrecursive=true p=0.5> = <svgchild_path>
+<svgchildren_path> = <svgchild_path><svgchildren_path>
+<svgchild_path> = <svgelement_animate>
+<svgchild_path> = <svgelement_set>
+<svgchild_path> = <svgelement_animateTransform>
+<svgchild_path> = <svgelement_animateMotion>
+<svgchild_path> = <svgelement>
+
+<svgattrs_path> = <svgattrx_path> <svgattrx_path> <svgattrx_path> <svgattrx_path> <svgattrx_path> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_path> = <svgattr_marker-start>
+<svgattrx_path> = <svgattr_marker-end>
+<svgattrx_path> = <svgattr_marker-mid>
+<svgattrx_path> = <svgattr_stroke>
+<svgattrx_path> = <svgattr_fill>
+<svgattrx_path> = <svgattr_stroke-width>
+<svgattrx_path> = <svgattr_style>
+<svgattrx_path> = <svgattr_stroke-linejoin>
+<svgattrx_path> = <svgattr_stroke-linecap>
+<svgattrx_path> = <svgattr_fill-rule>
+<svgattrx_path> = <svgattr_transform>
+<svgattrx_path> = <svgattr_class>
+<svgattrx_path> = <svgattr_onmousemove>
+<svgattrx_path> = <svgattr_onmouseout>
+<svgattrx_path> = <svgattr_onclick>
+<svgattrx_path> = <svgattr_onmouseover>
+<svgattrx_path> = <svgattr_stroke-miterlimit>
+<svgattrx_path> = <svgattr_shape-rendering>
+<svgattrx_path> = <svgattr_stroke-opacity>
+<svgattrx_path> = <svgattr_mask>
+<svgattrx_path> = <svgattr_fill-opacity>
+<svgattrx_path> = <svgattr_clip-rule>
+<svgattrx_path> = <svgattr_opacity>
+<svgattrx_path> = <svgattr_pathLength>
+<svgattrx_path> = <svgattr_stroke-dasharray>
+<svgattrx_path> = <svgattr_stroke-dashoffset>
+<svgattrx_path> = <svgattr_stroke-join>
+<svgattrx_path> = <svgattr_aria-label>
+<svgattrx_path> = <svgattr_role>
+
+
+<svgelement_pattern> = <lt>pattern <svgattrs_pattern> /<gt><newline>
+<svgelement_pattern> = <lt>pattern <svgattrs_pattern><gt><newline><svgchildren_pattern><lt>/pattern<gt><newline>
+<svgchildren_pattern nonrecursive=true p=0.5> = <svgchild_pattern>
+<svgchildren_pattern> = <svgchild_pattern><svgchildren_pattern>
+<svgchild_pattern> = <svgelement>
+
+<svgattrs_pattern> = <svgattrx_pattern> <svgattrx_pattern> <svgattrx_pattern> <svgattrx_pattern> <svgattrx_pattern> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_pattern> = <svgattr_width>
+<svgattrx_pattern> = <svgattr_patternUnits>
+<svgattrx_pattern> = <svgattr_y>
+<svgattrx_pattern> = <svgattr_x>
+<svgattrx_pattern> = <svgattr_height>
+<svgattrx_pattern> = <svgattr_patternContentUnits>
+<svgattrx_pattern> = <svgattr_xlink_href>
+<svgattrx_pattern> = <svgattr_patternTransform>
+<svgattrx_pattern> = <svgattr_viewBox>
+<svgattrx_pattern> = <svgattr_overflow>
+<svgattrx_pattern> = <svgattr_preserveAspectRatio>
+
+
+<svgelement_polygon> = <lt>polygon <svgattr_points> <svgattrs_polygon> /<gt><newline>
+<svgelement_polygon> = <lt>polygon <svgattr_points> <svgattrs_polygon><gt><newline><svgchildren_polygon><lt>/polygon<gt><newline>
+<svgchildren_polygon nonrecursive=true p=0.5> = <svgchild_polygon>
+<svgchildren_polygon> = <svgchild_polygon><svgchildren_polygon>
+<svgchild_polygon> = <svgelement_animate>
+<svgchild_polygon> = <svgelement>
+
+<svgattrs_polygon> = <svgattrx_polygon> <svgattrx_polygon> <svgattrx_polygon> <svgattrx_polygon> <svgattrx_polygon> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_polygon> = <svgattr_stroke-linejoin>
+<svgattrx_polygon> = <svgattr_stroke>
+<svgattrx_polygon> = <svgattr_stroke-linecap>
+<svgattrx_polygon> = <svgattr_fill-rule>
+<svgattrx_polygon> = <svgattr_stroke-width>
+<svgattrx_polygon> = <svgattr_fill>
+<svgattrx_polygon> = <svgattr_style>
+<svgattrx_polygon> = <svgattr_stroke-opacity>
+<svgattrx_polygon> = <svgattr_transform>
+<svgattrx_polygon> = <svgattr_cursor>
+<svgattrx_polygon> = <svgattr_class>
+
+
+<svgelement_polyline> = <lt>polyline <svgattr_points> <svgattrs_polyline> /<gt><newline>
+<svgelement_polyline> = <lt>polyline <svgattr_points> <svgattrs_polyline><gt><newline><svgchildren_polyline><lt>/polyline<gt><newline>
+<svgchildren_polyline nonrecursive=true p=0.5> = <svgchild_polyline>
+<svgchildren_polyline> = <svgchild_polyline><svgchildren_polyline>
+<svgchild_polyline> = <svgelement_animateMotion>
+<svgchild_polyline> = <svgelement_animate>
+<svgchild_polyline> = <svgelement_set>
+<svgchild_polyline> = <svgelement_animateTransform>
+<svgchild_polyline> = <svgelement>
+
+<svgattrs_polyline> = <svgattrx_polyline> <svgattrx_polyline> <svgattrx_polyline> <svgattrx_polyline> <svgattrx_polyline> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_polyline> = <svgattr_stroke>
+<svgattrx_polyline> = <svgattr_fill>
+<svgattrx_polyline> = <svgattr_stroke-linejoin>
+<svgattrx_polyline> = <svgattr_stroke-linecap>
+<svgattrx_polyline> = <svgattr_fill-rule>
+<svgattrx_polyline> = <svgattr_stroke-width>
+<svgattrx_polyline> = <svgattr_onclick>
+<svgattrx_polyline> = <svgattr_display>
+<svgattrx_polyline> = <svgattr_transform>
+<svgattrx_polyline> = <svgattr_letter-spacing>
+<svgattrx_polyline> = <svgattr_stroke-miterlimit>
+
+
+<svgelement_radialGradient> = <lt>radialGradient <svgattrs_radialGradient> /<gt><newline>
+<svgelement_radialGradient> = <lt>radialGradient <svgattrs_radialGradient><gt><newline><svgchildren_radialGradient><lt>/radialGradient<gt><newline>
+<svgchildren_radialGradient nonrecursive=true p=0.5> = <svgchild_radialGradient>
+<svgchildren_radialGradient> = <svgchild_radialGradient><svgchildren_radialGradient>
+<svgchild_radialGradient> = <svgelement_stop>
+<svgchild_radialGradient> = <svgelement_set>
+<svgchild_radialGradient> = <svgelement_animateTransform>
+<svgchild_radialGradient> = <svgelement>
+
+<svgattrs_radialGradient> = <svgattrx_radialGradient> <svgattrx_radialGradient> <svgattrx_radialGradient> <svgattrx_radialGradient> <svgattrx_radialGradient> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_radialGradient> = <svgattr_xlink_href>
+<svgattrx_radialGradient> = <svgattr_r>
+<svgattrx_radialGradient> = <svgattr_fr>
+<svgattrx_radialGradient> = <svgattr_fx>
+<svgattrx_radialGradient> = <svgattr_fy>
+<svgattrx_radialGradient> = <svgattr_cy>
+<svgattrx_radialGradient> = <svgattr_cx>
+<svgattrx_radialGradient> = <svgattr_spreadMethod>
+<svgattrx_radialGradient> = <svgattr_gradientUnits>
+<svgattrx_radialGradient> = <svgattr_visibility>
+<svgattrx_radialGradient> = <svgattr_stop-color>
+<svgattrx_radialGradient> = <svgattr_color>
+<svgattrx_radialGradient> = <svgattr_gradientTransform>
+
+
+<svgelement_rect> = <lt>rect <svgattr_x> <svgattr_y> <svgattr_width> <svgattr_height> <svgattrs_rect> /<gt><newline>
+<svgelement_rect> = <lt>rect <svgattr_x> <svgattr_y> <svgattr_width> <svgattr_height> <svgattrs_rect><gt><newline><svgchildren_rect><lt>/rect<gt><newline>
+<svgchildren_rect nonrecursive=true p=0.5> = <svgchild_rect>
+<svgchildren_rect> = <svgchild_rect><svgchildren_rect>
+<svgchild_rect> = <svgelement_animate>
+<svgchild_rect> = <svgelement_pattern>
+<svgchild_rect> = <svgelement_set>
+<svgchild_rect> = <svgelement_discard>
+<svgchild_rect> = <svgelement_animateTransform>
+<svgchild_rect> = <svgelement_animateMotion>
+<svgchild_rect> = <svgelement>
+
+<svgattrs_rect> = <svgattrx_rect> <svgattrx_rect> <svgattrx_rect> <svgattrx_rect> <svgattrx_rect> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_rect> = <svgattr_stroke>
+<svgattrx_rect> = <svgattr_xml_id>
+<svgattrx_rect> = <svgattr_fill>
+<svgattrx_rect> = <svgattr_stroke-width>
+<svgattrx_rect> = <svgattr_filter>
+<svgattrx_rect> = <svgattr_class>
+<svgattrx_rect> = <svgattr_rx>
+<svgattrx_rect> = <svgattr_ry>
+<svgattrx_rect> = <svgattr_vector-effect>
+<svgattrx_rect> = <svgattr_transform>
+<svgattrx_rect> = <svgattr_tabindex>
+<svgattrx_rect> = <svgattr_visibility>
+<svgattrx_rect> = <svgattr_style>
+<svgattrx_rect> = <svgattr_clip-path>
+<svgattrx_rect> = <svgattr_mask>
+<svgattrx_rect> = <svgattr_r>
+<svgattrx_rect> = <svgattr_stroke-dasharray>
+<svgattrx_rect> = <svgattr_onclick>
+<svgattrx_rect> = <svgattr_opacity>
+<svgattrx_rect> = <svgattr_clip>
+<svgattrx_rect> = <svgattr_display>
+<svgattrx_rect> = <svgattr_stroke-opacity>
+<svgattrx_rect> = <svgattr_fill-opacity>
+<svgattrx_rect> = <svgattr_onmouseover>
+<svgattrx_rect> = <svgattr_pointer-events>
+<svgattrx_rect> = <svgattr_color>
+<svgattrx_rect> = <svgattr_font-size>
+<svgattrx_rect> = <svgattr_line-width>
+<svgattrx_rect> = <svgattr_onmousemove>
+<svgattrx_rect> = <svgattr_requiredFeatures>
+<svgattrx_rect> = <svgattr_cursor>
+<svgattrx_rect> = <svgattr_systemLanguage>
+<svgattrx_rect> = <svgattr_onload>
+<svgattrx_rect> = <svgattr_requiredExtensions>
+<svgattrx_rect> = <svgattr_stroke-linejoin>
+<svgattrx_rect> = <svgattr_onmousedown>
+<svgattrx_rect> = <svgattr_onmouseup>
+<svgattrx_rect> = <svgattr_onmouseout>
+<svgattrx_rect> = <svgattr_shape-rendering>
+
+
+<svgelement_set> = <lt>set <setattr> <svgattrs_set> /<gt><newline>
+
+<setattr> = attributeName="accumulate" to="<svgattr_accumulate_value>"
+<setattr> = attributeName="additive" to="<svgattr_additive_value>"
+<setattr> = attributeName="alignment-baseline" to="<svgattr_alignment-baseline_value>"
+<setattr> = attributeName="alphabetic" to="<svgattr_alphabetic_value>"
+<setattr> = attributeName="alt" to="<svgattr_alt_value>"
+<setattr> = attributeName="amplitude" to="<svgattr_amplitude_value>"
+<setattr> = attributeName="arabic-form" to="<svgattr_arabic-form_value>"
+<setattr> = attributeName="aria-label" to="<svgattr_aria-label_value>"
+<setattr> = attributeName="ascent" to="<svgattr_ascent_value>"
+<setattr> = attributeName="attributeName" to="<svgattr_attributeName_value>"
+<setattr> = attributeName="attributeType" to="<svgattr_attributeType_value>"
+<setattr> = attributeName="azimuth" to="<svgattr_azimuth_value>"
+<setattr> = attributeName="baseFrequency" to="<svgattr_baseFrequency_value>"
+<setattr> = attributeName="baseProfile" to="<svgattr_baseProfile_value>"
+<setattr> = attributeName="baseline-shift" to="<svgattr_baseline-shift_value>"
+<setattr> = attributeName="bbox" to="<svgattr_bbox_value>"
+<setattr> = attributeName="begin" to="<svgattr_begin_value>"
+<setattr> = attributeName="by" to="<svgattr_by_value>"
+<setattr> = attributeName="calcMode" to="<svgattr_calcMode_value>"
+<setattr> = attributeName="cap-height" to="<svgattr_cap-height_value>"
+<setattr> = attributeName="class" to="<svgattr_class_value>"
+<setattr> = attributeName="click" to="<svgattr_click_value>"
+<setattr> = attributeName="clip" to="<svgattr_clip_value>"
+<setattr> = attributeName="clip-path" to="<svgattr_clip-path_value>"
+<setattr> = attributeName="clip-rule" to="<svgattr_clip-rule_value>"
+<setattr> = attributeName="clipPathUnits" to="<svgattr_clipPathUnits_value>"
+<setattr> = attributeName="color" to="<svgattr_color_value>"
+<setattr> = attributeName="color-interpolation" to="<svgattr_color-interpolation_value>"
+<setattr> = attributeName="color-interpolation-filters" to="<svgattr_color-interpolation-filters_value>"
+<setattr> = attributeName="color-profile" to="<svgattr_color-profile_value>"
+<setattr> = attributeName="contentScriptType" to="<svgattr_contentScriptType_value>"
+<setattr> = attributeName="contentStyleType" to="<svgattr_contentStyleType_value>"
+<setattr> = attributeName="cursor" to="<svgattr_cursor_value>"
+<setattr> = attributeName="cx" to="<svgattr_cx_value>"
+<setattr> = attributeName="cy" to="<svgattr_cy_value>"
+<setattr> = attributeName="d" to="<svgattr_d_value>"
+<setattr> = attributeName="descent" to="<svgattr_descent_value>"
+<setattr> = attributeName="diffuseConstant" to="<svgattr_diffuseConstant_value>"
+<setattr> = attributeName="direction" to="<svgattr_direction_value>"
+<setattr> = attributeName="display" to="<svgattr_display_value>"
+<setattr> = attributeName="divisor" to="<svgattr_divisor_value>"
+<setattr> = attributeName="dominant-baseline" to="<svgattr_dominant-baseline_value>"
+<setattr> = attributeName="dur" to="<svgattr_dur_value>"
+<setattr> = attributeName="dx" to="<svgattr_dx_value>"
+<setattr> = attributeName="dy" to="<svgattr_dy_value>"
+<setattr> = attributeName="edgeMode" to="<svgattr_edgeMode_value>"
+<setattr> = attributeName="elevation" to="<svgattr_elevation_value>"
+<setattr> = attributeName="enable-background" to="<svgattr_enable-background_value>"
+<setattr> = attributeName="end" to="<svgattr_end_value>"
+<setattr> = attributeName="exponent" to="<svgattr_exponent_value>"
+<setattr> = attributeName="externalResourcesRequired" to="<svgattr_externalResourcesRequired_value>"
+<setattr> = attributeName="fill" to="<svgattr_fill_value>"
+<setattr> = attributeName="fill-opacity" to="<svgattr_fill-opacity_value>"
+<setattr> = attributeName="fill-rule" to="<svgattr_fill-rule_value>"
+<setattr> = attributeName="filter" to="<svgattr_filter_value>"
+<setattr> = attributeName="filterPrimitiveUnits" to="<svgattr_filterPrimitiveUnits_value>"
+<setattr> = attributeName="filterRes" to="<svgattr_filterRes_value>"
+<setattr> = attributeName="filterUnits" to="<svgattr_filterUnits_value>"
+<setattr> = attributeName="flood-color" to="<svgattr_flood-color_value>"
+<setattr> = attributeName="flood-opacity" to="<svgattr_flood-opacity_value>"
+<setattr> = attributeName="font-family" to="<svgattr_font-family_value>"
+<setattr> = attributeName="font-rendering" to="<svgattr_font-rendering_value>"
+<setattr> = attributeName="font-size" to="<svgattr_font-size_value>"
+<setattr> = attributeName="font-stretch" to="<svgattr_font-stretch_value>"
+<setattr> = attributeName="font-style" to="<svgattr_font-style_value>"
+<setattr> = attributeName="font-variant" to="<svgattr_font-variant_value>"
+<setattr> = attributeName="font-weight" to="<svgattr_font-weight_value>"
+<setattr> = attributeName="fr" to="<svgattr_fr_value>"
+<setattr> = attributeName="from" to="<svgattr_from_value>"
+<setattr> = attributeName="fx" to="<svgattr_fx_value>"
+<setattr> = attributeName="fy" to="<svgattr_fy_value>"
+<setattr> = attributeName="g1" to="<svgattr_g1_value>"
+<setattr> = attributeName="g2" to="<svgattr_g2_value>"
+<setattr> = attributeName="glyph-name" to="<svgattr_glyph-name_value>"
+<setattr> = attributeName="glyph-orientation-horizontal" to="<svgattr_glyph-orientation-horizontal_value>"
+<setattr> = attributeName="glyph-orientation-vertical" to="<svgattr_glyph-orientation-vertical_value>"
+<setattr> = attributeName="glyphRef" to="<svgattr_glyphRef_value>"
+<setattr> = attributeName="gradientTransform" to="<svgattr_gradientTransform_value>"
+<setattr> = attributeName="gradientUnits" to="<svgattr_gradientUnits_value>"
+<setattr> = attributeName="hanging" to="<svgattr_hanging_value>"
+<setattr> = attributeName="height" to="<svgattr_height_value>"
+<setattr> = attributeName="horiz-adv-x" to="<svgattr_horiz-adv-x_value>"
+<setattr> = attributeName="horiz-origin-x" to="<svgattr_horiz-origin-x_value>"
+<setattr> = attributeName="href" to="<svgattr_href_value>"
+<setattr> = attributeName="ideographic" to="<svgattr_ideographic_value>"
+<setattr> = attributeName="in" to="<svgattr_in_value>"
+<setattr> = attributeName="in2" to="<svgattr_in2_value>"
+<setattr> = attributeName="intercept" to="<svgattr_intercept_value>"
+<setattr> = attributeName="k" to="<svgattr_k_value>"
+<setattr> = attributeName="k1" to="<svgattr_k1_value>"
+<setattr> = attributeName="k2" to="<svgattr_k2_value>"
+<setattr> = attributeName="k3" to="<svgattr_k3_value>"
+<setattr> = attributeName="k4" to="<svgattr_k4_value>"
+<setattr> = attributeName="kernelMatrix" to="<svgattr_kernelMatrix_value>"
+<setattr> = attributeName="kernelUnitLength" to="<svgattr_kernelUnitLength_value>"
+<setattr> = attributeName="keyPoints" to="<svgattr_keyPoints_value>"
+<setattr> = attributeName="keySplines" to="<svgattr_keySplines_value>"
+<setattr> = attributeName="keyTimes" to="<svgattr_keyTimes_value>"
+<setattr> = attributeName="lang" to="<svgattr_lang_value>"
+<setattr> = attributeName="lengthAdjust" to="<svgattr_lengthAdjust_value>"
+<setattr> = attributeName="letter-spacing" to="<svgattr_letter-spacing_value>"
+<setattr> = attributeName="lighting-color" to="<svgattr_lighting-color_value>"
+<setattr> = attributeName="limitingConeAngle" to="<svgattr_limitingConeAngle_value>"
+<setattr> = attributeName="line-width" to="<svgattr_line-width_value>"
+<setattr> = attributeName="marker-end" to="<svgattr_marker-end_value>"
+<setattr> = attributeName="marker-mid" to="<svgattr_marker-mid_value>"
+<setattr> = attributeName="marker-start" to="<svgattr_marker-start_value>"
+<setattr> = attributeName="markerHeight" to="<svgattr_markerHeight_value>"
+<setattr> = attributeName="markerUnits" to="<svgattr_markerUnits_value>"
+<setattr> = attributeName="markerWidth" to="<svgattr_markerWidth_value>"
+<setattr> = attributeName="mask" to="<svgattr_mask_value>"
+<setattr> = attributeName="mask-type" to="<svgattr_mask-type_value>"
+<setattr> = attributeName="maskContentUnits" to="<svgattr_maskContentUnits_value>"
+<setattr> = attributeName="maskUnits" to="<svgattr_maskUnits_value>"
+<setattr> = attributeName="mathematical" to="<svgattr_mathematical_value>"
+<setattr> = attributeName="max" to="<svgattr_max_value>"
+<setattr> = attributeName="min" to="<svgattr_min_value>"
+<setattr> = attributeName="mode" to="<svgattr_mode_value>"
+<setattr> = attributeName="name" to="<svgattr_name_value>"
+<setattr> = attributeName="numOctaves" to="<svgattr_numOctaves_value>"
+<setattr> = attributeName="offset" to="<svgattr_offset_value>"
+<setattr> = attributeName="onactivate" to="<svgattr_onactivate_value>"
+<setattr> = attributeName="onbegin" to="<svgattr_onbegin_value>"
+<setattr> = attributeName="onclick" to="<svgattr_onclick_value>"
+<setattr> = attributeName="onend" to="<svgattr_onend_value>"
+<setattr> = attributeName="onerror" to="<svgattr_onerror_value>"
+<setattr> = attributeName="onfocusin" to="<svgattr_onfocusin_value>"
+<setattr> = attributeName="onfocusout" to="<svgattr_onfocusout_value>"
+<setattr> = attributeName="onload" to="<svgattr_onload_value>"
+<setattr> = attributeName="onmousedown" to="<svgattr_onmousedown_value>"
+<setattr> = attributeName="onmousemove" to="<svgattr_onmousemove_value>"
+<setattr> = attributeName="onmouseout" to="<svgattr_onmouseout_value>"
+<setattr> = attributeName="onmouseover" to="<svgattr_onmouseover_value>"
+<setattr> = attributeName="onmouseup" to="<svgattr_onmouseup_value>"
+<setattr> = attributeName="onrepeat" to="<svgattr_onrepeat_value>"
+<setattr> = attributeName="opacity" to="<svgattr_opacity_value>"
+<setattr> = attributeName="operator" to="<svgattr_operator_value>"
+<setattr> = attributeName="order" to="<svgattr_order_value>"
+<setattr> = attributeName="orient" to="<svgattr_orient_value>"
+<setattr> = attributeName="overflow" to="<svgattr_overflow_value>"
+<setattr> = attributeName="panose-1" to="<svgattr_panose-1_value>"
+<setattr> = attributeName="path" to="<svgattr_path_value>"
+<setattr> = attributeName="pathLength" to="<svgattr_pathLength_value>"
+<setattr> = attributeName="patternContentUnits" to="<svgattr_patternContentUnits_value>"
+<setattr> = attributeName="patternTransform" to="<svgattr_patternTransform_value>"
+<setattr> = attributeName="patternUnits" to="<svgattr_patternUnits_value>"
+<setattr> = attributeName="pointer-events" to="<svgattr_pointer-events_value>"
+<setattr> = attributeName="points" to="<svgattr_points_value>"
+<setattr> = attributeName="pointsAtX" to="<svgattr_pointsAtX_value>"
+<setattr> = attributeName="pointsAtY" to="<svgattr_pointsAtY_value>"
+<setattr> = attributeName="pointsAtZ" to="<svgattr_pointsAtZ_value>"
+<setattr> = attributeName="preserveAlpha" to="<svgattr_preserveAlpha_value>"
+<setattr> = attributeName="preserveAspectRatio" to="<svgattr_preserveAspectRatio_value>"
+<setattr> = attributeName="primitiveUnits" to="<svgattr_primitiveUnits_value>"
+<setattr> = attributeName="r" to="<svgattr_r_value>"
+<setattr> = attributeName="radius" to="<svgattr_radius_value>"
+<setattr> = attributeName="refX" to="<svgattr_refX_value>"
+<setattr> = attributeName="refY" to="<svgattr_refY_value>"
+<setattr> = attributeName="repeatCount" to="<svgattr_repeatCount_value>"
+<setattr> = attributeName="repeatDur" to="<svgattr_repeatDur_value>"
+<setattr> = attributeName="requiredExtensions" to="<svgattr_requiredExtensions_value>"
+<setattr> = attributeName="requiredFeatures" to="<svgattr_requiredFeatures_value>"
+<setattr> = attributeName="restart" to="<svgattr_restart_value>"
+<setattr> = attributeName="result" to="<svgattr_result_value>"
+<setattr> = attributeName="role" to="<svgattr_role_value>"
+<setattr> = attributeName="rotate" to="<svgattr_rotate_value>"
+<setattr> = attributeName="rx" to="<svgattr_rx_value>"
+<setattr> = attributeName="ry" to="<svgattr_ry_value>"
+<setattr> = attributeName="scale" to="<svgattr_scale_value>"
+<setattr> = attributeName="seed" to="<svgattr_seed_value>"
+<setattr> = attributeName="shape-rendering" to="<svgattr_shape-rendering_value>"
+<setattr> = attributeName="slope" to="<svgattr_slope_value>"
+<setattr> = attributeName="specularConstant" to="<svgattr_specularConstant_value>"
+<setattr> = attributeName="specularExponent" to="<svgattr_specularExponent_value>"
+<setattr> = attributeName="spreadMethod" to="<svgattr_spreadMethod_value>"
+<setattr> = attributeName="startOffset" to="<svgattr_startOffset_value>"
+<setattr> = attributeName="stdDeviation" to="<svgattr_stdDeviation_value>"
+<setattr> = attributeName="stitchTiles" to="<svgattr_stitchTiles_value>"
+<setattr> = attributeName="stop-color" to="<svgattr_stop-color_value>"
+<setattr> = attributeName="stop-offset" to="<svgattr_stop-offset_value>"
+<setattr> = attributeName="stop-opacity" to="<svgattr_stop-opacity_value>"
+<setattr> = attributeName="stroke" to="<svgattr_stroke_value>"
+<setattr> = attributeName="stroke-dasharray" to="<svgattr_stroke-dasharray_value>"
+<setattr> = attributeName="stroke-dashoffset" to="<svgattr_stroke-dashoffset_value>"
+<setattr> = attributeName="stroke-join" to="<svgattr_stroke-join_value>"
+<setattr> = attributeName="stroke-linecap" to="<svgattr_stroke-linecap_value>"
+<setattr> = attributeName="stroke-linejoin" to="<svgattr_stroke-linejoin_value>"
+<setattr> = attributeName="stroke-miterlimit" to="<svgattr_stroke-miterlimit_value>"
+<setattr> = attributeName="stroke-opacity" to="<svgattr_stroke-opacity_value>"
+<setattr> = attributeName="stroke-width" to="<svgattr_stroke-width_value>"
+<setattr> = attributeName="style" to="<svgattr_style_value>"
+<setattr> = attributeName="surfaceScale" to="<svgattr_surfaceScale_value>"
+<setattr> = attributeName="systemLanguage" to="<svgattr_systemLanguage_value>"
+<setattr> = attributeName="tabindex" to="<svgattr_tabindex_value>"
+<setattr> = attributeName="tableValues" to="<svgattr_tableValues_value>"
+<setattr> = attributeName="target" to="<svgattr_target_value>"
+<setattr> = attributeName="targetX" to="<svgattr_targetX_value>"
+<setattr> = attributeName="targetY" to="<svgattr_targetY_value>"
+<setattr> = attributeName="text-anchor" to="<svgattr_text-anchor_value>"
+<setattr> = attributeName="text-decoration" to="<svgattr_text-decoration_value>"
+<setattr> = attributeName="text-rendering" to="<svgattr_text-rendering_value>"
+<setattr> = attributeName="textLength" to="<svgattr_textLength_value>"
+<setattr> = attributeName="to" to="<svgattr_to_value>"
+<setattr> = attributeName="transform" to="<svgattr_transform_value>"
+<setattr> = attributeName="type" to="<svgattr_type_value>"
+<setattr> = attributeName="underline-position" to="<svgattr_underline-position_value>"
+<setattr> = attributeName="underline-thickness" to="<svgattr_underline-thickness_value>"
+<setattr> = attributeName="unicode" to="<svgattr_unicode_value>"
+<setattr> = attributeName="unicode-bidi" to="<svgattr_unicode-bidi_value>"
+<setattr> = attributeName="unicode-range" to="<svgattr_unicode-range_value>"
+<setattr> = attributeName="units-per-em" to="<svgattr_units-per-em_value>"
+<setattr> = attributeName="values" to="<svgattr_values_value>"
+<setattr> = attributeName="vector-effect" to="<svgattr_vector-effect_value>"
+<setattr> = attributeName="version" to="<svgattr_version_value>"
+<setattr> = attributeName="vert-origin-y" to="<svgattr_vert-origin-y_value>"
+<setattr> = attributeName="viewBox" to="<svgattr_viewBox_value>"
+<setattr> = attributeName="viewTarget" to="<svgattr_viewTarget_value>"
+<setattr> = attributeName="viewbox" to="<svgattr_viewbox_value>"
+<setattr> = attributeName="visibility" to="<svgattr_visibility_value>"
+<setattr> = attributeName="width" to="<svgattr_width_value>"
+<setattr> = attributeName="word-spacing" to="<svgattr_word-spacing_value>"
+<setattr> = attributeName="writing-mode" to="<svgattr_writing-mode_value>"
+<setattr> = attributeName="x" to="<svgattr_x_value>"
+<setattr> = attributeName="x-height" to="<svgattr_x-height_value>"
+<setattr> = attributeName="x1" to="<svgattr_x1_value>"
+<setattr> = attributeName="x2" to="<svgattr_x2_value>"
+<setattr> = attributeName="xChannelSelector" to="<svgattr_xChannelSelector_value>"
+<setattr> = attributeName="y" to="<svgattr_y_value>"
+<setattr> = attributeName="y1" to="<svgattr_y1_value>"
+<setattr> = attributeName="y2" to="<svgattr_y2_value>"
+<setattr> = attributeName="yChannelSelector" to="<svgattr_yChannelSelector_value>"
+<setattr> = attributeName="z" to="<svgattr_z_value>"
+<setattr> = attributeName="zoomAndPan" to="<svgattr_zoomAndPan_value>"
+<setattr> = attributeName="xlink_actuate" to="<svgattr_xlink_actuate_value>"
+<setattr> = attributeName="xlink_href" to="<svgattr_xlink_href_value>"
+<setattr> = attributeName="xlink_show" to="<svgattr_xlink_show_value>"
+<setattr> = attributeName="xlink_title" to="<svgattr_xlink_title_value>"
+<setattr> = attributeName="xlink_type" to="<svgattr_xlink_type_value>"
+<setattr> = attributeName="xml_id" to="<svgattr_xml_id_value>"
+<setattr> = attributeName="xml_lang" to="<svgattr_xml_lang_value>"
+<setattr> = attributeName="xml_space" to="<svgattr_xml_space_value>"
+
+<svgattrs_set> = <svgattrx_set> <svgattrx_set> <svgattrx_set> <svgattrx_set> <svgattrx_set> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_set> = <svgattr_xlink_href>
+<svgattrx_set> = <svgattr_dur>
+<svgattrx_set> = <svgattr_from>
+<svgattrx_set> = <svgattr_begin>
+<svgattrx_set> = <svgattr_fill>
+<svgattrx_set> = <svgattr_onbegin>
+<svgattrx_set> = <svgattr_attributeType>
+<svgattrx_set> = <svgattr_repeatCount>
+<svgattrx_set> = <svgattr_end>
+<svgattrx_set> = <svgattr_max>
+<svgattrx_set> = <svgattr_min>
+<svgattrx_set> = <svgattr_repeatDur>
+<svgattrx_set> = <svgattr_restart>
+
+
+<svgelement_solidcolor> = <lt>solidcolor <svgattrs_solidcolor> /<gt><newline>
+<svgelement_solidcolor> = <lt>solidcolor <svgattrs_solidcolor><gt><newline><svgchildren_solidcolor><lt>/solidcolor<gt><newline>
+<svgchildren_solidcolor nonrecursive=true p=0.5> = <svgchild_solidcolor>
+<svgchildren_solidcolor> = <svgchild_solidcolor><svgchildren_solidcolor>
+<svgchild_solidcolor> = <svgelement>
+
+<svgattrs_solidcolor> = <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+
+
+<svgelement_stop> = <lt>stop <svgattrs_stop> /<gt><newline>
+
+<svgattrs_stop> = <svgattrx_stop> <svgattrx_stop> <svgattrx_stop> <svgattrx_stop> <svgattrx_stop> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_stop> = <svgattr_stop-color>
+<svgattrx_stop> = <svgattr_class>
+<svgattrx_stop> = <svgattr_offset>
+<svgattrx_stop> = <svgattr_stop-opacity>
+<svgattrx_stop> = <svgattr_style>
+<svgattrx_stop> = <svgattr_stop-offset>
+<svgattrx_stop> = <svgattr_fill-rule>
+<svgattrx_stop> = <svgattr_color>
+
+
+<svgelement_switch> = <lt>switch <svgattrs_switch> /<gt><newline>
+<svgelement_switch> = <lt>switch <svgattrs_switch><gt><newline><svgchildren_switch><lt>/switch<gt><newline>
+<svgchildren_switch nonrecursive=true p=0.5> = <svgchild_switch>
+<svgchildren_switch> = <svgchild_switch><svgchildren_switch>
+<svgchild_switch> = <svgelement>
+
+<svgattrs_switch> = <svgattrx_switch> <svgattrx_switch> <svgattrx_switch> <svgattrx_switch> <svgattrx_switch> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_switch> = <svgattr_transform>
+<svgattrx_switch> = <svgattr_stroke>
+<svgattrx_switch> = <svgattr_fill>
+
+
+<svgelement_symbol> = <lt>symbol <svgattrs_symbol> /<gt><newline>
+<svgelement_symbol> = <lt>symbol <svgattrs_symbol><gt><newline><svgchildren_symbol><lt>/symbol<gt><newline>
+<svgchildren_symbol nonrecursive=true p=0.5> = <svgchild_symbol>
+<svgchildren_symbol> = <svgchild_symbol><svgchildren_symbol>
+<svgchild_symbol> = <svgelement>
+
+<svgattrs_symbol> = <svgattrx_symbol> <svgattrx_symbol> <svgattrx_symbol> <svgattrx_symbol> <svgattrx_symbol> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_symbol> = <svgattr_overflow>
+<svgattrx_symbol> = <svgattr_style>
+<svgattrx_symbol> = <svgattr_shape-rendering>
+<svgattrx_symbol> = <svgattr_viewBox>
+<svgattrx_symbol> = <svgattr_preserveAspectRatio>
+<svgattrx_symbol> = <svgattr_stroke>
+
+
+<svgelement_text> = <lt>text <svgattrs_text> /<gt><newline>
+<svgelement_text> = <lt>text <svgattrs_text><gt>Text<lt>/text<gt><newline>
+<svgelement_text> = <lt>text <svgattrs_text><gt><newline><svgchildren_text>Text<lt>/text<gt><newline>
+<svgchildren_text nonrecursive=true p=0.5> = <svgchild_text>
+<svgchildren_text> = <svgchild_text><svgchildren_text>
+<svgchild_text> = <svgelement_tspan>
+<svgchild_text> = <svgelement_textPath>
+<svgchild_text> = <svgelement_a>
+<svgchild_text> = <svgelement_tref>
+<svgchild_text> = <svgelement_linearGradient>
+<svgchild_text> = <svgelement_animateMotion>
+<svgchild_text> = <svgelement_animate>
+<svgchild_text> = <svgelement_altGlyph>
+<svgchild_text> = <svgelement_animateTransform>
+<svgchild_text> = <svgelement_set>
+<svgchild_text> = <svgelement>
+
+<svgattrs_text> = <svgattrx_text> <svgattrx_text> <svgattrx_text> <svgattrx_text> <svgattrx_text> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_text> = <svgattr_y>
+<svgattrx_text> = <svgattr_x>
+<svgattrx_text> = <svgattr_direction>
+<svgattrx_text> = <svgattr_unicode-bidi>
+<svgattrx_text> = <svgattr_text-anchor>
+<svgattrx_text> = <svgattr_font-size>
+<svgattrx_text> = <svgattr_fill>
+<svgattrx_text> = <svgattr_xml_id>
+<svgattrx_text> = <svgattr_stroke>
+<svgattrx_text> = <svgattr_font-weight>
+<svgattrx_text> = <svgattr_font-family>
+<svgattrx_text> = <svgattr_stroke-width>
+<svgattrx_text> = <svgattr_xml_space>
+<svgattrx_text> = <svgattr_style>
+<svgattrx_text> = <svgattr_dominant-baseline>
+<svgattrx_text> = <svgattr_letter-spacing>
+<svgattrx_text> = <svgattr_width>
+<svgattrx_text> = <svgattr_height>
+<svgattrx_text> = <svgattr_visibility>
+<svgattrx_text> = <svgattr_dx>
+<svgattrx_text> = <svgattr_class>
+<svgattrx_text> = <svgattr_transform>
+<svgattrx_text> = <svgattr_click>
+<svgattrx_text> = <svgattr_onload>
+<svgattrx_text> = <svgattr_onmousedown>
+<svgattrx_text> = <svgattr_display>
+<svgattrx_text> = <svgattr_rotate>
+<svgattrx_text> = <svgattr_dy>
+<svgattrx_text> = <svgattr_tabindex>
+<svgattrx_text> = <svgattr_filter>
+<svgattrx_text> = <svgattr_clip-path>
+<svgattrx_text> = <svgattr_onclick>
+<svgattrx_text> = <svgattr_pointer-events>
+<svgattrx_text> = <svgattr_font-rendering>
+<svgattrx_text> = <svgattr_xml_lang>
+<svgattrx_text> = <svgattr_stop-color>
+<svgattrx_text> = <svgattr_lengthAdjust>
+<svgattrx_text> = <svgattr_fill-opacity>
+<svgattrx_text> = <svgattr_stroke-opacity>
+<svgattrx_text> = <svgattr_opacity>
+<svgattrx_text> = <svgattr_textLength>
+<svgattrx_text> = <svgattr_text-rendering>
+<svgattrx_text> = <svgattr_text-decoration>
+<svgattrx_text> = <svgattr_font-style>
+<svgattrx_text> = <svgattr_word-spacing>
+<svgattrx_text> = <svgattr_cursor>
+<svgattrx_text> = <svgattr_onmouseout>
+<svgattrx_text> = <svgattr_glyph-orientation-vertical>
+<svgattrx_text> = <svgattr_mask>
+<svgattrx_text> = <svgattr_stroke-linejoin>
+<svgattrx_text> = <svgattr_stroke-linecap>
+<svgattrx_text> = <svgattr_writing-mode>
+<svgattrx_text> = <svgattr_glyph-orientation-horizontal>
+
+
+<svgelement_textPath> = <lt>textPath <svgattrs_textPath> /<gt><newline>
+<svgelement_textPath> = <lt>textPath <svgattrs_textPath><gt><newline><svgchildren_textPath><lt>/textPath<gt><newline>
+<svgchildren_textPath nonrecursive=true p=0.5> = <svgchild_textPath>
+<svgchildren_textPath> = <svgchild_textPath><svgchildren_textPath>
+<svgchild_textPath> = <svgelement_tspan>
+<svgchild_textPath> = <svgelement_text>
+<svgchild_textPath> = <svgelement_textPath>
+<svgchild_textPath> = <svgelement_altGlyph>
+<svgchild_textPath> = <svgelement>
+
+<svgattrs_textPath> = <svgattrx_textPath> <svgattrx_textPath> <svgattrx_textPath> <svgattrx_textPath> <svgattrx_textPath> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_textPath> = <svgattr_xlink_href>
+<svgattrx_textPath> = <svgattr_startOffset>
+<svgattrx_textPath> = <svgattr_font-size>
+<svgattrx_textPath> = <svgattr_flood-opacity>
+<svgattrx_textPath> = <svgattr_text-anchor>
+<svgattrx_textPath> = <svgattr_fill>
+<svgattrx_textPath> = <svgattr_textLength>
+<svgattrx_textPath> = <svgattr_lengthAdjust>
+<svgattrx_textPath> = <svgattr_letter-spacing>
+<svgattrx_textPath> = <svgattr_word-spacing>
+
+
+<svgelement_title> = <lt>title <svgattrs_title><gt>Title<lt>/title<gt><newline>
+
+<svgattrs_title> = <svgattrx_title> <svgattrx_title> <svgattrx_title> <svgattrx_title> <svgattrx_title> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_title> = <svgattr_xml_id>
+
+
+<svgelement_tref> = <lt>tref <svgattrs_tref> /<gt><newline>
+<svgelement_tref> = <lt>tref <svgattrs_tref><gt><newline><svgchildren_tref><lt>/tref<gt><newline>
+<svgchildren_tref nonrecursive=true p=0.5> = <svgchild_tref>
+<svgchildren_tref> = <svgchild_tref><svgchildren_tref>
+<svgchild_tref> = <svgelement_text>
+<svgchild_tref> = <svgelement_tspan>
+<svgchild_tref> = <svgelement_tref>
+<svgchild_tref> = <svgelement_textPath>
+<svgchild_tref> = <svgelement_altGlyph>
+<svgchild_tref> = <svgelement>
+
+<svgattrs_tref> = <svgattrx_tref> <svgattrx_tref> <svgattrx_tref> <svgattrx_tref> <svgattrx_tref> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_tref> = <svgattr_xlink_href>
+<svgattrx_tref> = <svgattr_flood-color>
+<svgattrx_tref> = <svgattr_fill>
+<svgattrx_tref> = <svgattr_y>
+<svgattrx_tref> = <svgattr_x>
+<svgattrx_tref> = <svgattr_text-decoration>
+
+
+<svgelement_tspan> = <lt>tspan <svgattr_x> <svgattr_y> <svgattrs_tspan> /<gt><newline>
+<svgelement_tspan> = <lt>tspan <svgattr_x> <svgattr_y> <svgattrs_tspan><gt><newline><svgchildren_tspan><lt>/tspan<gt><newline>
+<svgchildren_tspan nonrecursive=true p=0.5> = <svgchild_tspan>
+<svgchildren_tspan> = <svgchild_tspan><svgchildren_tspan>
+<svgchild_tspan> = <svgelement_a>
+<svgchild_tspan> = <svgelement_tspan>
+<svgchild_tspan> = <svgelement_text>
+<svgchild_tspan> = <svgelement_textPath>
+<svgchild_tspan> = <svgelement_animate>
+<svgchild_tspan> = <svgelement>
+
+<svgattrs_tspan> = <svgattrx_tspan> <svgattrx_tspan> <svgattrx_tspan> <svgattrx_tspan> <svgattrx_tspan> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_tspan> = <svgattr_unicode-bidi>
+<svgattrx_tspan> = <svgattr_direction>
+<svgattrx_tspan> = <svgattr_dy>
+<svgattrx_tspan> = <svgattr_dominant-baseline>
+<svgattrx_tspan> = <svgattr_fill>
+<svgattrx_tspan> = <svgattr_alignment-baseline>
+<svgattrx_tspan> = <svgattr_font-size>
+<svgattrx_tspan> = <svgattr_dx>
+<svgattrx_tspan> = <svgattr_rotate>
+<svgattrx_tspan> = <svgattr_font-family>
+<svgattrx_tspan> = <svgattr_stroke>
+<svgattrx_tspan> = <svgattr_stop-opacity>
+<svgattrx_tspan> = <svgattr_baseline-shift>
+<svgattrx_tspan> = <svgattr_style>
+<svgattrx_tspan> = <svgattr_xml_space>
+<svgattrx_tspan> = <svgattr_text-anchor>
+<svgattrx_tspan> = <svgattr_text-decoration>
+<svgattrx_tspan> = <svgattr_font-weight>
+<svgattrx_tspan> = <svgattr_tabindex>
+<svgattrx_tspan> = <svgattr_filter>
+<svgattrx_tspan> = <svgattr_onclick>
+<svgattrx_tspan> = <svgattr_xml_lang>
+<svgattrx_tspan> = <svgattr_visibility>
+<svgattrx_tspan> = <svgattr_display>
+<svgattrx_tspan> = <svgattr_fill-opacity>
+<svgattrx_tspan> = <svgattr_stroke-width>
+<svgattrx_tspan> = <svgattr_font-style>
+<svgattrx_tspan> = <svgattr_opacity>
+<svgattrx_tspan> = <svgattr_stroke-linejoin>
+<svgattrx_tspan> = <svgattr_stroke-linecap>
+<svgattrx_tspan> = <svgattr_class>
+<svgattrx_tspan> = <svgattr_letter-spacing>
+<svgattrx_tspan> = <svgattr_glyph-orientation-vertical>
+
+
+<svgelement_unknown> = <lt>unknown <svgattrs_unknown> /<gt><newline>
+<svgelement_unknown> = <lt>unknown <svgattrs_unknown><gt><newline><svgchildren_unknown><lt>/unknown<gt><newline>
+<svgchildren_unknown nonrecursive=true p=0.5> = <svgchild_unknown>
+<svgchildren_unknown> = <svgchild_unknown><svgchildren_unknown>
+<svgchild_unknown> = <svgelement>
+
+<svgattrs_unknown> = <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+
+
+<svgelement_use> = <lt>use <svgattrs_use> /<gt><newline>
+<svgelement_use> = <lt>use <svgattrs_use><gt><newline><svgchildren_use><lt>/use<gt><newline>
+<svgchildren_use nonrecursive=true p=0.5> = <svgchild_use>
+<svgchildren_use> = <svgchild_use><svgchildren_use>
+<svgchild_use> = <svgelement_symbol>
+<svgchild_use> = <svgelement_desc>
+<svgchild_use> = <svgelement_set>
+<svgchild_use> = <svgelement_use>
+<svgchild_use> = <svgelement_a>
+<svgchild_use> = <svgelement_title>
+<svgchild_use> = <svgelement_animateMotion>
+<svgchild_use> = <svgelement_animateTransform>
+<svgchild_use> = <svgelement_animate>
+<svgchild_use> = <svgelement>
+
+<svgattrs_use> = <svgattr_xlink_href> <svgattrx_use> <svgattrx_use> <svgattrx_use> <svgattrx_use> <svgattrx_use> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_use> = <svgattr_width>
+<svgattrx_use> = <svgattr_height>
+<svgattrx_use> = <svgattr_y>
+<svgattrx_use> = <svgattr_x>
+<svgattrx_use> = <svgattr_transform>
+<svgattrx_use> = <svgattr_style>
+<svgattrx_use> = <svgattr_stroke>
+<svgattrx_use> = <svgattr_fill>
+<svgattrx_use> = <svgattr_clip-path>
+<svgattrx_use> = <svgattr_onclick>
+<svgattrx_use> = <svgattr_filter>
+<svgattrx_use> = <svgattr_class>
+<svgattrx_use> = <svgattr_fill-opacity>
+<svgattrx_use> = <svgattr_stroke-linecap>
+<svgattrx_use> = <svgattr_stroke-dasharray>
+<svgattrx_use> = <svgattr_stroke-width>
+<svgattrx_use> = <svgattr_clip-rule>
+<svgattrx_use> = <svgattr_mask>
+<svgattrx_use> = <svgattr_font-size>
+<svgattrx_use> = <svgattr_font-weight>
+<svgattrx_use> = <svgattr_text-anchor>
+<svgattrx_use> = <svgattr_font-style>
+<svgattrx_use> = <svgattr_onmousedown>
+
+
+<svgelement_view> = <lt>view <svgattrs_view> /<gt><newline>
+
+<svgattrs_view> = <svgattrx_view> <svgattrx_view> <svgattrx_view> <svgattrx_view> <svgattrx_view> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+<svgattrx_view> = <svgattr_viewBox>
+<svgattrx_view> = <svgattr_preserveAspectRatio>
+<svgattrx_view> = <svgattr_viewTarget>
+
+
+<svgelement_vkern> = <lt>vkern <svgattrs_vkern> /<gt><newline>
+<svgelement_vkern> = <lt>vkern <svgattrs_vkern><gt><newline><svgchildren_vkern><lt>/vkern<gt><newline>
+<svgchildren_vkern nonrecursive=true p=0.5> = <svgchild_vkern>
+<svgchildren_vkern> = <svgchild_vkern><svgchildren_vkern>
+<svgchild_vkern> = <svgelement>
+
+<svgattrs_vkern> = <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr> <svgattr>
+
+
+<svgattr> = <svgattr_accumulate>
+<svgattr> = <svgattr_additive>
+<svgattr> = <svgattr_alignment-baseline>
+<svgattr> = <svgattr_alphabetic>
+<svgattr> = <svgattr_alt>
+<svgattr> = <svgattr_amplitude>
+<svgattr> = <svgattr_arabic-form>
+<svgattr> = <svgattr_aria-label>
+<svgattr> = <svgattr_ascent>
+<svgattr> = <svgattr_attributeName>
+<svgattr> = <svgattr_attributeType>
+<svgattr> = <svgattr_azimuth>
+<svgattr> = <svgattr_baseFrequency>
+<svgattr> = <svgattr_baseProfile>
+<svgattr> = <svgattr_baseline-shift>
+<svgattr> = <svgattr_bbox>
+<svgattr> = <svgattr_begin>
+<svgattr> = <svgattr_by>
+<svgattr> = <svgattr_calcMode>
+<svgattr> = <svgattr_cap-height>
+<svgattr> = <svgattr_class>
+<svgattr> = <svgattr_click>
+<svgattr> = <svgattr_clip>
+<svgattr> = <svgattr_clip-path>
+<svgattr> = <svgattr_clip-rule>
+<svgattr> = <svgattr_clipPathUnits>
+<svgattr> = <svgattr_color>
+<svgattr> = <svgattr_color-interpolation>
+<svgattr> = <svgattr_color-interpolation-filters>
+<svgattr> = <svgattr_color-profile>
+<svgattr> = <svgattr_contentScriptType>
+<svgattr> = <svgattr_contentStyleType>
+<svgattr> = <svgattr_cursor>
+<svgattr> = <svgattr_cx>
+<svgattr> = <svgattr_cy>
+<svgattr> = <svgattr_d>
+<svgattr> = <svgattr_descent>
+<svgattr> = <svgattr_diffuseConstant>
+<svgattr> = <svgattr_direction>
+<svgattr> = <svgattr_display>
+<svgattr> = <svgattr_divisor>
+<svgattr> = <svgattr_dominant-baseline>
+<svgattr> = <svgattr_dur>
+<svgattr> = <svgattr_dx>
+<svgattr> = <svgattr_dy>
+<svgattr> = <svgattr_edgeMode>
+<svgattr> = <svgattr_elevation>
+<svgattr> = <svgattr_enable-background>
+<svgattr> = <svgattr_end>
+<svgattr> = <svgattr_exponent>
+<svgattr> = <svgattr_externalResourcesRequired>
+<svgattr> = <svgattr_fill>
+<svgattr> = <svgattr_fill-opacity>
+<svgattr> = <svgattr_fill-rule>
+<svgattr> = <svgattr_filter>
+<svgattr> = <svgattr_filterPrimitiveUnits>
+<svgattr> = <svgattr_filterRes>
+<svgattr> = <svgattr_filterUnits>
+<svgattr> = <svgattr_flood-color>
+<svgattr> = <svgattr_flood-opacity>
+<svgattr> = <svgattr_font-family>
+<svgattr> = <svgattr_font-rendering>
+<svgattr> = <svgattr_font-size>
+<svgattr> = <svgattr_font-stretch>
+<svgattr> = <svgattr_font-style>
+<svgattr> = <svgattr_font-variant>
+<svgattr> = <svgattr_font-weight>
+<svgattr> = <svgattr_fr>
+<svgattr> = <svgattr_from>
+<svgattr> = <svgattr_fx>
+<svgattr> = <svgattr_fy>
+<svgattr> = <svgattr_g1>
+<svgattr> = <svgattr_g2>
+<svgattr> = <svgattr_glyph-name>
+<svgattr> = <svgattr_glyph-orientation-horizontal>
+<svgattr> = <svgattr_glyph-orientation-vertical>
+<svgattr> = <svgattr_glyphRef>
+<svgattr> = <svgattr_gradientTransform>
+<svgattr> = <svgattr_gradientUnits>
+<svgattr> = <svgattr_hanging>
+<svgattr> = <svgattr_height>
+<svgattr> = <svgattr_horiz-adv-x>
+<svgattr> = <svgattr_horiz-origin-x>
+<svgattr> = <svgattr_href>
+<svgattr> = <svgattr_ideographic>
+<svgattr> = <svgattr_in>
+<svgattr> = <svgattr_in2>
+<svgattr> = <svgattr_intercept>
+<svgattr> = <svgattr_k>
+<svgattr> = <svgattr_k1>
+<svgattr> = <svgattr_k2>
+<svgattr> = <svgattr_k3>
+<svgattr> = <svgattr_k4>
+<svgattr> = <svgattr_kernelMatrix>
+<svgattr> = <svgattr_kernelUnitLength>
+<svgattr> = <svgattr_keyPoints>
+<svgattr> = <svgattr_keySplines>
+<svgattr> = <svgattr_keyTimes>
+<svgattr> = <svgattr_lang>
+<svgattr> = <svgattr_lengthAdjust>
+<svgattr> = <svgattr_letter-spacing>
+<svgattr> = <svgattr_lighting-color>
+<svgattr> = <svgattr_limitingConeAngle>
+<svgattr> = <svgattr_line-width>
+<svgattr> = <svgattr_marker-end>
+<svgattr> = <svgattr_marker-mid>
+<svgattr> = <svgattr_marker-start>
+<svgattr> = <svgattr_markerHeight>
+<svgattr> = <svgattr_markerUnits>
+<svgattr> = <svgattr_markerWidth>
+<svgattr> = <svgattr_mask>
+<svgattr> = <svgattr_mask-type>
+<svgattr> = <svgattr_maskContentUnits>
+<svgattr> = <svgattr_maskUnits>
+<svgattr> = <svgattr_mathematical>
+<svgattr> = <svgattr_max>
+<svgattr> = <svgattr_min>
+<svgattr> = <svgattr_mode>
+<svgattr> = <svgattr_name>
+<svgattr> = <svgattr_numOctaves>
+<svgattr> = <svgattr_offset>
+<svgattr> = <svgattr_onactivate>
+<svgattr> = <svgattr_onbegin>
+<svgattr> = <svgattr_onclick>
+<svgattr> = <svgattr_onend>
+<svgattr> = <svgattr_onerror>
+<svgattr> = <svgattr_onfocusin>
+<svgattr> = <svgattr_onfocusout>
+<svgattr> = <svgattr_onload>
+<svgattr> = <svgattr_onmousedown>
+<svgattr> = <svgattr_onmousemove>
+<svgattr> = <svgattr_onmouseout>
+<svgattr> = <svgattr_onmouseover>
+<svgattr> = <svgattr_onmouseup>
+<svgattr> = <svgattr_onrepeat>
+<svgattr> = <svgattr_opacity>
+<svgattr> = <svgattr_operator>
+<svgattr> = <svgattr_order>
+<svgattr> = <svgattr_orient>
+<svgattr> = <svgattr_overflow>
+<svgattr> = <svgattr_panose-1>
+<svgattr> = <svgattr_path>
+<svgattr> = <svgattr_pathLength>
+<svgattr> = <svgattr_patternContentUnits>
+<svgattr> = <svgattr_patternTransform>
+<svgattr> = <svgattr_patternUnits>
+<svgattr> = <svgattr_pointer-events>
+<svgattr> = <svgattr_points>
+<svgattr> = <svgattr_pointsAtX>
+<svgattr> = <svgattr_pointsAtY>
+<svgattr> = <svgattr_pointsAtZ>
+<svgattr> = <svgattr_preserveAlpha>
+<svgattr> = <svgattr_preserveAspectRatio>
+<svgattr> = <svgattr_primitiveUnits>
+<svgattr> = <svgattr_r>
+<svgattr> = <svgattr_radius>
+<svgattr> = <svgattr_refX>
+<svgattr> = <svgattr_refY>
+<svgattr> = <svgattr_repeatCount>
+<svgattr> = <svgattr_repeatDur>
+<svgattr> = <svgattr_requiredExtensions>
+<svgattr> = <svgattr_requiredFeatures>
+<svgattr> = <svgattr_restart>
+<svgattr> = <svgattr_result>
+<svgattr> = <svgattr_role>
+<svgattr> = <svgattr_rotate>
+<svgattr> = <svgattr_rx>
+<svgattr> = <svgattr_ry>
+<svgattr> = <svgattr_scale>
+<svgattr> = <svgattr_seed>
+<svgattr> = <svgattr_shape-rendering>
+<svgattr> = <svgattr_slope>
+<svgattr> = <svgattr_specularConstant>
+<svgattr> = <svgattr_specularExponent>
+<svgattr> = <svgattr_spreadMethod>
+<svgattr> = <svgattr_startOffset>
+<svgattr> = <svgattr_stdDeviation>
+<svgattr> = <svgattr_stitchTiles>
+<svgattr> = <svgattr_stop-color>
+<svgattr> = <svgattr_stop-offset>
+<svgattr> = <svgattr_stop-opacity>
+<svgattr> = <svgattr_stroke>
+<svgattr> = <svgattr_stroke-dasharray>
+<svgattr> = <svgattr_stroke-dashoffset>
+<svgattr> = <svgattr_stroke-join>
+<svgattr> = <svgattr_stroke-linecap>
+<svgattr> = <svgattr_stroke-linejoin>
+<svgattr> = <svgattr_stroke-miterlimit>
+<svgattr> = <svgattr_stroke-opacity>
+<svgattr> = <svgattr_stroke-width>
+<svgattr> = <svgattr_style>
+<svgattr> = <svgattr_surfaceScale>
+<svgattr> = <svgattr_systemLanguage>
+<svgattr> = <svgattr_tabindex>
+<svgattr> = <svgattr_tableValues>
+<svgattr> = <svgattr_target>
+<svgattr> = <svgattr_targetX>
+<svgattr> = <svgattr_targetY>
+<svgattr> = <svgattr_text-anchor>
+<svgattr> = <svgattr_text-decoration>
+<svgattr> = <svgattr_text-rendering>
+<svgattr> = <svgattr_textLength>
+<svgattr> = <svgattr_to>
+<svgattr> = <svgattr_transform>
+<svgattr> = <svgattr_type>
+<svgattr> = <svgattr_underline-position>
+<svgattr> = <svgattr_underline-thickness>
+<svgattr> = <svgattr_unicode>
+<svgattr> = <svgattr_unicode-bidi>
+<svgattr> = <svgattr_unicode-range>
+<svgattr> = <svgattr_units-per-em>
+<svgattr> = <svgattr_values>
+<svgattr> = <svgattr_vector-effect>
+<svgattr> = <svgattr_version>
+<svgattr> = <svgattr_vert-origin-y>
+<svgattr> = <svgattr_viewBox>
+<svgattr> = <svgattr_viewTarget>
+<svgattr> = <svgattr_viewbox>
+<svgattr> = <svgattr_visibility>
+<svgattr> = <svgattr_width>
+<svgattr> = <svgattr_word-spacing>
+<svgattr> = <svgattr_writing-mode>
+<svgattr> = <svgattr_x>
+<svgattr> = <svgattr_x-height>
+<svgattr> = <svgattr_x1>
+<svgattr> = <svgattr_x2>
+<svgattr> = <svgattr_xChannelSelector>
+<svgattr> = <svgattr_y>
+<svgattr> = <svgattr_y1>
+<svgattr> = <svgattr_y2>
+<svgattr> = <svgattr_yChannelSelector>
+<svgattr> = <svgattr_z>
+<svgattr> = <svgattr_zoomAndPan>
+<svgattr> = <svgattr_xlink_actuate>
+<svgattr> = <svgattr_xlink_href>
+<svgattr> = <svgattr_xlink_show>
+<svgattr> = <svgattr_xlink_title>
+<svgattr> = <svgattr_xlink_type>
+<svgattr> = <svgattr_xml_id>
+<svgattr> = <svgattr_xml_lang>
+<svgattr> = <svgattr_xml_space>
+
+
+<svgattr_accumulate> = accumulate="<svgattr_accumulate_value>"
+<svgattr_additive> = additive="<svgattr_additive_value>"
+<svgattr_alignment-baseline> = alignment-baseline="<svgattr_alignment-baseline_value>"
+<svgattr_alphabetic> = alphabetic="<svgattr_alphabetic_value>"
+<svgattr_alt> = alt="<svgattr_alt_value>"
+<svgattr_amplitude> = amplitude="<svgattr_amplitude_value>"
+<svgattr_arabic-form> = arabic-form="<svgattr_arabic-form_value>"
+<svgattr_aria-label> = aria-label="<svgattr_aria-label_value>"
+<svgattr_ascent> = ascent="<svgattr_ascent_value>"
+<svgattr_attributeName> = attributeName="<svgattr_attributeName_value>"
+<svgattr_attributeType> = attributeType="<svgattr_attributeType_value>"
+<svgattr_azimuth> = azimuth="<svgattr_azimuth_value>"
+<svgattr_baseFrequency> = baseFrequency="<svgattr_baseFrequency_value>"
+<svgattr_baseProfile> = baseProfile="<svgattr_baseProfile_value>"
+<svgattr_baseline-shift> = baseline-shift="<svgattr_baseline-shift_value>"
+<svgattr_bbox> = bbox="<svgattr_bbox_value>"
+<svgattr_begin> = begin="<svgattr_begin_value>"
+<svgattr_by> = by="<svgattr_by_value>"
+<svgattr_calcMode> = calcMode="<svgattr_calcMode_value>"
+<svgattr_cap-height> = cap-height="<svgattr_cap-height_value>"
+<svgattr_class> = class="<svgattr_class_value>"
+<svgattr_click> = click="<svgattr_click_value>"
+<svgattr_clip> = clip="<svgattr_clip_value>"
+<svgattr_clip-path> = clip-path="<svgattr_clip-path_value>"
+<svgattr_clip-rule> = clip-rule="<svgattr_clip-rule_value>"
+<svgattr_clipPathUnits> = clipPathUnits="<svgattr_clipPathUnits_value>"
+<svgattr_color> = color="<svgattr_color_value>"
+<svgattr_color-interpolation> = color-interpolation="<svgattr_color-interpolation_value>"
+<svgattr_color-interpolation-filters> = color-interpolation-filters="<svgattr_color-interpolation-filters_value>"
+<svgattr_color-profile> = color-profile="<svgattr_color-profile_value>"
+<svgattr_contentScriptType> = contentScriptType="<svgattr_contentScriptType_value>"
+<svgattr_contentStyleType> = contentStyleType="<svgattr_contentStyleType_value>"
+<svgattr_cursor> = cursor="<svgattr_cursor_value>"
+<svgattr_cx> = cx="<svgattr_cx_value>"
+<svgattr_cy> = cy="<svgattr_cy_value>"
+<svgattr_d> = d="<svgattr_d_value>"
+<svgattr_descent> = descent="<svgattr_descent_value>"
+<svgattr_diffuseConstant> = diffuseConstant="<svgattr_diffuseConstant_value>"
+<svgattr_direction> = direction="<svgattr_direction_value>"
+<svgattr_display> = display="<svgattr_display_value>"
+<svgattr_divisor> = divisor="<svgattr_divisor_value>"
+<svgattr_dominant-baseline> = dominant-baseline="<svgattr_dominant-baseline_value>"
+<svgattr_dur> = dur="<svgattr_dur_value>"
+<svgattr_dx> = dx="<svgattr_dx_value>"
+<svgattr_dy> = dy="<svgattr_dy_value>"
+<svgattr_edgeMode> = edgeMode="<svgattr_edgeMode_value>"
+<svgattr_elevation> = elevation="<svgattr_elevation_value>"
+<svgattr_enable-background> = enable-background="<svgattr_enable-background_value>"
+<svgattr_end> = end="<svgattr_end_value>"
+<svgattr_exponent> = exponent="<svgattr_exponent_value>"
+<svgattr_externalResourcesRequired> = externalResourcesRequired="<svgattr_externalResourcesRequired_value>"
+<svgattr_fill> = fill="<svgattr_fill_value>"
+<svgattr_fill-opacity> = fill-opacity="<svgattr_fill-opacity_value>"
+<svgattr_fill-rule> = fill-rule="<svgattr_fill-rule_value>"
+<svgattr_filter> = filter="<svgattr_filter_value>"
+<svgattr_filterPrimitiveUnits> = filterPrimitiveUnits="<svgattr_filterPrimitiveUnits_value>"
+<svgattr_filterRes> = filterRes="<svgattr_filterRes_value>"
+<svgattr_filterUnits> = filterUnits="<svgattr_filterUnits_value>"
+<svgattr_flood-color> = flood-color="<svgattr_flood-color_value>"
+<svgattr_flood-opacity> = flood-opacity="<svgattr_flood-opacity_value>"
+<svgattr_font-family> = font-family="<svgattr_font-family_value>"
+<svgattr_font-rendering> = font-rendering="<svgattr_font-rendering_value>"
+<svgattr_font-size> = font-size="<svgattr_font-size_value>"
+<svgattr_font-stretch> = font-stretch="<svgattr_font-stretch_value>"
+<svgattr_font-style> = font-style="<svgattr_font-style_value>"
+<svgattr_font-variant> = font-variant="<svgattr_font-variant_value>"
+<svgattr_font-weight> = font-weight="<svgattr_font-weight_value>"
+<svgattr_fr> = fr="<svgattr_fr_value>"
+<svgattr_from> = from="<svgattr_from_value>"
+<svgattr_fx> = fx="<svgattr_fx_value>"
+<svgattr_fy> = fy="<svgattr_fy_value>"
+<svgattr_g1> = g1="<svgattr_g1_value>"
+<svgattr_g2> = g2="<svgattr_g2_value>"
+<svgattr_glyph-name> = glyph-name="<svgattr_glyph-name_value>"
+<svgattr_glyph-orientation-horizontal> = glyph-orientation-horizontal="<svgattr_glyph-orientation-horizontal_value>"
+<svgattr_glyph-orientation-vertical> = glyph-orientation-vertical="<svgattr_glyph-orientation-vertical_value>"
+<svgattr_glyphRef> = glyphRef="<svgattr_glyphRef_value>"
+<svgattr_gradientTransform> = gradientTransform="<svgattr_gradientTransform_value>"
+<svgattr_gradientUnits> = gradientUnits="<svgattr_gradientUnits_value>"
+<svgattr_hanging> = hanging="<svgattr_hanging_value>"
+<svgattr_height> = height="<svgattr_height_value>"
+<svgattr_horiz-adv-x> = horiz-adv-x="<svgattr_horiz-adv-x_value>"
+<svgattr_horiz-origin-x> = horiz-origin-x="<svgattr_horiz-origin-x_value>"
+<svgattr_href> = href="<svgattr_href_value>"
+<svgattr_ideographic> = ideographic="<svgattr_ideographic_value>"
+<svgattr_in> = in="<svgattr_in_value>"
+<svgattr_in2> = in2="<svgattr_in2_value>"
+<svgattr_intercept> = intercept="<svgattr_intercept_value>"
+<svgattr_k> = k="<svgattr_k_value>"
+<svgattr_k1> = k1="<svgattr_k1_value>"
+<svgattr_k2> = k2="<svgattr_k2_value>"
+<svgattr_k3> = k3="<svgattr_k3_value>"
+<svgattr_k4> = k4="<svgattr_k4_value>"
+<svgattr_kernelMatrix> = kernelMatrix="<svgattr_kernelMatrix_value>"
+<svgattr_kernelUnitLength> = kernelUnitLength="<svgattr_kernelUnitLength_value>"
+<svgattr_keyPoints> = keyPoints="<svgattr_keyPoints_value>"
+<svgattr_keySplines> = keySplines="<svgattr_keySplines_value>"
+<svgattr_keyTimes> = keyTimes="<svgattr_keyTimes_value>"
+<svgattr_lang> = lang="<svgattr_lang_value>"
+<svgattr_lengthAdjust> = lengthAdjust="<svgattr_lengthAdjust_value>"
+<svgattr_letter-spacing> = letter-spacing="<svgattr_letter-spacing_value>"
+<svgattr_lighting-color> = lighting-color="<svgattr_lighting-color_value>"
+<svgattr_limitingConeAngle> = limitingConeAngle="<svgattr_limitingConeAngle_value>"
+<svgattr_line-width> = line-width="<svgattr_line-width_value>"
+<svgattr_marker-end> = marker-end="<svgattr_marker-end_value>"
+<svgattr_marker-mid> = marker-mid="<svgattr_marker-mid_value>"
+<svgattr_marker-start> = marker-start="<svgattr_marker-start_value>"
+<svgattr_markerHeight> = markerHeight="<svgattr_markerHeight_value>"
+<svgattr_markerUnits> = markerUnits="<svgattr_markerUnits_value>"
+<svgattr_markerWidth> = markerWidth="<svgattr_markerWidth_value>"
+<svgattr_mask> = mask="<svgattr_mask_value>"
+<svgattr_mask-type> = mask-type="<svgattr_mask-type_value>"
+<svgattr_maskContentUnits> = maskContentUnits="<svgattr_maskContentUnits_value>"
+<svgattr_maskUnits> = maskUnits="<svgattr_maskUnits_value>"
+<svgattr_mathematical> = mathematical="<svgattr_mathematical_value>"
+<svgattr_max> = max="<svgattr_max_value>"
+<svgattr_min> = min="<svgattr_min_value>"
+<svgattr_mode> = mode="<svgattr_mode_value>"
+<svgattr_name> = name="<svgattr_name_value>"
+<svgattr_numOctaves> = numOctaves="<svgattr_numOctaves_value>"
+<svgattr_offset> = offset="<svgattr_offset_value>"
+<svgattr_onactivate> = onactivate="<svgattr_onactivate_value>"
+<svgattr_onbegin> = onbegin="<svgattr_onbegin_value>"
+<svgattr_onclick> = onclick="<svgattr_onclick_value>"
+<svgattr_onend> = onend="<svgattr_onend_value>"
+<svgattr_onerror> = onerror="<svgattr_onerror_value>"
+<svgattr_onfocusin> = onfocusin="<svgattr_onfocusin_value>"
+<svgattr_onfocusout> = onfocusout="<svgattr_onfocusout_value>"
+<svgattr_onload> = onload="<svgattr_onload_value>"
+<svgattr_onmousedown> = onmousedown="<svgattr_onmousedown_value>"
+<svgattr_onmousemove> = onmousemove="<svgattr_onmousemove_value>"
+<svgattr_onmouseout> = onmouseout="<svgattr_onmouseout_value>"
+<svgattr_onmouseover> = onmouseover="<svgattr_onmouseover_value>"
+<svgattr_onmouseup> = onmouseup="<svgattr_onmouseup_value>"
+<svgattr_onrepeat> = onrepeat="<svgattr_onrepeat_value>"
+<svgattr_opacity> = opacity="<svgattr_opacity_value>"
+<svgattr_operator> = operator="<svgattr_operator_value>"
+<svgattr_order> = order="<svgattr_order_value>"
+<svgattr_orient> = orient="<svgattr_orient_value>"
+<svgattr_overflow> = overflow="<svgattr_overflow_value>"
+<svgattr_panose-1> = panose-1="<svgattr_panose-1_value>"
+<svgattr_path> = path="<svgattr_path_value>"
+<svgattr_pathLength> = pathLength="<svgattr_pathLength_value>"
+<svgattr_patternContentUnits> = patternContentUnits="<svgattr_patternContentUnits_value>"
+<svgattr_patternTransform> = patternTransform="<svgattr_patternTransform_value>"
+<svgattr_patternUnits> = patternUnits="<svgattr_patternUnits_value>"
+<svgattr_pointer-events> = pointer-events="<svgattr_pointer-events_value>"
+<svgattr_points> = points="<svgattr_points_value>"
+<svgattr_pointsAtX> = pointsAtX="<svgattr_pointsAtX_value>"
+<svgattr_pointsAtY> = pointsAtY="<svgattr_pointsAtY_value>"
+<svgattr_pointsAtZ> = pointsAtZ="<svgattr_pointsAtZ_value>"
+<svgattr_preserveAlpha> = preserveAlpha="<svgattr_preserveAlpha_value>"
+<svgattr_preserveAspectRatio> = preserveAspectRatio="<svgattr_preserveAspectRatio_value>"
+<svgattr_primitiveUnits> = primitiveUnits="<svgattr_primitiveUnits_value>"
+<svgattr_r> = r="<svgattr_r_value>"
+<svgattr_radius> = radius="<svgattr_radius_value>"
+<svgattr_refX> = refX="<svgattr_refX_value>"
+<svgattr_refY> = refY="<svgattr_refY_value>"
+<svgattr_repeatCount> = repeatCount="<svgattr_repeatCount_value>"
+<svgattr_repeatDur> = repeatDur="<svgattr_repeatDur_value>"
+<svgattr_requiredExtensions> = requiredExtensions="<svgattr_requiredExtensions_value>"
+<svgattr_requiredFeatures> = requiredFeatures="<svgattr_requiredFeatures_value>"
+<svgattr_restart> = restart="<svgattr_restart_value>"
+<svgattr_result> = result="<svgattr_result_value>"
+<svgattr_role> = role="<svgattr_role_value>"
+<svgattr_rotate> = rotate="<svgattr_rotate_value>"
+<svgattr_rx> = rx="<svgattr_rx_value>"
+<svgattr_ry> = ry="<svgattr_ry_value>"
+<svgattr_scale> = scale="<svgattr_scale_value>"
+<svgattr_seed> = seed="<svgattr_seed_value>"
+<svgattr_shape-rendering> = shape-rendering="<svgattr_shape-rendering_value>"
+<svgattr_slope> = slope="<svgattr_slope_value>"
+<svgattr_specularConstant> = specularConstant="<svgattr_specularConstant_value>"
+<svgattr_specularExponent> = specularExponent="<svgattr_specularExponent_value>"
+<svgattr_spreadMethod> = spreadMethod="<svgattr_spreadMethod_value>"
+<svgattr_startOffset> = startOffset="<svgattr_startOffset_value>"
+<svgattr_stdDeviation> = stdDeviation="<svgattr_stdDeviation_value>"
+<svgattr_stitchTiles> = stitchTiles="<svgattr_stitchTiles_value>"
+<svgattr_stop-color> = stop-color="<svgattr_stop-color_value>"
+<svgattr_stop-offset> = stop-offset="<svgattr_stop-offset_value>"
+<svgattr_stop-opacity> = stop-opacity="<svgattr_stop-opacity_value>"
+<svgattr_stroke> = stroke="<svgattr_stroke_value>"
+<svgattr_stroke-dasharray> = stroke-dasharray="<svgattr_stroke-dasharray_value>"
+<svgattr_stroke-dashoffset> = stroke-dashoffset="<svgattr_stroke-dashoffset_value>"
+<svgattr_stroke-join> = stroke-join="<svgattr_stroke-join_value>"
+<svgattr_stroke-linecap> = stroke-linecap="<svgattr_stroke-linecap_value>"
+<svgattr_stroke-linejoin> = stroke-linejoin="<svgattr_stroke-linejoin_value>"
+<svgattr_stroke-miterlimit> = stroke-miterlimit="<svgattr_stroke-miterlimit_value>"
+<svgattr_stroke-opacity> = stroke-opacity="<svgattr_stroke-opacity_value>"
+<svgattr_stroke-width> = stroke-width="<svgattr_stroke-width_value>"
+<svgattr_style> = style="<svgattr_style_value>"
+<svgattr_surfaceScale> = surfaceScale="<svgattr_surfaceScale_value>"
+<svgattr_systemLanguage> = systemLanguage="<svgattr_systemLanguage_value>"
+<svgattr_tabindex> = tabindex="<svgattr_tabindex_value>"
+<svgattr_tableValues> = tableValues="<svgattr_tableValues_value>"
+<svgattr_target> = target="<svgattr_target_value>"
+<svgattr_targetX> = targetX="<svgattr_targetX_value>"
+<svgattr_targetY> = targetY="<svgattr_targetY_value>"
+<svgattr_text-anchor> = text-anchor="<svgattr_text-anchor_value>"
+<svgattr_text-decoration> = text-decoration="<svgattr_text-decoration_value>"
+<svgattr_text-rendering> = text-rendering="<svgattr_text-rendering_value>"
+<svgattr_textLength> = textLength="<svgattr_textLength_value>"
+<svgattr_to> = to="<svgattr_to_value>"
+<svgattr_transform> = transform="<svgattr_transform_value>"
+<svgattr_type> = type="<svgattr_type_value>"
+<svgattr_underline-position> = underline-position="<svgattr_underline-position_value>"
+<svgattr_underline-thickness> = underline-thickness="<svgattr_underline-thickness_value>"
+<svgattr_unicode> = unicode="<svgattr_unicode_value>"
+<svgattr_unicode-bidi> = unicode-bidi="<svgattr_unicode-bidi_value>"
+<svgattr_unicode-range> = unicode-range="<svgattr_unicode-range_value>"
+<svgattr_units-per-em> = units-per-em="<svgattr_units-per-em_value>"
+<svgattr_values> = values="<svgattr_values_value>"
+<svgattr_vector-effect> = vector-effect="<svgattr_vector-effect_value>"
+<svgattr_version> = version="<svgattr_version_value>"
+<svgattr_vert-origin-y> = vert-origin-y="<svgattr_vert-origin-y_value>"
+<svgattr_viewBox> = viewBox="<svgattr_viewBox_value>"
+<svgattr_viewTarget> = viewTarget="<svgattr_viewTarget_value>"
+<svgattr_viewbox> = viewbox="<svgattr_viewbox_value>"
+<svgattr_visibility> = visibility="<svgattr_visibility_value>"
+<svgattr_width> = width="<svgattr_width_value>"
+<svgattr_word-spacing> = word-spacing="<svgattr_word-spacing_value>"
+<svgattr_writing-mode> = writing-mode="<svgattr_writing-mode_value>"
+<svgattr_x> = x="<svgattr_x_value>"
+<svgattr_x-height> = x-height="<svgattr_x-height_value>"
+<svgattr_x1> = x1="<svgattr_x1_value>"
+<svgattr_x2> = x2="<svgattr_x2_value>"
+<svgattr_xChannelSelector> = xChannelSelector="<svgattr_xChannelSelector_value>"
+<svgattr_y> = y="<svgattr_y_value>"
+<svgattr_y1> = y1="<svgattr_y1_value>"
+<svgattr_y2> = y2="<svgattr_y2_value>"
+<svgattr_yChannelSelector> = yChannelSelector="<svgattr_yChannelSelector_value>"
+<svgattr_z> = z="<svgattr_z_value>"
+<svgattr_zoomAndPan> = zoomAndPan="<svgattr_zoomAndPan_value>"
+<svgattr_xlink_actuate> = xlink:actuate="<svgattr_xlink_actuate_value>"
+<svgattr_xlink_href> = xlink:href="<svgattr_xlink_href_value>"
+<svgattr_xlink_show> = xlink:show="<svgattr_xlink_show_value>"
+<svgattr_xlink_title> = xlink:title="<svgattr_xlink_title_value>"
+<svgattr_xlink_type> = xlink:type="<svgattr_xlink_type_value>"
+<svgattr_xml_id> = xml:id="<svgattr_xml_id_value>"
+<svgattr_xml_lang> = xml:lang="<svgattr_xml_lang_value>"
+<svgattr_xml_space> = xml:space="<svgattr_xml_space_value>"
+
+
+
+

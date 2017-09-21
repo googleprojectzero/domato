@@ -1,0 +1,3679 @@
+#   Copyright 2017 Google Inc. All Rights Reserved.
+#   Licensed under the Apache License, Version 2.0 (the "License");
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
+
+
+<cssproperty_-ms-flex-align> = center
+
+<cssproperty_-ms-font-feature-settings> = 'frac' 1, 'dlig' 1
+<cssproperty_-ms-font-feature-settings> = 'onum' 1
+
+<cssproperty_-ms-text-combine-horizontal> = all
+
+<cssproperty_-ms-user-select> = none
+
+<cssproperty_-webkit-align-content> = space-between
+<cssproperty_-webkit-align-content> = flex-start
+<cssproperty_-webkit-align-content> = flex-end
+<cssproperty_-webkit-align-content> = center
+<cssproperty_-webkit-align-content> = space-around
+<cssproperty_-webkit-align-content> = stretch
+
+<cssproperty_-webkit-align-items> = center
+<cssproperty_-webkit-align-items> = flex-start
+<cssproperty_-webkit-align-items> = flex-end
+<cssproperty_-webkit-align-items> = baseline
+<cssproperty_-webkit-align-items> = stretch
+
+<cssproperty_-webkit-align-self> = stretch
+<cssproperty_-webkit-align-self> = auto
+<cssproperty_-webkit-align-self> = flex-start
+<cssproperty_-webkit-align-self> = flex-end
+<cssproperty_-webkit-align-self> = center
+<cssproperty_-webkit-align-self> = baseline
+
+<cssproperty_-webkit-animation> = anim <fuzzint>s
+<cssproperty_-webkit-animation> = anim <fuzzint>s linear
+<cssproperty_-webkit-animation> = anim <fuzzint>s linear forwards
+<cssproperty_-webkit-animation> = anim <fuzzint>s infinite
+<cssproperty_-webkit-animation> = anim <fuzzint>s alternate
+<cssproperty_-webkit-animation> = anim <fuzzint>s linear infinite
+<cssproperty_-webkit-animation> = anim <fuzzint>s linear infinite backwards
+<cssproperty_-webkit-animation> = anim <fuzzint>s step-start paused
+<cssproperty_-webkit-animation> = anim <fuzzint>s step-start infinite
+
+<cssproperty_-webkit-animation-delay> = <fuzzint>s
+
+<cssproperty_-webkit-animation-direction> = normal
+<cssproperty_-webkit-animation-direction> = alternate
+<cssproperty_-webkit-animation-direction> = reverse
+<cssproperty_-webkit-animation-direction> = alternate-reverse
+<cssproperty_-webkit-animation-direction> = normal, alternate
+
+<cssproperty_-webkit-animation-duration> = <fuzzint>s
+
+<cssproperty_-webkit-animation-fill-mode> = forwards, backwards
+<cssproperty_-webkit-animation-fill-mode> = both
+<cssproperty_-webkit-animation-fill-mode> = forwards
+<cssproperty_-webkit-animation-fill-mode> = none
+<cssproperty_-webkit-animation-fill-mode> = backwards
+<cssproperty_-webkit-animation-fill-mode> = forwards, both
+
+<cssproperty_-webkit-animation-iteration-count> = infinite
+<cssproperty_-webkit-animation-iteration-count> = <fuzzint>
+
+<cssproperty_-webkit-animation-name> = anim
+
+<cssproperty_-webkit-animation-play-state> = paused
+<cssproperty_-webkit-animation-play-state> = running
+
+<cssproperty_-webkit-animation-timing-function> = linear
+<cssproperty_-webkit-animation-timing-function> = ease
+<cssproperty_-webkit-animation-timing-function> = step-start
+<cssproperty_-webkit-animation-timing-function> = step-end
+<cssproperty_-webkit-animation-timing-function> = steps(<fuzzint>)
+<cssproperty_-webkit-animation-timing-function> = steps(<fuzzint>, start)
+<cssproperty_-webkit-animation-timing-function> = steps(<fuzzint>, end)
+<cssproperty_-webkit-animation-timing-function> = steps(<fuzzint>, middle)
+<cssproperty_-webkit-animation-timing-function> = step-middle
+<cssproperty_-webkit-animation-timing-function> = ease-in-out
+<cssproperty_-webkit-animation-timing-function> = linear, ease-in-out
+<cssproperty_-webkit-animation-timing-function> = step-start, step-end, steps(<fuzzint>, end)
+<cssproperty_-webkit-animation-timing-function> = ease-in
+<cssproperty_-webkit-animation-timing-function> = steps(<fuzzint>)
+<cssproperty_-webkit-animation-timing-function> = cubic-bezier(<fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>)
+
+<cssproperty_-webkit-app-region> = drag
+<cssproperty_-webkit-app-region> = no-drag
+
+<cssproperty_-webkit-appearance> = searchfield-cancel-button
+<cssproperty_-webkit-appearance> = none
+<cssproperty_-webkit-appearance> = radio
+<cssproperty_-webkit-appearance> = relevancy-level-indicator
+<cssproperty_-webkit-appearance> = push-button
+<cssproperty_-webkit-appearance> = media-controls-background
+<cssproperty_-webkit-appearance> = button
+<cssproperty_-webkit-appearance> = media-sliderthumb
+<cssproperty_-webkit-appearance> = media-volume-sliderthumb
+<cssproperty_-webkit-appearance> = media-play-button
+<cssproperty_-webkit-appearance> = sliderthumb-vertical
+<cssproperty_-webkit-appearance> = menulist-button
+<cssproperty_-webkit-appearance> = slider-vertical
+<cssproperty_-webkit-appearance> = slider-horizontal
+<cssproperty_-webkit-appearance> = textarea
+<cssproperty_-webkit-appearance> = square-button
+<cssproperty_-webkit-appearance> = sliderthumb-horizontal
+<cssproperty_-webkit-appearance> = discrete-capacity-level-indicator
+<cssproperty_-webkit-appearance> = media-volume-slider-container
+<cssproperty_-webkit-appearance> = media-volume-slider-mute-button
+<cssproperty_-webkit-appearance> = textfield
+<cssproperty_-webkit-appearance> = caps-lock-indicator
+<cssproperty_-webkit-appearance> = progress-bar
+<cssproperty_-webkit-appearance> = meter
+
+<cssproperty_-webkit-backface-visibility> = hidden
+<cssproperty_-webkit-backface-visibility> = visible
+
+<cssproperty_-webkit-background-clip> = text
+<cssproperty_-webkit-background-clip> = initial
+<cssproperty_-webkit-background-clip> = padding-box
+<cssproperty_-webkit-background-clip> = content-box
+<cssproperty_-webkit-background-clip> = padding
+<cssproperty_-webkit-background-clip> = content
+
+<cssproperty_-webkit-background-origin> = initial
+<cssproperty_-webkit-background-origin> = padding-box
+<cssproperty_-webkit-background-origin> = border-box
+<cssproperty_-webkit-background-origin> = content-box
+
+<cssproperty_-webkit-background-size> = <percentage>%
+<cssproperty_-webkit-background-size> = auto <percentage>%
+<cssproperty_-webkit-background-size> = <percentage>% <percentage>%
+<cssproperty_-webkit-background-size> = <percentage>% auto
+<cssproperty_-webkit-background-size> = <fuzzint>px <fuzzint>px
+<cssproperty_-webkit-background-size> = contain
+<cssproperty_-webkit-background-size> = auto
+
+<cssproperty_-webkit-border-after> = <fuzzint>px solid <color>
+<cssproperty_-webkit-border-after> = <fuzzint>px solid
+<cssproperty_-webkit-border-after> = solid
+<cssproperty_-webkit-border-after> = <fuzzint>px dashed <color>
+
+<cssproperty_-webkit-border-after-color> = <color>
+
+<cssproperty_-webkit-border-after-width> = <fuzzint>px
+
+<cssproperty_-webkit-border-before> = <fuzzint>px solid <color>
+<cssproperty_-webkit-border-before> = <fuzzint>px solid
+<cssproperty_-webkit-border-before> = solid
+<cssproperty_-webkit-border-before> = <fuzzint>px dashed <color>
+
+<cssproperty_-webkit-border-before-color> = <color>
+
+<cssproperty_-webkit-border-before-style> = dashed
+
+<cssproperty_-webkit-border-before-width> = <fuzzint>px
+
+<cssproperty_-webkit-border-bottom-left-radius> = <fuzzint>px
+<cssproperty_-webkit-border-bottom-left-radius> = <fuzzint>px <fuzzint>px
+
+<cssproperty_-webkit-border-bottom-right-radius> = <fuzzint>px <fuzzint>px
+<cssproperty_-webkit-border-bottom-right-radius> = <fuzzint>px
+
+<cssproperty_-webkit-border-end> = <fuzzint>px solid <color>
+<cssproperty_-webkit-border-end> = <fuzzint>px solid
+<cssproperty_-webkit-border-end> = solid
+<cssproperty_-webkit-border-end> = <fuzzint>px dashed <color>
+
+<cssproperty_-webkit-border-end-color> = <color>
+
+<cssproperty_-webkit-border-end-width> = <fuzzint>px
+
+<cssproperty_-webkit-border-image> = url(<cssurl>) <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+<cssproperty_-webkit-border-image> = url(<cssurl>) <fuzzint> <fuzzint> <fuzzint> <fuzzint> repeat
+<cssproperty_-webkit-border-image> = url(<cssurl>) <fuzzint> <fuzzint> <fuzzint> <fuzzint> stretch
+
+<cssproperty_-webkit-border-radius> = <fuzzint>px
+<cssproperty_-webkit-border-radius> = <fuzzint>px <fuzzint>px
+
+<cssproperty_-webkit-border-start> = 2px solid red
+<cssproperty_-webkit-border-start> = solid 1px
+<cssproperty_-webkit-border-start> = 5px solid red
+<cssproperty_-webkit-border-start> = 4px double purple
+<cssproperty_-webkit-border-start> = 5px solid green
+<cssproperty_-webkit-border-start> = 1px solid purple
+
+<cssproperty_-webkit-border-start-color> = <color>
+
+<cssproperty_-webkit-border-start-width> = <fuzzint>px
+
+<cssproperty_-webkit-border-top-left-radius> = <fuzzint>px
+<cssproperty_-webkit-border-top-left-radius> = <fuzzint>px <fuzzint>px
+
+<cssproperty_-webkit-border-top-right-radius> = <fuzzint>px
+<cssproperty_-webkit-border-top-right-radius> = <fuzzint>px <fuzzint>px
+
+<cssproperty_-webkit-border-vertical-spacing> = <fuzzint>px
+
+<cssproperty_-webkit-box-align> = center
+<cssproperty_-webkit-box-align> = stretch
+<cssproperty_-webkit-box-align> = top
+
+<cssproperty_-webkit-box-decoration-break> = slice
+<cssproperty_-webkit-box-decoration-break> = clone
+
+<cssproperty_-webkit-box-direction> = reverse
+
+<cssproperty_-webkit-box-flex> = <fuzzint>
+
+<cssproperty_-webkit-box-flex-group> = <fuzzint>
+<cssproperty_-webkit-box-flex-group> = 1
+<cssproperty_-webkit-box-flex-group> = 2
+
+<cssproperty_-webkit-box-lines> = multiple
+
+<cssproperty_-webkit-box-ordinal-group> = <fuzzint>
+<cssproperty_-webkit-box-ordinal-group> = 1
+<cssproperty_-webkit-box-ordinal-group> = 2
+
+<cssproperty_-webkit-box-orient> = vertical
+<cssproperty_-webkit-box-orient> = horizontal
+<cssproperty_-webkit-box-orient> = block-axis
+
+<cssproperty_-webkit-box-pack> = justify
+<cssproperty_-webkit-box-pack> = end
+
+<cssproperty_-webkit-box-reflect> = above
+<cssproperty_-webkit-box-reflect> = right
+<cssproperty_-webkit-box-reflect> = below
+<cssproperty_-webkit-box-reflect> = none
+<cssproperty_-webkit-box-reflect> = left
+<cssproperty_-webkit-box-reflect> = above <fuzzint>px
+<cssproperty_-webkit-box-reflect> = right <fuzzint>px
+<cssproperty_-webkit-box-reflect> = below <fuzzint>px
+<cssproperty_-webkit-box-reflect> = left <fuzzint>px
+
+<cssproperty_-webkit-box-shadow> = <fuzzint>px <fuzzint>px <fuzzint>px <color>
+<cssproperty_-webkit-box-shadow> = <color> <fuzzint>px <fuzzint>px <fuzzint>px
+<cssproperty_-webkit-box-shadow> = <color> <fuzzint>px <fuzzint>px
+
+<cssproperty_-webkit-box-sizing> = border-box
+<cssproperty_-webkit-box-sizing> = content-box
+<cssproperty_-webkit-box-sizing> = padding-box
+<cssproperty_-webkit-box-sizing> = border
+
+<cssproperty_-webkit-clip-path> = url(<cssurl>)
+<cssproperty_-webkit-clip-path> = circle(<percentage>%)
+<cssproperty_-webkit-clip-path> = polygon(<fuzzint>px <fuzzint>px, <fuzzint>px <fuzzint>px, <fuzzint>px <fuzzint>px, <fuzzint>px <fuzzint>px)
+<cssproperty_-webkit-clip-path> = circle(<fuzzint>px, <fuzzint>px, <fuzzint>px)
+
+<cssproperty_-webkit-color-correction> = sRGB
+<cssproperty_-webkit-color-correction> = default
+
+<cssproperty_-webkit-column-break-after> = always
+
+<cssproperty_-webkit-column-break-before> = always
+
+<cssproperty_-webkit-column-break-inside> = avoid
+
+<cssproperty_-webkit-column-count> = <fuzzint>
+
+<cssproperty_-webkit-column-fill> = auto
+
+<cssproperty_-webkit-column-gap> = <fuzzint>px
+<cssproperty_-webkit-column-gap> = initial
+
+<cssproperty_-webkit-column-rule> = <fuzzint>px solid <color>
+<cssproperty_-webkit-column-rule> = <fuzzint>px solid
+<cssproperty_-webkit-column-rule> = solid <color>
+
+<cssproperty_-webkit-column-rule-color> = <color>
+
+<cssproperty_-webkit-column-rule-style> = solid
+<cssproperty_-webkit-column-rule-style> = dotted
+<cssproperty_-webkit-column-rule-style> = dashed
+<cssproperty_-webkit-column-rule-style> = groove
+<cssproperty_-webkit-column-rule-style> = ridge
+<cssproperty_-webkit-column-rule-style> = inset
+<cssproperty_-webkit-column-rule-style> = outset
+<cssproperty_-webkit-column-rule-style> = double
+
+<cssproperty_-webkit-column-rule-width> = <fuzzint>px
+
+<cssproperty_-webkit-column-span> = all
+<cssproperty_-webkit-column-span> = <fuzzint>
+
+<cssproperty_-webkit-column-width> = <fuzzint>px
+<cssproperty_-webkit-column-width> = inherit
+<cssproperty_-webkit-column-width> = initial
+<cssproperty_-webkit-column-width> = auto
+
+<cssproperty_-webkit-columns> = <fuzzint>
+<cssproperty_-webkit-columns> = auto
+<cssproperty_-webkit-columns> = initial
+
+<cssproperty_-webkit-direction> = ltr
+<cssproperty_-webkit-direction> = rtl
+
+<cssproperty_-webkit-filter> = url(<cssurl>)
+<cssproperty_-webkit-filter> = blur(<fuzzint>px)
+<cssproperty_-webkit-filter> = drop-shadow(<fuzzint>px <fuzzint>px <fuzzint>px <color>)
+<cssproperty_-webkit-filter> = invert(<percentage>%)
+<cssproperty_-webkit-filter> = contrast(<percentage>%)
+<cssproperty_-webkit-filter> = opacity(<float>)
+<cssproperty_-webkit-filter> = hue-rotate(<fuzzint>deg)
+<cssproperty_-webkit-filter> = blur(<fuzzint>px)
+<cssproperty_-webkit-filter> = grayscale(1)
+<cssproperty_-webkit-filter> = brightness(1)
+<cssproperty_-webkit-filter> = invert(0)
+<cssproperty_-webkit-filter> = contrast(1)
+<cssproperty_-webkit-filter> = grayscale(0)
+<cssproperty_-webkit-filter> = hue-rotate(0)
+<cssproperty_-webkit-filter> = saturate(1)
+<cssproperty_-webkit-filter> = sepia(0)
+<cssproperty_-webkit-filter> = none
+
+<cssproperty_-webkit-flex> = <fuzzint> <fuzzint> <fuzzint>
+<cssproperty_-webkit-flex> = none
+<cssproperty_-webkit-flex> = auto
+
+<cssproperty_-webkit-flex-direction> = row
+<cssproperty_-webkit-flex-direction> = column
+<cssproperty_-webkit-flex-direction> = row-reverse
+<cssproperty_-webkit-flex-direction> = column-reverse
+
+<cssproperty_-webkit-flex-wrap> = wrap
+<cssproperty_-webkit-flex-wrap> = wrap-reverse
+
+<cssproperty_-webkit-flow-from> = flow1
+
+<cssproperty_-webkit-flow-into> = flow1
+<cssproperty_-webkit-flow-into> = <tagname>
+<cssproperty_-webkit-flow-into> = <svgtagname>
+
+<cssproperty_-webkit-font-feature-settings> = 'dlig'
+<cssproperty_-webkit-font-feature-settings> = 'dlig' 0
+<cssproperty_-webkit-font-feature-settings> = normal
+<cssproperty_-webkit-font-feature-settings> = 'dlig' 1
+<cssproperty_-webkit-font-feature-settings> = 'swsh' 2
+<cssproperty_-webkit-font-feature-settings> = 'smcp' on
+<cssproperty_-webkit-font-feature-settings> = 'liga' off
+<cssproperty_-webkit-font-feature-settings> = 'c2sc'
+<cssproperty_-webkit-font-feature-settings> = 'tnum', 'hist'
+<cssproperty_-webkit-font-feature-settings> = 'dlig' 1, 'smcp' on, 'lig ' off
+<cssproperty_-webkit-font-feature-settings> = dlig
+<cssproperty_-webkit-font-feature-settings> = off
+<cssproperty_-webkit-font-feature-settings> = 'dlig'
+<cssproperty_-webkit-font-feature-settings> = 'smcp' 1
+<cssproperty_-webkit-font-feature-settings> = 'smcp'
+<cssproperty_-webkit-font-feature-settings> = 'vert' off
+<cssproperty_-webkit-font-feature-settings> = 'frac' 1, 'dlig' 1
+<cssproperty_-webkit-font-feature-settings> = 'hwid'
+<cssproperty_-webkit-font-feature-settings> = 'twid'
+<cssproperty_-webkit-font-feature-settings> = 'qwid'
+<cssproperty_-webkit-font-feature-settings> = 'onum' 1
+<cssproperty_-webkit-font-feature-settings> = 'kern'
+<cssproperty_-webkit-font-feature-settings> = 'kern'
+<cssproperty_-webkit-font-feature-settings> = 'liga'
+
+<cssproperty_-webkit-font-smoothing> = none
+<cssproperty_-webkit-font-smoothing> = subpixel-antialiased
+<cssproperty_-webkit-font-smoothing> = antialiased
+<cssproperty_-webkit-font-smoothing> = auto
+
+<cssproperty_-webkit-highlight> = 'green'
+
+<cssproperty_-webkit-hyphenate-character> = '-'
+<cssproperty_-webkit-hyphenate-character> = auto
+<cssproperty_-webkit-hyphenate-character> = floating
+
+<cssproperty_-webkit-hyphens> = auto
+<cssproperty_-webkit-hyphens> = none
+
+<cssproperty_-webkit-justify-content> = flex-start
+<cssproperty_-webkit-justify-content> = flex-end
+<cssproperty_-webkit-justify-content> = center
+<cssproperty_-webkit-justify-content> = space-between
+<cssproperty_-webkit-justify-content> = space-around
+
+<cssproperty_-webkit-line-break> = normal
+<cssproperty_-webkit-line-break> = after-white-space
+
+<cssproperty_-webkit-line-clamp> = <fuzzint>
+
+<cssproperty_-webkit-locale> = 'zh_CN'
+<cssproperty_-webkit-locale> = 'zh_CN'
+
+<cssproperty_-webkit-logical-height> = <fuzzint>px
+
+<cssproperty_-webkit-logical-width> = <fuzzint>px
+
+<cssproperty_-webkit-margin-after> = <fuzzint>px
+
+<cssproperty_-webkit-margin-after-collapse> = discard
+<cssproperty_-webkit-margin-after-collapse> = separate
+
+<cssproperty_-webkit-margin-before> = <fuzzint>px
+
+<cssproperty_-webkit-margin-before-collapse> = discard
+<cssproperty_-webkit-margin-before-collapse> = collapse
+
+<cssproperty_-webkit-margin-bottom-collapse> = collapse
+<cssproperty_-webkit-margin-bottom-collapse> = discard
+<cssproperty_-webkit-margin-bottom-collapse> = separate
+
+<cssproperty_-webkit-margin-collapse> = collapse separate
+<cssproperty_-webkit-margin-collapse> = discard
+
+<cssproperty_-webkit-margin-end> = <fuzzint>px
+
+<cssproperty_-webkit-margin-start> = <fuzzint>px
+
+<cssproperty_-webkit-margin-top-collapse> = discard
+<cssproperty_-webkit-margin-top-collapse> = collapse
+<cssproperty_-webkit-margin-top-collapse> = separate
+
+<cssproperty_-webkit-marquee-speed> = <fuzzint>
+
+<cssproperty_-webkit-mask> = url(<cssurl>)
+<cssproperty_-webkit-mask> = below url(<cssurl>)
+<cssproperty_-webkit-mask> = below none
+
+<cssproperty_-webkit-mask-box-image> = url(<cssurl>)
+<cssproperty_-webkit-mask-box-image> = none
+
+<cssproperty_-webkit-mask-box-image-outset> = <fuzzint>px
+
+<cssproperty_-webkit-mask-box-image-repeat> = stretch
+
+<cssproperty_-webkit-mask-box-image-slice> = <percentage>%
+<cssproperty_-webkit-mask-box-image-slice> = <fuzzint>
+<cssproperty_-webkit-mask-box-image-slice> = <fuzzint> fill
+
+<cssproperty_-webkit-mask-box-image-source> = url(<cssurl>)
+
+<cssproperty_-webkit-mask-box-image-width> = <fuzzint>px
+
+<cssproperty_-webkit-mask-clip> = border-box
+<cssproperty_-webkit-mask-clip> = padding-box
+<cssproperty_-webkit-mask-clip> = content-box
+
+<cssproperty_-webkit-mask-composite> = copy
+
+<cssproperty_-webkit-mask-image> = url(<cssurl>)
+<cssproperty_-webkit-mask-image> = none
+
+<cssproperty_-webkit-mask-origin> = border-box
+<cssproperty_-webkit-mask-origin> = padding-box
+<cssproperty_-webkit-mask-origin> = border
+<cssproperty_-webkit-mask-origin> = content-box
+<cssproperty_-webkit-mask-origin> = padding
+
+<cssproperty_-webkit-mask-position> = <fuzzint>px <fuzzint>px
+
+<cssproperty_-webkit-mask-repeat> = no-repeat
+<cssproperty_-webkit-mask-repeat> = round repeat
+<cssproperty_-webkit-mask-repeat> = repeat
+<cssproperty_-webkit-mask-repeat> = space repeat
+<cssproperty_-webkit-mask-repeat> = repeat round
+<cssproperty_-webkit-mask-repeat> = round
+<cssproperty_-webkit-mask-repeat> = space
+<cssproperty_-webkit-mask-repeat> = repeat space
+<cssproperty_-webkit-mask-repeat> = space space
+<cssproperty_-webkit-mask-repeat> = repeat-y
+<cssproperty_-webkit-mask-repeat> = repeat-x
+
+<cssproperty_-webkit-mask-repeat-y> = inherit
+
+<cssproperty_-webkit-mask-size> = <fuzzint>px <fuzzint>px
+
+<cssproperty_-webkit-min-logical-height> = <fuzzint>px
+
+<cssproperty_-webkit-nbsp-mode> = space
+
+<cssproperty_-webkit-opacity> = <float>
+
+<cssproperty_-webkit-overflow-scrolling> = touch
+<cssproperty_-webkit-overflow-scrolling> = auto
+
+<cssproperty_-webkit-padding-after> = <fuzzint>px
+
+<cssproperty_-webkit-padding-before> = <fuzzint>px
+
+<cssproperty_-webkit-padding-end> = <fuzzint>px
+
+<cssproperty_-webkit-padding-start> = <fuzzint>px
+
+<cssproperty_-webkit-perspective> = <fuzzint>px
+
+<cssproperty_-webkit-perspective-origin> = <fuzzint>px <fuzzint>px
+<cssproperty_-webkit-perspective-origin> = <percentage>% <percentage>%
+
+<cssproperty_-webkit-perspective-origin-x> = <fuzzint>px
+
+<cssproperty_-webkit-perspective-origin-y> = <fuzzint>px
+
+<cssproperty_-webkit-print-color-adjust> = exact
+<cssproperty_-webkit-print-color-adjust> = economy
+
+<cssproperty_-webkit-rtl-ordering> = logical
+<cssproperty_-webkit-rtl-ordering> = visual
+
+<cssproperty_-webkit-ruby-position> = after
+
+<cssproperty_-webkit-shape-margin> = <fuzzint>px
+
+<cssproperty_-webkit-shape-outside> = url(<cssurl>)
+<cssproperty_-webkit-shape-outside> = inset(<fuzzint>px <fuzzint>px <fuzzint>px <fuzzint>px)
+
+<cssproperty_-webkit-tap-highlight-color> = <color>
+
+<cssproperty_-webkit-text-combine> = horizontal
+<cssproperty_-webkit-text-combine> = none
+
+<cssproperty_-webkit-text-decorations-in-effect> = underline
+
+<cssproperty_-webkit-text-emphasis> = filled
+<cssproperty_-webkit-text-emphasis> = filled <color>
+<cssproperty_-webkit-text-emphasis> = '@ignored'
+<cssproperty_-webkit-text-emphasis> = '*'
+<cssproperty_-webkit-text-emphasis> = '@'
+<cssproperty_-webkit-text-emphasis> = open <color>
+<cssproperty_-webkit-text-emphasis> = circle
+<cssproperty_-webkit-text-emphasis> = dot
+<cssproperty_-webkit-text-emphasis> = double-circle
+<cssproperty_-webkit-text-emphasis> = sesame
+<cssproperty_-webkit-text-emphasis> = triangle
+<cssproperty_-webkit-text-emphasis> = open dot
+<cssproperty_-webkit-text-emphasis> = open double-circle
+<cssproperty_-webkit-text-emphasis> = open sesame
+<cssproperty_-webkit-text-emphasis> = open triangle
+<cssproperty_-webkit-text-emphasis> = sesame <color>
+<cssproperty_-webkit-text-emphasis> = '@' <color>
+<cssproperty_-webkit-text-emphasis> = open
+
+<cssproperty_-webkit-text-emphasis-color> = <color>
+
+<cssproperty_-webkit-text-emphasis-position> = under
+<cssproperty_-webkit-text-emphasis-position> = over
+
+<cssproperty_-webkit-text-emphasis-style> = filled
+<cssproperty_-webkit-text-emphasis-style> = 'w'
+<cssproperty_-webkit-text-emphasis-style> = open
+<cssproperty_-webkit-text-emphasis-style> = sesame
+<cssproperty_-webkit-text-emphasis-style> = dot filled
+
+<cssproperty_-webkit-text-fill-color> = <color>
+
+<cssproperty_-webkit-text-orientation> = sideways-right
+<cssproperty_-webkit-text-orientation> = upright
+<cssproperty_-webkit-text-orientation> = sideways
+<cssproperty_-webkit-text-orientation> = vertical-right
+
+<cssproperty_-webkit-text-security> = disc
+<cssproperty_-webkit-text-security> = circle
+<cssproperty_-webkit-text-security> = square
+<cssproperty_-webkit-text-security> = none
+<cssproperty_-webkit-text-security> = not-secure
+
+<cssproperty_-webkit-text-stroke> = <fuzzint>px <color>
+
+<cssproperty_-webkit-text-stroke-color> = <color>
+
+<cssproperty_-webkit-text-stroke-width> = <fuzzint>px
+
+<cssproperty_-webkit-transform> = translate(<fuzzint>px, <fuzzint>px) scale(<fuzzint>)
+<cssproperty_-webkit-transform> = translatex(<fuzzint>)
+<cssproperty_-webkit-transform> = skew(<fuzzint>deg)
+<cssproperty_-webkit-transform> = scaleY(<fuzzint>)
+<cssproperty_-webkit-transform> = scale(<fuzzint>, <fuzzint>)
+<cssproperty_-webkit-transform> = rotate(<fuzzint>deg)
+<cssproperty_-webkit-transform> = translatez(<fuzzint>)
+
+<cssproperty_-webkit-transform-origin> = <fuzzint>px <fuzzint>px <fuzzint>px
+<cssproperty_-webkit-transform-origin> = <fuzzint>px <fuzzint>px
+<cssproperty_-webkit-transform-origin> = top left
+<cssproperty_-webkit-transform-origin> = center center <fuzzint>px
+<cssproperty_-webkit-transform-origin> = top right
+<cssproperty_-webkit-transform-origin> = bottom left
+<cssproperty_-webkit-transform-origin> = right
+<cssproperty_-webkit-transform-origin> = center top
+<cssproperty_-webkit-transform-origin> = center
+<cssproperty_-webkit-transform-origin> = right top
+<cssproperty_-webkit-transform-origin> = left
+
+<cssproperty_-webkit-transform-style> = preserve-3d
+<cssproperty_-webkit-transform-style> = flat
+<cssproperty_-webkit-transform-style> = perserve-3d
+
+<cssproperty_-webkit-transition> = opacity <fuzzint>s
+<cssproperty_-webkit-transition> = left <fuzzint>s, top <fuzzint>s
+<cssproperty_-webkit-transition> = opacity <fuzzint>s
+<cssproperty_-webkit-transition> = left <fuzzint>s linear
+<cssproperty_-webkit-transition> = all <fuzzint>s linear
+<cssproperty_-webkit-transition> = height <fuzzint>s
+<cssproperty_-webkit-transition> = width <fuzzint>s
+<cssproperty_-webkit-transition> = <fuzzint>s
+
+<cssproperty_-webkit-transition-delay> = <fuzzint>s
+<cssproperty_-webkit-transition-delay> = inherit
+
+<cssproperty_-webkit-transition-duration> = <fuzzint>s
+
+<cssproperty_-webkit-transition-property> = width
+<cssproperty_-webkit-transition-property> = opacity, left, opacity, top, width, opacity, height, opacity
+<cssproperty_-webkit-transition-property> = box-shadow
+<cssproperty_-webkit-transition-property> = left
+<cssproperty_-webkit-transition-property> = inherit
+<cssproperty_-webkit-transition-property> = top, -webkit-text-fill-color, text-shadow, all
+<cssproperty_-webkit-transition-property> = transform
+<cssproperty_-webkit-transition-property> = width, left, background-color, height, top
+<cssproperty_-webkit-transition-property> = opacity
+<cssproperty_-webkit-transition-property> = none
+<cssproperty_-webkit-transition-property> = right
+<cssproperty_-webkit-transition-property> = all
+<cssproperty_-webkit-transition-property> = border-radius
+<cssproperty_-webkit-transition-property> = -webkit-border-radius
+<cssproperty_-webkit-transition-property> = background-image
+<cssproperty_-webkit-transition-property> = background
+<cssproperty_-webkit-transition-property> = text-shadow
+<cssproperty_-webkit-transition-property> = background-position
+<cssproperty_-webkit-transition-property> = text-indent
+<cssproperty_-webkit-transition-property> = border-image-source
+<cssproperty_-webkit-transition-property> = border-image
+<cssproperty_-webkit-transition-property> = top, background
+<cssproperty_-webkit-transition-property> = top, left
+<cssproperty_-webkit-transition-property> = -webkit-mask
+<cssproperty_-webkit-transition-property> = -webkit-mask-size
+<cssproperty_-webkit-transition-property> = -webkit-background-size
+
+<cssproperty_-webkit-transition-timing-function> = linear
+<cssproperty_-webkit-transition-timing-function> = cubic-bezier(<fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>)
+<cssproperty_-webkit-transition-timing-function> = inherit
+<cssproperty_-webkit-transition-timing-function> = ease-out
+<cssproperty_-webkit-transition-timing-function> = ease-in
+<cssproperty_-webkit-transition-timing-function> = steps(<fuzzint>, end)
+<cssproperty_-webkit-transition-timing-function> = ease
+<cssproperty_-webkit-transition-timing-function> = ease-in-out
+
+<cssproperty_-webkit-user-drag> = element
+<cssproperty_-webkit-user-drag> = none
+
+<cssproperty_-webkit-user-modify> = read-only
+<cssproperty_-webkit-user-modify> = read-write
+<cssproperty_-webkit-user-modify> = read-write-plaintext-only
+<cssproperty_-webkit-user-modify> = solid
+
+<cssproperty_-webkit-user-select> = none
+<cssproperty_-webkit-user-select> = text
+<cssproperty_-webkit-user-select> = all
+<cssproperty_-webkit-user-select> = ignore
+<cssproperty_-webkit-user-select> = auto
+
+<cssproperty_-webkit-wrap-flow> = auto
+
+<cssproperty_-webkit-writing-mode> = vertical-rl
+<cssproperty_-webkit-writing-mode> = vertical-lr
+<cssproperty_-webkit-writing-mode> = horizontal-tb
+<cssproperty_-webkit-writing-mode> = vertical-tb
+
+<cssproperty_align-content> = stretch
+<cssproperty_align-content> = end
+<cssproperty_align-content> = space-around
+<cssproperty_align-content> = start
+<cssproperty_align-content> = flex-end
+<cssproperty_align-content> = flex-start
+<cssproperty_align-content> = center
+<cssproperty_align-content> = space-between
+<cssproperty_align-content> = center safe
+<cssproperty_align-content> = auto
+<cssproperty_align-content> = baseline
+<cssproperty_align-content> = last-baseline
+<cssproperty_align-content> = space-evenly
+<cssproperty_align-content> = left
+<cssproperty_align-content> = right
+<cssproperty_align-content> = end unsafe
+<cssproperty_align-content> = center unsafe
+<cssproperty_align-content> = right safe
+<cssproperty_align-content> = left unsafe
+<cssproperty_align-content> = flex-start unsafe
+<cssproperty_align-content> = flex-end safe
+<cssproperty_align-content> = space-between left
+<cssproperty_align-content> = space-around center
+<cssproperty_align-content> = space-evenly right
+<cssproperty_align-content> = stretch start safe
+<cssproperty_align-content> = space-around end unsafe
+<cssproperty_align-content> = space-evenly flex-start safe
+<cssproperty_align-content> = space-between stretch
+<cssproperty_align-content> = safe
+<cssproperty_align-content> = right safe unsafe
+<cssproperty_align-content> = center left
+<cssproperty_align-content> = end safe
+
+<cssproperty_align-items> = flex-start
+<cssproperty_align-items> = end unsafe
+<cssproperty_align-items> = start
+<cssproperty_align-items> = stretch
+<cssproperty_align-items> = end safe
+<cssproperty_align-items> = center
+<cssproperty_align-items> = flex-end
+<cssproperty_align-items> = baseline
+<cssproperty_align-items> = damer
+<cssproperty_align-items> = end
+<cssproperty_align-items> = last-baseline
+<cssproperty_align-items> = self-start
+<cssproperty_align-items> = self-end
+<cssproperty_align-items> = left
+<cssproperty_align-items> = right
+<cssproperty_align-items> = center unsafe
+<cssproperty_align-items> = self-end safe
+<cssproperty_align-items> = self-start safe
+<cssproperty_align-items> = right safe
+<cssproperty_align-items> = left unsafe
+<cssproperty_align-items> = flex-start unsafe
+<cssproperty_align-items> = flex-end safe
+<cssproperty_align-items> = flex-start safe
+<cssproperty_align-items> = auto
+<cssproperty_align-items> = center safe
+
+<cssproperty_align-self> = end safe
+<cssproperty_align-self> = stretch
+<cssproperty_align-self> = end
+<cssproperty_align-self> = center
+<cssproperty_align-self> = start
+<cssproperty_align-self> = end unsafe
+<cssproperty_align-self> = auto
+<cssproperty_align-self> = flex-start
+<cssproperty_align-self> = flex-end
+<cssproperty_align-self> = baseline
+<cssproperty_align-self> = damer
+<cssproperty_align-self> = flex-start safe
+<cssproperty_align-self> = last-baseline
+<cssproperty_align-self> = self-start
+<cssproperty_align-self> = self-end
+<cssproperty_align-self> = left
+<cssproperty_align-self> = right
+<cssproperty_align-self> = center unsafe
+<cssproperty_align-self> = self-end safe
+<cssproperty_align-self> = self-start safe
+<cssproperty_align-self> = right safe
+<cssproperty_align-self> = left unsafe
+<cssproperty_align-self> = flex-start unsafe
+<cssproperty_align-self> = flex-end safe
+<cssproperty_align-self> = center safe
+
+<cssproperty_alignx> = left
+
+<cssproperty_animation> = anim <fuzzint>s
+<cssproperty_animation> = anim <fuzzint>s ease-in-out
+<cssproperty_animation> = anim <fuzzint>s infinite
+<cssproperty_animation> = anim <fuzzint>s linear
+<cssproperty_animation> = anim <fuzzint>s linear forwards
+<cssproperty_animation> = anim <fuzzint>s step-start paused
+<cssproperty_animation> = anim <fuzzint>s paused
+<cssproperty_animation> = anim <fuzzint>s linear <fuzzint>s
+<cssproperty_animation> = anim <fuzzint>s infinite alternate
+<cssproperty_animation> = anim <fuzzint>s linear infinite backwards
+
+<cssproperty_animation-delay> = <fuzzint>s
+<cssproperty_animation-delay> = inherit
+<cssproperty_animation-delay> = initial
+
+<cssproperty_animation-direction> = alternate
+<cssproperty_animation-direction> = inherit
+<cssproperty_animation-direction> = initial
+<cssproperty_animation-direction> = reverse
+
+<cssproperty_animation-duration> = <fuzzint>s
+<cssproperty_animation-duration> = inherit
+<cssproperty_animation-duration> = initial
+
+<cssproperty_animation-fill-mode> = forwards
+<cssproperty_animation-fill-mode> = both
+
+<cssproperty_animation-iteration-count> = infinite
+<cssproperty_animation-iteration-count> = inherit
+<cssproperty_animation-iteration-count> = initial
+
+<cssproperty_animation-name> = anim
+
+<cssproperty_animation-play-state> = paused
+<cssproperty_animation-play-state> = running
+<cssproperty_animation-play-state> = inherit
+<cssproperty_animation-play-state> = initial
+
+<cssproperty_animation-timing-function> = steps(<fuzzint>, start)
+<cssproperty_animation-timing-function> = linear
+<cssproperty_animation-timing-function> = step-end
+<cssproperty_animation-timing-function> = inherit
+<cssproperty_animation-timing-function> = initial
+
+<cssproperty_backdrop-filter> = hue-rotate(<fuzzint>deg)
+<cssproperty_backdrop-filter> = grayscale(<percentage>%)
+
+<cssproperty_backface-visibility> = hidden
+<cssproperty_backface-visibility> = visible
+
+<cssproperty_background> = <color>
+<cssproperty_background> = url(<cssurl>)
+<cssproperty_background> = <color> url(<cssurl>)
+<cssproperty_background> = url(<cssurl>) repeat-x scroll top left
+<cssproperty_background> = url(<cssurl>) no-repeat scroll top right
+<cssproperty_background> = url(<cssurl>) repeat-x center top fixed
+<cssproperty_background> = url(<cssurl>) repeat-y <percentage>% <percentage>0%
+<cssproperty_background> = url(<cssurl>) repeat-y center top
+<cssproperty_background> = url(<cssurl>) repeat-x left top
+<cssproperty_background> = url(<cssurl>) no-repeat fixed center center
+
+<cssproperty_background-attachment> = fixed
+<cssproperty_background-attachment> = local
+<cssproperty_background-attachment> = initial
+
+<cssproperty_background-blend-mode> = normal, normal
+<cssproperty_background-blend-mode> = screen
+<cssproperty_background-blend-mode> = multiply, normal
+<cssproperty_background-blend-mode> = screen, normal
+<cssproperty_background-blend-mode> = overlay, normal
+<cssproperty_background-blend-mode> = darken, normal
+<cssproperty_background-blend-mode> = lighten, normal
+<cssproperty_background-blend-mode> = color-dodge, normal
+<cssproperty_background-blend-mode> = color-burn, normal
+<cssproperty_background-blend-mode> = hard-light, normal
+<cssproperty_background-blend-mode> = soft-light, normal
+<cssproperty_background-blend-mode> = difference, normal
+<cssproperty_background-blend-mode> = exclusion, normal
+<cssproperty_background-blend-mode> = hue, normal
+<cssproperty_background-blend-mode> = saturation, normal
+<cssproperty_background-blend-mode> = color, normal
+<cssproperty_background-blend-mode> = luminosity, normal
+<cssproperty_background-blend-mode> = multiply
+<cssproperty_background-blend-mode> = difference
+<cssproperty_background-blend-mode> = hue, multiply, normal
+<cssproperty_background-blend-mode> = luminosity, multiply, normal
+<cssproperty_background-blend-mode> = normal
+
+<cssproperty_background-clip> = content-box
+<cssproperty_background-clip> = padding-box
+<cssproperty_background-clip> = border-box
+<cssproperty_background-clip> = content-box, padding-box, border-box
+<cssproperty_background-clip> = content-box, border-box
+
+<cssproperty_background-color> = <color>
+
+<cssproperty_background-image> = url(<cssurl>)
+
+<cssproperty_background-origin> = border-box
+<cssproperty_background-origin> = content-box
+<cssproperty_background-origin> = padding-box
+<cssproperty_background-origin> = content-box, padding-box
+
+<cssproperty_background-position> = bottom right
+<cssproperty_background-position> = center
+<cssproperty_background-position> = <fuzzint> <fuzzint>, <fuzzint>px <fuzzint>px
+<cssproperty_background-position> = left <fuzzint>px top <fuzzint>
+<cssproperty_background-position> = right <fuzzint>px top <fuzzint>
+<cssproperty_background-position> = <fuzzint> <fuzzint>px
+<cssproperty_background-position> = left <fuzzint> top <fuzzint>px
+<cssproperty_background-position> = left <fuzzint> bottom <fuzzint>px
+<cssproperty_background-position> = left top, right top, left bottom, right bottom
+<cssproperty_background-position> = <fuzzint>px <fuzzint>px
+<cssproperty_background-position> = <percentage>% <fuzzint>
+<cssproperty_background-position> = <fuzzint> <percentage>%
+<cssproperty_background-position> = <percentage>% <percentage>%
+<cssproperty_background-position> = center center
+<cssproperty_background-position> = bottom center
+<cssproperty_background-position> = center bottom
+<cssproperty_background-position> = right center
+<cssproperty_background-position> = center right
+<cssproperty_background-position> = top right
+<cssproperty_background-position> = right top
+<cssproperty_background-position> = left right
+<cssproperty_background-position> = left left
+<cssproperty_background-position> = <percentage>% bottom
+<cssproperty_background-position> = right <percentage>%
+<cssproperty_background-position> = <percentage>% <fuzzint>px
+<cssproperty_background-position> = inherit
+<cssproperty_background-position> = <fuzzint>
+<cssproperty_background-position> = <fuzzint> <fuzzint>
+<cssproperty_background-position> = <fuzzint>px
+
+<cssproperty_background-position-x> = <percentage>%
+<cssproperty_background-position-x> = <fuzzint>px
+<cssproperty_background-position-x> = initial
+
+<cssproperty_background-repeat> = no-repeat
+<cssproperty_background-repeat> = repeat repeat
+<cssproperty_background-repeat> = repeat space
+<cssproperty_background-repeat> = repeat round
+<cssproperty_background-repeat> = space repeat
+<cssproperty_background-repeat> = space space
+<cssproperty_background-repeat> = space round
+<cssproperty_background-repeat> = round repeat
+<cssproperty_background-repeat> = round space
+<cssproperty_background-repeat> = round round
+<cssproperty_background-repeat> = repeat
+<cssproperty_background-repeat> = space
+<cssproperty_background-repeat> = round
+<cssproperty_background-repeat> = repeat-x
+<cssproperty_background-repeat> = repeat no-repeat
+<cssproperty_background-repeat> = initial
+<cssproperty_background-repeat> = repeat-y
+<cssproperty_background-repeat> = auto repeat-x
+<cssproperty_background-repeat> = garbage repeat-x
+<cssproperty_background-repeat> = black
+<cssproperty_background-repeat> = repeat-x, repeat-y
+
+<cssproperty_background-repeat-x> = no-repeat
+<cssproperty_background-repeat-x> = repeat
+<cssproperty_background-repeat-x> = repeat-y
+<cssproperty_background-repeat-x> = repeat-x
+<cssproperty_background-repeat-x> = 10px
+
+<cssproperty_background-repeat-y> = no-repeat
+<cssproperty_background-repeat-y> = repeat
+<cssproperty_background-repeat-y> = repeat-x
+<cssproperty_background-repeat-y> = repeat-y
+
+<cssproperty_background-size> = <fuzzint>px
+<cssproperty_background-size> = contain
+<cssproperty_background-size> = <fuzzint>px <fuzzint>px
+<cssproperty_background-size> = <percentage>% <percentage>%
+<cssproperty_background-size> = auto
+<cssproperty_background-size> = cover
+<cssproperty_background-size> = <fuzzint>px auto
+<cssproperty_background-size> = auto <fuzzint>px
+<cssproperty_background-size> = auto auto
+<cssproperty_background-size> = contain, cover
+<cssproperty_background-size> = cover, contain
+
+<cssproperty_baseline-shift> = inherit
+<cssproperty_baseline-shift> = <fuzzint>px
+<cssproperty_baseline-shift> = <fuzzint>
+
+<cssproperty_border> = thin solid <color>
+<cssproperty_border> = <fuzzint>px solid <color>
+<cssproperty_border> = <fuzzint>px dashed <color>
+
+<cssproperty_border> = medium solid <color>
+<cssproperty_border> = thin solid <color>
+<cssproperty_border> = <fuzzint>px dashed <color>
+<cssproperty_border> = <fuzzint>px dotted <color>
+<cssproperty_border> = <fuzzint>px solid <color>
+<cssproperty_border> = solid
+<cssproperty_border> = none
+<cssproperty_border> = <fuzzint>px
+<cssproperty_border> = solid thin
+<cssproperty_border> = medium
+<cssproperty_border> = solid medium
+<cssproperty_border> = unset
+<cssproperty_border> = hidden
+<cssproperty_border> = inherit
+<cssproperty_border> = dotted
+<cssproperty_border> = <fuzzint>px dotted
+
+<cssproperty_border-bottom> = <fuzzint>px solid <color>
+<cssproperty_border-bottom> = <fuzzint>px solid
+<cssproperty_border-bottom> = <color> solid
+<cssproperty_border-bottom> = none
+<cssproperty_border-bottom> = <fuzzint>px outset
+<cssproperty_border-bottom> = <fuzzint>px dashed
+<cssproperty_border-bottom> = <color> auto
+<cssproperty_border-bottom> = solid
+
+<cssproperty_border-bottom-color> = <color>
+
+<cssproperty_border-bottom-left-radius> = <fuzzint>px
+<cssproperty_border-bottom-left-radius> = <fuzzint>px <fuzzint>px
+
+<cssproperty_border-bottom-right-radius> = <fuzzint>px
+<cssproperty_border-bottom-right-radius> = <fuzzint>px <fuzzint>px
+
+<cssproperty_border-bottom-style> = solid
+<cssproperty_border-bottom-style> = dashed
+<cssproperty_border-bottom-style> = dotted
+<cssproperty_border-bottom-style> = groove
+<cssproperty_border-bottom-style> = double
+
+<cssproperty_border-bottom-width> = <fuzzint>px
+
+<cssproperty_border-collapse> = collapse
+<cssproperty_border-collapse> = separate
+
+<cssproperty_border-color> = <color>
+
+<cssproperty_border-image> = url(<cssurl>) <percentage>% <fuzzint> <fuzzint> round
+<cssproperty_border-image> = url(<cssurl>) <fuzzint> <fuzzint> <fuzzint> <fuzzint>/<fuzzint>px stretch stretch
+<cssproperty_border-image> = linear-gradient(to right, <color>, <color>) <fuzzint> <fuzzint>
+<cssproperty_border-image> = url(<cssurl>) <fuzzint> <fuzzint> <fuzzint> <fuzzint> fill/<fuzzint>px <fuzzint>px <fuzzint>px <fuzzint>px
+<cssproperty_border-image> = fill
+<cssproperty_border-image> = url(<cssurl>) stretch <fuzzint>
+<cssproperty_border-image> = url(<cssurl>) <fuzzint> fill
+<cssproperty_border-image> = url(<cssurl>) <fuzzint> round
+
+<cssproperty_border-image-outset> = <fuzzint>
+<cssproperty_border-image-outset> = <fuzzint>px
+<cssproperty_border-image-outset> = inherit
+<cssproperty_border-image-outset> = <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+
+<cssproperty_border-image-repeat> = repeat
+<cssproperty_border-image-repeat> = round round
+<cssproperty_border-image-repeat> = round stretch
+<cssproperty_border-image-repeat> = repeat round
+<cssproperty_border-image-repeat> = round
+<cssproperty_border-image-repeat> = repeat stretch
+<cssproperty_border-image-repeat> = stretch repeat
+<cssproperty_border-image-repeat> = stretch
+<cssproperty_border-image-repeat> = inherit
+<cssproperty_border-image-repeat> = repeat repeat
+<cssproperty_border-image-repeat> = initial
+
+<cssproperty_border-image-slice> = <fuzzint> <fuzzint> <fuzzint> <fuzzint> fill
+<cssproperty_border-image-slice> = <percentage>%
+<cssproperty_border-image-slice> = <fuzzint>
+<cssproperty_border-image-slice> = <fuzzint> fill
+
+<cssproperty_border-image-source> = url(<cssurl>)
+
+<cssproperty_border-image-width> = <fuzzint>
+<cssproperty_border-image-width> = <fuzzint>px
+<cssproperty_border-image-width> = inherit
+<cssproperty_border-image-width> = <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+
+<cssproperty_border-left> = <fuzzint>px solid
+<cssproperty_border-left> = <fuzzint>px dashed <color>
+<cssproperty_border-left> = <fuzzint>px solid <color>
+<cssproperty_border-left> = <fuzzint>px <color> solid
+<cssproperty_border-left> = <fuzzint>px solid transparent
+<cssproperty_border-left> = solid
+<cssproperty_border-left> = <color> double <fuzzint>px
+<cssproperty_border-left> = <color> thin solid
+<cssproperty_border-left> = <color> medium solid
+<cssproperty_border-left> = <color> <fuzzint>px solid
+<cssproperty_border-left> = solid <fuzzint>em <color>
+<cssproperty_border-left> = <color>
+<cssproperty_border-left> = <color> none <fuzzint>
+<cssproperty_border-left> = <color> solid <fuzzint>px
+<cssproperty_border-left> = <color> dotted
+<cssproperty_border-left> = <color> solid
+<cssproperty_border-left> = solid <fuzzint>px <color>
+<cssproperty_border-left> = solid <color>
+<cssproperty_border-left> = <fuzzint>ex solid <color>
+<cssproperty_border-left> = <fuzzint>px dotted <color>
+<cssproperty_border-left> = none
+<cssproperty_border-left> = <fuzzint>em solid
+<cssproperty_border-left> = <color> <fuzzint>em solid
+<cssproperty_border-left> = <fuzzint>em solid <color>
+<cssproperty_border-left> = dotted <color> <fuzzint>px
+<cssproperty_border-left> = dashed <color> <fuzzint>px
+<cssproperty_border-left> = solid <color> <fuzzint>px
+<cssproperty_border-left> = double <color> <fuzzint>px
+<cssproperty_border-left> = groove <color> <fuzzint>px
+<cssproperty_border-left> = ridge <color> <fuzzint>px
+<cssproperty_border-left> = inset <color> <fuzzint>px
+<cssproperty_border-left> = outset <color> <fuzzint>px
+<cssproperty_border-left> = <fuzzint>
+<cssproperty_border-left> = solid <fuzzint>px
+<cssproperty_border-left> = <fuzzint>px <color> dotted
+<cssproperty_border-left> = <fuzzint> solid <color>
+<cssproperty_border-left> = solid <color> <fuzzint>em
+<cssproperty_border-left> = <color> auto
+<cssproperty_border-left> = <color> thick groove
+<cssproperty_border-left> = <color> <fuzzint>px dashed
+
+<cssproperty_border-left-color> = <color>
+
+<cssproperty_border-left-style> = solid
+<cssproperty_border-left-style> = hidden
+<cssproperty_border-left-style> = none
+
+<cssproperty_border-left-width> = thick
+<cssproperty_border-left-width> = medium
+<cssproperty_border-left-width> = thin
+<cssproperty_border-left-width> = <fuzzint>px
+<cssproperty_border-left-width> = <fuzzint>
+
+<cssproperty_border-radius> = <fuzzint>px
+<cssproperty_border-radius> = <percentage>%
+<cssproperty_border-radius> = <fuzzint>px <fuzzint> <fuzzint> <fuzzint>
+<cssproperty_border-radius> = <fuzzint> <fuzzint>px <fuzzint> <fuzzint>
+<cssproperty_border-radius> = <fuzzint> <fuzzint> <fuzzint>px <fuzzint>
+<cssproperty_border-radius> = <fuzzint> <fuzzint> <fuzzint> <fuzzint>px
+<cssproperty_border-radius> = <fuzzint>px <fuzzint>px <fuzzint>px <fuzzint>px
+<cssproperty_border-radius> = <fuzzint>px <fuzzint>px
+<cssproperty_border-radius> = <fuzzint>em <fuzzint>em <fuzzint>em <fuzzint>em
+<cssproperty_border-radius> = <fuzzint>em
+<cssproperty_border-radius> = <fuzzint>
+
+<cssproperty_border-right> = <fuzzint>px solid
+<cssproperty_border-right> = <fuzzint>px dashed <color>
+<cssproperty_border-right> = <fuzzint>px solid <color>
+<cssproperty_border-right> = <color> <fuzzint>px solid
+<cssproperty_border-right> = <fuzzint>px solid transparent
+<cssproperty_border-right> = <color> double <fuzzint>px
+<cssproperty_border-right> = <color> thin solid
+<cssproperty_border-right> = solid <fuzzint>em <color>
+<cssproperty_border-right> = <color> medium solid
+<cssproperty_border-right> = <color> solid <float>em
+<cssproperty_border-right> = <color> none <fuzzint>
+<cssproperty_border-right> = <color> solid <fuzzint>px
+<cssproperty_border-right> = none
+<cssproperty_border-right> = <fuzzint>px dotted <color>
+<cssproperty_border-right> = <fuzzint>px <color> solid
+<cssproperty_border-right> = <fuzzint>em solid
+<cssproperty_border-right> = <color> <fuzzint>em solid
+<cssproperty_border-right> = <fuzzint>em solid <color>
+<cssproperty_border-right> = <fuzzint>px <color> dotted
+<cssproperty_border-right> = <fuzzint>px solid maroon
+<cssproperty_border-right> = solid <fuzzint>px
+<cssproperty_border-right> = <fuzzint> solid <color>
+<cssproperty_border-right> = solid <color> <fuzzint>em
+<cssproperty_border-right> = <fuzzint>
+<cssproperty_border-right> = <color> auto
+<cssproperty_border-right> = <color> <fuzzint>px dashed
+<cssproperty_border-right> = hidden
+<cssproperty_border-right> = solid
+
+<cssproperty_border-right-color> = <color>
+<cssproperty_border-right-color> = transparent
+<cssproperty_border-right-color> = inherit
+
+<cssproperty_border-right-style> = solid
+<cssproperty_border-right-style> = double
+<cssproperty_border-right-style> = hidden
+<cssproperty_border-right-style> = dashed
+
+<cssproperty_border-right-width> = thin
+<cssproperty_border-right-width> = <fuzzint>px
+<cssproperty_border-right-width> = <fuzzint>
+<cssproperty_border-right-width> = thick
+<cssproperty_border-right-width> = medium
+
+<cssproperty_border-size> = <fuzzint>px
+
+<cssproperty_border-spacing> = <fuzzint>px
+<cssproperty_border-spacing> = <fuzzint>
+<cssproperty_border-spacing> = <fuzzint>em
+<cssproperty_border-spacing> = <fuzzint> <fuzzint>
+<cssproperty_border-spacing> = <fuzzint>px <fuzzint>px
+
+<cssproperty_border-style> = solid
+<cssproperty_border-style> = dotted double
+<cssproperty_border-style> = hidden
+<cssproperty_border-style> = none
+<cssproperty_border-style> = dotted dashed solid double
+<cssproperty_border-style> = groove
+<cssproperty_border-style> = dashed
+<cssproperty_border-style> = dotted
+<cssproperty_border-style> = ridge
+<cssproperty_border-style> = inset
+<cssproperty_border-style> = none solid
+<cssproperty_border-style> = outset
+<cssproperty_border-style> = double
+<cssproperty_border-style> = solid none
+<cssproperty_border-style> = double groove
+<cssproperty_border-style> = dotted double dashed solid
+<cssproperty_border-style> = inherit
+<cssproperty_border-style> = none none none solid
+<cssproperty_border-style> = initial
+<cssproperty_border-style> = double groove ridge inset
+<cssproperty_border-style> = solid none solid solid
+<cssproperty_border-style> = solid solid solid none
+<cssproperty_border-style> = solid none solid none
+<cssproperty_border-style> = none solid solid
+<cssproperty_border-style> = solid solid none
+<cssproperty_border-style> = solid dashed
+<cssproperty_border-style> = solid dashed dotted
+<cssproperty_border-style> = none solid none none
+
+<cssproperty_border-top> = solid <fuzzint>px <color>
+<cssproperty_border-top> = <fuzzint>px solid
+<cssproperty_border-top> = <fuzzint>px solid <color>
+<cssproperty_border-top> = solid <color> <fuzzint>px
+<cssproperty_border-top> = <color> double <fuzzint>px
+<cssproperty_border-top> = <color> thin solid
+<cssproperty_border-top> = <color> <fuzzint>px solid
+<cssproperty_border-top> = <color>
+<cssproperty_border-top> = <color> solid <fuzzint>px
+<cssproperty_border-top> = <fuzzint>em solid <color>
+<cssproperty_border-top> = solid
+<cssproperty_border-top> = none
+<cssproperty_border-top> = <color> medium solid
+<cssproperty_border-top> = <fuzzint>px dotted <color>
+<cssproperty_border-top> = <fuzzint>px <color> solid
+<cssproperty_border-top> = solid <color> <fuzzint>em
+<cssproperty_border-top> = <fuzzint>em <color> solid
+<cssproperty_border-top> = <fuzzint>px dashed <color>
+<cssproperty_border-top> = dashed
+<cssproperty_border-top> = dotted <color> <fuzzint>px
+<cssproperty_border-top> = dashed <color> <fuzzint>px
+<cssproperty_border-top> = double <color> <fuzzint>px
+<cssproperty_border-top> = groove <color> <fuzzint>px
+<cssproperty_border-top> = ridge <color> <fuzzint>px
+<cssproperty_border-top> = inset <color> <fuzzint>px
+<cssproperty_border-top> = outset <color> <fuzzint>px
+<cssproperty_border-top> = <fuzzint>
+
+<cssproperty_border-top-color> = <color>
+<cssproperty_border-top-color> = inherit
+<cssproperty_border-top-color> = initial
+
+<cssproperty_border-top-left-radius> = <fuzzint>vmin
+<cssproperty_border-top-left-radius> = <fuzzint>vw
+<cssproperty_border-top-left-radius> = <fuzzint>vh
+<cssproperty_border-top-left-radius> = <fuzzint>vmax
+<cssproperty_border-top-left-radius> = <fuzzint>px
+<cssproperty_border-top-left-radius> = <percentage>%
+<cssproperty_border-top-left-radius> = <fuzzint>px <fuzzint>px
+<cssproperty_border-top-left-radius> = <fuzzint>em <fuzzint>em
+
+<cssproperty_border-top-right-radius> = <fuzzint>vmin
+<cssproperty_border-top-right-radius> = <fuzzint>vw
+<cssproperty_border-top-right-radius> = <fuzzint>vh
+<cssproperty_border-top-right-radius> = <fuzzint>vmax
+<cssproperty_border-top-right-radius> = <fuzzint>px
+<cssproperty_border-top-right-radius> = <fuzzint> <fuzzint>
+<cssproperty_border-top-right-radius> = <percentage>%
+<cssproperty_border-top-right-radius> = <fuzzint>px <fuzzint>px
+<cssproperty_border-top-right-radius> = <fuzzint>
+
+<cssproperty_border-top-style> = solid
+<cssproperty_border-top-style> = dotted
+<cssproperty_border-top-style> = dashed
+<cssproperty_border-top-style> = groove
+<cssproperty_border-top-style> = ridge
+<cssproperty_border-top-style> = inset
+<cssproperty_border-top-style> = outset
+<cssproperty_border-top-style> = double
+<cssproperty_border-top-style> = none
+
+<cssproperty_border-top-width> = <fuzzint>px
+<cssproperty_border-top-width> = <fuzzint>
+<cssproperty_border-top-width> = thin
+<cssproperty_border-top-width> = thick
+<cssproperty_border-top-width> = medium
+
+<cssproperty_border-width> = <fuzzint>px
+<cssproperty_border-width> = <fuzzint>
+<cssproperty_border-width> = <fuzzint>px <fuzzint>px <fuzzint>px <fuzzint>px
+<cssproperty_border-width> = <fuzzint>em <fuzzint>em <fuzzint>em <fuzzint>em
+<cssproperty_border-width> = thick
+<cssproperty_border-width> = medium
+<cssproperty_border-width> = thin
+<cssproperty_border-width> = <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+
+<cssproperty_bottom> = <fuzzint>
+<cssproperty_bottom> = <fuzzint>px
+<cssproperty_bottom> = <fuzzint>vw
+<cssproperty_bottom> = <fuzzint>vh
+<cssproperty_bottom> = <fuzzint>vmin
+<cssproperty_bottom> = <fuzzint>vmax
+<cssproperty_bottom> = <percentage>%
+<cssproperty_bottom> = auto
+<cssproperty_bottom> = <fuzzint>em
+<cssproperty_bottom> = <fuzzint>cm
+
+<cssproperty_box-align> = center
+<cssproperty_box-align> = stretch
+
+<cssproperty_box-decoration-break> = slice
+<cssproperty_box-decoration-break> = clone
+
+<cssproperty_box-direction> = reverse
+
+<cssproperty_box-flex> = <fuzzint>
+
+<cssproperty_box-flex-group> = <fuzzint>
+
+<cssproperty_box-ordinal-group> = <fuzzint>
+
+<cssproperty_box-orient> = horizontal
+<cssproperty_box-orient> = vertical
+
+<cssproperty_box-pack> = justify
+<cssproperty_box-pack> = end
+
+<cssproperty_box-reflect> = right
+
+<cssproperty_box-shadow> = <fuzzint> <fuzzint> <fuzzint>px <color>
+<cssproperty_box-shadow> = <fuzzint>px <fuzzint> <color>
+<cssproperty_box-shadow> = <color> <fuzzint> <fuzzint>px <fuzzint>px <fuzzint> inset
+<cssproperty_box-shadow> = <color> <fuzzint> <fuzzint> <fuzzint>px <fuzzint>px
+<cssproperty_box-shadow> = <fuzzint>px <fuzzint>px <color>
+<cssproperty_box-shadow> = <fuzzint>px <fuzzint>px <fuzzint>px
+<cssproperty_box-shadow> = <fuzzint>px <fuzzint>px <fuzzint>px inset
+<cssproperty_box-shadow> = <fuzzint> <fuzzint>px <fuzzint>px dimgrey
+<cssproperty_box-shadow> = <fuzzint>px <fuzzint> currentColor
+
+<cssproperty_box-sizing> = border-box
+<cssproperty_box-sizing> = content-box
+<cssproperty_box-sizing> = padding-box
+<cssproperty_box-sizing> = auto
+
+<cssproperty_break-after> = column
+<cssproperty_break-after> = avoid
+<cssproperty_break-after> = page
+
+<cssproperty_break-before> = column
+<cssproperty_break-before> = page
+
+<cssproperty_break-inside> = avoid
+<cssproperty_break-inside> = avoid-column
+<cssproperty_break-inside> = avoid-page
+
+<cssproperty_caption-side> = bottom
+<cssproperty_caption-side> = top
+<cssproperty_caption-side> = right
+<cssproperty_caption-side> = left
+
+<cssproperty_cellpadding> = <fuzzint>
+
+<cssproperty_cellspacing> = <fuzzint>
+
+<cssproperty_clear> = left
+<cssproperty_clear> = both
+<cssproperty_clear> = right
+<cssproperty_clear> = none
+
+<cssproperty_clip> = rect(<fuzzint>px, <fuzzint>px, <fuzzint>px, <fuzzint>px)
+<cssproperty_clip> = auto
+<cssproperty_clip> = rect(auto, auto, auto, auto)
+
+<cssproperty_clip-path> = url(<cssurl>)
+<cssproperty_clip-path> = polygon(<fuzzint>px <fuzzint>px, <fuzzint>px <fuzzint>px, <fuzzint>px <fuzzint>px)
+
+<cssproperty_color> = <color>
+
+<cssproperty_color-interpolation-filters> = sRGB
+
+<cssproperty_color-profile> = sRGB
+
+<cssproperty_column-break-after> = always
+
+<cssproperty_column-break-before> = always
+
+<cssproperty_column-count> = <fuzzint>
+
+<cssproperty_column-fill> = auto
+<cssproperty_column-fill> = balance
+
+<cssproperty_column-gap> = <fuzzint>em
+<cssproperty_column-gap> = <fuzzint>
+<cssproperty_column-gap> = <fuzzint>px
+
+<cssproperty_column-rule> = <fuzzint>px solid <color>
+<cssproperty_column-rule> = <fuzzint>em solid <color>
+<cssproperty_column-rule> = <fuzzint>px solid
+
+<cssproperty_column-rule-style> = solid
+<cssproperty_column-rule-style> = dotted
+<cssproperty_column-rule-style> = dashed
+<cssproperty_column-rule-style> = groove
+<cssproperty_column-rule-style> = ridge
+<cssproperty_column-rule-style> = inset
+<cssproperty_column-rule-style> = outset
+<cssproperty_column-rule-style> = double
+
+<cssproperty_column-span> = all
+
+<cssproperty_column-width> = <fuzzint>px
+<cssproperty_column-width> = <fuzzint>
+<cssproperty_column-width> = <fuzzint>em
+
+<cssproperty_columns> = <fuzzint> <fuzzint>px
+<cssproperty_columns> = <fuzzint>
+<cssproperty_columns> = <fuzzint>px
+
+<cssproperty_contain> = strict
+<cssproperty_contain> = size layout
+<cssproperty_contain> = paint
+<cssproperty_contain> = layout
+<cssproperty_contain> = style
+<cssproperty_contain> = size
+<cssproperty_contain> = none
+<cssproperty_contain> = content
+
+<cssproperty_content> = 'foo'
+<cssproperty_content> = url(<cssurl>)
+<cssproperty_content> = counters(c, '.', lower-latin)
+<cssproperty_content> = counter(c, disc)
+<cssproperty_content> = counter(c, circle)
+<cssproperty_content> = counter(c, lower-alpha)
+<cssproperty_content> = counter(c, upper-alpha)
+
+<cssproperty_counter-increment> = c
+
+<cssproperty_counter-reset> = c
+
+<cssproperty_css-float> = left
+
+<cssproperty_cursor> = pointer
+<cssproperty_cursor> = default
+<cssproperty_cursor> = progress
+<cssproperty_cursor> = wait
+<cssproperty_cursor> = hand
+<cssproperty_cursor> = auto
+<cssproperty_cursor> = none
+<cssproperty_cursor> = crosshair
+<cssproperty_cursor> = text
+<cssproperty_cursor> = help
+<cssproperty_cursor> = url(<cssurl>)
+
+<cssproperty_cx> = <fuzzint>px
+
+<cssproperty_cy> = <fuzzint>px
+
+<cssproperty_diplay> = inline
+
+<cssproperty_dipslay> = none
+
+<cssproperty_direction> = ltr
+<cssproperty_direction> = rtl
+<cssproperty_direction> = rtl auto
+
+<cssproperty_display> = block
+<cssproperty_display> = inline-block
+<cssproperty_display> = none
+<cssproperty_display> = flex
+<cssproperty_display> = inline-flex
+<cssproperty_display> = -webkit-inline-box
+<cssproperty_display> = table-cell
+<cssproperty_display> = compact
+<cssproperty_display> = run-in
+<cssproperty_display> = inline
+<cssproperty_display> = inline-table
+<cssproperty_display> = -moz-box
+<cssproperty_display> = inline-box
+<cssproperty_display> = -webkit-flex
+<cssproperty_display> = table-header-group
+<cssproperty_display> = table
+<cssproperty_display> = table-row
+<cssproperty_display> = -webkit-box
+<cssproperty_display> = grid
+<cssproperty_display> = box
+<cssproperty_display> = table-row-group
+<cssproperty_display> = list-item
+<cssproperty_display> = table-footer-group
+<cssproperty_display> = flex inline-flex
+<cssproperty_display> = table-caption
+<cssproperty_display> = contents
+<cssproperty_display> = table-column-group
+<cssproperty_display> = table-column
+<cssproperty_display> = inline-grid
+<cssproperty_display> = -webkit-inline-block
+<cssproperty_display> = inherit
+<cssproperty_display> = -webkit-inline-flexbox
+<cssproperty_display> = -webkit-flexbox
+<cssproperty_display> = -webkit-inline-flex
+<cssproperty_display> = row
+<cssproperty_display> = boxed-inline
+<cssproperty_display> = hidden
+<cssproperty_display> = show
+<cssproperty_display> = hide
+<cssproperty_display> = block garbage
+<cssproperty_display> = initial
+<cssproperty_display> = unset
+<cssproperty_display> = block auto
+<cssproperty_display> = -wap-marquee
+<cssproperty_display> = some-invalid-value
+<cssproperty_display> = content
+
+<cssproperty_dominant-baseline> = no-change
+
+<cssproperty_empty-cells> = show
+<cssproperty_empty-cells> = hide
+
+<cssproperty_fill> = <color>
+
+<cssproperty_fill-opacity> = <float>
+
+<cssproperty_fill-rule> = evenodd
+
+<cssproperty_filter> = contrast(<fuzzint>)
+<cssproperty_filter> = contrast(<float>)
+<cssproperty_filter> = drop-shadow(<fuzzint> <fuzzint> <fuzzint> <color>)
+<cssproperty_filter> = drop-shadow(<fuzzint>px <fuzzint>px <fuzzint>px <color>)
+<cssproperty_filter> = url(<cssurl>)
+<cssproperty_filter> = brightness(<fuzzint>)
+<cssproperty_filter> = brightness(<float>)
+<cssproperty_filter> = brightness()
+<cssproperty_filter> = opacity(<fuzzint>)
+<cssproperty_filter> = opacity(<float>)
+<cssproperty_filter> = invert(<fuzzint>)
+<cssproperty_filter> = invert(<float>)
+<cssproperty_filter> = hue-rotate(<fuzzint>deg)
+<cssproperty_filter> = blur(<fuzzint>)
+<cssproperty_filter> = blur(<fuzzint>px)
+<cssproperty_filter> = blur(<fuzzint>px <fuzzint>px)
+<cssproperty_filter> = saturate(<fuzzint>)
+<cssproperty_filter> = saturate(<float>)
+<cssproperty_filter> = brightness(<fuzzint>) brightness(<fuzzint>)
+<cssproperty_filter> = brightness(<float>) brightness(<fuzzint>)
+<cssproperty_filter> = brightness(<fuzzint>) brightness(<float>)
+<cssproperty_filter> = brightness(<float>) grayscale(<fuzzint>)
+<cssproperty_filter> = brightness(<float>) blur(<fuzzint>px)
+<cssproperty_filter> = brightness(<fuzzint>) blur(<fuzzint>px)
+<cssproperty_filter> = brightness(<float>) drop-shadow(<fuzzint>px <fuzzint>px <fuzzint>px <color>)
+<cssproperty_filter> = sepia(<fuzzint>)
+<cssproperty_filter> = sepia(<float>)
+<cssproperty_filter> = saturate(<fuzzint>) hue-rotate(<fuzzint>deg)
+<cssproperty_filter> = grayscale() blur(<fuzzint>px)
+<cssproperty_filter> = blur(<fuzzint>px) hue-rotate(<fuzzint>deg) sepia()
+<cssproperty_filter> = blur(<fuzzint>px) opacity(<float>) hue-rotate(<fuzzint>deg) sepia()
+<cssproperty_filter> = blur(<fuzzint>px) brightness(<fuzzint>) contrast(<fuzzint>)
+<cssproperty_filter> = brightness(<float>) brightness(<float>)
+<cssproperty_filter> = grayscale(<float>)
+<cssproperty_filter> = grayscale(<fuzzint>)
+
+<cssproperty_flex> = <fuzzint> auto
+<cssproperty_flex> = none
+<cssproperty_flex> = <fuzzint> <fuzzint> <percentage>%
+<cssproperty_flex> = <fuzzint> <fuzzint> <fuzzint>
+<cssproperty_flex> = <fuzzint>
+<cssproperty_flex> = <fuzzint> <fuzzint> auto
+<cssproperty_flex> = <fuzzint> <fuzzint> <fuzzint>px
+<cssproperty_flex> = <fuzzint> <fuzzint> <fuzzint>em
+<cssproperty_flex> = <fuzzint> <fuzzint>px
+<cssproperty_flex> = <float> <fuzzint> <fuzzint>
+<cssproperty_flex> = <fuzzint>px
+<cssproperty_flex> = <fuzzint> <percentage>% <fuzzint>
+<cssproperty_flex> = <fuzzint> auto <fuzzint>
+<cssproperty_flex> = <fuzzint> <fuzzint>
+<cssproperty_flex> = initial
+<cssproperty_flex> = auto
+
+<cssproperty_flex-basis> = <fuzzint>
+<cssproperty_flex-basis> = <fuzzint>px
+<cssproperty_flex-basis> = <percentage>%
+<cssproperty_flex-basis> = auto
+
+<cssproperty_flex-direction> = column
+<cssproperty_flex-direction> = row
+<cssproperty_flex-direction> = horizontal
+<cssproperty_flex-direction> = column-reverse
+<cssproperty_flex-direction> = row-reverse
+<cssproperty_flex-direction> = initial
+<cssproperty_flex-direction> = damer
+
+<cssproperty_flex-flow> = row-reverse
+<cssproperty_flex-flow> = column
+<cssproperty_flex-flow> = column-reverse
+<cssproperty_flex-flow> = row
+<cssproperty_flex-flow> = row wrap
+<cssproperty_flex-flow> = column wrap
+<cssproperty_flex-flow> = initial
+<cssproperty_flex-flow> = row wrap-reverse
+<cssproperty_flex-flow> = column wrap-reverse
+<cssproperty_flex-flow> = column-reverse wrap
+<cssproperty_flex-flow> = column nowrap
+<cssproperty_flex-flow> = row-reverse nowrap
+<cssproperty_flex-flow> = column-reverse wrap-reverse
+<cssproperty_flex-flow> = row nowrap
+<cssproperty_flex-flow> = row-reverse wrap
+<cssproperty_flex-flow> = row-reverse wrap-reverse
+<cssproperty_flex-flow> = column-reverse nowrap
+<cssproperty_flex-flow> = nowrap
+<cssproperty_flex-flow> = wrap
+<cssproperty_flex-flow> = wrap row
+<cssproperty_flex-flow> = wrap row-reverse
+<cssproperty_flex-flow> = wrap column
+<cssproperty_flex-flow> = wrap column-reverse
+<cssproperty_flex-flow> = wrap-reverse row
+<cssproperty_flex-flow> = wrap-reverse row-reverse
+<cssproperty_flex-flow> = wrap-reverse column
+<cssproperty_flex-flow> = wrap-reverse column-reverse
+<cssproperty_flex-flow> = wrap-reverse
+
+<cssproperty_flex-grow> = <fuzzint>
+<cssproperty_flex-grow> = <float>
+
+<cssproperty_flex-shrink> = <fuzzint>
+<cssproperty_flex-shrink> = <float>
+
+<cssproperty_flex-wrap> = wrap
+<cssproperty_flex-wrap> = wrap-reverse
+<cssproperty_flex-wrap> = nowrap
+<cssproperty_flex-wrap> = damer
+
+<cssproperty_float> = left
+<cssproperty_float> = none
+<cssproperty_float> = right
+<cssproperty_float> = -o-top-corner
+<cssproperty_float> = -o-bottom
+<cssproperty_float> = -webkit-positioned
+<cssproperty_float> = center
+<cssproperty_float> = inherit
+<cssproperty_float> = right garbage
+<cssproperty_float> = right auto
+
+<cssproperty_flood-color> = <color>
+
+<cssproperty_flood-opacity> = <fuzzint>
+<cssproperty_flood-opacity> = <float>
+
+<cssproperty_font> = <fuzzint>px sans-serif
+<cssproperty_font> = <percentage>%/<fuzzint> Ahem, monospace
+<cssproperty_font> = <fuzzint>em/<fuzzint>px sans-serif
+<cssproperty_font> = calc(<fuzzint>em)/<fuzzint>px sans-serif
+<cssproperty_font> = <fuzzint>em/calc(<fuzzint>px / <fuzzint>) sans-serif
+<cssproperty_font> = calc(<fuzzint>em)/calc(<fuzzint>px) sans-serif
+<cssproperty_font> = calc(<percentage>% + <float>em)/<fuzzint>px sans-serif
+<cssproperty_font> = <fuzzint>px/<fuzzint> Ahem
+<cssproperty_font> = normal <fuzzint> <percentage>%/<fuzzint> sans-serif
+<cssproperty_font> = normal <fuzzint> calc(<percentage>%)/<fuzzint> sans-serif
+<cssproperty_font> = italic small-caps <fuzzint> <percentage>%/<fuzzint>em monospace
+<cssproperty_font> = italic small-caps <fuzzint> calc(<percentage>%)/<fuzzint>em monospace
+<cssproperty_font> = <fuzzint>px Ahem
+<cssproperty_font> = normal normal normal normal <fuzzint>px/normal 'Helvetica Neue', Helvetica, Arial, sans-serif
+<cssproperty_font> = <fuzzint>px/<fuzzint> ahem
+<cssproperty_font> = <fuzzint>px/<fuzzint> Sherif
+<cssproperty_font> = <fuzzint>px Arial
+<cssproperty_font> = small/<percentage>% cursive
+<cssproperty_font> = <fuzzint>em/normal serif
+<cssproperty_font> = <fuzzint>em/<fuzzint> Ahem
+<cssproperty_font> = <fuzzint>px/<fuzzint>px Ahem
+<cssproperty_font> = <fuzzint>em/<fuzzint> serif
+<cssproperty_font> = italic small-caps <fuzzint>px Helvetica
+<cssproperty_font> = oblique normal <fuzzint> <fuzzint>px/<percentage>% sans-serif
+<cssproperty_font> = <fuzzint>px/<fuzzint> Verdana, sans-serif
+<cssproperty_font> = <fuzzint>px/<percentage>% Ahem
+<cssproperty_font> = italic small-caps <fuzzint> <percentage>%/<fuzzint>in sans-serif
+<cssproperty_font> = italic small-caps <fuzzint> <percentage>%/<percentage>% sans-serif
+<cssproperty_font> = <fuzzint>em monospace
+<cssproperty_font> = <percentage>%/<percentage>% sans-serif
+<cssproperty_font> = bold highlighted <percentage>% sans-serif
+<cssproperty_font> = bold highlighted <percentage>% serif
+<cssproperty_font> = <percentage>%/<percentage>% serif
+<cssproperty_font> = <fuzzint>px/<fuzzint>em Ahem
+<cssproperty_font> = <fuzzint>px/<fuzzint> 'orientation'
+<cssproperty_font> = <fuzzint>px/<fuzzint> Ahem, sans-serif
+<cssproperty_font> = <fuzzint>px Ahem, sans-serif
+<cssproperty_font> = <fuzzint>px Lucida Grande
+<cssproperty_font> = inherit
+<cssproperty_font> = <fuzzint>px 'lucida grande'
+<cssproperty_font> = bold italic <fuzzint>px monospace
+<cssproperty_font> = italic small-caps bold <fuzzint>px/<fuzzint>px sans-serif
+<cssproperty_font> = normal small-caps bold <fuzzint>px/<fuzzint>px sans-serif
+<cssproperty_font> = normal small-caps normal <fuzzint>px/<fuzzint>px sans-serif
+<cssproperty_font> = italic small-caps normal <fuzzint>px/<fuzzint>px sans-serif
+<cssproperty_font> = italic small-caps <fuzzint>pt Helvetica
+<cssproperty_font> = <fuzzint>em/<fuzzint> Ahem, sans-serif
+<cssproperty_font> = <fuzzint>px 'Lucida Grande'
+<cssproperty_font> = Ahem <fuzzint>px
+<cssproperty_font> = <fuzzint>px/<fuzzint> verdana, arial, helvetica, sans-serif
+<cssproperty_font> = bold <fuzzint>px/<fuzzint> Verdana, Arial, sans-serif
+<cssproperty_font> = <fuzzint>pt/<fuzzint>px 'trebuchet ms', verdana, helvetica, arial, sans-serif
+<cssproperty_font> = <fuzzint>em/<fuzzint>em Ahem
+<cssproperty_font> = <fuzzint>px/<fuzzint>em sans-serif
+<cssproperty_font> = <fuzzint>pt italic
+<cssproperty_font> = <fuzzint>px
+<cssproperty_font> = <fuzzint>px/<fuzzint> monospace
+<cssproperty_font> = initial
+<cssproperty_font> = <fuzzint>px 'Ahem'
+<cssproperty_font> = extra-condensed
+<cssproperty_font> = <fuzzint>px/<fuzzint> ivsfont
+<cssproperty_font> = <fuzzint>px Times
+<cssproperty_font> = <fuzzint>pt Courier
+<cssproperty_font> = menu
+<cssproperty_font> = <fuzzint>px/<fuzzint>px monospace
+<cssproperty_font> = normal <fuzzint>px/<fuzzint>px arial, sans-serif
+<cssproperty_font> = <fuzzint>pt 'SBL Hebrew'
+<cssproperty_font> = <fuzzint>px/<fuzzint> arial
+<cssproperty_font> = <fuzzint>/<fuzzint> Arial, sans-serif
+<cssproperty_font> = normal normal normal <fuzzint>em/normal Ahem, serif
+<cssproperty_font> = normal normal normal medium/normal Ahem, serif
+<cssproperty_font> = normal normal normal medium/<fuzzint> Ahem, serif
+<cssproperty_font> = normal normal normal <fuzzint>em/<fuzzint> Ahem, serif
+<cssproperty_font> = normal normal <fuzzint>em/<fuzzint> Ahem, serif
+<cssproperty_font> = normal <fuzzint>em/<fuzzint> Ahem, serif
+<cssproperty_font> = <fuzzint>em/<fuzzint> Ahem, serif
+<cssproperty_font> = normal normal normal <fuzzint>em Ahem, serif
+<cssproperty_font> = normal normal normal medium Ahem, serif
+<cssproperty_font> = normal normal <fuzzint>em Ahem, serif
+<cssproperty_font> = normal <fuzzint>em Ahem, serif
+<cssproperty_font> = <fuzzint>em Ahem, serif
+<cssproperty_font> = bold <fuzzint>pt monospace
+<cssproperty_font> = <fuzzint>pt Ahem, sans-serif
+<cssproperty_font> = large sans-serif
+<cssproperty_font> = <percentage>% arial, sans-serif
+<cssproperty_font> = <fuzzint>px/<fuzzint> T, sans-serif
+<cssproperty_font> = <fuzzint>px/<fuzzint> Arial
+<cssproperty_font> = normal small-caps bold <fuzzint>px/<percentage>% sans-serif
+<cssproperty_font> = bold <fuzzint>px monospace
+<cssproperty_font> = x-small 'Lucida Grande'
+<cssproperty_font> = small monospace
+<cssproperty_font> = <fuzzint>px/<fuzzint> serif
+<cssproperty_font> = monospace <fuzzint>px
+<cssproperty_font> = <fuzzint>pt monospace
+<cssproperty_font> = <fuzzint>px Ariel
+<cssproperty_font> = message-box
+<cssproperty_font> = <fuzzint> required
+<cssproperty_font> = bold <fuzzint>px Georgia
+<cssproperty_font> = <fuzzint> small-caps <fuzzint>px sans-serif
+<cssproperty_font> = bold
+<cssproperty_font> = caption
+<cssproperty_font> = <fuzzint>px monospace
+<cssproperty_font> = <fuzzint>px/<fuzzint>em Georgia
+<cssproperty_font> = <fuzzint>em sans-serif
+<cssproperty_font> = <fuzzint>px/<fuzzint>px serif
+<cssproperty_font> = <fuzzint>em serif
+<cssproperty_font> = 'ahem'
+<cssproperty_font> = <fuzzint>px 'Helvetica Neue'
+<cssproperty_font> = normal <fuzzint>px/<fuzzint> Georgia, serif
+<cssproperty_font> = <fuzzint>
+<cssproperty_font> = <fuzzint>/<fuzzint>
+<cssproperty_font> = normal <fuzzint>px/<fuzzint> Helvetica, Arial, sans-serif
+<cssproperty_font> = 'Comic Sans MS' woopdidoo
+<cssproperty_font> = <fuzzint>in Ahem
+<cssproperty_font> = <fuzzint>pt italic Arial
+<cssproperty_font> = <fuzzint>pt italic 'Arial'
+<cssproperty_font> = italic <fuzzint>pt
+<cssproperty_font> = italic <fuzzint>pt Arial
+<cssproperty_font> = italic <fuzzint>pt 'Arial'
+<cssproperty_font> = Arial <fuzzint>pt italic
+<cssproperty_font> = 'Arial' <fuzzint>pt italic
+<cssproperty_font> = Arial italic <fuzzint>pt
+<cssproperty_font> = 'Arial' italic <fuzzint>pt
+<cssproperty_font> = <fuzzint>px fantasy
+<cssproperty_font> = bold <fuzzint>em sans-serif
+<cssproperty_font> = <fuzzint>em/<fuzzint> verdana, arial, geneva, sans-serif
+<cssproperty_font> = <fuzzint>em/<fuzzint>em monospace
+<cssproperty_font> = <fuzzint>cm/<fuzzint> 'Verdana'
+<cssproperty_font> = <float>cm 'SVGraffiti'
+<cssproperty_font> = italic <fuzzint>cm/<fuzzint>cm 'Verdana'
+<cssproperty_font> = bold <float>cm/<fuzzint>em 'Verdana'
+<cssproperty_font> = <float>cm 'SVGraffiti-First'
+<cssproperty_font> = <float>cm 'SVGraffiti-Second'
+<cssproperty_font> = <fuzzint>px Arial, sans-serif
+<cssproperty_font> = <fuzzint>px morris
+<cssproperty_font> = bold <fuzzint>px/<fuzzint>px Arial, sans-serif
+<cssproperty_font> = <fuzzint>px/<fuzzint>px Arial, sans-serif
+<cssproperty_font> = <fuzzint>pt sans-serif
+<cssproperty_font> = <percentage>% Tahoma, sans-serif
+<cssproperty_font> = <percentage>% Helvetica, sans-serif
+<cssproperty_font> = normal <fuzzint>px Helvetica
+<cssproperty_font> = <fuzzint>px verdana
+<cssproperty_font> = <fuzzint> <fuzzint>px monospace
+
+<cssproperty_font-face> = Arial
+
+<cssproperty_font-family> = monospace
+<cssproperty_font-family> = Consolas, monospace
+<cssproperty_font-family> = 'Liberation Mono', monospace
+<cssproperty_font-family> = Menlo, monospace
+<cssproperty_font-family> = Courier, monospace
+<cssproperty_font-family> = Ahem
+<cssproperty_font-family> = system-ui
+<cssproperty_font-family> = 'Tinos', Times, serif
+<cssproperty_font-family> = 'Times New Roman'
+<cssproperty_font-family> = 'Courier New'
+<cssproperty_font-family> = sans-serif
+<cssproperty_font-family> = 'HiraMinPro-W<fuzzint>'
+<cssproperty_font-family> = Times
+<cssproperty_font-family> = arial, verdana, helvetica
+<cssproperty_font-family> = Lucida Grande
+<cssproperty_font-family> = Courier New
+<cssproperty_font-family> = 'myahem'
+<cssproperty_font-family> = 'Lucida Grande', verdana, helvetica, sans-serif
+<cssproperty_font-family> = Courier
+<cssproperty_font-family> = arial
+<cssproperty_font-family> = helvetica
+<cssproperty_font-family> = times
+<cssproperty_font-family> = Arial
+<cssproperty_font-family> = 'Arial'
+<cssproperty_font-family> = courier
+<cssproperty_font-family> = Roboto
+<cssproperty_font-family> = serif
+<cssproperty_font-family> = cursive
+<cssproperty_font-family> = fantasy
+<cssproperty_font-family> = sans-serif, cursive
+<cssproperty_font-family> = monospace, serif
+<cssproperty_font-family> = 'Lucida Grande', Verdana, Arial
+<cssproperty_font-family> = 'Mongolian White'
+<cssproperty_font-family> = ezra_silregular, serif
+<cssproperty_font-family> = tcu-font
+<cssproperty_font-family> = orientation
+<cssproperty_font-family> = Ahem, sans-serif
+<cssproperty_font-family> = Courier New, Courier
+<cssproperty_font-family> = 'Times New Roman'
+<cssproperty_font-family> = Verdana, Arial, sans-serif
+<cssproperty_font-family> = inherit
+<cssproperty_font-family> = Helvetica
+<cssproperty_font-family> = 'Helvetica'
+<cssproperty_font-family> = Tahoma, Arial
+<cssproperty_font-family> = Helvetica, Arial, Verdana
+<cssproperty_font-family> = 'Times New Roman', Times, serif
+<cssproperty_font-family> = Georgia
+<cssproperty_font-family> = 'Comic Sans MS'
+<cssproperty_font-family> = Georgia, Times New Roman
+<cssproperty_font-family> = Helvetica, sans-serif
+<cssproperty_font-family> = 'Lucida Grande'
+<cssproperty_font-family> = 'Helvetica Neue'
+<cssproperty_font-family> = Consolas
+<cssproperty_font-family> = Tahoma
+<cssproperty_font-family> = 'Lucida Grande'
+<cssproperty_font-family> = 'LiberationSansWidthVariants'
+<cssproperty_font-family> = HiraMinProN-W<fuzzint>
+<cssproperty_font-family> = 'hiragino mincho pron'
+<cssproperty_font-family> = 'times'
+
+<cssproperty_font-feature-settings> = 'smcp' <fuzzint>
+<cssproperty_font-feature-settings> = 'frac' <fuzzint>, 'dlig' <fuzzint>
+<cssproperty_font-feature-settings> = 'onum' <fuzzint>
+<cssproperty_font-feature-settings> = 'smcp'
+<cssproperty_font-feature-settings> = 'liga'
+<cssproperty_font-feature-settings> = 'liga' <fuzzint>
+
+<cssproperty_font-kerning> = normal
+<cssproperty_font-kerning> = none
+<cssproperty_font-kerning> = auto
+
+<cssproperty_font-size> = <fuzzint>px
+<cssproperty_font-size> = <fuzzint>em
+<cssproperty_font-size> = xx-large
+<cssproperty_font-size> = <fuzzint>pt
+<cssproperty_font-size> = <fuzzint>
+<cssproperty_font-size> = <fuzzint>vmin
+<cssproperty_font-size> = <fuzzint>vh
+<cssproperty_font-size> = <fuzzint>vw
+<cssproperty_font-size> = <fuzzint>vmax
+<cssproperty_font-size> = <percentage>%
+<cssproperty_font-size> = <fuzzint>rem
+<cssproperty_font-size> = <float>rem
+<cssproperty_font-size> = medium
+<cssproperty_font-size> = small
+<cssproperty_font-size> = <float>in
+<cssproperty_font-size> = <fuzzint>cm
+<cssproperty_font-size> = <fuzzint>mm
+<cssproperty_font-size> = <fuzzint>pc
+<cssproperty_font-size> = <fuzzint>ex
+<cssproperty_font-size> = larger
+<cssproperty_font-size> = smaller
+<cssproperty_font-size> = xx-small
+<cssproperty_font-size> = x-small
+<cssproperty_font-size> = large
+<cssproperty_font-size> = x-large
+<cssproperty_font-size> = <float>em
+<cssproperty_font-size> = <float>px
+<cssproperty_font-size> = .<fuzzint>em
+<cssproperty_font-size> = inherit
+<cssproperty_font-size> = initial
+<cssproperty_font-size> = <fuzzint>%
+
+<cssproperty_font-size-adjust> = none
+<cssproperty_font-size-adjust> = <fuzzint>
+
+<cssproperty_font-stretch> = ultra-condensed
+<cssproperty_font-stretch> = extra-condensed
+<cssproperty_font-stretch> = condensed
+<cssproperty_font-stretch> = semi-condensed
+<cssproperty_font-stretch> = normal
+<cssproperty_font-stretch> = semi-expanded
+<cssproperty_font-stretch> = expanded
+<cssproperty_font-stretch> = extra-expanded
+<cssproperty_font-stretch> = ultra-expanded
+
+<cssproperty_font-style> = normal
+<cssproperty_font-style> = italic
+<cssproperty_font-style> = oblique
+<cssproperty_font-style> = none
+<cssproperty_font-style> = inherit
+
+<cssproperty_font-variant> = small-caps
+<cssproperty_font-variant> = normal
+<cssproperty_font-variant> = all
+<cssproperty_font-variant> = small-caps garbage
+<cssproperty_font-variant> = small-caps auto
+
+<cssproperty_font-variant-caps> = all-small-caps
+<cssproperty_font-variant-caps> = titling-case
+<cssproperty_font-variant-caps> = small-caps
+<cssproperty_font-variant-caps> = petite-caps
+<cssproperty_font-variant-caps> = all-petite-caps
+<cssproperty_font-variant-caps> = unicase
+
+<cssproperty_font-variant-ligatures> = common-ligatures
+<cssproperty_font-variant-ligatures> = discretionary-ligatures
+
+<cssproperty_font-vendor> = any
+
+<cssproperty_font-weight> = bolder
+<cssproperty_font-weight> = lighter
+<cssproperty_font-weight> = <fuzzint>
+<cssproperty_font-weight> = bold
+<cssproperty_font-weight> = normal
+<cssproperty_font-weight> = inherit
+<cssproperty_font-weight> = <fuzzint> <fuzzint>
+<cssproperty_font-weight> = unset
+<cssproperty_font-weight> = <fuzzint>px
+
+<cssproperty_font-weigth> = <fuzzint>px
+
+<cssproperty_fonty-family> = Times
+
+<cssproperty_grid> = <fuzzint>px/<fuzzint>px <fuzzint>px
+<cssproperty_grid> = <fuzzint>px <fuzzint>px/<fuzzint>px
+<cssproperty_grid> = <fuzzint>px <fuzzint>px/<fuzzint>px <fuzzint>px
+<cssproperty_grid> = <fuzzint>px/<fuzzint>px
+<cssproperty_grid> = none
+<cssproperty_grid> = inherit
+<cssproperty_grid> = auto-flow/<fuzzint>px
+<cssproperty_grid> = auto-flow <fuzzint>px/none
+<cssproperty_grid> = none/auto-flow dense
+<cssproperty_grid> = auto-flow dense/none
+<cssproperty_grid> = auto-flow <fuzzint>px/<fuzzint>px
+<cssproperty_grid> = auto-flow <fuzzint>px <fuzzint>px/<fuzzint>px <fuzzint>px
+<cssproperty_grid> = <fuzzint>px/auto-flow
+<cssproperty_grid> = none/auto-flow <fuzzint>px
+<cssproperty_grid> = <fuzzint>px/auto-flow dense
+<cssproperty_grid> = dense auto-flow/<fuzzint>px
+<cssproperty_grid> = <fuzzint>px/auto-flow <fuzzint>px
+<cssproperty_grid> = <fuzzint>px <fuzzint>px/auto-flow <fuzzint>px <fuzzint>px
+<cssproperty_grid> = <fuzzint>px/<fuzzint>px auto-flow
+<cssproperty_grid> = auto-flow <fuzzint>px/none <fuzzint>px
+<cssproperty_grid> = <fuzzint>px/<fuzzint>px none
+<cssproperty_grid> = dense <fuzzint>px/auto-flow <fuzzint>px
+<cssproperty_grid> = dense auto-flow dense/<fuzzint>px
+<cssproperty_grid> = dense/<fuzzint>px
+<cssproperty_grid> = auto-flow dense <fuzzint>px
+<cssproperty_grid> = auto-flow/auto-flow <fuzzint>px
+<cssproperty_grid> = column <fuzzint>px/<fuzzint>px
+<cssproperty_grid> = <fuzzint>px/a auto-flow <fuzzint>px
+<cssproperty_grid> = a auto-flow <fuzzint>px/<fuzzint>px
+<cssproperty_grid> = <fuzzint>px/auto-flow a <fuzzint>px
+<cssproperty_grid> = <fuzzint>px/auto-flow <fuzzint>px a
+<cssproperty_grid> = auto-flow a <fuzzint>px/<fuzzint>px
+<cssproperty_grid> = auto-flow <fuzzint>px a/<fuzzint>px
+<cssproperty_grid> = <fuzzint>fr/<fuzzint>fr
+<cssproperty_grid> = max-content/max-content
+<cssproperty_grid> = min-content/min-content
+<cssproperty_grid> = auto/auto
+<cssproperty_grid> = auto auto/auto auto
+
+<cssproperty_grid-area> = a
+<cssproperty_grid-area> = <fuzzint> / <fuzzint>
+<cssproperty_grid-area> = <fuzzint>
+
+<cssproperty_grid-auto-columns> = auto
+<cssproperty_grid-auto-columns> = <fuzzint>px
+<cssproperty_grid-auto-columns> = max-content
+<cssproperty_grid-auto-columns> = <fuzzint>px <fuzzint>px <fuzzint>px
+<cssproperty_grid-auto-columns> = <percentage>%
+<cssproperty_grid-auto-columns> = min-content
+
+<cssproperty_grid-auto-flow> = column
+<cssproperty_grid-auto-flow> = row
+<cssproperty_grid-auto-flow> = stack
+<cssproperty_grid-auto-flow> = row stack
+<cssproperty_grid-auto-flow> = row dense
+<cssproperty_grid-auto-flow> = dense
+<cssproperty_grid-auto-flow> = column dense
+<cssproperty_grid-auto-flow> = dense column
+<cssproperty_grid-auto-flow> = dense row
+<cssproperty_grid-auto-flow> = inherit
+<cssproperty_grid-auto-flow> = none
+<cssproperty_grid-auto-flow> = rows
+<cssproperty_grid-auto-flow> = columns
+<cssproperty_grid-auto-flow> = column column
+<cssproperty_grid-auto-flow> = stack row
+<cssproperty_grid-auto-flow> = column stack
+<cssproperty_grid-auto-flow> = dense column dense
+<cssproperty_grid-auto-flow> = dense row stack
+
+<cssproperty_grid-auto-rows> = <fuzzint>px
+<cssproperty_grid-auto-rows> = auto
+<cssproperty_grid-auto-rows> = min-content
+<cssproperty_grid-auto-rows> = <fuzzint>px <fuzzint>px <fuzzint>px
+<cssproperty_grid-auto-rows> = fit-content(<percentage>%)
+<cssproperty_grid-auto-rows> = <percentage>%
+
+<cssproperty_grid-column> = <fuzzint>
+<cssproperty_grid-column> = auto
+<cssproperty_grid-column> = <fuzzint>/<fuzzint>
+<cssproperty_grid-column> = auto / auto
+<cssproperty_grid-column> = <fuzzint> / auto
+<cssproperty_grid-column> = <fuzzint> / <fuzzint>
+<cssproperty_grid-column> = auto / <fuzzint>
+<cssproperty_grid-column> = <fuzzint> middle
+<cssproperty_grid-column> = <fuzzint> middle / <fuzzint> middle
+<cssproperty_grid-column> = <fuzzint> vertical
+<cssproperty_grid-column> = <fuzzint> vertical / <fuzzint> vertical
+<cssproperty_grid-column> = <fuzzint> / span middle
+<cssproperty_grid-column> = span middle / <fuzzint>
+<cssproperty_grid-column> = <fuzzint> / span <fuzzint> middle
+<cssproperty_grid-column> = span <fuzzint> middle / <fuzzint>
+<cssproperty_grid-column> = middle / span middle
+<cssproperty_grid-column> = span middle / middle
+<cssproperty_grid-column> = middle / span <fuzzint> middle
+<cssproperty_grid-column> = span <fuzzint> middle / middle
+<cssproperty_grid-column> = <fuzzint> middle / span middle
+<cssproperty_grid-column> = span middle / <fuzzint> middle
+<cssproperty_grid-column> = <fuzzint> middle / span <fuzzint> middle
+<cssproperty_grid-column> = span <fuzzint> middle / <fuzzint> middle
+<cssproperty_grid-column> = span <fuzzint>
+<cssproperty_grid-column> = <fuzzint>/span <fuzzint>
+<cssproperty_grid-column> = <fuzzint> / span <fuzzint>
+<cssproperty_grid-column> = <fuzzint>/auto
+<cssproperty_grid-column> = last/auto
+<cssproperty_grid-column> = <fuzzint> middle/span <fuzzint>
+<cssproperty_grid-column> = span <fuzzint>/<fuzzint>
+<cssproperty_grid-column> = span <fuzzint>/last
+<cssproperty_grid-column> = <fuzzint>/<fuzzint> last
+<cssproperty_grid-column> = <fuzzint>/<fuzzint> middle
+<cssproperty_grid-column> = span <fuzzint>/span <fuzzint>
+<cssproperty_grid-column> = auto/span <fuzzint>
+<cssproperty_grid-column> = span/span
+<cssproperty_grid-column> = auto/auto
+
+<cssproperty_grid-column-end> = span <fuzzint>
+<cssproperty_grid-column-end> = <fuzzint>
+<cssproperty_grid-column-end> = <fuzzint> span
+<cssproperty_grid-column-end> = span
+<cssproperty_grid-column-end> = auto
+<cssproperty_grid-column-end> = first
+<cssproperty_grid-column-end> = first <fuzzint>
+<cssproperty_grid-column-end> = first span
+<cssproperty_grid-column-end> = <fuzzint> first span
+<cssproperty_grid-column-end> = <fuzzint> inherit
+<cssproperty_grid-column-end> = <fuzzint> unset
+<cssproperty_grid-column-end> = span auto
+<cssproperty_grid-column-end> = <fuzzint> auto
+<cssproperty_grid-column-end> = span <fuzzint> auto
+
+<cssproperty_grid-column-gap> = <fuzzint>px
+<cssproperty_grid-column-gap> = <fuzzint>vw
+<cssproperty_grid-column-gap> = <fuzzint>rem
+<cssproperty_grid-column-gap> = <percentage>%
+<cssproperty_grid-column-gap> = inherit
+<cssproperty_grid-column-gap> = initial
+<cssproperty_grid-column-gap> = <fuzzint> <fuzzint> <fuzzint>
+<cssproperty_grid-column-gap> = <fuzzint>rad
+
+<cssproperty_grid-column-start> = foo
+<cssproperty_grid-column-start> = <fuzzint>
+<cssproperty_grid-column-start> = span <fuzzint>
+<cssproperty_grid-column-start> = <fuzzint> span
+<cssproperty_grid-column-start> = span
+<cssproperty_grid-column-start> = auto
+<cssproperty_grid-column-start> = first
+<cssproperty_grid-column-start> = first <fuzzint>
+<cssproperty_grid-column-start> = first span
+<cssproperty_grid-column-start> = <fuzzint> first span
+
+<cssproperty_grid-gap> = <fuzzint>px <fuzzint>px
+<cssproperty_grid-gap> = <percentage>% <percentage>%
+<cssproperty_grid-gap> = <fuzzint>px
+<cssproperty_grid-gap> = <percentage>%
+<cssproperty_grid-gap> = <fuzzint>px <fuzzint>px <fuzzint>px
+<cssproperty_grid-gap> = none
+<cssproperty_grid-gap> = normal
+<cssproperty_grid-gap> = <fuzzint>
+
+<cssproperty_grid-row> = <fuzzint>
+<cssproperty_grid-row> = auto
+<cssproperty_grid-row> = <fuzzint>/<fuzzint>
+<cssproperty_grid-row> = auto / auto
+<cssproperty_grid-row> = <fuzzint> / auto
+<cssproperty_grid-row> = <fuzzint> / <fuzzint>
+<cssproperty_grid-row> = auto / <fuzzint>
+<cssproperty_grid-row> = <fuzzint> middle
+<cssproperty_grid-row> = <fuzzint> middle / <fuzzint> middle
+<cssproperty_grid-row> = <fuzzint> horizontal
+<cssproperty_grid-row> = <fuzzint> horizontal / <fuzzint> horizontal
+<cssproperty_grid-row> = <fuzzint> / span middle
+<cssproperty_grid-row> = span middle / <fuzzint>
+<cssproperty_grid-row> = <fuzzint> / span <fuzzint> middle
+<cssproperty_grid-row> = span <fuzzint> middle / <fuzzint>
+<cssproperty_grid-row> = middle / span middle
+<cssproperty_grid-row> = span middle / middle
+<cssproperty_grid-row> = middle / span <fuzzint> middle
+<cssproperty_grid-row> = span <fuzzint> middle / middle
+<cssproperty_grid-row> = <fuzzint> middle / span middle
+<cssproperty_grid-row> = span middle / <fuzzint> middle
+<cssproperty_grid-row> = <fuzzint> middle / span <fuzzint> middle
+<cssproperty_grid-row> = span <fuzzint> middle / <fuzzint> middle
+<cssproperty_grid-row> = span <fuzzint>
+<cssproperty_grid-row> = <fuzzint>/span <fuzzint>
+<cssproperty_grid-row> = <fuzzint>/auto
+<cssproperty_grid-row> = last/auto
+<cssproperty_grid-row> = <fuzzint> middle/span <fuzzint>
+<cssproperty_grid-row> = span <fuzzint>/<fuzzint>
+<cssproperty_grid-row> = span <fuzzint>/last
+<cssproperty_grid-row> = span <fuzzint>/span <fuzzint>
+<cssproperty_grid-row> = span <fuzzint>/auto
+<cssproperty_grid-row> = span/span
+<cssproperty_grid-row> = auto/auto
+<cssproperty_grid-row> = last
+
+<cssproperty_grid-row-end> = <fuzzint>
+<cssproperty_grid-row-end> = span <fuzzint>
+<cssproperty_grid-row-end> = <fuzzint> span
+<cssproperty_grid-row-end> = span
+<cssproperty_grid-row-end> = auto
+<cssproperty_grid-row-end> = last
+<cssproperty_grid-row-end> = <fuzzint> last
+<cssproperty_grid-row-end> = span last
+<cssproperty_grid-row-end> = last <fuzzint> span
+<cssproperty_grid-row-end> = thirdArea
+<cssproperty_grid-row-end> = <fuzzint> initial
+<cssproperty_grid-row-end> = <fuzzint> default
+<cssproperty_grid-row-end> = auto span
+<cssproperty_grid-row-end> = auto <fuzzint>
+<cssproperty_grid-row-end> = span auto <fuzzint>
+
+<cssproperty_grid-row-gap> = <fuzzint>px
+<cssproperty_grid-row-gap> = <fuzzint>em
+<cssproperty_grid-row-gap> = <percentage>%
+<cssproperty_grid-row-gap> = inherit
+<cssproperty_grid-row-gap> = initial
+<cssproperty_grid-row-gap> = <fuzzint>px <fuzzint>px
+<cssproperty_grid-row-gap> = <fuzzint>dpi
+
+<cssproperty_grid-row-start> = <fuzzint>
+<cssproperty_grid-row-start> = span <fuzzint>
+<cssproperty_grid-row-start> = <fuzzint> span
+<cssproperty_grid-row-start> = span
+<cssproperty_grid-row-start> = auto
+<cssproperty_grid-row-start> = last
+<cssproperty_grid-row-start> = <fuzzint> last
+<cssproperty_grid-row-start> = span last
+<cssproperty_grid-row-start> = last <fuzzint> span
+
+<cssproperty_grid-template> = <fuzzint>px <fuzzint>px / <fuzzint>px <fuzzint>px
+<cssproperty_grid-template> = <fuzzint>px / <fuzzint>px <fuzzint>px
+<cssproperty_grid-template> = none
+<cssproperty_grid-template> = <fuzzint>px/<fuzzint>px
+<cssproperty_grid-template> = <fuzzint>px/none
+<cssproperty_grid-template> = none/<fuzzint>px
+<cssproperty_grid-template> = none/none
+
+<cssproperty_grid-template-areas> = 'a'
+
+<cssproperty_grid-template-columns> = <fuzzint>px
+<cssproperty_grid-template-columns> = <fuzzint>px <fuzzint>px
+<cssproperty_grid-template-columns> = minmax(<fuzzint>px, <fuzzint>px) <fuzzint>px <fuzzint>px
+<cssproperty_grid-template-columns> = none
+<cssproperty_grid-template-columns> = <percentage>%
+<cssproperty_grid-template-columns> = auto
+<cssproperty_grid-template-columns> = <fuzzint>em
+<cssproperty_grid-template-columns> = <fuzzint>vw
+<cssproperty_grid-template-columns> = minmax(<percentage>%, <fuzzint>px)
+<cssproperty_grid-template-columns> = min-content
+<cssproperty_grid-template-columns> = max-content
+<cssproperty_grid-template-columns> = max-content auto
+<cssproperty_grid-template-columns> = auto max-content
+<cssproperty_grid-template-columns> = min-content auto
+<cssproperty_grid-template-columns> = auto auto
+<cssproperty_grid-template-columns> = <fuzzint>px auto
+<cssproperty_grid-template-columns> = fit-content(<fuzzint>)
+<cssproperty_grid-template-columns> = fit-content(<fuzzint>px)
+<cssproperty_grid-template-columns> = repeat(<fuzzint>, fit-content(<fuzzint>))
+<cssproperty_grid-template-columns> = auto fit-content(<fuzzint>px) auto
+<cssproperty_grid-template-columns> = minmax(auto, auto)
+<cssproperty_grid-template-columns> = minmax(auto, max-content)
+<cssproperty_grid-template-columns> = minmax(min-content, auto)
+
+<cssproperty_grid-template-rows> = <fuzzint>px <fuzzint>px
+<cssproperty_grid-template-rows> = <fuzzint>px
+<cssproperty_grid-template-rows> = none
+<cssproperty_grid-template-rows> = <percentage>%
+<cssproperty_grid-template-rows> = auto
+<cssproperty_grid-template-rows> = <fuzzint>em
+<cssproperty_grid-template-rows> = <fuzzint>vh
+<cssproperty_grid-template-rows> = minmax(<fuzzint>px, <percentage>%)
+<cssproperty_grid-template-rows> = min-content
+<cssproperty_grid-template-rows> = max-content
+<cssproperty_grid-template-rows> = <fuzzint>px <fuzzint>px <fuzzint>px
+<cssproperty_grid-template-rows> = <fuzzint>vh <fuzzint>px
+<cssproperty_grid-template-rows> = repeat(auto-fill, <fuzzint>px)
+<cssproperty_grid-template-rows> = auto auto
+<cssproperty_grid-template-rows> = repeat(<fuzzint>, <fuzzint>px)
+<cssproperty_grid-template-rows> = fit-content(<fuzzint>)
+<cssproperty_grid-template-rows> = fit-content(<fuzzint>px)
+<cssproperty_grid-template-rows> = none auto
+<cssproperty_grid-template-rows> = none <fuzzint>px
+<cssproperty_grid-template-rows> = <percentage>% <fuzzint>px
+<cssproperty_grid-template-rows> = <fuzzint>px auto
+<cssproperty_grid-template-rows> = max-content auto
+<cssproperty_grid-template-rows> = auto min-content
+<cssproperty_grid-template-rows> = max-content auto max-content
+<cssproperty_grid-template-rows> = min-content auto min-content
+<cssproperty_grid-template-rows> = auto auto auto
+<cssproperty_grid-template-rows> = minmax(max-content, <fuzzint>px)
+<cssproperty_grid-template-rows> = minmax(<fuzzint>px, max-content)
+
+<cssproperty_height> = <fuzzint>px
+<cssproperty_height> = <fuzzint>em
+<cssproperty_height> = <fuzzint>
+<cssproperty_height> = <percentage>%
+<cssproperty_height> = auto
+<cssproperty_height> = <fuzzint>vh
+<cssproperty_height> = <fuzzint>vmin
+<cssproperty_height> = <fuzzint>vw
+<cssproperty_height> = <fuzzint>vmax
+<cssproperty_height> = <fuzzint>ch
+<cssproperty_height> = <fuzzint>rem
+<cssproperty_height> = <float>em
+<cssproperty_height> = <fuzzint>cm
+<cssproperty_height> = min-content
+<cssproperty_height> = inherit
+<cssproperty_height> = max-content
+<cssproperty_height> = fit-content
+<cssproperty_height> = fill-available
+
+<cssproperty_hyphens> = auto
+<cssproperty_hyphens> = manual
+<cssproperty_hyphens> = none
+
+<cssproperty_image-orientation> = from-image
+
+<cssproperty_image-rendering> = pixelated
+<cssproperty_image-rendering> = -webkit-optimize-contrast
+<cssproperty_image-rendering> = auto
+
+<cssproperty_isolation> = isolate
+<cssproperty_isolation> = auto
+
+<cssproperty_justify-content> = flex-start
+<cssproperty_justify-content> = center
+<cssproperty_justify-content> = space-around
+<cssproperty_justify-content> = space-between
+<cssproperty_justify-content> = flex-end
+<cssproperty_justify-content> = end
+<cssproperty_justify-content> = stretch
+<cssproperty_justify-content> = start
+<cssproperty_justify-content> = flex-end unsafe
+<cssproperty_justify-content> = auto
+<cssproperty_justify-content> = baseline
+<cssproperty_justify-content> = last-baseline
+<cssproperty_justify-content> = space-evenly
+<cssproperty_justify-content> = left
+<cssproperty_justify-content> = right
+<cssproperty_justify-content> = end unsafe
+<cssproperty_justify-content> = center unsafe
+<cssproperty_justify-content> = right safe
+<cssproperty_justify-content> = left unsafe
+<cssproperty_justify-content> = flex-start unsafe
+<cssproperty_justify-content> = flex-end safe
+<cssproperty_justify-content> = space-between left
+<cssproperty_justify-content> = space-around center
+<cssproperty_justify-content> = space-evenly right
+<cssproperty_justify-content> = stretch start safe
+<cssproperty_justify-content> = space-around end unsafe
+<cssproperty_justify-content> = space-evenly flex-start safe
+<cssproperty_justify-content> = space-between stretch
+<cssproperty_justify-content> = safe
+<cssproperty_justify-content> = right safe unsafe
+<cssproperty_justify-content> = center left
+<cssproperty_justify-content> = center safe
+<cssproperty_justify-content> = end safe
+
+<cssproperty_justify-items> = end
+<cssproperty_justify-items> = center
+<cssproperty_justify-items> = legacy center
+<cssproperty_justify-items> = start
+<cssproperty_justify-items> = end safe
+<cssproperty_justify-items> = end unsafe
+<cssproperty_justify-items> = flex-end unsafe
+<cssproperty_justify-items> = baseline
+<cssproperty_justify-items> = last-baseline
+<cssproperty_justify-items> = stretch
+<cssproperty_justify-items> = self-start
+<cssproperty_justify-items> = self-end
+<cssproperty_justify-items> = left
+<cssproperty_justify-items> = right
+<cssproperty_justify-items> = flex-start
+<cssproperty_justify-items> = flex-end
+<cssproperty_justify-items> = center unsafe
+<cssproperty_justify-items> = self-end safe
+<cssproperty_justify-items> = self-start safe
+<cssproperty_justify-items> = right safe
+<cssproperty_justify-items> = left unsafe
+<cssproperty_justify-items> = flex-start unsafe
+<cssproperty_justify-items> = flex-end safe
+<cssproperty_justify-items> = legacy left
+<cssproperty_justify-items> = legacy right
+<cssproperty_justify-items> = left legacy
+<cssproperty_justify-items> = center legacy
+<cssproperty_justify-items> = right legacy
+<cssproperty_justify-items> = auto
+<cssproperty_justify-items> = center safe
+
+<cssproperty_justify-self> = center
+<cssproperty_justify-self> = start
+<cssproperty_justify-self> = end
+<cssproperty_justify-self> = end unsafe
+<cssproperty_justify-self> = end safe
+<cssproperty_justify-self> = baseline
+<cssproperty_justify-self> = last-baseline
+<cssproperty_justify-self> = stretch
+<cssproperty_justify-self> = self-start
+<cssproperty_justify-self> = self-end
+<cssproperty_justify-self> = left
+<cssproperty_justify-self> = right
+<cssproperty_justify-self> = flex-start
+<cssproperty_justify-self> = flex-end
+<cssproperty_justify-self> = center unsafe
+<cssproperty_justify-self> = self-end safe
+<cssproperty_justify-self> = self-start safe
+<cssproperty_justify-self> = right safe
+<cssproperty_justify-self> = left unsafe
+<cssproperty_justify-self> = flex-start unsafe
+<cssproperty_justify-self> = flex-end safe
+<cssproperty_justify-self> = flex-end unsafe
+<cssproperty_justify-self> = auto
+<cssproperty_justify-self> = center safe
+
+<cssproperty_kerning> = <fuzzint>
+<cssproperty_kerning> = <fuzzint>px
+
+<cssproperty_left> = <fuzzint>
+<cssproperty_left> = <fuzzint>px
+<cssproperty_left> = <fuzzint>vw
+<cssproperty_left> = <fuzzint>vh
+<cssproperty_left> = <fuzzint>vmin
+<cssproperty_left> = <fuzzint>vmax
+<cssproperty_left> = <fuzzint><float>px
+<cssproperty_left> = <float>px
+<cssproperty_left> = <percentage>%
+<cssproperty_left> = <fuzzint>em
+<cssproperty_left> = <float>em
+<cssproperty_left> = auto
+
+<cssproperty_letter-spacing> = <fuzzint>px
+<cssproperty_letter-spacing> = normal
+<cssproperty_letter-spacing> = <percentage>%
+<cssproperty_letter-spacing> = <float>em
+<cssproperty_letter-spacing> = <float>in
+<cssproperty_letter-spacing> = <float>cm
+<cssproperty_letter-spacing> = <fuzzint>mm
+<cssproperty_letter-spacing> = <fuzzint>pt
+<cssproperty_letter-spacing> = <fuzzint>pc
+<cssproperty_letter-spacing> = <fuzzint>em
+<cssproperty_letter-spacing> = <fuzzint>ex
+<cssproperty_letter-spacing> = <float>pc
+<cssproperty_letter-spacing> = <fuzzint>
+<cssproperty_letter-spacing> = <fuzzint>px auto
+
+<cssproperty_lighting-color> = <color>
+
+<cssproperty_line-break> = before-white-space
+<cssproperty_line-break> = after-white-space
+
+<cssproperty_line-height> = <fuzzint>px
+<cssproperty_line-height> = <fuzzint>
+<cssproperty_line-height> = <fuzzint>vmin
+<cssproperty_line-height> = <fuzzint>vw
+<cssproperty_line-height> = <fuzzint>vh
+<cssproperty_line-height> = <fuzzint>vmax
+<cssproperty_line-height> = <percentage>%
+<cssproperty_line-height> = normal
+
+<cssproperty_list-style> = none
+<cssproperty_list-style> = url(<cssurl>) disc outside
+<cssproperty_list-style> = url(<cssurl>) disc inside
+<cssproperty_list-style> = upper-alpha inside
+<cssproperty_list-style> = outside
+<cssproperty_list-style> = inside
+<cssproperty_list-style> = inherit
+
+<cssproperty_list-style-image> = url(<cssurl>)
+<cssproperty_list-style-image> = none
+
+<cssproperty_list-style-position> = inside
+<cssproperty_list-style-position> = outside
+
+<cssproperty_list-style-type> = decimal
+<cssproperty_list-style-type> = disc
+<cssproperty_list-style-type> = circle
+<cssproperty_list-style-type> = square
+<cssproperty_list-style-type> = none
+<cssproperty_list-style-type> = lower-roman
+<cssproperty_list-style-type> = upper-roman
+<cssproperty_list-style-type> = lower-alpha
+<cssproperty_list-style-type> = upper-alpha
+<cssproperty_list-style-type> = trad-chinese-formal
+<cssproperty_list-style-type> = trad-chinese-informal
+<cssproperty_list-style-type> = korean-hangul-formal
+<cssproperty_list-style-type> = korean-hanja-formal
+<cssproperty_list-style-type> = simp-chinese-informal
+<cssproperty_list-style-type> = hebrew
+<cssproperty_list-style-type> = simple-upper-roman
+<cssproperty_list-style-type> = simple-lower-roman
+<cssproperty_list-style-type> = lower-armenian
+<cssproperty_list-style-type> = upper-armenian
+<cssproperty_list-style-type> = armenian
+<cssproperty_list-style-type> = georgian
+<cssproperty_list-style-type> = ancient-tamil
+<cssproperty_list-style-type> = japanese-informal
+<cssproperty_list-style-type> = japanese-formal
+<cssproperty_list-style-type> = korean-hanja-informal
+<cssproperty_list-style-type> = greek
+<cssproperty_list-style-type> = cjk-ideographic
+<cssproperty_list-style-type> = syriac
+<cssproperty_list-style-type> = tamil
+<cssproperty_list-style-type> = simp-chinese-formal
+<cssproperty_list-style-type> = ethiopic-numeric
+<cssproperty_list-style-type> = decimal-leading-zero
+<cssproperty_list-style-type> = lower-latin
+<cssproperty_list-style-type> = upper-latin
+<cssproperty_list-style-type> = hiragana
+<cssproperty_list-style-type> = hiragana-iroha
+<cssproperty_list-style-type> = katakana
+<cssproperty_list-style-type> = katakana-iroha
+<cssproperty_list-style-type> = lower-greek
+<cssproperty_list-style-type> = arabic-indic
+<cssproperty_list-style-type> = bengali
+<cssproperty_list-style-type> = cambodian
+<cssproperty_list-style-type> = khmer
+<cssproperty_list-style-type> = devanagari
+<cssproperty_list-style-type> = gujarati
+<cssproperty_list-style-type> = gurmukhi
+<cssproperty_list-style-type> = kannada
+<cssproperty_list-style-type> = lao
+<cssproperty_list-style-type> = malayalam
+<cssproperty_list-style-type> = mongolian
+<cssproperty_list-style-type> = myanmar
+<cssproperty_list-style-type> = oriya
+<cssproperty_list-style-type> = persian
+<cssproperty_list-style-type> = urdu
+<cssproperty_list-style-type> = telugu
+<cssproperty_list-style-type> = thai
+<cssproperty_list-style-type> = tibetan
+<cssproperty_list-style-type> = decimial
+<cssproperty_list-style-type> = cjk-earthly-branch
+<cssproperty_list-style-type> = cjk-heavenly-stem
+<cssproperty_list-style-type> = hangul-consonant
+<cssproperty_list-style-type> = hangul
+<cssproperty_list-style-type> = ethiopic-halehame
+<cssproperty_list-style-type> = ethiopic-halehame-am
+<cssproperty_list-style-type> = ethiopic-halehame-ti-er
+<cssproperty_list-style-type> = ethiopic-halehame-ti-et
+
+<cssproperty_margin> = <fuzzint>
+<cssproperty_margin> = <fuzzint>em <fuzzint> <fuzzint> <fuzzint>
+<cssproperty_margin> = <fuzzint>em
+<cssproperty_margin> = <fuzzint>px
+<cssproperty_margin> = <fuzzint>px <fuzzint>px <fuzzint>px <fuzzint>px
+<cssproperty_margin> = auto <fuzzint>
+<cssproperty_margin> = auto <fuzzint>px auto <fuzzint>px
+<cssproperty_margin> = <fuzzint>px <fuzzint>px
+<cssproperty_margin> = auto auto
+
+<cssproperty_margin-bottom> = <fuzzint>em
+<cssproperty_margin-bottom> = <fuzzint>px
+<cssproperty_margin-bottom> = <fuzzint>
+<cssproperty_margin-bottom> = <percentage>%
+<cssproperty_margin-bottom> = <fuzzint>vmin
+<cssproperty_margin-bottom> = <fuzzint>vw
+<cssproperty_margin-bottom> = <fuzzint>vh
+<cssproperty_margin-bottom> = <fuzzint>vmax
+
+<cssproperty_margin-left> = <fuzzint>em
+<cssproperty_margin-left> = <fuzzint>px
+<cssproperty_margin-left> = <fuzzint>
+<cssproperty_margin-left> = auto
+<cssproperty_margin-left> = <fuzzint>vmin
+<cssproperty_margin-left> = <fuzzint>vw
+<cssproperty_margin-left> = <fuzzint>vh
+<cssproperty_margin-left> = <fuzzint>vmax
+<cssproperty_margin-left> = <percentage>%
+
+<cssproperty_margin-right> = <fuzzint>
+<cssproperty_margin-right> = <fuzzint>px
+<cssproperty_margin-right> = auto
+<cssproperty_margin-right> = <fuzzint>vmin
+<cssproperty_margin-right> = <fuzzint>vw
+<cssproperty_margin-right> = <fuzzint>vh
+<cssproperty_margin-right> = <fuzzint>vmax
+<cssproperty_margin-right> = <percentage>%
+
+<cssproperty_margin-top> = <fuzzint>px
+<cssproperty_margin-top> = <fuzzint>
+<cssproperty_margin-top> = <fuzzint>em
+<cssproperty_margin-top> = auto
+<cssproperty_margin-top> = <percentage>%
+<cssproperty_margin-top> = <fuzzint>vmin
+<cssproperty_margin-top> = <fuzzint>vw
+<cssproperty_margin-top> = <fuzzint>vh
+<cssproperty_margin-top> = <fuzzint>vmax
+
+<cssproperty_marker> = initial
+<cssproperty_marker> = inherit
+
+<cssproperty_marker-mid> = url(<cssurl>)
+
+<cssproperty_mask-source-type> = alpha
+<cssproperty_mask-source-type> = luminance
+
+<cssproperty_max-height> = <fuzzint>px
+<cssproperty_max-height> = <percentage>%
+<cssproperty_max-height> = <fuzzint>
+<cssproperty_max-height> = <fuzzint>vmin
+<cssproperty_max-height> = <fuzzint>vw
+<cssproperty_max-height> = <fuzzint>vh
+<cssproperty_max-height> = <fuzzint>vmax
+<cssproperty_max-height> = <fuzzint>em
+<cssproperty_max-height> = <fuzzint>%
+<cssproperty_max-height> = min-content
+<cssproperty_max-height> = max-content
+<cssproperty_max-height> = fit-content
+<cssproperty_max-height> = <fuzzint>mm
+<cssproperty_max-height> = none
+<cssproperty_max-height> = inherit
+<cssproperty_max-height> = fill-available
+
+<cssproperty_max-width> = <fuzzint>px
+<cssproperty_max-width> = <percentage>%
+<cssproperty_max-width> = <fuzzint>vmin
+<cssproperty_max-width> = <fuzzint>vw
+<cssproperty_max-width> = <fuzzint>vh
+<cssproperty_max-width> = <fuzzint>vmax
+<cssproperty_max-width> = <fuzzint>em
+<cssproperty_max-width> = <fuzzint>
+<cssproperty_max-width> = max-content
+<cssproperty_max-width> = min-content
+<cssproperty_max-width> = fit-content
+<cssproperty_max-width> = none
+<cssproperty_max-width> = fill-available
+<cssproperty_max-width> = <fuzzint>cm
+
+<cssproperty_max-zoom> = auto
+
+<cssproperty_min-height> = <fuzzint>
+<cssproperty_min-height> = <fuzzint>px
+<cssproperty_min-height> = <percentage>%
+<cssproperty_min-height> = <fuzzint>em
+<cssproperty_min-height> = min-content
+<cssproperty_min-height> = <float>%
+<cssproperty_min-height> = <fuzzint>vmin
+<cssproperty_min-height> = <fuzzint>vw
+<cssproperty_min-height> = <fuzzint>vh
+<cssproperty_min-height> = <fuzzint>vmax
+<cssproperty_min-height> = auto
+<cssproperty_min-height> = max-content
+<cssproperty_min-height> = fit-content
+<cssproperty_min-height> = fill-available
+
+<cssproperty_min-width> = <fuzzint>
+<cssproperty_min-width> = min-content
+<cssproperty_min-width> = max-content
+<cssproperty_min-width> = fit-content
+<cssproperty_min-width> = <fuzzint>px
+<cssproperty_min-width> = <percentage>%
+<cssproperty_min-width> = <fuzzint>px
+<cssproperty_min-width> = <fuzzint>vmin
+<cssproperty_min-width> = <fuzzint>vw
+<cssproperty_min-width> = <fuzzint>vh
+<cssproperty_min-width> = <fuzzint>vmax
+<cssproperty_min-width> = <fuzzint>em
+<cssproperty_min-width> = auto
+<cssproperty_min-width> = <fuzzint>ch
+<cssproperty_min-width> = <fuzzint>in
+<cssproperty_min-width> = fill-available
+
+<cssproperty_min-zoom> = auto
+
+<cssproperty_mix-blend-mode> = normal
+<cssproperty_mix-blend-mode> = multiply
+<cssproperty_mix-blend-mode> = screen
+<cssproperty_mix-blend-mode> = overlay
+<cssproperty_mix-blend-mode> = darken
+<cssproperty_mix-blend-mode> = lighten
+<cssproperty_mix-blend-mode> = color-dodge
+<cssproperty_mix-blend-mode> = color-burn
+<cssproperty_mix-blend-mode> = hard-light
+<cssproperty_mix-blend-mode> = soft-light
+<cssproperty_mix-blend-mode> = difference
+<cssproperty_mix-blend-mode> = exclusion
+<cssproperty_mix-blend-mode> = hue
+<cssproperty_mix-blend-mode> = saturation
+<cssproperty_mix-blend-mode> = color
+<cssproperty_mix-blend-mode> = luminosity
+
+<cssproperty_motion> = path('m <fuzzint> <fuzzint> v <fuzzint>')
+<cssproperty_motion> = none <percentage>% auto <fuzzint>grad
+<cssproperty_motion> = path('M <fuzzint> <fuzzint> h <fuzzint> v <fuzzint>') <fuzzint>rad <fuzzint>px
+<cssproperty_motion> = <fuzzint>px <fuzzint>deg reverse none
+<cssproperty_motion> = none
+
+<cssproperty_motion-offset> = <fuzzint>
+<cssproperty_motion-offset> = <fuzzint>px
+<cssproperty_motion-offset> = <percentage>%
+<cssproperty_motion-offset> = inherit
+
+<cssproperty_motion-path> = none
+<cssproperty_motion-path> = path('m <fuzzint> <fuzzint> v <fuzzint>')
+<cssproperty_motion-path> = path('M <fuzzint> <fuzzint> H <fuzzint> V <fuzzint> H <fuzzint> L <fuzzint> <fuzzint>')
+<cssproperty_motion-path> = inherit
+
+<cssproperty_motion-rotation> = auto
+<cssproperty_motion-rotation> = reverse
+<cssproperty_motion-rotation> = <fuzzint>deg
+<cssproperty_motion-rotation> = <fuzzint>rad
+<cssproperty_motion-rotation> = <fuzzint>grad auto
+<cssproperty_motion-rotation> = <fuzzint>turn reverse
+<cssproperty_motion-rotation> = reverse <fuzzint>deg
+<cssproperty_motion-rotation> = inherit
+<cssproperty_motion-rotation> = auto <fuzzint>deg
+
+<cssproperty_mso-background-source> = auto
+
+<cssproperty_mso-bidi-font-size> = <fuzzint>pt
+
+<cssproperty_mso-border-alt> = solid <color> .<fuzzint>pt
+
+<cssproperty_mso-border-left-alt> = solid <color> .<fuzzint>pt
+
+<cssproperty_mso-border-top-alt> = solid <color> .<fuzzint>pt
+
+<cssproperty_mso-data-placement> = same-cell
+
+<cssproperty_mso-displayed-decimal-separator> = '\.'
+
+<cssproperty_mso-displayed-thousand-separator> = '\,'
+
+<cssproperty_mso-fareast-font-family> = 'Times New Roman'
+
+<cssproperty_mso-font-charset> = <fuzzint>
+
+<cssproperty_mso-font-kerning> = <fuzzint>pt
+
+<cssproperty_mso-generic-font-family> = auto
+
+<cssproperty_mso-height-source> = auto
+
+<cssproperty_mso-ignore> = colspan
+<cssproperty_mso-ignore> = padding
+
+<cssproperty_mso-number-format> = General
+
+<cssproperty_mso-outline-level> = <fuzzint>
+
+<cssproperty_mso-padding-alt> = <fuzzint>in <fuzzint>pt <fuzzint>in <fuzzint>pt
+
+<cssproperty_mso-pagination> = widow-orphan
+
+<cssproperty_mso-pattern> = auto
+
+<cssproperty_mso-protection> = locked visible
+
+<cssproperty_mso-rotate> = <fuzzint>
+
+<cssproperty_mso-style-id> = <fuzzint>
+
+<cssproperty_mso-style-name> = Normal
+
+<cssproperty_mso-style-next> = Normal
+
+<cssproperty_mso-style-parent> = ''
+<cssproperty_mso-style-parent> = style<fuzzint>
+
+<cssproperty_mso-width-alt> = <fuzzint>
+
+<cssproperty_mso-width-source> = userset
+<cssproperty_mso-width-source> = auto
+
+<cssproperty_object-fit> = contain
+<cssproperty_object-fit> = cover
+<cssproperty_object-fit> = none
+<cssproperty_object-fit> = scale-down
+<cssproperty_object-fit> = fill
+<cssproperty_object-fit> = inherit
+
+<cssproperty_object-position> = <fuzzint> <fuzzint>
+<cssproperty_object-position> = <fuzzint>px <fuzzint>px
+<cssproperty_object-position> = right top
+<cssproperty_object-position> = left bottom
+<cssproperty_object-position> = <fuzzint>px <percentage>%
+<cssproperty_object-position> = <percentage>%
+<cssproperty_object-position> = <fuzzint>px <fuzzint>
+<cssproperty_object-position> = <fuzzint> <fuzzint>px
+<cssproperty_object-position> = inherit
+<cssproperty_object-position> = left <fuzzint>px center
+<cssproperty_object-position> = center bottom <percentage>%
+<cssproperty_object-position> = bottom <fuzzint>px right <fuzzint>px
+
+<cssproperty_offset> = none <percentage>% auto <fuzzint>grad
+<cssproperty_offset> = path('M <fuzzint> <fuzzint> h <fuzzint> v <fuzzint>') <fuzzint>px <fuzzint>rad
+<cssproperty_offset> = none <fuzzint>px <fuzzint>deg reverse
+<cssproperty_offset> = path('M <fuzzint> <fuzzint> v <fuzzint>') <fuzzint> <fuzzint>deg
+<cssproperty_offset> = none
+<cssproperty_offset> = path('M <fuzzint> <fuzzint> h <fuzzint> v <fuzzint>') <percentage>% <fuzzint>rad
+<cssproperty_offset> = path('M <fuzzint> <fuzzint> l <fuzzint> <fuzzint>') <percentage>% auto <fuzzint>deg
+
+<cssproperty_offset-anchor> = bottom right
+<cssproperty_offset-anchor> = <percentage>% <percentage>%
+<cssproperty_offset-anchor> = inherit
+<cssproperty_offset-anchor> = <fuzzint>px <fuzzint>px
+
+<cssproperty_offset-distance> = <percentage>%
+<cssproperty_offset-distance> = <fuzzint>
+<cssproperty_offset-distance> = <fuzzint>px
+<cssproperty_offset-distance> = inherit
+
+<cssproperty_offset-path> = none
+<cssproperty_offset-path> = path('M <fuzzint> <fuzzint> H <fuzzint> V <fuzzint> H <fuzzint> L <fuzzint> <fuzzint>')
+<cssproperty_offset-path> = inherit
+<cssproperty_offset-path> = path('M <fuzzint> <fuzzint> L <fuzzint> <fuzzint> Z')
+<cssproperty_offset-path> = path('M <fuzzint> <fuzzint> L <fuzzint> <fuzzint>')
+
+<cssproperty_offset-position> = auto
+<cssproperty_offset-position> = <fuzzint>px <fuzzint>px
+<cssproperty_offset-position> = <percentage>% <percentage>%
+<cssproperty_offset-position> = inherit
+
+<cssproperty_offset-rotation> = <fuzzint>deg
+<cssproperty_offset-rotation> = auto
+<cssproperty_offset-rotation> = reverse
+<cssproperty_offset-rotation> = <fuzzint>rad
+<cssproperty_offset-rotation> = <fuzzint>grad auto
+<cssproperty_offset-rotation> = <fuzzint>turn reverse
+<cssproperty_offset-rotation> = reverse <fuzzint>deg
+<cssproperty_offset-rotation> = inherit
+<cssproperty_offset-rotation> = auto <fuzzint>deg
+
+<cssproperty_opacity> = <fuzzint>
+<cssproperty_opacity> = <float>
+<cssproperty_opacity> = auto
+
+<cssproperty_order> = <fuzzint>
+<cssproperty_order> = inherit
+
+<cssproperty_orientation> = auto
+
+<cssproperty_orphans> = <fuzzint>
+
+<cssproperty_outline> = <fuzzint>px solid <color>
+<cssproperty_outline> = <fuzzint>px solid
+<cssproperty_outline> = <fuzzint>px <color> solid
+<cssproperty_outline> = solid
+<cssproperty_outline> = medium solid <color>
+<cssproperty_outline> = none
+<cssproperty_outline> = solid <color> <fuzzint>px
+<cssproperty_outline> = <fuzzint>px dotted <color>
+<cssproperty_outline> = auto
+<cssproperty_outline> = <color> solid <fuzzint>px
+<cssproperty_outline> = thin dotted <color>
+<cssproperty_outline> = dashed <fuzzint>px
+<cssproperty_outline> = thick dotted <color>
+<cssproperty_outline> = <color> solid
+<cssproperty_outline> = <fuzzint>px solid transparent
+<cssproperty_outline> = <fuzzint>
+<cssproperty_outline> = solid <color>
+<cssproperty_outline> = inherit
+<cssproperty_outline> = solid <fuzzint>px <color>
+<cssproperty_outline> = <fuzzint>px dashed <color>
+<cssproperty_outline> = dotted thick
+<cssproperty_outline> = <fuzzint>px solid salmon
+<cssproperty_outline> = dotted <color> <fuzzint>px
+<cssproperty_outline> = inherit inherit
+<cssproperty_outline> = solid transparent
+
+<cssproperty_outline-bottom> = none
+
+<cssproperty_outline-color> = <color>
+<cssproperty_outline-color> = inherit
+<cssproperty_outline-color> = invert
+
+<cssproperty_outline-offset> = <fuzzint>px
+<cssproperty_outline-offset> = <fuzzint>cm
+<cssproperty_outline-offset> = <percentage>%
+
+<cssproperty_outline-style> = solid
+<cssproperty_outline-style> = none
+<cssproperty_outline-style> = auto
+<cssproperty_outline-style> = dotted
+<cssproperty_outline-style> = dashed
+<cssproperty_outline-style> = double
+<cssproperty_outline-style> = ridge
+<cssproperty_outline-style> = groove
+<cssproperty_outline-style> = inset
+<cssproperty_outline-style> = outset
+<cssproperty_outline-style> = hidden
+
+<cssproperty_outline-width> = <fuzzint>px
+<cssproperty_outline-width> = <fuzzint>
+
+<cssproperty_overflow> = hidden
+<cssproperty_overflow> = auto
+<cssproperty_overflow> = scroll
+<cssproperty_overflow> = visible
+<cssproperty_overflow> = overlay
+<cssproperty_overflow> = -webkit-paged-x
+<cssproperty_overflow> = clip
+<cssproperty_overflow> = -webkit-paged-y
+<cssproperty_overflow> = paged-y
+<cssproperty_overflow> = paged-x
+<cssproperty_overflow> = inherit
+<cssproperty_overflow> = auto auto
+<cssproperty_overflow> = invalid
+<cssproperty_overflow> = visible scroll
+<cssproperty_overflow> = none
+
+<cssproperty_overflow-anchor> = none
+
+<cssproperty_overflow-wrap> = break-word
+<cssproperty_overflow-wrap> = normal
+
+<cssproperty_overflow-x> = hidden
+<cssproperty_overflow-x> = auto
+<cssproperty_overflow-x> = scroll
+<cssproperty_overflow-x> = visible
+<cssproperty_overflow-x> = overlay
+
+<cssproperty_overflow-y> = scroll
+<cssproperty_overflow-y> = auto
+<cssproperty_overflow-y> = hidden
+<cssproperty_overflow-y> = visible
+<cssproperty_overflow-y> = -webkit-paged-y
+<cssproperty_overflow-y> = -webkit-paged-x
+<cssproperty_overflow-y> = overlay
+
+<cssproperty_oxverflow> = hidden
+
+<cssproperty_padding> = <fuzzint>
+<cssproperty_padding> = <fuzzint>em
+<cssproperty_padding> = <fuzzint>px
+<cssproperty_padding> = <fuzzint> <fuzzint>px
+<cssproperty_padding> = <fuzzint>px <fuzzint>
+<cssproperty_padding> = <fuzzint>px <fuzzint>px <fuzzint>px <fuzzint>px
+<cssproperty_padding> = <fuzzint>px <fuzzint>px
+<cssproperty_padding> = <fuzzint>px <fuzzint> <fuzzint> <fuzzint>
+<cssproperty_padding> = <percentage>%
+<cssproperty_padding> = inherit
+
+<cssproperty_padding-bottom> = <percentage>%
+<cssproperty_padding-bottom> = <float>em
+<cssproperty_padding-bottom> = <fuzzint>px
+<cssproperty_padding-bottom> = <fuzzint>pt
+<cssproperty_padding-bottom> = <fuzzint>vmin
+<cssproperty_padding-bottom> = <fuzzint>vw
+<cssproperty_padding-bottom> = <fuzzint>vh
+<cssproperty_padding-bottom> = <fuzzint>vmax
+
+<cssproperty_padding-left> = <fuzzint>px
+<cssproperty_padding-left> = <percentage>%
+<cssproperty_padding-left> = <fuzzint>
+<cssproperty_padding-left> = <fuzzint>vmin
+<cssproperty_padding-left> = <fuzzint>vw
+<cssproperty_padding-left> = <fuzzint>vh
+<cssproperty_padding-left> = <fuzzint>vmax
+<cssproperty_padding-left> = auto
+
+<cssproperty_padding-right> = <fuzzint>px
+<cssproperty_padding-right> = <percentage>%
+<cssproperty_padding-right> = <fuzzint>
+<cssproperty_padding-right> = <fuzzint>vmin
+<cssproperty_padding-right> = <fuzzint>vw
+<cssproperty_padding-right> = <fuzzint>vh
+<cssproperty_padding-right> = <fuzzint>vmax
+<cssproperty_padding-right> = auto
+
+<cssproperty_padding-top> = <fuzzint>px
+<cssproperty_padding-top> = <fuzzint>vmin
+<cssproperty_padding-top> = <fuzzint>vw
+<cssproperty_padding-top> = <fuzzint>vh
+<cssproperty_padding-top> = <fuzzint>vmax
+
+<cssproperty_page> = Rotated
+<cssproperty_page> = Auto
+<cssproperty_page> = Auto Rotated
+<cssproperty_page> = <fuzzint>cm
+
+<cssproperty_page-break-after> = auto
+<cssproperty_page-break-after> = avoid
+<cssproperty_page-break-after> = always
+<cssproperty_page-break-after> = left
+<cssproperty_page-break-after> = right
+<cssproperty_page-break-after> = auto auto
+<cssproperty_page-break-after> = left always
+<cssproperty_page-break-after> = always always
+
+<cssproperty_page-break-before> = auto
+<cssproperty_page-break-before> = avoid
+<cssproperty_page-break-before> = always
+<cssproperty_page-break-before> = left
+<cssproperty_page-break-before> = right
+
+<cssproperty_page-break-inside> = avoid
+<cssproperty_page-break-inside> = auto
+
+<cssproperty_perspective> = <fuzzint>px
+<cssproperty_perspective> = inherit
+<cssproperty_perspective> = <fuzzint>
+
+<cssproperty_perspective-origin> = <fuzzint> <fuzzint>
+<cssproperty_perspective-origin> = <percentage>% <fuzzint>px
+<cssproperty_perspective-origin> = top left
+<cssproperty_perspective-origin> = <percentage>% <percentage>%
+<cssproperty_perspective-origin> = <fuzzint>px <fuzzint>px
+
+<cssproperty_pointer-events> = none
+<cssproperty_pointer-events> = fill
+<cssproperty_pointer-events> = auto
+<cssproperty_pointer-events> = bounding-box
+<cssproperty_pointer-events> = all
+
+<cssproperty_position> = absolute
+<cssproperty_position> = relative
+<cssproperty_position> = fixed
+<cssproperty_position> = static
+<cssproperty_position> = inherit
+<cssproperty_position> = sticky
+<cssproperty_position> = <fuzzint>px
+
+<cssproperty_postion> = relative
+
+<cssproperty_prince-hyphens> = auto
+
+<cssproperty_quotes> = '{' '}'
+<cssproperty_quotes> = 'A' 'B' 'C' 'D'
+<cssproperty_quotes> = '-' '-'
+<cssproperty_quotes> = '(' ')' '[' ']'
+<cssproperty_quotes> = 'a' 'b' 'c' 'd'
+<cssproperty_quotes> = 'a' 'b'
+<cssproperty_quotes> = 'a' 'v' 'b' 'u'
+<cssproperty_quotes> = none
+<cssproperty_quotes> = initial
+<cssproperty_quotes> = '\'' '\'' '\'' '\''
+
+<cssproperty_resize> = none
+<cssproperty_resize> = auto
+<cssproperty_resize> = both
+<cssproperty_resize> = inherit
+<cssproperty_resize> = horizontal
+<cssproperty_resize> = vertical
+
+<cssproperty_right> = <fuzzint>
+<cssproperty_right> = <fuzzint>vw
+<cssproperty_right> = <fuzzint>vh
+<cssproperty_right> = <fuzzint>vmin
+<cssproperty_right> = <fuzzint>vmax
+<cssproperty_right> = <fuzzint>px
+<cssproperty_right> = <percentage>%
+<cssproperty_right> = <fuzzint>em
+<cssproperty_right> = auto
+<cssproperty_right> = <fuzzint>p
+
+<cssproperty_rotate> = <fuzzint>deg <fuzzint> <fuzzint> <fuzzint>
+<cssproperty_rotate> = <fuzzint>deg
+<cssproperty_rotate> = inherit
+<cssproperty_rotate> = initial
+
+<cssproperty_rotation> = <fuzzint>deg
+
+<cssproperty_rotation-code> = '}'
+<cssproperty_rotation-code> = '\'}\''
+<cssproperty_rotation-code> = '}'
+
+<cssproperty_rx> = <fuzzint>px
+
+<cssproperty_ry> = <fuzzint>px
+
+<cssproperty_scale> = <fuzzint>
+<cssproperty_scale> = <fuzzint> <fuzzint>
+<cssproperty_scale> = <float> <fuzzint> <fuzzint>
+<cssproperty_scale> = <fuzzint> <float> <fuzzint>
+<cssproperty_scale> = <fuzzint> <fuzzint> <float>
+<cssproperty_scale> = initial
+
+<cssproperty_scroll-behavior> = auto
+<cssproperty_scroll-behavior> = smooth
+
+<cssproperty_scroll-snap-coordinate> = <fuzzint>px <fuzzint>px
+<cssproperty_scroll-snap-coordinate> = inherit
+<cssproperty_scroll-snap-coordinate> = initial
+<cssproperty_scroll-snap-coordinate> = <percentage>% <percentage>%
+<cssproperty_scroll-snap-coordinate> = left top <percentage>%
+<cssproperty_scroll-snap-coordinate> = left <fuzzint>px top <fuzzint>px
+<cssproperty_scroll-snap-coordinate> = left
+<cssproperty_scroll-snap-coordinate> = <fuzzint>px <fuzzint>px, <fuzzint>px <fuzzint>px, left <fuzzint>px top <fuzzint>px
+<cssproperty_scroll-snap-coordinate> = <percentage>% <percentage>%, left top <percentage>%, <percentage>% <percentage>%
+<cssproperty_scroll-snap-coordinate> = <fuzzint>px <fuzzint>px, junk
+<cssproperty_scroll-snap-coordinate> = <fuzzint>px <fuzzint>px / <fuzzint>px <fuzzint>px
+
+<cssproperty_scroll-snap-destination> = <fuzzint>px <fuzzint>px
+<cssproperty_scroll-snap-destination> = inherit
+<cssproperty_scroll-snap-destination> = initial
+<cssproperty_scroll-snap-destination> = <fuzzint>px <percentage>%
+<cssproperty_scroll-snap-destination> = <fuzzint> <fuzzint>px
+<cssproperty_scroll-snap-destination> = <percentage>% <fuzzint>px
+<cssproperty_scroll-snap-destination> = <percentage>% <percentage>%
+<cssproperty_scroll-snap-destination> = left top <percentage>%
+<cssproperty_scroll-snap-destination> = top
+
+<cssproperty_scroll-snap-points-x> = repeat(<percentage>%)
+<cssproperty_scroll-snap-points-x> = inherit
+<cssproperty_scroll-snap-points-x> = initial
+<cssproperty_scroll-snap-points-x> = repeat(<fuzzint>px)
+
+<cssproperty_scroll-snap-points-y> = repeat(<percentage>%)
+<cssproperty_scroll-snap-points-y> = inherit
+<cssproperty_scroll-snap-points-y> = initial
+<cssproperty_scroll-snap-points-y> = repeat(<fuzzint>px)
+
+<cssproperty_scroll-snap-type> = mandatory
+<cssproperty_scroll-snap-type> = inherit
+<cssproperty_scroll-snap-type> = initial
+<cssproperty_scroll-snap-type> = proximity
+<cssproperty_scroll-snap-type> = none
+
+<cssproperty_shape-image-threshold> = <float>
+<cssproperty_shape-image-threshold> = <fuzzint>
+
+<cssproperty_shape-inside> = polygon()
+<cssproperty_shape-inside> = polygon(<fuzzint>px <fuzzint>px)
+<cssproperty_shape-inside> = polygon(<fuzzint>px <fuzzint>px, <fuzzint>px <fuzzint>px)
+
+<cssproperty_shape-margin> = <fuzzint>em
+<cssproperty_shape-margin> = <fuzzint>px
+<cssproperty_shape-margin> = <percentage>%
+<cssproperty_shape-margin> = <fuzzint>
+
+<cssproperty_shape-outside> = circle(closest-side at center)
+<cssproperty_shape-outside> = content-box
+<cssproperty_shape-outside> = inset(<percentage>% round <percentage>%)
+<cssproperty_shape-outside> = inset(<percentage>% round <percentage>% <percentage>% <percentage>% <percentage>%)
+<cssproperty_shape-outside> = ellipse(closest-side closest-side)
+<cssproperty_shape-outside> = url(<cssurl>)
+<cssproperty_shape-outside> = polygon(<fuzzint> <fuzzint>, <fuzzint> <fuzzint>px, <fuzzint>px <fuzzint>)
+<cssproperty_shape-outside> = circle(<percentage>% at <percentage>% <fuzzint>)
+<cssproperty_shape-outside> = circle(auto)
+<cssproperty_shape-outside> = circle(inherit)
+<cssproperty_shape-outside> = circle(<color>)
+<cssproperty_shape-outside> = ellipse(<fuzzint>, <fuzzint>)
+<cssproperty_shape-outside> = ellipse(<fuzzint>px, <fuzzint>px, <fuzzint>, <fuzzint>px)
+<cssproperty_shape-outside> = ellipse(<fuzzint>, <percentage>%, <percentage>%, <percentage>%)
+<cssproperty_shape-outside> = ellipse(<percentage>%, <fuzzint>, <percentage>%, <percentage>%)
+<cssproperty_shape-outside> = inset(<fuzzint>px <fuzzint> <fuzzint>px <fuzzint>px)
+<cssproperty_shape-outside> = circle(<fuzzint>px, <fuzzint>px)
+<cssproperty_shape-outside> = inset(<fuzzint>px <fuzzint>px <fuzzint> <fuzzint>px)
+<cssproperty_shape-outside> = inset(<fuzzint> <fuzzint>px <fuzzint>px <fuzzint>px)
+<cssproperty_shape-outside> = ellipse(<fuzzint>)
+<cssproperty_shape-outside> = inset(<fuzzint>px <fuzzint>px <fuzzint>px <fuzzint>)
+<cssproperty_shape-outside> = circle(<fuzzint>, <percentage>%)
+<cssproperty_shape-outside> = ellipse(<fuzzint>px, <fuzzint>px, <fuzzint>px, <fuzzint>)
+<cssproperty_shape-outside> = inset(<percentage>% <percentage>% <percentage>% <percentage>%)
+<cssproperty_shape-outside> = polygon(<fuzzint> <fuzzint>, <fuzzint>px <fuzzint>px, <fuzzint> <fuzzint>px)
+<cssproperty_shape-outside> = polygon(<fuzzint>px <fuzzint>, <fuzzint>px <fuzzint>px, <fuzzint>px <fuzzint>px)
+<cssproperty_shape-outside> = border-box
+<cssproperty_shape-outside> = polygon(<fuzzint>px <fuzzint>, <fuzzint>px <fuzzint>px, <fuzzint> <fuzzint>px)
+<cssproperty_shape-outside> = padding-box
+<cssproperty_shape-outside> = margin-box
+<cssproperty_shape-outside> = polygon(<fuzzint>px <fuzzint>px, <fuzzint>px <fuzzint>px, <fuzzint>px <fuzzint>px)
+<cssproperty_shape-outside> = polygon(<fuzzint> <fuzzint>px, <fuzzint>px <fuzzint>px, <fuzzint> <fuzzint>px)
+<cssproperty_shape-outside> = radial-gradient(circle, <color> <fuzzint>px, <color> <fuzzint>px, <color> <fuzzint>px)
+<cssproperty_shape-outside> = linear-gradient(to left, <color> <percentage>%, <color> <percentage>%, transparent <percentage>%)
+<cssproperty_shape-outside> = linear-gradient(to left, <color> <percentage>%, <color> <percentage>%, <color> <percentage>%, transparent <percentage>%)
+<cssproperty_shape-outside> = linear-gradient(to right, <color> <percentage>%, <color> <percentage>%, transparent <percentage>%)
+<cssproperty_shape-outside> = radial-gradient(circle, <color> <fuzzint>, transparent <fuzzint>px)
+<cssproperty_shape-outside> = radial-gradient(circle, <color> <fuzzint>px, <color> <fuzzint>px, <color> <fuzzint>px, transparent <fuzzint>px)
+<cssproperty_shape-outside> = repeating-linear-gradient(transparent <fuzzint>, transparent <fuzzint>px, <color> <fuzzint>px)
+<cssproperty_shape-outside> = margin-box inset(<fuzzint>px <fuzzint>px <fuzzint>px <fuzzint>)
+<cssproperty_shape-outside> = border-box inset(<fuzzint>px <fuzzint>px <fuzzint>px <fuzzint>px)
+<cssproperty_shape-outside> = padding-box inset(<fuzzint> <fuzzint>px <fuzzint> <fuzzint>px)
+<cssproperty_shape-outside> = content-box inset(<fuzzint>px <fuzzint>px <fuzzint>px <fuzzint>px)
+<cssproperty_shape-outside> = content-box circle(<fuzzint>px at center right)
+<cssproperty_shape-outside> = padding-box circle(<fuzzint>px)
+<cssproperty_shape-outside> = margin-box circle(<percentage>% at top left)
+<cssproperty_shape-outside> = margin-box circle(<percentage>% at <fuzzint>px <fuzzint>px)
+<cssproperty_shape-outside> = circle(<fuzzint>px)
+<cssproperty_shape-outside> = border-box circle(<percentage>%)
+<cssproperty_shape-outside> = border-box circle(farthest-side)
+<cssproperty_shape-outside> = circle(<fuzzint>px at <fuzzint>px <fuzzint>px)
+<cssproperty_shape-outside> = circle(<percentage>% at <percentage>% <percentage>%)
+<cssproperty_shape-outside> = margin-box circle(<fuzzint>px at <fuzzint>px <fuzzint>px)
+<cssproperty_shape-outside> = padding-box circle(closest-side at <fuzzint>px <fuzzint>px)
+<cssproperty_shape-outside> = border-box circle(<fuzzint>px at <percentage>%)
+<cssproperty_shape-outside> = padding-box circle(farthest-side at <fuzzint>px)
+<cssproperty_shape-outside> = content-box circle(<percentage>% at <percentage>% <percentage>%)
+<cssproperty_shape-outside> = border-box circle(closest-side at <percentage>%)
+<cssproperty_shape-outside> = padding-box circle(<fuzzint>px at center right)
+<cssproperty_shape-outside> = content-box circle(<fuzzint>px)
+<cssproperty_shape-outside> = ellipse(<fuzzint>px <fuzzint>px at <fuzzint>px <fuzzint>px)
+<cssproperty_shape-outside> = padding-box ellipse(<percentage>% <percentage>% at center right)
+<cssproperty_shape-outside> = content-box ellipse(closest-side <percentage>%)
+<cssproperty_shape-outside> = padding-box ellipse(<percentage>% <percentage>%)
+<cssproperty_shape-outside> = padding-box ellipse(closest-side at <fuzzint>px <fuzzint>px)
+<cssproperty_shape-outside> = padding-box ellipse(closest-side <fuzzint>px)
+<cssproperty_shape-outside> = ellipse(at <fuzzint>px)
+<cssproperty_shape-outside> = ellipse(<fuzzint>px <fuzzint>px)
+<cssproperty_shape-outside> = margin-box ellipse(<percentage>% <percentage>% at <fuzzint>px)
+<cssproperty_shape-outside> = ellipse(<percentage>% <percentage>% at <percentage>% <percentage>%)
+<cssproperty_shape-outside> = content-box ellipse(<percentage>% <percentage>% at <percentage>% <percentage>%)
+<cssproperty_shape-outside> = border-box ellipse(<fuzzint>px <fuzzint>px at <percentage>%)
+<cssproperty_shape-outside> = content-box ellipse(farthest-side)
+<cssproperty_shape-outside> = circle()
+<cssproperty_shape-outside> = none
+<cssproperty_shape-outside> = linear-gradient(to right, <color>, <color>)
+<cssproperty_shape-outside> = inset-rectangle(<fuzzint>, <percentage>%, <fuzzint>, <fuzzint>)
+<cssproperty_shape-outside> = polygon(<fuzzint> <fuzzint>, <fuzzint>px <fuzzint>, <fuzzint> <fuzzint>px)
+<cssproperty_shape-outside> = polygon(<fuzzint>px <fuzzint>, <fuzzint>px <fuzzint>px, <fuzzint>px <fuzzint>px) content-box
+<cssproperty_shape-outside> = inset(<fuzzint> <fuzzint>em <fuzzint> <fuzzint>)
+<cssproperty_shape-outside> = polygon(<fuzzint> <fuzzint>, <fuzzint>px <fuzzint>, <fuzzint>px <fuzzint>px, <fuzzint> <fuzzint>px)
+<cssproperty_shape-outside> = inset(<fuzzint> <percentage>% <fuzzint> <fuzzint>)
+<cssproperty_shape-outside> = inset(<fuzzint> <fuzzint> <fuzzint> <percentage>%)
+<cssproperty_shape-outside> = inset(<fuzzint>em <fuzzint> <fuzzint> <fuzzint>)
+<cssproperty_shape-outside> = inset(<fuzzint>)
+<cssproperty_shape-outside> = polygon(<fuzzint> <fuzzint>, <percentage>% <percentage>%, <fuzzint> <percentage>%)
+<cssproperty_shape-outside> = -webkit-image-set(url(<cssurl>) <fuzzint>x)
+<cssproperty_shape-outside> = inset(<percentage>% <fuzzint> <fuzzint> <fuzzint>)
+<cssproperty_shape-outside> = polygon(<fuzzint>px <fuzzint>, <fuzzint> <fuzzint>px, <fuzzint>px <fuzzint>px)
+<cssproperty_shape-outside> = polygon(<fuzzint>px <fuzzint>, <fuzzint> <fuzzint>, <fuzzint>px <fuzzint>px)
+<cssproperty_shape-outside> = content-box polygon(<fuzzint> <fuzzint>, <fuzzint>px <fuzzint>, <fuzzint>px <fuzzint>px, <fuzzint> <fuzzint>px)
+<cssproperty_shape-outside> = polygon(<fuzzint> <fuzzint>px, <fuzzint>px <fuzzint>px, <fuzzint>px <fuzzint>px) content-box
+<cssproperty_shape-outside> = inset(<fuzzint> round <fuzzint>px)
+<cssproperty_shape-outside> = linear-gradient(magenta, currentColor)
+<cssproperty_shape-outside> = polygon(<fuzzint>px <fuzzint>, <fuzzint> <fuzzint>, <fuzzint> <fuzzint>px, <fuzzint>px <fuzzint>px) content-box
+<cssproperty_shape-outside> = polygon(<fuzzint>px <fuzzint>px, <fuzzint>px <fuzzint>px, <fuzzint>px <fuzzint>px, <fuzzint>px <fuzzint>px)
+<cssproperty_shape-outside> = polygon(<fuzzint> <fuzzint>, <fuzzint>px <fuzzint>px, <fuzzint>px <fuzzint>)
+<cssproperty_shape-outside> = polygon(<fuzzint> <fuzzint>px, <fuzzint> <fuzzint>px, <fuzzint>px <fuzzint>px) content-box
+<cssproperty_shape-outside> = polygon(nonzero, <fuzzint>px <fuzzint>px)
+
+<cssproperty_snap-height> = <fuzzint>px
+<cssproperty_snap-height> = <fuzzint>px <fuzzint>
+<cssproperty_snap-height> = initial
+<cssproperty_snap-height> = inherit
+<cssproperty_snap-height> = <fuzzint>
+
+<cssproperty_src> = url(<cssurl>)
+<cssproperty_src> = local(<fuzzint>)
+
+<cssproperty_stop-color> = <color>
+<cssproperty_stop-color> = transparent
+
+<cssproperty_stop-opacity> = <fuzzint>
+<cssproperty_stop-opacity> = <float>
+
+<cssproperty_stroke> = <color>
+<cssproperty_stroke> = <fuzzint>px
+
+<cssproperty_stroke-dasharray> = <fuzzint> <fuzzint>
+<cssproperty_stroke-dasharray> = <fuzzint>
+<cssproperty_stroke-dasharray> = none
+<cssproperty_stroke-dasharray> = <fuzzint> <fuzzint> <fuzzint>
+<cssproperty_stroke-dasharray> = <fuzzint>, <fuzzint>
+
+<cssproperty_stroke-dashoffset> = <fuzzint>
+<cssproperty_stroke-dashoffset> = <fuzzint>px
+
+<cssproperty_stroke-linecap> = round
+
+<cssproperty_stroke-linejoin> = miter
+
+<cssproperty_stroke-miterlimit> = <fuzzint>
+
+<cssproperty_stroke-opacity> = <fuzzint>
+<cssproperty_stroke-opacity> = <float>
+
+<cssproperty_stroke-width> = <fuzzint>
+<cssproperty_stroke-width> = <fuzzint>px
+<cssproperty_stroke-width> = <fuzzint>mm
+<cssproperty_stroke-width> = <percentage>%
+
+<cssproperty_tab-size> = <fuzzint>px
+<cssproperty_tab-size> = <fuzzint>em
+<cssproperty_tab-size> = <fuzzint>
+
+<cssproperty_table-layout> = fixed
+<cssproperty_table-layout> = auto
+
+<cssproperty_text-align> = center
+<cssproperty_text-align> = right
+<cssproperty_text-align> = justify
+<cssproperty_text-align> = left
+<cssproperty_text-align> = start
+<cssproperty_text-align> = end
+<cssproperty_text-align> = general
+<cssproperty_text-align> = middle
+<cssproperty_text-align> = auto
+<cssproperty_text-align> = top
+<cssproperty_text-align> = -webkit-center
+<cssproperty_text-align> = right left
+<cssproperty_text-align> = -webkit-left
+<cssproperty_text-align> = inherit
+<cssproperty_text-align> = -webkit-match-parent
+<cssproperty_text-align> = -moz-center
+
+<cssproperty_text-align-last> = justify
+<cssproperty_text-align-last> = end
+<cssproperty_text-align-last> = start
+<cssproperty_text-align-last> = right
+<cssproperty_text-align-last> = left
+<cssproperty_text-align-last> = auto
+
+<cssproperty_text-anchor> = end
+<cssproperty_text-anchor> = middle
+
+<cssproperty_text-combine-upright> = all
+<cssproperty_text-combine-upright> = none
+<cssproperty_text-combine-upright> = initial
+<cssproperty_text-combine-upright> = inherit
+<cssproperty_text-combine-upright> = unset
+
+<cssproperty_text-decoration> = none
+<cssproperty_text-decoration> = underline
+<cssproperty_text-decoration> = overline underline line-through
+<cssproperty_text-decoration> = invalidvalue
+<cssproperty_text-decoration> = underline overline line-through diagonal
+<cssproperty_text-decoration> = overline
+<cssproperty_text-decoration> = line-through
+<cssproperty_text-decoration> = blink
+<cssproperty_text-decoration> = underline overline
+<cssproperty_text-decoration> = underline overline line-through
+<cssproperty_text-decoration> = inherit
+<cssproperty_text-decoration> = underline !important
+<cssproperty_text-decoration> = underline line-through
+<cssproperty_text-decoration> = overline solid <color>
+<cssproperty_text-decoration> = underline solid coral
+<cssproperty_text-decoration> = overline dashed sky<color>
+<cssproperty_text-decoration> = line-through wavy <color>
+<cssproperty_text-decoration> = underline solid <color>
+<cssproperty_text-decoration> = none !important
+<cssproperty_text-decoration> = overline !important
+<cssproperty_text-decoration> = underline dashed <color>
+<cssproperty_text-decoration> = <color> double underline
+<cssproperty_text-decoration> = line-through garbage
+<cssproperty_text-decoration> = line-through auto
+
+<cssproperty_text-decoration-color> = inherit
+<cssproperty_text-decoration-color> = <color>
+
+<cssproperty_text-decoration-line> = underline
+<cssproperty_text-decoration-line> = overline
+<cssproperty_text-decoration-line> = line-through
+<cssproperty_text-decoration-line> = none
+<cssproperty_text-decoration-line> = underline overline line-through
+<cssproperty_text-decoration-line> = underline !important
+<cssproperty_text-decoration-line> = blink blink
+<cssproperty_text-decoration-line> = blink underline blink
+<cssproperty_text-decoration-line> = blink underline overline blink
+<cssproperty_text-decoration-line> = blink underline overline line-through blink
+
+<cssproperty_text-decoration-style> = dashed
+<cssproperty_text-decoration-style> = solid
+<cssproperty_text-decoration-style> = double
+<cssproperty_text-decoration-style> = dotted
+<cssproperty_text-decoration-style> = wavy
+
+<cssproperty_text-decoration-upright> = all none
+<cssproperty_text-decoration-upright> = none digits
+<cssproperty_text-decoration-upright> = digits bar
+<cssproperty_text-decoration-upright> = digits <fuzzint> none
+<cssproperty_text-decoration-upright> = digits <fuzzint>
+
+<cssproperty_text-indent> = <fuzzint>vmin
+<cssproperty_text-indent> = <fuzzint>vw
+<cssproperty_text-indent> = <fuzzint>vh
+<cssproperty_text-indent> = <fuzzint>vmax
+<cssproperty_text-indent> = <fuzzint>px
+<cssproperty_text-indent> = <fuzzint>mm
+<cssproperty_text-indent> = <fuzzint>pt
+<cssproperty_text-indent> = <fuzzint>pc
+<cssproperty_text-indent> = <fuzzint>em
+<cssproperty_text-indent> = <fuzzint>ex
+<cssproperty_text-indent> = <percentage>%
+<cssproperty_text-indent> = <fuzzint>cm
+<cssproperty_text-indent> = <fuzzint>
+<cssproperty_text-indent> = <fuzzint>em each-line
+<cssproperty_text-indent> = <fuzzint>em hanging
+<cssproperty_text-indent> = <fuzzint>em each-line hanging
+
+<cssproperty_text-justify> = auto
+<cssproperty_text-justify> = none
+<cssproperty_text-justify> = inter-word
+<cssproperty_text-justify> = distribute
+
+<cssproperty_text-orientation> = upright
+<cssproperty_text-orientation> = sideways
+<cssproperty_text-orientation> = sideways-right
+<cssproperty_text-orientation> = mixed
+<cssproperty_text-orientation> = initial
+<cssproperty_text-orientation> = inherit
+<cssproperty_text-orientation> = foo
+
+<cssproperty_text-overflow> = ellipsis
+<cssproperty_text-overflow> = clip
+
+<cssproperty_text-rendering> = optimizeLegibility
+<cssproperty_text-rendering> = optimizelegibility
+<cssproperty_text-rendering> = geometricPrecision
+<cssproperty_text-rendering> = optimizeSpeed
+<cssproperty_text-rendering> = auto
+
+<cssproperty_text-shadow> = <fuzzint> <fuzzint>px <fuzzint>px <color>
+<cssproperty_text-shadow> = <fuzzint>px <fuzzint>px <color>
+<cssproperty_text-shadow> = <fuzzint> <fuzzint> <fuzzint>px <color>
+<cssproperty_text-shadow> = inherit
+<cssproperty_text-shadow> = none
+<cssproperty_text-shadow> = <color> <fuzzint> <fuzzint>px <fuzzint>
+<cssproperty_text-shadow> = <color> <fuzzint> <fuzzint>px <fuzzint>px
+<cssproperty_text-shadow> = <fuzzint>px <fuzzint>px <fuzzint>px <color>
+<cssproperty_text-shadow> = <fuzzint>px <fuzzint>px
+<cssproperty_text-shadow> = <fuzzint> <fuzzint> <color>
+<cssproperty_text-shadow> = <color> <fuzzint> <fuzzint> <fuzzint>px
+<cssproperty_text-shadow> = <fuzzint>px <fuzzint>px <fuzzint>px
+
+<cssproperty_text-transform> = none
+<cssproperty_text-transform> = capitalize
+<cssproperty_text-transform> = uppercase
+<cssproperty_text-transform> = lowercase
+<cssproperty_text-transform> = full-width
+<cssproperty_text-transform> = capitalize garbage
+<cssproperty_text-transform> = capitalize auto
+<cssproperty_text-transform> = small-caps
+
+<cssproperty_text-underline> = single
+
+<cssproperty_text-underline-position> = auto
+<cssproperty_text-underline-position> = under
+
+<cssproperty_top> = <fuzzint>
+<cssproperty_top> = <fuzzint>px
+<cssproperty_top> = <percentage>%
+<cssproperty_top> = <fuzzint>vw
+<cssproperty_top> = <fuzzint>vh
+<cssproperty_top> = <fuzzint>vmin
+<cssproperty_top> = <fuzzint>vmax
+<cssproperty_top> = <fuzzint>em
+<cssproperty_top> = <fuzzint>in
+<cssproperty_top> = auto
+<cssproperty_top> = <fuzzint>cm
+
+<cssproperty_touch-action> = pan-left
+<cssproperty_touch-action> = none
+<cssproperty_touch-action> = auto
+<cssproperty_touch-action> = pan-right
+<cssproperty_touch-action> = pan-up
+<cssproperty_touch-action> = pan-x
+<cssproperty_touch-action> = pan-y
+<cssproperty_touch-action> = pan-down
+<cssproperty_touch-action> = pan-x none
+<cssproperty_touch-action> = pan-y none
+<cssproperty_touch-action> = auto none
+<cssproperty_touch-action> = pan-x pan-y
+<cssproperty_touch-action> = pan-y pan-x
+<cssproperty_touch-action> = pan-left pan-up
+<cssproperty_touch-action> = pan-left pan-down
+<cssproperty_touch-action> = pan-right pan-up
+<cssproperty_touch-action> = pan-right pan-down
+<cssproperty_touch-action> = pan-up pan-left
+<cssproperty_touch-action> = pan-up pan-right
+<cssproperty_touch-action> = pan-down pan-left
+<cssproperty_touch-action> = pan-down pan-right
+<cssproperty_touch-action> = manipulation
+<cssproperty_touch-action> = bogus
+<cssproperty_touch-action> = auto pan-x
+<cssproperty_touch-action> = pan-x pan-x
+<cssproperty_touch-action> = manipulation pan-x
+<cssproperty_touch-action> = pan-x pan-left
+<cssproperty_touch-action> = auto pan-left
+<cssproperty_touch-action> = none pan-left
+<cssproperty_touch-action> = pan-x pan-right
+<cssproperty_touch-action> = pan-y pan-up
+<cssproperty_touch-action> = pan-y pan-down
+<cssproperty_touch-action> = pan-left pan-right
+<cssproperty_touch-action> = pan-up pan-down
+<cssproperty_touch-action> = inherit
+<cssproperty_touch-action> = initial
+<cssproperty_touch-action> = pinch-zoom
+<cssproperty_touch-action> = pinch-zoom pan-x pan-up
+<cssproperty_touch-action> = pinch-zoom pan-x pan-y
+<cssproperty_touch-action> = pinch-zoom none
+
+<cssproperty_transform> = rotate(<fuzzint>deg)
+<cssproperty_transform> = translate(<fuzzint>px, <fuzzint>px) rotate(<fuzzint>deg) translate(<fuzzint>px, <fuzzint>px) rotate(<fuzzint>deg)
+<cssproperty_transform> = translate3d(<fuzzint>px, <fuzzint>px, <fuzzint>px)
+<cssproperty_transform> = translate3d(<fuzzint>, <fuzzint>px, <fuzzint>px)
+<cssproperty_transform> = translate(<fuzzint>px, <fuzzint>px) rotate(<fuzzint>deg)
+<cssproperty_transform> = translate(<fuzzint>px, <fuzzint>px)
+<cssproperty_transform> = translateZ(<fuzzint>)
+<cssproperty_transform> = translatez(<fuzzint>)
+<cssproperty_transform> = translate3d(<fuzzint>, <fuzzint>, <fuzzint>)
+<cssproperty_transform> = translate(<fuzzint>, <fuzzint>px)
+<cssproperty_transform> = translate(<fuzzint>px, <fuzzint>) rotate(<fuzzint>deg)
+<cssproperty_transform> = translate(<fuzzint>px, <fuzzint>px) scale(<fuzzint>)
+<cssproperty_transform> = none
+<cssproperty_transform> = scale(<fuzzint>, <fuzzint>)
+<cssproperty_transform> = rotatex(<fuzzint>deg)
+<cssproperty_transform> = rotateX(<fuzzint>deg)
+<cssproperty_transform> = rotatey(<fuzzint>deg) rotatex(<fuzzint>deg)
+<cssproperty_transform> = scalex(<fuzzint>)
+<cssproperty_transform> = scaley(<float>)
+<cssproperty_transform> = rotateZ(<fuzzint>deg)
+<cssproperty_transform> = translateY(<fuzzint>px)
+<cssproperty_transform> = scale(<fuzzint>)
+<cssproperty_transform> = scale(<fuzzint>, <fuzzint>) rotate(<fuzzint>deg)
+<cssproperty_transform> = scaley(<fuzzint>)
+<cssproperty_transform> = scaleY(<fuzzint>)
+<cssproperty_transform> = scale(<float>)
+<cssproperty_transform> = translate(<fuzzint>, <fuzzint>)
+<cssproperty_transform> = translatex(<fuzzint>)
+<cssproperty_transform> = translate(<fuzzint>px, <fuzzint>)
+<cssproperty_transform> = scale3d(<fuzzint>, <fuzzint>, <fuzzint>)
+<cssproperty_transform> = translate3d(<fuzzint>px, <fuzzint>px, <fuzzint>)
+<cssproperty_transform> = skew(<fuzzint>deg)
+<cssproperty_transform> = translatex(<percentage>%)
+<cssproperty_transform> = translateZ(<fuzzint>px)
+<cssproperty_transform> = translateX(<fuzzint>px)
+<cssproperty_transform> = rotatez(<fuzzint>)
+<cssproperty_transform> = rotate(<fuzzint>)
+<cssproperty_transform> = scale(<fuzzint>) rotate(<fuzzint>grad)
+<cssproperty_transform> = inherit
+<cssproperty_transform> = initial
+
+<cssproperty_transform-origin> = <percentage>% <percentage>%
+<cssproperty_transform-origin> = <fuzzint> <fuzzint>
+<cssproperty_transform-origin> = left top
+<cssproperty_transform-origin> = <fuzzint>px <fuzzint>px <fuzzint>px
+<cssproperty_transform-origin> = top left
+<cssproperty_transform-origin> = inherit
+<cssproperty_transform-origin> = initial
+<cssproperty_transform-origin> = right
+<cssproperty_transform-origin> = <fuzzint>px <fuzzint>px
+
+<cssproperty_transform-style> = preserve-3d
+<cssproperty_transform-style> = inherit
+<cssproperty_transform-style> = initial
+
+<cssproperty_transition> = width <fuzzint>s
+<cssproperty_transition> = width <fuzzint>ms
+<cssproperty_transition> = height <fuzzint>ms
+<cssproperty_transition> = background-color <fuzzint>ms cubic-bezier(<fuzzint>, <float>, <float>, <fuzzint>)
+<cssproperty_transition> = all <fuzzint>ms
+<cssproperty_transition> = opacity <fuzzint>s
+<cssproperty_transition> = all <fuzzint>s
+<cssproperty_transition> = opacity <fuzzint>ms
+<cssproperty_transition> = opacity <float>s
+<cssproperty_transition> = color <fuzzint>s steps(<fuzzint>, start)
+<cssproperty_transition> = width <fuzzint>s, top <fuzzint>s
+<cssproperty_transition> = transform <float>s
+<cssproperty_transition> = opacity <fuzzint>s linear
+<cssproperty_transition> = all <float>s linear
+<cssproperty_transition> = color <fuzzint>s
+<cssproperty_transition> = background, -webkit-mask <fuzzint>s
+<cssproperty_transition> = <fuzzint>s
+<cssproperty_transition> = margin <fuzzint>s, background <fuzzint>ms
+<cssproperty_transition> = -webkit-clip-path <fuzzint>s
+<cssproperty_transition> = transform <fuzzint>s <fuzzint>s linear
+<cssproperty_transition> = top <fuzzint>ms linear
+<cssproperty_transition> = left <fuzzint>ms linear
+<cssproperty_transition> = padding <fuzzint>s
+<cssproperty_transition> = all <fuzzint>s linear
+<cssproperty_transition> = transform <fuzzint>ms linear
+<cssproperty_transition> = background-color <fuzzint>s
+<cssproperty_transition> = background <fuzzint>ms
+<cssproperty_transition> = width <fuzzint>s ease-in-out
+
+<cssproperty_transition-delay> = <fuzzint>s
+<cssproperty_transition-delay> = inherit
+<cssproperty_transition-delay> = initial
+
+<cssproperty_transition-duration> = <fuzzint>s
+<cssproperty_transition-duration> = inherit
+<cssproperty_transition-duration> = initial
+
+<cssproperty_transition-properties> = transform
+
+<cssproperty_transition-property> = transform
+<cssproperty_transition-property> = object-position
+<cssproperty_transition-property> = left
+<cssproperty_transition-property> = shape-outside
+<cssproperty_transition-property> = top, counter-increment, overflow, transition-duration
+<cssproperty_transition-property> = none
+<cssproperty_transition-property> = x
+<cssproperty_transition-property> = y
+<cssproperty_transition-property> = width
+<cssproperty_transition-property> = inherit
+<cssproperty_transition-property> = initial
+<cssproperty_transition-property> = top
+<cssproperty_transition-property> = r
+<cssproperty_transition-property> = rx
+<cssproperty_transition-property> = ry
+<cssproperty_transition-property> = cx
+<cssproperty_transition-property> = cy
+<cssproperty_transition-property> = fill, stroke
+
+<cssproperty_transition-timing-function> = linear
+<cssproperty_transition-timing-function> = inherit
+<cssproperty_transition-timing-function> = initial
+<cssproperty_transition-timing-function> = steps(<fuzzint>, start)
+<cssproperty_transition-timing-function> = ease
+<cssproperty_transition-timing-function> = cubic-bezier(<float>, <float>, <float>, <float>)
+
+<cssproperty_translate> = <fuzzint>px <fuzzint>px
+<cssproperty_translate> = <fuzzint> <fuzzint> <fuzzint>px
+<cssproperty_translate> = <fuzzint>px <fuzzint> <fuzzint>
+<cssproperty_translate> = <fuzzint> <fuzzint>px <fuzzint>
+<cssproperty_translate> = <fuzzint> <fuzzint>
+<cssproperty_translate> = inherit
+<cssproperty_translate> = <fuzzint>px
+<cssproperty_translate> = initial
+<cssproperty_translate> = <fuzzint>px <fuzzint>px <fuzzint>px
+
+<cssproperty_unicode-bidi> = embed
+<cssproperty_unicode-bidi> = override
+<cssproperty_unicode-bidi> = isolate
+<cssproperty_unicode-bidi> = bidi-override
+<cssproperty_unicode-bidi> = normal
+<cssproperty_unicode-bidi> = isolate-override
+<cssproperty_unicode-bidi> = plaintext
+<cssproperty_unicode-bidi> = -webkit-isolate
+<cssproperty_unicode-bidi> = -webkit-isolate isolate
+<cssproperty_unicode-bidi> = -webkit-isolate-override
+<cssproperty_unicode-bidi> = -webkit-bad-value -webkit-isolate
+<cssproperty_unicode-bidi> = -bad-value isolate
+<cssproperty_unicode-bidi> = -bad-value bidi-override
+<cssproperty_unicode-bidi> = inherit
+<cssproperty_unicode-bidi> = -webkit-plaintext
+<cssproperty_unicode-bidi> = -moz-plaintext
+
+<cssproperty_user-select> = none
+
+<cssproperty_user-zoom> = zoom
+
+<cssproperty_vector-effect> = non-scaling-stroke
+
+<cssproperty_vertical-align> = top
+<cssproperty_vertical-align> = bottom
+<cssproperty_vertical-align> = middle
+<cssproperty_vertical-align> = <fuzzint>px
+<cssproperty_vertical-align> = baseline
+<cssproperty_vertical-align> = <fuzzint>vw
+<cssproperty_vertical-align> = <fuzzint>vh
+<cssproperty_vertical-align> = <fuzzint>vmin
+<cssproperty_vertical-align> = text-bottom
+<cssproperty_vertical-align> = sub
+<cssproperty_vertical-align> = super
+<cssproperty_vertical-align> = text-top
+<cssproperty_vertical-align> = <percentage>%
+<cssproperty_vertical-align> = <float>em
+<cssproperty_vertical-align> = <fuzzint>
+<cssproperty_vertical-align> = <fuzzint>em
+<cssproperty_vertical-align> = center
+<cssproperty_vertical-align> = inherit
+
+<cssproperty_visibility> = hidden
+<cssproperty_visibility> = visible
+<cssproperty_visibility> = collapse
+<cssproperty_visibility> = inherit
+<cssproperty_visibility> = initial
+<cssproperty_visibility> = none
+
+<cssproperty_visiblity> = visible
+
+<cssproperty_weight> = *
+
+<cssproperty_white> = fuchsia
+
+<cssproperty_white-space> = pre
+<cssproperty_white-space> = nowrap
+<cssproperty_white-space> = pre-wrap
+<cssproperty_white-space> = normal
+<cssproperty_white-space> = pre-line
+<cssproperty_white-space> = inherit
+<cssproperty_white-space> = -webkit-nowrap
+<cssproperty_white-space> = normall
+<cssproperty_white-space> = pre garbage
+<cssproperty_white-space> = pre auto
+<cssproperty_white-space> = x-bogus
+
+<cssproperty_whitespace> = nowrap
+
+<cssproperty_widows> = <fuzzint>
+
+<cssproperty_width> = <fuzzint>px
+<cssproperty_width> = <percentage>%
+<cssproperty_width> = <fuzzint>
+<cssproperty_width> = <fuzzint>em
+<cssproperty_width> = min-content
+<cssproperty_width> = <fuzzint>vmin
+<cssproperty_width> = <fuzzint>vw
+<cssproperty_width> = <fuzzint>vh
+<cssproperty_width> = <fuzzint>vmax
+<cssproperty_width> = auto
+<cssproperty_width> = <fuzzint>ch
+<cssproperty_width> = <fuzzint>rem
+<cssproperty_width> = <fuzzint>%
+<cssproperty_width> = <fuzzint>in
+<cssproperty_width> = <fuzzint>ex
+<cssproperty_width> = <fuzzint>mm
+<cssproperty_width> = <fuzzint>pt
+<cssproperty_width> = fit-content
+<cssproperty_width> = -webkit-min-content
+<cssproperty_width> = -webkit-max-content
+<cssproperty_width> = max-content
+<cssproperty_width> = <fuzzint>px auto
+<cssproperty_width> = fill-available
+
+<cssproperty_will-change> = offset-position
+<cssproperty_will-change> = transform
+<cssproperty_will-change> = offset-path
+<cssproperty_will-change> = opacity
+<cssproperty_will-change> = top
+<cssproperty_will-change> = contents
+<cssproperty_will-change> = -webkit-transform
+<cssproperty_will-change> = left
+<cssproperty_will-change> = auto
+<cssproperty_will-change> = right
+<cssproperty_will-change> = bottom
+<cssproperty_will-change> = -webkit-filter
+<cssproperty_will-change> = transition, -webkit-animation, opacity, z-index
+<cssproperty_will-change> = z-index
+<cssproperty_will-change> = -webkit-transform-style
+<cssproperty_will-change> = -webkit-perspective
+<cssproperty_will-change> = -webkit-mask
+<cssproperty_will-change> = -webkit-mask-box-image
+<cssproperty_will-change> = -webkit-clip-path
+<cssproperty_will-change> = -webkit-box-reflect
+<cssproperty_will-change> = filter
+<cssproperty_will-change> = mix-blend-mode
+<cssproperty_will-change> = isolation
+<cssproperty_will-change> = position
+<cssproperty_will-change> = top, opacity, left
+<cssproperty_will-change> = scroll-position
+<cssproperty_will-change> = opacity, contents, left, -webkit-transform
+<cssproperty_will-change> = opacity, i-am-not-a-property, top
+<cssproperty_will-change> = translate
+<cssproperty_will-change> = perspective
+<cssproperty_will-change> = scale
+<cssproperty_will-change> = rotate
+
+<cssproperty_word-break> = break-all
+<cssproperty_word-break> = break-word
+<cssproperty_word-break> = inherit
+<cssproperty_word-break> = keep-all
+<cssproperty_word-break> = normal
+<cssproperty_word-break> = solid
+
+<cssproperty_word-space> = nowrap
+
+<cssproperty_word-spacing> = <fuzzint>em
+<cssproperty_word-spacing> = <fuzzint>mm
+<cssproperty_word-spacing> = <fuzzint>pt
+<cssproperty_word-spacing> = <fuzzint>pc
+<cssproperty_word-spacing> = <fuzzint>ex
+<cssproperty_word-spacing> = <fuzzint>px
+<cssproperty_word-spacing> = normal
+<cssproperty_word-spacing> = <percentage>%
+<cssproperty_word-spacing> = <fuzzint>
+<cssproperty_word-spacing> = <fuzzint>px auto
+
+<cssproperty_word-wrap> = normal
+<cssproperty_word-wrap> = break-word
+
+<cssproperty_writing-mode> = vertical-rl
+<cssproperty_writing-mode> = horizontal-tb
+<cssproperty_writing-mode> = vertical-lr
+<cssproperty_writing-mode> = tb-lr
+<cssproperty_writing-mode> = lr-tb
+<cssproperty_writing-mode> = tb-rl
+<cssproperty_writing-mode> = lr
+<cssproperty_writing-mode> = rl
+<cssproperty_writing-mode> = rl-tb
+<cssproperty_writing-mode> = tb
+<cssproperty_writing-mode> = initial
+<cssproperty_writing-mode> = inherit
+<cssproperty_writing-mode> = foo
+<cssproperty_writing-mode> = sideways-rl
+<cssproperty_writing-mode> = sideways-lr
+
+<cssproperty_z-index> = <fuzzint>
+<cssproperty_z-index> = auto
+<cssproperty_z-index> = inherit
+
+<cssproperty_zoom> = <percentage>%
+<cssproperty_zoom> = <fuzzint>
+<cssproperty_zoom> = <float>
+<cssproperty_zoom> = auto
+<cssproperty_zoom> = reset
+
