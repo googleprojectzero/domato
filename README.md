@@ -19,7 +19,7 @@ limitations under the License.
 
 #### Usage
 
-To generate a single .hmtl sample run:
+To generate a single .html sample run:
 
 `python generator.py <output file>`
 
