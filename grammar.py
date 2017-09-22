@@ -70,7 +70,7 @@ class Grammar(object):
   >>> grammar.ParseFile('grammar.txt')
   After this, you can generate the language starting from the root symbol:
   >>> ret = grammar.GenerateRoot()
-  Or a speciffic symbol
+  Or a specific symbol
   >>> ret = grammar.GenerateSymbol('foo')
   """
 
@@ -692,7 +692,7 @@ class Grammar(object):
   def _FixIdents(self, source):
     """Fixes indentation in user-defined functions.
 
-    Exec requires zero firs-level indentation. This function fixes it by
+    Exec requires zero first-level indentation. This function fixes it by
     finding a minimum indentation in code and removing it from all lines.
 
     Args:
