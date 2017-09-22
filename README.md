@@ -27,7 +27,7 @@ To generate multiple samples with a single call run:
 
 `python generator.py --output_dir <output directory> --no_of_files <number of output files>`
 
-The generated samples will be placed in the specified directory and will be named as fuzz-&lt;number&gt;.html, e.g. fuzz-1.html, fuzz2.html etc. Generating multiple samples is faster because the input grammar files need to be loaded and parsed only once.
+The generated samples will be placed in the specified directory and will be named as fuzz-&lt;number&gt;.html, e.g. fuzz-1.html, fuzz-2.html etc. Generating multiple samples is faster because the input grammar files need to be loaded and parsed only once.
 
 #### Code organization
 
@@ -60,7 +60,7 @@ A grammar is described as a set of rules in the following basic format
 
 `<symbol> = a mix of constants and <other_symbol>s`
 
-Each grammar rule contains a left side and the right side separated by the equal character. The left side contains a symbol, while the right side contains the details on how that symbol may be expanded. When expanding a symol, all symbols on the right-hand side are expanded recursively while everything that is not a symbol is simply copied to the output. Note that a single rule can't span over multiple lines of the input file.
+Each grammar rule contains a left side and the right side separated by the equal character. The left side contains a symbol, while the right side contains the details on how that symbol may be expanded. When expanding a symbol, all symbols on the right-hand side are expanded recursively while everything that is not a symbol is simply copied to the output. Note that a single rule can't span over multiple lines of the input file.
 
 Consider the following simplified example of a part of the CSS grammar:
 
@@ -114,7 +114,7 @@ To generate programming language code, a similar syntax can be used, but there a
 !end lines
 ```
 
-If we instruct the engine to generate 5 lines, we may end up with someting like
+If we instruct the engine to generate 5 lines, we may end up with something like
 
 ```
 try { var00001 = document.getElementById("hw"); } catch(e) {}
@@ -173,7 +173,7 @@ Importing works a bit differently
 !import other.txt
 ```
 
-tells the parser to create a new Grammar() object that can then be referenced from the current grammar by using the special `<import>` symbol, for exampple like this:
+tells the parser to create a new Grammar() object that can then be referenced from the current grammar by using the special `<import>` symbol, for example like this:
 
 ```
 <cssrule> = <import from=css.txt symbol=rule>
@@ -202,7 +202,7 @@ Sometimes you might want to call custom Python code in your grammar. For example
 
 The python functions are defined between ‘!begin function <function_name>’ and ‘!end function’ commands. The functions can be called in two ways: using ‘beforeoutput’ attribute and using <call> symbol.
 
-By specifying the ‘beforeoutput’ attribute in some symbol, the corresponding function will be called when this symbol is expanded, just before the result of the expension is output to the sample. The expansion result will be passed to the function in the ret_val variable. The function is then free to modify ret_val, store it for later use or perform any other operations.
+By specifying the ‘beforeoutput’ attribute in some symbol, the corresponding function will be called when this symbol is expanded, just before the result of the expansion is output to the sample. The expansion result will be passed to the function in the ret_val variable. The function is then free to modify ret_val, store it for later use or perform any other operations.
 
 When using a special `<call>` symbol, the function (specified in a ‘function’ attribute) will be called when the symbol is encountered during language generation. Any value stored by the function in ret_val will be considered the result of the expansion (ret_val gets included in the sample).
 
@@ -224,7 +224,7 @@ The following symbols have a special meaning and should not be redefined by user
 - `<space>` - space character
 - `<tab>` - tab character
 - `<ex>` - ‘!’ character
-- `<char>` - can be used to generate an arbitrary ascii character using ‘code’ attribute. For example `<char code=97>` corresponds to ‘a’. Generates random character if not speciffied. Supports ‘min’ and ‘max’ attribute.
+- `<char>` - can be used to generate an arbitrary ascii character using ‘code’ attribute. For example `<char code=97>` corresponds to ‘a’. Generates random character if not specified. Supports ‘min’ and ‘max’ attribute.
 - `<hex>` - generates a random hex digit
 - `<int>`, `<int 8>`, `<uint8>`, `<int16>`, `<uint16>`, `<int32>`, `<uint32>`, `<int64>`, `<uint64>` - can be used to generate random integers. Supports ‘min’ and ‘max’ attribute that can be used to limit the range of integers that will be generated. Supports the ‘b’ and ‘be’ attribute which makes the output binary in little/big endian format instead of text output.
 - `<float>`, `<double>` - generates a random floating-point number. Supports ‘min’ and ‘max’ attribute (0 and 1 if not specified). Supports ‘b’ attribute which makes the output binary.
