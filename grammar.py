@@ -1,3 +1,4 @@
+from __future__ import print_function
 #   WeirDOM - grammar parser and generator
 #   --------------------------------------
 #
@@ -264,8 +265,8 @@ class Grammar(object):
         creator = self._creators['line'][lineno]
         self._ExpandRule('line', creator, tmp_context, 0, False)
         context = tmp_context
-      except RecursionError, e:
-        print 'Warning: ' + str(e)
+      except RecursionError as e:
+        print('Warning: ' + str(e))
     for i in range(len(context['lines'])/100):
       context['lines'].insert(random.randint(0,len(context['lines'])), 'freememory();')
     if not self._line_guard:
@@ -285,7 +286,7 @@ class Grammar(object):
     # pylint: disable=exec-used
     try:
       exec(compiled_function, args)
-    except Exception, e:
+    except Exception as e:
       raise GrammarError('Error in user-defined function: %s' % str(e))
     return args['ret_val']
 
@@ -443,7 +444,7 @@ class Grammar(object):
         try:
           expanded = self._Generate(part['tagname'], context,
                                     recursion_depth + 1, force_nonrecursive)
-        except RecursionError, e:
+        except RecursionError as e:
           if not force_nonrecursive:
             expanded = self._Generate(part['tagname'], context,
                                       recursion_depth + 1, True)
@@ -487,7 +488,7 @@ class Grammar(object):
       context = {'lastvar': 0, 'lines': [], 'variables': {}, 'force_var_reuse': False}
       return self._Generate(self._root, context, 0)
     else:
-      print 'Error: No root element defined.'
+      print('Error: No root element defined.')
       return ''
 
   def GenerateSymbol(self, name):
@@ -723,7 +724,7 @@ class Grammar(object):
     source = self._FixIdents(source)
     try:
       compiled_fn = compile(source, name, 'exec')
-    except (SyntaxError, TypeError), e:
+    except (SyntaxError, TypeError) as e:
       raise GrammarError('Error in user-defined function: %s' % str(e))
     self._functions[name] = compiled_fn
 
@@ -822,14 +823,14 @@ class Grammar(object):
             function_body = ''
             in_function = True
           else:
-            print 'Error parsing line ' + line
+            print('Error parsing line ' + line)
             num_errors += 1
         elif command == 'end' and params == 'function':
           if in_function:
             in_function = False
             self._SaveFunction(function_name, function_body)
         else:
-          print 'Unknown command: ' + command
+          print('Unknown command: ' + command)
           num_errors += 1
         continue
 
@@ -841,7 +842,7 @@ class Grammar(object):
         else:
           self._ParseGrammarLine(cleanline)
       except GrammarError:
-        print 'Error parsing line ' + line
+        print('Error parsing line ' + line)
         num_errors += 1
 
     return num_errors
@@ -852,7 +853,7 @@ class Grammar(object):
       content = f.read()
       f.close()
     except IOError:
-      print 'Error reading ' + filename
+      print('Error reading ' + filename)
       return 1
     self._definitions_dir = os.path.dirname(filename)
     return self.ParseFromString(content)
@@ -896,7 +897,7 @@ class Grammar(object):
       content = f.read()
       f.close()
     except IOError:
-      print 'Error reading ' + filename
+      print('Error reading ' + filename)
       return 1
     self._definitions_dir = os.path.dirname(filename)
     return self.ParseFromString(content)
