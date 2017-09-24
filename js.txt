@@ -4436,7 +4436,7 @@
 <CSSStyleDeclaration>.setProperty("vector-effect", "<cssproperty_vector-effect>");
 <CSSStyleDeclaration>.setProperty("vertical-align", "<cssproperty_vertical-align>");
 <CSSStyleDeclaration>.setProperty("visibility", "<cssproperty_visibility>");
-<CSSStyleDeclaration>.setProperty("visiblity", "<cssproperty_visiblity>");
+<CSSStyleDeclaration>.setProperty("visibility", "<cssproperty_visibility>");
 <CSSStyleDeclaration>.setProperty("weight", "<cssproperty_weight>");
 <CSSStyleDeclaration>.setProperty("white", "<cssproperty_white>");
 <CSSStyleDeclaration>.setProperty("white-space", "<cssproperty_white-space>");

@@ -581,7 +581,7 @@
 <cssproperty_name> = vector-effect
 <cssproperty_name> = vertical-align
 <cssproperty_name> = visibility
-<cssproperty_name> = visiblity
+<cssproperty_name> = visibility
 <cssproperty_name> = weight
 <cssproperty_name> = white
 <cssproperty_name> = white-space
@@ -1083,7 +1083,7 @@
 <cssproperty_value> = <cssproperty_vector-effect>
 <cssproperty_value> = <cssproperty_vertical-align>
 <cssproperty_value> = <cssproperty_visibility>
-<cssproperty_value> = <cssproperty_visiblity>
+<cssproperty_value> = <cssproperty_visibility>
 <cssproperty_value> = <cssproperty_weight>
 <cssproperty_value> = <cssproperty_white>
 <cssproperty_value> = <cssproperty_white-space>
@@ -1585,7 +1585,7 @@
 <cssproperty> = vector-effect: <cssproperty_vector-effect>
 <cssproperty> = vertical-align: <cssproperty_vertical-align>
 <cssproperty> = visibility: <cssproperty_visibility>
-<cssproperty> = visiblity: <cssproperty_visiblity>
+<cssproperty> = visibility: <cssproperty_visibility>
 <cssproperty> = weight: <cssproperty_weight>
 <cssproperty> = white: <cssproperty_white>
 <cssproperty> = white-space: <cssproperty_white-space>

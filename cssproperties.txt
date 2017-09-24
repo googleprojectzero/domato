@@ -3549,7 +3549,7 @@
 <cssproperty_visibility> = initial
 <cssproperty_visibility> = none
 
-<cssproperty_visiblity> = visible
+<cssproperty_visibility> = visible
 
 <cssproperty_weight> = *
 
