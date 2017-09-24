@@ -59,6 +59,7 @@ _HTML_TYPES = {
   'colgroup': 'HTMLUnknownElement',
   'command': 'HTMLUnknownElement',
   'content': 'HTMLContentElement',
+  'data': 'HTMLDataElement',
   'datalist': 'HTMLDataListElement',
   'dd': 'HTMLUnknownElement',
   'del': 'HTMLModElement',
@@ -154,6 +155,7 @@ _HTML_TYPES = {
   'tfoot': 'HTMLTableSectionElement',
   'th': 'HTMLTableCellElement',
   'thead': 'HTMLTableSectionElement',
+  'time': 'HTMLTimeElement',
   'title': 'HTMLTitleElement',
   'tr': 'HTMLTableRowElement',
   'track': 'HTMLTrackElement',
@@ -329,7 +331,7 @@ def GenerateNewSample(template, htmlgrammar, cssgrammar, jsgrammar):
 
   htmlctx = {'htmlvars':[], 'htmlvarctr':0, 'svgvarctr':0, 'htmlvargen':''}
   html = re.sub(r'<[a-zA-Z0-9_-]+\ ', lambda match: AddHTMLIDs(match, htmlctx), html)
-  GenerateHTMLElements(htmlctx, _N_ADDITIONAL_HTMLVARS); 
+  GenerateHTMLElements(htmlctx, _N_ADDITIONAL_HTMLVARS);
 
   result = result.replace('<cssfuzzer>', css)
   result = result.replace('<htmlfuzzer>', html)
@@ -407,12 +409,12 @@ def main():
   fuzzer_dir = os.path.dirname(__file__)
 
   multiple_samples = False
-  
+
   for a in sys.argv:
     if a.startswith('--output_dir='):
       multiple_samples = True
   if '--output_dir' in sys.argv:
-    multiple_samples = True    
+    multiple_samples = True
 
   if multiple_samples:
     print 'Running on ClusterFuzz'
@@ -426,7 +428,7 @@ def main():
       outfiles.append(os.path.join(out_dir, 'fuzz-' + str(i) + '.html'))
 
     GenerateSamples(fuzzer_dir, outfiles)
-      
+
   elif len(sys.argv) > 1:
     outfile = sys.argv[1]
     GenerateSamples(fuzzer_dir, [outfile])
