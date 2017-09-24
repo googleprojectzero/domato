@@ -135,7 +135,7 @@ Note that
 
 ##### Comments
 
-Everythng after the first '#' character on the line is considered a comment, so for example
+Everything after the first '#' character on the line is considered a comment, so for example
 
 ```
 #This is a comment
