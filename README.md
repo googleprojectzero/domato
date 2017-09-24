@@ -39,7 +39,7 @@ grammar.py contains the generation engine that is mostly application-agnostic an
 
 #### Using the generation engine and writing grammars
 
-To use the generation engine with a custom grammar, you can use the following python code
+To use the generation engine with a custom grammar, you can use the following python code:
 
 ```
 from grammar import Grammar
@@ -56,7 +56,7 @@ The following sections describe the syntax of the grammar files.
 
 Domato is based on an engine that, given a context-free grammar in a simple format specified below, generates samples from that grammar.
 
-A grammar is described as a set of rules in the following basic format
+A grammar is described as a set of rules in the following basic format:
 
 `<symbol> = a mix of constants and <other_symbol>s`
 
@@ -71,7 +71,7 @@ Consider the following simplified example of a part of the CSS grammar:
 <declaration> = width:100%
 ```
 
-If we instruct the grammar engine to parse that grammar and generate 'cssrule', we may end up with either
+If we instruct the grammar engine to parse that grammar and generate 'cssrule', we may end up with either:
 
 `a { width:100% }`
 
@@ -79,7 +79,7 @@ or
 
 `b { width:100% }`
 
-Note there are two rules for the 'selector' symbol. In such cases, when the generator is asked to generate a 'selector', it will select the rule to use at random. It is also possible to specify the probability of the rule using the 'p' attribute, for example
+Note there are two rules for the 'selector' symbol. In such cases, when the generator is asked to generate a 'selector', it will select the rule to use at random. It is also possible to specify the probability of the rule using the 'p' attribute, for example:
 
 ```
 <selector p=0.9> = a
@@ -90,7 +90,7 @@ In this case, the string 'a' would be output more often than 'b'
 
 There are other attributes that can be applied to symbols in addition to the probability. Those are listed in a separate section.
 
-Consider another example for generating html samples
+Consider another example for generating html samples:
 
 ```
 <html> = <lt>html<gt><head><body><lt>/html<gt>
@@ -114,7 +114,7 @@ To generate programming language code, a similar syntax can be used, but there a
 !end lines
 ```
 
-If we instruct the engine to generate 5 lines, we may end up with something like
+If we instruct the engine to generate 5 lines, we may end up with something like:
 
 ```
 try { var00001 = document.getElementById("hw"); } catch(e) {}
@@ -135,7 +135,7 @@ Note that
 
 ##### Comments
 
-Everythng after the first '#' character on the line is considered a comment, so for example
+Everythng after the first '#' character on the line is considered a comment, so for example:
 
 ```
 #This is a comment
@@ -159,7 +159,7 @@ Firstly, an optional ‘!max_recursion’ statement defines the maximum recursio
 
 In Domato, including and importing grammars are two different context.
 
-Including is simpler. You can use
+Including is simpler. You can use:
 
 ```
 !include other.txt
@@ -167,7 +167,7 @@ Including is simpler. You can use
 
 to include rules from other.txt into the currently parsed grammar.
 
-Importing works a bit differently
+Importing works a bit differently:
 
 ```
 !import other.txt
