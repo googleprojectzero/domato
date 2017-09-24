@@ -355,8 +355,8 @@
 <cssproperty_name> = cursor
 <cssproperty_name> = cx
 <cssproperty_name> = cy
-<cssproperty_name> = diplay
-<cssproperty_name> = dipslay
+<cssproperty_name> = display
+<cssproperty_name> = display
 <cssproperty_name> = direction
 <cssproperty_name> = display
 <cssproperty_name> = dominant-baseline
@@ -857,8 +857,8 @@
 <cssproperty_value> = <cssproperty_cursor>
 <cssproperty_value> = <cssproperty_cx>
 <cssproperty_value> = <cssproperty_cy>
-<cssproperty_value> = <cssproperty_diplay>
-<cssproperty_value> = <cssproperty_dipslay>
+<cssproperty_value> = <cssproperty_display>
+<cssproperty_value> = <cssproperty_display>
 <cssproperty_value> = <cssproperty_direction>
 <cssproperty_value> = <cssproperty_display>
 <cssproperty_value> = <cssproperty_dominant-baseline>
@@ -1359,8 +1359,8 @@
 <cssproperty> = cursor: <cssproperty_cursor>
 <cssproperty> = cx: <cssproperty_cx>
 <cssproperty> = cy: <cssproperty_cy>
-<cssproperty> = diplay: <cssproperty_diplay>
-<cssproperty> = dipslay: <cssproperty_dipslay>
+<cssproperty> = display: <cssproperty_display>
+<cssproperty> = display: <cssproperty_display>
 <cssproperty> = direction: <cssproperty_direction>
 <cssproperty> = display: <cssproperty_display>
 <cssproperty> = dominant-baseline: <cssproperty_dominant-baseline>

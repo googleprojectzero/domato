@@ -1411,9 +1411,9 @@
 
 <cssproperty_cy> = <fuzzint>px
 
-<cssproperty_diplay> = inline
+<cssproperty_display> = inline
 
-<cssproperty_dipslay> = none
+<cssproperty_display> = none
 
 <cssproperty_direction> = ltr
 <cssproperty_direction> = rtl

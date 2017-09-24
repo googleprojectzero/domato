@@ -4210,8 +4210,8 @@
 <CSSStyleDeclaration>.setProperty("cursor", "<cssproperty_cursor>");
 <CSSStyleDeclaration>.setProperty("cx", "<cssproperty_cx>");
 <CSSStyleDeclaration>.setProperty("cy", "<cssproperty_cy>");
-<CSSStyleDeclaration>.setProperty("diplay", "<cssproperty_diplay>");
-<CSSStyleDeclaration>.setProperty("dipslay", "<cssproperty_dipslay>");
+<CSSStyleDeclaration>.setProperty("display", "<cssproperty_display>");
+<CSSStyleDeclaration>.setProperty("display", "<cssproperty_display>");
 <CSSStyleDeclaration>.setProperty("direction", "<cssproperty_direction>");
 <CSSStyleDeclaration>.setProperty("display", "<cssproperty_display>");
 <CSSStyleDeclaration>.setProperty("dominant-baseline", "<cssproperty_dominant-baseline>");
