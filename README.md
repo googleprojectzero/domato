@@ -249,7 +249,7 @@ The following attributes are supported:
 - minlength, maxlength - used when generating strings to specify the minimum and maximum length.
 - up - used in hex symbol to specify uppercase output (lowercase is the default).
 - function - used in the `<call>` symbol, see ‘Including Python code’ section for more info.
-- beforeoutput - used to call user-specified functions, see ‘Including Python
+- beforeoutput - used to call user-specified functions, see ‘Including Python’.
 
 #### Bug Showcase
 
