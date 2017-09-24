@@ -4244,7 +4244,7 @@
 <CSSStyleDeclaration>.setProperty("font-variant-ligatures", "<cssproperty_font-variant-ligatures>");
 <CSSStyleDeclaration>.setProperty("font-vendor", "<cssproperty_font-vendor>");
 <CSSStyleDeclaration>.setProperty("font-weight", "<cssproperty_font-weight>");
-<CSSStyleDeclaration>.setProperty("font-weigth", "<cssproperty_font-weigth>");
+<CSSStyleDeclaration>.setProperty("font-weight", "<cssproperty_font-weight>");
 <CSSStyleDeclaration>.setProperty("fonty-family", "<cssproperty_fonty-family>");
 <CSSStyleDeclaration>.setProperty("grid", "<cssproperty_grid>");
 <CSSStyleDeclaration>.setProperty("grid-area", "<cssproperty_grid-area>");

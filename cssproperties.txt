@@ -1895,7 +1895,7 @@
 <cssproperty_font-weight> = unset
 <cssproperty_font-weight> = <fuzzint>px
 
-<cssproperty_font-weigth> = <fuzzint>px
+<cssproperty_font-weight> = <fuzzint>px
 
 <cssproperty_fonty-family> = Times
 

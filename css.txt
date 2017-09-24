@@ -389,7 +389,7 @@
 <cssproperty_name> = font-variant-ligatures
 <cssproperty_name> = font-vendor
 <cssproperty_name> = font-weight
-<cssproperty_name> = font-weigth
+<cssproperty_name> = font-weight
 <cssproperty_name> = fonty-family
 <cssproperty_name> = grid
 <cssproperty_name> = grid-area
@@ -891,7 +891,7 @@
 <cssproperty_value> = <cssproperty_font-variant-ligatures>
 <cssproperty_value> = <cssproperty_font-vendor>
 <cssproperty_value> = <cssproperty_font-weight>
-<cssproperty_value> = <cssproperty_font-weigth>
+<cssproperty_value> = <cssproperty_font-weight>
 <cssproperty_value> = <cssproperty_fonty-family>
 <cssproperty_value> = <cssproperty_grid>
 <cssproperty_value> = <cssproperty_grid-area>
@@ -1393,7 +1393,7 @@
 <cssproperty> = font-variant-ligatures: <cssproperty_font-variant-ligatures>
 <cssproperty> = font-vendor: <cssproperty_font-vendor>
 <cssproperty> = font-weight: <cssproperty_font-weight>
-<cssproperty> = font-weigth: <cssproperty_font-weigth>
+<cssproperty> = font-weight: <cssproperty_font-weight>
 <cssproperty> = fonty-family: <cssproperty_fonty-family>
 <cssproperty> = grid: <cssproperty_grid>
 <cssproperty> = grid-area: <cssproperty_grid-area>
