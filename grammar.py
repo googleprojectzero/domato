@@ -864,7 +864,7 @@ class Grammar(object):
     See go/borgfuzz-grammar for the rule syntax.
 
     Args:
-      grammar_str: String contianing the grammar.
+      grammar_str: String containing the grammar.
 
     Returns:
       Number of errors encountered during the parsing.
