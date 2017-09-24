@@ -2428,7 +2428,7 @@
 <cssproperty_list-style-type> = telugu
 <cssproperty_list-style-type> = thai
 <cssproperty_list-style-type> = tibetan
-<cssproperty_list-style-type> = decimial
+<cssproperty_list-style-type> = decimal
 <cssproperty_list-style-type> = cjk-earthly-branch
 <cssproperty_list-style-type> = cjk-heavenly-stem
 <cssproperty_list-style-type> = hangul-consonant
