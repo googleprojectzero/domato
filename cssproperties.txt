@@ -3562,7 +3562,7 @@
 <cssproperty_white-space> = pre-line
 <cssproperty_white-space> = inherit
 <cssproperty_white-space> = -webkit-nowrap
-<cssproperty_white-space> = normall
+<cssproperty_white-space> = normal
 <cssproperty_white-space> = pre garbage
 <cssproperty_white-space> = pre auto
 <cssproperty_white-space> = x-bogus
