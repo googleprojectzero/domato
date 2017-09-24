@@ -808,7 +808,7 @@
 <keygen_attribute> = <attribute_onerror>
 <keygen_attribute> = <attribute_keytype>
 <keygen_attribute> = <attribute_autofocus>
-<keygen_attribute> = <attribute_challange>
+<keygen_attribute> = <attribute_challenge>
 <keygen_attributes> = <keygen_attribute> <keygen_attribute> <keygen_attribute> <keygen_attribute> <keygen_attribute>
 
 <label_attribute> = <attribute_style>

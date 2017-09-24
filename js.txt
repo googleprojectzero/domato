@@ -3652,7 +3652,7 @@
 <Element>.setAttribute("case", "<capture_value>");
 <Element>.setAttribute("cellpadding", "<cellpadding_value>");
 <Element>.setAttribute("cellspacing", "<cellspacing_value>");
-<Element>.setAttribute("challange", "<challange_value>");
+<Element>.setAttribute("challenge", "<challenge_value>");
 <Element>.setAttribute("char", "<char_value>");
 <Element>.setAttribute("charoff", "<charoff_value>");
 <Element>.setAttribute("charset", "<charset_value>");
