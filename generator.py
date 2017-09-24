@@ -378,7 +378,7 @@ def GenerateSamples(grammar_dir, outfiles):
     print 'There were errors parsing grammar'
     return
 
-  # JS and HTML grammar need acces to CSS grammar.
+  # JS and HTML grammar need access to CSS grammar.
   # Add it as import
   htmlgrammar.AddImport('cssgrammar', cssgrammar)
   jsgrammar.AddImport('cssgrammar', cssgrammar)
