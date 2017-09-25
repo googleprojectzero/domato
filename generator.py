@@ -1,3 +1,4 @@
+from __future__ import print_function
 #   WeirDOM - main generator script
 #   -------------------------------
 #
@@ -307,7 +308,7 @@ def CheckGrammar(grammar):
       tagname = part['tagname']
       #print tagname
       if not tagname in grammar._creators:
-        print 'No creators for type ' + tagname
+        print('No creators for type ' + tagname)
 
 def GenerateNewSample(template, htmlgrammar, cssgrammar, jsgrammar):
   """Parses grammar rules from string.
@@ -361,21 +362,21 @@ def GenerateSamples(grammar_dir, outfiles):
   err = htmlgrammar.ParseFromFile(os.path.join(grammar_dir, 'html.txt'))
   #CheckGrammar(htmlgrammar)
   if err > 0:
-    print 'There were errors parsing grammar'
+    print('There were errors parsing grammar')
     return
 
   cssgrammar = Grammar()
   err = cssgrammar.ParseFromFile(os.path.join(grammar_dir, 'css.txt'))
   #CheckGrammar(cssgrammar)
   if err > 0:
-    print 'There were errors parsing grammar'
+    print('There were errors parsing grammar')
     return
 
   jsgrammar = Grammar()
   err = jsgrammar.ParseFromFile(os.path.join(grammar_dir, 'js.txt'))
   #CheckGrammar(jsgrammar)
   if err > 0:
-    print 'There were errors parsing grammar'
+    print('There were errors parsing grammar')
     return
 
   # JS and HTML grammar need acces to CSS grammar.
@@ -387,13 +388,13 @@ def GenerateSamples(grammar_dir, outfiles):
     result = GenerateNewSample(template, htmlgrammar, cssgrammar, jsgrammar)
 
     if result is not None:
-      print 'Writing a sample to ' + outfile
+      print('Writing a sample to ' + outfile)
       try:
         f = open(outfile, 'w')
         f.write(result)
         f.close()
       except IOError:
-        print 'Error writing to output'
+        print('Error writing to output')
 
 def getOption(option_name):
   for i in range(len(sys.argv)):
@@ -415,11 +416,11 @@ def main():
     multiple_samples = True    
 
   if multiple_samples:
-    print 'Running on ClusterFuzz'
+    print('Running on ClusterFuzz')
     out_dir = getOption('--output_dir')
     nsamples = int(getOption('--no_of_files'))
-    print 'Output directory: ' + out_dir
-    print 'Number of samples: ' + str(nsamples)
+    print('Output directory: ' + out_dir)
+    print('Number of samples: ' + str(nsamples))
 
     outfiles = []
     for i in range(nsamples):
@@ -432,7 +433,7 @@ def main():
     GenerateSamples(fuzzer_dir, [outfile])
 
   else:
-    print 'Arguments missing'
+    print('Arguments missing')
 
 if __name__ == '__main__':
   main()
