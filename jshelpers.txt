@@ -2135,7 +2135,7 @@
 <SelectionMode> = "preserve"
 
 <charcode> = <int min=32 max=126>
-<unicode> = <int min=0 max=65535>
+<unicode> = <int min=0 max=1114111>
 
 #some elementary types
 
@@ -2143,7 +2143,7 @@
 <DOMString> = "foo"
 <DOMString> = "1"
 <DOMString> = String.fromCharCode(<charcode>, <charcode>, <charcode>, <charcode>, <charcode>, <charcode>, <charcode>, <charcode>, <charcode>, <charcode>, <charcode>, <charcode>, <charcode>, <charcode>, <charcode>, <charcode>, <charcode>, <charcode>, <charcode>, <charcode>)
-<DOMString> = String.fromCharCode(<unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>)
+<DOMString> = String.fromCodePoint(<unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>, <unicode>)
 
 <cssvar> = --cssvara
 <cssvar> = --cssvarb
