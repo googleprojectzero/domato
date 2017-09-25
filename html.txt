@@ -266,7 +266,7 @@
 <attribute> = <attribute_capture>
 <attribute> = <attribute_cellpadding>
 <attribute> = <attribute_cellspacing>
-<attribute> = <attribute_challange>
+<attribute> = <attribute_challenge>
 <attribute> = <attribute_char>
 <attribute> = <attribute_charoff>
 <attribute> = <attribute_charset>
@@ -648,7 +648,7 @@
 <attribute_capture> = case="<capture_value>"
 <attribute_cellpadding> = cellpadding="<cellpadding_value>"
 <attribute_cellspacing> = cellspacing="<cellspacing_value>"
-<attribute_challange> = challange="<challange_value>"
+<attribute_challenge> = challenge="<challenge_value>"
 <attribute_char> = char="<char_value>"
 <attribute_charoff> = charoff="<charoff_value>"
 <attribute_charset> = charset="<charset_value>"

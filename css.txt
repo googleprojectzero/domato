@@ -355,8 +355,8 @@
 <cssproperty_name> = cursor
 <cssproperty_name> = cx
 <cssproperty_name> = cy
-<cssproperty_name> = diplay
-<cssproperty_name> = dipslay
+<cssproperty_name> = display
+<cssproperty_name> = display
 <cssproperty_name> = direction
 <cssproperty_name> = display
 <cssproperty_name> = dominant-baseline
@@ -389,7 +389,7 @@
 <cssproperty_name> = font-variant-ligatures
 <cssproperty_name> = font-vendor
 <cssproperty_name> = font-weight
-<cssproperty_name> = font-weigth
+<cssproperty_name> = font-weight
 <cssproperty_name> = fonty-family
 <cssproperty_name> = grid
 <cssproperty_name> = grid-area
@@ -581,7 +581,7 @@
 <cssproperty_name> = vector-effect
 <cssproperty_name> = vertical-align
 <cssproperty_name> = visibility
-<cssproperty_name> = visiblity
+<cssproperty_name> = visibility
 <cssproperty_name> = weight
 <cssproperty_name> = white
 <cssproperty_name> = white-space
@@ -857,8 +857,8 @@
 <cssproperty_value> = <cssproperty_cursor>
 <cssproperty_value> = <cssproperty_cx>
 <cssproperty_value> = <cssproperty_cy>
-<cssproperty_value> = <cssproperty_diplay>
-<cssproperty_value> = <cssproperty_dipslay>
+<cssproperty_value> = <cssproperty_display>
+<cssproperty_value> = <cssproperty_display>
 <cssproperty_value> = <cssproperty_direction>
 <cssproperty_value> = <cssproperty_display>
 <cssproperty_value> = <cssproperty_dominant-baseline>
@@ -891,7 +891,7 @@
 <cssproperty_value> = <cssproperty_font-variant-ligatures>
 <cssproperty_value> = <cssproperty_font-vendor>
 <cssproperty_value> = <cssproperty_font-weight>
-<cssproperty_value> = <cssproperty_font-weigth>
+<cssproperty_value> = <cssproperty_font-weight>
 <cssproperty_value> = <cssproperty_fonty-family>
 <cssproperty_value> = <cssproperty_grid>
 <cssproperty_value> = <cssproperty_grid-area>
@@ -1083,7 +1083,7 @@
 <cssproperty_value> = <cssproperty_vector-effect>
 <cssproperty_value> = <cssproperty_vertical-align>
 <cssproperty_value> = <cssproperty_visibility>
-<cssproperty_value> = <cssproperty_visiblity>
+<cssproperty_value> = <cssproperty_visibility>
 <cssproperty_value> = <cssproperty_weight>
 <cssproperty_value> = <cssproperty_white>
 <cssproperty_value> = <cssproperty_white-space>
@@ -1359,8 +1359,8 @@
 <cssproperty> = cursor: <cssproperty_cursor>
 <cssproperty> = cx: <cssproperty_cx>
 <cssproperty> = cy: <cssproperty_cy>
-<cssproperty> = diplay: <cssproperty_diplay>
-<cssproperty> = dipslay: <cssproperty_dipslay>
+<cssproperty> = display: <cssproperty_display>
+<cssproperty> = display: <cssproperty_display>
 <cssproperty> = direction: <cssproperty_direction>
 <cssproperty> = display: <cssproperty_display>
 <cssproperty> = dominant-baseline: <cssproperty_dominant-baseline>
@@ -1393,7 +1393,7 @@
 <cssproperty> = font-variant-ligatures: <cssproperty_font-variant-ligatures>
 <cssproperty> = font-vendor: <cssproperty_font-vendor>
 <cssproperty> = font-weight: <cssproperty_font-weight>
-<cssproperty> = font-weigth: <cssproperty_font-weigth>
+<cssproperty> = font-weight: <cssproperty_font-weight>
 <cssproperty> = fonty-family: <cssproperty_fonty-family>
 <cssproperty> = grid: <cssproperty_grid>
 <cssproperty> = grid-area: <cssproperty_grid-area>
@@ -1585,7 +1585,7 @@
 <cssproperty> = vector-effect: <cssproperty_vector-effect>
 <cssproperty> = vertical-align: <cssproperty_vertical-align>
 <cssproperty> = visibility: <cssproperty_visibility>
-<cssproperty> = visiblity: <cssproperty_visiblity>
+<cssproperty> = visibility: <cssproperty_visibility>
 <cssproperty> = weight: <cssproperty_weight>
 <cssproperty> = white: <cssproperty_white>
 <cssproperty> = white-space: <cssproperty_white-space>

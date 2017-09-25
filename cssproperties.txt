@@ -1411,9 +1411,9 @@
 
 <cssproperty_cy> = <fuzzint>px
 
-<cssproperty_diplay> = inline
+<cssproperty_display> = inline
 
-<cssproperty_dipslay> = none
+<cssproperty_display> = none
 
 <cssproperty_direction> = ltr
 <cssproperty_direction> = rtl
@@ -1895,7 +1895,7 @@
 <cssproperty_font-weight> = unset
 <cssproperty_font-weight> = <fuzzint>px
 
-<cssproperty_font-weigth> = <fuzzint>px
+<cssproperty_font-weight> = <fuzzint>px
 
 <cssproperty_fonty-family> = Times
 
@@ -2428,7 +2428,7 @@
 <cssproperty_list-style-type> = telugu
 <cssproperty_list-style-type> = thai
 <cssproperty_list-style-type> = tibetan
-<cssproperty_list-style-type> = decimial
+<cssproperty_list-style-type> = decimal
 <cssproperty_list-style-type> = cjk-earthly-branch
 <cssproperty_list-style-type> = cjk-heavenly-stem
 <cssproperty_list-style-type> = hangul-consonant
@@ -3549,7 +3549,7 @@
 <cssproperty_visibility> = initial
 <cssproperty_visibility> = none
 
-<cssproperty_visiblity> = visible
+<cssproperty_visibility> = visible
 
 <cssproperty_weight> = *
 
@@ -3562,7 +3562,7 @@
 <cssproperty_white-space> = pre-line
 <cssproperty_white-space> = inherit
 <cssproperty_white-space> = -webkit-nowrap
-<cssproperty_white-space> = normall
+<cssproperty_white-space> = normal
 <cssproperty_white-space> = pre garbage
 <cssproperty_white-space> = pre auto
 <cssproperty_white-space> = x-bogus

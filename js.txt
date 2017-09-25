@@ -3652,7 +3652,7 @@
 <Element>.setAttribute("case", "<capture_value>");
 <Element>.setAttribute("cellpadding", "<cellpadding_value>");
 <Element>.setAttribute("cellspacing", "<cellspacing_value>");
-<Element>.setAttribute("challange", "<challange_value>");
+<Element>.setAttribute("challenge", "<challenge_value>");
 <Element>.setAttribute("char", "<char_value>");
 <Element>.setAttribute("charoff", "<charoff_value>");
 <Element>.setAttribute("charset", "<charset_value>");
@@ -4210,8 +4210,8 @@
 <CSSStyleDeclaration>.setProperty("cursor", "<cssproperty_cursor>");
 <CSSStyleDeclaration>.setProperty("cx", "<cssproperty_cx>");
 <CSSStyleDeclaration>.setProperty("cy", "<cssproperty_cy>");
-<CSSStyleDeclaration>.setProperty("diplay", "<cssproperty_diplay>");
-<CSSStyleDeclaration>.setProperty("dipslay", "<cssproperty_dipslay>");
+<CSSStyleDeclaration>.setProperty("display", "<cssproperty_display>");
+<CSSStyleDeclaration>.setProperty("display", "<cssproperty_display>");
 <CSSStyleDeclaration>.setProperty("direction", "<cssproperty_direction>");
 <CSSStyleDeclaration>.setProperty("display", "<cssproperty_display>");
 <CSSStyleDeclaration>.setProperty("dominant-baseline", "<cssproperty_dominant-baseline>");
@@ -4244,7 +4244,7 @@
 <CSSStyleDeclaration>.setProperty("font-variant-ligatures", "<cssproperty_font-variant-ligatures>");
 <CSSStyleDeclaration>.setProperty("font-vendor", "<cssproperty_font-vendor>");
 <CSSStyleDeclaration>.setProperty("font-weight", "<cssproperty_font-weight>");
-<CSSStyleDeclaration>.setProperty("font-weigth", "<cssproperty_font-weigth>");
+<CSSStyleDeclaration>.setProperty("font-weight", "<cssproperty_font-weight>");
 <CSSStyleDeclaration>.setProperty("fonty-family", "<cssproperty_fonty-family>");
 <CSSStyleDeclaration>.setProperty("grid", "<cssproperty_grid>");
 <CSSStyleDeclaration>.setProperty("grid-area", "<cssproperty_grid-area>");
@@ -4436,7 +4436,7 @@
 <CSSStyleDeclaration>.setProperty("vector-effect", "<cssproperty_vector-effect>");
 <CSSStyleDeclaration>.setProperty("vertical-align", "<cssproperty_vertical-align>");
 <CSSStyleDeclaration>.setProperty("visibility", "<cssproperty_visibility>");
-<CSSStyleDeclaration>.setProperty("visiblity", "<cssproperty_visiblity>");
+<CSSStyleDeclaration>.setProperty("visibility", "<cssproperty_visibility>");
 <CSSStyleDeclaration>.setProperty("weight", "<cssproperty_weight>");
 <CSSStyleDeclaration>.setProperty("white", "<cssproperty_white>");
 <CSSStyleDeclaration>.setProperty("white-space", "<cssproperty_white-space>");
