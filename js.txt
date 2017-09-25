@@ -1523,6 +1523,18 @@
 <new long> = <HTMLCollection>.length;
 <new Element> = <HTMLCollection id=1>.item(<int min=0 max=100>%<HTMLCollection id=1>.length);
 
+#HTMLDataElement
+!extends HTMLDataElement Element
+<new Element> = <HTMLDataElement>;
+<new DOMString> = <HTMLDataElement>.value;
+<HTMLDataElement>.value = "<value_value>";
+
+#HTMLTimeElement
+!extends HTMLTimeElement Element
+<new Element> = <HTMLTimeElement>;
+<new DOMString> = <HTMLTimeElement>.dateTime;
+<HTMLTimeElement>.dateTime = "<datetime_value>";
+
 #HTMLMarqueeElement
 !extends HTMLMarqueeElement Element
 <new Element> = <HTMLMarqueeElement>;
