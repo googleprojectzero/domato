@@ -228,7 +228,7 @@
 
 <cellspacing_value> = <fuzzint>
 
-<challange_value> = <attributestring>
+<challenge_value> = <attributestring>
 
 <char_value> = <attributechar>
 
