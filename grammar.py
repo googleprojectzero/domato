@@ -1,4 +1,3 @@
-from __future__ import print_function
 #   WeirDOM - grammar parser and generator
 #   --------------------------------------
 #
@@ -18,6 +17,7 @@ from __future__ import print_function
 #   limitations under the License.
 
 
+from __future__ import print_function
 import bisect
 import cgi
 import os
