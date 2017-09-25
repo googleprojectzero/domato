@@ -337,7 +337,7 @@ class Grammar(object):
                 recursion_depth=0, force_nonrecursive=False):
     """Generates a user-defined symbol.
 
-    Selects a rule for the given sybmbol and resolves the right-hand side
+    Selects a rule for the given symbol and resolves the right-hand side
     of the rule.
 
     Args:
@@ -865,7 +865,7 @@ class Grammar(object):
     See go/borgfuzz-grammar for the rule syntax.
 
     Args:
-      grammar_str: String contianing the grammar.
+      grammar_str: String containing the grammar.
 
     Returns:
       Number of errors encountered during the parsing.
