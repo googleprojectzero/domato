@@ -39,7 +39,7 @@ grammar.py contains the generation engine that is mostly application-agnostic an
 
 #### Using the generation engine and writing grammars
 
-To use the generation engine with a custom grammar, you can use the following python code
+To use the generation engine with a custom grammar, you can use the following python code:
 
 ```
 from grammar import Grammar
@@ -56,7 +56,7 @@ The following sections describe the syntax of the grammar files.
 
 Domato is based on an engine that, given a context-free grammar in a simple format specified below, generates samples from that grammar.
 
-A grammar is described as a set of rules in the following basic format
+A grammar is described as a set of rules in the following basic format:
 
 `<symbol> = a mix of constants and <other_symbol>s`
 
@@ -71,7 +71,7 @@ Consider the following simplified example of a part of the CSS grammar:
 <declaration> = width:100%
 ```
 
-If we instruct the grammar engine to parse that grammar and generate 'cssrule', we may end up with either
+If we instruct the grammar engine to parse that grammar and generate 'cssrule', we may end up with either:
 
 `a { width:100% }`
 
@@ -79,18 +79,18 @@ or
 
 `b { width:100% }`
 
-Note there are two rules for the 'selector' symbol. In such cases, when the generator is asked to generate a 'selector', it will select the rule to use at random. It is also possible to specify the probability of the rule using the 'p' attribute, for example
+Note there are two rules for the 'selector' symbol. In such cases, when the generator is asked to generate a 'selector', it will select the rule to use at random. It is also possible to specify the probability of the rule using the 'p' attribute, for example:
 
 ```
 <selector p=0.9> = a
 <selector p=0.1> = b
 ```
 
-In this case, the string 'a' would be output more often than 'b'
+In this case, the string 'a' would be output more often than 'b'.
 
 There are other attributes that can be applied to symbols in addition to the probability. Those are listed in a separate section.
 
-Consider another example for generating html samples
+Consider another example for generating html samples:
 
 ```
 <html> = <lt>html<gt><head><body><lt>/html<gt>
@@ -114,7 +114,7 @@ To generate programming language code, a similar syntax can be used, but there a
 !end lines
 ```
 
-If we instruct the engine to generate 5 lines, we may end up with something like
+If we instruct the engine to generate 5 lines, we may end up with something like:
 
 ```
 try { var00001 = document.getElementById("hw"); } catch(e) {}
@@ -129,13 +129,13 @@ Note that
 - programming language lines are enclosed in '!begin lines' and '!end lines' statement. This gives the grammar parser the necessary information that the lines inbetween are programming language lines and are thus parsed differently.
 - We used `<new element>` instead of `<element>`. This instructs the generator to create a new variable of type 'element' instead of generating the 'element' symbol.
 - `<string>` is one of the built-in symbols so no need to define it.
-- [optional] You can use !varformat statement to define the format of variables you want to use
+- [optional] You can use !varformat statement to define the format of variables you want to use.
 - [optional] You can use !lineguard statement to define additional code that gets inserted around every line in order to catch exceptions or perform other tasks. This is so you wouldn't need to write it for every line separately.
 - In addition to '!begin lines' and '!end lines' you can also use '!begin helperlines' and '!end helperlines' to define lines of code that will only ever be used if required when generating other lines (for example, helper lines might generate variables needed by the 'main' code, but you don't ever want those helper lines to end up in the output when they are not needed).
 
 ##### Comments
 
-Everything after the first '#' character on the line is considered a comment, so for example
+Everything after the first '#' character on the line is considered a comment, so for example:
 
 ```
 #This is a comment
@@ -159,7 +159,7 @@ Firstly, an optional ‘!max_recursion’ statement defines the maximum recursio
 
 In Domato, including and importing grammars are two different context.
 
-Including is simpler. You can use
+Including is simpler. You can use:
 
 ```
 !include other.txt
@@ -167,7 +167,7 @@ Including is simpler. You can use
 
 to include rules from other.txt into the currently parsed grammar.
 
-Importing works a bit differently
+Importing works a bit differently:
 
 ```
 !import other.txt
@@ -225,10 +225,10 @@ The following symbols have a special meaning and should not be redefined by user
 - `<tab>` - tab character
 - `<ex>` - ‘!’ character
 - `<char>` - can be used to generate an arbitrary ascii character using ‘code’ attribute. For example `<char code=97>` corresponds to ‘a’. Generates random character if not specified. Supports ‘min’ and ‘max’ attribute.
-- `<hex>` - generates a random hex digit
+- `<hex>` - generates a random hex digit.
 - `<int>`, `<int 8>`, `<uint8>`, `<int16>`, `<uint16>`, `<int32>`, `<uint32>`, `<int64>`, `<uint64>` - can be used to generate random integers. Supports ‘min’ and ‘max’ attribute that can be used to limit the range of integers that will be generated. Supports the ‘b’ and ‘be’ attribute which makes the output binary in little/big endian format instead of text output.
 - `<float>`, `<double>` - generates a random floating-point number. Supports ‘min’ and ‘max’ attribute (0 and 1 if not specified). Supports ‘b’ attribute which makes the output binary.
-- `<string>` - generates a random string. Supports ‘min’ and ‘max’ attributes which control the minimum and maximum charcode generated as well as ‘minlength’ and ‘maxlength’ attributes that control the length of the string
+- `<string>` - generates a random string. Supports ‘min’ and ‘max’ attributes which control the minimum and maximum charcode generated as well as ‘minlength’ and ‘maxlength’ attributes that control the length of the string.
 - `<lines>` - outputs the given number (via ‘count’ attribute) lines of code. See the section on generating programming language code for example.
 - `<import>` - imports a symbol from another grammar, see the section on including external grammars for details.
 - `<call>` - calls a user-defined function corresponding to the function attribute. See the section on including Python code in the grammar for more info.
@@ -249,7 +249,7 @@ The following attributes are supported:
 - minlength, maxlength - used when generating strings to specify the minimum and maximum length.
 - up - used in hex symbol to specify uppercase output (lowercase is the default).
 - function - used in the `<call>` symbol, see ‘Including Python code’ section for more info.
-- beforeoutput - used to call user-specified functions, see ‘Including Python
+- beforeoutput - used to call user-specified functions, see ‘Including Python’.
 
 #### Bug Showcase
 
