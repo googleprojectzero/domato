@@ -229,6 +229,7 @@ The following symbols have a special meaning and should not be redefined by user
 - `<int>`, `<int 8>`, `<uint8>`, `<int16>`, `<uint16>`, `<int32>`, `<uint32>`, `<int64>`, `<uint64>` - can be used to generate random integers. Supports ‘min’ and ‘max’ attribute that can be used to limit the range of integers that will be generated. Supports the ‘b’ and ‘be’ attribute which makes the output binary in little/big endian format instead of text output.
 - `<float>`, `<double>` - generates a random floating-point number. Supports ‘min’ and ‘max’ attribute (0 and 1 if not specified). Supports ‘b’ attribute which makes the output binary.
 - `<string>` - generates a random string. Supports ‘min’ and ‘max’ attributes which control the minimum and maximum charcode generated as well as ‘minlength’ and ‘maxlength’ attributes that control the length of the string.
+- `<htmlsafestring>` - same as `<string>` except HTML metacharacters will be escaped, making it safe to embed the string as part of HTML text or attribute values.
 - `<lines>` - outputs the given number (via ‘count’ attribute) lines of code. See the section on generating programming language code for example.
 - `<import>` - imports a symbol from another grammar, see the section on including external grammars for details.
 - `<call>` - calls a user-defined function corresponding to the function attribute. See the section on including Python code in the grammar for more info.
