@@ -296,7 +296,7 @@ def generate_function_body(jsgrammar, htmlctx, num_lines):
     js += "SetVariable(fuzzervars, window, 'Window');\nSetVariable(fuzzervars, document, 'Document');\nSetVariable(fuzzervars, document.body.firstChild, 'Element');\n\n"
     js += '//beginjs\n'
     js += htmlctx['htmlvargen']
-    js += jsgrammar._GenerateCode(num_lines, htmlctx['htmlvars'])
+    js += jsgrammar._generate_code(num_lines, htmlctx['htmlvars'])
     js += '\n//endjs\n'
     js += 'var fuzzervars = {};\nfreememory()\n'
     return js
@@ -334,8 +334,8 @@ def generate_new_sample(template, htmlgrammar, cssgrammar, jsgrammar):
 
     result = template
 
-    css = cssgrammar.GenerateSymbol('rules')
-    html = htmlgrammar.GenerateSymbol('bodyelements')
+    css = cssgrammar.generate_symbol('rules')
+    html = htmlgrammar.generate_symbol('bodyelements')
 
     htmlctx = {
         'htmlvars': [],
@@ -382,21 +382,21 @@ def generate_samples(grammar_dir, outfiles):
     f.close()
 
     htmlgrammar = Grammar()
-    err = htmlgrammar.ParseFromFile(os.path.join(grammar_dir, 'html.txt'))
+    err = htmlgrammar.parse_from_file(os.path.join(grammar_dir, 'html.txt'))
     # CheckGrammar(htmlgrammar)
     if err > 0:
         print('There were errors parsing grammar')
         return
 
     cssgrammar = Grammar()
-    err = cssgrammar.ParseFromFile(os.path.join(grammar_dir, 'css.txt'))
+    err = cssgrammar.parse_from_file(os.path.join(grammar_dir, 'css.txt'))
     # CheckGrammar(cssgrammar)
     if err > 0:
         print('There were errors parsing grammar')
         return
 
     jsgrammar = Grammar()
-    err = jsgrammar.ParseFromFile(os.path.join(grammar_dir, 'js.txt'))
+    err = jsgrammar.parse_from_file(os.path.join(grammar_dir, 'js.txt'))
     # CheckGrammar(jsgrammar)
     if err > 0:
         print('There were errors parsing grammar')
@@ -404,8 +404,8 @@ def generate_samples(grammar_dir, outfiles):
 
     # JS and HTML grammar need access to CSS grammar.
     # Add it as import
-    htmlgrammar.AddImport('cssgrammar', cssgrammar)
-    jsgrammar.AddImport('cssgrammar', cssgrammar)
+    htmlgrammar.add_import('cssgrammar', cssgrammar)
+    jsgrammar.add_import('cssgrammar', cssgrammar)
 
     for outfile in outfiles:
         result = generate_new_sample(template, htmlgrammar, cssgrammar,

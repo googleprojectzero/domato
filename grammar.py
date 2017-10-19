@@ -79,11 +79,11 @@ class Grammar(object):
 
     To use you need to first parse the grammar definition file, example:
     >>> grammar = Grammar()
-    >>> grammar.ParseFromFile('grammar.txt')
+    >>> grammar.parse_from_file('grammar.txt')
     After this, you can generate the language starting from the root symbol:
-    >>> ret = grammar.GenerateRoot()
+    >>> ret = grammar.generate_root()
     Or a specific symbol
-    >>> ret = grammar.GenerateSymbol('foo')
+    >>> ret = grammar.generate_symbol('foo')
     """
 
     def __init__(self):
@@ -129,50 +129,50 @@ class Grammar(object):
         }
 
         self._built_in_types = {
-            'int': self._GenerateInt,
-            'int32': self._GenerateInt,
-            'uint32': self._GenerateInt,
-            'int8': self._GenerateInt,
-            'uint8': self._GenerateInt,
-            'int16': self._GenerateInt,
-            'uint16': self._GenerateInt,
-            'int64': self._GenerateInt,
-            'uint64': self._GenerateInt,
-            'float': self._GenerateFloat,
-            'double': self._GenerateFloat,
-            'char': self._GenerateChar,
-            'string': self._GenerateString,
-            'htmlsafestring': self._GenerateHtmlString,
-            'hex': self._GenerateHex,
-            'import': self._GenerateImport,
-            'lines': self._GenerateLines
+            'int': self._generate_int,
+            'int32': self._generate_int,
+            'uint32': self._generate_int,
+            'int8': self._generate_int,
+            'uint8': self._generate_int,
+            'int16': self._generate_int,
+            'uint16': self._generate_int,
+            'int64': self._generate_int,
+            'uint64': self._generate_int,
+            'float': self._generate_float,
+            'double': self._generate_float,
+            'char': self._generate_char,
+            'string': self._generate_string,
+            'htmlsafestring': self._generate_html_string,
+            'hex': self._generate_hex,
+            'import': self._generate_import,
+            'lines': self._generate_lines
         }
 
         self._command_handlers = {
-            'varformat': self._SetVariableFormat,
-            'include': self._IncludeFromFile,
-            'import': self._ImportGrammar,
-            'lineguard': self._SetLineGuard,
-            'max_recursion': self._SetRecursionDepth,
-            'var_reuse_prob': self._SetVarReuseProbability,
-            'extends': self._SetExtends
+            'varformat': self._set_variable_format,
+            'include': self._include_from_file,
+            'import': self._import_grammar,
+            'lineguard': self._set_line_guard,
+            'max_recursion': self._set_recursion_depth,
+            'var_reuse_prob': self._set_var_reuse_probability,
+            'extends': self._set_extends
         }
 
-    def _StringToInt(self, s):
+    def _string_to_int(self, s):
         return int(s, 0)
 
-    def _GenerateInt(self, tag):
+    def _generate_int(self, tag):
         """Generates integer types."""
         tag_name = tag['tagname']
         default_range = _INT_RANGES[tag_name]
 
         min_value = default_range[0]
         if 'min' in tag:
-            min_value = self._StringToInt(tag['min'])
+            min_value = self._string_to_int(tag['min'])
 
         max_value = default_range[1]
         if 'max' in tag:
-            max_value = self._StringToInt(tag['max'])
+            max_value = self._string_to_int(tag['max'])
 
         if min_value > max_value:
             raise GrammarError('Range error in integer tag')
@@ -188,7 +188,7 @@ class Grammar(object):
         else:
             return str(i)
 
-    def _GenerateFloat(self, tag):
+    def _generate_float(self, tag):
         """Generates floating point types."""
         min_value = float(tag.get('min', '0'))
         max_value = float(tag.get('max', '1'))
@@ -203,35 +203,35 @@ class Grammar(object):
         else:
             return str(f)
 
-    def _GenerateChar(self, tag):
+    def _generate_char(self, tag):
         """Generates a single character."""
         if 'code' in tag:
-            return chr(self._StringToInt(tag['code']))
+            return chr(self._string_to_int(tag['code']))
 
-        min_value = self._StringToInt(tag.get('min', '0'))
-        max_value = self._StringToInt(tag.get('max', '255'))
+        min_value = self._string_to_int(tag.get('min', '0'))
+        max_value = self._string_to_int(tag.get('max', '255'))
         if min_value > max_value:
             raise GrammarError('Range error in char tag')
         return chr(random.randint(min_value, max_value))
 
-    def _GenerateString(self, tag):
+    def _generate_string(self, tag):
         """Generates a random string."""
-        min_value = self._StringToInt(tag.get('min', '0'))
-        max_value = self._StringToInt(tag.get('max', '255'))
+        min_value = self._string_to_int(tag.get('min', '0'))
+        max_value = self._string_to_int(tag.get('max', '255'))
         if min_value > max_value:
             raise GrammarError('Range error in string tag')
-        minlen = self._StringToInt(tag.get('minlength', '0'))
-        maxlen = self._StringToInt(tag.get('maxlength', '20'))
+        minlen = self._string_to_int(tag.get('minlength', '0'))
+        maxlen = self._string_to_int(tag.get('maxlength', '20'))
         length = random.randint(minlen, maxlen)
         charset = range(min_value, max_value + 1)
         ret_list = [chr(charset[int(random.random() * len(charset))])
                     for _ in range(length)]
         return ''.join(ret_list)
 
-    def _GenerateHtmlString(self, tag):
-        return cgi.escape(self._GenerateString(tag), quote=True)
+    def _generate_html_string(self, tag):
+        return cgi.escape(self._generate_string(tag), quote=True)
 
-    def _GenerateHex(self, tag):
+    def _generate_hex(self, tag):
         """Generates a single hex digit."""
         digit = random.randint(0, 15)
         if 'up' in tag:
@@ -239,7 +239,7 @@ class Grammar(object):
         else:
             return '%x' % digit
 
-    def _GenerateImport(self, tag):
+    def _generate_import(self, tag):
         """Expands a symbol from another (imported) grammar."""
         if 'from' not in tag:
             raise GrammarError('import tag without from attribute')
@@ -251,19 +251,19 @@ class Grammar(object):
         grammar = self._imports[grammarname]
         if 'symbol' in tag:
             symbol = tag['symbol']
-            return grammar.GenerateSymbol(symbol)
+            return grammar.generate_symbol(symbol)
         else:
-            return grammar.GenerateRoot()
+            return grammar.generate_root()
 
-    def _GenerateLines(self, tag):
+    def _generate_lines(self, tag):
         """Generates a given number of lines of code."""
         if 'count' not in tag:
             raise GrammarError('lines tag without count attribute')
 
-        num_lines = self._StringToInt(tag['count'])
-        return self._GenerateCode(num_lines)
+        num_lines = self._string_to_int(tag['count'])
+        return self._generate_code(num_lines)
 
-    def _GenerateCode(self, num_lines, initial_variables=[], last_var=0):
+    def _generate_code(self, num_lines, initial_variables=[], last_var=0):
         """Generates a given number of lines of code."""
 
         context = {
@@ -275,9 +275,9 @@ class Grammar(object):
         }
 
         for v in initial_variables:
-            self._AddVariable(v['name'], v['type'], context)
-        self._AddVariable('document', 'Document', context)
-        self._AddVariable('window', 'Window', context)
+            self._add_variable(v['name'], v['type'], context)
+        self._add_variable('document', 'Document', context)
+        self._add_variable('window', 'Window', context)
 
         while len(context['lines']) < num_lines:
             tmp_context = context.copy()
@@ -288,7 +288,7 @@ class Grammar(object):
                 else:
                     lineno = random.choice(self._all_nonhelper_lines)
                 creator = self._creators['line'][lineno]
-                self._ExpandRule('line', creator, tmp_context, 0, False)
+                self._expand_rule('line', creator, tmp_context, 0, False)
                 context = tmp_context
             except RecursionError as e:
                 print('Warning: ' + str(e))
@@ -305,7 +305,7 @@ class Grammar(object):
                 guarded_lines.append(self._line_guard.replace('<line>', line))
         return '\n'.join(guarded_lines)
 
-    def _ExecFunction(self, function_name, attributes, context, ret_val):
+    def _exec_function(self, function_name, attributes, context, ret_val):
         """Executes user-defined python code."""
         if function_name not in self._functions:
             raise GrammarError('Unknown function ' + function_name)
@@ -322,7 +322,7 @@ class Grammar(object):
             raise GrammarError('Error in user-defined function: %s' % str(e))
         return args['ret_val']
 
-    def _SelectCreator(self, symbol, recursion_depth, force_nonrecursive):
+    def _select_creator(self, symbol, recursion_depth, force_nonrecursive):
         """Selects the creator for the given symbol.
 
         The creator is based on probabilities specified in the grammar or
@@ -366,7 +366,7 @@ class Grammar(object):
         idx = bisect.bisect_left(cdf, random.random(), 0, len(cdf))
         return creators[idx]
 
-    def _Generate(self, symbol, context,
+    def _generate(self, symbol, context,
                   recursion_depth=0, force_nonrecursive=False):
         """Generates a user-defined symbol.
 
@@ -413,12 +413,12 @@ class Grammar(object):
                 return variables[random.randint(0, len(variables) - 1)]
                 # print 'Not reusing existing var of type ' + symbol
 
-        creator = self._SelectCreator(
+        creator = self._select_creator(
             symbol,
             recursion_depth,
             force_nonrecursive
         )
-        return self._ExpandRule(
+        return self._expand_rule(
             symbol,
             creator,
             context,
@@ -426,8 +426,8 @@ class Grammar(object):
             force_nonrecursive
         )
 
-    def _ExpandRule(self, symbol, rule, context,
-                    recursion_depth, force_nonrecursive):
+    def _expand_rule(self, symbol, rule, context,
+                     recursion_depth, force_nonrecursive):
         """Expands a given rule.
 
         Iterates through all the elements on right-hand side of the rule,
@@ -486,7 +486,7 @@ class Grammar(object):
             elif part['tagname'] == 'call':
                 if 'function' not in part:
                     raise GrammarError('Call tag without a function attribute')
-                expanded = self._ExecFunction(
+                expanded = self._exec_function(
                     part['function'],
                     part,
                     context,
@@ -494,7 +494,7 @@ class Grammar(object):
                 )
             else:
                 try:
-                    expanded = self._Generate(
+                    expanded = self._generate(
                         part['tagname'],
                         context,
                         recursion_depth + 1,
@@ -502,7 +502,7 @@ class Grammar(object):
                     )
                 except RecursionError as e:
                     if not force_nonrecursive:
-                        expanded = self._Generate(
+                        expanded = self._generate(
                             part['tagname'],
                             context,
                             recursion_depth + 1,
@@ -515,7 +515,7 @@ class Grammar(object):
                 variable_ids[part['id']] = expanded
 
             if 'beforeoutput' in part:
-                expanded = self._ExecFunction(
+                expanded = self._exec_function(
                     part['beforeoutput'],
                     part,
                     context,
@@ -528,8 +528,8 @@ class Grammar(object):
         additional_lines = []
         for v in new_vars:
             if v['type'] not in _NONINTERESTING_TYPES:
-                self._AddVariable(v['name'], v['type'], context)
-                additional_lines.append("if (!" + v['name'] + ") { " + v['name'] + " = GetVariable(fuzzervars, '" + v['type'] + "'); } else { " + self._GetVariableSetters(v['name'], v['type']) + " }")
+                self._add_variable(v['name'], v['type'], context)
+                additional_lines.append("if (!" + v['name'] + ") { " + v['name'] + " = GetVariable(fuzzervars, '" + v['type'] + "'); } else { " + self._get_variable_setters(v['name'], v['type']) + " }")
 
         # Return the result.
         # In case of 'ordinary' grammar rules, return the filled rule.
@@ -546,7 +546,7 @@ class Grammar(object):
             else:
                 return ret_vars[random.randint(0, len(ret_vars) - 1)]
 
-    def GenerateRoot(self):
+    def generate_root(self):
         """Expands root symbol."""
         if self._root:
             context = {
@@ -555,12 +555,12 @@ class Grammar(object):
                 'variables': {},
                 'force_var_reuse': False
             }
-            return self._Generate(self._root, context, 0)
+            return self._generate(self._root, context, 0)
         else:
             print('Error: No root element defined.')
             return ''
 
-    def GenerateSymbol(self, name):
+    def generate_symbol(self, name):
         """Expands a symbol whose name is given as an argument."""
         context = {
             'lastvar': 0,
@@ -568,9 +568,9 @@ class Grammar(object):
             'variables': {},
             'force_var_reuse': False
         }
-        return self._Generate(name, context, 0)
+        return self._generate(name, context, 0)
 
-    def _GetCDF(self, symbol, creators):
+    def _get_cdf(self, symbol, creators):
         """Computes a probability function for a given creator array."""
         uniform = True
         probabilities = []
@@ -625,7 +625,7 @@ class Grammar(object):
 
         return cdf
 
-    def _NormalizeProbabilities(self):
+    def _normalize_probabilities(self):
         """Preprocessess probabilities for production rules.
 
         Creates CDFs (cumulative distribution functions) and normalizes
@@ -634,14 +634,14 @@ class Grammar(object):
         based on probability easier.
         """
         for symbol, creators in self._creators.iteritems():
-            cdf = self._GetCDF(symbol, creators)
+            cdf = self._get_cdf(symbol, creators)
             self._creator_cdfs[symbol] = cdf
 
         for symbol, creators in self._nonrecursive_creators.iteritems():
-            cdf = self._GetCDF(symbol, creators)
+            cdf = self._get_cdf(symbol, creators)
             self._nonrecursivecreator_cdfs[symbol] = cdf
 
-    def _ParseTagAndAttributes(self, string):
+    def _parse_tag_and_attributes(self, string):
         """Extracts tag name and attributes from a string."""
         parts = string.split()
         if len(parts) < 1:
@@ -664,7 +664,7 @@ class Grammar(object):
                 raise GrammarError('Error parsing tag ' + string)
         return ret
 
-    def _ParseCodeLine(self, line, helper_lines=False):
+    def _parse_code_line(self, line, helper_lines=False):
         """Parses a rule for generating code."""
         rule = {
             'type': 'code',
@@ -687,7 +687,7 @@ class Grammar(object):
                         'text': rule_parts[i]
                     })
             else:
-                parsedtag = self._ParseTagAndAttributes(rule_parts[i])
+                parsedtag = self._parse_tag_and_attributes(rule_parts[i])
                 rule['parts'].append(parsedtag)
                 if 'new' in parsedtag:
                     rule['creates'].append(parsedtag)
@@ -714,7 +714,7 @@ class Grammar(object):
 
         self._all_rules.append(rule)
 
-    def _ParseGrammarLine(self, line):
+    def _parse_grammar_line(self, line):
         """Parses a grammar rule."""
         # Check if the line matches grammar rule pattern (<tagname> = ...).
         match = re.match(r'^<([^>]*)>\s*=\s*(.*)$', line)
@@ -724,7 +724,7 @@ class Grammar(object):
         # Parse the line to create a grammar rule.
         rule = {
             'type': 'grammar',
-            'creates': self._ParseTagAndAttributes(match.group(1)),
+            'creates': self._parse_tag_and_attributes(match.group(1)),
             'parts': []
         }
         rule_parts = re.split(r'<([^>)]*)>', match.group(2))
@@ -744,7 +744,7 @@ class Grammar(object):
                         'text': rule_parts[i]
                     })
             else:
-                parsedtag = self._ParseTagAndAttributes(rule_parts[i])
+                parsedtag = self._parse_tag_and_attributes(rule_parts[i])
                 rule['parts'].append(parsedtag)
                 if parsedtag['tagname'] == rule['creates']['tagname']:
                     rule['recursive'] = True
@@ -764,7 +764,7 @@ class Grammar(object):
         if 'root' in rule['creates']:
             self._root = create_tag_name
 
-    def _RemoveComments(self, line):
+    def _remove_comments(self, line):
         """Removes comments and trims the line."""
         if '#' in line:
             cleanline = line[:line.index('#')].strip()
@@ -772,7 +772,7 @@ class Grammar(object):
             cleanline = line.strip()
         return cleanline
 
-    def _FixIdents(self, source):
+    def _fix_idents(self, source):
         """Fixes indentation in user-defined functions.
 
         Exec requires zero first-level indentation. This function fixes
@@ -803,24 +803,24 @@ class Grammar(object):
 
         return '\n'.join(output)
 
-    def _SaveFunction(self, name, source):
-        source = self._FixIdents(source)
+    def _save_function(self, name, source):
+        source = self._fix_idents(source)
         try:
             compiled_fn = compile(source, name, 'exec')
         except (SyntaxError, TypeError) as e:
             raise GrammarError('Error in user-defined function: %s' % str(e))
         self._functions[name] = compiled_fn
 
-    def _SetVariableFormat(self, var_format):
+    def _set_variable_format(self, var_format):
         """Sets variable format for programming language generation."""
         self._var_format = var_format.strip()
         return 0
 
-    def _SetLineGuard(self, lineguard):
+    def _set_line_guard(self, lineguard):
         """Sets a guard block for programming language generation."""
         self._line_guard = lineguard
 
-    def _SetRecursionDepth(self, depth_str):
+    def _set_recursion_depth(self, depth_str):
         """Sets maximum recursion depth."""
         depth_str = depth_str.strip()
         if depth_str.isdigit():
@@ -828,7 +828,7 @@ class Grammar(object):
         else:
             raise GrammarError('Argument to max_recursion is not an integer')
 
-    def _SetVarReuseProbability(self, p_str):
+    def _set_var_reuse_probability(self, p_str):
         p_str = p_str.strip()
         try:
             p = float(p_str)
@@ -836,7 +836,7 @@ class Grammar(object):
             raise GrammarError('Argument to var_reuse_prob is not a number')
         self._var_reuse_prob = p
 
-    def _SetExtends(self, p_str):
+    def _set_extends(self, p_str):
         args = p_str.strip().split(' ')
         objectname = args[0]
         parentname = args[1]
@@ -845,17 +845,17 @@ class Grammar(object):
         # print(objectname, parentname)
         self._inheritance[objectname].append(parentname)
 
-    def _ImportGrammar(self, filename):
+    def _import_grammar(self, filename):
         """Imports a grammar from another file."""
         basename = os.path.basename(filename)
         path = os.path.join(self._definitions_dir, filename)
         subgrammar = Grammar()
-        num_errors = subgrammar.ParseFromFile(path)
+        num_errors = subgrammar.parse_from_file(path)
         if num_errors:
             raise GrammarError('There were errors when parsing ' + filename)
         self._imports[basename] = subgrammar
 
-    def AddImport(self, name, grammar):
+    def add_import(self, name, grammar):
         """Adds a grammar that can then be used from <import> tags.
 
         In case the grammar is already loaded this can be faster than
@@ -868,7 +868,7 @@ class Grammar(object):
 
         self._imports[name] = grammar
 
-    def _IncludeFromString(self, grammar_str):
+    def _include_from_string(self, grammar_str):
         in_code = False
         helper_lines = False
         in_function = False
@@ -877,7 +877,7 @@ class Grammar(object):
         for line in lines:
 
             if not in_function:
-                cleanline = self._RemoveComments(line)
+                cleanline = self._remove_comments(line)
                 if not cleanline:
                     continue
             else:
@@ -911,7 +911,7 @@ class Grammar(object):
                 elif command == 'end' and params == 'function':
                     if in_function:
                         in_function = False
-                        self._SaveFunction(function_name, function_body)
+                        self._save_function(function_name, function_body)
                 else:
                     print('Unknown command: ' + command)
                     num_errors += 1
@@ -921,16 +921,16 @@ class Grammar(object):
                 if in_function:
                     function_body += cleanline + '\n'
                 elif in_code:
-                    self._ParseCodeLine(cleanline, helper_lines)
+                    self._parse_code_line(cleanline, helper_lines)
                 else:
-                    self._ParseGrammarLine(cleanline)
+                    self._parse_grammar_line(cleanline)
             except GrammarError:
                 print('Error parsing line ' + line)
                 num_errors += 1
 
         return num_errors
 
-    def _IncludeFromFile(self, filename):
+    def _include_from_file(self, filename):
         try:
             f = open(os.path.join(
                 os.path.dirname(os.path.abspath(__file__)),
@@ -942,9 +942,9 @@ class Grammar(object):
             print('Error reading ' + filename)
             return 1
         self._definitions_dir = os.path.dirname(filename)
-        return self.ParseFromString(content)
+        return self.parse_from_string(content)
 
-    def ParseFromString(self, grammar_str):
+    def parse_from_string(self, grammar_str):
         """Parses grammar rules from string.
 
         Splits the string into lines, parses the lines and loads grammar rules.
@@ -956,16 +956,16 @@ class Grammar(object):
         Returns:
             Number of errors encountered during the parsing.
         """
-        errors = self._IncludeFromString(grammar_str)
+        errors = self._include_from_string(grammar_str)
         if errors:
             return errors
 
-        self._NormalizeProbabilities()
-        self._ComputeInterestingIndices()
+        self._normalize_probabilities()
+        self._compute_interesting_indices()
 
         return 0
 
-    def ParseFromFile(self, filename):
+    def parse_from_file(self, filename):
         """Parses grammar from file.
 
         Opens a text file, parses it and loads the grammar rules within.
@@ -986,9 +986,9 @@ class Grammar(object):
             print('Error reading ' + filename)
             return 1
         self._definitions_dir = os.path.dirname(filename)
-        return self.ParseFromString(content)
+        return self.parse_from_string(content)
 
-    def _ComputeInterestingIndices(self):
+    def _compute_interesting_indices(self):
         # select interesting lines for each variable type
 
         if 'line' not in self._creators:
@@ -1009,7 +1009,7 @@ class Grammar(object):
                     self._interesting_lines[tagname] = []
                 self._interesting_lines[tagname].append(i)
 
-    def _AddVariable(self, var_name, var_type, context):
+    def _add_variable(self, var_name, var_type, context):
         if var_type not in context['variables']:
             context['variables'][var_type] = []
             if var_type in self._interesting_lines:
@@ -1020,11 +1020,11 @@ class Grammar(object):
         context['variables'][var_type].append(var_name)
         if var_type in self._inheritance:
             for parent_type in self._inheritance[var_type]:
-                self._AddVariable(var_name, parent_type, context)
+                self._add_variable(var_name, parent_type, context)
 
-    def _GetVariableSetters(self, var_name, var_type):
+    def _get_variable_setters(self, var_name, var_type):
         ret = "SetVariable(" + var_name + ", '" + var_type + "'); "
         if var_type in self._inheritance:
             for parent_type in self._inheritance[var_type]:
-                ret += self._GetVariableSetters(var_name, parent_type)
+                ret += self._get_variable_setters(var_name, parent_type)
         return ret
