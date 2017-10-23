@@ -262,7 +262,7 @@ _SVG_TYPES = {
 }
 
 
-def GenerateHTMLElements(ctx, n):
+def generate_html_elements(ctx, n):
     for i in range(n):
         tag = random.choice(_HTML_TYPES.keys())
         tagtype = _HTML_TYPES[tag]
@@ -272,7 +272,7 @@ def GenerateHTMLElements(ctx, n):
         ctx['htmlvargen'] += '/* newvar{' + varname + ':' + tagtype + '} */ var ' + varname + ' = document.createElement(\"' + tag + '\"); //' + tagtype + '\n'
 
 
-def AddHTMLIDs(matchobj, ctx):
+def add_html_ids(matchobj, ctx):
     tagname = matchobj.group(0)[1:-1]
     if tagname in _HTML_TYPES:
         ctx['htmlvarctr'] += 1
@@ -290,19 +290,19 @@ def AddHTMLIDs(matchobj, ctx):
         return matchobj.group(0)
 
 
-def GenerateFunctionBody(jsgrammar, htmlctx, num_lines):
+def generate_function_body(jsgrammar, htmlctx, num_lines):
     js = ''
     js += 'var fuzzervars = {};\n\n'
     js += "SetVariable(fuzzervars, window, 'Window');\nSetVariable(fuzzervars, document, 'Document');\nSetVariable(fuzzervars, document.body.firstChild, 'Element');\n\n"
     js += '//beginjs\n'
     js += htmlctx['htmlvargen']
-    js += jsgrammar._GenerateCode(num_lines, htmlctx['htmlvars'])
+    js += jsgrammar._generate_code(num_lines, htmlctx['htmlvars'])
     js += '\n//endjs\n'
     js += 'var fuzzervars = {};\nfreememory()\n'
     return js
 
 
-def CheckGrammar(grammar):
+def check_grammar(grammar):
     """Checks if grammar has errors and if so outputs them.
 
     Args:
@@ -315,11 +315,11 @@ def CheckGrammar(grammar):
                 continue
             tagname = part['tagname']
             # print tagname
-            if not tagname in grammar._creators:
+            if tagname not in grammar._creators:
                 print('No creators for type ' + tagname)
 
 
-def GenerateNewSample(template, htmlgrammar, cssgrammar, jsgrammar):
+def generate_new_sample(template, htmlgrammar, cssgrammar, jsgrammar):
     """Parses grammar rules from string.
 
     Args:
@@ -334,8 +334,8 @@ def GenerateNewSample(template, htmlgrammar, cssgrammar, jsgrammar):
 
     result = template
 
-    css = cssgrammar.GenerateSymbol('rules')
-    html = htmlgrammar.GenerateSymbol('bodyelements')
+    css = cssgrammar.generate_symbol('rules')
+    html = htmlgrammar.generate_symbol('bodyelements')
 
     htmlctx = {
         'htmlvars': [],
@@ -344,11 +344,11 @@ def GenerateNewSample(template, htmlgrammar, cssgrammar, jsgrammar):
         'htmlvargen': ''
     }
     html = re.sub(
-        r'<[a-zA-Z0-9_-]+\ ',
-        lambda match: AddHTMLIDs(match, htmlctx),
+        r'<[a-zA-Z0-9_-]+ ',
+        lambda match: add_html_ids(match, htmlctx),
         html
     )
-    GenerateHTMLElements(htmlctx, _N_ADDITIONAL_HTMLVARS)
+    generate_html_elements(htmlctx, _N_ADDITIONAL_HTMLVARS)
 
     result = result.replace('<cssfuzzer>', css)
     result = result.replace('<htmlfuzzer>', html)
@@ -362,14 +362,14 @@ def GenerateNewSample(template, htmlgrammar, cssgrammar, jsgrammar):
             handlers = True
         result = result.replace(
             '<jsfuzzer>',
-            GenerateFunctionBody(jsgrammar, htmlctx, numlines),
+            generate_function_body(jsgrammar, htmlctx, numlines),
             1
         )
 
     return result
 
 
-def GenerateSamples(grammar_dir, outfiles):
+def generate_samples(grammar_dir, outfiles):
     """Generates a set of samples and writes them to the output files.
 
     Args:
@@ -382,21 +382,21 @@ def GenerateSamples(grammar_dir, outfiles):
     f.close()
 
     htmlgrammar = Grammar()
-    err = htmlgrammar.ParseFromFile(os.path.join(grammar_dir, 'html.txt'))
+    err = htmlgrammar.parse_from_file(os.path.join(grammar_dir, 'html.txt'))
     # CheckGrammar(htmlgrammar)
     if err > 0:
         print('There were errors parsing grammar')
         return
 
     cssgrammar = Grammar()
-    err = cssgrammar.ParseFromFile(os.path.join(grammar_dir, 'css.txt'))
+    err = cssgrammar.parse_from_file(os.path.join(grammar_dir, 'css.txt'))
     # CheckGrammar(cssgrammar)
     if err > 0:
         print('There were errors parsing grammar')
         return
 
     jsgrammar = Grammar()
-    err = jsgrammar.ParseFromFile(os.path.join(grammar_dir, 'js.txt'))
+    err = jsgrammar.parse_from_file(os.path.join(grammar_dir, 'js.txt'))
     # CheckGrammar(jsgrammar)
     if err > 0:
         print('There were errors parsing grammar')
@@ -404,12 +404,12 @@ def GenerateSamples(grammar_dir, outfiles):
 
     # JS and HTML grammar need access to CSS grammar.
     # Add it as import
-    htmlgrammar.AddImport('cssgrammar', cssgrammar)
-    jsgrammar.AddImport('cssgrammar', cssgrammar)
+    htmlgrammar.add_import('cssgrammar', cssgrammar)
+    jsgrammar.add_import('cssgrammar', cssgrammar)
 
     for outfile in outfiles:
-        result = GenerateNewSample(template, htmlgrammar, cssgrammar,
-                                   jsgrammar)
+        result = generate_new_sample(template, htmlgrammar, cssgrammar,
+                                     jsgrammar)
 
         if result is not None:
             print('Writing a sample to ' + outfile)
@@ -421,7 +421,7 @@ def GenerateSamples(grammar_dir, outfiles):
                 print('Error writing to output')
 
 
-def getOption(option_name):
+def get_option(option_name):
     for i in range(len(sys.argv)):
         if (sys.argv[i] == option_name) and ((i + 1) < len(sys.argv)):
             return sys.argv[i + 1]
@@ -443,8 +443,8 @@ def main():
 
     if multiple_samples:
         print('Running on ClusterFuzz')
-        out_dir = getOption('--output_dir')
-        nsamples = int(getOption('--no_of_files'))
+        out_dir = get_option('--output_dir')
+        nsamples = int(get_option('--no_of_files'))
         print('Output directory: ' + out_dir)
         print('Number of samples: ' + str(nsamples))
 
@@ -452,11 +452,11 @@ def main():
         for i in range(nsamples):
             outfiles.append(os.path.join(out_dir, 'fuzz-' + str(i) + '.html'))
 
-        GenerateSamples(fuzzer_dir, outfiles)
+        generate_samples(fuzzer_dir, outfiles)
 
     elif len(sys.argv) > 1:
         outfile = sys.argv[1]
-        GenerateSamples(fuzzer_dir, [outfile])
+        generate_samples(fuzzer_dir, [outfile])
 
     else:
         print('Arguments missing')
