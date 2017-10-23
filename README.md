@@ -45,8 +45,8 @@ To use the generation engine with a custom grammar, you can use the following py
 from grammar import Grammar
 
 my_grammar = Grammar()
-my_grammar.ParseFromFile('input_file.txt')
-result_string = my_grammar.GenerateSymbol('symbol_name')
+my_grammar.parse_from_file('input_file.txt')
+result_string = my_grammar.generate_symbol('symbol_name')
 
 ```
 
