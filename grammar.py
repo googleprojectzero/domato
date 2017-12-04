@@ -292,7 +292,7 @@ class Grammar(object):
                 context = tmp_context
             except RecursionError as e:
                 print('Warning: ' + str(e))
-        for i in range(len(context['lines']) / 100):
+        for i in range(int(len(context['lines']) / 100)):
             context['lines'].insert(
                 random.randint(0, len(context['lines'])),
                 'freememory();'
@@ -633,11 +633,11 @@ class Grammar(object):
         preprocessing function that makes subsequent creator selection
         based on probability easier.
         """
-        for symbol, creators in self._creators.iteritems():
+        for symbol, creators in self._creators.items():
             cdf = self._get_cdf(symbol, creators)
             self._creator_cdfs[symbol] = cdf
 
-        for symbol, creators in self._nonrecursive_creators.iteritems():
+        for symbol, creators in self._nonrecursive_creators.items():
             cdf = self._get_cdf(symbol, creators)
             self._nonrecursivecreator_cdfs[symbol] = cdf
 
