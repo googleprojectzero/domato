@@ -438,6 +438,7 @@ def main():
     for a in sys.argv:
         if a.startswith('--output_dir='):
             multiple_samples = True
+
     if '--output_dir' in sys.argv:
         multiple_samples = True
 
@@ -447,6 +448,9 @@ def main():
         nsamples = int(get_option('--no_of_files'))
         print('Output directory: ' + out_dir)
         print('Number of samples: ' + str(nsamples))
+
+        if not os.path.exists(out_dir):
+            os.mkdir(out_dir)
 
         outfiles = []
         for i in range(nsamples):
@@ -460,6 +464,9 @@ def main():
 
     else:
         print('Arguments missing')
+        print("Usage:")
+        print("\tpython generator.py <output file>")
+        print("\tpython generator.py --output_dir <output directory> --no_of_files <number of output files>")
 
 
 if __name__ == '__main__':
