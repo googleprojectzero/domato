@@ -264,7 +264,7 @@ _SVG_TYPES = {
 
 def generate_html_elements(ctx, n):
     for i in range(n):
-        tag = random.choice(list(_HTML_TYPES.keys()))
+        tag = random.choice(list(_HTML_TYPES))
         tagtype = _HTML_TYPES[tag]
         ctx['htmlvarctr'] += 1
         varname = 'htmlvar%05d' % ctx['htmlvarctr']
