@@ -1,0 +1,442 @@
+#   Copyright 2017 Google Inc. All Rights Reserved.
+#   Licensed under the Apache License, Version 2.0 (the "License");
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
+
+<root root=true> = <lines count=1000>
+
+!lineguard try { <line> } catch(e) { }
+
+<fuzzint> = -1
+<fuzzint> = 0
+<fuzzint> = 1
+<fuzzint> = 2
+<fuzzint> = 3
+<fuzzint> = 4
+<fuzzint> = 5
+<fuzzint> = 10
+<fuzzint> = 100
+<fuzzint> = 1000
+<fuzzint> = 1000000
+<fuzzint> = <largeint>
+
+<largeint> = 536870911
+<largeint> = 536870912
+<largeint> = 1073741823
+<largeint> = 1073741824
+<largeint> = 2147483647
+<largeint> = 2147483648
+<largeint> = 4294967295
+<largeint> = 4294967296
+
+<property> = foo
+<property> = prototype
+<property> = length
+<property> = constructor
+<property> = valueOf
+<property> = toJSON
+<property> = toString
+<property> = toLocaleString
+<property> = toPrecision
+<property> = toFixed
+<property> = toExponential
+<property> = source
+<property> = options
+<property> = lastIndex
+<property> = input
+<property> = caller
+<property> = callee
+<property> = arguments
+<property> = global
+
+<propertyorindex> = <property>
+<propertyorindex> = <fuzzint>
+
+<param> = <var>
+<param> = <var>
+<param> = <var>
+<param> = <var>
+<param> = <var>
+<param> = <var>
+<param> = <fuzzint>
+<param> = true
+<param> = false
+<param> = Infinity
+<param> = 'a'
+<param> = <arg>
+
+<arg> = arg1
+<arg> = arg2
+<arg> = arg3
+<arg> = arg4
+<arg> = arg5
+<arg> = arg6
+<arg> = arg7
+<arg> = arg8
+<arg> = arg9
+
+<propertydescriptorfield> = get: <function>
+<propertydescriptorfield> = set: <function>
+<propertydescriptorfield> = enumerable: <param>
+<propertydescriptorfield> = writable: <param>
+<propertydescriptorfield> = configurable: <param>
+<propertydescriptorfield> = value: <param>
+
+<propertydescriptor> = { <propertydescriptorfield> }
+<propertydescriptor> = { <propertydescriptorfield>, <propertydescriptorfield>, <propertydescriptorfield> }
+<propertydescriptor> = { <propertydescriptorfield>, <propertydescriptorfield>, <propertydescriptorfield> }
+
+<f_num> = <int min=0 max=100>
+
+<optionstring> = '<optionchar>'
+<optionstring> = '<optionchar><optionchar>'
+<optionstring> = '<optionchar><optionchar><optionchar>'
+
+<optionchar> = i
+<optionchar> = g
+<optionchar> = m
+
+<function> = f0
+<function> = f1
+<function> = f2
+<function> = f3
+<function> = f4
+<function> = f5
+<function> = f6
+<function> = f7
+<function> = f8
+<function> = f9
+
+<fuzzstring> = <fuzzstringpart>
+<fuzzstring> = <fuzzstringpart> + <fuzzstringpart>
+<fuzzstring> = <fuzzstringpart> + <fuzzstringpart> + <fuzzstringpart>
+<fuzzstringpart> = Array(<repeatcount>).join(<repeatstr>)
+<repeatcount> = 17
+<repeatcount> = 65
+<repeatcount> = 257
+<repeatcount> = 1025
+<repeatcount> = 4097
+<repeatcount> = 65537
+<repeatstr> = String.fromCharCode(<int min=0 max=127>)
+<repeatstr> = String.fromCharCode(<int min=0 max=127>, <int min=0 max=127>)
+<repeatstr> = String.fromCharCode(<int min=0 max=127>, <int min=0 max=127>, <int min=0 max=127>)
+
+<var> = vars[<int min=0 max=99>]
+
+<retvar> = vars[<int min=0 max=99>]
+
+!begin lines
+
+<var> = Array;
+<var> = ActiveXObject;
+<var> = Date;
+<var> = Boolean;
+<var> = Enumerator;
+<var> = Error;
+<var> = Function;
+<var> = JSON;
+<var> = RegExp;
+<var> = Object;
+<var> = document.createElement("foo");
+<var id=1> = document.createElement("foo"); Object.defineProperty(<var id=1>, "<propertyorindex>", {get: <function>, set: <function>} );
+<var> = new Array(<fuzzint>);
+<var> = new Array(<fuzzint>);
+<var> = new Array(<fuzzint>);
+<var> = new Array(<fuzzint>);
+<var> = new Array(<fuzzint>);
+<var> = {};
+<var> = {};
+<var> = {};
+<var> = {};
+<var> = {};
+<var> = <fuzzstring>;
+<var> = this;
+<var> = <function>;
+
+var ret = <arg>; if(ret) <retvar> = ret;
+
+var ret = <var>(<param>, <param>, <param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = new <var>(<param>, <param>, <param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = <var>.call(<var>, <param>, <param>, <param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = new <var>.call(<var>, <param>, <param>, <param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = <var>.appy(<var>, <param>); if(ret) <retvar> = ret;
+var ret = new <var>.apply(<var>, <param>); if(ret) <retvar> = ret;
+
+<var>.<property> = <param>;
+var ret = <var>.<property>; if(ret) <retvar> = ret;
+<var>.<property> = <param>;
+var ret = <var>.<property>; if(ret) <retvar> = ret;
+<var>.<property> = <param>;
+var ret = <var>.<property>; if(ret) <retvar> = ret;
+<var>.<property> = <param>;
+var ret = <var>.<property>; if(ret) <retvar> = ret;
+<var>.<property> = <param>;
+var ret = <var>.<property>; if(ret) <retvar> = ret;
+<var>.<property> = <param>;
+var ret = <var>.<property>; if(ret) <retvar> = ret;
+<var>.<property> = <param>;
+var ret = <var>.<property>; if(ret) <retvar> = ret;
+<var>.<property> = <param>;
+var ret = <var>.<property>; if(ret) <retvar> = ret;
+<var>.<property> = <param>;
+var ret = <var>.<property>; if(ret) <retvar> = ret;
+<var>.<property> = <param>;
+var ret = <var>.<property>; if(ret) <retvar> = ret;
+<var>.<property> = <param>;
+var ret = <var>.<property>; if(ret) <retvar> = ret;
+<var>.<property> = <param>;
+var ret = <var>.<property>; if(ret) <retvar> = ret;
+<var>.<property> = <param>;
+var ret = <var>.<property>; if(ret) <retvar> = ret;
+<var>.<property> = <param>;
+var ret = <var>.<property>; if(ret) <retvar> = ret;
+<var>.<property> = <param>;
+var ret = <var>.<property>; if(ret) <retvar> = ret;
+<var>.<property> = <param>;
+var ret = <var>.<property>; if(ret) <retvar> = ret;
+<var>.<property> = <param>;
+var ret = <var>.<property>; if(ret) <retvar> = ret;
+<var>.<property> = <param>;
+var ret = <var>.<property>; if(ret) <retvar> = ret;
+<var>.<property> = <param>;
+var ret = <var>.<property>; if(ret) <retvar> = ret;
+<var>.<property> = <param>;
+var ret = <var>.<property>; if(ret) <retvar> = ret;
+
+<var>[<fuzzint>] = <param>;
+var ret = <var>[<fuzzint>]; if(ret) <retvar> = ret;
+<var>[<fuzzint>] = <param>;
+var ret = <var>[<fuzzint>]; if(ret) <retvar> = ret;
+<var>[<fuzzint>] = <param>;
+var ret = <var>[<fuzzint>]; if(ret) <retvar> = ret;
+<var>[<fuzzint>] = <param>;
+var ret = <var>[<fuzzint>]; if(ret) <retvar> = ret;
+<var>[<fuzzint>] = <param>;
+var ret = <var>[<fuzzint>]; if(ret) <retvar> = ret;
+
+var ret = new ActiveXObject(<param>, <param>); if(ret) <retvar> = ret;
+var ret = new ActiveXObject(<param>); if(ret) <retvar> = ret;
+var ret = ActiveXObject(<param>, <param>); if(ret) <retvar> = ret;
+var ret = ActiveXObject(<param>); if(ret) <retvar> = ret;
+
+var ret = new Array(); if(ret) <retvar> = ret;
+var ret = new Array(<param>); if(ret) <retvar> = ret;
+var ret = new Array(<param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = Array(); if(ret) <retvar> = ret;
+var ret = Array(<param>); if(ret) <retvar> = ret;
+var ret = Array(<param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = []; if(ret) <retvar> = ret;
+var ret = [<param>, <param>, <param>]; if(ret) <retvar> = ret;
+var ret = Array.prototype.reverse.call(<var>); if(ret) <retvar> = ret;
+var ret = Array.prototype.splice.call(<var>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = Array.prototype.splice.call(<var>, <param>, <param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = Array.prototype.toLocaleString.call(<var>); if(ret) <retvar> = ret;
+var ret = Array.prototype.toString.call(<var>); if(ret) <retvar> = ret;
+var ret = Array.prototype.unshift.call(<var>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = Array.prototype.concat.call(<var>, <param>); if(ret) <retvar> = ret;
+var ret = Array.prototype.concat.call(<var>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = Array.prototype.join.call(<var>); if(ret) <retvar> = ret;
+var ret = Array.prototype.join.call(<var>, <param>); if(ret) <retvar> = ret;
+var ret = Array.prototype.sort.call(<var>); if(ret) <retvar> = ret;
+var ret = Array.prototype.sort.call(<var>, <function>); if(ret) <retvar> = ret;
+var ret = Array.prototype.pop.call(<var>); if(ret) <retvar> = ret;
+var ret = Array.prototype.push.call(<var>); if(ret) <retvar> = ret;
+var ret = Array.prototype.push.call(<var>, <param>); if(ret) <retvar> = ret;
+var ret = Array.prototype.push.call(<var>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = Array.prototype.shift.call(<var>); if(ret) <retvar> = ret;
+var ret = Array.prototype.slice.call(<var>); if(ret) <retvar> = ret;
+var ret = Array.prototype.slice.call(<var>, <param>, <param>); if(ret) <retvar> = ret;
+
+var ret = new Boolean(); if(ret) <retvar> = ret;
+var ret = Boolean(); if(ret) <retvar> = ret;
+var ret = Boolean.prototype.toString.call(<var>); if(ret) <retvar> = ret;
+var ret = Boolean.prototype.toJSON.call(<var>); if(ret) <retvar> = ret;
+var ret = Boolean.prototype.valueOf.call(<var>); if(ret) <retvar> = ret;
+
+var ret = new Date(); if(ret) <retvar> = ret;
+var ret = new Date(<param>); if(ret) <retvar> = ret;
+var ret = new Date(<param>, <param>, <param>, <param>, <param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = Date(); if(ret) <retvar> = ret;
+var ret = Date(<param>); if(ret) <retvar> = ret;
+var ret = Date(<param>, <param>, <param>, <param>, <param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = Date.UTC(<param>, <param>, <param>, <param>, <param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = Date.parse(<param>); if(ret) <retvar> = ret;
+var ret = Date.prototype.valueOf.call(<var>); if(ret) <retvar> = ret;
+var ret = Date.prototype.toJSON.call(<var>); if(ret) <retvar> = ret;
+var ret = Date.prototype.toLocaleTimeString.call(<var>); if(ret) <retvar> = ret;
+var ret = Date.prototype.toLocaleString.call(<var>); if(ret) <retvar> = ret;
+var ret = Date.prototype.toUTCString.call(<var>); if(ret) <retvar> = ret;
+var ret = Date.prototype.setUTCHours.call(<var>); if(ret) <retvar> = ret;
+var ret = Date.prototype.setUTCHours.call(<var>, <param>); if(ret) <retvar> = ret;
+var ret = Date.prototype.setUTCHours.call(<var>, <param>, <param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = Date.prototype.setUTCFullYear.call(<var>, <param>); if(ret) <retvar> = ret;
+var ret = Date.prototype.setUTCFullYear.call(<var>, <param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = Date.prototype.getTimezoneOffset.call(<var>); if(ret) <retvar> = ret;
+var ret = Date.prototype.getFullYear.call(<var>); if(ret) <retvar> = ret;
+var ret = Date.prototype.getMilliseconds.call(<var>); if(ret) <retvar> = ret;
+# TODO
+
+var ret = Debug.write(<param>); if(ret) <retvar> = ret;
+var ret = Debug.write(<param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = Debug.writeln(<param>); if(ret) <retvar> = ret;
+var ret = Debug.writeln(<param>, <param>, <param>); if(ret) <retvar> = ret;
+
+var ret = new Enumerator(); if(ret) <retvar> = ret;
+var ret = new Enumerator(<param>); if(ret) <retvar> = ret;
+var ret = Enumerator(); if(ret) <retvar> = ret;
+var ret = Enumerator(<param>); if(ret) <retvar> = ret;
+var ret = Enumerator.prototype.atEnd.call(<var>); if(ret) <retvar> = ret;
+var ret = Enumerator.prototype.moveNext.call(<var>); if(ret) <retvar> = ret;
+var ret = Enumerator.prototype.moveFirst.call(<var>); if(ret) <retvar> = ret;
+
+var ret = new Error(); if(ret) <retvar> = ret;
+var ret = new Error(<param>); if(ret) <retvar> = ret;
+var ret = new Error(<param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = Error(); if(ret) <retvar> = ret;
+var ret = Error(<param>); if(ret) <retvar> = ret;
+var ret = Error(<param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = Error.prototype.toString.call(<var>); if(ret) <retvar> = ret;
+
+var ret = <var>.call(<var>); if(ret) <retvar> = ret;
+var ret = <var>.call(<var>, <param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = <var>.apply(<var>, <var>); if(ret) <retvar> = ret;
+# var ret = <function>.call(<var>); if(ret) <retvar> = ret;
+# var ret = <function>.call(<var>, <param>, <param>, <param>); if(ret) <retvar> = ret;
+# var ret = <function>.apply(<var>, <var>); if(ret) <retvar> = ret;
+var ret = Function.prototype.toString.call(<var>); if(ret) <retvar> = ret;
+var ret = Function.prototype.call.call(<var>, <var>); if(ret) <retvar> = ret;
+var ret = Function.prototype.call.call(<var>, <var>, <param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = Function.prototype.apply.call(<var>, <var>); if(ret) <retvar> = ret;
+var ret = Function.prototype.apply.call(<var>, <var>, <param>); if(ret) <retvar> = ret;
+
+var ret = RuntimeObject(); if(ret) <retvar> = ret;
+var ret = new RuntimeObject(); if(ret) <retvar> = ret;
+var ret = ReferenceError(<param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = new ReferenceError(<param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = URIError(<param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = new URIError(<param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = EvalError(<param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = new EvalError(<param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = RangeError(<param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = new RangeError(<param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = unescape(<param>); if(ret) <retvar> = ret;
+var ret = decodeURIComponent(<param>); if(ret) <retvar> = ret;
+var ret = decodeURI(<param>); if(ret) <retvar> = ret;
+var ret = isFinite(<param>); if(ret) <retvar> = ret;
+var ret = parseInt(<param>); if(ret) <retvar> = ret;
+var ret = parseFloat(<param>); if(ret) <retvar> = ret;
+var ret = encodeURIComponent(<param>); if(ret) <retvar> = ret;
+var ret = GetObject(<param>); if(ret) <retvar> = ret;
+var ret = GetObject(<param>, <param>); if(ret) <retvar> = ret;
+var ret = LuLow(<param>); if(ret) <retvar> = ret;
+var ret = LuHigh(<param>); if(ret) <retvar> = ret;
+var ret = escape(<param>); if(ret) <retvar> = ret;
+# var ret = print(<param>); if(ret) <retvar> = ret;
+var ret = EncodeURI(<param>); if(ret) <retvar> = ret;
+var ret = DblFromLus(<param>); if(ret) <retvar> = ret;
+
+eval(<fuzzstring>);
+
+var ret = JSON.parse(<param>); if(ret) <retvar> = ret;
+var ret = JSON.stringify(<param>); if(ret) <retvar> = ret;
+
+<var>.valueOf = <function>;
+<var>.toJSON = <function>;
+<var>.toString = <function>;
+<var>.toArray = <function>;
+<var>.toLocaleString = <function>;
+<var>.toPrecision = <function>;
+<var>.toFixed = <function>;
+<var>.toExponential = <function>;
+
+function f_inner_<f_num id=1>() { return <function>(); } <var> = f_inner_<f_num id=1>;
+
+var ret = Object.getOwnPropertyDescriptor(<var>, <param>); if(ret) <retvar> = ret;
+var ret = Object.defineProperty(<var>, '<propertyorindex>', <propertydescriptor>); if(ret) <retvar> = ret;
+
+var ret = RegExp.$1; if(ret) <retvar> = ret;
+var ret = RegExp.$2; if(ret) <retvar> = ret;
+var ret = RegExp.$3; if(ret) <retvar> = ret;
+var ret = RegExp.$4; if(ret) <retvar> = ret;
+var ret = RegExp.$5; if(ret) <retvar> = ret;
+var ret = RegExp.$6; if(ret) <retvar> = ret;
+var ret = RegExp.$7; if(ret) <retvar> = ret;
+var ret = RegExp.$8; if(ret) <retvar> = ret;
+var ret = RegExp.$9; if(ret) <retvar> = ret;
+var ret = RegExp.lastMatch; if(ret) <retvar> = ret;
+var ret = RegExp.index; if(ret) <retvar> = ret;
+var ret = RegExp.lastIndex; if(ret) <retvar> = ret;
+var ret = RegExp.lastParen; if(ret) <retvar> = ret;
+var ret = RegExp.leftContext; if(ret) <retvar> = ret;
+var ret = RegExp.rightContext; if(ret) <retvar> = ret;
+var ret = RegExp.input; if(ret) <retvar> = ret;
+RegExp.input = <param>;
+
+var ret = new RegExp(); if(ret) <retvar> = ret;
+var ret = new RegExp(<fuzzstring>); if(ret) <retvar> = ret;
+var ret = new RegExp(<fuzzstring>, <optionstring>); if(ret) <retvar> = ret;
+var ret = RegExp(); if(ret) <retvar> = ret;
+var ret = RegExp(<fuzzstring>); if(ret) <retvar> = ret;
+var ret = RegExp(<fuzzstring>, <optionstring>); if(ret) <retvar> = ret;
+RegExp.prototype.compile.call(<var>, <fuzzstring>);
+RegExp.prototype.compile.call(<var>, <fuzzstring>, <optionstring>);
+RegExp.prototype.compile.call(<var>, <param>, <param>);
+RegExp.prototype.test.call(<var>, <fuzzstring>);
+RegExp.prototype.exec.call(<var>, <fuzzstring>);
+RegExp.prototype.test.call(<var>, <param>);
+RegExp.prototype.exec.call(<var>, <param>);
+
+var ret = arguments; if(ret) <retvar> = ret;
+
+var ret = String.FromCharCode(<param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = <fuzzstring>; if(ret) <retvar> = ret;
+var ret = String.prototype.substr.call(<var>, <param>); if(ret) <retvar> = ret;
+var ret = String.prototype.substr.call(<var>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = String.prototype.substring.call(<var>, <param>); if(ret) <retvar> = ret;
+var ret = String.prototype.substring.call(<var>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = String.prototype.search.call(<var>, <param>); if(ret) <retvar> = ret;
+var ret = String.prototype.strike.call(<var>, <param>); if(ret) <retvar> = ret;
+var ret = String.prototype.concat.call(<var>, <param>); if(ret) <retvar> = ret;
+var ret = String.prototype.concat.call(<var>, <param>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = String.prototype.split.call(<var>, <param>); if(ret) <retvar> = ret;
+var ret = String.prototype.split.call(<var>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = String.prototype.anchor.call(<var>, <param>); if(ret) <retvar> = ret;
+var ret = String.prototype.charAt.call(<var>, <param>); if(ret) <retvar> = ret;
+var ret = String.prototype.slice.call(<var>, <param>); if(ret) <retvar> = ret;
+var ret = String.prototype.slice.call(<var>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = String.prototype.match.call(<var>, <param>); if(ret) <retvar> = ret;
+var ret = String.prototype.indexOf.call(<var>, <param>); if(ret) <retvar> = ret;
+var ret = String.prototype.indexOf.call(<var>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = String.prototype.lastIndexOf.call(<var>, <param>); if(ret) <retvar> = ret;
+var ret = String.prototype.lastIndexOf.call(<var>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = String.prototype.replace.call(<var>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = String.prototype.replace.call(<var>, <param>, <function>); if(ret) <retvar> = ret;
+var ret = String.prototype.toUpperCase.call(<var>); if(ret) <retvar> = ret;
+var ret = String.prototype.toLowerCase.call(<var>); if(ret) <retvar> = ret;
+var ret = String.prototype.toLocaleLowerCase.call(<var>); if(ret) <retvar> = ret;
+var ret = String.prototype.toLocaleUpperCase.call(<var>); if(ret) <retvar> = ret;
+var ret = String.prototype.localeCompare.call(<var>, <param>); if(ret) <retvar> = ret;
+
+var ret = new VBArray(<var>); if(ret) <retvar> = ret;
+var ret = VBArray(<var>); if(ret) <retvar> = ret;
+var ret = new VBArray(); if(ret) <retvar> = ret;
+var ret = VBArray(); if(ret) <retvar> = ret;
+var ret = VBArray.prototype.dimensions.call(<var>); if(ret) <retvar> = ret;
+var ret = VBArray.prototype.getItem.call(<var>, <param>); if(ret) <retvar> = ret;
+var ret = VBArray.prototype.getItem.call(<var>, <param>, <param>); if(ret) <retvar> = ret;
+var ret = VBArray.prototype.toArray.call(<var>); if(ret) <retvar> = ret;
+var ret = VBArray.prototype.lbound.call(<var>, <param>); if(ret) <retvar> = ret;
+var ret = VBArray.prototype.ubound.call(<var>, <param>); if(ret) <retvar> = ret;
+
+# TODO math
+
+
+!end lines
