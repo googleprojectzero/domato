@@ -24,7 +24,7 @@ err = cssgrammar.parse_from_file('css.txt')
 
 htmlgrammar = Grammar()
 htmlgrammar.add_import('cssgrammar', cssgrammar)
-htmlgrammar .parse_from_file('html.txt')
+htmlgrammar.parse_from_file('mathml.txt')
 
 # result_string = htmlgrammar .generate_symbol('svgelement_svg')
 # just math, without svg
