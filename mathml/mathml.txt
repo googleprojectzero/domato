@@ -11,6 +11,9 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
+!include common.txt
+!include mathattrvalues.txt
+
 !max_recursion 50
 <mathelement_math> = <lt>math <mathattrs_math><gt><newline><mathchildren_math><lt>/math<gt>
 
