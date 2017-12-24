@@ -126,7 +126,7 @@ try { var00001.doSomething(); } catch(e) {}
 
 Note that
 
-- programming language lines are enclosed in '!begin lines' and '!end lines' statement. This gives the grammar parser the necessary information that the lines inbetween are programming language lines and are thus parsed differently.
+- programming language lines are enclosed in '!begin lines' and '!end lines' statement. This gives the grammar parser the necessary information that the lines in-between are programming language lines and are thus parsed differently.
 - We used `<new element>` instead of `<element>`. This instructs the generator to create a new variable of type 'element' instead of generating the 'element' symbol.
 - `<string>` is one of the built-in symbols so no need to define it.
 - [optional] You can use !varformat statement to define the format of variables you want to use.
