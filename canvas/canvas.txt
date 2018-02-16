@@ -1,0 +1,384 @@
+#   Copyright 2017 Google Inc. All Rights Reserved.
+#   Licensed under the Apache License, Version 2.0 (the "License");
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
+
+<fuzzint> = -1
+<fuzzint> = -80
+<fuzzint> = 0
+<fuzzint> = 1
+<fuzzint> = 2
+<fuzzint> = 3
+<fuzzint> = 4
+<fuzzint> = 5
+<fuzzint> = 10
+<fuzzint> = 100
+<fuzzint> = 1000
+<fuzzint> = 1000000
+<fuzzint> = <largeint>
+
+<largeint> = 536870911
+<largeint> = 536870912
+<largeint> = 1073741823
+<largeint> = 1073741824
+<largeint> = 2147483647
+<largeint> = 2147483648
+<largeint> = 4294967295
+<largeint> = 4294967296
+
+<fuzzstring> = <fuzzstringpart>
+<fuzzstring> = <fuzzstringpart> + <fuzzstringpart>
+<fuzzstring> = <fuzzstringpart> + <fuzzstringpart> + <fuzzstringpart>
+<fuzzstringpart> = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+<repeatcount> = 17
+<repeatcount> = 65
+<repeatcount> = 257
+<repeatcount> = 1025
+<repeatcount> = 4097
+<repeatcount> = 65537
+<repeatstr> = String.fromCharCode(<int min=0 max=127>)
+<repeatstr> = String.fromCharCode(<int min=0 max=127>, <int min=0 max=127>)
+<repeatstr> = String.fromCharCode(<int min=0 max=127>, <int min=0 max=127>, <int min=0 max=127>)
+
+<color> = #<hex><hex><hex><hex><hex><hex>
+<color> = rgb(<int min=0 max=255>,<int min=0 max=255>,<int min=0 max=255>)
+
+<fillRule> = "nonzero"
+<fillRule> = "evenodd"
+
+<lineCap> = "butt"
+<lineCap> = "round"
+<lineCap> = "square"
+<lineJoin> = "bevel"
+<lineJoin> = "round"
+<lineJoin> = "miter"
+
+<textAlign> = "left"
+<textAlign> = "right"
+<textAlign> = "center"
+<textAlign> = "start"
+<textAlign> = "end"
+
+<textBaseline> = "top" 
+<textBaseline> = "hanging"
+<textBaseline> = "middle"
+<textBaseline> = "alphabetic"
+<textBaseline> = "ideographic"
+<textBaseline> = "bottom"
+
+<txtDirection> = "ltr"
+<txtDirection> = "rtl"
+<txtDirection> = "inherit"
+
+<repetition> = "repeat" 
+<repetition> = "repeat-x" 
+<repetition> = "repeat-y" 
+<repetition> = "no-repeat"
+
+<imageFormat> = "image/png"
+<imageFormat> = "image/webp"
+
+<mathOperation> = +
+<mathOperation> = -
+<mathOperation> = /
+<mathOperation> = *
+
+<globalCompositeOperation> = "source-over"
+<globalCompositeOperation> = "source-in"
+<globalCompositeOperation> = "source-out"
+<globalCompositeOperation> = "source-atop"
+<globalCompositeOperation> = "destination-over"
+<globalCompositeOperation> = "destination-in"
+<globalCompositeOperation> = "destination-out"
+<globalCompositeOperation> = "destination-atop"
+<globalCompositeOperation> = "lighter"
+<globalCompositeOperation> = "copy"
+<globalCompositeOperation> = "xor"
+<globalCompositeOperation> = "multiply"
+<globalCompositeOperation> = "screen"
+<globalCompositeOperation> = "overlay"
+<globalCompositeOperation> = "darken"
+<globalCompositeOperation> = "lighten"
+<globalCompositeOperation> = "color-dodge"
+<globalCompositeOperation> = "hard-light"
+<globalCompositeOperation> = "soft-light"
+<globalCompositeOperation> = "difference"
+<globalCompositeOperation> = "exclusion"
+<globalCompositeOperation> = "hue"
+<globalCompositeOperation> = "saturation"
+<globalCompositeOperation> = "color"
+<globalCompositeOperation> = "luminosity"
+
+<this> = this
+
+<root root=true> = <lines count=50>
+
+#!lineguard try { <line>; } catch(e) { console.log(e.message) }
+!varformat fuzzvar%05d
+!begin lines
+!include common.txt
+
+# Image
+<new img> = new Image();
+<new img> = new Image(<fuzzint>, <fuzzint>);
+<new img> = new Image(<largeint>, <largeint>);
+<new img> = new Image(<interestingint>, <interestingint>);
+<new img> = new Image(<this>, <interestingint>);
+<new img> = new Image(<interestingint>, <this>);
+<img>.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+
+# Uint8ClampedArray
+<new uintc8> = new Uint8ClampedArray(<fuzzint>);
+<new uintc8> = new Uint8ClampedArray(<interestingint>);
+<new uintc8> = new Uint8ClampedArray([<fuzzint>,<fuzzint>]);
+<new uintc8> = new Uint8ClampedArray([<largeint>,<largeint>]);
+<new uintc8> = new Uint8ClampedArray([<interestingint>,<interestingint>]);
+
+# ImageData
+<new imgData> = new ImageData(<uintc8>, <largeint>, <largeint>);
+<new imgData> = new ImageData(<fuzzint>, <fuzzint>);
+<new imgData> = new ImageData(<largeint>, <largeint>);
+<new imgData> = new ImageData(<interestingint>, <interestingint>);
+
+# The button
+<new button> = document.getElementById('button');
+<button>.focus();
+
+# Only for addPath method
+<new path2daddpath> = new Path2D();
+<path2daddpath>.addPath(<path2daddpath>,<m>);
+
+# HTMLCanvasElement
+<new canvas> = document.getElementById('canvas');
+<canvas>.height = <fuzzint>;
+<canvas>.height = <interestingint>;
+<canvas>.height = <largeint>;
+<canvas>.width = <fuzzint>;
+<canvas>.width = <interestingint>;
+<canvas>.width = <largeint>;
+<canvas>.toDataURL(<imageFormat>, <float min=0 max=1>);
+<canvas>.transferControlToOffscreen();
+
+# Capture stream
+<new canvasElt> = document.querySelector('canvas');
+<new stream> = <canvasElt>.captureStream(<fuzzint>);
+<new stream> = <canvasElt>.captureStream(<largeint>);
+<new stream> = <canvasElt>.captureStream(<interestingint>);
+
+# Path2d stuff
+<new path2d> = new Path2D();
+<new path2d> = new Path2D(<path2d>);
+<new path2d> = new Path2D('<fuzzint> <fuzzint> C <fuzzint> <fuzzint>, <fuzzint> <fuzzint>, <fuzzint> <fuzzint>');
+<new path2d> = new Path2D('<fuzzint> <fuzzint> h <fuzzint> v <fuzzint> h <fuzzint> Z');
+<new path2d> = new Path2D('M<fuzzint> <fuzzint> H <fuzzint> V <fuzzint> H <fuzzint> L <fuzzint> <fuzzint>');
+<new path2d> = new Path2D('M<fuzzint> <interestingint> H <fuzzint> V <interestingint> H <fuzzint> L <interestingint> <interestingint>');
+<new path2d> = new Path2D('M<fuzzint> <fuzzint> A <fuzzint> <fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>, <fuzzint> <fuzzint> L <fuzzint> <fuzzint> Z" fill="<color>"');
+
+# Button
+ctx.drawFocusIfNeeded(<button>);
+
+# Paths
+ctx.beginPath();
+ctx.closePath();
+ctx.moveTo(<fuzzint>, <fuzzint>);
+ctx.lineTo(<fuzzint>, <fuzzint>);
+ctx.lineTo(<interestingint>, <interestingint>);
+ctx.bezierCurveTo(<fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>);
+ctx.bezierCurveTo(<largeint>, <largeint>, <largeint>, <largeint>, <largeint>, <largeint>);
+ctx.bezierCurveTo(<interestingint>, <interestingint>, <interestingint>, <interestingint>, <interestingint>, <interestingint>);
+ctx.quadraticCurveTo(<fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>);
+ctx.quadraticCurveTo(<largeint>, <largeint>, <largeint>, <largeint>);
+ctx.quadraticCurveTo(<interestingint>, <interestingint>, <interestingint>, <interestingint>);
+ctx.rect(<fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>);
+ctx.arc(<int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>);
+ctx.arc(<largeint>, <largeint>, <largeint>, <largeint>, <float> <mathOperation> Math.PI);
+ctx.arc(<float>, <float>, <float>, <float>,<float> - Math.PI );
+ctx.arc(<largeint>, <largeint>, <largeint>, <largeint>, <largeint>,<boolean>);
+ctx.arcTo(<int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>);
+ctx.arcTo(<largeint>, <largeint>, <largeint>, <largeint>, <float> <mathOperation> Math.PI);
+ctx.arcTo(<float>, <float>, <float>, <float>,<float> - Math.PI );
+ctx.ellipse(<int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <boolean>);
+ctx.ellipse(<fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>, <boolean>);
+ctx.ellipse(<largeint>, <largeint>, <largeint>, <largeint>, <largeint>, <largeint>, <largeint>, <boolean>);
+ctx.ellipse(<interestingint>, <interestingint>, <interestingint>, <interestingint>, <interestingint>, <interestingint>, <interestingint>, <boolean>);
+ctx.rect(<fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>);
+ctx.rect(<largeint>, <largeint>, <largeint>, <largeint>);
+ctx.rect(<interestingint>, <interestingint>, <interestingint>, <interestingint>);
+
+ctx.fillStyle = '<color>';
+ctx.fillStyle = <pattern>
+ctx.strokeStyle = '<color>';
+
+# Drawing paths 
+# Fill and stroke styles
+# TODO: This section needs also to be expanded
+ctx.fill();
+ctx.fill(<fillRule>);
+ctx.fill(<path2d>, <fillRule>);
+ctx.stroke();
+ctx.stroke(<path2d>);
+ctx.clip();
+ctx.clip(<fillRule>);
+ctx.clip(<path2d>, <fillRule>);
+console.log(ctx.isPointInPath(<largeint>, <largeint>));
+console.log(ctx.isPointInPath(<fuzzint>, <fuzzint>));
+console.log(ctx.isPointInPath(<path2d>, <fuzzint>, <fuzzint>, <fillRule>));
+console.log(ctx.isPointInPath(<path2d>, <interestingint>, <interestingint>, <fillRule>));
+console.log(ctx.isPointInStroke(<fuzzint>, <fuzzint>));
+console.log(ctx.isPointInStroke(<interestingint>, <interestingint>));
+console.log(ctx.isPointInStroke(<path2d>, <interestingint>, <interestingint>));
+
+# Transformations
+<new matrix> = ctx.currentTransform;
+<matrix>.a = <largeint>;
+<matrix>.b = <largeint>;
+<matrix>.c = <largeint>;
+<matrix>.d = <largeint>;
+<matrix>.e = <largeint>;
+<matrix>.f = <largeint>;
+<matrix>.a = <interestingint>;
+<matrix>.b = <interestingint>;
+<matrix>.c = <interestingint>;
+<matrix>.d = <interestingint>;
+<matrix>.e = <interestingint>;
+<matrix>.f = <interestingint>;
+ctx.currentTransform = <matrix>;
+ctx.rotate(<largeint> <mathOperation> Math.PI <mathOperation> <fuzzint>);
+ctx.rotate(<largeint> <mathOperation> Math.PI <mathOperation> <largeint>);
+ctx.rotate(<largeint> <mathOperation> Math.PI <mathOperation> <interestingint>);
+ctx.scale(<largeint>, <largeint>);
+ctx.scale(<interestingint>, <interestingint>);
+ctx.translate(<largeint>, <largeint>);
+ctx.translate(<interestingint>, <interestingint>);
+ctx.transform(<fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>);
+ctx.transform(<largeint>, <largeint>, <largeint>, <largeint>, <largeint>, <largeint>);
+ctx.transform(<interestingint>, <interestingint>, <interestingint>, <interestingint>, <interestingint>, <interestingint>);
+ctx.transform(<float min=0 max=1>, <float min=0 max=1>, <float min=0 max=1>, <float min=0 max=1>, <float min=0 max=1>, <float min=0 max=1>);
+ctx.setTransform(<fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>,  <fuzzint>);
+ctx.setTransform(<largeint>, <largeint>, <largeint>, <largeint>, <largeint>, <largeint>);
+ctx.setTransform(<interestingint>, <interestingint>, <interestingint>, <interestingint>, <interestingint>, <interestingint>);
+ctx.resetTransform();
+
+# Compositing
+ctx.globalAlpha = <float min=0 max=1>;
+ctx.globalCompositeOperation = <globalCompositeOperation>;
+
+# Drawing images
+ctx.drawImage(<img>, <fuzzint>, <fuzzint>);
+ctx.drawImage(<img>, <interestingint>, <interestingint>);
+ctx.drawImage(<img>, <largeint>, <largeint>);
+ctx.drawImage(<img>, <fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>);
+ctx.drawImage(<img>, <largeint>, <largeint>, <largeint>, <largeint>);
+ctx.drawImage(<img>, <interestingint>, <interestingint>, <interestingint>, <interestingint>);
+ctx.drawImage(<img>, <fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>);
+ctx.drawImage(<img>, <interestingint>, <interestingint>, <interestingint>, <interestingint>, <interestingint>, <interestingint>, <interestingint>, <interestingint>);
+ctx.drawImage(<img>, <largeint>, <largeint>, <largeint>, <largeint>, <largeint>, <largeint>, <largeint>, <largeint>);
+
+# Pixel manipulation
+# Expand on ImageData object
+ctx.createImageData(<fuzzint>, <fuzzint>);
+ctx.createImageData(<largeint>, <largeint>);
+ctx.createImageData(<interestingint>, <interestingint>);
+console.log(<imgData>.data);
+
+ctx.getImageData(<largeint>, <largeint>, <largeint>, <largeint>);
+ctx.getImageData(<interestingint>, <interestingint>, <interestingint>, <interestingint>);
+ctx.putImageData(<img>, <fuzzint>, <fuzzint>);
+ctx.putImageData(<img>, <largeint>, <largeint>);
+ctx.putImageData(<img>, <interestingint>, <interestingint>);
+ctx.putImageData(<img>, <fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>);
+ctx.putImageData(<img>, <largeint>, <largeint>, <largeint>, <largeint>, <largeint>, <largeint>);
+ctx.putImageData(<img>, <interestingint>, <interestingint>, <interestingint>, <interestingint>, <interestingint>, <interestingint>);
+
+# Image Smoothing
+ctx.imageSmoothingEnabled = <boolean>;
+
+# The canvas state
+ctx.save();
+ctx.restore();
+console.log(ctx.canvas);
+
+# Hit regions
+ctx.addHitRegion({id: <fuzzstring>});
+ctx.removeHitRegion('<fuzzstring>');
+ctx.clearHitRegions();
+
+# Gradients and patterns
+<new grd> = ctx.createLinearGradient(<fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>);
+<new grd> = ctx.createLinearGradient(<largeint>, <largeint>, <largeint>, <largeint>);
+<new grd> = ctx.createLinearGradient(<interestingint>, <interestingint>, <interestingint>, <interestingint>);
+<new grd> = ctx.createRadialGradient(<fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>);
+<new grd> = ctx.createRadialGradient(<largeint>, <largeint>, <largeint>, <largeint>, <largeint>, <largeint>);
+<new grd> = ctx.createRadialGradient(<interestingint>, <interestingint>, <interestingint>, <interestingint>, <interestingint>, <interestingint>);
+# color offset: A number between 0 and 1.
+<grd>.addColorStop(<float min=0 max=1>, "<color>");
+
+<new pattern> = ctx.createPattern(<img>, <repetition>);
+
+# Shadows
+ctx.shadowBlur = <fuzzint>;
+ctx.shadowBlur = <largeint>;
+ctx.shadowBlur = <interestingint>;
+ctx.shadowColor = "<color>";
+ctx.shadowOffsetX = <fuzzint>;
+ctx.shadowOffsetX = <largeint>;
+ctx.shadowOffsetX = <interestingint>;
+ctx.shadowOffsetY = <fuzzint>;
+ctx.shadowOffsetY = <largeint>;
+ctx.shadowOffsetY = <interestingint>;
+
+# Drawing rectangles
+ctx.clearRect(<fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>);
+ctx.clearRect(<largeint>, <largeint>, <largeint>, <largeint>);
+ctx.clearRect(<interestingint>, <interestingint>, <interestingint>, <interestingint>);
+ctx.clearRect(<interestingint>,<interestingint>, canvas.width, canvas.height);
+
+ctx.fillRect(<fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>);
+ctx.fillRect(<interestingint>, <interestingint>, <interestingint>, <interestingint>);
+ctx.strokeRect(<fuzzint>, <fuzzint>, <fuzzint>, <fuzzint>);
+ctx.strokeRect(<interestingint>, <interestingint>, <interestingint>, <interestingint>);
+
+# Drawing text
+ctx.fillText(<fuzzstring>,  <fuzzint>, <fuzzint>);
+ctx.strokeText(<fuzzstring>, <fuzzint>, <fuzzint>);
+<new text> = ctx.measureText(<fuzzstring>);
+console.log((<text>.width));
+
+# Line styles
+ctx.lineWidth = <fuzzint>;
+ctx.lineWidth = <interestingint>;
+ctx.lineWidth = <largeint>;
+ctx.lineCap = <lineCap>;
+ctx.lineJoin = <lineJoin>;
+ctx.miterLimit = <fuzzint>;
+ctx.miterLimit = <interestingint>;
+ctx.setLineDash([<fuzzint>, <fuzzint>]);
+ctx.setLineDash([<interestingint>, <interestingint>]);
+ctx.setLineDash([]);
+ctx.lineDashOffset = <fuzzint>;
+ctx.lineDashOffset = <largeint>;
+ctx.lineDashOffset = <interestingint>;
+console.log(ctx.getLineDash());
+
+# Text styles
+# TODO: Expand on font
+ctx.font = '<fuzzint>px serif';
+ctx.font = '<interestingint>px serif';
+ctx.textAlign = <textAlign>;
+ctx.textBaseline = <textBaseline>;
+ctx.direction = <txtDirection>;
+
+<new m> = document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGMatrix();
+<m>.a = <fuzzint>; <m>.b = <fuzzint>;
+<m>.c = <fuzzint>; <m>.d = <fuzzint>;
+<m>.e = <fuzzint>; <m>.f = <fuzzint>;
+
+!end lines
