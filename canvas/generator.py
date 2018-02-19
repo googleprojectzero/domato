@@ -50,9 +50,13 @@ def GenerateNewSample(template, jsgrammar):
     """
 
     result = template
-
+    handlers = False
     while '<canvasfuzz>' in result:
         numlines = _N_MAIN_LINES
+        if handlers:
+            numlines = _N_EVENTHANDLER_LINES
+        else:
+            handlers = True
         result = result.replace(
             '<canvasfuzz>',
             generate_function_body(jsgrammar, numlines),

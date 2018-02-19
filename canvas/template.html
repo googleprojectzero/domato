@@ -15,20 +15,17 @@ function GetVariable(fuzzervars, var_type) { if(fuzzervars[var_type]) { return f
 
 function SetVariable(fuzzervars, var_name, var_type) { fuzzervars[var_type] = var_name; }
 
-function draw() {
+var canvas = document.createElement('canvas');
 
-    var canvas = document.createElement('canvas');
+canvas.id = "CursorLayer";
+canvas.width = 200;
+canvas.height = 200;
+canvas.style.position = "absolute";
+canvas.style.border = "1px solid";
 
-    canvas.id = "CursorLayer";
-    canvas.width = 200;
-    canvas.height = 200;
-    canvas.style.position = "absolute";
-    canvas.style.border = "1px solid";
+var body = document.getElementsByTagName("body")[0];
+body.appendChild(canvas);
 
-    var body = document.getElementsByTagName("body")[0];
-    body.appendChild(canvas);
+var ctx = canvas.getContext('2d');
 
-    var ctx = canvas.getContext('2d');
-
-    try { <canvasfuzz>; } catch(e) { console.log(e.message) }
-}
+try { <canvasfuzz>; } catch(e) { console.log(e.message) }
