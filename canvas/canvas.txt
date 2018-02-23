@@ -107,11 +107,12 @@
 
 <root root=true> = <lines count=50>
 
+!include common.txt
+!include cssproperties.txt
+
 !lineguard try { <line> } catch(e) { console.log(e.message) }
 !varformat fuzzvar%05d
 !begin lines
-!include common.txt
-!include cssproperties.txt
 
 # Image
 <new img> = new Image();
@@ -152,7 +153,7 @@
 <new path2d> = new Path2D('<canvasint> <canvasint> h <canvasint> v <canvasint> h <canvasint> Z');
 <new path2d> = new Path2D('M<canvasint> <canvasint> H <canvasint> V <canvasint> H <canvasint> L <canvasint> <canvasint>');
 <new path2d> = new Path2D('M<canvasint> <canvasint> A <canvasint> <canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint> <canvasint> L <canvasint> <canvasint> Z" fill="<color>"');
-<new path2d> = new Path2D('M<canvasint> <canvasint> A <canvasint> <canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint> <canvasint> L <canvasint> <canvasint> Z" fill="<cssproperty_border-right-color>" stroke="<color">');
+<new path2d> = new Path2D('M<canvasint> <canvasint> A <canvasint> <canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint> <canvasint> L <canvasint> <canvasint> Z" fill="<cssproperty_border-right-color>" stroke="<color>"');
 
 # Button
 ctx.drawFocusIfNeeded(<button>);
