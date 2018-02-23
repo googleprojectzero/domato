@@ -107,10 +107,11 @@
 
 <root root=true> = <lines count=50>
 
-!lineguard try { <line>; } catch(e) { console.log(e.message) }
+!lineguard try { <line> } catch(e) { console.log(e.message) }
 !varformat fuzzvar%05d
 !begin lines
 !include common.txt
+!include cssproperties.txt
 
 # Image
 <new img> = new Image();
@@ -151,6 +152,7 @@
 <new path2d> = new Path2D('<canvasint> <canvasint> h <canvasint> v <canvasint> h <canvasint> Z');
 <new path2d> = new Path2D('M<canvasint> <canvasint> H <canvasint> V <canvasint> H <canvasint> L <canvasint> <canvasint>');
 <new path2d> = new Path2D('M<canvasint> <canvasint> A <canvasint> <canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint> <canvasint> L <canvasint> <canvasint> Z" fill="<color>"');
+<new path2d> = new Path2D('M<canvasint> <canvasint> A <canvasint> <canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint> <canvasint> L <canvasint> <canvasint> Z" fill="<cssproperty_border-right-color>" stroke="<color">');
 
 # Button
 ctx.drawFocusIfNeeded(<button>);
@@ -167,10 +169,12 @@ ctx.rect(<canvasint>, <canvasint>, <canvasint>, <canvasint>);
 ctx.arc(<int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>);
 ctx.arc(<canvasint>, <canvasint>, <canvasint>, <canvasint>, <float> <mathOperation> Math.PI);
 ctx.arc(<float>, <float>, <float>, <float>,<float> - Math.PI );
-ctx.arc(<canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>,<boolean>);
+ctx.arc(<canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>, <boolean>);
 ctx.arcTo(<int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>);
 ctx.arcTo(<canvasint>, <canvasint>, <canvasint>, <canvasint>, <float> <mathOperation> Math.PI);
-ctx.arcTo(<float>, <float>, <float>, <float>,<float> - Math.PI );
+ctx.arcTo(<float>, <float>, <float>, <float>, <float> - Math.PI );
+ctx.quadraticCurveTo(<canvasint>, <canvasint>, <canvasint>, <canvasint>);
+ctx.bezierCurveTo(<canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>);
 ctx.ellipse(<int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <boolean>);
 ctx.ellipse(<canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>, <boolean>);
 ctx.ellipse(<canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>, <boolean>);
