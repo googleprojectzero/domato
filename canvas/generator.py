@@ -1,4 +1,4 @@
-#   WeirDOM - main generator script
+#   Domato - main generator script
 #   -------------------------------
 #
 #   Written and maintained by Ivan Fratric <ifratric@google.com>
