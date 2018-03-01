@@ -1,4 +1,4 @@
-#   WeirDOM - grammar parser and generator
+#   Domato - grammar parser and generator
 #   --------------------------------------
 #
 #   Written and maintained by Ivan Fratric <ifratric@google.com>
