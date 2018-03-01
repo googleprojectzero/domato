@@ -1,0 +1,302 @@
+#   Copyright 2017 Google Inc. All Rights Reserved.
+#   Licensed under the Apache License, Version 2.0 (the "License");
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
+
+<canvasint> = <interestingint>
+<canvasint> = <fuzzint>
+<canvasint> = <largeint>
+
+<largeint> = 536870911
+<largeint> = 536870912
+<largeint> = 1073741823
+<largeint> = 1073741824
+<largeint> = 2147483647
+<largeint> = 2147483648
+<largeint> = 4294967295
+<largeint> = 4294967296
+
+<fuzzstring> = <fuzzstringpart>
+<fuzzstring> = <fuzzstringpart> + <fuzzstringpart>
+<fuzzstring> = <fuzzstringpart> + <fuzzstringpart> + <fuzzstringpart>
+<fuzzstringpart> = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+<repeatcount> = 17
+<repeatcount> = 65
+<repeatcount> = 257
+<repeatcount> = 1025
+<repeatcount> = 4097
+<repeatcount> = 65537
+<repeatstr> = String.fromCharCode(<int min=0 max=127>)
+<repeatstr> = String.fromCharCode(<int min=0 max=127>).repeat(<repeatcount>)
+
+<fillRule> = "nonzero"
+<fillRule> = "evenodd"
+
+<lineCap> = "butt"
+<lineCap> = "round"
+<lineCap> = "square"
+<lineJoin> = "bevel"
+<lineJoin> = "round"
+<lineJoin> = "miter"
+
+<textAlign> = "left"
+<textAlign> = "right"
+<textAlign> = "center"
+<textAlign> = "start"
+<textAlign> = "end"
+
+<textBaseline> = "top" 
+<textBaseline> = "hanging"
+<textBaseline> = "middle"
+<textBaseline> = "alphabetic"
+<textBaseline> = "ideographic"
+<textBaseline> = "bottom"
+
+<txtDirection> = "ltr"
+<txtDirection> = "rtl"
+<txtDirection> = "inherit"
+
+<repetition> = "repeat" 
+<repetition> = "repeat-x" 
+<repetition> = "repeat-y" 
+<repetition> = "no-repeat"
+
+<imageFormat> = "image/png"
+<imageFormat> = "image/webp"
+
+<mathOperation> = +
+<mathOperation> = -
+<mathOperation> = /
+<mathOperation> = *
+
+<globalCompositeOperation> = "source-over"
+<globalCompositeOperation> = "source-in"
+<globalCompositeOperation> = "source-out"
+<globalCompositeOperation> = "source-atop"
+<globalCompositeOperation> = "destination-over"
+<globalCompositeOperation> = "destination-in"
+<globalCompositeOperation> = "destination-out"
+<globalCompositeOperation> = "destination-atop"
+<globalCompositeOperation> = "lighter"
+<globalCompositeOperation> = "copy"
+<globalCompositeOperation> = "xor"
+<globalCompositeOperation> = "multiply"
+<globalCompositeOperation> = "screen"
+<globalCompositeOperation> = "overlay"
+<globalCompositeOperation> = "darken"
+<globalCompositeOperation> = "lighten"
+<globalCompositeOperation> = "color-dodge"
+<globalCompositeOperation> = "hard-light"
+<globalCompositeOperation> = "soft-light"
+<globalCompositeOperation> = "difference"
+<globalCompositeOperation> = "exclusion"
+<globalCompositeOperation> = "hue"
+<globalCompositeOperation> = "saturation"
+<globalCompositeOperation> = "color"
+<globalCompositeOperation> = "luminosity"
+
+<this> = this
+
+<root root=true> = <lines count=50>
+
+!include common.txt
+!include cssproperties.txt
+
+!lineguard try { <line> } catch(e) { console.log(e.message) }
+!varformat fuzzvar%05d
+!begin lines
+
+# Image
+<new img> = new Image();
+<new img> = new Image(<canvasint>, <canvasint>);
+<img>.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+
+# Uint8ClampedArray
+<new uintc8> = new Uint8ClampedArray(<canvasint>);
+<new uintc8> = new Uint8ClampedArray([<canvasint>,<canvasint>]);
+
+# ImageData
+<new imgData> = new ImageData(<uintc8>, <canvasint>, <canvasint>);
+<new imgData> = new ImageData(<canvasint>, <canvasint>);
+
+# The button
+<new button> = document.getElementById('button');
+<button>.focus();
+
+# Only for addPath method
+<new path2daddpath> = new Path2D();
+<path2daddpath>.addPath(<path2daddpath>,<m>);
+
+# HTMLCanvasElement
+<new canvas> = document.getElementById('canvas');
+<canvas>.height = <canvasint>;
+<canvas>.width = <canvasint>;
+<canvas>.toDataURL(<imageFormat>, <float min=0 max=1>);
+<canvas>.transferControlToOffscreen();
+
+# Capture stream
+<new canvasElt> = document.querySelector('canvas');
+<new stream> = <canvasElt>.captureStream(<canvasint>);
+
+# Path2d stuff
+<new path2d> = new Path2D();
+<new path2d> = new Path2D(<path2d>);
+<new path2d> = new Path2D('<canvasint> <canvasint> C <canvasint> <canvasint>, <canvasint> <canvasint>, <canvasint> <canvasint>');
+<new path2d> = new Path2D('<canvasint> <canvasint> h <canvasint> v <canvasint> h <canvasint> Z');
+<new path2d> = new Path2D('M<canvasint> <canvasint> H <canvasint> V <canvasint> H <canvasint> L <canvasint> <canvasint>');
+<new path2d> = new Path2D('M<canvasint> <canvasint> A <canvasint> <canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint> <canvasint> L <canvasint> <canvasint> Z" fill="<color>"');
+<new path2d> = new Path2D('M<canvasint> <canvasint> A <canvasint> <canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint> <canvasint> L <canvasint> <canvasint> Z" fill="<cssproperty_border-right-color>" stroke="<color>"');
+
+# Button
+ctx.drawFocusIfNeeded(<button>);
+
+# Paths
+ctx.beginPath();
+ctx.closePath();
+ctx.moveTo(<canvasint>, <canvasint>);
+ctx.lineTo(<canvasint>, <canvasint>);
+ctx.lineTo(<canvasint>, <canvasint>);
+ctx.bezierCurveTo(<canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>);
+ctx.quadraticCurveTo(<canvasint>, <canvasint>, <canvasint>, <canvasint>);
+ctx.rect(<canvasint>, <canvasint>, <canvasint>, <canvasint>);
+ctx.arc(<int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>);
+ctx.arc(<canvasint>, <canvasint>, <canvasint>, <canvasint>, <float> <mathOperation> Math.PI);
+ctx.arc(<float>, <float>, <float>, <float>,<float> - Math.PI );
+ctx.arc(<canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>, <boolean>);
+ctx.arcTo(<int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>);
+ctx.arcTo(<canvasint>, <canvasint>, <canvasint>, <canvasint>, <float> <mathOperation> Math.PI);
+ctx.arcTo(<float>, <float>, <float>, <float>, <float> - Math.PI );
+ctx.quadraticCurveTo(<canvasint>, <canvasint>, <canvasint>, <canvasint>);
+ctx.bezierCurveTo(<canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>);
+ctx.ellipse(<int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <int min=0 max=255>, <boolean>);
+ctx.ellipse(<canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>, <boolean>);
+ctx.ellipse(<canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>, <boolean>);
+ctx.rect(<canvasint>, <canvasint>, <canvasint>, <canvasint>);
+
+ctx.fillStyle = '<color>';
+ctx.fillStyle = <pattern>
+ctx.strokeStyle = '<color>';
+
+# Drawing paths 
+# Fill and stroke styles
+# TODO: This section needs also to be expanded
+ctx.fill();
+ctx.fill(<fillRule>);
+ctx.fill(<path2d>, <fillRule>);
+ctx.stroke();
+ctx.stroke(<path2d>);
+ctx.clip();
+ctx.clip(<fillRule>);
+ctx.clip(<path2d>, <fillRule>);
+console.log(ctx.isPointInPath(<canvasint>, <canvasint>));
+console.log(ctx.isPointInPath(<path2d>, <canvasint>, <canvasint>, <fillRule>));
+console.log(ctx.isPointInStroke(<canvasint>, <canvasint>));
+console.log(ctx.isPointInStroke(<path2d>, <canvasint>, <canvasint>));
+
+# Transformations
+<new matrix> = ctx.currentTransform;
+<matrix>.a = <canvasint>;
+<matrix>.b = <canvasint>;
+<matrix>.c = <canvasint>;
+<matrix>.d = <canvasint>;
+<matrix>.e = <canvasint>;
+<matrix>.f = <canvasint>;
+ctx.currentTransform = <matrix>;
+ctx.rotate(<canvasint> <mathOperation> Math.PI <mathOperation> <canvasint>);
+ctx.scale(<canvasint>, <canvasint>);
+ctx.translate(<canvasint>, <canvasint>);
+ctx.transform(<canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>);
+ctx.transform(<float min=0 max=1>, <float min=0 max=1>, <float min=0 max=1>, <float min=0 max=1>, <float min=0 max=1>, <float min=0 max=1>);
+ctx.setTransform(<canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>,  <canvasint>);
+ctx.resetTransform();
+
+# Compositing
+ctx.globalAlpha = <float min=0 max=1>;
+ctx.globalCompositeOperation = <globalCompositeOperation>;
+
+# Drawing images
+ctx.drawImage(<img>, <canvasint>, <canvasint>);
+ctx.drawImage(<img>, <canvasint>, <canvasint>, <canvasint>, <canvasint>);
+ctx.drawImage(<img>, <canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>);
+
+# Pixel manipulation
+# Expand on ImageData object
+ctx.createImageData(<canvasint>, <canvasint>);
+console.log(<imgData>.data);
+
+ctx.getImageData(<canvasint>, <canvasint>, <canvasint>, <canvasint>);
+ctx.putImageData(<img>, <canvasint>, <canvasint>);
+ctx.putImageData(<img>, <canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>);
+
+# Image Smoothing
+ctx.imageSmoothingEnabled = <boolean>;
+
+# The canvas state
+ctx.save();
+ctx.restore();
+console.log(ctx.canvas);
+
+# Hit regions
+ctx.addHitRegion({id: <fuzzstring>});
+ctx.removeHitRegion('<fuzzstring>');
+ctx.clearHitRegions();
+
+# Gradients and patterns
+<new grd> = ctx.createLinearGradient(<canvasint>, <canvasint>, <canvasint>, <canvasint>);
+<new grd> = ctx.createRadialGradient(<canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>, <canvasint>);
+# color offset: A number between 0 and 1.
+<grd>.addColorStop(<float min=0 max=1>, "<color>");
+
+<new pattern> = ctx.createPattern(<img>, <repetition>);
+
+# Shadows
+ctx.shadowBlur = <canvasint>;
+ctx.shadowColor = "<color>";
+ctx.shadowOffsetX = <canvasint>;
+ctx.shadowOffsetY = <canvasint>;
+
+# Drawing rectangles
+ctx.clearRect(<canvasint>, <canvasint>, <canvasint>, <canvasint>);
+ctx.clearRect(<canvasint>, <canvasint>, <canvasint>, <canvasint>);
+ctx.clearRect(<canvasint>, <canvasint>, canvas.width, canvas.height);
+
+ctx.fillRect(<canvasint>, <canvasint>, <canvasint>, <canvasint>);
+ctx.strokeRect(<canvasint>, <canvasint>, <canvasint>, <canvasint>);
+
+# Drawing text
+ctx.fillText(<fuzzstring>,  <canvasint>, <canvasint>);
+ctx.strokeText(<fuzzstring>, <canvasint>, <canvasint>);
+<new text> = ctx.measureText(<fuzzstring>);
+console.log((<text>.width));
+
+# Line styles
+ctx.lineWidth = <canvasint>;
+ctx.lineCap = <lineCap>;
+ctx.lineJoin = <lineJoin>;
+ctx.miterLimit = <canvasint>;
+ctx.setLineDash([<canvasint>, <canvasint>]);
+ctx.setLineDash([]);
+ctx.lineDashOffset = <canvasint>;
+console.log(ctx.getLineDash());
+
+# Text styles
+# TODO: Expand on font
+ctx.font = '<canvasint>px serif';
+ctx.textAlign = <textAlign>;
+ctx.textBaseline = <textBaseline>;
+ctx.direction = <txtDirection>;
+
+<new m> = document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGMatrix();
+<m>.a = <canvasint>; <m>.b = <canvasint>;
+<m>.c = <canvasint>; <m>.d = <canvasint>;
+<m>.e = <canvasint>; <m>.f = <canvasint>;
+
+!end lines
