@@ -948,7 +948,7 @@ class Grammar(object):
         """Parses grammar rules from string.
 
         Splits the string into lines, parses the lines and loads grammar rules.
-        See go/borgfuzz-grammar for the rule syntax.
+        See readme for the rule syntax.
 
         Args:
             grammar_str: String containing the grammar.
@@ -969,7 +969,7 @@ class Grammar(object):
         """Parses grammar from file.
 
         Opens a text file, parses it and loads the grammar rules within.
-        See go/borgfuzz-grammar for the rule syntax. Note that grammar
+        See readme for the rule syntax. Note that grammar
         files can include other grammar files using !import command.
 
         Args:
