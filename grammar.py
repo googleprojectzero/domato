@@ -292,11 +292,6 @@ class Grammar(object):
                 context = tmp_context
             except RecursionError as e:
                 print('Warning: ' + str(e))
-        for i in range(len(context['lines']) // 100):
-            context['lines'].insert(
-                random.randint(0, len(context['lines'])),
-                'freememory();'
-            )
         if not self._line_guard:
             guarded_lines = context['lines']
         else:
