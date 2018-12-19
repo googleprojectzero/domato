@@ -1,0 +1,307 @@
+<root root=true> = <lines count=1000>
+
+<fuzzint> = -1
+<fuzzint> = 0
+<fuzzint> = 1
+<fuzzint> = 2
+<fuzzint> = 0
+<fuzzint> = 1
+<fuzzint> = 2
+<fuzzint> = 10
+<fuzzint> = 100
+<fuzzint> = 1000
+# <fuzzint> = 1000000
+<fuzzint> = <largeint>
+
+<largeint> = 536870911
+<largeint> = 536870912
+<largeint> = 1073741823
+<largeint> = 1073741824
+<largeint> = 2147483647
+<largeint> = 2147483648
+<largeint> = 4294967295
+<largeint> = 4294967296
+
+<cproperty> = property1
+<cproperty> = property2
+<cproperty> = property3
+<cproperty> = property4
+<cproperty> = property5
+
+<property> = property1
+<property> = property2
+<property> = property3
+<property> = property4
+<property> = property5
+<property> = compareMode
+<property> = Pattern
+<property> = IgnoreCase
+<property> = Global
+<property> = Count
+<property> = FirstIndex
+<property> = Length
+<property> = Value
+
+<class> = class1
+<class> = class2
+<class> = class3
+<class> = class4
+<class> = class5
+
+<function> = function1
+<function> = function2
+
+<sub> = sub1
+<sub> = sub2
+
+<arg> = arg1
+<arg> = arg2
+<arg> = arg3
+<arg> = arg4
+<arg> = arg5
+
+<datetype> = Date
+<datetype> = Now
+<datetype> = Time
+<datetype> = Timer
+
+<param> = <var>
+<param> = <var>
+<param> = <var>
+<param> = <var>
+<param> = <var>
+<param> = <var>
+<param> = <fuzzint>
+<param> = True
+<param> = False
+<param> = <arg>
+<param> = <fuzzstring>
+<param> = <cproperty>
+<param> = "31-Jan-09"
+
+<fuzzstring> = <fuzzstringpart>
+<fuzzstring> = <fuzzstringpart> & <fuzzstringpart>
+<fuzzstring> = <fuzzstringpart> & <fuzzstringpart> & <fuzzstringpart>
+<fuzzstringpart> = String(<repeatcount>, <repeatstr>)
+<repeatcount> = 17
+<repeatcount> = 65
+<repeatcount> = 257
+<repeatcount> = 1025
+<repeatcount> = 4097
+<repeatcount> = 65537
+<repeatstr> = Chr(<int min=0 max=127>)
+<repeatstr> = Chr(<int min=0 max=127>) & Chr(<int min=0 max=127>)
+<repeatstr> = Chr(<int min=0 max=127>) & Chr(<int min=0 max=127>) & Chr(<int min=0 max=127>)
+
+<doset> = True
+<doset> = False
+
+<var> = var<int min=1 max=80>
+<var> = var<int min=1 max=80>
+<var> = var<int min=1 max=80>
+<var> = var<int min=1 max=80>
+<var> = var<int min=1 max=80>
+<var> = property<int min=1 max=5>
+
+<maybeset> = 
+<maybeset> = Set<char code=32>
+
+!begin lines
+
+<var> = "aaaaaaaaaa"
+<var> = "aaaaaaaaaa"
+<var> = Array(<param>)
+<var> = Array(<param>, <param>, <param>)
+<var> = Array(<param>, <param>, <param>, <param>, <param>)
+set <var> = new <class>
+set <var> = CreateObject("Scripting.Dictionary")
+set <var> = CreateObject("Scripting.Dictionary")
+set <var> = New RegExp
+
+<maybeset><var> = Me
+<maybeset><var> = <arg>
+<maybeset><var> = <function>(<param>, <param>, <param>, <param>, <param>)
+<maybeset><var> = <var>.f(<param>, <param>, <param>, <param>, <param>)
+<maybeset><var> = f(<param>, <param>, <param>, <param>, <param>)
+<maybeset><var> = <var>(<param>, <param>, <param>, <param>, <param>)
+<sub> <param>, <param>, <param>, <param>, <param>
+
+If IsObject(<param id=1>) Then Set <var id=2>.<property id=3> = <param id=1> Else <var id=2>.<property id=3> = <param id=1> End if
+If IsObject(<var id=1>.<property id=2>) Then Set <var id=3> = <var id=1>.<property id=2> Else <var id=3> = <var id=1>.<property id=2> End if
+If IsObject(<param id=1>) Then Set <var id=2>.<property id=3> = <param id=1> Else <var id=2>.<property id=3> = <param id=1> End if
+If IsObject(<var id=1>.<property id=2>) Then Set <var id=3> = <var id=1>.<property id=2> Else <var id=3> = <var id=1>.<property id=2> End if
+If IsObject(<param id=1>) Then Set <var id=2>.<property id=3> = <param id=1> Else <var id=2>.<property id=3> = <param id=1> End if
+If IsObject(<var id=1>.<property id=2>) Then Set <var id=3> = <var id=1>.<property id=2> Else <var id=3> = <var id=1>.<property id=2> End if
+If IsObject(<param id=1>) Then Set <var id=2>.<property id=3> = <param id=1> Else <var id=2>.<property id=3> = <param id=1> End if
+If IsObject(<var id=1>.<property id=2>) Then Set <var id=3> = <var id=1>.<property id=2> Else <var id=3> = <var id=1>.<property id=2> End if
+If IsObject(<param id=1>) Then Set <var id=2>.<property id=3> = <param id=1> Else <var id=2>.<property id=3> = <param id=1> End if
+If IsObject(<var id=1>.<property id=2>) Then Set <var id=3> = <var id=1>.<property id=2> Else <var id=3> = <var id=1>.<property id=2> End if
+<maybeset><var> = <var>.<property>
+<maybeset><var>.<property> = <param>
+
+
+If IsObject(<param id=1>) Then Set <var id=2>(<fuzzint id=3>) = <param id=1> Else <var id=2>(<fuzzint id=3>) = <param id=1> End if
+If IsObject(<var id=2>(<fuzzint id=3>)) Then Set <var id=1> = <var id=2>(<fuzzint id=3>) Else <var id=1> = <var id=2>(<fuzzint id=3>) End if
+If IsObject(<param id=1>) Then Set <var id=2>(<fuzzint id=3>) = <param id=1> Else <var id=2>(<fuzzint id=3>) = <param id=1> End if
+If IsObject(<var id=2>(<fuzzint id=3>)) Then Set <var id=1> = <var id=2>(<fuzzint id=3>) Else <var id=1> = <var id=2>(<fuzzint id=3>) End if
+If IsObject(<param id=1>) Then Set <var id=2>(<fuzzint id=3>) = <param id=1> Else <var id=2>(<fuzzint id=3>) = <param id=1> End if
+If IsObject(<var id=2>(<fuzzint id=3>)) Then Set <var id=1> = <var id=2>(<fuzzint id=3>) Else <var id=1> = <var id=2>(<fuzzint id=3>) End if
+If IsObject(<param id=1>) Then Set <var id=2>(<fuzzint id=3>) = <param id=1> Else <var id=2>(<fuzzint id=3>) = <param id=1> End if
+If IsObject(<var id=2>(<fuzzint id=3>)) Then Set <var id=1> = <var id=2>(<fuzzint id=3>) Else <var id=1> = <var id=2>(<fuzzint id=3>) End if
+If IsObject(<param id=1>) Then Set <var id=2>(<fuzzint id=3>) = <param id=1> Else <var id=2>(<fuzzint id=3>) = <param id=1> End if
+If IsObject(<var id=2>(<fuzzint id=3>)) Then Set <var id=1> = <var id=2>(<fuzzint id=3>) Else <var id=1> = <var id=2>(<fuzzint id=3>) End if
+If IsObject(<param id=1>) Then Set <var id=2>(<fuzzint id=3>) = <param id=1> Else <var id=2>(<fuzzint id=3>) = <param id=1> End if
+If IsObject(<var id=2>(<fuzzint id=3>)) Then Set <var id=1> = <var id=2>(<fuzzint id=3>) Else <var id=1> = <var id=2>(<fuzzint id=3>) End if
+If IsObject(<param id=1>) Then Set <var id=2>(<fuzzint id=3>) = <param id=1> Else <var id=2>(<fuzzint id=3>) = <param id=1> End if
+If IsObject(<var id=2>(<fuzzint id=3>)) Then Set <var id=1> = <var id=2>(<fuzzint id=3>) Else <var id=1> = <var id=2>(<fuzzint id=3>) End if
+If IsObject(<param id=1>) Then Set <var id=2>(<fuzzint id=3>) = <param id=1> Else <var id=2>(<fuzzint id=3>) = <param id=1> End if
+If IsObject(<var id=2>(<fuzzint id=3>)) Then Set <var id=1> = <var id=2>(<fuzzint id=3>) Else <var id=1> = <var id=2>(<fuzzint id=3>) End if
+If IsObject(<param id=1>) Then Set <var id=2>(<fuzzint id=3>) = <param id=1> Else <var id=2>(<fuzzint id=3>) = <param id=1> End if
+If IsObject(<var id=2>(<fuzzint id=3>)) Then Set <var id=1> = <var id=2>(<fuzzint id=3>) Else <var id=1> = <var id=2>(<fuzzint id=3>) End if
+If IsObject(<param id=1>) Then Set <var id=2>(<fuzzint id=3>) = <param id=1> Else <var id=2>(<fuzzint id=3>) = <param id=1> End if
+If IsObject(<var id=2>(<fuzzint id=3>)) Then Set <var id=1> = <var id=2>(<fuzzint id=3>) Else <var id=1> = <var id=2>(<fuzzint id=3>) End if
+If IsObject(<param id=1>) Then Set <var id=2>(<fuzzint id=3>) = <param id=1> Else <var id=2>(<fuzzint id=3>) = <param id=1> End if
+If IsObject(<var id=2>(<fuzzint id=3>)) Then Set <var id=1> = <var id=2>(<fuzzint id=3>) Else <var id=1> = <var id=2>(<fuzzint id=3>) End if
+If IsObject(<param id=1>) Then Set <var id=2>(<fuzzint id=3>) = <param id=1> Else <var id=2>(<fuzzint id=3>) = <param id=1> End if
+If IsObject(<var id=2>(<fuzzint id=3>)) Then Set <var id=1> = <var id=2>(<fuzzint id=3>) Else <var id=1> = <var id=2>(<fuzzint id=3>) End if
+If IsObject(<param id=1>) Then Set <var id=2>(<fuzzint id=3>) = <param id=1> Else <var id=2>(<fuzzint id=3>) = <param id=1> End if
+If IsObject(<var id=2>(<fuzzint id=3>)) Then Set <var id=1> = <var id=2>(<fuzzint id=3>) Else <var id=1> = <var id=2>(<fuzzint id=3>) End if
+If IsObject(<param id=1>) Then Set <var id=2>(<fuzzint id=3>) = <param id=1> Else <var id=2>(<fuzzint id=3>) = <param id=1> End if
+If IsObject(<var id=2>(<fuzzint id=3>)) Then Set <var id=1> = <var id=2>(<fuzzint id=3>) Else <var id=1> = <var id=2>(<fuzzint id=3>) End if
+<maybeset><var>(<fuzzint>) = <param>
+<maybeset><var> = <var>(<fuzzint>)
+<maybeset><var>(<fuzzint>, <fuzzint>) = <param>
+<maybeset><var> = <var>(<fuzzint>, <fuzzint>)
+<maybeset><var>(<fuzzint>, <fuzzint>) = <param>
+<maybeset><var> = <var>(<fuzzint>, <fuzzint>)
+
+Set <var> = GetRef("<function>")
+
+Eval(<fuzzstring>)
+<maybeset><var> = CreateObject(<fuzzstring>)
+<maybeset><var> = TypeName(<param>)
+
+Erase <var>
+
+ReDim <var>(<fuzzint>)
+ReDim Preserve <var>(<fuzzint>)
+ReDim <var>(<fuzzint>)
+ReDim Preserve <var>(<fuzzint>)
+ReDim <var>(<fuzzint>, <fuzzint>)
+ReDim Preserve <var>(<fuzzint>, <fuzzint>)
+ReDim <var>(<param>, <param>)
+ReDim Preserve <var>(<param>, <param>)
+
+#string
+InStr <param>, <param>
+InStr <param>, <param>, <param>
+InStr <param>, <param>, <param>, <param>
+InStrRev <param>, <param>
+InStrRev <param>, <param>, <param>
+InStrRev <param>, <param>, <param>, <param>
+<var> = LCase(<param>)
+<var> = UCase(<param>)
+<var> = Left(<param>, <param>)
+<var> = Right(<param>, <param>)
+Len(<param>)
+<var> = LTrim(<param>)
+<var> = RTrim(<param>)
+<var> = Trim(<param>)
+<var> = Mid(<param>, <param>)
+<var> = Mid(<param>, <param>, <param>)
+<var> = Replace(<param>, <param>, <param>)
+<var> = Replace(<param>, <param>, <param>, <param>)
+<var> = Replace(<param>, <param>, <param>, <param>, <param>)
+<var> = Replace(<param>, <param>, <param>, <param>, <param>, <param>)
+<var> = Space(<param>)
+StrComp <param>, <param>
+StrComp <param>, <param>, <param>
+<var> = String(<param>, <param>)
+<var> = StrReverse(<param>)
+
+#Array
+<var> = Filter(<param>, <param>)
+<var> = Filter(<param>, <param>, <param>)
+<var> = Filter(<param>, <param>, <param>, <param>)
+<var> = Join(<param>)
+<var> = Join(<param>, <param>)
+LBound <param>, <param>
+UBound <param>, <param>
+<var> = Split(<param>)
+<var> = Split(<param>, <param>)
+<var> = Split(<param>, <param>, <param>)
+<var> = Split(<param>, <param>, <param>, <param>)
+
+#dictionary
+If IsObject(<param id=1>) Then Set <var id=2>.Item("<cproperty id=3>") = <param id=1> Else <var id=2>.Item("<cproperty id=3>") = <param id=1> End if
+If IsObject(<var id=2>.Item("<cproperty id=3>")) Then Set <var id=1> = <var id=2>.Item("<cproperty id=3>") Else <var id=1> = <var id=2>(<fuzzint id=3>) End if
+If IsObject(<param id=1>) Then Set <var id=2>.Item("<cproperty id=3>") = <param id=1> Else <var id=2>.Item("<cproperty id=3>") = <param id=1> End if
+If IsObject(<var id=2>.Item("<cproperty id=3>")) Then Set <var id=1> = <var id=2>.Item("<cproperty id=3>") Else <var id=1> = <var id=2>(<fuzzint id=3>) End if
+If IsObject(<param id=1>) Then Set <var id=2>.Item("<cproperty id=3>") = <param id=1> Else <var id=2>.Item("<cproperty id=3>") = <param id=1> End if
+If IsObject(<var id=2>.Item("<cproperty id=3>")) Then Set <var id=1> = <var id=2>.Item("<cproperty id=3>") Else <var id=1> = <var id=2>(<fuzzint id=3>) End if
+If IsObject(<param id=1>) Then Set <var id=2>.Item("<cproperty id=3>") = <param id=1> Else <var id=2>.Item("<cproperty id=3>") = <param id=1> End if
+If IsObject(<var id=2>.Item("<cproperty id=3>")) Then Set <var id=1> = <var id=2>.Item("<cproperty id=3>") Else <var id=1> = <var id=2>(<fuzzint id=3>) End if
+If IsObject(<param id=1>) Then Set <var id=2>.Item("<cproperty id=3>") = <param id=1> Else <var id=2>.Item("<cproperty id=3>") = <param id=1> End if
+If IsObject(<var id=2>.Item("<cproperty id=3>")) Then Set <var id=1> = <var id=2>.Item("<cproperty id=3>") Else <var id=1> = <var id=2>(<fuzzint id=3>) End if
+<maybeset><var> = <var>.Item("<cproperty>")
+<maybeset><var>.Item("<cproperty>") = <param>
+<maybeset><var> = <var>.Item(<param>)
+<maybeset><var>.Item(<param>) = <param>
+<maybeset><var>.Key("<cproperty>") = <param>
+<maybeset><var> = <var>.Key("<cproperty>")
+<maybeset><var>.Key(<param>) = <param>
+<maybeset><var> = <var>.Key(<param>)
+<var>.add "<cproperty>", <param>
+<var>.add <param>, <param>
+<var>.exists(<param>)
+<var> = <var>.Items
+<var> = <var>.Keys
+<var>.Remove("<cproperty>")
+<var>.Remove(<param>)
+<var>.RemoveAll
+
+#regexp
+<var>.Test(<param>)
+<var> = <var>.Replace(<param>, <param>)
+Set var = <var>.Execute(<param>)
+<maybeset><var> = <var>.Item(fuzzint)
+
+# set return value
+<maybeset>f1 = <param>
+<maybeset>f2 = <param>
+<maybeset>f = <param>
+<maybeset>x = <param>
+
+#date and time
+<var> = <datetype>
+<var> = CDate(param)
+# <var> = DateAdd(<param>, <param>, <param>)
+# <var> = DateDiff(<param>, <param>, <param>)
+# <var> = DateDiff(<param>, <param>, <param>, <param>)
+# <var> = DateDiff(<param>, <param>, <param>, <param>, <param>)
+# <var> = DatePart(<param>, <param>)
+# <var> = DatePart(<param>, <param>, <param>)
+# <var> = DatePart(<param>, <param>, <param>, <param>)
+<var> = DateSerial(<param>, <param>, <param>)
+<var> = DateValue(<param>)
+<var> = Day(<param>)
+<var> = Hour(<param>)
+<var> = Minute(<param>)
+<var> = Second(<param>)
+<var> = Month(<param>)
+<var> = Year(<param>)
+<var> = MonthName(<param>)
+<var> = MonthName(<param>, <param>)
+<var> = FormatDateTime(<param>, <param>)
+<var> = TimeSerial(<param>, <param>, <param>)
+<var> = TimeValue(<param>)
+<var> = Weekday(<param>)
+<var> = Weekday(<param>, <param>)
+<var> = WeekdayName(<param>)
+<var> = WeekdayName(<param>, <param>)
+<var> = WeekdayName(<param>, <param>, <param>)
+
+<var> = Atn(<param>)
+<var> = <param> mod <param>
+
+!end lines

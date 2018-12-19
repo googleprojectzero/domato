@@ -1,0 +1,731 @@
+<!-- saved from url=(0016)http://localhost -->
+<html>
+<head>
+<meta http-equiv="x-ua-compatible" content="IE=10">
+</head>
+<body>
+<script type="text/vbscript">
+
+Dim doinit
+
+Dim depth
+Dim maxdepth
+depth = 0
+maxdepth = 4
+
+Dim runcountf1
+Dim runcounts1
+Dim runcountf2
+Dim runcounts2
+runcountf1 = 0
+runcounts1 = 0
+runcountf2 = 0
+runcounts2 = 0
+
+Dim runcount11
+Dim runcount12
+Dim runcount13
+Dim runcount14
+Dim runcount21
+Dim runcount22
+Dim runcount23
+Dim runcount24
+Dim runcount31
+Dim runcount32
+Dim runcount33
+Dim runcount34
+Dim runcount41
+Dim runcount42
+Dim runcount43
+Dim runcount44
+Dim runcount51
+Dim runcount52
+Dim runcount53
+Dim runcount54
+runcount11 = 0
+runcount12 = 0
+runcount13 = 0
+runcount14 = 0
+runcount21 = 0
+runcount22 = 0
+runcount23 = 0
+runcount24 = 0
+runcount31 = 0
+runcount32 = 0
+runcount33 = 0
+runcount34 = 0
+runcount41 = 0
+runcount42 = 0
+runcount43 = 0
+runcount44 = 0
+runcount51 = 0
+runcount52 = 0
+runcount53 = 0
+runcount54 = 0
+
+
+doinit = 0
+
+Dim var11
+Dim var12
+Dim var13
+Dim var14
+Dim var15
+Dim var16
+Dim var17
+Dim var18
+Dim var19
+Dim var20
+Dim var21
+Dim var22
+Dim var23
+Dim var24
+Dim var25
+Dim var26
+Dim var27
+Dim var28
+Dim var29
+Dim var30
+Dim var31
+Dim var32
+Dim var33
+Dim var34
+Dim var35
+Dim var36
+Dim var37
+Dim var38
+Dim var39
+Dim var40
+Dim var41
+Dim var42
+Dim var43
+Dim var44
+Dim var45
+Dim var46
+Dim var47
+Dim var48
+Dim var49
+Dim var50
+Dim var51
+Dim var52
+Dim var53
+Dim var54
+Dim var55
+Dim var56
+Dim var57
+Dim var58
+Dim var59
+Dim var60
+Dim var61
+Dim var62
+Dim var63
+Dim var64
+Dim var65
+Dim var66
+Dim var67
+Dim var68
+Dim var69
+Dim var70
+Dim var71
+Dim var72
+Dim var73
+Dim var74
+Dim var75
+Dim var76
+Dim var77
+Dim var78
+Dim var79
+Dim var80
+
+Dim property1
+Dim property2
+Dim property3
+Dim property4
+Dim property5
+
+On Error Resume Next
+
+Sub main()
+On Error Resume Next
+' msgbox("in main")
+
+<vbfuzzer>
+
+' msgbox("done")
+End Sub
+
+Function function1(arg1, arg2, arg3, arg4, arg5)
+On Error Resume Next
+If runcountf1>2 Then
+  Exit Function
+End If
+if depth > maxdepth Then
+  Exit Function
+End If
+runcountf1 = runcountf1 + 1
+depth = depth + 1
+' msgbox("in f1")
+
+<vbfuzzer>
+
+' msgbox("end f1")
+depth = depth - 1
+End Function
+
+Function function2(arg1, arg2, arg3, arg4, arg5)
+On Error Resume Next
+If runcountf2>2 Then
+  Exit Function
+End If
+if depth > maxdepth Then
+  Exit Function
+End If
+depth = depth + 1
+runcountf2 = runcountf2 + 1
+' msgbox("in f2")
+
+<vbfuzzer>
+
+' msgbox("end f2")
+depth = depth - 1
+End Function
+
+Sub sub1(arg1, arg2, arg3, arg4, arg5)
+On Error Resume Next
+If runcounts1>2 Then
+  Exit Sub
+End If
+if depth > maxdepth Then
+  Exit Sub
+End If
+depth = depth + 1
+runcounts1 = runcounts1 + 1
+' msgbox("in s1")
+
+<vbfuzzer>
+
+' msgbox("end s1")
+depth = depth - 1
+End sub
+
+Sub sub2(arg1, arg2, arg3, arg4, arg5)
+On Error Resume Next
+If runcounts2>2 Then
+  Exit Sub
+End If
+if depth > maxdepth Then
+  Exit Sub
+End If
+depth = depth + 1
+runcounts2 = runcounts2 + 1
+' msgbox("in s2")
+
+<vbfuzzer>
+
+' msgbox("end s2")
+depth = depth - 1
+End sub
+
+Class class1
+  Public property1, property2, property3, property4, property5
+
+  Public Function f(arg1, arg2, arg3, arg4, arg5)
+    On Error Resume Next
+    If runcount11>2 Then
+      Exit Function
+    End If
+    if depth > maxdepth Then
+      Exit Function
+    End If
+    depth = depth + 1
+    runcount11 = runcount11 + 1
+    ' msgbox "in member function"
+
+<vbfuzzer>
+
+    ' msgbox "end member function"
+    depth = depth - 1
+  End Function
+
+  Public Default Property Get x
+    On Error Resume Next
+    If runcount12>2 Then
+      x = 1
+      Exit Property
+    End If
+    if depth > maxdepth Then
+      x = 1
+      Exit Property
+    End If
+    depth = depth + 1
+    runcount12 = runcount12 + 1
+    ' msgbox "default"
+
+<vbfuzzer>
+
+    ' msgbox "end default"
+    depth = depth - 1
+  End Property
+
+  Private Sub Class_Initialize()
+    On Error Resume Next
+    If doinit=0 Then
+      Exit Sub
+    End If
+    If runcount13>2 Then
+      Exit Sub
+    End If
+    if depth > maxdepth Then
+      Exit Sub
+    End If
+    depth = depth + 1
+    runcount13 = runcount13 + 1
+    ' msgbox "init"
+
+<vbfuzzer>
+
+    ' msgbox "end init"
+    depth = depth - 1
+
+  End Sub
+
+  Private Sub Class_Terminate()
+    On Error Resume Next
+    If runcount14>2 Then
+      Exit Sub
+    End If
+    if depth > maxdepth Then
+      Exit Sub
+    End If
+    depth = depth + 1
+    runcount14 = runcount14 + 1
+    ' msgbox "terminate"
+
+<vbfuzzer>
+
+    ' msgbox "end terminate"
+    depth = depth - 1
+  End Sub
+
+End Class
+
+Class class2
+  Public property1, property2, property3, property4, property5
+
+  Public Function f(arg1, arg2, arg3, arg4, arg5)
+    On Error Resume Next
+    If runcount21>2 Then
+      Exit Function
+    End If
+    if depth > maxdepth Then
+      Exit Function
+    End If
+    depth = depth + 1
+    runcount21 = runcount21 + 1
+    ' msgbox "in member function"
+
+<vbfuzzer>
+
+    ' msgbox "end member function"
+    depth = depth - 1
+  End Function
+
+  Public Default Property Get x
+    On Error Resume Next
+    If runcount22>2 Then
+      x = 1
+      Exit Property
+    End If
+    if depth > maxdepth Then
+      x = 1
+      Exit Property
+    End If
+    depth = depth + 1
+    runcount22 = runcount22 + 1
+    ' msgbox "default"
+
+<vbfuzzer>
+
+    ' msgbox "end default"
+    depth = depth - 1
+  End Property
+
+  Private Sub Class_Initialize()
+    On Error Resume Next
+    If doinit=0 Then
+      Exit Sub
+    End If
+    If runcount23>2 Then
+      Exit Sub
+    End If
+    if depth > maxdepth Then
+      Exit Sub
+    End If
+    depth = depth + 1
+    runcount23 = runcount23 + 1
+    ' msgbox "init"
+
+<vbfuzzer>
+
+    ' msgbox "end init"
+    depth = depth - 1
+
+  End Sub
+
+  Private Sub Class_Terminate()
+    On Error Resume Next
+    If runcount24>2 Then
+      Exit Sub
+    End If
+    if depth > maxdepth Then
+      Exit Sub
+    End If
+    depth = depth + 1
+    runcount24 = runcount24 + 1
+    ' msgbox "terminate"
+
+<vbfuzzer>
+
+    ' msgbox "end terminate"
+    depth = depth - 1
+  End Sub
+
+End Class
+
+Class class3
+  Public property1, property2, property3, property4, property5
+
+  Public Function f(arg1, arg2, arg3, arg4, arg5)
+    On Error Resume Next
+    If runcount31>2 Then
+      Exit Function
+    End If
+    if depth > maxdepth Then
+      Exit Function
+    End If
+    depth = depth + 1
+    runcount31 = runcount31 + 1
+    ' msgbox "in member function"
+
+<vbfuzzer>
+
+    ' msgbox "end member function"
+    depth = depth - 1
+  End Function
+
+  Public Default Property Get x
+    On Error Resume Next
+    If runcount32>2 Then
+      x = 1
+      Exit Property
+    End If
+    if depth > maxdepth Then
+      x = 1
+      Exit Property
+    End If
+    depth = depth + 1
+    runcount32 = runcount32 + 1
+    ' msgbox "default"
+
+<vbfuzzer>
+
+    ' msgbox "end default"
+    depth = depth - 1
+  End Property
+
+  Private Sub Class_Initialize()
+    On Error Resume Next
+    If doinit=0 Then
+      Exit Sub
+    End If
+    If runcount33>2 Then
+      Exit Sub
+    End If
+    if depth > maxdepth Then
+      Exit Sub
+    End If
+    depth = depth + 1
+    runcount33 = runcount33 + 1
+    ' msgbox "init"
+
+<vbfuzzer>
+
+    ' msgbox "end init"
+    depth = depth - 1
+
+  End Sub
+
+  Private Sub Class_Terminate()
+    On Error Resume Next
+    If runcount34>2 Then
+      Exit Sub
+    End If
+    if depth > maxdepth Then
+      Exit Sub
+    End If
+    depth = depth + 1
+    runcount34 = runcount34 + 1
+    ' msgbox "terminate"
+
+<vbfuzzer>
+
+    ' msgbox "end terminate"
+    depth = depth - 1
+  End Sub
+
+End Class
+
+Class class4
+  Public property1, property2, property3, property4, property5
+
+  Public Function f(arg1, arg2, arg3, arg4, arg5)
+    On Error Resume Next
+    If runcount41>2 Then
+      Exit Function
+    End If
+    if depth > maxdepth Then
+      Exit Function
+    End If
+    depth = depth + 1
+    runcount41 = runcount41 + 1
+    ' msgbox "in member function"
+
+<vbfuzzer>
+
+    ' msgbox "end member function"
+    depth = depth - 1
+  End Function
+
+  Public Default Property Get x
+    On Error Resume Next
+    If runcount42>2 Then
+      x = 1
+      Exit Property
+    End If
+    if depth > maxdepth Then
+      x = 1
+      Exit Property
+    End If
+    depth = depth + 1
+    runcount42 = runcount42 + 1
+    ' msgbox "default"
+
+<vbfuzzer>
+
+    ' msgbox "end default"
+    depth = depth - 1
+  End Property
+
+  Private Sub Class_Initialize()
+    On Error Resume Next
+    If doinit=0 Then
+      Exit Sub
+    End If
+    If runcount43>2 Then
+      Exit Sub
+    End If
+    if depth > maxdepth Then
+      Exit Sub
+    End If
+    depth = depth + 1
+    runcount43 = runcount43 + 1
+    ' msgbox "init"
+
+<vbfuzzer>
+
+    ' msgbox "end init"
+    depth = depth - 1
+
+  End Sub
+
+  Private Sub Class_Terminate()
+    On Error Resume Next
+    If runcount44>2 Then
+      Exit Sub
+    End If
+    if depth > maxdepth Then
+      Exit Sub
+    End If
+    depth = depth + 1
+    runcount44 = runcount44 + 1
+    ' msgbox "terminate"
+
+<vbfuzzer>
+
+    ' msgbox "end terminate"
+    depth = depth - 1
+  End Sub
+
+End Class
+
+Class class5
+  Public property1, property2, property3, property4, property5
+
+  Public Function f(arg1, arg2, arg3, arg4, arg5)
+    On Error Resume Next
+    If runcount51>2 Then
+      Exit Function
+    End If
+    if depth > maxdepth Then
+      Exit Function
+    End If
+    depth = depth + 1
+    runcount51 = runcount51 + 1
+    ' msgbox "in member function"
+
+<vbfuzzer>
+
+    ' msgbox "end member function"
+    depth = depth - 1
+  End Function
+
+  Public Default Property Get x
+    On Error Resume Next
+    If runcount52>2 Then
+      x = 1
+      Exit Property
+    End If
+    if depth > maxdepth Then
+      x = 1
+      Exit Property
+    End If
+    depth = depth + 1
+    runcount52 = runcount52 + 1
+    ' msgbox "default"
+
+<vbfuzzer>
+
+    ' msgbox "end default"
+    depth = depth - 1
+  End Property
+
+  Private Sub Class_Initialize()
+    On Error Resume Next
+    If doinit=0 Then
+      Exit Sub
+    End If
+    If runcount53>2 Then
+      Exit Sub
+    End If
+    if depth > maxdepth Then
+      Exit Sub
+    End If
+    depth = depth + 1
+    runcount53 = runcount53 + 1
+    ' msgbox "init"
+
+<vbfuzzer>
+
+    ' msgbox "end init"
+    depth = depth - 1
+  End Sub
+
+  Private Sub Class_Terminate()
+    On Error Resume Next
+    If runcount54>2 Then
+      Exit Sub
+    End If
+    if depth > maxdepth Then
+      Exit Sub
+    End If
+    depth = depth + 1
+    runcount54 = runcount54 + 1
+    ' msgbox "terminate"
+
+<vbfuzzer>
+
+    ' msgbox "end terminate"
+    depth = depth - 1
+  End Sub
+
+End Class
+
+
+Dim var1(10)
+Dim var2(10)
+Dim var3(10)
+Dim var4(10)
+Dim var5(10)
+Dim var6(10, 10)
+Dim var7(10, 10)
+Dim var8(10, 10)
+Dim var9(10, 10)
+Dim var10(10, 10)
+var11 = Array(10)
+var12 = Array(10)
+var13 = Array(10)
+var14 = Array(10)
+var15 = Array(10)
+var16 = "aaaaaaaaaa"
+var17 = "aaaaaaaaaa"
+var18 = "aaaaaaaaaa"
+var19 = "aaaaaaaaaa"
+var20 = "aaaaaaaaaa"
+var21 = "aaaaaaaaaa"
+var22 = "aaaaaaaaaa"
+var23 = "aaaaaaaaaa"
+var24 = "aaaaaaaaaa"
+var25 = "aaaaaaaaaa"
+set var26 = new class1
+set var27 = new class2
+set var28 = new class3
+set var29 = new class4
+set var30 = new class5
+var31 = "aaaaaaaaaa"
+var32 = "aaaaaaaaaa"
+var33 = "aaaaaaaaaa"
+var34 = "aaaaaaaaaa"
+var35 = "aaaaaaaaaa"
+var36 = Array(10)
+var37 = Array(10)
+var38 = Array(10)
+var39 = Array(10)
+var40 = Array(10)
+set var41 = CreateObject("Scripting.Dictionary")
+set var42 = CreateObject("Scripting.Dictionary")
+set var43 = CreateObject("Scripting.Dictionary")
+set var44 = CreateObject("Scripting.Dictionary")
+set var45 = CreateObject("Scripting.Dictionary")
+set var46 = CreateObject("Scripting.Dictionary")
+set var47 = CreateObject("Scripting.Dictionary")
+set var48 = CreateObject("Scripting.Dictionary")
+set var49 = CreateObject("Scripting.Dictionary")
+set var50 = CreateObject("Scripting.Dictionary")
+set var51 = CreateObject("Scripting.Dictionary")
+set var52 = CreateObject("Scripting.Dictionary")
+set var53 = CreateObject("Scripting.Dictionary")
+set var54 = CreateObject("Scripting.Dictionary")
+set var55 = CreateObject("Scripting.Dictionary")
+set var56 = CreateObject("Scripting.Dictionary")
+set var57 = CreateObject("Scripting.Dictionary")
+set var58 = CreateObject("Scripting.Dictionary")
+set var59 = CreateObject("Scripting.Dictionary")
+set var60 = CreateObject("Scripting.Dictionary")
+var61 = "aaaaaaaaaa"
+var62 = "aaaaaaaaaa"
+var63 = "aaaaaaaaaa"
+var64 = "aaaaaaaaaa"
+var65 = "aaaaaaaaaa"
+var66 = "aaaaaaaaaa"
+var67 = "aaaaaaaaaa"
+var68 = "aaaaaaaaaa"
+var69 = "aaaaaaaaaa"
+var70 = "aaaaaaaaaa"
+var71 = Array(1, 2, 3)
+var72 = Array(1, 2, 3)
+var73 = Array(1, 2, 3)
+var74 = Array(1, 2, 3)
+var75 = Array(1, 2, 3)
+var76 = Array(1, 2, 3)
+var77 = Array(1, 2, 3)
+var78 = Array(1, 2, 3)
+var79 = Array(1, 2, 3)
+var80 = Array(1, 2, 3)
+
+doinit = 1
+
+main()
+
+</script>
+</body>
+</html>
