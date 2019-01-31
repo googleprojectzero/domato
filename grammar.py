@@ -1018,7 +1018,7 @@ class Grammar(object):
                 self._add_variable(var_name, parent_type, context)
 
     def _get_variable_setters(self, var_name, var_type):
-        ret = "SetVariable(" + var_name + ", '" + var_type + "'); "
+        ret = "SetVariable(fuzzervars, " + var_name + ", '" + var_type + "'); "
         if var_type in self._inheritance:
             for parent_type in self._inheritance[var_type]:
                 ret += self._get_variable_setters(var_name, parent_type)
