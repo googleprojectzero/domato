@@ -121,7 +121,6 @@ def main():
         print('Running on ClusterFuzz')
         out_dir = get_option('--output_dir')
         nsamples = int(get_option('--no_of_files'))
-        nChars = len(get_option('--no_of_files'))
         print('Output directory: ' + out_dir)
         print('Number of samples: ' + str(nsamples))
 
@@ -130,7 +129,7 @@ def main():
 
         outfiles = []
         for i in range(nsamples):
-            outfiles.append(os.path.join(out_dir, 'fuzz-' + str(i).zfill(nChars) + '.html'))
+            outfiles.append(os.path.join(out_dir, 'fuzz-' + str(i).zfill(5) + '.html'))
 
         generate_samples(fuzzer_dir, outfiles)
 
