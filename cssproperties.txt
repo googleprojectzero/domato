@@ -1893,8 +1893,6 @@
 <cssproperty_font-weight> = unset
 <cssproperty_font-weight> = <fuzzint>px
 
-<cssproperty_fonty-family> = Times
-
 <cssproperty_grid> = <fuzzint>px/<fuzzint>px <fuzzint>px
 <cssproperty_grid> = <fuzzint>px <fuzzint>px/<fuzzint>px
 <cssproperty_grid> = <fuzzint>px <fuzzint>px/<fuzzint>px <fuzzint>px
