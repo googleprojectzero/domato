@@ -2811,8 +2811,6 @@
 <cssproperty_overflow-y> = -webkit-paged-x
 <cssproperty_overflow-y> = overlay
 
-<cssproperty_oxverflow> = hidden
-
 <cssproperty_padding> = <fuzzint>
 <cssproperty_padding> = <fuzzint>em
 <cssproperty_padding> = <fuzzint>px
@@ -2903,8 +2901,6 @@
 <cssproperty_position> = inherit
 <cssproperty_position> = sticky
 <cssproperty_position> = <fuzzint>px
-
-<cssproperty_postion> = relative
 
 <cssproperty_prince-hyphens> = auto
 

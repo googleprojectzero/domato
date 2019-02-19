@@ -4359,7 +4359,6 @@
 <CSSStyleDeclaration>.setProperty("overflow-wrap", "<cssproperty_overflow-wrap>");
 <CSSStyleDeclaration>.setProperty("overflow-x", "<cssproperty_overflow-x>");
 <CSSStyleDeclaration>.setProperty("overflow-y", "<cssproperty_overflow-y>");
-<CSSStyleDeclaration>.setProperty("oxverflow", "<cssproperty_oxverflow>");
 <CSSStyleDeclaration>.setProperty("padding", "<cssproperty_padding>");
 <CSSStyleDeclaration>.setProperty("padding-bottom", "<cssproperty_padding-bottom>");
 <CSSStyleDeclaration>.setProperty("padding-left", "<cssproperty_padding-left>");
@@ -4373,7 +4372,6 @@
 <CSSStyleDeclaration>.setProperty("perspective-origin", "<cssproperty_perspective-origin>");
 <CSSStyleDeclaration>.setProperty("pointer-events", "<cssproperty_pointer-events>");
 <CSSStyleDeclaration>.setProperty("position", "<cssproperty_position>");
-<CSSStyleDeclaration>.setProperty("postion", "<cssproperty_postion>");
 <CSSStyleDeclaration>.setProperty("prince-hyphens", "<cssproperty_prince-hyphens>");
 <CSSStyleDeclaration>.setProperty("quotes", "<cssproperty_quotes>");
 <CSSStyleDeclaration>.setProperty("resize", "<cssproperty_resize>");
