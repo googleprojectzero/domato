@@ -1,0 +1,871 @@
+
+<bool> = true
+<bool> = false
+
+<bool_> = true
+<bool_> = false
+
+<glint> = <TexInt>
+<glint> = <fuzzint>
+<glint> = <largeint>
+<glint> = <sint>
+<glint> = <repeatcount>
+
+<glgll> = gl.LINEAR
+<glgll> = gl.LINEAR_MIPMAP_NEAREST
+<glgll> = <TexInt>
+<glgll> = <TexInt>
+
+<TexInt> = 0
+<TexInt> = 1
+<TexInt> = 2
+<TexInt> = 4
+<TexInt> = 8
+<TexInt> = 16
+<TexInt> = 32
+<TexInt> = 64
+<TexInt> = 128
+
+<TexInt_> = 0
+<TexInt_> = 1
+<TexInt_> = 2
+<TexInt_> = 4
+<TexInt_> = 8
+<TexInt_> = 16
+<TexInt_> = 32
+<TexInt_> = 64
+<TexInt_> = 128
+
+<sint> = 0x7fffff00
+<sint> = 0x64
+<sint> = 0x3e8
+<sint> = 0x4141
+<sint> = 0xefff
+<sint> = 0xaa
+<sint> = 0xaf43
+<sint> = -0x5a
+<sint> = true
+<sint> = false
+
+
+<largeint> = 536870911
+<largeint> = 536870912
+<largeint> = 1073741823
+<largeint> = 1073741824
+<largeint> = 2147483647
+<largeint> = 2147483648
+<largeint> = 4294967295
+<largeint> = 4294967296
+
+<fuzzstring> = <fuzzstringpart>
+<fuzzstring> = <fuzzstringpart> + <fuzzstringpart>
+<fuzzstring> = <fuzzstringpart> + <fuzzstringpart> + <fuzzstringpart>
+<fuzzstringpart> = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+<repeatcount> = 17
+<repeatcount> = 65
+<repeatcount> = 257
+<repeatcount> = 1025
+<repeatcount> = 4097
+<repeatcount> = 65537
+<repeatstr> = String.fromCharCode(<int min=0 max=127>)
+<repeatstr> = String.fromCharCode(<int min=0 max=127>).repeat(<repeatcount>)
+
+<GLclampf> = 0.0
+<GLclampf> = 0.000005
+<GLclampf> = 0.0025
+<GLclampf> = 0.1
+<GLclampf> = 0.2
+<GLclampf> = 0.255
+<GLclampf> = 0.275
+<GLclampf> = 0.3
+<GLclampf> = 0.4
+<GLclampf> = 0.5
+<GLclampf> = 0.55
+<GLclampf> = 0.75
+<GLclampf> = 1.0
+
+<GLclampf_> = 0.0
+<GLclampf_> = 0.000005
+<GLclampf_> = 0.0025
+<GLclampf_> = 0.1
+<GLclampf_> = 0.2
+<GLclampf_> = 0.255
+<GLclampf_> = 0.275
+<GLclampf_> = 0.3
+<GLclampf_> = 0.4
+<GLclampf_> = 0.5
+<GLclampf_> = 0.55
+<GLclampf_> = 0.75
+<GLclampf_> = 1.0
+
+<glBin> = 1110011
+<glBin> = 1010011
+<glBin> = 1000011
+<glBin> = 1010001
+<glBin> = 1010000
+
+<Glenum> = gl.PACK_ALIGNMENT
+<Glenum> = gl.UNPACK_ALIGNMENT
+<Glenum> = gl.UNPACK_FLIP_Y_WEBGL
+<Glenum> = gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL
+<Glenum> = gl.UNPACK_COLORSPACE_CONVERSION_WEBGL
+<Glenum> = gl.PACK_ROW_LENGTH
+<Glenum> = gl.PACK_SKIP_PIXELS
+<Glenum> = gl.PACK_SKIP_ROWS
+<Glenum> = gl.UNPACK_ROW_LENGTH
+<Glenum> = gl.UNPACK_IMAGE_HEIGHT
+<Glenum> = gl.UNPACK_SKIP_PIXELS
+<Glenum> = gl.UNPACK_SKIP_ROWS
+<Glenum> = gl.UNPACK_SKIP_IMAGES
+
+<glOp> = gl.STATIC_DRAW
+<glOp> = gl.DYNAMIC_DRAW
+<glOp> = gl.STREAM_DRAW
+<glOp> = gl.STATIC_READ
+<glOp> = gl.DYNAMIC_READ
+<glOp> = gl.STREAM_READ
+<glOp> = gl.STATIC_COPY
+<glOp> = gl.DYNAMIC_COPY
+<glOp> = gl.STREAM_COPY
+
+<Gparam> = gl.ACTIVE_TEXTURE
+<Gparam> = gl.ALIASED_LINE_WIDTH_RANGE
+<Gparam> = gl.ALIASED_POINT_SIZE_RANGE
+<Gparam> = gl.ALPHA_BITS
+<Gparam> = gl.ARRAY_BUFFER_BINDING
+<Gparam> = gl.BLEND
+<Gparam> = gl.BLEND_COLOR
+<Gparam> = gl.BLEND_DST_ALPHA
+<Gparam> = gl.BLEND_DST_RGB
+<Gparam> = gl.BLEND_EQUATION
+<Gparam> = gl.BLEND_EQUATION_ALPHA
+<Gparam> = gl.BLEND_EQUATION_RGB
+<Gparam> = gl.BLEND_SRC_ALPHA
+<Gparam> = gl.BLEND_SRC_RGB
+<Gparam> = gl.COLOR_CLEAR_VALUE
+<Gparam> = gl.COLOR_CLEAR_VALUE
+
+<GTex> = gl.TEXTURE_2D
+<GTex> = gl.TEXTURE_CUBE_MAP
+<GTex> = gl.TEXTURE_3D
+<GTex> = gl.COLOR_WRITEMASK
+
+<shader> = sh1;
+<shader> = sh2;
+
+<cShader> = VERTEX_SHADER
+<cShader> = FRAGMENT_SHADER
+
+<nm> = 'vColor'
+<nm> = 'vDepth'
+<nm> = 'oColor'
+<nm> = 'oDepth'
+<nm> = 'oVertex'
+<nm> = 'oTexture'
+<nm> = 'uScalingFactor'
+<nm> = 'uGlobalColor'
+<nm> = 'uRotationVector'
+
+<gbuff> = gl.ARRAY_BUFFER
+<gbuff> = gl.ELEMENT_ARRAY_BUFFER
+<gbuff> = gl.COPY_READ_BUFFER
+<gbuff> = gl.COPY_WRITE_BUFFER
+<gbuff> = gl.TRANSFORM_FEEDBACK_BUFFER
+<gbuff> = gl.UNIFORM_BUFFER
+<gbuff> = gl.PIXEL_PACK_BUFFER
+<gbuff> = gl.PIXEL_UNPACK_BUFFER
+
+<fbuff> = gl.FRAMEBUFFER
+<fbuff> = gl.DRAW_FRAMEBUFFER
+<fbuff> = gl.READ_FRAMEBUFFER
+
+<gTexture> = gl.TEXTURE_2D
+<gTexture> = gl.TEXTURE_CUBE_MAP
+<gTexture> = gl.TEXTURE_3D
+<gTexture> = gl.TEXTURE_2D_ARRAY
+
+<gEq> = gl.FUNC_ADD
+<gEq> = gl.FUNC_SUBTRACT
+<gEq> = gl.FUNC_REVERSE_SUBTRACT
+<gEq> = gl.MIN
+<gEq> = gl.MAX
+
+<gEq_> = gl.FUNC_ADD
+<gEq_> = gl.FUNC_SUBTRACT
+<gEq_> = gl.FUNC_REVERSE_SUBTRACT
+<gEq_> = gl.MIN
+<gEq_> = gl.MAX
+
+<glFac> = gl.ZERO
+<glFac> = gl.ONE
+<glFac> = gl.SRC_COLOR
+<glFac> = gl.ONE_MINUS_SRC_COLOR
+<glFac> = gl.DST_COLOR
+<glFac> = gl.ONE_MINUS_DST_COLOR
+<glFac> = gl.SRC_ALPHA
+<glFac> = gl.ONE_MINUS_SRC_ALPHA
+<glFac> = gl.DST_ALPHA
+<glFac> = gl.ONE_MINUS_DST_ALPHA
+<glFac> = gl.CONSTANT_COLOR
+<glFac> = gl.ONE_MINUS_CONSTANT_COLOR
+<glFac> = gl.CONSTANT_ALPHA
+<glFac> = gl.ONE_MINUS_CONSTANT_ALPHA
+<glFac> = gl.SRC_ALPHA_SATURATE
+
+<glFac_> = gl.ZERO
+<glFac_> = gl.ONE
+<glFac_> = gl.SRC_COLOR
+<glFac_> = gl.ONE_MINUS_SRC_COLOR
+<glFac_> = gl.DST_COLOR
+<glFac_> = gl.ONE_MINUS_DST_COLOR
+<glFac_> = gl.SRC_ALPHA
+<glFac_> = gl.ONE_MINUS_SRC_ALPHA
+<glFac_> = gl.DST_ALPHA
+<glFac_> = gl.ONE_MINUS_DST_ALPHA
+<glFac_> = gl.CONSTANT_COLOR
+<glFac_> = gl.ONE_MINUS_CONSTANT_COLOR
+<glFac_> = gl.CONSTANT_ALPHA
+<glFac_> = gl.ONE_MINUS_CONSTANT_ALPHA
+<glFac_> = gl.SRC_ALPHA_SATURATE
+
+<glMask> = gl.COLOR_BUFFER_BIT
+<glMask> = gl.DEPTH_BUFFER_BIT
+<glMask> = gl.STENCIL_BUFFER_BIT
+
+<glMask_> = gl.COLOR_BUFFER_BIT
+<glMask_> = gl.DEPTH_BUFFER_BIT
+<glMask_> = gl.STENCIL_BUFFER_BIT
+
+<glMode> = gl.FRONT
+<glMode> = gl.BACK
+<glMode> = gl.FRONT_AND_BACK
+
+<glFun> = gl.NEVER
+<glFun> = gl.LESS
+<glFun> = gl.EQUAL
+<glFun> = gl.LEQUAL
+<glFun> = gl.GREATER
+<glFun> = gl.NOTEQUAL
+<glFun> = gl.GEQUAL
+<glFun> = gl.ALWAYS
+
+<glCap> = gl.BLEND
+<glCap> = gl.CULL_FACE
+<glCap> = gl.DEPTH_TEST
+<glCap> = gl.DITHER
+<glCap> = gl.POLYGON_OFFSET_FILL
+<glCap> = gl.SAMPLE_ALPHA_TO_COVERAGE
+<glCap> = gl.SAMPLE_COVERAGE
+<glCap> = gl.SCISSOR_TEST
+<glCap> = gl.STENCIL_TEST
+
+<glMd> = gl.POINTS
+<glMd> = gl.LINE_STRIP
+<glMd> = gl.LINE_LOOP
+<glMd> = gl.LINES
+<glMd> = gl.TRIANGLE_STRIP
+<glMd> = gl.TRIANGLE_FAN
+<glMd> = gl.TRIANGLES
+
+<glType> = gl.UNSIGNED_BYTE
+<glType> = gl.UNSIGNED_SHORT
+
+<glType_> = gl.UNSIGNED_BYTE
+<glType_> = gl.UNSIGNED_SHORT
+
+<glFront> = gl.CW
+<glFront> = gl.CCW
+
+<glMip> = gl.TEXTURE_2D
+<glMip> = gl.TEXTURE_CUBE_MAP
+<glMip> = gl.TEXTURE_3D
+<glMip> = gl.TEXTURE_2D_ARRAY
+
+<glActive> = gl.FLOAT
+<glActive> = gl.FLOAT_VEC2
+<glActive> = gl.FLOAT_VEC3
+<glActive> = gl.FLOAT_VEC4
+<glActive> = gl.INT
+<glActive> = gl.INT_VEC2
+<glActive> = gl.INT_VEC3
+<glActive> = gl.INT_VEC4
+<glActive> = gl.BOOL
+<glActive> = gl.BOOL_VEC2
+<glActive> = gl.BOOL_VEC3
+<glActive> = gl.BOOL_VEC4
+<glActive> = gl.FLOAT_MAT2
+<glActive> = gl.FLOAT_MAT3
+<glActive> = gl.FLOAT_MAT4
+<glActive> = gl.SAMPLER_2D
+<glActive> = gl.SAMPLER_CUBE
+<glActive> = gl.UNSIGNED_INT
+<glActive> = gl.UNSIGNED_INT_VEC2
+<glActive> = gl.UNSIGNED_INT_VEC3
+<glActive> = gl.UNSIGNED_INT_VEC4
+<glActive> = gl.FLOAT_MAT2x3
+<glActive> = gl.FLOAT_MAT2x4
+<glActive> = gl.FLOAT_MAT3x2
+<glActive> = gl.FLOAT_MAT3x4
+<glActive> = gl.FLOAT_MAT4x2
+<glActive> = gl.FLOAT_MAT4x3
+<glActive> = gl.SAMPLER_2D
+<glActive> = gl.SAMPLER_3D
+<glActive> = gl.SAMPLER_CUBE
+<glActive> = gl.SAMPLER_2D_SHADOW
+<glActive> = gl.SAMPLER_2D_ARRAY
+<glActive> = gl.SAMPLER_2D_ARRAY_SHADOW
+<glActive> = gl.SAMPLER_CUBE_SHADOW
+<glActive> = gl.INT_SAMPLER_2D
+<glActive> = gl.INT_SAMPLER_3D
+<glActive> = gl.INT_SAMPLER_CUBE
+<glActive> = gl.INT_SAMPLER_2D_ARRAY
+<glActive> = gl.UNSIGNED_INT_SAMPLER_2D
+<glActive> = gl.UNSIGNED_INT_SAMPLER_3D
+<glActive> = gl.UNSIGNED_INT_SAMPLER_CUBE
+<glActive> = gl.UNSIGNED_INT_SAMPLER_2D_ARRAY
+
+<glTr> = gl.FRAMEBUFFER
+<glTr> = gl.DRAW_FRAMEBUFFER
+<glTr> = gl.READ_FRAMEBUFFER
+
+<glAttachment> = gl.COLOR_ATTACHMENT0
+<glAttachment> = gl.DEPTH_ATTACHMENT
+<glAttachment> = gl.STENCIL_ATTACHMENT
+<glAttachment> = gl.DEPTH_STENCIL_ATTACHMENT
+
+<glAttachmentObj> = gl.FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE
+<glAttachmentObj> = gl.FRAMEBUFFER_ATTACHMENT_OBJECT_NAME
+<glAttachmentObj> = gl.FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL
+<glAttachmentObj> = gl.FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE
+<glAttachmentObj> = gl.FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE
+<glAttachmentObj> = gl.FRAMEBUFFER_ATTACHMENT_BLUE_SIZE
+<glAttachmentObj> = gl.FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING
+<glAttachmentObj> = gl.FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE
+<glAttachmentObj> = gl.FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE
+<glAttachmentObj> = gl.FRAMEBUFFER_ATTACHMENT_GREEN_SIZE
+<glAttachmentObj> = gl.FRAMEBUFFER_ATTACHMENT_RED_SIZE
+<glAttachmentObj> = gl.FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE
+<glAttachmentObj> = gl.FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER
+
+<glpType> = gl.LOW_FLOAT
+<glpType> = gl.MEDIUM_FLOAT
+<glpType> = gl.HIGH_INT
+
+<gltType> = gl.TEXTURE_MAG_FILTER
+<gltType> = gl.TEXTURE_MIN_FILTER
+<gltType> = gl.TEXTURE_WRAP_S
+<gltType> = gl.TEXTURE_WRAP_T
+<gltType> = gl.TEXTURE_WRAP_T
+<gltType> = gl.TEXTURE_BASE_LEVEL
+<gltType> = gl.TEXTURE_COMPARE_FUNC
+<gltType> = gl.TEXTURE_COMPARE_MODE
+<gltType> = gl.TEXTURE_IMMUTABLE_FORMAT
+<gltType> = gl.TEXTURE_IMMUTABLE_LEVELS
+<gltType> = gl.TEXTURE_MAX_LEVEL
+<gltType> = gl.TEXTURE_MAX_LOD
+<gltType> = gl.TEXTURE_MIN_LOD
+<gltType> = gl.TEXTURE_WRAP_R
+
+<glBind> = gl.VERTEX_ATTRIB_ARRAY_BUFFER_BINDING
+<glBind> = gl.VERTEX_ATTRIB_ARRAY_ENABLED
+<glBind> = gl.VERTEX_ATTRIB_ARRAY_SIZE
+<glBind> = gl.VERTEX_ATTRIB_ARRAY_STRIDE
+<glBind> = gl.VERTEX_ATTRIB_ARRAY_TYPE
+<glBind> = gl.VERTEX_ATTRIB_ARRAY_NORMALIZED
+<glBind> = gl.CURRENT_VERTEX_ATTRIB
+<glBind> = gl.VERTEX_ATTRIB_ARRAY_INTEGER
+<glBind> = gl.VERTEX_ATTRIB_ARRAY_DIVISOR
+
+<glHint> = gl.GENERATE_MIPMAP_HINT
+<glHint> = gl.FRAGMENT_SHADER_DERIVATIVE_HINT
+
+<glMood> = gl.FASTEST
+<glMood> = gl.NICEST
+<glMood> = gl.DONT_CARE
+
+<glEn> = gl.ALPHA
+<glEn> = gl.RGB
+<glEn> = gl.RGBA
+
+<glStp> = gl.UNSIGNED_BYTE
+<glStp> = gl.UNSIGNED_SHORT_5_6_5
+<glStp> = gl.UNSIGNED_SHORT_4_4_4_4
+<glStp> = gl.UNSIGNED_SHORT_5_5_5_1
+<glStp> = gl.FLOAT
+
+<glStp_> = gl.UNSIGNED_BYTE
+<glStp_> = gl.UNSIGNED_SHORT_5_6_5
+<glStp_> = gl.UNSIGNED_SHORT_4_4_4_4
+<glStp_> = gl.UNSIGNED_SHORT_5_5_5_1
+<glStp_> = gl.FLOAT
+
+<glStts> = gl.BYTE
+<glStts> = gl.SHORT
+<glStts> = gl.UNSIGNED_BYTE
+<glStts> = gl.UNSIGNED_SHORT
+<glStts> = gl.FLOAT
+<glStts> = gl.HALF_FLOAT
+
+<gliFormat> = gl.RGBA4
+<gliFormat> = gl.RGB565
+<gliFormat> = gl.RGB5_A1
+<gliFormat> = gl.DEPTH_COMPONENT16
+<gliFormat> = gl.STENCIL_INDEX8
+<gliFormat> = gl.DEPTH_STENCIL
+<gliFormat> = gl.R8
+<gliFormat> = gl.R8UI
+<gliFormat> = gl.R8I
+<gliFormat> = gl.R16UI
+<gliFormat> = gl.R16I
+<gliFormat> = gl.R32UI
+<gliFormat> = gl.R32I
+<gliFormat> = gl.RG8
+<gliFormat> = gl.RG8UI
+<gliFormat> = gl.RG8I
+<gliFormat> = gl.RG16UI
+<gliFormat> = gl.RG16I
+<gliFormat> = gl.RG32UI
+<gliFormat> = gl.RG32I
+<gliFormat> = gl.RGB8
+<gliFormat> = gl.RGBA8
+<gliFormat> = gl.SRGB8_ALPHA8
+<gliFormat> = gl.RGB10_A2
+<gliFormat> = gl.RGBA8UI
+<gliFormat> = gl.DEPTH_COMPONENT24
+<gliFormat> = gl.DEPTH_COMPONENT32F
+<gliFormat> = gl.DEPTH24_STENCIL8
+<gliFormat> = gl.DEPTH32F_STENCIL8
+
+<glMgg> = gl.KEEP
+<glMgg> = gl.ZERO
+<glMgg> = gl.REPLACE
+<glMgg> = gl.INCR
+<glMgg> = gl.INCR_WRAP
+<glMgg> = gl.DECR
+<glMgg> = gl.DECR_WRAP
+<glMgg> = gl.INVERT
+
+<glMgg_> = gl.KEEP
+<glMgg_> = gl.ZERO
+<glMgg_> = gl.REPLACE
+<glMgg_> = gl.INCR
+<glMgg_> = gl.INCR_WRAP
+<glMgg_> = gl.DECR
+<glMgg_> = gl.DECR_WRAP
+<glMgg_> = gl.INVERT
+
+<_glMgg> = gl.KEEP
+<_glMgg> = gl.ZERO
+<_glMgg> = gl.REPLACE
+<_glMgg> = gl.INCR
+<_glMgg> = gl.INCR_WRAP
+<_glMgg> = gl.DECR
+<_glMgg> = gl.DECR_WRAP
+<_glMgg> = gl.INVERT
+
+<glTTrr> = gl.TEXTURE_2D
+<glTTrr> = gl.TEXTURE_CUBE_MAP_POSITIVE_X
+<glTTrr> = gl.TEXTURE_CUBE_MAP_NEGATIVE_X
+<glTTrr> = gl.TEXTURE_CUBE_MAP_POSITIVE_Y
+<glTTrr> = gl.TEXTURE_CUBE_MAP_NEGATIVE_Y
+<glTTrr> = gl.TEXTURE_CUBE_MAP_POSITIVE_Z
+<glTTrr> = gl.TEXTURE_CUBE_MAP_NEGATIVE_Z
+
+<glALPHA> = gl.ALPHA
+<glALPHA> = gl.RGB
+<glALPHA> = gl.RGBA
+<glALPHA> = gl.LUMINANCE
+<glALPHA> = gl.LUMINANCE_ALPHA
+
+<glExtStr> = 'ANGLE_instanced_arrays'
+<glExtStr> = 'EXT_blend_minmax'
+<glExtStr> = 'EXT_color_buffer_float'
+<glExtStr> = 'EXT_color_buffer_half_float'
+<glExtStr> = 'EXT_disjoint_timer_query'
+<glExtStr> = 'EXT_frag_depth'
+<glExtStr> = 'EXT_sRGB'
+<glExtStr> = 'EXT_shader_texture_lod'
+<glExtStr> = 'EXT_texture_filter_anisotropic'
+<glExtStr> = 'OES_element_index_uint'
+<glExtStr> = 'OES_standard_derivatives'
+<glExtStr> = 'OES_texture_float'
+<glExtStr> = 'OES_texture_float_linear'
+<glExtStr> = 'OES_vertex_array_object'
+<glExtStr> = 'WEBGL_color_buffer_float'
+<glExtStr> = 'WEBGL_compressed_texture_astc'
+<glExtStr> = 'WEBGL_compressed_texture_atc'
+<glExtStr> = 'WEBGL_compressed_texture_etc'
+<glExtStr> = 'WEBGL_compressed_texture_etc1'
+<glExtStr> = 'WEBGL_compressed_texture_pvrtc'
+<glExtStr> = 'WEBGL_debug_renderer_info'
+<glExtStr> = 'WEBGL_debug_shaders'
+<glExtStr> = 'WEBGL_depth_texture'
+<glExtStr> = 'WEBGL_draw_buffers'
+<glExtStr> = 'WEBGL_lose_context'
+
+
+<this> = this
+
+<root root=true> = <lines count=50>
+
+!include common.txt
+!include cssproperties.txt
+
+!lineguard try { <line> } catch(e) { }
+!varformat fuzzvar%05d
+!begin lines
+
+# Image
+# <new img> = new Image();
+# <new img> = new Image(<canvasint>, <canvasint>);
+# <img>.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+
+# Uint8ClampedArray
+# <new uintc8> = new Uint8ClampedArray(<canvasint>);
+# <new uintc8> = new Uint8ClampedArray([<canvasint>,<canvasint>]);
+
+# ImageData
+# <new imgData> = new ImageData(<uintc8>, <canvasint>, <canvasint>);
+
+# ctx.rect(<canvasint>, <canvasint>, <canvasint>, <canvasint>);
+
+gl1.activeTexture(gl.TEXTURE<TexInt>);
+gl1.attachShader(program1, sh1);
+gl1.getParameter(<Gparam>);
+gl2.activeTexture(gl.TEXTURE<TexInt>);
+gl1.attachShader(program2, sh2);
+gl2.getParameter(<Gparam>);
+gl1.linkProgram(program1);
+gl1.useProgram(program1);
+gl2.linkProgram(program2);
+gl2.useProgram(program2);
+gl1.activeTexture(gl.TEXTURE<TexInt>);
+gl1.attachShader(program1, sh1);
+gl1.getParameter(<Gparam>);
+gl2.activeTexture(gl.TEXTURE<TexInt>);
+gl1.attachShader(program2, sh2);
+gl2.getParameter(<Gparam>);
+gl1.linkProgram(program1);
+gl1.useProgram(program1);
+gl2.linkProgram(program2);
+gl2.useProgram(program2);
+gl1.pixelStorei(<Glenum>, <glint>);
+gl2.pixelStorei(<Glenum>, <glint>);
+gl1.pixelStorei(<Glenum>, <sint>);
+gl2.pixelStorei(<Glenum>, <sint>);
+gl1.pixelStorei(<Glenum>, <glint>);
+gl2.pixelStorei(<Glenum>, <glint>);
+gl1.pixelStorei(<Glenum>, <sint>);
+gl2.pixelStorei(<Glenum>, <sint>);
+gl1.bindTexture(<GTex>, tex);
+gl2.bindTexture(<GTex>, tex);
+gl1.bindTexture(<GTex>, tex);
+gl2.bindTexture(<GTex>, tex);
+gl1.bindAttribLocation(program1, <glint>, <nm>);
+gl2.bindAttribLocation(program2, <glint>, <nm>);
+gl1.bindAttribLocation(program2, <glint>, <nm>);
+gl2.bindAttribLocation(program1, <glint>, <nm>);
+var buffer1 = gl1.createBuffer(); gl1.bindBuffer(<gbuff>, buffer1);
+var buffer2 = gl2.createBuffer(); gl2.bindBuffer(<gbuff>, buffer2);
+var buffer2 = gl1.createBuffer(); gl1.bindBuffer(<gbuff>, buffer2);
+var buffer1 = gl2.createBuffer(); gl2.bindBuffer(<gbuff>, buffer1);
+if (buffer1 != undefined) {gl1.deleteBuffer(buffer1);}
+if (buffer2 != undefined) {gl2.deleteBuffer(buffer2);}
+if (buffer1 != undefined) {gl2.deleteBuffer(buffer1);}
+if (buffer2 != undefined) {gl1.deleteBuffer(buffer2);}
+gl1.isBuffer(buffer1);
+gl2.isBuffer(buffer2);
+gl1.isBuffer(buffer2);
+gl2.isBuffer(buffer1);
+var fbuffer1 = gl1.createBuffer(); gl1.bindFramebuffer(<fbuff>, fbuffer1);
+var fbuffer2 = gl2.createBuffer(); gl2.bindFramebuffer(<fbuff>, fbuffer2);
+var fbuffer2 = gl1.createBuffer(); gl1.bindFramebuffer(<fbuff>, fbuffer2);
+var fbuffer1 = gl2.createBuffer(); gl2.bindFramebuffer(<fbuff>, fbuffer1);
+if (fbuffer1 != undefined) {gl1.deleteFramebuffer(fbuffer1);}
+if (fbuffer2 != undefined) {gl2.deleteFramebuffer(fbuffer2);}
+if (fbuffer1 != undefined) {gl2.deleteFramebuffer(fbuffer1);}
+if (fbuffer2 != undefined) {gl1.deleteFramebuffer(fbuffer2);}
+gl1.isFramebuffer(fbuffer1);
+gl2.isFramebuffer(fbuffer2);
+gl1.isFramebuffer(fbuffer2);
+gl2.isFramebuffer(fbuffer1);
+var rbuffer1 = gl1.createBuffer(); gl1.bindRenderbuffer(gl.RENDERBUFFER, rbuffer1);
+var rbuffer2 = gl2.createBuffer(); gl2.bindRenderbuffer(gl.RENDERBUFFER, rbuffer2);
+var rbuffer2 = gl1.createBuffer(); gl1.bindRenderbuffer(gl.RENDERBUFFER, rbuffer2);
+var rbuffer1 = gl2.createBuffer(); gl2.bindRenderbuffer(gl.RENDERBUFFER, rbuffer1);
+if (rbuffer1 != undefined) {gl1.deleteRenderbuffer(rbuffer1);}
+if (rbuffer2 != undefined) {gl2.deleteRenderbuffer(rbuffer2);}
+if (rbuffer1 != undefined) {gl2.deleteRenderbuffer(rbuffer1);}
+if (rbuffer2 != undefined) {gl1.deleteRenderbuffer(rbuffer2);}
+gl1.isRenderbuffer(rbuffer1);
+gl2.isRenderbuffer(rbuffer2);
+gl1.isRenderbuffer(rbuffer2);
+gl2.isRenderbuffer(rbuffer1);
+var tex1 = gl.createTexture(); gl1.bindTexture(<gTexture>, tex1);
+var tex2 = gl.createTexture(); gl2.bindTexture(<gTexture>, tex2);
+var tex2 = gl.createTexture(); gl1.bindTexture(<gTexture>, tex2);
+var tex1 = gl.createTexture(); gl2.bindTexture(<gTexture>, tex1);
+if (tex1 != undefined) {gl1.deleteTexture(tex1);}
+if (tex2 != undefined) {gl2.deleteTexture(tex2);}
+if (tex1 != undefined) {gl2.deleteTexture(tex1);}
+if (tex2 != undefined) {gl1.deleteTexture(tex2);}
+gl1.isTexture(tex1);
+gl2.isTexture(tex2);
+gl1.isTexture(tex2);
+gl2.isTexture(tex1);
+gl1.blendColor(<GLclampf>, <GLclampf_>, <GLclampf>, <GLclampf_>);
+gl2.blendColor(<GLclampf_>, <GLclampf>, <GLclampf_>, <GLclampf>);
+gl1.blendColor(<GLclampf>, <GLclampf_>, <GLclampf>, <GLclampf_>);
+gl2.blendColor(<GLclampf_>, <GLclampf>, <GLclampf_>, <GLclampf>);
+gl1.blendEquation(<gEq>);
+gl2.blendEquation(<gEq>);
+gl1.blendEquation(<gEq>);
+gl2.blendEquation(<gEq>);
+gl1.blendEquationSeparate(<gEq>, <gEq_>);
+gl2.blendEquationSeparate(<gEq>, <gEq_>);
+gl1.blendEquationSeparate(<gEq>, <gEq_>);
+gl2.blendEquationSeparate(<gEq>, <gEq_>);
+gl1.enable(gl1.BLEND); gl1.blendFunc(<glFac>, <glFac_>);
+gl2.enable(gl2.BLEND); gl2.blendFunc(<glFac>, <glFac_>);
+gl1.enable(gl1.BLEND); gl1.blendFunc(<glFac>, <glFac_>);
+gl2.enable(gl2.BLEND); gl2.blendFunc(<glFac>, <glFac_>);
+gl1.enable(gl1.BLEND); gl1.blendFuncSeparate(<glFac>, <glFac_>, <glFac>, <glFac_>);
+gl2.enable(gl2.BLEND); gl2.blendFuncSeparate(<glFac>, <glFac_>, <glFac>, <glFac_>);
+gl1.enable(gl1.BLEND); gl1.blendFuncSeparate(<glFac>, <glFac_>, <glFac>, <glFac_>);
+gl2.enable(gl2.BLEND); gl2.blendFuncSeparate(<glFac>, <glFac_>, <glFac>, <glFac_>);
+var buffer1 = gl1.createBuffer(); gl1.bindBuffer(<gbuff>, buffer1); gl1.bufferData(<gbuff>, <glint>, <glOp>);
+var buffer2 = gl2.createBuffer(); gl2.bindBuffer(<gbuff>, buffer2); gl2.bufferData(<gbuff>, <glint>, <glOp>);
+var buffer1 = gl1.createBuffer(); gl1.bindBuffer(<gbuff>, buffer1); gl1.bufferData(<gbuff>, <glint>, <glOp>);
+var buffer2 = gl2.createBuffer(); gl2.bindBuffer(<gbuff>, buffer2); gl2.bufferData(<gbuff>, <glint>, <glOp>);
+var buffer1 = gl1.createBuffer(); gl1.bindBuffer(<gbuff>, buffer1); gl1.bufferData(<gbuff>, <glint>, <glOp>); gl1.bufferSubData(<gbuff>, <glint>, buffer1, <glint>, <glint>);
+var buffer2 = gl2.createBuffer(); gl2.bindBuffer(<gbuff>, buffer2); gl2.bufferData(<gbuff>, <glint>, <glOp>); gl2.bufferSubData(<gbuff>, <glint>, buffer2, <glint>, <glint>);
+gl1.checkFramebufferStatus(gl1.FRAMEBUFFER);
+gl2.checkFramebufferStatus(gl2.FRAMEBUFFER);
+gl1.clear(<glMask>);
+gl2.clear(<glMask>);
+gl1.clear(<glMask>);
+gl2.clear(<glMask>);
+gl1.clear(<glMask> | <glMask_>);
+gl2.clear(<glMask> | <glMask_>);
+gl1.clearColor(<GLclampf_>, <GLclampf>, <GLclampf>, <GLclampf_>);
+gl2.clearColor(<GLclampf>, <GLclampf_>, <GLclampf_>, <GLclampf>);
+gl1.clearColor(<GLclampf>, <GLclampf>, <GLclampf_>, <GLclampf>);
+gl2.clearColor(<GLclampf>, <GLclampf>, <GLclampf_>, <GLclampf_>);
+gl1.clearDepth(<GLclampf>);
+gl2.clearDepth(<GLclampf>);
+gl1.clearDepth(<GLclampf>);
+gl2.clearDepth(<GLclampf>);
+gl1.clearStencil(<TexInt>);
+gl2.clearStencil(<TexInt>);
+gl1.colorMask(<bool>, <bool_>, <bool>, <bool_>);
+gl2.colorMask(<bool_>, <bool_>, <bool>, <bool>);
+gl2.colorMask(<bool>, <bool_>, <bool>, <bool_>);
+gl1.colorMask(<bool_>, <bool_>, <bool>, <bool>);
+gl1.createShader(<cShader>);
+gl2.createShader(<cShader>);
+var tex1 = gl1.createTexture();
+var tex2 = gl1.createTexture();
+var tex1 = gl2.createTexture();
+var tex2 = gl2.createTexture();
+gl1.enable(gl1.CULL_FACE); gl1.cullFace(<glMode>);
+gl2.enable(gl2.CULL_FACE); gl2.cullFace(<glMode>);
+gl1.deleteShader(sh1);
+gl2.deleteShader(sh2);
+gl1.deleteShader(sh1);
+gl2.deleteShader(sh2);
+gl1.enable(gl.DEPTH_TEST); gl1.depthFunc(<glFun>);
+gl2.enable(gl.DEPTH_TEST); gl2.depthFunc(<glFun>);
+gl1.depthMask(<bool>);
+gl2.depthMask(<bool>);
+gl1.depthRange(<GLclampf>, <GLclampf_>);
+gl2.depthRange(<GLclampf>, <GLclampf_>);
+gl1.detachShader(program1, sh1);
+gl2.detachShader(program2, sh2);
+gl1.detachShader(program1, sh1);
+gl2.detachShader(program2, sh2);
+gl1.disable(<glCap>);
+gl2.disable(<glCap>);
+gl1.isEnabled(<glCap>);
+gl2.isEnabled(<glCap>);
+gl1.disableVertexAttribArray(<glint>);
+gl2.disableVertexAttribArray(<glint>);
+gl1.drawArrays(<glMd>, <TexInt>, <TexInt_>);
+gl2.drawArrays(<glMd>, <TexInt>, <TexInt_>);
+gl1.drawElements(<glMd>, <TexInt>, <glType>, <glType_>);
+gl2.drawElements(<glMd>, <TexInt>, <glType>, <glType_>);
+gl1.finish();
+gl2.finish();
+gl1.flush();
+gl2.flush();
+gl1.frontFace(<glFront>);
+gl2.frontFace(<glFront>);
+gl1.generateMipmap(<glMip>);
+gl2.generateMipmap(<glMip>);
+const info1 = gl1.getActiveAttrib(program1, <GLclampf>);
+const info2 = gl2.getActiveAttrib(program2, <GLclampf>);
+const ifo1 = gl1.getActiveUniform(program1, <GLclampf>);
+const ifo2 = gl2.getActiveUniform(program2, <GLclampf>);
+gl1.getAttachedShaders(program1);
+gl2.getAttachedShaders(program2);
+gl1.getAttribLocation(program1, <nm>);
+gl2.getAttribLocation(program2, <nm>);
+gl1.getBufferParameter(<gbuff>, <glOp>);
+gl1.getBufferParameter(<gbuff>, <glOp>);
+gl1.getContextAttributes();
+gl2.getError();
+gl1.getFramebufferAttachmentParameter(<glTr>, <glAttachment>, <glAttachmentObj>);
+gl2.getFramebufferAttachmentParameter(<glTr>, <glAttachment>, <glAttachmentObj>);
+gl1.getProgramInfoLog(program1);
+gl2.getProgramInfoLog(program2);
+gl1.getProgramInfoLog(program2);
+gl1.getShaderPrecisionFormat(<cShader>, <glpType>);
+var source211 = gl1.getShaderSource(sh1);
+var source122 = gl2.getShaderSource(sh2);
+gl1.getTexParameter(<gTexture>, <gltType>);
+gl2.getTexParameter(<gTexture>, <gltType>);
+var loc = gl1.getUniformLocation(program1, <nm>); gl1.getUniform(program1, loc);
+var loc = gl2.getUniformLocation(program2, <nm>); gl2.getUniform(program2, loc);
+gl1.getVertexAttrib(<glint>, <glBind>);
+gl2.getVertexAttrib(<glint>, <glBind>);
+gl1.getVertexAttribOffset(<glint>, gl.VERTEX_ATTRIB_ARRAY_POINTER);
+gl2.getVertexAttribOffset(<glint>, gl.VERTEX_ATTRIB_ARRAY_POINTER);
+gl1.hint(<glHint>, <glMood>);
+gl1.lineWidth(<GLclampf>);
+gl2.lineWidth(<GLclampf>);
+var pixels = new Uint8Array(gl1.drawingBufferWidth * gl1.drawingBufferHeight * 4); gl1.readPixels(<glint>, <glint>, gl1.drawingBufferWidth, gl1.drawingBufferHeight, <glStp>, <glStp_>, pixels); console.log(pixels);
+var pixels = new Uint8Array(gl2.drawingBufferWidth * gl2.drawingBufferHeight * 4); gl2.readPixels(<glint>, <glint>, gl2.drawingBufferWidth, gl2.drawingBufferHeight, <glStp>, <glStp_>, pixels); console.log(pixels);
+var pixels = new Uint8Array(gl1.drawingBufferWidth * gl1.drawingBufferHeight * 4); gl1.readPixels(<glint>, <glint>, gl1.drawingBufferWidth, gl1.drawingBufferHeight, <glStp>, <glStp_>, pixels); console.log(pixels);
+var pixels = new Uint8Array(gl2.drawingBufferWidth * gl2.drawingBufferHeight * 4); gl2.readPixels(<glint>, <glint>, gl2.drawingBufferWidth, gl2.drawingBufferHeight, <glStp>, <glStp_>, pixels); console.log(pixels);
+gl1.renderbufferStorage(gl1.RENDERBUFFER, <gliFormat>, <glint>, <glint>);
+gl2.renderbufferStorage(gl2.RENDERBUFFER, <gliFormat>, <glint>, <glint>);
+gl1.enable(gl.SAMPLE_COVERAGE); gl1.sampleCoverage(<GLclampf>, <bool>);
+gl2.enable(gl.SAMPLE_COVERAGE); gl2.sampleCoverage(<GLclampf>, <bool>);
+gl1.scissor(<glint>, <glint>, <GLclampf>, <GLclampf>);
+gl2.scissor(<glint>, <glint>, <GLclampf>, <GLclampf>);
+gl1.enable(gl.STENCIL_TEST); gl1.stencilFunc(<glFun>, <GLclampf>, <glBin>);
+gl2.enable(gl.STENCIL_TEST); gl2.stencilFunc(<glFun>, <GLclampf>, <glBin>);
+gl1.enable(gl.STENCIL_TEST); gl1.stencilFunc(<glFun>, <GLclampf>, <glBin>);
+gl2.enable(gl.STENCIL_TEST); gl2.stencilFunc(<glFun>, <GLclampf>, <glBin>);
+gl1.enable(gl.STENCIL_TEST); gl1.stencilFuncSeparate(<glMode>, <glFun>, <GLclampf>, <glBin>);
+gl2.enable(gl.STENCIL_TEST); gl2.stencilFuncSeparate(<glMode>, <glFun>, <GLclampf>, <glBin>);
+gl1.enable(gl.STENCIL_TEST); gl1.stencilFuncSeparate(<glMode>, <glFun>, <GLclampf>, <glBin>);
+gl2.enable(gl.STENCIL_TEST); gl2.stencilFuncSeparate(<glMode>, <glFun>, <GLclampf>, <glBin>);
+gl1.stencilMask(<glBin>);
+gl2.stencilMask(<glBin>);
+gl1.stencilMask(<glMode>, <glBin>);
+gl2.stencilMask(<glMode>, <glBin>);
+gl1.enable(gl1.STENCIL_TEST); gl1.stencilOp(<glMgg>, <_glMgg>, <glMgg_>);
+gl2.enable(gl2.STENCIL_TEST); gl2.stencilOp(<glMgg>, <_glMgg>, <glMgg_>);
+gl1.enable(gl1.STENCIL_TEST); gl1.stencilOp(<glMode>, <glMgg>, <_glMgg>, <glMgg_>);
+gl2.enable(gl2.STENCIL_TEST); gl2.stencilOp(<glMode>, <glMgg>, <_glMgg>, <glMgg_>);
+gl1.texParameterf(<gTexture>, <gltType>, <glgll>);
+gl1.texParameteri(<gTexture>, <gltType>, <glgll>);
+gl1.texParameterf(<gTexture>, <gltType>, <glgll>);
+gl2.texParameteri(<gTexture>, <gltType>, <glgll>);
+gl2.texParameterf(<gTexture>, <gltType>, <glgll>);
+gl2.texParameteri(<gTexture>, <gltType>, <glgll>);
+gl1.viewport(<GLclampf>, <GLclampf>, <glint>, <glint>);
+gl2.viewport(<GLclampf>, <GLclampf>, <glint>, <glint>);
+gl1.enableVertexAttribArray(0);
+gl2.enableVertexAttribArray(0);
+gl1.enableVertexAttribArray(0); gl1.vertexAttribPointer(<GLclampf>, <glint>, <glStts>, <bool>, <TexInt>, <glint>);
+gl2.enableVertexAttribArray(0); gl2.vertexAttribPointer(<GLclampf>, <glint>, <glStts>, <bool>, <TexInt>, <glint>);
+gl1.vertexAttrib1f(<glint>, <glint>);
+gl1.vertexAttrib2f(<glint>, <glint>, <glint>);
+gl1.vertexAttrib3f(<glint>, <glint>, <glint>, <glint>);
+gl1.vertexAttrib4f(<glint>, <glint>, <glint>, <glint>, <glint>);
+gl1.vertexAttrib1fv(<glint>, <glint>);
+gl1.vertexAttrib2fv(<glint>, <glint>);
+gl1.vertexAttrib3fv(<glint>, <glint>);
+gl1.vertexAttrib4fv(<glint>, <glint>);
+gl1.vertexAttrib1f(<glint>, <glint>);
+gl2.vertexAttrib2f(<glint>, <glint>, <glint>);
+gl2.vertexAttrib3f(<glint>, <glint>, <glint>, <glint>);
+gl2.vertexAttrib4f(<glint>, <glint>, <glint>, <glint>, <glint>);
+gl2.vertexAttrib1fv(<glint>, <glint>);
+gl2.vertexAttrib2fv(<glint>, <glint>);
+gl2.vertexAttrib3fv(<glint>, <glint>);
+gl2.vertexAttrib4fv(<glint>, <glint>);
+gl1.validateProgram(program1);
+gl2.validateProgram(program2);
+var loc = gl1.getUniformLocation(program1, <nm>); gl1.uniformMatrix2fv(loc, <bool>, [<glint>,<glint>, <glint>,<glint>]);
+var loc = gl1.getUniformLocation(program1, <nm>); gl1.uniformMatrix2fv(loc, <bool>, [<glint>,<glint>, <glint>,<glint>]);
+var loc = gl1.getUniformLocation(program1, <nm>); gl1.uniformMatrix3fv(loc, <bool>, [<glint>,<glint>, <glint>,<glint>]);
+var loc = gl1.getUniformLocation(program1, <nm>); gl1.uniformMatrix4fv(loc, <bool>, [<glint>,<glint>, <glint>,<glint>]); 
+var loc = gl2.getUniformLocation(program2, <nm>); gl2.uniformMatrix2fv(loc, <bool>, [<glint>,<glint>, <glint>,<glint>]);
+var loc = gl2.getUniformLocation(program2, <nm>); gl2.uniformMatrix2fv(loc, <bool>, [<glint>,<glint>, <glint>,<glint>]);
+var loc = gl2.getUniformLocation(program2, <nm>); gl2.uniformMatrix3fv(loc, <bool>, [<glint>,<glint>, <glint>,<glint>]);
+var loc = gl2.getUniformLocation(program2, <nm>); gl2.uniformMatrix4fv(loc, <bool>, [<glint>,<glint>, <glint>,<glint>]); 
+var loc = gl1.getUniformLocation(program1, <nm>); gl1.uniform1f(loc, <glint>);
+var loc = gl1.getUniformLocation(program1, <nm>); gl1.uniform1fv(loc, <glint>);
+var loc = gl1.getUniformLocation(program1, <nm>); gl1.uniform1i(loc, <glint>);
+var loc = gl1.getUniformLocation(program1, <nm>); gl1.uniform1iv(loc, <glint>);
+var loc = gl1.getUniformLocation(program1, <nm>); gl1.uniform2f(loc, <glint>, <glint>);
+var loc = gl1.getUniformLocation(program1, <nm>); gl1.uniform2fv(loc, <glint>);
+var loc = gl1.getUniformLocation(program1, <nm>); gl1.uniform2i(loc, <glint>, <glint>);
+var loc = gl1.getUniformLocation(program1, <nm>); gl1.uniform2iv(loc, <glint>);
+var loc = gl1.getUniformLocation(program1, <nm>); gl1.uniform3f(loc, <glint>, <glint>, <glint>);
+var loc = gl1.getUniformLocation(program1, <nm>); gl1.uniform3fv(loc, <glint>);
+var loc = gl1.getUniformLocation(program1, <nm>); gl1.uniform3i(loc, <glint>, <glint>, <glint>);
+var loc = gl1.getUniformLocation(program1, <nm>); gl1.uniform3iv(loc, <glint>);
+var loc = gl1.getUniformLocation(program1, <nm>); gl1.uniform4f(loc, <glint>, <glint>, <glint>, <glint>);
+var loc = gl1.getUniformLocation(program1, <nm>); gl1.uniform4fv(loc, <glint>);
+var loc = gl1.getUniformLocation(program1, <nm>); gl1.uniform4i(loc, <glint>, <glint>, <glint>, <glint>);
+var loc = gl1.getUniformLocation(program1, <nm>); gl1.uniform4iv(loc, <glint>);
+var loc = gl2.getUniformLocation(program1, <nm>); gl2.uniform1f(loc, <glint>);
+var loc = gl2.getUniformLocation(program2, <nm>); gl2.uniform1fv(loc, <glint>);
+var loc = gl2.getUniformLocation(program2, <nm>); gl2.uniform1i(loc, <glint>);
+var loc = gl2.getUniformLocation(program2, <nm>); gl2.uniform1iv(loc, <glint>);
+var loc = gl2.getUniformLocation(program2, <nm>); gl2.uniform2f(loc, <glint>, <glint>);
+var loc = gl2.getUniformLocation(program2, <nm>); gl2.uniform2fv(loc, <glint>);
+var loc = gl2.getUniformLocation(program2, <nm>); gl2.uniform2i(loc, <glint>, <glint>);
+var loc = gl2.getUniformLocation(program2, <nm>); gl2.uniform2iv(loc, <glint>);
+var loc = gl2.getUniformLocation(program2, <nm>); gl2.uniform3f(loc, <glint>, <glint>, <glint>);
+var loc = gl2.getUniformLocation(program2, <nm>); gl2.uniform3fv(loc, <glint>);
+var loc = gl2.getUniformLocation(program2, <nm>); gl2.uniform3i(loc, <glint>, <glint>, <glint>);
+var loc = gl2.getUniformLocation(program2, <nm>); gl2.uniform3iv(loc, <glint>);
+var loc = gl2.getUniformLocation(program2, <nm>); gl2.uniform4f(loc, <glint>, <glint>, <glint>, <glint>);
+var loc = gl2.getUniformLocation(program2, <nm>); gl2.uniform4fv(loc, <glint>);
+var loc = gl2.getUniformLocation(program2, <nm>); gl2.uniform4i(loc, <glint>, <glint>, <glint>, <glint>);
+var loc = gl2.getUniformLocation(program2, <nm>); gl2.uniform4iv(loc, <glint>);
+gl1.texImage2D(<glTTrr>, <GLclampf>, <gliFormat>, <GLclampf>, <GLclampf>, 0, <glStts>, <glStts>, img);
+gl1.texImage2D(<glTTrr>, <GLclampf>, <gliFormat>, <GLclampf>, <GLclampf>, 0, <glStts>, <glStts>, img);
+gl1.texImage2D(<glTTrr>, <GLclampf>, <gliFormat>, <GLclampf>, <GLclampf>, 0, <glStts>, <glStts>, img);
+gl1.texImage2D(<glTTrr>, <GLclampf>, <gliFormat>, <GLclampf>, <GLclampf>, 0, <glStts>, <glStts>, img);
+gl1.texImage2D(<glTTrr>, <GLclampf>, <gliFormat>, <GLclampf>, <GLclampf>, 0, <glStts>, <glStts>, img);
+gl1.texImage2D(<glTTrr>, <GLclampf>, <gliFormat>, <GLclampf>, <GLclampf>, 0, <glStts>, <glStts>, img);
+gl2.texImage2D(<glTTrr>, <GLclampf>, <gliFormat>, <GLclampf>, <GLclampf>, 0, <glStts>, <glStts>, img);
+gl2.texImage2D(<glTTrr>, <GLclampf>, <gliFormat>, <GLclampf>, <GLclampf>, 0, <glStts>, <glStts>, img);
+gl2.texImage2D(<glTTrr>, <GLclampf>, <gliFormat>, <GLclampf>, <GLclampf>, 0, <glStts>, <glStts>, img);
+gl2.texImage2D(<glTTrr>, <GLclampf>, <gliFormat>, <GLclampf>, <GLclampf>, 0, <glStts>, <glStts>, img);
+gl2.texImage2D(<glTTrr>, <GLclampf>, <gliFormat>, <GLclampf>, <GLclampf>, 0, <glStts>, <glStts>, img);
+gl2.texImage2D(<glTTrr>, <GLclampf>, <gliFormat>, <GLclampf>, <GLclampf>, 0, <glStts>, <glStts>, img);
+gl1.texImage2D(<glTTrr>, <GLclampf>, <gliFormat>, <GLclampf>, <GLclampf>, 0, <glStts>, <glStts>, img);
+gl1.texImage2D(<glTTrr>, <GLclampf>, <gliFormat>, <GLclampf>, <GLclampf>, 0, <glStts>, <glStts>, img);
+gl1.texImage2D(<glTTrr>, <GLclampf>, <gliFormat>, <GLclampf>, <GLclampf>, 0, <glStts>, <glStts>, img);
+gl1.texImage2D(<glTTrr>, <GLclampf>, <gliFormat>, <GLclampf>, <GLclampf>, 0, <glStts>, <glStts>, img);
+gl1.texImage2D(<glTTrr>, <GLclampf>, <gliFormat>, <GLclampf>, <GLclampf>, 0, <glStts>, <glStts>, img);
+gl1.texImage2D(<glTTrr>, <GLclampf>, <gliFormat>, <GLclampf>, <GLclampf>, 0, <glStts>, <glStts>, img);
+gl2.texImage2D(<glTTrr>, <GLclampf>, <gliFormat>, <GLclampf>, <GLclampf>, 0, <glStts>, <glStts>, img);
+gl2.texImage2D(<glTTrr>, <GLclampf>, <gliFormat>, <GLclampf>, <GLclampf>, 0, <glStts>, <glStts>, img);
+gl2.texImage2D(<glTTrr>, <GLclampf>, <gliFormat>, <GLclampf>, <GLclampf>, 0, <glStts>, <glStts>, img);
+gl2.texImage2D(<glTTrr>, <GLclampf>, <gliFormat>, <GLclampf>, <GLclampf>, 0, <glStts>, <glStts>, img);
+gl2.texImage2D(<glTTrr>, <GLclampf>, <gliFormat>, <GLclampf>, <GLclampf>, 0, <glStts>, <glStts>, img);
+gl2.texImage2D(<glTTrr>, <GLclampf>, <gliFormat>, <GLclampf>, <GLclampf>, 0, <glStts>, <glStts>, img);
+var buffer1 = gl1.createRenderbuffer(); gl1.framebufferRenderbuffer(<fbuff>, <glAttachment>, gl.RENDERBUFFER, buffer1);
+var buffer2 = gl2.createRenderbuffer(); gl2.framebufferRenderbuffer(<fbuff>, <glAttachment>, gl.RENDERBUFFER, buffer2);
+var tex1 = gl1.createTexture(); gl1.framebufferTexture2D(<fbuff>, <glAttachment>, <glTTrr>, tex1, <GLclampf>);
+var tex2 = gl2.createTexture(); gl2.framebufferTexture2D(<fbuff>, <glAttachment>, <glTTrr>, tex2, <GLclampf>);
+var ext = gl1.getExtension(<glExtStr>);
+var ext = gl2.getExtension(<glExtStr>);
+var ext = gl1.getExtension(<glExtStr>);
+var ext = gl2.getExtension(<glExtStr>);
+var ext = gl1.getExtension(<glExtStr>);
+var ext = gl2.getExtension(<glExtStr>);
+var vara = gl1.getFramebufferAttachmentParameter(<glTr>, <glAttachment>, <glAttachmentObj>);
+var varb = gl2.getFramebufferAttachmentParameter(<glTr>, <glAttachment>, <glAttachmentObj>);
+if (!gl1.isContextLost()) {var info = gl1.getProgramInfoLog(program1);}
+if (!gl2.isContextLost()) {var info = gl2.getProgramInfoLog(program2);}
+if (!gl2.isContextLost()) {var info = gl2.getProgramInfoLog(program1);}
+
+!end lines
