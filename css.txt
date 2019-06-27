@@ -387,7 +387,6 @@
 <cssproperty_name> = font-variant-ligatures
 <cssproperty_name> = font-vendor
 <cssproperty_name> = font-weight
-<cssproperty_name> = fonty-family
 <cssproperty_name> = grid
 <cssproperty_name> = grid-area
 <cssproperty_name> = grid-auto-columns
@@ -493,7 +492,6 @@
 <cssproperty_name> = overflow-wrap
 <cssproperty_name> = overflow-x
 <cssproperty_name> = overflow-y
-<cssproperty_name> = oxverflow
 <cssproperty_name> = padding
 <cssproperty_name> = padding-bottom
 <cssproperty_name> = padding-left
@@ -507,7 +505,6 @@
 <cssproperty_name> = perspective-origin
 <cssproperty_name> = pointer-events
 <cssproperty_name> = position
-<cssproperty_name> = postion
 <cssproperty_name> = prince-hyphens
 <cssproperty_name> = quotes
 <cssproperty_name> = resize
@@ -885,7 +882,6 @@
 <cssproperty_value> = <cssproperty_font-variant-ligatures>
 <cssproperty_value> = <cssproperty_font-vendor>
 <cssproperty_value> = <cssproperty_font-weight>
-<cssproperty_value> = <cssproperty_fonty-family>
 <cssproperty_value> = <cssproperty_grid>
 <cssproperty_value> = <cssproperty_grid-area>
 <cssproperty_value> = <cssproperty_grid-auto-columns>
@@ -991,7 +987,6 @@
 <cssproperty_value> = <cssproperty_overflow-wrap>
 <cssproperty_value> = <cssproperty_overflow-x>
 <cssproperty_value> = <cssproperty_overflow-y>
-<cssproperty_value> = <cssproperty_oxverflow>
 <cssproperty_value> = <cssproperty_padding>
 <cssproperty_value> = <cssproperty_padding-bottom>
 <cssproperty_value> = <cssproperty_padding-left>
@@ -1005,7 +1000,6 @@
 <cssproperty_value> = <cssproperty_perspective-origin>
 <cssproperty_value> = <cssproperty_pointer-events>
 <cssproperty_value> = <cssproperty_position>
-<cssproperty_value> = <cssproperty_postion>
 <cssproperty_value> = <cssproperty_prince-hyphens>
 <cssproperty_value> = <cssproperty_quotes>
 <cssproperty_value> = <cssproperty_resize>
@@ -1383,7 +1377,6 @@
 <cssproperty> = font-variant-ligatures: <cssproperty_font-variant-ligatures>
 <cssproperty> = font-vendor: <cssproperty_font-vendor>
 <cssproperty> = font-weight: <cssproperty_font-weight>
-<cssproperty> = fonty-family: <cssproperty_fonty-family>
 <cssproperty> = grid: <cssproperty_grid>
 <cssproperty> = grid-area: <cssproperty_grid-area>
 <cssproperty> = grid-auto-columns: <cssproperty_grid-auto-columns>
@@ -1489,7 +1482,6 @@
 <cssproperty> = overflow-wrap: <cssproperty_overflow-wrap>
 <cssproperty> = overflow-x: <cssproperty_overflow-x>
 <cssproperty> = overflow-y: <cssproperty_overflow-y>
-<cssproperty> = oxverflow: <cssproperty_oxverflow>
 <cssproperty> = padding: <cssproperty_padding>
 <cssproperty> = padding-bottom: <cssproperty_padding-bottom>
 <cssproperty> = padding-left: <cssproperty_padding-left>
@@ -1503,7 +1495,6 @@
 <cssproperty> = perspective-origin: <cssproperty_perspective-origin>
 <cssproperty> = pointer-events: <cssproperty_pointer-events>
 <cssproperty> = position: <cssproperty_position>
-<cssproperty> = postion: <cssproperty_postion>
 <cssproperty> = prince-hyphens: <cssproperty_prince-hyphens>
 <cssproperty> = quotes: <cssproperty_quotes>
 <cssproperty> = resize: <cssproperty_resize>
