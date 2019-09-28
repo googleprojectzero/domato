@@ -27,7 +27,7 @@ To generate multiple samples with a single call run:
 
 `python generator.py --output_dir <output directory> --no_of_files <number of output files>`
 
-The generated samples will be placed in the specified directory and will be named as fuzz-&lt;number&gt;.html, e.g. fuzz-1.html, fuzz-2.html etc. Generating multiple samples is faster because the input grammar files need to be loaded and parsed only once.
+The generated samples will be placed in the specified directory and will be named as fuzz-&lt;number&gt;.html, e.g. fuzz-00001.html, fuzz-00002.html etc. Generating multiple samples is faster because the input grammar files need to be loaded and parsed only once.
 
 #### Code organization
 
