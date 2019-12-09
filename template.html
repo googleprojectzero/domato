@@ -10,6 +10,8 @@
 
 function freememory() {
   try { CollectGarbage(); } catch(err) { }
+  try { FuzzingFunctions.garbageCollect(); } catch(err) { }
+  try { FuzzingFunctions.cycleCollect(); } catch(err) { }
   try { window.gc(); } catch(err) { }
 }
 
