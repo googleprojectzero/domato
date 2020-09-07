@@ -1,0 +1,202 @@
+<root root=true> = <lines count=1024>
+
+!lineguard try { <line> } catch (Throwable $e) { }
+
+<fuzzvoid> = 
+
+<fuzzbool> = true
+<fuzzbool> = false
+
+<interestingint> = 32768
+<interestingint> = 65535
+<interestingint> = 65536
+<interestingint> = 1073741824
+<interestingint> = 536870912
+<interestingint> = 268435456
+<interestingint> = 4294967295
+<interestingint> = 2147483648
+<interestingint> = 2147483647
+<interestingint> = -2147483648
+<interestingint> = -1073741824
+<interestingint> = -32769
+
+<largeint> = 536870911
+<largeint> = 536870912
+<largeint> = 1073741823
+<largeint> = 1073741824
+<largeint> = 2147483647
+<largeint> = 2147483648
+<largeint> = 4294967295
+<largeint> = 4294967296
+<largeint> = 18446744073709551615
+<largeint> = 18446744073709551616
+
+<fuzzint> = 0
+<fuzzint> = 1
+<fuzzint> = -1
+<fuzzint> = 2
+<fuzzint> = 3
+<fuzzint> = 4
+<fuzzint> = 5
+<fuzzint> = 10
+<fuzzint> = 100
+<fuzzint> = 1000
+<fuzzint> = 1000000
+<fuzzint> = <int>
+<fuzzint> = <largeint>
+<fuzzint> = -<largeint>
+<fuzzint> = <interestingint>
+
+<fuzznumber> = <fuzzint>
+<fuzznumber> = <float>
+<fuzznumber> = <double>
+
+<fuzzstring> = str_repeat("A", 0x100)
+<fuzzstring> = implode(array_map(function($c) {return "\\x" . str_pad(dechex($c), 2, "0");}, range(0, 255)))
+<fuzzstring> = str_repeat("%s%x%n", 0x100)
+<fuzzstring> = <fuzzstringpart>
+<fuzzstring> = <fuzzstringpart> . <fuzzstringpart>
+<fuzzstring> = <fuzzstringpart> . <fuzzstringpart> . <fuzzstringpart>
+#<fuzzstring> = "<htmlsafestring>"
+<fuzzstringpart> = str_repeat(chr(<int min=0 max=256>), <repeatcount>)
+<repeatcount> = 17
+<repeatcount> = 65
+<repeatcount> = 257
+<repeatcount> = 1025
+<repeatcount> = 4097
+<repeatcount> = 65537
+
+<fuzzpath> = <fuzzstring>
+<fuzzpath> = "/dev/null"
+<fuzzpath> = "/../../../../../../../../../etc/passwd"
+
+<fuzzarray> = range(0, 10)
+<fuzzarray> = array("a" => 1, "b" => "2", "c" => 3.0)
+
+<fuzzfunction> = phpinfo
+
+<fuzzobject> = $vars[array_rand($vars)]
+
+<fuzzarray|object> = <fuzzobject>
+<fuzzarray|object> = <fuzzarray>
+
+<fuzzclass> = array_rand($vars)
+
+<fuzzclass|obj> = <fuzzclass>
+<fuzzclass|obj> = <fuzzclass>()
+
+<fuzzstring|obj> = <fuzzstring>
+<fuzzstring|obj> = <fuzzobject>
+
+<fuzzstring|array> = <fuzzstring>
+<fuzzstring|array> = <fuzzarray>
+
+<fuzzstring|number> = <fuzzstring>
+<fuzzstring|number> = <fuzznumber>
+
+<fuzzmixed> = <fuzznumber>
+<fuzzmixed> = <fuzzbool>
+<fuzzmixed> = <fuzzstring>
+<fuzzmixed> = <fuzzarray>
+
+<fuzzvariadic> = <fuzzmixed>
+<fuzzvariadic> = <fuzzmixed>, <fuzzmixed>
+<fuzzvariadic> = <fuzzmixed>, <fuzzmixed>, <fuzzmixed>
+<fuzzvariadic> = <fuzzmixed>, <fuzzmixed>, <fuzzmixed>, <fuzzmixed>
+<fuzzvariadic> = <fuzzmixed>, <fuzzmixed>, <fuzzmixed>, <fuzzmixed>, <fuzzmixed>
+
+<fuzzboolreference> = $ref_bool
+<fuzzintreference> = $ref_int
+<fuzzstringreference> = $ref_string
+<fuzzarrayreference> = $ref_array
+<fuzzobjectreference> = $ref_object
+<fuzzresourcereference> = $ref_resource
+<fuzzpathreference> = $ref_path
+
+<fuzzref> = <fuzzboolreference>
+<fuzzref> = <fuzzintreference>
+<fuzzref> = <fuzzstringreference>
+<fuzzref> = <fuzzarrayreference>
+<fuzzref> = <fuzzobjectreference>
+<fuzzref> = <fuzzresourcereference>
+<fuzzref> = <fuzzpathreference>
+
+<fuzzstring|array> = <fuzzstring>
+<fuzzstring|array> = <fuzzarray>
+
+<fuzzfunction|int> = <fuzzfunction>
+<fuzzfunction|int> = <fuzzint>
+
+<fuzzIterator> = new ArrayIterator(array(0))
+
+<fuzzresource> = fopen("/dev/null", "r")
+<fuzzresource> = fopen("/etc/passwd", "r")
+<fuzzresource> = fopen("/tmp/doesntexist", "w")
+
+<fuzzDateTime> = new DateTime()
+<fuzzDateTimeZone> = new DateTimeZone("America/Chicago")
+<fuzzDateTimeImmutable> = new DateTimeImmutable()
+<fuzzDateInterval> = new DateInterval("P2Y4DT6H8M")
+<fuzzDateTimeInterface> = new DateTime()
+
+<fuzzDOMNode> = new DOMNode()
+<fuzzDOMAttr> = new DOMAttr("attr")
+<fuzzDOMDocument> = new DOMDocument()
+<fuzzDOMDocumentType> = new DOMDocumentType()
+<fuzzDOMElement> = new DOMElement("root")
+<fuzzDOMNodeList> = new DOMNodeList()
+<fuzzDOMDocumentFragment> = new DOMDocumentFragment()
+<fuzzDOMText> = new DOMText()
+<fuzzDOMCDATASection> = new DOMCDATASection("root value")
+<fuzzDOMProcessingInstruction> = new DOMProcessingInstruction("php", "phpinfo()")
+<fuzzDOMEntityReference> = new DOMEntityReference("nbsp")
+<fuzzDOMComment> = new DOMComment()
+
+<fuzzRecursiveIterator> = new RecursiveIterator()
+
+<fuzzSplObjectStorage> = new SplObjectStorage()
+<fuzzSplFixedArray> = new SplFixedArray()
+
+<fuzzReflector> = new ReflectionClass("ZipArchive")
+<fuzzReflectionClass> = new ReflectionClass($vars[array_rand($vars)])
+<fuzzReflectionClassConstant> = new ReflectionClassConstant("ZipArchive", "ZIP_ER_OK")
+<fuzzReflectionType> = new ReflectionType()
+<fuzzReflectionFunctionAbstract> = new ReflectionFunctionAbstract()
+<fuzzReflectionExtension> = new ReflectionExtension("Reflection")
+<fuzzReflectionProperty> = new ReflectionProperty("ZipArchive", "filename")
+<fuzzReflectionMethod> = new ReflectionMethod("ZipArchive", "getStatusString")
+
+<fuzzTraversable> = new ArrayIterator(array(0))
+
+<fuzzThrowable> = new Exception()
+
+<fuzzHashContext> = hash_init("md5")
+
+<fuzzSimpleXMLElement> = new SimpleXMLElement("<lt>a<gt>a<lt>/a<gt>")
+<fuzzSimpleXMLIterator> = new SimpleXMLIterator("<lt>a<gt>a<lt>/a<gt>")
+
+<fuzzPhar> = new Phar("/tmp/fuzz.phar")
+<fuzzPharData> = new PharData("/tmp/fuzz.tar"))
+
+<fuzzRecursiveFilterIterator> = new RecursiveFilterIterator(new RecursiveIterator())
+
+<fuzzDirectory> = dir("/tmp")
+
+<fuzzClosure> = function () { return 0; }
+
+<fuzzGenerator> = (function () { yield 0; })()
+
+!include php_generated.txt
+
+### OTHER
+
+<fuzzline> = <methodcall>;
+<fuzzline> = <functioncall>;
+
+### LINES
+
+!begin lines
+
+<fuzzline>
+
+!end lines
