@@ -31,6 +31,7 @@
 <largeint> = 18446744073709551615
 <largeint> = 18446744073709551616
 
+
 <fuzzint> = 0
 <fuzzint> = 1
 <fuzzint> = -1
@@ -186,7 +187,7 @@
 
 <fuzzGenerator> = (function () { yield 0; })()
 
-!include php_generated.txt
+!include ./php_generated.txt
 
 ### OTHER
 

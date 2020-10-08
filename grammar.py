@@ -930,8 +930,7 @@ class Grammar(object):
 
     def _include_from_file(self, filename):
         try:
-            f = open(os.path.join(
-                os.path.dirname(os.path.abspath(__file__)),
+            f = open(os.path.join(self._definitions_dir,
                 filename
             ))
             content = f.read()
@@ -939,7 +938,6 @@ class Grammar(object):
         except IOError:
             print('Error reading ' + filename)
             return 1
-        self._definitions_dir = os.path.dirname(filename)
         return self.parse_from_string(content)
 
     def parse_from_string(self, grammar_str):
