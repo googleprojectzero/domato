@@ -27,10 +27,9 @@ def main():
     
     args = parser.parse_args()
 
-    result = generator.generate_samples(template)
-
     if args.file:
         with open(args.file, "w") as f:
+            result = generator.generate_samples(template)
             f.write(result)
 
     elif args.output_dir:
@@ -51,10 +50,10 @@ def main():
                 outfiles.append(os.path.join(out_dir, 'fuzz-' + str(i).zfill(5) + '.html'))
 
             for outfile in outfiles:
-                if result is not None:
-                    print('Writing a sample to ' + outfile)
+                print('Writing a sample to ' + outfile)
                 try:
                     with open(outfile, 'w') as f:
+                        result = generator.generate_samples(template)
                         f.write(result)
                         f.close()
                 except IOError:

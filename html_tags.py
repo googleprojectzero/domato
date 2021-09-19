@@ -135,4 +135,3 @@ _HTML_TYPES = {
     'wbr': 'HTMLUnknownElement',
     'xmp': 'HTMLUnknownElement'
 }
-
