@@ -19,7 +19,7 @@ def get_parser():
 
 def main():
 
-    with open("template.html", "r") as f:
+    with open(os.path.join(os.path.dirname(__file__), "template.html"), "r") as f:
             template = f.read()
             f.close()
 
