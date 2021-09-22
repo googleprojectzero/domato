@@ -48,7 +48,7 @@ def main():
 
     if args.file:
         with open(args.file, "w") as f:
-            result = generator.generate_samples(template)
+            result = generator.generate_sample(template)
             f.write(result)
 
     elif args.output_dir:
@@ -72,7 +72,7 @@ def main():
                 print('Writing a sample to ' + outfile)
                 try:
                     with open(outfile, 'w') as f:
-                        result = generator.generate_samples(template)
+                        result = generator.generate_sample(template)
                         f.write(result)
                         f.close()
                 except IOError:
