@@ -1,4 +1,4 @@
-#   Domato - grammar parser and generator
+#   Domato - generator script
 #   --------------------------------------
 #
 #   Written and maintained by Ivan Fratric <ifratric@google.com>
