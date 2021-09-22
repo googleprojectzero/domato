@@ -142,7 +142,7 @@ def import_grammar():
 
     return htmlgrammar, cssgrammar, jsgrammar
 
-def generate_samples(template):
+def generate_sample(template):
     """Generates a set of samples and writes them to the output files.
     Args:
       grammar_dir: directory to load grammar files from.
