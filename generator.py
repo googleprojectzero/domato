@@ -112,22 +112,24 @@ def generate_new_sample(template, htmlgrammar, cssgrammar, jsgrammar):
 
 def import_grammar():
     
+    grammar_dir = os.path.dirname(__file__)
     htmlgrammar = Grammar()
-    err = htmlgrammar.parse_from_file(os.path.join(os.path.dirname(__file__), 'rules/html.txt'))
+
+    err = htmlgrammar.parse_from_file(os.path.join(grammar_dir, 'rules/html.txt'))
     # CheckGrammar(htmlgrammar)
     if err > 0:
         print('There were errors parsing html grammar')
         return
 
     cssgrammar = Grammar()
-    err = cssgrammar.parse_from_file(os.path.join(os.path.dirname(__file__),'rules/css.txt'))
+    err = cssgrammar.parse_from_file(os.path.join(grammar_dir ,'rules/css.txt'))
     # CheckGrammar(cssgrammar)
     if err > 0:
         print('There were errors parsing css grammar')
         return
 
     jsgrammar = Grammar()
-    err = jsgrammar.parse_from_file(os.path.join(os.path.dirname(__file__),'rules/js.txt'))
+    err = jsgrammar.parse_from_file(os.path.join(grammar_dir,'rules/js.txt'))
     # CheckGrammar(jsgrammar)
     if err > 0:
         print('There were errors parsing js grammar')
