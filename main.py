@@ -42,13 +42,14 @@ def main():
             template = f.read()
             f.close()
 
+    result = generator.generate_sample(template)
+
     parser = get_parser()
     
     args = parser.parse_args()
 
     if args.file:
         with open(args.file, "w") as f:
-            result = generator.generate_sample(template)
             f.write(result)
 
     elif args.output_dir:
@@ -67,16 +68,9 @@ def main():
             outfiles = []
             for i in range(nsamples):
                 outfiles.append(os.path.join(out_dir, 'fuzz-' + str(i).zfill(5) + '.html'))
-
-            for outfile in outfiles:
-                print('Writing a sample to ' + outfile)
-                try:
-                    with open(outfile, 'w') as f:
-                        result = generator.generate_sample(template)
-                        f.write(result)
-                        f.close()
-                except IOError:
-                    print('Error writing to output')
+            
+            generator.generate_sample(template, outfiles)
+                
 
     else:
         parser.print_help()

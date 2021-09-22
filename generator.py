@@ -129,8 +129,13 @@ def generate_new_sample(template, htmlgrammar, cssgrammar, jsgrammar):
 
     return result
 
-def import_grammar():
-    
+def generate_sample(template, outfiles=None):
+    """Generates a set of samples and writes them to the output files.
+    Args:
+      grammar_dir: directory to load grammar files from.
+      outfiles: A list of output filenames.
+    """
+
     grammar_dir = os.path.dirname(__file__)
     htmlgrammar = Grammar()
 
@@ -159,12 +164,16 @@ def import_grammar():
     htmlgrammar.add_import('cssgrammar', cssgrammar)
     jsgrammar.add_import('cssgrammar', cssgrammar)
 
-    return htmlgrammar, cssgrammar, jsgrammar
+    if outfiles == None:
+        return generate_new_sample(template, htmlgrammar, cssgrammar, jsgrammar)
+    else:
+        for outfile in outfiles:
+            result = generate_new_sample(template, htmlgrammar, cssgrammar, jsgrammar)
+            print('Writing a sample to ' + outfile)
+            try:
+                with open(outfile, 'w') as f:
+                    f.write(result)
+                    f.close()
+            except IOError:
+                print('Error writing to output')
 
-def generate_sample(template):
-    """Generates a set of samples and writes them to the output files.
-    Args:
-      grammar_dir: directory to load grammar files from.
-      outfiles: A list of output filenames.
-    """
-    return generate_new_sample(template, *import_grammar())
