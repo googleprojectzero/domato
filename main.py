@@ -42,13 +42,12 @@ def main():
             template = f.read()
             f.close()
 
-    result = generator.generate_sample(template)
-
     parser = get_parser()
     
     args = parser.parse_args()
 
     if args.file:
+        result = generator.generate_sample(template)
         with open(args.file, "w") as f:
             f.write(result)
 
