@@ -1,4 +1,4 @@
-#   Domato - generator script
+#   Domato - main generator script
 #   --------------------------------------
 #
 #   Written and maintained by Ivan Fratric <ifratric@google.com>
@@ -21,10 +21,12 @@ from __future__ import print_function
 import os
 import re
 import random
+import argparse
 
 from grammar import Grammar
 from svg_tags import _SVG_TYPES
 from html_tags import _HTML_TYPES
+
 
 def generate_html_elements(ctx, n):
     for i in range(n):
@@ -109,16 +111,16 @@ def generate_new_sample(template, htmlgrammar, cssgrammar, jsgrammar):
         lambda match: add_html_ids(match, htmlctx),
         html
     )
-    generate_html_elements(htmlctx, 5)
+    generate_html_elements(htmlctx, _N_ADDITIONAL_HTMLVARS)
 
     result = result.replace('<cssfuzzer>', css)
     result = result.replace('<htmlfuzzer>', html)
 
     handlers = False
     while '<jsfuzzer>' in result:
-        numlines = 1000
+        numlines = _N_MAIN_LINES
         if handlers:
-            numlines = 500
+            numlines = _N_EVENTHANDLER_LINES
         else:
             handlers = True
         result = result.replace(
@@ -129,7 +131,7 @@ def generate_new_sample(template, htmlgrammar, cssgrammar, jsgrammar):
 
     return result
 
-def generate_sample(template, outfiles=None):
+def generate_sample(template, outfiles):
     """Generates a set of samples and writes them to the output files.
     Args:
       grammar_dir: directory to load grammar files from.
@@ -164,16 +166,76 @@ def generate_sample(template, outfiles=None):
     htmlgrammar.add_import('cssgrammar', cssgrammar)
     jsgrammar.add_import('cssgrammar', cssgrammar)
 
-    if outfiles == None:
-        return generate_new_sample(template, htmlgrammar, cssgrammar, jsgrammar)
+    for outfile in outfiles:
+        result = generate_new_sample(template, htmlgrammar, cssgrammar, jsgrammar)
+        print('Writing a sample to ' + outfile)
+        try:
+            with open(outfile, 'w') as f:
+                f.write(result)
+                f.close()
+        except IOError:
+            print('Error writing to output')
+
+def get_argument_parser():
+    
+    parser = argparse.ArgumentParser(description="DOMATO (A DOM FUZZER)")
+    
+    parser.add_argument("-f", "--file", 
+    help="File name which is to be generated in the same directory")
+
+    parser.add_argument('-o', '--output_dir', type=str,
+                    help='The output directory to put the generated files in')
+
+    parser.add_argument('-n', '--no_of_files', type=int,
+                    help='number of files to be generated')
+
+    return parser
+
+def main():
+
+    fuzzer_dir = os.path.dirname(__file__)
+
+    with open(os.path.join(fuzzer_dir, "template.html"), "r") as f:
+            template = f.read()
+            f.close()
+
+    parser = get_argument_parser()
+    
+    args = parser.parse_args()
+
+    if args.file:
+        generate_sample(template, [args.file])
+
+    elif args.output_dir:
+        if not args.no_of_files:
+            print("Please use switch -n to specify the number of files")
+        else:
+            print('Running on ClusterFuzz')
+            out_dir = args.output_dir
+            nsamples = args.no_of_files
+            print('Output directory: ' + out_dir)
+            print('Number of samples: ' + str(nsamples))
+
+            if not os.path.exists(out_dir):
+                os.mkdir(out_dir)
+
+            outfiles = []
+            for i in range(nsamples):
+                outfiles.append(os.path.join(out_dir, 'fuzz-' + str(i).zfill(5) + '.html'))
+            
+            generate_sample(template, outfiles)
+                
+
     else:
-        for outfile in outfiles:
-            result = generate_new_sample(template, htmlgrammar, cssgrammar, jsgrammar)
-            print('Writing a sample to ' + outfile)
-            try:
-                with open(outfile, 'w') as f:
-                    f.write(result)
-                    f.close()
-            except IOError:
-                print('Error writing to output')
+        parser.print_help()
+
+
+if __name__ == '__main__':
+    
+    _N_MAIN_LINES = 1000
+    _N_EVENTHANDLER_LINES = 500
+
+    _N_ADDITIONAL_HTMLVARS = 5
+    
+    main()
 
