@@ -131,7 +131,7 @@ def generate_new_sample(template, htmlgrammar, cssgrammar, jsgrammar):
 
     return result
 
-def generate_sample(template, outfiles):
+def generate_samples(template, outfiles):
     """Generates a set of samples and writes them to the output files.
     Args:
       grammar_dir: directory to load grammar files from.
@@ -204,7 +204,7 @@ def main():
     args = parser.parse_args()
 
     if args.file:
-        generate_sample(template, [args.file])
+        generate_samples(template, [args.file])
 
     elif args.output_dir:
         if not args.no_of_files:
@@ -223,7 +223,7 @@ def main():
             for i in range(nsamples):
                 outfiles.append(os.path.join(out_dir, 'fuzz-' + str(i).zfill(5) + '.html'))
             
-            generate_sample(template, outfiles)
+            generate_samples(template, outfiles)
                 
 
     else:
@@ -238,4 +238,3 @@ if __name__ == '__main__':
     _N_ADDITIONAL_HTMLVARS = 5
     
     main()
-
