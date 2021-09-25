@@ -16,7 +16,7 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
-
+# A map from tag name to corresponding type for SVG tags
 _SVG_TYPES = {
     'a': 'SVGAElement',
     'altGlyph': 'SVGElement',
