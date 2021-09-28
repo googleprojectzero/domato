@@ -27,6 +27,10 @@ from grammar import Grammar
 from svg_tags import _SVG_TYPES
 from html_tags import _HTML_TYPES
 
+_N_MAIN_LINES = 1000
+_N_EVENTHANDLER_LINES = 500
+
+_N_ADDITIONAL_HTMLVARS = 5
 
 def generate_html_elements(ctx, n):
     for i in range(n):
@@ -138,24 +142,24 @@ def generate_samples(template, outfiles):
       outfiles: A list of output filenames.
     """
 
-    grammar_dir = os.path.dirname(__file__)
+    grammar_dir = os.path.join(os.path.dirname(__file__), 'rules')
     htmlgrammar = Grammar()
 
-    err = htmlgrammar.parse_from_file(os.path.join(grammar_dir, 'rules/html.txt'))
+    err = htmlgrammar.parse_from_file(os.path.join(grammar_dir, 'html.txt'))
     # CheckGrammar(htmlgrammar)
     if err > 0:
         print('There were errors parsing html grammar')
         return
 
     cssgrammar = Grammar()
-    err = cssgrammar.parse_from_file(os.path.join(grammar_dir ,'rules/css.txt'))
+    err = cssgrammar.parse_from_file(os.path.join(grammar_dir ,'css.txt'))
     # CheckGrammar(cssgrammar)
     if err > 0:
         print('There were errors parsing css grammar')
         return
 
     jsgrammar = Grammar()
-    err = jsgrammar.parse_from_file(os.path.join(grammar_dir,'rules/js.txt'))
+    err = jsgrammar.parse_from_file(os.path.join(grammar_dir,'js.txt'))
     # CheckGrammar(jsgrammar)
     if err > 0:
         print('There were errors parsing js grammar')
@@ -168,13 +172,14 @@ def generate_samples(template, outfiles):
 
     for outfile in outfiles:
         result = generate_new_sample(template, htmlgrammar, cssgrammar, jsgrammar)
-        print('Writing a sample to ' + outfile)
-        try:
-            with open(outfile, 'w') as f:
-                f.write(result)
-                f.close()
-        except IOError:
-            print('Error writing to output')
+        if result is not None:
+            print('Writing a sample to ' + outfile)
+            try:
+                with open(outfile, 'w') as f:
+                    f.write(result)
+                    f.close()
+            except IOError:
+                print('Error writing to output')
 
 def get_argument_parser():
     
@@ -231,10 +236,5 @@ def main():
 
 
 if __name__ == '__main__':
-    
-    _N_MAIN_LINES = 1000
-    _N_EVENTHANDLER_LINES = 500
-
-    _N_ADDITIONAL_HTMLVARS = 5
     
     main()

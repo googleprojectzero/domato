@@ -19,9 +19,12 @@ limitations under the License.
 
 #### Usage
 
+To see the usage information run the following command:
+`python3 generator.py --help`
+
 To generate a single .html sample run:
 
-`python generator.py <output file>`
+`python generator.py --file <output file>`
 
 To generate multiple samples with a single call run:
 
