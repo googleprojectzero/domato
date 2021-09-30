@@ -107,8 +107,8 @@
 
 <root root=true> = <lines count=50>
 
-!include ../common.txt
-!include ../cssproperties.txt
+!include ../rules/common.txt
+!include ../rules/cssproperties.txt
 
 !lineguard try { <line> } catch(e) { console.log(e.message) }
 !varformat fuzzvar%05d

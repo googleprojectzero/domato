@@ -177,7 +177,6 @@ def generate_samples(template, outfiles):
             try:
                 with open(outfile, 'w') as f:
                     f.write(result)
-                    f.close()
             except IOError:
                 print('Error writing to output')
 
@@ -201,8 +200,7 @@ def main():
     fuzzer_dir = os.path.dirname(__file__)
 
     with open(os.path.join(fuzzer_dir, "template.html"), "r") as f:
-            template = f.read()
-            f.close()
+        template = f.read()
 
     parser = get_argument_parser()
     
