@@ -11,9 +11,6 @@ if len(sys.argv) > 2:
 rawFile = open(filePath, 'r')
 fileContent = rawFile.read()
 
-def isLine(string):
-  string.startswith('/* LINE */')
-
 jsfuzzerBefore = fileContent.split('/* BEGIN jsfuzzer */')[0]
 jsfuzzerArea = fileContent.split('/* BEGIN jsfuzzer */')[1].split('/* END jsfuzzer */')[0]
 jsfuzzerAfter = fileContent.split('/* END jsfuzzer */')[1]

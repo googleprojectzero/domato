@@ -14,7 +14,7 @@
 
 <root root=true> = <lines count=1000>
 
-!lineguard /* LINE */try { lineNo++; <line> } catch(e) { errorLines[funcArea].push(lineNo); }
+!lineguard /* LINE */try { lineNo++; runLines[funcArea]++; <line> } catch(e) { errorLines[funcArea].push(lineNo); }
 
 !include common.txt
 !include jshelpers.txt

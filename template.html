@@ -17,6 +17,7 @@ function freememory() {
 
 var runcount = {'jsfuzzer':0, 'eventhandler1':0, 'eventhandler2':0, 'eventhandler3':0, 'eventhandler4':0, 'eventhandler5':0}
 
+var runLines = {'jsfuzzer':0, 'eventhandler1':0, 'eventhandler2':0, 'eventhandler3':0, 'eventhandler4':0, 'eventhandler5':0}
 var errorLines = {'jsfuzzer':[], 'eventhandler1':[], 'eventhandler2':[], 'eventhandler3':[], 'eventhandler4':[], 'eventhandler5':[]}
 
 function GetVariable(fuzzervars, var_type) { if(fuzzervars[var_type]) { return fuzzervars[var_type]; } else { return null; }}
