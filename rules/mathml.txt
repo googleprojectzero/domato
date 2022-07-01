@@ -1,0 +1,216 @@
+#   Copyright 2022 Igalia S.L. All Rights Reserved.
+#   Licensed under the Apache License, Version 2.0 (the "License");
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
+
+# https://w3c.github.io/mathml-core/#the-top-level-math-element
+<mathmlelement_math> = <lt>math <mathmlattrs_math><gt><newline><mathmlchildren><lt>/math<gt>
+<mathmlattrs_math> = <mathmlattrs_global> <mathmlattr_math_display>
+<mathmlattr_math_display> = display="<mathmlattr_math_display_value>"
+
+# A valid MathML child for most MathML elements.
+<mathmlelement nonrecursive=true p=0.5> = <mathmlelement_token>
+<mathmlelement> = <mathmlelement_group>
+<mathmlelement> = <mathmlelement_mfrac>
+<mathmlelement> = <mathmlelement_mmultiscripts>
+<mathmlelement> = <mathmlelement_mover>
+<mathmlelement> = <mathmlelement_mpadded>
+<mathmlelement> = <mathmlelement_mroot>
+<mathmlelement> = <mathmlelement_msqrt>
+<mathmlelement> = <mathmlelement_msub>
+<mathmlelement> = <mathmlelement_msubsup>
+<mathmlelement> = <mathmlelement_msup>
+<mathmlelement> = <mathmlelement_mtable>
+<mathmlelement> = <mathmlelement_munder>
+<mathmlelement> = <mathmlelement_munderover>
+<mathmlelement> = <mathmlelement_semantics>
+
+# A valid list of MathML children for most MathML elements.
+<mathmlchildren nonrecursive=true p=0.5> = <mathmlelement_token>
+<mathmlchildren> = <mathmlchildren><mathmlelement>
+
+# https://w3c.github.io/mathml-core/#token-elements
+<mathmlelement_token> = <mathmlelement_mi>
+<mathmlelement_token> = <mathmlelement_mn>
+<mathmlelement_token> = <mathmlelement_mo>
+<mathmlelement_token> = <mathmlelement_ms>
+<mathmlelement_token> = <mathmlelement_mspace>
+<mathmlelement_token> = <mathmlelement_mtext>
+
+# Interesting content for token elements is generally a single letter or symbol.
+<mathmlelement_token_content p=.3> = <htmlsafestring minlength=1 maxlength=1 min=32 max=126>
+<mathmlelement_token_content p=.3> = <htmlsafestring minlength=1 maxlength=1 min=0x2100 max=0x2BFF>
+<mathmlelement_token_content p=.3> = <htmlsafestring minlength=1 maxlength=1 min=0x1D400 max=0x1D7FF>
+<mathmlelement_token_content> = <htmlsafestring min=32 max=126>
+
+# Elements behaving more or less like an <mrow>.
+<mathmlelement_group> = <mathmlelement_maction>
+<mathmlelement_group> = <mathmlelement_merror>
+<mathmlelement_group> = <mathmlelement_mphantom>
+<mathmlelement_group> = <mathmlelement_mrow>
+<mathmlelement_group> = <mathmlelement_mstyle>
+
+# https://w3c.github.io/mathml-core/#text-mtext
+<mathmlelement_mtext> = <lt>mtext <mathmlattrs_global><gt><mathmlelement_token_content><lt>/mtext<gt><newline>
+
+# https://w3c.github.io/mathml-core/#identifier-mi
+<mathmlelement_mi> = <lt>mi <mathmlattrs_global><gt><mathmlelement_token_content><lt>/mi<gt><newline>
+
+# https://w3c.github.io/mathml-core/#number-mn
+<mathmlelement_mn> = <lt>mn <mathmlattrs_global><gt><mathmlelement_token_content><lt>/mn<gt><newline>
+
+# https://w3c.github.io/mathml-core/#operator-fence-separator-or-accent-mo
+<mathmlelement_mo> = <lt>mo <mathmlattrs_mo><gt><mathmlelement_mo_content><lt>/mo<gt><newline>
+<mathmlattrs_mo> = <mathmlattrs_global> <mathmlattr_mo> <mathmlattr_mo> <mathmlattr_mo> <mathmlattr_mo> <mathmlattr_mo> <mathmlattr_mo>
+<mathmlattr_mo> = form="<mathmlattr_form_value>"
+<mathmlattr_mo> = fence="<boolean>"
+<mathmlattr_mo> = separator="<boolean>"
+<mathmlattr_mo> = lspace="<mathmlattr_lengthpercentage_value>"
+<mathmlattr_mo> = rspace="<mathmlattr_lengthpercentage_value>"
+<mathmlattr_mo> = stretchy="<boolean>"
+<mathmlattr_mo> = symmetric="<boolean>"
+<mathmlattr_mo> = maxsize="<mathmlattr_lengthpercentage_value>"
+<mathmlattr_mo> = minsize="<mathmlattr_lengthpercentage_value>"
+<mathmlattr_mo> = largeop="<boolean>"
+<mathmlattr_mo> = movablelimits="<boolean>"
+
+# Interesting content for mo are large and stretchy operators.
+<mathmlelement_mo_content p=0.5> = <mathmlelement_token_content>
+<mathmlelement_mo_content> = ∫
+<mathmlelement_mo_content> = ∑
+<mathmlelement_mo_content> = {
+<mathmlelement_mo_content> = |
+<mathmlelement_mo_content> = →
+<mathmlelement_mo_content> = _
+
+# https://w3c.github.io/mathml-core/#space-mspace
+<mathmlelement_mspace> = <lt>mspace <mathmlattrs_mspace>/<gt><newline>
+<mathmlattrs_mspace> = <mathmlattrs_global> <mathmlattr_mspace> <mathmlattr_mspace> <mathmlattr_mspace>
+<mathmlattr_mspace> = width="<mathmlattr_lengthpercentage_value>"
+<mathmlattr_mspace> = height="<mathmlattr_lengthpercentage_value>"
+<mathmlattr_mspace> = depth="<mathmlattr_lengthpercentage_value>"
+
+# https://w3c.github.io/mathml-core/#string-literal-ms
+<mathmlelement_ms> = <lt>ms <mathmlattrs_global><gt><mathmlelement_token_content><lt>/ms<gt><newline>
+
+# https://w3c.github.io/mathml-core/#horizontally-group-sub-expressions-mrow
+<mathmlelement_mrow> = <lt>mrow <mathmlattrs_global><gt><newline><mathmlchildren><lt>/mrow<gt><newline>
+
+# https://w3c.github.io/mathml-core/#fractions-mfrac
+<mathmlelement_mfrac> = <lt>mfrac <mathmlattrs_mfrac><gt><newline><mathmlelement><mathmlelement><lt>/mfrac<gt><newline>
+<mathmlattrs_mfrac> = <mathmlattrs_global> <mathmlattr_mfrac_linethickness>
+# An interesting value for linethickness is 0px.
+<mathmlattr_mfrac_linethickness> = linethickness="<mathmlattr_lengthpercentage_value>"
+<mathmlattr_mfrac_linethickness> = linethickness="0px"
+
+# https://w3c.github.io/mathml-core/#radicals-msqrt-mroot
+<mathmlelement_msqrt> = <lt>msqrt <mathmlattrs_global><gt><newline><mathmlchildren><lt>/msqrt<gt><newline>
+<mathmlelement_mroot> = <lt>mroot <mathmlattrs_global><gt><newline><mathmlelement><mathmlelement><lt>/mroot<gt><newline>
+
+# https://w3c.github.io/mathml-core/#style-change-mstyle
+<mathmlelement_mstyle> = <lt>mstyle <mathmlattrs_global><gt><newline><mathmlchildren><lt>/mstyle<gt><newline>
+
+# https://w3c.github.io/mathml-core/#error-message-merror
+<mathmlelement_merror> = <lt>merror <mathmlattrs_global><gt><newline><mathmlchildren><lt>/merror<gt><newline>
+
+# https://w3c.github.io/mathml-core/#adjust-space-around-content-mpadded
+<mathmlelement_mpadded> = <lt>mpadded <mathmlattrs_mpadded><gt><newline><mathmlchildren><lt>/mpadded<gt><newline>
+<mathmlattrs_mpadded> = <mathmlattrs_global> <mathmlattr_mpadded> <mathmlattr_mpadded> <mathmlattr_mpadded> <mathmlattr_mpadded> <mathmlattr_mpadded>
+<mathmlattr_mpadded> = width="<mathmlattr_lengthpercentage_value>"
+<mathmlattr_mpadded> = height="<mathmlattr_lengthpercentage_value>"
+<mathmlattr_mpadded> = depth="<mathmlattr_lengthpercentage_value>"
+<mathmlattr_mpadded> = lspace="<mathmlattr_lengthpercentage_value>"
+<mathmlattr_mpadded> = voffset="<mathmlattr_lengthpercentage_value>"
+
+# https://w3c.github.io/mathml-core/#making-sub-expressions-invisible-mphantom
+<mathmlelement_mphantom> = <lt>mphantom <mathmlattrs_global><gt><newline><mathmlchildren><lt>/mphantom<gt><newline>
+
+# https://w3c.github.io/mathml-core/#subscripts-and-superscripts-msub-msup-msubsup
+<mathmlelement_msub> = <lt>msub <mathmlattrs_global><gt><newline><mathmlelement><mathmlelement><lt>/msub<gt><newline>
+<mathmlelement_msup> = <lt>msup <mathmlattrs_global><gt><newline><mathmlelement><mathmlelement><lt>/msup<gt><newline>
+<mathmlelement_msubsup> = <lt>msubsup <mathmlattrs_global><gt><newline><mathmlelement><mathmlelement><mathmlelement><lt>/msubsup<gt><newline>
+
+# https://w3c.github.io/mathml-core/#underscripts-and-overscripts-munder-mover-munderover
+<mathmlelement_munder> = <lt>munder <mathmlattrs_munder><gt><newline><mathmlelement><mathmlelement><lt>/munder<gt><newline>
+<mathmlelement_mover> = <lt>mover <mathmlattrs_mover><gt><newline><mathmlelement><mathmlelement><lt>/mover<gt><newline>
+<mathmlelement_munderover> = <lt>munderover <mathmlattrs_munderover><gt><newline><mathmlelement><mathmlelement><mathmlelement><lt>/munderover<gt><newline>
+
+<mathmlattrs_munderover> = <mathmlattrs_global> <mathmlattr_munderover_accent> <mathmlattr_munderover_accentunder>
+<mathmlattrs_munder> = <mathmlattrs_global> <mathmlattr_munderover_accentunder>
+<mathmlattrs_mover> = <mathmlattrs_global> <mathmlattr_munderover_accent>
+
+<mathmlattr_munderover_accent> = accent="<boolean>"
+<mathmlattr_munderover_accentunder> = accentunder="<boolean>"
+
+# https://w3c.github.io/mathml-core/#prescripts-and-tensor-indices-mmultiscripts
+<mathmlelement_mmultiscripts> = <lt>mmultiscripts <mathmlattrs_global><gt><newline><mathmlchildren_mmultiscripts><lt>/mmultiscripts<gt><newline>
+<mathmlchildren_mmultiscripts> = <mathmlelement><mathmlchildren_mmultiscripts_scripts><mathmlelement_mprescripts><mathmlchildren_mmultiscripts_scripts>
+<mathmlelement_mprescripts> = <lt>mprescripts <mathmlattrs_global>/<gt><newline>
+<mathmlelement_none> = <lt>none <mathmlattrs_global>/<gt><newline>
+
+<mathmlchildren_mmultiscripts_scripts nonrecursive=true p=0.75> = <mathmlchildren_mmultiscripts_script><mathmlchildren_mmultiscripts_script>
+<mathmlchildren_mmultiscripts_scripts> = <mathmlchildren_mmultiscripts_scripts><mathmlchildren_mmultiscripts_script><mathmlchildren_mmultiscripts_script>
+
+<mathmlchildren_mmultiscripts_script p=.75> = <mathmlelement>
+<mathmlchildren_mmultiscripts_script nonrecursive=true> = <mathmlelement_none>
+
+# https://w3c.github.io/mathml-core/#table-or-matrix-mtable
+<mathmlelement_mtable> = <lt>mtable <mathmlattrs_global><gt><newline><mathmlchildren_mtable><newline><lt>/mtable<gt><newline>
+<mathmlchildren_mtable nonrecursive=true p=0.5> = <mathmlelement_mtr>
+<mathmlchildren_mtable> = <mathmlchildren_mtable><mathmlelement_mtr>
+
+# https://w3c.github.io/mathml-core/#row-in-table-or-matrix-mtr
+<mathmlelement_mtr> = <lt>mtr <mathmlattrs_global><gt><newline><mathmlchildren_mtr><newline><lt>/mtr<gt><newline>
+<mathmlchildren_mtr nonrecursive=true p=0.5> = <mathmlelement_mtd>
+<mathmlchildren_mtr> = <mathmlchildren_mtr><mathmlelement_mtd>
+
+# https://w3c.github.io/mathml-core/#entry-in-table-or-matrix-mtd
+<mathmlelement_mtd> = <lt>mtd <mathmlattrs_mtd><gt><newline><mathmlchildren><lt>/mtd<gt><newline>
+<mathmlattrs_mtd> = <mathmlattrs_global> <mathmlattr_mtd_columnspan> <mathmlattr_mtd_rowspan>
+<mathmlattr_mtd_columnspan> = columnspan="<fuzzint>"
+<mathmlattr_mtd_rowspan> = rowspan="<fuzzint>"
+
+# https://w3c.github.io/mathml-core/#enlivening-expressions
+<mathmlelement_maction> = <lt>maction <mathmlattrs_maction><gt><newline><mathmlchildren><lt>/maction<gt><newline>
+<mathmlattrs_maction> = <mathmlattrs_global> <mathmlattr_maction> <mathmlattr_maction>
+<mathmlattr_maction> = actiontype="<mathmlattr_maction_actiontype_value>"
+<mathmlattr_maction> = selection="<mathmlattr_maction_selection_value>"
+
+# https://w3c.github.io/mathml-core/#semantics-and-presentation
+<mathmlelement_semantics> = <lt>semantics <mathmlattrs_global><gt><newline><mathmlchildren_semantics><lt>/semantics<gt><newline>
+<mathmlchildren_semantics> = <mathmlelement><mathmlchildren_semantics_annotations>
+
+<mathmlchildren_semantics_annotations nonrecursive=true p=0.5> = <mathmlchildren_semantics_annotation>
+<mathmlchildren_semantics_annotations> = <mathmlchildren_semantics_annotations><mathmlchildren_semantics_annotation>
+
+<mathmlchildren_semantics_annotation> = <mathmlelement_annotation>
+<mathmlchildren_semantics_annotation> = <mathmlelement_annotation_xml>
+
+<mathmlelement_annotation> = <lt>annotation <mathmlattrs_global> <mathmlattr_encoding><gt><htmlsafestring min=32 max=126><lt>/annotation<gt><newline>
+<mathmlelement_annotation_xml> = <lt>annotation-xml <mathmlattrs_global> <mathmlattr_encoding><gt><htmlsafestring min=32 max=126><lt>/annotation-xml<gt><newline>
+
+<mathmlattr_encoding> = encoding="<encoding_value>"
+
+# https://w3c.github.io/mathml-core/#global-attributes
+<mathmlattrs_global> = <mathmlattr_global> <mathmlattr_global>
+<mathmlattr_global> = class="<class>"
+<mathmlattr_global> = dir="<direction_value>"
+<mathmlattr_global> = displaystyle="<boolean>"
+#<mathmlattr_global> = id="<direction_value>"
+<mathmlattr_global> = mathbackground="<color>"
+<mathmlattr_global> = mathcolor="<color>"
+<mathmlattr_global> = mathsize="<mathmlattr_lengthpercentage_value>"
+<mathmlattr_global> = mathvariant="<mathmlattr_mathvariant_value>"
+<mathmlattr_global> = nonce="<nonce_value>"
+<mathmlattr_global> = scriptlevel="<mathmlattr_scriptlevel_value>"
+<mathmlattr_global> = style="<style_value>"
+<mathmlattr_global> = tabindex="<tabindex_value>"
+# <mathmlattr_global> = <attribute_eventhandler>
