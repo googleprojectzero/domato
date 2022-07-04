@@ -107,9 +107,7 @@
 # https://w3c.github.io/mathml-core/#fractions-mfrac
 <mathmlelement_mfrac> = <lt>mfrac <mathmlattrs_mfrac><gt><newline><mathmlelement><mathmlelement><lt>/mfrac<gt><newline>
 <mathmlattrs_mfrac> = <mathmlattrs_global> <mathmlattr_mfrac_linethickness>
-# An interesting value for linethickness is 0px.
-<mathmlattr_mfrac_linethickness> = linethickness="<mathmlattr_lengthpercentage_value>"
-<mathmlattr_mfrac_linethickness> = linethickness="0px"
+<mathmlattr_mfrac_linethickness> = linethickness="<mathmlattr_mfrac_linethickness_value>"
 
 # https://w3c.github.io/mathml-core/#radicals-msqrt-mroot
 <mathmlelement_msqrt> = <lt>msqrt <mathmlattrs_global><gt><newline><mathmlchildren><lt>/msqrt<gt><newline>
@@ -200,7 +198,7 @@
 <mathmlattr_encoding> = encoding="<encoding_value>"
 
 # https://w3c.github.io/mathml-core/#global-attributes
-<mathmlattrs_global> = <mathmlattr_global> <mathmlattr_global>
+<mathmlattrs_global> = <mathmlattr_global> <mathmlattr_global> <mathmlattr_global> <mathmlattr_global> <mathmlattr_global> <mathmlattr_global>
 <mathmlattr_global> = class="<class>"
 <mathmlattr_global> = dir="<direction_value>"
 <mathmlattr_global> = displaystyle="<boolean>"

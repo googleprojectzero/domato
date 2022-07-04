@@ -47,6 +47,11 @@
 <mathmlattr_form_value> = prefix
 <mathmlattr_form_value> = postfix
 
+# https://w3c.github.io/mathml-core/#fractions-mfrac
+# An interesting value for linethickness is 0px.
+<mathmlattr_mfrac_linethickness_value> = <mathmlattr_lengthpercentage_value>
+<mathmlattr_mfrac_linethickness_value> = 0px
+
 # https://www.w3.org/TR/MathML3/chapter3.html#presm.maction
 <mathmlattr_maction_actiontype_value> = toggle
 <mathmlattr_maction_actiontype_value> = statusline
