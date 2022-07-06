@@ -173,8 +173,8 @@
 # https://w3c.github.io/mathml-core/#entry-in-table-or-matrix-mtd
 <mathmlelement_mtd> = <lt>mtd <mathmlattrs_mtd><gt><newline><mathmlchildren><lt>/mtd<gt><newline>
 <mathmlattrs_mtd> = <mathmlattrs_global> <mathmlattr_mtd_columnspan> <mathmlattr_mtd_rowspan>
-<mathmlattr_mtd_columnspan> = columnspan="<fuzzint>"
-<mathmlattr_mtd_rowspan> = rowspan="<fuzzint>"
+<mathmlattr_mtd_columnspan> = columnspan="<colspan_value>"
+<mathmlattr_mtd_rowspan> = rowspan="<rowspan_value>"
 
 # https://w3c.github.io/mathml-core/#enlivening-expressions
 <mathmlelement_maction> = <lt>maction <mathmlattrs_maction><gt><newline><mathmlchildren><lt>/maction<gt><newline>
@@ -211,4 +211,5 @@
 <mathmlattr_global> = scriptlevel="<mathmlattr_scriptlevel_value>"
 <mathmlattr_global> = style="<style_value>"
 <mathmlattr_global> = tabindex="<tabindex_value>"
-# <mathmlattr_global> = <attribute_eventhandler>
+<mathmlattr_global> = <attribute_eventhandler>
+<mathmlattr_global> = <attributes>
