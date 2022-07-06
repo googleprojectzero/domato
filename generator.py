@@ -26,6 +26,7 @@ import argparse
 from grammar import Grammar
 from svg_tags import _SVG_TYPES
 from html_tags import _HTML_TYPES
+from mathml_tags import _MATHML_TYPES
 
 _N_MAIN_LINES = 1000
 _N_EVENTHANDLER_LINES = 500
@@ -55,6 +56,12 @@ def add_html_ids(matchobj, ctx):
         varname = 'svgvar%05d' % ctx['svgvarctr']
         ctx['htmlvars'].append({'name': varname, 'type': _SVG_TYPES[tagname]})
         ctx['htmlvargen'] += '/* newvar{' + varname + ':' + _SVG_TYPES[tagname] + '} */ var ' + varname + ' = document.getElementById(\"' + varname + '\"); //' + _SVG_TYPES[tagname] + '\n'
+        return matchobj.group(0) + 'id=\"' + varname + '\" '
+    elif tagname in _MATHML_TYPES:
+        ctx['mathmlvarctr'] += 1
+        varname = 'mathmlvar%05d' % ctx['mathmlvarctr']
+        ctx['htmlvars'].append({'name': varname, 'type': _MATHML_TYPES[tagname]})
+        ctx['htmlvargen'] += '/* newvar{' + varname + ':' + _MATHML_TYPES[tagname] + '} */ var ' + varname + ' = document.getElementById(\"' + varname + '\"); //' + _MATHML_TYPES[tagname] + '\n'
         return matchobj.group(0) + 'id=\"' + varname + '\" '
     else:
         return matchobj.group(0)
@@ -108,6 +115,7 @@ def generate_new_sample(template, htmlgrammar, cssgrammar, jsgrammar):
         'htmlvars': [],
         'htmlvarctr': 0,
         'svgvarctr': 0,
+        'mathmlvarctr': 0,
         'htmlvargen': ''
     }
     html = re.sub(

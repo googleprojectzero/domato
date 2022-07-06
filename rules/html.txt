@@ -234,6 +234,7 @@
 #<element> = <colgroupelement>
 
 <element> = <svgelement_svg>
+<element> = <mathmlelement_math>
 
 <element> = <otherelement>
 <element> = <otherelement>
@@ -1095,4 +1096,6 @@
 
 !include svg.txt
 !include svgattrvalues.txt
+!include mathml.txt
+!include mathmlattrvalues.txt
 

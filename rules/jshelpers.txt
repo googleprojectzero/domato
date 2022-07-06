@@ -23,6 +23,7 @@
 
 <string_tag> = "<tagname>"
 <string_svgtag> = "<svgtagname>"
+<string_mathmltag> = "<mathmltagname>"
 
 <string_attr> = "abbr"
 <string_attr> = "accept"
@@ -908,6 +909,43 @@
 <string_svgattr> = "yChannelSelector"
 <string_svgattr> = "z"
 <string_svgattr> = "zoomAndPan"
+
+<string_mathmlattr> = "class"
+<string_mathmlattr> = "dir"
+<string_mathmlattr> = "displaystyle"
+<string_mathmlattr> = "mathbackground"
+<string_mathmlattr> = "mathcolor"
+<string_mathmlattr> = "mathsize"
+<string_mathmlattr> = "mathvariant"
+<string_mathmlattr> = "nonce"
+<string_mathmlattr> = "scriptlevel"
+<string_mathmlattr> = "style"
+<string_mathmlattr> = "tabindex"
+<string_mathmlattr> = "display"
+<string_mathmlattr> = "form"
+<string_mathmlattr> = "fence"
+<string_mathmlattr> = "separator"
+<string_mathmlattr> = "lspace"
+<string_mathmlattr> = "rspace"
+<string_mathmlattr> = "stretchy"
+<string_mathmlattr> = "symmetric"
+<string_mathmlattr> = "maxsize"
+<string_mathmlattr> = "minsize"
+<string_mathmlattr> = "largeop"
+<string_mathmlattr> = "movablelimits"
+<string_mathmlattr> = "linethickness"
+<string_mathmlattr> = "width"
+<string_mathmlattr> = "height"
+<string_mathmlattr> = "depth"
+<string_mathmlattr> = "lspace"
+<string_mathmlattr> = "voffset"
+<string_mathmlattr> = "accent"
+<string_mathmlattr> = "accentunder"
+<string_mathmlattr> = "columnspan"
+<string_mathmlattr> = "rowspan"
+<string_mathmlattr> = "actiontype"
+<string_mathmlattr> = "selection"
+<string_mathmlattr> = "encoding"
 
 <string_cssproperty> = "-ms-flex-align"
 <string_cssproperty> = "-ms-font-feature-settings"
@@ -2182,9 +2220,11 @@
 !include attributevalues.txt
 
 !include svgattrvalues.txt
+!include mathmlattrvalues.txt
 
 <cssurl> = <hash><elementid>
 <cssurl> = <hash><svgelementid>
+<cssurl> = <hash><mathmlelementid>
 <cssurl> = data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7
 
 !include cssproperties.txt
@@ -2209,9 +2249,11 @@
 <new sequence_Dictionary_> = { <string_attr>: [<fuzzint>, <fuzzint>] };
 <new sequence_Dictionary_> = { <string_cssproperty>: [<fuzzint>, <fuzzint>] };
 <new sequence_Dictionary_> = { <string_svgattr>: [<fuzzint>, <fuzzint>] };
+<new sequence_Dictionary_> = { <string_mathmlattr>: [<fuzzint>, <fuzzint>] };
 <new Dictionary> = { <string_attr>: [<fuzzint>, <fuzzint>] };
 <new Dictionary> = { <string_cssproperty>: [<fuzzint>, <fuzzint>] };
 <new Dictionary> = { <string_svgattr>: [<fuzzint>, <fuzzint>] };
+<new Dictionary> = { <string_mathmlattr>: [<fuzzint>, <fuzzint>] };
 <new StaticRange> = sequence_StaticRange[0];
 <new sequence_MessagePort_> = new Array(<MessagePort>);
 <new FontFace> = sequence_FontFace_[0];
@@ -2322,8 +2364,10 @@
 <new ElementRegistrationOptions> = {prototype: <Element>.prototype};
 <new ElementRegistrationOptions> = {prototype: <Element>.prototype, extends: <string_tag>};
 <new ElementRegistrationOptions> = {prototype: <Element>.prototype, extends: <string_svgtag>};
+<new ElementRegistrationOptions> = {prototype: <Element>.prototype, extends: <string_mathmltag>};
 <new ElementRegistrationOptions> = {extends: <string_tag>};
 <new ElementRegistrationOptions> = {extends: <string_svgtag>};
+<new ElementRegistrationOptions> = {extends: <string_mathmltag>};
 
 <new Int8Array> = new Int8Array(<fuzzint>);
 <new Int16Array> = new Int16Array(<fuzzint>);
@@ -2605,6 +2649,39 @@
 <new SVGElement> = document.createElementNS("http://www.w3.org/2000/svg", "meshrow");
 <new SVGSwitchElement> = document.createElementNS("http://www.w3.org/2000/svg", "switch");
 <new SVGClipPathElement> = document.createElementNS("http://www.w3.org/2000/svg", "clipPath");
+
+#MathMLElement constructors
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "annotation");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "annotation-xml");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "maction");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "math");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "merror");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "mfrac");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "mi");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "mmultiscripts");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "mn");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "mo");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "mover");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "mpadded");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "mphantom");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "mprescripts");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "mroot");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "mrow");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "ms");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "mspace");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "msqrt");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "mstyle");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "msub");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "msubsup");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "msup");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "mtable");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "mtd");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "mtext");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "mtr");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "munder");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "munderover");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "none");
+<new MathMLElement> = document.createElementNS("http://www.w3.org/1998/Math/MathML", "semantics");
 
 #events
 <new InputEvent> = document.createEvent("InputEvent");

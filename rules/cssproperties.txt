@@ -339,6 +339,7 @@
 <cssproperty_-webkit-flow-into> = flow1
 <cssproperty_-webkit-flow-into> = <tagname>
 <cssproperty_-webkit-flow-into> = <svgtagname>
+<cssproperty_-webkit-flow-into> = <mathmltagname>
 
 <cssproperty_-webkit-font-feature-settings> = 'dlig'
 <cssproperty_-webkit-font-feature-settings> = 'dlig' 0

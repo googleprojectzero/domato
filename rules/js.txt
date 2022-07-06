@@ -5831,6 +5831,226 @@ document.all[<int min=0 max=100>%document.all.length].appendChild(<Element>);
 <new CSSStyleDeclaration> = <SVGElement>.style;
 <new CSSStyleDeclaration> = <SVGElement>.style;
 
+################################################
+#MathML
+################################################
+
+!extends MathMLElement GlobalEventHandlers
+<new GlobalEventHandlers> = <MathMLElement>;
+
+!extends MathMLElement EventTarget
+#NodeList
+<new MathMLElement> = <MathMLNodeList id=1>.item(<int min=0 max=100>%<MathMLNodeList id=1>.length);
+<new long> = <MathMLNodeList>.length;
+
+#Node
+<new short> = <MathMLElement>.nodeType;
+<new DOMString> = <MathMLElement>.nodeName;
+<new DOMString> = <MathMLElement>.baseURI;
+<new boolean> = <MathMLElement>.isConnected;
+<new Document> = <MathMLElement>.ownerDocument;
+<new MathMLElement> = <MathMLElement>.parentNode;
+<new MathMLElement> = <MathMLElement>.parentElement;
+<new boolean> = <MathMLElement>.hasChildNodes();
+<new MathMLNodeList> = <MathMLElement>.childNodes;
+<new MathMLElement> = <MathMLElement>.firstChild;
+<new MathMLElement> = <MathMLElement>.lastChild;
+<new MathMLElement> = <MathMLElement>.previousSibling;
+<new MathMLElement> = <MathMLElement>.nextSibling;
+<new MathMLElement> = <MathMLElement>.getRootNode();
+<new MathMLElement> = <MathMLElement>.getRootNode(<GetRootNodeOptions>);
+<new DOMString> = <MathMLElement>.nodeValue;
+<MathMLElement>.nodeValue = <DOMString>;
+<new DOMString> = <MathMLElement>.textContent;
+<MathMLElement>.textContent = <DOMString>;
+<MathMLElement>.normalize();
+<new MathMLElement> = <MathMLElement>.cloneNode();
+<new MathMLElement> = <MathMLElement>.cloneNode(<boolean>);
+<new boolean> = <MathMLElement>.isEqualNode(<MathMLElement>);
+<new boolean> = <MathMLElement>.isSameNode(<MathMLElement>);
+<new short> = <MathMLElement>.compareDocumentPosition(<MathMLElement>);
+<new boolean> = <MathMLElement>.contains(<MathMLElement>);
+<new DOMString> = <MathMLElement>.lookupPrefix(<DOMString>);
+<new DOMString> = <MathMLElement>.lookupNamespaceURI(<DOMString>);
+<new boolean> = <MathMLElement>.isDefaultNamespace(<DOMString>);
+<new MathMLElement> = <MathMLElement id=1>.insertBefore(<MathMLElement>,<MathMLElement id=1>.childNodes[<int min=0 max=100>%<MathMLElement id=1>.childNodes.length]);
+<new MathMLElement> = <MathMLElement>.appendChild(<MathMLElement>);
+<new MathMLElement> = <MathMLElement id=1>.replaceChild(<MathMLElement>,<MathMLElement id=1>.childNodes[<int min=0 max=100>%<MathMLElement id=1>.childNodes.length]);
+<new MathMLElement> = <MathMLElement id=1>.removeChild(<MathMLElement id=1>.childNodes[<int min=0 max=100>%<MathMLElement id=1>.childNodes.length]);
+
+#ChildNode
+<MathMLElement>.before(<MathMLElement>);
+<MathMLElement>.before(<DOMString>);
+<MathMLElement>.after(<MathMLElement>);
+<MathMLElement>.after(<DOMString>);
+<MathMLElement>.replaceWith(<MathMLElement>);
+<MathMLElement>.replaceWith(<DOMString>);
+<MathMLElement>.remove();
+
+#ParentNode
+<new HTMLCollection> = <MathMLElement>.children;
+<new MathMLElement> = <MathMLElement>.firstElementChild;
+<new MathMLElement> = <MathMLElement>.lastElementChild;
+<new long> = <MathMLElement>.childElementCount;
+<MathMLElement>.prepend(<MathMLElement>);
+<MathMLElement>.prepend(<DOMString>);
+<MathMLElement>.append(<MathMLElement>);
+<MathMLElement>.append(<DOMString>);
+<new MathMLElement> = <MathMLElement>.querySelector("<selector>");
+<new MathMLNodeList> = <MathMLElement>.querySelectorAll("<selector>");
+
+#NonDocumentTypeChildNode
+<new MathMLElement> = <MathMLElement>.previousElementSibling;
+<new MathMLElement> = <MathMLElement>.nextElementSibling;
+
+#Element
+<new DOMString> = <MathMLElement>.namespaceURI;
+<new DOMString> = <MathMLElement>.prefix;
+<new DOMString> = <MathMLElement>.localName;
+<new DOMString> = <MathMLElement>.tagName;
+<new DOMString> = <MathMLElement>.id;
+<MathMLElement>.id = <DOMString>;
+<new DOMString> = <MathMLElement>.className;
+<MathMLElement>.className = <DOMString>;
+<new DOMTokenList> = <MathMLElement>.classList;
+<MathMLElement>.setPointerCapture(<fuzzint>);
+<MathMLElement>.releasePointerCapture(<fuzzint>);
+<new EventHandler> = <MathMLElement>.ongotpointercapture;
+<MathMLElement>.ongotpointercapture = <EventHandler>;
+<new EventHandler> = <MathMLElement>.onlostpointercapture;
+<MathMLElement>.onlostpointercapture = <EventHandler>;
+<new boolean> = <MathMLElement>.hasPointerCapture(<fuzzint>);
+<new boolean> = <MathMLElement>.hasAttributes();
+<new NamedNodeMap> = <MathMLElement>.attributes;
+<new DOMString> = <MathMLElement>.getAttribute(<string_attr>);
+<new DOMString> = <MathMLElement>.getAttributeNS("http://www.w3.org/2000/svg",<string_attr>);
+#<MathMLElement>.setAttribute(<DOMString>,<DOMString>);
+#<MathMLElement>.setAttributeNS(<DOMString>,<DOMString>,<DOMString>);
+<MathMLElement id=1>.removeAttribute(<MathMLElement id=1>.attributes[<int min=0 max=100>%<MathMLElement id=1>.attributes.length].name);
+<MathMLElement id=1>.removeAttributeNS("http://www.w3.org/2000/svg",<MathMLElement id=1>.attributes[<int min=0 max=100>%<MathMLElement id=1>.attributes.length].name);
+<new boolean> = <MathMLElement>.hasAttribute(<string_attr>);
+<new boolean> = <MathMLElement>.hasAttributeNS("http://www.w3.org/2000/svg",<string_attr>);
+<new Attr> = <MathMLElement>.getAttributeNode(<string_attr>);
+<new Attr> = <MathMLElement>.getAttributeNodeNS("http://www.w3.org/2000/svg",<string_attr>);
+<new Attr> = <MathMLElement>.setAttributeNode(<Attr>);
+<new Attr> = <MathMLElement>.setAttributeNodeNS(<Attr>);
+<new Attr> = <MathMLElement id=1>.removeAttributeNode(<MathMLElement id=1>.attributes[<int min=0 max=100>%<MathMLElement id=1>.attributes.length].name);
+<new MathMLElement> = <MathMLElement>.closest(<DOMString>);
+<new boolean> = <MathMLElement>.matches(<DOMString>);
+<new boolean> = <MathMLElement>.webkitMatchesSelector(<DOMString>);
+<new HTMLCollection> = <MathMLElement>.getElementsByTagName(<string_tag>);
+<new HTMLCollection> = <MathMLElement>.getElementsByTagNameNS("http://www.w3.org/2000/svg",<string_tag>);
+<new HTMLCollection> = <MathMLElement>.getElementsByClassName("<class>");
+<new MathMLElement> = <MathMLElement>.insertAdjacentElement(<string_where>,<MathMLElement>);
+<MathMLElement>.insertAdjacentText(<string_where>,<DOMString>);
+<new htmlstring> = <MathMLElement>.innerHTML;
+<MathMLElement>.innerHTML = <htmlstring>;
+<new htmlstring> = <MathMLElement>.outerHTML;
+<MathMLElement>.outerHTML = <htmlstring>;
+<MathMLElement>.insertAdjacentHTML(<string_where>,<htmlstring>);
+<new ShadowRoot> = <MathMLElement>.createShadowRoot();
+<new ShadowRoot> = <MathMLElement>.attachShadow(<ShadowRootInit>);
+<new NodeList> = <MathMLElement>.getDestinationInsertionPoints();
+<new ShadowRoot> = <MathMLElement>.shadowRoot;
+<new DOMString> = <MathMLElement>.slot;
+<MathMLElement>.slot = <DOMString>;
+<new HTMLSlotElement> = <MathMLElement>.assignedSlot;
+<MathMLElement>.requestPointerLock();
+<new ClientRectList> = <MathMLElement>.getClientRects();
+<new ClientRect> = <MathMLElement>.getBoundingClientRect();
+<MathMLElement>.scrollIntoView();
+<MathMLElement>.scrollIntoView(<boolean>);
+<MathMLElement>.scroll();
+<MathMLElement>.scroll(<ScrollToOptions>);
+<MathMLElement>.scroll(<double>,<double>);
+<MathMLElement>.scrollTo();
+<MathMLElement>.scrollTo(<ScrollToOptions>);
+<MathMLElement>.scrollTo(<double>,<double>);
+<MathMLElement>.scrollBy();
+<MathMLElement>.scrollBy(<ScrollToOptions>);
+<MathMLElement>.scrollBy(<double>,<double>);
+<new double> = <MathMLElement>.scrollTop;
+<MathMLElement>.scrollTop = <double>;
+<new double> = <MathMLElement>.scrollLeft;
+<MathMLElement>.scrollLeft = <double>;
+<new long> = <MathMLElement>.scrollWidth;
+<new long> = <MathMLElement>.scrollHeight;
+<new long> = <MathMLElement>.clientTop;
+<new long> = <MathMLElement>.clientLeft;
+<new long> = <MathMLElement>.clientWidth;
+<new long> = <MathMLElement>.clientHeight;
+<MathMLElement>.setApplyScroll(<ScrollStateCallback>,<NativeScrollBehavior>);
+<MathMLElement>.setDistributeScroll(<ScrollStateCallback>,<NativeScrollBehavior>);
+<MathMLElement>.scrollIntoViewIfNeeded();
+<MathMLElement>.scrollIntoViewIfNeeded(<boolean>);
+<new DOMString> = <MathMLElement>.computedRole;
+<new DOMString> = <MathMLElement>.computedName;
+<new EventHandler> = <MathMLElement>.onbeforecopy;
+<MathMLElement>.onbeforecopy = <EventHandler>;
+<new EventHandler> = <MathMLElement>.onbeforecut;
+<MathMLElement>.onbeforecut = <EventHandler>;
+<new EventHandler> = <MathMLElement>.onbeforepaste;
+<MathMLElement>.onbeforepaste = <EventHandler>;
+<new EventHandler> = <MathMLElement>.oncopy;
+<MathMLElement>.oncopy = <EventHandler>;
+<new EventHandler> = <MathMLElement>.oncut;
+<MathMLElement>.oncut = <EventHandler>;
+<new EventHandler> = <MathMLElement>.onpaste;
+<MathMLElement>.onpaste = <EventHandler>;
+<new EventHandler> = <MathMLElement>.onsearch;
+<MathMLElement>.onsearch = <EventHandler>;
+<new EventHandler> = <MathMLElement>.onselectstart;
+<MathMLElement>.onselectstart = <EventHandler>;
+<new EventHandler> = <MathMLElement>.onwheel;
+<MathMLElement>.onwheel = <EventHandler>;
+
+<MathMLElement>.setAttribute("display", "<mathmlattr_math_display_value>");
+<MathMLElement>.setAttribute("form", "<mathmlattr_form_value>");
+<MathMLElement>.setAttribute("fence", "<boolean>");
+<MathMLElement>.setAttribute("separator", "<boolean>");
+<MathMLElement>.setAttribute("lspace", "<mathmlattr_lengthpercentage_value>");
+<MathMLElement>.setAttribute("rspace", "<mathmlattr_lengthpercentage_value>");
+<MathMLElement>.setAttribute("stretchy", "<boolean>");
+<MathMLElement>.setAttribute("symmetric", "<boolean>");
+<MathMLElement>.setAttribute("maxsize", "<mathmlattr_lengthpercentage_value>");
+<MathMLElement>.setAttribute("minsize", "<mathmlattr_lengthpercentage_value>");
+<MathMLElement>.setAttribute("largeop", "<boolean>");
+<MathMLElement>.setAttribute("movablelimits", "<boolean>");
+<MathMLElement>.setAttribute("mfrac_linethickness", "<mathmlattr_mfrac_linethickness_value>");
+<MathMLElement>.setAttribute("width", "<mathmlattr_lengthpercentage_value>");
+<MathMLElement>.setAttribute("height", "<mathmlattr_lengthpercentage_value>");
+<MathMLElement>.setAttribute("depth", "<mathmlattr_lengthpercentage_value>");
+<MathMLElement>.setAttribute("lspace", "<mathmlattr_lengthpercentage_value>");
+<MathMLElement>.setAttribute("voffset", "<mathmlattr_lengthpercentage_value>");
+<MathMLElement>.setAttribute("accent", "<boolean>");
+<MathMLElement>.setAttribute("accentunder", "<boolean>");
+<MathMLElement>.setAttribute("columnspan", "<colspan_value>");
+<MathMLElement>.setAttribute("rowspan", "<rowspan_value>");
+<MathMLElement>.setAttribute("actiontype", "<mathmlattr_maction_actiontype_value>");
+<MathMLElement>.setAttribute("selection", "<mathmlattr_maction_selection_value>");
+<MathMLElement>.setAttribute("encoding", "<encoding_value>");
+<MathMLElement>.setAttribute("class", "<class>");
+<MathMLElement>.setAttribute("dir", "<direction_value>");
+<MathMLElement>.setAttribute("displaystyle", "<boolean>");
+<MathMLElement>.setAttribute("mathbackground", "<color>");
+<MathMLElement>.setAttribute("mathcolor", "<color>");
+<MathMLElement>.setAttribute("mathsize", "<mathmlattr_lengthpercentage_value>");
+<MathMLElement>.setAttribute("mathvariant", "<mathmlattr_mathvariant_value>");
+<MathMLElement>.setAttribute("nonce", "<nonce_value>");
+<MathMLElement>.setAttribute("scriptlevel", "<mathmlattr_scriptlevel_value>");
+<MathMLElement>.setAttribute("style", "<style_value>");
+<MathMLElement>.setAttribute("tabindex", "<tabindex_value>");
+
+<new CSSStyleDeclaration> = <MathMLElement>.style;
+<new CSSStyleDeclaration> = <MathMLElement>.style;
+<new CSSStyleDeclaration> = <MathMLElement>.style;
+<new CSSStyleDeclaration> = <MathMLElement>.style;
+<new CSSStyleDeclaration> = <MathMLElement>.style;
+<new CSSStyleDeclaration> = <MathMLElement>.style;
+<new CSSStyleDeclaration> = <MathMLElement>.style;
+<new CSSStyleDeclaration> = <MathMLElement>.style;
+<new CSSStyleDeclaration> = <MathMLElement>.style;
+
 freememory();
 freememory();
 freememory();

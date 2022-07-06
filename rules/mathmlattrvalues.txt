@@ -1,0 +1,60 @@
+#   Copyright 2022 Igalia S.L. All Rights Reserved.
+#   Licensed under the Apache License, Version 2.0 (the "License");
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
+
+# https://w3c.github.io/mathml-core/#dfn-length-percentage
+<mathmlattr_lengthpercentage_value p=.9> = <fuzzint>px
+<mathmlattr_lengthpercentage_value p=.1> = <percentage>%
+
+# https://w3c.github.io/mathml-core/#the-top-level-math-element
+<mathmlattr_math_display_value> = inline
+<mathmlattr_math_display_value> = block
+
+# https://w3c.github.io/mathml-core/#dfn-mathvariant
+<mathmlattr_mathvariant_value> = normal
+<mathmlattr_mathvariant_value> = bold
+<mathmlattr_mathvariant_value> = italic
+<mathmlattr_mathvariant_value> = bold-italic
+<mathmlattr_mathvariant_value> = double-struck
+<mathmlattr_mathvariant_value> = bold-fraktur
+<mathmlattr_mathvariant_value> = script
+<mathmlattr_mathvariant_value> = bold-script
+<mathmlattr_mathvariant_value> = fraktur
+<mathmlattr_mathvariant_value> = sans-serif
+<mathmlattr_mathvariant_value> = bold-sans-serif
+<mathmlattr_mathvariant_value> = sans-serif-italic
+<mathmlattr_mathvariant_value> = sans-serif-bold-italic
+<mathmlattr_mathvariant_value> = monospace
+<mathmlattr_mathvariant_value> = initial
+<mathmlattr_mathvariant_value> = tailed
+<mathmlattr_mathvariant_value> = looped
+<mathmlattr_mathvariant_value> = stretched
+
+# https://w3c.github.io/mathml-core/#dfn-scriptlevel
+<mathmlattr_scriptlevel_value> = <fuzzint>
+
+# https://w3c.github.io/mathml-core/#dfn-form
+<mathmlattr_form_value> = infix
+<mathmlattr_form_value> = prefix
+<mathmlattr_form_value> = postfix
+
+# https://w3c.github.io/mathml-core/#fractions-mfrac
+# An interesting value for linethickness is 0px.
+<mathmlattr_mfrac_linethickness_value> = <mathmlattr_lengthpercentage_value>
+<mathmlattr_mfrac_linethickness_value> = 0px
+
+# https://www.w3.org/TR/MathML3/chapter3.html#presm.maction
+<mathmlattr_maction_actiontype_value> = toggle
+<mathmlattr_maction_actiontype_value> = statusline
+<mathmlattr_maction_actiontype_value> = tooltip
+<mathmlattr_maction_actiontype_value> = input
+<mathmlattr_maction_selection_value> = <fuzzint>

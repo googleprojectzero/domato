@@ -44,6 +44,7 @@
 
 <elementid> = htmlvar0000<int min=1 max=9>
 <svgelementid> = svgvar0000<int min=1 max=9>
+<mathmlelementid> = mathmlvar0000<int min=1 max=9>
 <class> = class<int min=0 max=9>
 
 <color> = red
@@ -278,6 +279,38 @@
 <svgtagname> = use
 <svgtagname> = view
 <svgtagname> = vkern
+
+<mathmltagname> = annotation
+<mathmltagname> = annotation-xml
+<mathmltagname> = maction
+<mathmltagname> = math
+<mathmltagname> = merror
+<mathmltagname> = mfrac
+<mathmltagname> = mi
+<mathmltagname> = mmultiscripts
+<mathmltagname> = mn
+<mathmltagname> = mo
+<mathmltagname> = mover
+<mathmltagname> = mpadded
+<mathmltagname> = mphantom
+<mathmltagname> = mprescripts
+<mathmltagname> = mroot
+<mathmltagname> = mrow
+<mathmltagname> = ms
+<mathmltagname> = mspace
+<mathmltagname> = msqrt
+<mathmltagname> = mstyle
+<mathmltagname> = msub
+<mathmltagname> = msubsup
+<mathmltagname> = msup
+<mathmltagname> = mtable
+<mathmltagname> = mtd
+<mathmltagname> = mtext
+<mathmltagname> = mtr
+<mathmltagname> = munder
+<mathmltagname> = munderover
+<mathmltagname> = none
+<mathmltagname> = semantics
 
 <imgsrc> = x
 <imgsrc> = data:image/gif;base64,R0lGODlhIAAgAPIBAGbMzP///wAAADOZZpn/zAAAAAAAAAAAACH5BAAAAAAALAAAAAAgACAAAAOLGLrc/k7ISau9S5DNu/8fICgaYJ5oqqbDGJRrLAMtScw468J5Xr+3nm8XFM5+PGMMWYwxcMyZ40iULQaDhSzqDGBNisGyuhUDrmNb72pWcaXhtpsM/27pVi8UX96rcQpDf3V+QD12d4NKK2+Lc4qOKI2RJ5OUNHyXSDRYnZ6foKAuLxelphMQqaoPCQA7
