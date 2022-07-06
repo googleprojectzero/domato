@@ -12,29 +12,33 @@
 #   limitations under the License.
 
 # https://w3c.github.io/mathml-core/#the-top-level-math-element
-<mathmlelement_math> = <lt>math <mathmlattrs_math><gt><newline><mathmlchildren><lt>/math<gt>
+<mathmlelement_math> = <lt>math <mathmlattrs_math><gt><newline><mathmlelement_math_children><lt>/math<gt>
 <mathmlattrs_math> = <mathmlattrs_global> <mathmlattr_math_display>
 <mathmlattr_math_display> = display="<mathmlattr_math_display_value>"
 
+<mathmlelement_math_children p=0.75> = <mathmlelement_recursive><mathmlelement_recursive><mathmlelement_recursive><mathmlelement_recursive>
+<mathmlelement_math_children> = <mathmlchildren>
+
 # A valid MathML child for most MathML elements.
-<mathmlelement nonrecursive=true p=0.5> = <mathmlelement_token>
-<mathmlelement> = <mathmlelement_group>
-<mathmlelement> = <mathmlelement_mfrac>
-<mathmlelement> = <mathmlelement_mmultiscripts>
-<mathmlelement> = <mathmlelement_mover>
-<mathmlelement> = <mathmlelement_mpadded>
-<mathmlelement> = <mathmlelement_mroot>
-<mathmlelement> = <mathmlelement_msqrt>
-<mathmlelement> = <mathmlelement_msub>
-<mathmlelement> = <mathmlelement_msubsup>
-<mathmlelement> = <mathmlelement_msup>
-<mathmlelement> = <mathmlelement_mtable>
-<mathmlelement> = <mathmlelement_munder>
-<mathmlelement> = <mathmlelement_munderover>
-<mathmlelement> = <mathmlelement_semantics>
+<mathmlelement nonrecursive=true p=0.85> = <mathmlelement_token>
+<mathmlelement> = <mathmlelement_recursive>
+<mathmlelement_recursive> = <mathmlelement_group>
+<mathmlelement_recursive> = <mathmlelement_mfrac>
+<mathmlelement_recursive> = <mathmlelement_mmultiscripts>
+<mathmlelement_recursive> = <mathmlelement_mover>
+<mathmlelement_recursive> = <mathmlelement_mpadded>
+<mathmlelement_recursive> = <mathmlelement_mroot>
+<mathmlelement_recursive> = <mathmlelement_msqrt>
+<mathmlelement_recursive> = <mathmlelement_msub>
+<mathmlelement_recursive> = <mathmlelement_msubsup>
+<mathmlelement_recursive> = <mathmlelement_msup>
+<mathmlelement_recursive> = <mathmlelement_mtable>
+<mathmlelement_recursive> = <mathmlelement_munder>
+<mathmlelement_recursive> = <mathmlelement_munderover>
+<mathmlelement_recursive> = <mathmlelement_semantics>
 
 # A valid list of MathML children for most MathML elements.
-<mathmlchildren nonrecursive=true p=0.5> = <mathmlelement_token>
+<mathmlchildren nonrecursive=true p=0.25> = <mathmlelement_token>
 <mathmlchildren> = <mathmlchildren><mathmlelement>
 
 # https://w3c.github.io/mathml-core/#token-elements
