@@ -1,0 +1,251 @@
+#   Copyright 2017 Google Inc. All Rights Reserved.
+#   Licensed under the Apache License, Version 2.0 (the "License");
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
+
+<mathattr_id_value> = <fuzzint>
+<mathattr_class_value> = <class>
+
+
+<mathattr_style_value> = <import from=cssgrammar symbol=declaration5>
+<mathattr_href_value> = x
+<mathattr_mathbackground_value> = <color>
+<mathattr_mathcolor_value> = <color>
+<mathattr_selection_value> = <fuzzint>
+<mathattr_dir_value> = ltr
+<mathattr_dir_value> = rtl
+<mathattr_actiontype_value> = toggle
+<mathattr_actiontype_value> = statusline
+<mathattr_actiontype_value> = tooltip
+<mathattr_actiontype_value> = input
+<mathattr_display_value> = none
+<mathattr_display_value> = block
+<mathattr_display_value> = inline
+<mathattr_display_value> = inherit
+
+<mathattr_overflow_value> = linebreak
+<mathattr_overflow_value> = scroll
+<mathattr_overflow_value> = elide
+<mathattr_overflow_value> = truncate
+<mathattr_overflow_value> = scale
+
+<mathattr_decimalpoint_value> = x
+<mathattr_displaystyle_value> =  true
+<mathattr_displaystyle_value> =  false
+<mathattr_infixlinebreakstyle_value> = before
+<mathattr_infixlinebreakstyle_value> = after
+<mathattr_infixlinebreakstyle_value> = duplicate
+<mathattr_scriptlevel_value> = <fuzzint>
+<mathattr_scriptlevel_value> = <float>
+<mathattr_scriptlevel_value> = 15
+<mathattr_scriptlevel_value> = +15
+<mathattr_scriptlevel_value> = -5
+<mathattr_scriptlevel_value> = -1
+<mathattr_scriptminsize_value> = <fuzzint>
+<mathattr_scriptminsize_value> = <float>
+<mathattr_scriptminsize_value> = <percentage>%
+<mathattr_scriptsizemultiplier_value> = <fuzzint>
+<mathattr_scriptsizemultiplier_value> = <float>
+<mathattr_scriptsizemultiplier_value> = <percentage>%
+<mathattr_notation_value> = longdiv
+<mathattr_notation_value> = actuarial
+<mathattr_notation_value> = radical
+<mathattr_notation_value> = box
+<mathattr_notation_value> = roundedbox
+<mathattr_notation_value> = circle
+<mathattr_notation_value> = left
+<mathattr_notation_value> = right
+<mathattr_notation_value> = top
+<mathattr_notation_value> = bottom
+<mathattr_notation_value> = updiagonalstrike
+<mathattr_notation_value> = downdiagonalstrike
+<mathattr_notation_value> = verticalstrike
+<mathattr_notation_value> = horizontalstrike
+<mathattr_notation_value> = madruwb
+<mathattr_notation_value> = updiagonalnarrow
+<mathattr_notation_value> = phasorangle
+
+<mathattr_close_value> = >
+<mathattr_close_value> = )
+<mathattr_close_value> = ]
+<mathattr_close_value> = }
+<mathattr_open_value> = <
+<mathattr_open_value> = (
+<mathattr_open_value> = [
+<mathattr_open_value> = {
+<mathattr_separators_value> = ,
+<mathattr_separators_value> = .
+<mathattr_separators_value> = ;
+<mathattr_separators_value> = ;;,
+<mathattr_separators_value> = :
+<mathattr_separators_value> = ||||,
+
+
+<mathattr_bevelled_value> = true
+<mathattr_bevelled_value> = false
+
+<mathattr_denomalign_value> = left
+<mathattr_denomalign_value> = right
+<mathattr_denomalign_value> = center
+
+
+<mathattr_linethickness_value> = <fuzzint>
+<mathattr_linethickness_value> = <float>
+<mathattr_linethickness_value> = thin
+<mathattr_linethickness_value> = medium
+<mathattr_linethickness_value> = thick
+<mathattr_numalign_value> = left
+<mathattr_numalign_value> = right
+<mathattr_numalign_value> = center
+<mathattr_src_value> = http://localhost/image.png
+<mathattr_valign_value> = middle
+<mathattr_valign_value> = bottom
+<mathattr_valign_value> = baseline
+<mathattr_width_value> = <fuzzint>
+<mathattr_width_value> = <float>
+<mathattr_width_value> = <fuzzint>%
+<mathattr_width_value> = <fuzzint>px
+<mathattr_width_value> = inherit
+<mathattr_mathsize_value> = <fuzzint>
+<mathattr_mathsize_value> = <float>
+<mathattr_mathsize_value> = <fuzzint>%
+<mathattr_mathsize_value> = <fuzzint>px
+<mathattr_mathsize_value> = small
+<mathattr_mathsize_value> = normal
+<mathattr_mathsize_value> = big
+<mathattr_mathvariant_value> = normal
+<mathattr_mathvariant_value> = bold
+<mathattr_mathvariant_value> = italic
+<mathattr_mathvariant_value> = bold-italic
+<mathattr_mathvariant_value> = double-struck
+<mathattr_mathvariant_value> = bold-fraktur
+<mathattr_mathvariant_value> = sans-serif
+<mathattr_rowalign_value> = axis
+<mathattr_rowalign_value> = baseline
+<mathattr_rowalign_value> = bottom
+<mathattr_rowalign_value> = center
+<mathattr_rowalign_value> = top
+<mathattr_subscriptshift_value> = <fuzzint>
+<mathattr_subscriptshift_value> = <float>
+<mathattr_subscriptshift_value> = <fuzzint>%
+<mathattr_subscriptshift_value> = <fuzzint>px
+<mathattr_maxsize_value> = infinity
+<mathattr_maxsize_value> = <fuzzint>
+<mathattr_maxsize_value> = <float>
+<mathattr_movablelimits_value> = true
+<mathattr_movablelimits_value> = false
+<mathattr_rspace_value> = <fuzzint>
+<mathattr_rspace_value> = <float>
+<mathattr_rspace_value> = <fuzzint>%
+<mathattr_rspace_value> = <fuzzint>px
+<mathattr_stretchy_value> = true
+<mathattr_stretchy_value> = false
+<mathattr_symmetric_value> = true
+<mathattr_symmetric_value> = false
+<mathattr_accent_value> = true
+<mathattr_accent_value> = false
+<mathattr_align_value> = left
+<mathattr_align_value> = center
+<mathattr_align_value> = right
+<mathattr_depth_value> = <fuzzint>
+<mathattr_depth_value> = <float>
+<mathattr_depth_value> = <fuzzint>%
+<mathattr_depth_value> = <fuzzint>px
+<mathattr_height_value> = <fuzzint>
+<mathattr_height_value> = <float>
+<mathattr_height_value> = <fuzzint>px
+<mathattr_height_value> = <fuzzint>%
+<mathattr_lspace_value> = <fuzzint>
+<mathattr_lspace_value> = <fuzzint>%
+<mathattr_lspace_value> = <fuzzint>px
+<mathattr_lspace_value> = <float>
+<mathattr_voffset_value> = <fuzzint>
+<mathattr_lspace_value> = <fuzzint>px
+<mathattr_lspace_value> = <fuzzint>%
+<mathattr_lspace_value> = <float>
+<mathattr_lquote_value> = &quot;
+<mathattr_lquote_value> = "
+<mathattr_lquote_value> = '
+<mathattr_rquote_value> = &quot;
+<mathattr_rquote_value> = "
+<mathattr_rquote_value> = '
+<mathattr_linebreak_value> = auto
+<mathattr_linebreak_value> = newline
+<mathattr_linebreak_value> = nobreak
+<mathattr_linebreak_value> = goodbreak
+<mathattr_linebreak_value> = badbreak
+<mathattr_alignmentscope_value> = <fuzzint>
+<mathattr_alignmentscope_value> = <fuzzint>px
+<mathattr_alignmentscope_value> = <fuzzint>%
+<mathattr_alignmentscope_value> = <float>
+<mathattr_columnlines_value> = <fuzzint>
+<mathattr_columnspacing_value> = <fuzzint>
+<mathattr_columnspan_value> = <fuzzint>
+<mathattr_columnspacing_value> = <fuzzint>%
+<mathattr_columnspacing_value> = <fuzzint>px
+<mathattr_columnspacing_value> = <float>
+<mathattr_columnwidth_value> = <fuzzint>
+<mathattr_columnwidth_value> = <fuzzint>px
+<mathattr_columnwidth_value> = <fuzzint>%
+<mathattr_columnwidth_value> = <float>
+<mathattr_equalrows_value> = true
+<mathattr_equalrows_value> = false
+<mathattr_qeualcolumns_value> = true
+<mathattr_qeualcolumns_value> = false
+<mathattr_frame_value> = none
+<mathattr_frame_value> = solid
+<mathattr_frame_value> = dashed
+<mathattr_framespacing_value> = <fuzzint>
+<mathattr_framespacing_value> = <fuzzint>%
+<mathattr_framespacing_value> = <fuzzint>px
+<mathattr_framespacing_value> = <float>
+<mathattr_minlabelspacing_value> = <fuzzint>
+<mathattr_minlabelspacing_value> = <fuzzint>px
+<mathattr_minlabelspacing_value> = <fuzzint>%
+<mathattr_minlabelspacing_value> = <float>
+<mathattr_rowlines_value> = none
+<mathattr_rowlines_value> = solid
+<mathattr_rowlines_value> = dashed
+<mathattr_rowspacing_value> = <fuzzint>
+<mathattr_rowspacing_value> = <fuzzint>%
+<mathattr_rowspacing_value> = <fuzzint>px
+<mathattr_rowspacing_value> = <float>
+<mathattr_side_value> = left
+<mathattr_side_value> = leftoverlap
+<mathattr_side_value> = right
+<mathattr_side_value> = rightoverlap
+<mathattr_rowspan_value> = <fuzzint>
+<mathattr_rowspan_value> = <fuzzint>px
+<mathattr_rowspan_value> = <fuzzint>%
+<mathattr_rowspan_value> = <float>
+<mathattr_columnalign_value> = left
+<mathattr_columnalign_value> = center
+<mathattr_columnalign_value> = right
+<mathattr_groupalign_value> = left
+<mathattr_groupalign_value> = center
+<mathattr_groupalign_value> = right
+<mathattr_accentunder_value> = true
+<mathattr_accentunder_value> = false
+<mathattr_definitionURL_value> = none
+<mathattr_encoding_value> = MathML-Presentation
+<mathattr_encoding_value> = Mathematica
+<mathattr_encoding_value> = Maple
+<mathattr_encoding_value> = TeX
+<mathattr_encoding_value> = ASCII
+<mathattr_encoding_value> = MathMLType
+<mathattr_encoding_value> = OpenMath
+<mathattr_encoding_value> = content-MathML
+<mathattr_name_value> = x
+<mathattr_minsize_value> = <fuzzint>
+<mathattr_minsize_value> = <fuzzint>%
+<mathattr_minsize_value> = <fuzzint>px
+<mathattr_minsize_value> = infinity
+<mathattr_alt_value> = altvalue

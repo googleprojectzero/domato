@@ -1,0 +1,713 @@
+#   Copyright 2017 Google Inc. All Rights Reserved.
+#   Licensed under the Apache License, Version 2.0 (the "License");
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
+
+!include ../rules/common.txt
+!include mathattrvalues.txt
+
+!max_recursion 50
+<mathelement_math> = <lt>math <mathattrs_math><gt><newline><mathchildren_math><lt>/math<gt>
+
+# <mathchildren_math> = <mathchild_math><mathchild_math><mathchild_math><mathchild_math><mathchild_math><mathchild_math><mathchild_math><mathchild_math><mathchild_math><mathchild_math><mathchild_math><mathchild_math><mathchild_math><mathchild_math><mathchild_math><mathchild_math><mathchild_math><mathchild_math><mathchild_math><mathchild_math>
+<mathchildren_math> = <mathchild_math><mathchild_math>
+
+# testing
+# <mathelement_math> = <lt>math <mathattrs_math><gt><newline><mathelement_semantics><lt>/math<gt>
+
+
+<mathchild_math> = <mathelement_maction>
+#<mathchild_math> = <mathelement_math>
+<mathchild_math> = <mathelement_menclose>
+<mathchild_math> = <mathelement_merror>
+<mathchild_math> = <mathelement_mfenced>
+<mathchild_math> = <mathelement_mfrac>
+<mathchild_math> = <mathelement_mglyph>
+<mathchild_math> = <mathelement_mi>
+<mathchild_math> = <mathelement_mlabeledtr>
+<mathchild_math> = <mathelement_mmultiscripts>
+<mathchild_math> = <mathelement_mn>
+<mathchild_math> = <mathelement_mo>
+<mathchild_math> = <mathelement_mover>
+<mathchild_math> = <mathelement_mpadded>
+<mathchild_math> = <mathelement_mphantom>
+<mathchild_math> = <mathelement_mroot>
+<mathchild_math> = <mathelement_mrow>
+<mathchild_math> = <mathelement_ms>
+<mathchild_math> = <mathelement_mspace>
+<mathchild_math> = <mathelement_msqrt>
+<mathchild_math> = <mathelement_mstyle>
+<mathchild_math> = <mathelement_msub>
+<mathchild_math> = <mathelement_msubsup>
+<mathchild_math> = <mathelement_msup>
+<mathchild_math> = <mathelement_mtable>
+<mathchild_math> = <mathelement_mtd>
+<mathchild_math> = <mathelement_mtext>
+<mathchild_math> = <mathelement_mtr>
+<mathchild_math> = <mathelement_munder>
+<mathchild_math> = <mathelement_munderover>
+<mathchild_math> = <mathelement_semantics>
+<mathchild_math> = <mathelement>
+
+
+<mathattrs_math> = <mathattrx_math> <mathattrx_math> <mathattrx_math>
+<mathattrx_math> = <mathattr_class>
+<mathattrx_math> = <mathattr_id>
+<mathattrx_math> = <mathattr_style>
+<mathattrx_math> = <mathattr_dir>
+<mathattrx_math> = <mathattr_href>
+<mathattrx_math> = <mathattr_mathbackground>
+<mathattrx_math> = <mathattr_mathcolor>
+<mathattrx_math> = <mathattr_display>
+<mathattrx_math> = <mathattr_overflow>
+#<mathattrx_math> = <mathattr_decimalpoint>
+#<mathattrx_math> = <mathattr_displaystyle>
+#<mathattrx_math> = <mathattr_infixlinebreakstyle>
+#<mathattrx_math> = <mathattr_scriptlevel>
+#<mathattrx_math> = <mathattr_scriptminsize>
+#<mathattrx_math> = <mathattr_scriptsizemultiplier>
+
+
+
+<mathelement> = <mathelement_maction>
+<mathelement> = <mathelement_math>
+<mathelement> = <mathelement_menclose>
+<mathelement> = <mathelement_merror>
+<mathelement> = <mathelement_mfenced>
+<mathelement> = <mathelement_mfrac>
+<mathelement> = <mathelement_mglyph>
+<mathelement> = <mathelement_mi>
+<mathelement> = <mathelement_mlabeledtr>
+<mathelement> = <mathelement_mmultiscripts>
+<mathelement> = <mathelement_mn>
+<mathelement> = <mathelement_mo>
+<mathelement> = <mathelement_mover>
+<mathelement> = <mathelement_mpadded>
+<mathelement> = <mathelement_mphantom>
+<mathelement> = <mathelement_mroot>
+<mathelement> = <mathelement_mrow>
+<mathelement> = <mathelement_ms>
+<mathelement> = <mathelement_mspace>
+<mathelement> = <mathelement_msqrt>
+<mathelement> = <mathelement_mstyle>
+<mathelement> = <mathelement_msub>
+<mathelement> = <mathelement_msubsup>
+<mathelement> = <mathelement_msup>
+<mathelement> = <mathelement_mtable>
+<mathelement> = <mathelement_mtd>
+<mathelement> = <mathelement_mtext>
+<mathelement> = <mathelement_mtr>
+<mathelement> = <mathelement_munder>
+<mathelement> = <mathelement_munderover>
+<mathelement> = <mathelement_semantics>
+
+
+# maction
+<mathelement_maction> = <lt>maction <mathattrs_maction><gt><newline><mathchildren_maction><lt>/maction<gt><newline>
+<mathelement_maction> = <lt>maction <mathattrs_maction><gt><newline><mathelement_mfrac><mathelement_mfrac><mathelement_mfrac><lt>/maction<gt><newline>
+<mathchildren_maction nonrecursive=true p=0.5> = <mathchild_maction>
+<mathchildren_maction> = <mathchild_maction><mathchild_maction>
+<mathchild_maction> = <mathelement> <mathelement> <mathelement>
+<mathattrs_maction> = <mathattrx_maction> <mathattrx_maction> <mathattrx_maction>
+<mathattrx_maction> = <mathattr_actiontype>
+<mathattrx_maction> = <mathattr_class>
+<mathattrx_maction> = <mathattr_id>
+<mathattrx_maction> = <mathattr_style>
+<mathattrx_maction> = <mathattr_href>
+<mathattrx_maction> = <mathattr_mathbackground>
+<mathattrx_maction> = <mathattr_mathcolor>
+<mathattrx_maction> = <mathattr_selection>
+
+
+# menclose
+<mathelement_menclose> = <lt>menclose <mathattrs_maction><gt><newline><mathchildren_menclose><lt>/menclose<gt><newline>
+<mathelement_menclose> = <lt>menclose <mathattrs_menclose><gt><mathelement_mi><mathelement_mo><mathelement_mi><lt>/menclose<gt><newline>
+<mathchildren_menclose nonrecursive=true p=0.5> = <mathchild_menclose>
+<mathchild_menclose> = <mathelement> <mathelement> <mathelement>
+<mathattrs_menclose> = <mathattrx_menclose> <mathattrx_menclose> <mathattrx_menclose>
+<mathattrx_menclose> = <mathattr_class>
+<mathattrx_menclose> = <mathattr_id>
+<mathattrx_menclose> = <mathattr_style>
+<mathattrx_menclose> = <mathattr_href>
+<mathattrx_menclose> = <mathattr_mathbackground>
+<mathattrx_menclose> = <mathattr_mathcolor>
+<mathattrx_menclose> = <mathattr_notation>
+
+
+
+# merror
+<mathelement_merror> = <lt>merror <mathattrs_merror><gt><newline><mathchildren_merror><lt>/merror<gt><newline>
+<mathelement_merror> = <lt>merror <mathattrs_merror><gt><mathelement_mtext><newline><lt>/merror<gt><newline>
+<mathchildren_merror nonrecursive=true p=0.5> = <mathchild_merror>
+<mathchild_merror> = <mathelement> <mathelement> <mathelement>
+<mathattrs_merror> = <mathattrx_merror> <mathattrx_merror> <mathattrx_merror>
+<mathattrx_merror> = <mathattr_class>
+<mathattrx_merror> = <mathattr_id>
+<mathattrx_merror> = <mathattr_style>
+<mathattrx_merror> = <mathattr_href>
+<mathattrx_merror> = <mathattr_mathbackground>
+<mathattrx_merror> = <mathattr_mathcolor>
+
+
+# mfenced
+<mathelement_mfenced> = <lt>mfenced <mathattrs_mfenced><gt><newline><mathchildren_mfenced><lt>/mfenced<gt><newline>
+<mathelement_mfenced> = <lt>mfenced <mathattrs_mfenced><gt><mathelement_mi><mathelement_mi><mathelement_mi><lt>/mfenced<gt><newline>
+<mathchildren_mfenced nonrecursive=true p=0.5> = <mathchild_mfenced>
+<mathchild_mfenced> = <mathelement> <mathelement> <mathelement>
+<mathattrs_mfenced> = <mathattrx_mfenced> <mathattrx_mfenced> <mathattrx_mfenced>
+<mathattrx_mfenced> = <mathattr_class>
+<mathattrx_mfenced> = <mathattr_id>
+<mathattrx_mfenced> = <mathattr_style>
+<mathattrx_mfenced> = <mathattr_href>
+<mathattrx_mfenced> = <mathattr_mathbackground>
+<mathattrx_mfenced> = <mathattr_mathcolor>
+<mathattrx_mfenced> = <mathattr_close>
+<mathattrx_mfenced> = <mathattr_open>
+<mathattrx_mfenced> = <mathattr_separators>
+
+
+# mfrac
+<mathelement_mfrac> = <lt>mfrac <mathattrs_mfrac><gt><lt>mfrac <mathattrs_mfrac><gt><mathelement_mi><mathelement_mi><newline><lt>/mfrac<gt><newline><mathelement_mi><lt>/mfrac<gt><newline><lt>/mfrac<gt><newline>
+<mathelement_mfrac> = <lt>mfrac <mathattrs_mfrac><gt><newline> <lt>mfrac <mathattrs_mfrac><gt><newline> <mathchildren_mfrac>  <lt>/mfrac<gt><newline>  <newline> <lt>mfrac <mathattrs_mfrac><gt><newline> <mathchildren_mfrac>  <lt>/mfrac<gt><newline> <lt>/mfrac<gt><newline>
+<mathchildren_mfrac nonrecursive=true p=0.5> = <mathchild_mfrac>
+<mathchild_mfrac> = <mathelement> <mathelement> <mathelement>
+<mathattrs_mfrac> = <mathattrx_mfrac> <mathattrx_mfrac> <mathattrx_mfrac>
+<mathattrx_mfrac> = <mathattr_class>
+<mathattrx_mfrac> = <mathattr_id>
+<mathattrx_mfrac> = <mathattr_style>
+<mathattrx_mfrac> = <mathattr_href>
+<mathattrx_mfrac> = <mathattr_mathbackground>
+<mathattrx_mfrac> = <mathattr_mathcolor>
+<mathattrx_mfrac> = <mathattr_bevelled>
+<mathattrx_mfrac> = <mathattr_linethickness>
+<mathattrx_mfrac> = <mathattr_numalign>
+
+
+
+# mglyph
+#<mathelement_mglyph> = <lt>mglyph <mathattrs_mglyph><gt><newline><lt>/mglyph<gt><newline>
+<mathelement_mglyph> = <lt>mi<gt><lt>mglyph <mathattrs_mglyph>/<gt><lt>/mi<gt><newline>
+<mathelement_mglyph> = <lt>mglyph <mathattrs_mglyph>/<gt><newline>
+<mathattrs_mglyph> = <mathattrx_mglyph> <mathattrx_mglyph> <mathattrx_mglyph>
+<mathattrx_mglyph> = <mathattr_class>
+<mathattrx_mglyph> = <mathattr_id>
+<mathattrx_mglyph> = <mathattr_style>
+<mathattrx_mglyph> = <mathattr_href>
+<mathattrx_mglyph> = <mathattr_mathbackground>
+<mathattrx_mglyph> = <mathattr_alt>
+<mathattrx_mglyph> = <mathattr_height>
+<mathattrx_mglyph> = <mathattr_src>
+<mathattrx_mglyph> = <mathattr_valign>
+<mathattrx_mglyph> = <mathattr_width>
+
+
+
+# mi
+<mathelement_mi> = <lt>mi <mathattrs_mi><gt><newline>&pi;<lt>/mi<gt><newline>
+<mathelement_mi> = <lt>mi <mathattrs_mi><gt><newline><float><lt>/mi<gt><newline>
+<mathelement_mi> = <lt>mi <mathattrs_mi><gt><newline><fuzzint><lt>/mi<gt><newline>
+<mathattrs_mi> = <mathattrx_mi> <mathattrx_mi> <mathattrx_mi> <mathattrx_mi>
+<mathattrx_mi> = <mathattr_class>
+<mathattrx_mi> = <mathattr_id>
+<mathattrx_mi> = <mathattr_style>
+<mathattrx_mi> = <mathattr_href>
+<mathattrx_mi> = <mathattr_dir>
+<mathattrx_mi> = <mathattr_mathbackground>
+<mathattrx_mi> = <mathattr_mathcolor>
+<mathattrx_mi> = <mathattr_mathsize>
+<mathattrx_mi> = <mathattr_mathvariant>
+
+
+
+# mlabeledtr
+<mathelement_mlabeledtr> = <lt>mlabeledtr <mathattrs_mlabeledtr><gt><newline><mathchildren_mlabeledtr><lt>/mlabeledtr<gt><newline>
+<mathchildren_mlabeledtr nonrecursive=true p=0.5> = <mathchild_mlabeledtr>
+<mathchildren_mlabeledtr> = <mathchild_mlabeledtr><mathchild_mlabeledtr>
+<mathchild_mlabeledtr> = <mathelement_mtd> <mathelement_mtd> <mathelement_mtd>
+<mathattrs_mlabeledtr> = <mathattrx_mlabeledtr> <mathattrx_mlabeledtr> <mathattrx_mlabeledtr>
+<mathattrx_mlabeledtr> = <mathattr_class>
+<mathattrx_mlabeledtr> = <mathattr_id>
+<mathattrx_mlabeledtr> = <mathattr_style>
+<mathattrx_mlabeledtr> = <mathattr_href>
+<mathattrx_mlabeledtr> = <mathattr_mathbackground>
+<mathattrx_mlabeledtr> = <mathattr_mathcolor>
+<mathattrx_mlabeledtr> = <mathattr_columnalign>
+<mathattrx_mlabeledtr> = <mathattr_groupalign>
+<mathattrx_mlabeledtr> = <mathattr_rowalign>
+
+
+
+# multiscripts
+<mathelement_mmultiscripts> = <lt>mmultiscripts <mathattrs_mmultiscripts><gt><newline><mathchildren_mmultiscripts><lt>/mmultiscripts<gt><newline>
+<mathchildren_mmultiscripts nonrecursive=true p=0.5> = <mathchild_mmultiscripts>
+<mathchildren_mmultiscripts> = <mathchild_mmultiscripts><mathchild_mmultiscripts>
+<mathchild_mmultiscripts> = <mathelement> <lt>mprescripts /<gt><newline> <mathelement><newline>
+<mathchild_mmultiscripts> = <mathelement> <lt>none /<gt><newline> <mathelement> <lt>mprescripts /<gt><newline> <mathelement><lt>none /<gt><newline>
+<mathattrs_mmultiscripts> = <mathattrx_mmultiscripts> <mathattrx_mmultiscripts>
+<mathattrx_mmultiscripts> = <mathattr_class>
+<mathattrx_mmultiscripts> = <mathattr_id>
+<mathattrx_mmultiscripts> = <mathattr_style>
+<mathattrx_mmultiscripts> = <mathattr_href>
+<mathattrx_mmultiscripts> = <mathattr_mathbackground>
+<mathattrx_mmultiscripts> = <mathattr_mathcolor>
+<mathattrx_mmultiscripts> = <mathattr_subscriptshift>
+<mathattrx_mmultiscripts> = <mathattr_superscriptshift>
+
+
+
+# mn
+<mathelement_mn> = <lt>mn <mathattrs_mn><gt><newline><char><lt>/mn<gt><newline>
+<mathelement_mn> = <lt>mn <mathattrs_mn><gt><newline><htmlsafestring><lt>/mn<gt><newline>
+<mathelement_mn> = <lt>mn <mathattrs_mn><gt><newline><float><lt>/mn<gt><newline>
+<mathelement_mn> = <lt>mn <mathattrs_mn><gt><newline><fuzzint><lt>/mn<gt><newline>
+<mathattrs_mn> = <mathattrx_mn> <mathattrx_mn> <mathattrx_mn>
+<mathattrs_mn> = <mathattrx_mn>
+<mathattrx_mn> = <mathattr_class>
+<mathattrx_mn> = <mathattr_id>
+<mathattrx_mn> = <mathattr_style>
+<mathattrx_mn> = <mathattr_href>
+<mathattrx_mn> = <mathattr_dir>
+<mathattrx_mn> = <mathattr_mathbackground>
+<mathattrx_mn> = <mathattr_mathcolor>
+<mathattrx_mn> = <mathattr_mathsize>
+<mathattrx_mn> = <mathattr_mathvariant>
+
+
+# mo
+<mathelement_mo> = <lt>mo <mathattrs_mo><gt><newline><htmlsafestring><lt>/mo<gt><newline>
+<mathelement_mo> = <lt>mo <mathattrs_mo><gt><newline>+<lt>/mo<gt><newline>
+<mathelement_mo> = <lt>mo <mathattrs_mo><gt><newline>(<lt>/mo<gt><newline>
+<mathelement_mo> = <lt>mo <mathattrs_mo><gt><newline>[<lt>/mo<gt><newline>
+<mathelement_mo> = <lt>mo <mathattrs_mo><gt><newline>)<lt>/mo<gt><newline>
+<mathelement_mo> = <lt>mo <mathattrs_mo><gt><newline>]<lt>/mo<gt><newline>
+<mathelement_mo> = <lt>mo <mathattrs_mo><gt><newline>;<lt>/mo<gt><newline>
+<mathattrs_mo> = <mathattrx_mo> <mathattrx_mo> <mathattrx_mo>
+<mathattrs_mo> = <mathattrx_mo>
+<mathattrx_mo> = <mathattr_class>
+<mathattrx_mo> = <mathattr_id>
+<mathattrx_mo> = <mathattr_style>
+<mathattrx_mo> = <mathattr_href>
+<mathattrx_mo> = <mathattr_mathbackground>
+<mathattrx_mo> = <mathattr_mathcolor>
+<mathattrx_mo> = <mathattr_dir>
+<mathattrx_mo> = <mathattr_mathsize>
+<mathattrx_mo> = <mathattr_mathvariant>
+<mathattrx_mo> = <mathattr_maxsize>
+<mathattrx_mo> = <mathattr_minsize>
+<mathattrx_mo> = <mathattr_movablelimits>
+<mathattrx_mo> = <mathattr_rspace>
+<mathattrx_mo> = <mathattr_separators>
+<mathattrx_mo> = <mathattr_stretchy>
+<mathattrx_mo> = <mathattr_symmetric>
+
+
+# mover
+<mathelement_mover> = <lt>mover <mathattrs_mover><gt><newline><mathchildren_mover><lt>/mover<gt><newline>
+<mathchildren_mover nonrecursive=true p=0.5> = <mathchild_mover>
+<mathchildren_mover> = <mathchild_mover><mathchild_mover>
+<mathchild_mover> = <mathelement>
+<mathattrs_mover> = <mathattrx_mover> <mathattrx_mover>
+<mathattrs_mover> = <mathattrx_mover>
+<mathattrx_mover> = <mathattr_class>
+<mathattrx_mover> = <mathattr_id>
+<mathattrx_mover> = <mathattr_style>
+<mathattrx_mover> = <mathattr_href>
+<mathattrx_mover> = <mathattr_mathbackground>
+<mathattrx_mover> = <mathattr_mathcolor>
+<mathattrx_mover> = <mathattr_accent>
+<mathattrx_mover> = <mathattr_align>
+
+
+# mpadded
+<mathelement_mpadded> = <lt>mpadded <mathattrs_mpadded><gt><newline><mathchildren_mpadded><lt>/mpadded<gt><newline>
+<mathchildren_mpadded nonrecursive=true p=0.5> = <mathchild_mpadded>
+<mathchildren_mpadded> = <mathchild_mpadded><mathchild_mpadded>
+<mathchild_mpadded> = <mathelement>
+<mathattrs_mpadded> = <mathattrx_mpadded> <mathattrx_mpadded>
+<mathattrx_mpadded> = <mathattr_class>
+<mathattrx_mpadded> = <mathattr_id>
+<mathattrx_mpadded> = <mathattr_style>
+<mathattrx_mpadded> = <mathattr_href>
+<mathattrx_mpadded> = <mathattr_mathbackground>
+<mathattrx_mpadded> = <mathattr_mathcolor>
+<mathattrx_mpadded> = <mathattr_depth>
+<mathattrx_mpadded> = <mathattr_height>
+<mathattrx_mpadded> = <mathattr_lspace>
+<mathattrx_mpadded> = <mathattr_voffset>
+<mathattrx_mpadded> = <mathattr_width>
+
+
+
+# mphantom
+<mathelement_mphantom> = <lt>mphantom <mathattrs_mphantom><gt><newline><mathchildren_mphantom><lt>/mphantom<gt><newline>
+<mathchildren_mphantom nonrecursive=true p=0.5> = <mathchild_mphantom>
+<mathchildren_mphantom> = <mathchild_mphantom><mathchild_mphantom>
+<mathchild_mphantom> = <mathelement>
+<mathattrs_mphantom> = <mathattrx_mphantom> <mathattrx_mphantom>
+<mathattrx_mphantom> = <mathattr_class>
+<mathattrx_mphantom> = <mathattr_id>
+<mathattrx_mphantom> = <mathattr_style>
+<mathattrx_mphantom> = <mathattr_mathbackground>
+
+
+# mroot
+<mathelement_mroot> = <lt>mroot <mathattrs_mroot><gt><newline><mathchildren_mroot><lt>/mroot<gt><newline>
+<mathchildren_mroot nonrecursive=true p=0.5> = <mathchild_mroot>
+<mathchildren_mroot> = <mathchild_mroot><mathchild_mroot>
+<mathchild_mroot> = <mathelement> <mathelement>
+<mathchild_mroot> = <mathelement_mi> <mathelement_mn>
+<mathattrs_mroot> = <mathattrx_mroot> <mathattrx_mroot>
+<mathattrx_mroot> = <mathattr_class>
+<mathattrx_mroot> = <mathattr_id>
+<mathattrx_mroot> = <mathattr_style>
+<mathattrx_mroot> = <mathattr_href>
+<mathattrx_mroot> = <mathattr_mathbackground>
+<mathattrx_mroot> = <mathattr_mathcolor>
+
+
+# mrow
+<mathelement_mrow> = <lt>mrow <mathattrs_mrow><gt><newline><mathchildren_mrow><lt>/mrow<gt><newline>
+<mathchildren_mrow nonrecursive=true p=0.5> = <mathchild_mrow>
+<mathchildren_mrow> = <mathchild_mrow><mathchild_mrow>
+<mathchild_mrow> = <mathelement> <mathelement>
+<mathchild_mrow> = <mathelement_mi> <mathelement_mn>
+<mathchild_mrow> = <mathelement_mo>
+<mathattrs_mrow> = <mathattrx_mrow> <mathattrx_mrow>
+<mathattrx_mrow> = <mathattr_class>
+<mathattrx_mrow> = <mathattr_id>
+<mathattrx_mrow> = <mathattr_style>
+<mathattrx_mrow> = <mathattr_href>
+<mathattrx_mrow> = <mathattr_mathbackground>
+<mathattrx_mrow> = <mathattr_mathcolor>
+
+
+
+# ms
+<mathelement_ms> = <lt>ms <mathattrs_ms><gt><newline><char><lt>/ms<gt><newline>
+<mathelement_ms> = <lt>ms <mathattrs_ms><gt><newline><htmlsafestring><lt>/ms<gt><newline>
+<mathelement_ms> = <lt>ms <mathattrs_ms><gt><newline><float><lt>/ms<gt><newline>
+<mathelement_ms> = <lt>ms <mathattrs_ms><gt><newline><fuzzint><lt>/ms<gt><newline>
+<mathattrs_ms> = <mathattrx_ms> <mathattrx_ms>  <mathattrx_ms> <mathattrx_ms>
+<mathattrx_ms> = <mathattr_class>
+<mathattrx_ms> = <mathattr_id>
+<mathattrx_ms> = <mathattr_style>
+<mathattrx_ms> = <mathattr_href>
+<mathattrx_ms> = <mathattr_mathbackground>
+<mathattrx_ms> = <mathattr_mathcolor>
+<mathattrx_ms> = <mathattr_dir>
+<mathattrx_ms> = <mathattr_mathsize>
+<mathattrx_ms> = <mathattr_lquote>
+<mathattrx_ms> = <mathattr_rquote>
+<mathattrx_ms> = <mathattr_mathvariant>
+
+
+
+
+# mspace
+<mathelement_mspace> = <lt>mspace <mathattrs_mspace> /<gt><newline>
+<mathattrs_mspace> = <mathattrx_mspace> <mathattrx_mspace> <mathattrx_mspace>
+<mathattrx_mspace> = <mathattr_class>
+<mathattrx_mspace> = <mathattr_id>
+<mathattrx_mspace> = <mathattr_style>
+<mathattrx_mspace> = <mathattr_mathbackground>
+<mathattrx_mspace> = <mathattr_width>
+<mathattrx_mspace> = <mathattr_depth>
+<mathattrx_mspace> = <mathattr_height>
+<mathattrx_mspace> = <mathattr_linebreak>
+
+
+# msqrt
+<mathelement_msqrt> = <lt>msqrt <mathattrs_msqrt><gt><newline><mathchildren_msqrt><lt>/msqrt<gt><newline>
+<mathchildren_msqrt nonrecursive=true p=0.5> = <mathchild_msqrt>
+<mathchildren_msqrt> = <mathchild_msqrt><mathchild_msqrt>
+<mathchild_msqrt> = <mathelement> <mathelement>
+<mathchild_msqrt> = <mathelement_mi> <mathelement_mn>
+<mathchild_msqrt> = <mathelement_mo>
+<mathattrs_msqrt> = <mathattrx_msqrt> <mathattrx_msqrt> <mathattrx_msqrt>
+<mathattrx_msqrt> = <mathattr_class>
+<mathattrx_msqrt> = <mathattr_id>
+<mathattrx_msqrt> = <mathattr_style>
+<mathattrx_msqrt> = <mathattr_href>
+<mathattrx_msqrt> = <mathattr_mathbackground>
+<mathattrx_msqrt> = <mathattr_mathcolor>
+
+
+# mstyle
+<mathelement_mstyle> = <lt>mstyle <mathattrs_mstyle><gt><newline><mathchildren_mstyle><lt>/mstyle<gt><newline>
+<mathchildren_mstyle nonrecursive=true p=0.5> = <mathchild_mstyle>
+<mathchildren_mstyle> = <mathchild_mstyle><mathchild_mstyle>
+<mathchild_mstyle> = <mathelement> <mathelement>
+<mathchild_mstyle> = <mathelement>
+<mathattrs_mstyle> = <mathattrx_mstyle> <mathattrx_mstyle> <mathattrx_mstyle>
+<mathattrx_mstyle> = <mathattr_dir>
+<mathattrx_mstyle> = <mathattr_decimalpoint>
+<mathattrx_mstyle> = <mathattr_displaystyle>
+<mathattrx_mstyle> = <mathattr_infixlinebreakstyle>
+<mathattrx_mstyle> = <mathattr_scriptlevel>
+<mathattrx_mstyle> = <mathattr_scriptminsize>
+<mathattrx_mstyle> = <mathattr_scriptsizemultiplier>
+<mathattrx_mstyle> = <mathattr_mathcolor>
+<mathattrx_mstyle> = <mathattr_mathbackground>
+
+
+
+# msub
+<mathelement_msub> = <lt>msub <mathattrs_msub><gt><newline><mathchildren_msub><lt>/msub<gt><newline>
+<mathchildren_msub nonrecursive=true p=0.5> = <mathchild_msub>
+<mathchildren_msub> = <mathchild_msub> <mathchild_msub>
+<mathchild_msub> = <mathelement> <mathelement>
+<mathchild_msub> = <mathelement_mi> <mathelement_mn>
+<mathchild_msub> = <mathelement_mo>
+<mathattrs_msub> = <mathattrx_msub> <mathattrx_msub> <mathattrx_msub>
+<mathattrx_msub> = <mathattr_class>
+<mathattrx_msub> = <mathattr_id>
+<mathattrx_msub> = <mathattr_style>
+<mathattrx_msub> = <mathattr_href>
+<mathattrx_msub> = <mathattr_mathbackground>
+<mathattrx_msub> = <mathattr_mathcolor>
+<mathattrx_msub> = <mathattr_subscriptshift>
+
+
+# msubsup
+<mathelement_msubsup> = <lt>msubsup <mathattrs_msubsup><gt><newline><mathchildren_msubsup><lt>/msubsup<gt><newline>
+<mathchildren_msubsup nonrecursive=true p=0.5> = <mathchild_msubsup>
+<mathchildren_msubsup> = <mathchild_msubsup> <mathchild_msubsup>
+<mathchild_msubsup> = <mathelement> <mathelement>
+<mathchild_msubsup> = <mathelement_mo> <mathelement_mn> <mathelement_mn>
+<mathattrs_msubsup> = <mathattrx_msubsup> <mathattrx_msubsup> <mathattrx_msubsup>
+<mathattrx_msubsup> = <mathattr_class>
+<mathattrx_msubsup> = <mathattr_id>
+<mathattrx_msubsup> = <mathattr_style>
+<mathattrx_msubsup> = <mathattr_href>
+<mathattrx_msubsup> = <mathattr_mathbackground>
+<mathattrx_msubsup> = <mathattr_mathcolor>
+<mathattrx_msubsup> = <mathattr_subscriptshift>
+<mathattrx_msubsup> = <mathattr_superscriptshift>
+
+
+# msup
+<mathelement_msup> = <lt>msup <mathattrs_msup><gt><newline><mathchildren_msup><lt>/msup<gt><newline>
+<mathchildren_msup nonrecursive=true p=0.5> = <mathchild_msup>
+<mathchildren_msup> = <mathchild_msup> <mathchild_msup>
+<mathchild_msup> = <mathelement> <mathelement>
+<mathchild_msup> = <mathelement_mi> <mathelement_mn>
+<mathattrs_msup> = <mathattrx_msup> <mathattrx_msup> <mathattrx_msup>
+<mathattrx_msup> = <mathattr_class>
+<mathattrx_msup> = <mathattr_id>
+<mathattrx_msup> = <mathattr_style>
+<mathattrx_msup> = <mathattr_href>
+<mathattrx_msup> = <mathattr_mathbackground>
+<mathattrx_msup> = <mathattr_mathcolor>
+<mathattrx_msup> = <mathattr_superscriptshift>
+
+
+
+# mtable
+<mathelement_mtable> = <lt>mtable <mathattrs_mtable><gt><newline><mathelement_mtr><newline><lt>/mtd<gt><newline>
+<mathelement_mtable> = <lt>mtable <mathattrs_mtable><gt><newline><mathelement_mtr><newline><mathelement_mtr><newline><lt>/mtd<gt><newline>
+<mathattrs_mtable> = <mathattrx_mtable> <mathattrx_mtable> <mathattrx_mtable> <mathattrx_mtable>
+<mathattrx_mtable> = <mathattr_class>
+<mathattrx_mtable> = <mathattr_id>
+<mathattrx_mtable> = <mathattr_style>
+<mathattrx_mtable> = <mathattr_href>
+<mathattrx_mtable> = <mathattr_mathbackground>
+<mathattrx_mtable> = <mathattr_mathcolor>
+<mathattrx_mtable> = <mathattr_align>
+<mathattrx_mtable> = <mathattr_alignmentscope>
+<mathattrx_mtable> = <mathattr_columnalign>
+<mathattrx_mtable> = <mathattr_columnlines>
+<mathattrx_mtable> = <mathattr_columnspacing>
+<mathattrx_mtable> = <mathattr_columnwidth>
+<mathattrx_mtable> = <mathattr_displaystyle>
+#<mathattrx_mtable> = <mathattr_equalcolumns>
+<mathattrx_mtable> = <mathattr_equalrows>
+<mathattrx_mtable> = <mathattr_frame>
+<mathattrx_mtable> = <mathattr_framespacing>
+<mathattrx_mtable> = <mathattr_groupalign>
+<mathattrx_mtable> = <mathattr_minlabelspacing>
+<mathattrx_mtable> = <mathattr_rowalign>
+<mathattrx_mtable> = <mathattr_rowspacing>
+<mathattrx_mtable> = <mathattr_side>
+<mathattrx_mtable> = <mathattr_width>
+
+
+
+# mtd
+<mathelement_mtd> = <lt>mtd <mathattrs_mtd><gt><newline><mathchildren_mtd><lt>/mtd<gt><newline>
+<mathelement_mtd> = <lt>mtd <mathattrs_mtd><gt><newline><mathelement_mi><lt>/mtd<gt><newline>
+<mathchildren_mtd nonrecursive=true p=0.5> = <mathchild_mtd>
+<mathchildren_mtd> = <mathchild_mtd><mathchildren_mtd>
+<mathchild_mtd> = <mathelement> <mathelement> <mathelement>
+<mathattrs_mtd> = <mathattrx_mtd> <mathattrx_mtd> <mathattrx_mtd>
+<mathattrx_mtd> = <mathattr_class>
+<mathattrx_mtd> = <mathattr_id>
+<mathattrx_mtd> = <mathattr_style>
+<mathattrx_mtd> = <mathattr_href>
+<mathattrx_mtd> = <mathattr_mathbackground>
+<mathattrx_mtd> = <mathattr_mathcolor>
+<mathattrx_mtd> = <mathattr_columnalign>
+<mathattrx_mtd> = <mathattr_columnspan>
+<mathattrx_mtd> = <mathattr_groupalign>
+<mathattrx_mtd> = <mathattr_rowalign>
+<mathattrx_mtd> = <mathattr_rowspan>
+
+
+# mtext
+<mathelement_mtext> = <lt>mtext <mathattrs_mtext><gt><newline><char><lt>/mtext<gt><newline>
+<mathelement_mtext> = <lt>mtext <mathattrs_mtext><gt><newline><htmlsafestring><lt>/mtext<gt><newline>
+<mathattrs_mtext> = <mathattrx_mtext> <mathattrx_mtext> <mathattrx_mtext>
+<mathattrx_mtext> = <mathattr_class>
+<mathattrx_mtext> = <mathattr_id>
+<mathattrx_mtext> = <mathattr_dir>
+<mathattrx_mtext> = <mathattr_style>
+<mathattrx_mtext> = <mathattr_href>
+<mathattrx_mtext> = <mathattr_mathbackground>
+<mathattrx_mtext> = <mathattr_mathcolor>
+<mathattrx_mtext> = <mathattr_mathsize>
+<mathattrx_mtext> = <mathattr_mathvariant>
+
+
+
+# mtr
+<mathelement_mtr> = <lt>mtr <mathattrs_mtr><gt><newline><mathchildren_mtr><lt>/mtr<gt><newline>
+<mathchildren_mtr nonrecursive=true p=0.5> = <mathchild_mtr>
+<mathchildren_mtr> = <mathchild_mtr><mathchild_mtr>
+<mathchild_mtr> = <mathelement_mtd> <mathelement_mtd> <mathelement_mtd>
+<mathattrs_mtr> = <mathattrx_mtr> <mathattrx_mtr> <mathattrx_mtr> <mathattrx_mtr>
+<mathattrx_mtr> = <mathattr_class>
+<mathattrx_mtr> = <mathattr_id>
+<mathattrx_mtr> = <mathattr_style>
+<mathattrx_mtr> = <mathattr_href>
+<mathattrx_mtr> = <mathattr_mathbackground>
+<mathattrx_mtr> = <mathattr_mathcolor>
+<mathattrx_mtr> = <mathattr_rowalign>
+<mathattrx_mtr> = <mathattr_columnalign>
+<mathattrx_mtr> = <mathattr_groupalign>
+
+
+# munder
+<mathelement_munder> = <lt>munder <mathattrs_munder><gt><newline><mathchildren_munder><lt>/munder<gt><newline>
+<mathchildren_munder nonrecursive=true p=0.5> = <mathchild_munder>
+<mathchildren_munder> = <mathchild_munder><mathchild_munder>
+<mathchild_munder> = <mathelement_mrow>
+<mathchild_munder> = <mathelement>
+<mathattrs_munder> = <mathattrx_munder> <mathattrx_munder> <mathattrx_munder>
+<mathattrx_munder> = <mathattr_class>
+<mathattrx_munder> = <mathattr_id>
+<mathattrx_munder> = <mathattr_style>
+<mathattrx_munder> = <mathattr_href>
+<mathattrx_munder> = <mathattr_mathbackground>
+<mathattrx_munder> = <mathattr_mathcolor>
+<mathattrx_munder> = <mathattr_accentunder>
+<mathattrx_munder> = <mathattr_align>
+
+
+# munderover
+<mathelement_munderover> = <lt>munderover <mathattrs_munderover><gt><newline><mathchildren_munderover><lt>/munderover<gt><newline>
+<mathchildren_munderover nonrecursive=true p=0.5> = <mathchild_munderover>
+<mathchildren_munderover> = <mathchild_munderover><mathchild_munderover>
+<mathchild_munderover> = <mathelement>
+<mathchild_munderover> = <mathelement_mo> <mathelement_mn> <mathelement_mi>
+<mathattrs_munderover> = <mathattrx_munderover> <mathattrx_munderover> <mathattrx_munderover>
+<mathattrx_munderover> = <mathattr_class>
+<mathattrx_munderover> = <mathattr_id>
+<mathattrx_munderover> = <mathattr_style>
+<mathattrx_munderover> = <mathattr_href>
+<mathattrx_munderover> = <mathattr_mathbackground>
+<mathattrx_munderover> = <mathattr_mathcolor>
+<mathattrx_munderover> = <mathattr_accentunder>
+
+
+# semantics
+<mathelement_semantics> = <lt>semantics <mathattrs_semantics><gt><newline><mathchildren_semantics><lt>/semantics<gt><newline>
+<mathchildren_semantics nonrecursive=true p=0.5> = <mathchild_semantics>
+<mathchildren_semantics> = <mathchild_semantics>
+<mathchild_semantics> = <mathelement>
+<mathattrs_semantics> = <mathattrx_semantics> <mathattrx_semantics> <mathattrx_semantics>
+<mathattrx_semantics> = <mathattr_id>
+<mathattrx_semantics> = <mathattr_name>
+<mathattrx_semantics> = <mathattr_src>
+<mathattrx_semantics> = <mathattr_encoding>
+
+
+# simple
+<mathattr> = <mathattr_id>
+
+
+<mathattr_id> = id="<mathattr_id_value>"
+<mathattr_class> = class="<mathattr_class_value>"
+<mathattr_style> = style="<mathattr_style_value>"
+<mathattr_href> = href="<mathattr_href_value>"
+<mathattr_mathbackground> = mathbackground="<mathattr_mathbackground_value>"
+<mathattr_mathcolor> = mathcolor="<mathattr_mathcolor_value>"
+<mathattr_selection> = selection="<mathattr_selection_value>"
+<mathattr_dir> = dir="<mathattr_dir_value>"
+<mathattr_actiontype> = actiontype="<mathattr_actiontype_value>"
+<mathattr_display> = display="<mathattr_display_value>"
+<mathattr_overflow> = overflow="<mathattr_overflow_value>"
+<mathattr_decimalpoint> = decimalpoint="<mathattr_decimalpoint_value>"
+<mathattr_displaystyle> = displaystyle="<mathattr_displaystyle_value>"
+<mathattr_infixlinebreakstyle> = infixlinebreakstyle="<mathattr_infixlinebreakstyle_value>"
+<mathattr_scriptlevel> = scriptlevel="<mathattr_scriptlevel_value>"
+<mathattr_scriptminsize> = scriptminsize="<mathattr_scriptminsize_value>"
+<mathattr_scriptsizemultiplier> = scriptsizemultiplier="<mathattr_scriptsizemultiplier_value>"
+<mathattr_notation> = notation="<mathattr_notation_value>"
+<mathattr_close> = close="<mathattr_close_value>"
+<mathattr_open> = open="<mathattr_open_value>"
+<mathattr_bevelled> = bevelled="<mathattr_bevelled_value>"
+<mathattr_denomalign> = denomalign="<mathattr_denomalign_value>"
+<mathattr_linethickness> = linethickness="<mathattr_linethickness_value>"
+<mathattr_numalign> = numalign="<mathattr_numalign_value>"
+<mathattr_src> = src="<mathattr_src_value>"
+<mathattr_valign> = valign="<mathattr_valign_value>"
+<mathattr_width> = width="<mathattr_width_value>"
+<mathattr_mathsize> = mathsize="<mathattr_mathsize_value>"
+<mathattr_mathvariant> = mathvariant="<mathattr_mathvariant_value>"
+<mathattr_rowalign> = rowalign="<mathattr_rowalign_value>"
+<mathattr_subscriptshift> = subscriptshift="<mathattr_subscriptshift_value>"
+<mathattr_superscriptshift> = superscriptshift="<mathattr_subscriptshift_value>"
+<mathattr_maxsize> = maxsize="<mathattr_maxsize_value>"
+<mathattr_minsize> = minsize="<mathattr_minsize_value>"
+<mathattr_movablelimits> = movablelimits="<mathattr_movablelimits_value>"
+<mathattr_rspace> = rspace="<mathattr_rspace_value>"
+<mathattr_separators> = separators="<mathattr_separators_value>"
+<mathattr_stretchy> = stretchy="<mathattr_stretchy_value>"
+<mathattr_symmetric> = symmetric="<mathattr_symmetric_value>"
+<mathattr_accent> = accent="<mathattr_accent_value>"
+<mathattr_align> = align="<mathattr_align_value>"
+<mathattr_depth> = depth="<mathattr_depth_value>"
+<mathattr_height> = height="<mathattr_height_value>"
+<mathattr_lspace> = lspace="<mathattr_lspace_value>"
+<mathattr_voffset> = voffset="<mathattr_voffset_value>"
+<mathattr_lquote> = lquote="<mathattr_lquote_value>"
+<mathattr_rquote> = rquote="<mathattr_rquote_value>"
+<mathattr_linebreak> = linebreak="<mathattr_linebreak_value>"
+<mathattr_alignmentscope> = alignmentscope="<mathattr_alignmentscope_value>"
+<mathattr_columnlines> = columnlines="<mathattr_columnlines_value>"
+<mathattr_columnspacing> = columnspacing="<mathattr_columnspacing_value>"
+<mathattr_columnwidth> = columnwidth="<mathattr_columnwidth_value>"
+<mathattr_equalrows> = equalrows="<mathattr_equalrows_value>"
+<mathattr_qeualcolumns> = qeualcolumns="<mathattr_qeualcolumns_value>"
+<mathattr_frame> = frame="<mathattr_frame_value>"
+<mathattr_framespacing> = framespacing="<mathattr_framespacing_value>"
+<mathattr_minlabelspacing> = minlabelspacing="<mathattr_minlabelspacing_value>"
+<mathattr_rowlines> = rowlines="<mathattr_rowlines_value>"
+<mathattr_rowspacing> = rowspacing="<mathattr_rowspacing_value>"
+<mathattr_side> = side="<mathattr_side_value>"
+<mathattr_rowspan> = rowspan="<mathattr_rowspan_value>"
+<mathattr_columnalign> = columnalign="<mathattr_columnalign_value>"
+<mathattr_groupalign> = groupalign="<mathattr_groupalign_value>"
+<mathattr_accentunder> = accentunder="<mathattr_accentunder_value>"
+<mathattr_definitionURL> = definitionURL="<mathattr_definitionURL_value>"
+<mathattr_encoding> = encoding="<mathattr_encoding_value>"
+<mathattr_name> = name="<mathattr_name_value>"
+<mathattr_alt> = alt="<mathattr_alt_value>"
+<mathattr_columnspan> = columnspan="<mathattr_columnspan_value>"
