@@ -6054,6 +6054,8 @@ document.all[<int min=0 max=100>%document.all.length].appendChild(<Element>);
 <any>.prop = { toString:<eventhandler> };
 <any>.toString = <eventhandler>;
 
+setTimeout(<eventhandler>, <timeout_time>);
+
 freememory();
 freememory();
 freememory();

@@ -12,6 +12,9 @@
 #   limitations under the License.
 
 
+<timeout_time> = 0
+<timeout_time> = 100
+
 <url_string> = "x"
 <url_string> = "<hash>foo"
 <url_string> = "data:text/html,foo"
