@@ -6051,6 +6051,9 @@ document.all[<int min=0 max=100>%document.all.length].appendChild(<Element>);
 <new CSSStyleDeclaration> = <MathMLElement>.style;
 <new CSSStyleDeclaration> = <MathMLElement>.style;
 
+<any>.prop = { toString:<eventhandler> };
+<any>.toString = <eventhandler>;
+
 freememory();
 freememory();
 freememory();

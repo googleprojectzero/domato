@@ -490,6 +490,8 @@ class Grammar(object):
                     context,
                     ''
                 )
+            elif (part['tagname'] == 'any') and 'variables' in context:
+                expanded = self._get_any_var(context);
             else:
                 try:
                     expanded = self._generate(
@@ -1024,3 +1026,8 @@ class Grammar(object):
             for parent_type in self._inheritance[var_type]:
                 ret += self._get_variable_setters(var_name, parent_type)
         return ret
+
+    def _get_any_var(self, context):
+        var_type = random.choice(list(context['variables'].keys()))
+        return random.choice(context['variables'][var_type])
+
