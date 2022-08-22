@@ -67,12 +67,12 @@
 <image_set_func> = image-set
 
 <cssproperty_image_image-set> = <image_set_func>(<cssproperty_image>)
-<cssproperty_image_image-set> = <image_set_func>(<cssproperty_image> <fuzzint>x type("<htmlsafestring min=20 max=122>"))
+<cssproperty_image_image-set> = <image_set_func>(<cssproperty_image> <fuzzint>x type(\"<htmlsafestring min=20 max=122>\"))
 <cssproperty_image_image-set> = <image_set_func>(<cssproperty_image> <fuzzint>dpcm)
-<cssproperty_image_image-set> = <image_set_func>(<cssproperty_image> <fuzzint>dpi type("image/jpeg"))
-<cssproperty_image_image-set> = <image_set_func>(<cssproperty_image> <fuzzint>x, <cssproperty_image> <fuzzint>x type("<htmlsafestring min=47 max=122>"))
-<cssproperty_image_image-set> = <image_set_func>(<cssproperty_image> <fuzzint>x type("image/avif"), <cssproperty_image> <fuzzint>dpi type("image/jpeg"))
-<cssproperty_image_image-set> = <image_set_func>(<cssproperty_image> <fuzzint>x type("image/jpeg"), <cssproperty_image> <fuzzint>dpcm type("<htmlsafestring min=47 max=122>"), <cssproperty_image> <fuzzint>dpi)
+<cssproperty_image_image-set> = <image_set_func>(<cssproperty_image> <fuzzint>dpi type(\"image/jpeg\"))
+<cssproperty_image_image-set> = <image_set_func>(<cssproperty_image> <fuzzint>x, <cssproperty_image> <fuzzint>x type(\"<htmlsafestring min=47 max=122>\"))
+<cssproperty_image_image-set> = <image_set_func>(<cssproperty_image> <fuzzint>x type(\"image/avif\"), <cssproperty_image> <fuzzint>dpi type(\"image/jpeg\"))
+<cssproperty_image_image-set> = <image_set_func>(<cssproperty_image> <fuzzint>x type(\"image/jpeg\"), <cssproperty_image> <fuzzint>dpcm type(\"<htmlsafestring min=47 max=122>\"), <cssproperty_image> <fuzzint>dpi)
 <cssproperty_image_image-set> = <image_set_func>(<cssproperty_image> <fuzzint>x, <cssproperty_image> <fuzzint>x, <cssproperty_image> <fuzzint>x, <cssproperty_image> <fuzzint>x)
 
 <cssproperty_-ms-flex-align> = center
