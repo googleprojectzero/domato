@@ -2285,6 +2285,7 @@
 <new FontFaceLoadStatus> = <FontFace>.status;
 <new Promise_FontFace_> = <FontFace>.load();
 <new Promise_FontFace_> = <FontFace>.loaded;
+<new sequence_FontFace_> = new Array(<FontFace>);
 
 <new FontSrc p=0.75> = "<cssproperty_font-src_val>"
 <new FontSrc> = "<cssproperty_font-src_val>", <FontSrc>
@@ -2450,8 +2451,6 @@
 !extends FontFaceSetLoadEvent Event
 <new Event> = <FontFaceSetLoadEvent>;
 <new sequence_FontFace_> = <FontFaceSetLoadEvent>.fontfaces;
-<new sequence_FontFace_> = new Array(<FontFace>);
-
 
 #Attr
 <new DOMString> = <Attr>.namespaceURI;
