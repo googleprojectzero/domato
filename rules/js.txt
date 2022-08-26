@@ -2265,8 +2265,7 @@
 
 #FontFace
 <new DOMString> = <FontFace>.family;
-<FontFace>.family = <DOMString>;
-<FontFace>.family = "<string min=97 max=122>";
+<FontFace>.family = "<cssproperty_font-family>";
 <new DOMString> = <FontFace>.style;
 <FontFace>.style = "<import from=cssgrammar symbol=declaration5>";
 <FontFace>.style = <DOMString>;
@@ -2287,14 +2286,11 @@
 <new Promise_FontFace_> = <FontFace>.loaded;
 <new sequence_FontFace_> = new Array(<FontFace>);
 
-<new FontSrc p=0.75> = "<cssproperty_font-src_val>"
-<new FontSrc> = "<cssproperty_font-src_val>", <FontSrc>
-
 <new DOMString> = <FontFace>.src;
-<FontFace>.src = <FontSrc>;
-<new FontFace> = new FontFace(<DOMString>, <FontSrc>, {});
-<new FontFace> = new FontFace(<DOMString>, <FontSrc>, {<fontfacedescriptor>});
-<new FontFace> = new FontFace(<DOMString>, <FontSrc>, {<fontfacedescriptor>, <fontfacedescriptor>, <fontfacedescriptor>});
+<FontFace>.src = "<cssproperty_font-src>";
+<new FontFace> = new FontFace("<cssproperty_font-family>", "<cssproperty_font-src>", {});
+<new FontFace> = new FontFace("<cssproperty_font-family>", "<cssproperty_font-src>", {<fontfacedescriptor>});
+<new FontFace> = new FontFace("<cssproperty_font-family>", "<cssproperty_font-src>", {<fontfacedescriptor>, <fontfacedescriptor>, <fontfacedescriptor>});
 
 #CSSViewportRule
 !extends CSSViewportRule CSSRule
