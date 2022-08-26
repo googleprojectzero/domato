@@ -12,6 +12,69 @@
 #   limitations under the License.
 
 
+<cssproperty_image nonrecursive> = <cssproperty_image_url>
+<cssproperty_image> = <cssproperty_image_gradient>
+<cssproperty_image> = <cssproperty_image_func>
+<cssproperty_image> = <cssproperty_image_cross-fade>
+<cssproperty_image> = <cssproperty_image_image-set>
+
+<cssproperty_image_url> = url(<cssurl>)
+<cssproperty_image_gradient> = linear-gradient(<cssproperty_gradient>)
+<cssproperty_image_gradient> = linear-gradient(to right top, <cssproperty_gradient>)
+<cssproperty_image_gradient> = radial-gradient(<cssproperty_gradient>)
+<cssproperty_image_gradient> = radial-gradient(farthest-side at <fuzzint>px <fuzzint>px, <cssproperty_gradient>)
+<cssproperty_image_gradient> = repeating-linear-gradient(<cssproperty_gradient>)
+<cssproperty_image_gradient> = repeating-linear-gradient(to bottom, <cssproperty_gradient>)
+<cssproperty_image_gradient> = repeating-linear-gradient(to top right, <cssproperty_gradient> <fuzzint>px)
+<cssproperty_image_gradient> = repeating-radial-gradient(<cssproperty_gradient>)
+<cssproperty_image_gradient> = repeating-radial-gradient(circle at center, <cssproperty_gradient>)
+<cssproperty_image_gradient> = repeating-radial-gradient(circle at center, <cssproperty_gradient> <fuzzint>px)
+<cssproperty_image_gradient> = conic-gradient(<cssproperty_gradient>)
+<cssproperty_image_gradient> = conic-gradient(from <fuzzint>deg, <cssproperty_gradient>)
+<cssproperty_image_gradient> = conic-gradient(from .<fuzzint>turn, <cssproperty_gradient>)
+
+<cssproperty_gradient> = <color>, <color>
+<cssproperty_gradient> = <fuzzint>deg, <color>, <color>
+<cssproperty_gradient> = <color>, <color>, <color>, <color>, <color>
+<cssproperty_gradient> = <color>, <color>, <color>, <color> <fuzzint>%, <color>
+<cssproperty_gradient> = <color>, <color>, <color> <fuzzint>%, <color> <fuzzint>%, <color>
+<cssproperty_gradient> = .<fuzzint>turn, <color>, <fuzzint>%, <color>
+<cssproperty_gradient> = <color> <fuzzint>% <fuzzint>%, <color> <fuzzint>% <fuzzint>%
+
+<cssproperty_image_func> = image(<cssproperty_image_url><cssproperty_image_fragment> <color>)
+<cssproperty_image_func> = image(<cssproperty_image>)
+<cssproperty_image_func> = image('<string min=32 max=122>'<cssproperty_image_fragment>)
+<cssproperty_image_func> = image(ltr <cssproperty_image_url><cssproperty_image_fragment>)
+<cssproperty_image_func> = image(rtl '<string min=32 max=122>'<cssproperty_image_fragment> <color>)
+<cssproperty_image_func> = image(<color>)
+<cssproperty_image_func> = image(ltr <color>)
+
+<cssproperty_image_fragment> = <space>
+<cssproperty_image_fragment> = <hash>xywh=<fuzzint>,<fuzzint>,<fuzzint>,<fuzzint>
+<cssproperty_image_fragment> = <hash>xywh=pixel:<fuzzint>,<fuzzint>,<fuzzint>,<fuzzint>
+<cssproperty_image_fragment> = <hash>xywh=percent:<fuzzint>,<fuzzint>,<fuzzint>,<fuzzint>
+
+<image_cross-fade_func> = cross-fade
+<image_cross-fade_func> = -webkit-cross-fade
+
+<cssproperty_image_cross-fade> = <image_cross-fade_func>(<cssproperty_image_url>, <cssproperty_image_url>)
+<cssproperty_image_cross-fade> = <image_cross-fade_func>(<cssproperty_image_url>, <cssproperty_image_url>, <fuzzint>%)
+<cssproperty_image_cross-fade> = <image_cross-fade_func>(<cssproperty_image_url> <fuzzint>%, <color>)
+<cssproperty_image_cross-fade> = <image_cross-fade_func>(<cssproperty_image_url> <fuzzint>%, <cssproperty_image_url> <fuzzint>%)
+<cssproperty_image_cross-fade> = <image_cross-fade_func>(<cssproperty_image_url> <fuzzint>%, <cssproperty_image_url> <fuzzint>%, <cssproperty_image_url> <fuzzint>%)
+
+<image_set_func> = -webkit-image-set
+<image_set_func> = image-set
+
+<cssproperty_image_image-set> = <image_set_func>(<cssproperty_image>)
+<cssproperty_image_image-set> = <image_set_func>(<cssproperty_image> <fuzzint>x type(\"<htmlsafestring min=20 max=122>\"))
+<cssproperty_image_image-set> = <image_set_func>(<cssproperty_image> <fuzzint>dpcm)
+<cssproperty_image_image-set> = <image_set_func>(<cssproperty_image> <fuzzint>dpi type(\"image/jpeg\"))
+<cssproperty_image_image-set> = <image_set_func>(<cssproperty_image> <fuzzint>x, <cssproperty_image> <fuzzint>x type(\"<htmlsafestring min=47 max=122>\"))
+<cssproperty_image_image-set> = <image_set_func>(<cssproperty_image> <fuzzint>x type(\"image/avif\"), <cssproperty_image> <fuzzint>dpi type(\"image/jpeg\"))
+<cssproperty_image_image-set> = <image_set_func>(<cssproperty_image> <fuzzint>x type(\"image/jpeg\"), <cssproperty_image> <fuzzint>dpcm type(\"<htmlsafestring min=47 max=122>\"), <cssproperty_image> <fuzzint>dpi)
+<cssproperty_image_image-set> = <image_set_func>(<cssproperty_image> <fuzzint>x, <cssproperty_image> <fuzzint>x, <cssproperty_image> <fuzzint>x, <cssproperty_image> <fuzzint>x)
+
 <cssproperty_-ms-flex-align> = center
 
 <cssproperty_-ms-font-feature-settings> = 'frac' 1, 'dlig' 1
@@ -388,6 +451,7 @@
 
 <cssproperty_-webkit-line-break> = normal
 <cssproperty_-webkit-line-break> = after-white-space
+<cssproperty_-webkit-line-break> = inherit
 
 <cssproperty_-webkit-line-clamp> = <fuzzint>
 
@@ -451,6 +515,7 @@
 <cssproperty_-webkit-mask-composite> = copy
 
 <cssproperty_-webkit-mask-image> = url(<cssurl>)
+<cssproperty_-webkit-mask-image> = <cssproperty_image>
 <cssproperty_-webkit-mask-image> = none
 
 <cssproperty_-webkit-mask-origin> = border-box
@@ -515,6 +580,7 @@
 
 <cssproperty_-webkit-shape-outside> = url(<cssurl>)
 <cssproperty_-webkit-shape-outside> = inset(<fuzzint>px <fuzzint>px <fuzzint>px <fuzzint>px)
+<cssproperty_-webkit-shape-outside> = <cssproperty_image>
 
 <cssproperty_-webkit-tap-highlight-color> = <color>
 
@@ -851,6 +917,7 @@
 <cssproperty_background-color> = <color>
 
 <cssproperty_background-image> = url(<cssurl>)
+<cssproperty_background-image> = <cssproperty_image>
 
 <cssproperty_background-origin> = border-box
 <cssproperty_background-origin> = content-box
@@ -999,9 +1066,19 @@
 <cssproperty_border-image> = url(<cssurl>) stretch <fuzzint>
 <cssproperty_border-image> = url(<cssurl>) <fuzzint> fill
 <cssproperty_border-image> = url(<cssurl>) <fuzzint> round
+<cssproperty_border-image> = <cssproperty_border-image-source> <cssproperty_border-image-slice>
+<cssproperty_border-image> = <cssproperty_border-image-source> <cssproperty_border-image-slice> <cssproperty_border-image-width>
+<cssproperty_border-image> = <cssproperty_border-image-source> <cssproperty_border-image-slice> <cssproperty_border-image-repeat>
+<cssproperty_border-image> = <cssproperty_border-image-source> <cssproperty_border-image-slice> <cssproperty_border-image-width> <cssproperty_border-image-repeat>
+<cssproperty_border-image> = <cssproperty_border-image-source> <cssproperty_border-image-slice> <cssproperty_border-image-width> <cssproperty_border-image-outset>
+<cssproperty_border-image> = <cssproperty_border-image-source> <cssproperty_border-image-slice> <cssproperty_border-image-width> <cssproperty_border-image-outset> <cssproperty_border-image-repeat>
 
 <cssproperty_border-image-outset> = <fuzzint>
 <cssproperty_border-image-outset> = <fuzzint>px
+<cssproperty_border-image-outset> = <fuzzint>%
+<cssproperty_border-image-outset> = <fuzzint>rem
+<cssproperty_border-image-outtset> = <fuzzint> <fuzzint>px
+<cssproperty_border-image-outset> = <fuzzint>% <fuzzint>% <fuzzint>%
 <cssproperty_border-image-outset> = inherit
 <cssproperty_border-image-outset> = <fuzzint> <fuzzint> <fuzzint> <fuzzint>
 
@@ -1016,18 +1093,31 @@
 <cssproperty_border-image-repeat> = inherit
 <cssproperty_border-image-repeat> = repeat repeat
 <cssproperty_border-image-repeat> = initial
+<cssproperty_border-image-repeat> = space
+<cssproperty_border-image-repeat> = space round
+<cssproperty_border-image-repeat> = repeat space
 
 <cssproperty_border-image-slice> = <fuzzint> <fuzzint> <fuzzint> <fuzzint> fill
+<cssproperty_border-image-slice> = <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+<cssproperty_border-image-slice> = <fuzzint> <fuzzint> <fuzzint>
 <cssproperty_border-image-slice> = <percentage>%
 <cssproperty_border-image-slice> = <fuzzint>
+<cssproperty_border-image-slice> = <fuzzint> <fuzzint> fill
+<cssproperty_border-image-slice> = <fuzzint>% <fuzzint>% <fuzzint>%
 <cssproperty_border-image-slice> = <fuzzint> fill
 
 <cssproperty_border-image-source> = url(<cssurl>)
+<cssproperty_border-image-source> = <cssproperty_image>
 
 <cssproperty_border-image-width> = <fuzzint>
 <cssproperty_border-image-width> = <fuzzint>px
 <cssproperty_border-image-width> = inherit
 <cssproperty_border-image-width> = <fuzzint> <fuzzint> <fuzzint> <fuzzint>
+<cssproperty_border-image-width> = auto
+<cssproperty_border-image-width> = <fuzzint>%
+<cssproperty_border-image-width> = <fuzzint>rem
+<cssproperty_border-image-width> = <fuzzint>em
+<cssproperty_border-image-width> = <fuzzint>% <fuzzint>em <fuzzint>em <fuzzint>%
 
 <cssproperty_border-left> = <fuzzint>px solid
 <cssproperty_border-left> = <fuzzint>px dashed <color>
@@ -1803,6 +1893,7 @@
 <cssproperty_font-family> = HiraMinProN-W<fuzzint>
 <cssproperty_font-family> = 'hiragino mincho pron'
 <cssproperty_font-family> = 'times'
+<cssproperty_font-family> = '<string min=97 max=122>'
 
 <cssproperty_font-feature-settings> = 'smcp' <fuzzint>
 <cssproperty_font-feature-settings> = 'frac' <fuzzint>, 'dlig' <fuzzint>
@@ -1810,6 +1901,7 @@
 <cssproperty_font-feature-settings> = 'smcp'
 <cssproperty_font-feature-settings> = 'liga'
 <cssproperty_font-feature-settings> = 'liga' <fuzzint>
+<cssproperty_font-feature-settings> = '<string min=97 max=122>'
 
 <cssproperty_font-kerning> = normal
 <cssproperty_font-kerning> = none
@@ -1848,27 +1940,40 @@
 <cssproperty_font-size> = <fuzzint>%
 
 <cssproperty_font-size-adjust> = none
+<cssproperty_font-size-adjust> = ex-height
+<cssproperty_font-size-adjust> = cap-height
+<cssproperty_font-size-adjust> = ch-width
+<cssproperty_font-size-adjust> = ic-width
+<cssproperty_font-size-adjust> = ic-height
+
 <cssproperty_font-size-adjust> = <fuzzint>
 
-<cssproperty_font-stretch> = ultra-condensed
-<cssproperty_font-stretch> = extra-condensed
-<cssproperty_font-stretch> = condensed
-<cssproperty_font-stretch> = semi-condensed
-<cssproperty_font-stretch> = normal
-<cssproperty_font-stretch> = semi-expanded
-<cssproperty_font-stretch> = expanded
-<cssproperty_font-stretch> = extra-expanded
-<cssproperty_font-stretch> = ultra-expanded
+<cssproperty_font-stretch_val> = ultra-condensed
+<cssproperty_font-stretch_val> = extra-condensed
+<cssproperty_font-stretch_val> = condensed
+<cssproperty_font-stretch_val> = semi-condensed
+<cssproperty_font-stretch_val> = normal
+<cssproperty_font-stretch_val> = semi-expanded
+<cssproperty_font-stretch_val> = expanded
+<cssproperty_font-stretch_val> = extra-expanded
+<cssproperty_font-stretch_val> = ultra-expanded
+<cssproperty_font-stretch_val> = <int min=-1000 max=1000>%
+<cssproperty_font-stretch p=0.75> = <cssproperty_font-stretch_val>
+<cssproperty_font-stretch> = <cssproperty_font-stretch> <cssproperty_font-stretch_val>
 
 <cssproperty_font-style> = normal
 <cssproperty_font-style> = italic
 <cssproperty_font-style> = oblique
 <cssproperty_font-style> = none
 <cssproperty_font-style> = inherit
+<cssproperty_font-style> = oblique <int min=-360 max=360>deg
+<cssproperty_font-style> = oblique <int min=-360 max=360>deg <int min=-360 max=360>deg
 
+#TODO - more font-variant values to add
 <cssproperty_font-variant> = small-caps
 <cssproperty_font-variant> = normal
 <cssproperty_font-variant> = all
+<cssproperty_font-variant> = none
 <cssproperty_font-variant> = small-caps garbage
 <cssproperty_font-variant> = small-caps auto
 
@@ -1884,15 +1989,28 @@
 
 <cssproperty_font-vendor> = any
 
-<cssproperty_font-weight> = bolder
-<cssproperty_font-weight> = lighter
-<cssproperty_font-weight> = <fuzzint>
-<cssproperty_font-weight> = bold
-<cssproperty_font-weight> = normal
-<cssproperty_font-weight> = inherit
-<cssproperty_font-weight> = <fuzzint> <fuzzint>
-<cssproperty_font-weight> = unset
-<cssproperty_font-weight> = <fuzzint>px
+<cssproperty_font-weight_val> = bolder
+<cssproperty_font-weight_val> = lighter
+<cssproperty_font-weight_val> = <int min=1 max=1000>
+<cssproperty_font-weight_val> = bold
+<cssproperty_font-weight_val> = normal
+<cssproperty_font-weight_val> = inherit
+<cssproperty_font-weight_va> = <fuzzint> <fuzzint>
+<cssproperty_font-weight_val> = unset
+<cssproperty_font-weight_val> = <fuzzint>px
+<cssproperty_font-weight> = <cssproperty_font-weight_val>
+<cssproperty_font-weight> = <cssproperty_font-weight_val> <cssproperty_font-weight>
+
+
+<cssproperty_gap> = <fuzzint>px <fuzzint>px
+<cssproperty_gap> = <percentage>% <percentage>%
+<cssproperty_gap> = <fuzzint>px
+<cssproperty_gap> = <percentage>%
+<cssproperty_gap> = <fuzzint>px <fuzzint>px <fuzzint>px
+<cssproperty_gap> = none
+<cssproperty_gap> = normal
+<cssproperty_gap> = <fuzzint>
+
 
 <cssproperty_grid> = <fuzzint>px/<fuzzint>px <fuzzint>px
 <cssproperty_grid> = <fuzzint>px <fuzzint>px/<fuzzint>px
@@ -2209,6 +2327,7 @@
 <cssproperty_hyphens> = none
 
 <cssproperty_image-orientation> = from-image
+<cssproperty_image-orientation> = none
 
 <cssproperty_image-rendering> = pixelated
 <cssproperty_image-rendering> = -webkit-optimize-contrast
@@ -2342,6 +2461,11 @@
 
 <cssproperty_line-break> = before-white-space
 <cssproperty_line-break> = after-white-space
+<cssproperty_line-break> = auto
+<cssproperty_line-break> = loose
+<cssproperty_line-break> = normal
+<cssproperty_line-break> = strict
+<cssproperty_line-break> = anywhere
 
 <cssproperty_line-height> = <fuzzint>px
 <cssproperty_line-height> = <fuzzint>
@@ -2360,7 +2484,8 @@
 <cssproperty_list-style> = inside
 <cssproperty_list-style> = inherit
 
-<cssproperty_list-style-image> = url(<cssurl>)
+<cssproperty_list-style-image> = url<cssurl>
+<cssproperty_list-style-image> = <cssproperty_image>
 <cssproperty_list-style-image> = none
 
 <cssproperty_list-style-position> = inside
@@ -3108,6 +3233,7 @@
 <cssproperty_shape-outside> = polygon(<fuzzint> <fuzzint>, <fuzzint>px <fuzzint>px, <fuzzint>px <fuzzint>)
 <cssproperty_shape-outside> = polygon(<fuzzint> <fuzzint>px, <fuzzint> <fuzzint>px, <fuzzint>px <fuzzint>px) content-box
 <cssproperty_shape-outside> = polygon(nonzero, <fuzzint>px <fuzzint>px)
+<cssproperty_shape-outside> = <cssproperty_image>
 
 <cssproperty_snap-height> = <fuzzint>px
 <cssproperty_snap-height> = <fuzzint>px <fuzzint>
@@ -3663,4 +3789,42 @@
 <cssproperty_zoom> = <float>
 <cssproperty_zoom> = auto
 <cssproperty_zoom> = reset
+
+# @font-face specific descriptor properties
+<cssproperty_ascent-override> = normal
+<cssproperty_ascent-override> = <int min=-100 max=1000>%
+
+<cssproperty_descent-override> = normal
+<cssproperty_descent-override> = <int min=-100 max=1000>%
+
+<cssproperty_font-display> = auto
+<cssproperty_font-display> = block
+<cssproperty_font-display> = swap
+<cssproperty_font-display> = fallback
+<cssproperty_font-display> = optional
+
+<cssproperty_line-gap-override> = normal
+<cssproperty_line-gap-override> = <int min=-100 max=1000>%
+
+<cssproperty_size-adjust> = <int min=-100 max=1000>%
+
+<cssproperty_font-src p=0.75> = <cssproperty_font-src_val>
+<cssproperty_font-src> = <cssproperty_font-src_val>, <cssproperty_font-src>
+
+<cssproperty_font-src_val p=0.75> = <fonturl>
+<cssproperty_font-src_val> = <fonturl><space><cssproperty_font-src_format>
+
+<cssproperty_font-src_format> = format('woff')
+<cssproperty_font-src_format> = format('woff2')
+<cssproperty_font-src_format> = format('truetype')
+<cssproperty_font-src_format> = format('opentype')
+<cssproperty_font-src_format> = format('<string min=97 max=122>')
+
+<cssproperty_unicode-range p=0.9> = <cssproperty_unicode-range_val>
+<cssproperty_unicode-range> = <cssproperty_unicode-range_val> <cssproperty_unicode-range>
+
+<cssproperty_unicode-range_val> = U+<int min=0 max=10000>
+<cssproperty_unicode-range_val> = U+<hex><hex><hex><hex>
+<cssproperty_unicode-range_val> = U+<int min=0 max=10000>??
+<cssproperty_unicode-range_val> = U+00125-001FF
 

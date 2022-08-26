@@ -14,11 +14,6 @@
 
 !include common.txt
 
-<cssurl> = <hash><elementid>
-<cssurl> = <hash><svgelementid>
-<cssurl> = <hash><mathmlelementid>
-<cssurl> = data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/XBs/fNwfjZ0frl3/zy7////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAkAABAALAAAAAAQABAAAAVVICSOZGlCQAosJ6mu7fiyZeKqNKToQGDsM8hBADgUXoGAiqhSvp5QAnQKGIgUhwFUYLCVDFCrKUE1lBavAViFIDlTImbKC5Gm2hB0SlBCBMQiB0UjIQA7
-
 <element p=0.5> = <tagname>
 <element p=0.3> = <svgtagname>
 <element p=0.1> = <mathmltagname>
@@ -76,8 +71,29 @@
 <selector2> = :root
 <selector2> = <element>:empty
 
+#at rules
+<fontfacerule> = @font-face
+
 #todo all rules
-<rule> = <selector> { <declaration> }
+<rule p=0.95> = <selector> { <declaration> }
+<rule> = <fontfacerule> { <fontfacedeclaration> }
+
+<fontfacedeclaration> = <fontfacedescriptor>;
+<fontfacedeclaration> = <fontfacedescriptor>; <fontfacedescriptor>; <fontfacedescriptor>;
+<fontfacedeclaration> = <fontfacedescriptor>; <fontfacedescriptor>; <fontfacedescriptor>; <fontfacedescriptor>; <fontfacedescriptor>; <fontfacedescriptor>;
+
+<fontfacedescriptor> = ascent-override: <cssproperty_ascent-override>
+<fontfacedescriptor> = descent-override: <cssproperty_descent-override>
+<fontfacedescriptor> = font-display: <cssproperty_font-display>
+<fontfacedescriptor> = font-family: <cssproperty_font-family>
+<fontfacedescriptor> = font-stretch: <cssproperty_font-stretch>
+<fontfacedescriptor> = font-style: <cssproperty_font-style>
+<fontfacedescriptor> = font-weight: <cssproperty_font-weight>
+<fontfacedescriptor> = line-gap-override: <cssproperty_line-gap-override>
+<fontfacedescriptor> = size-adjust: <cssproperty_size-adjust>
+<fontfacedescriptor> = src: <cssproperty_font-src>
+<fontfacedescriptor> = unicode-range: <cssproperty_unicode-range>
+<fontfacedescriptor> = font-variant: <cssproperty_font-variant>
 
 <rules root=true> = <rule10><rule10><rule10><rule10><rule10>
 <rule10> = <rulenl><rulenl><rulenl><rulenl><rulenl><rulenl><rulenl><rulenl><rulenl><rulenl>
@@ -389,6 +405,7 @@
 <cssproperty_name> = font-variant-ligatures
 <cssproperty_name> = font-vendor
 <cssproperty_name> = font-weight
+<cssproperty_name> = gap
 <cssproperty_name> = grid
 <cssproperty_name> = grid-area
 <cssproperty_name> = grid-auto-columns
@@ -884,6 +901,7 @@
 <cssproperty_value> = <cssproperty_font-variant-ligatures>
 <cssproperty_value> = <cssproperty_font-vendor>
 <cssproperty_value> = <cssproperty_font-weight>
+<cssproperty_value> = <cssproperty_gap>
 <cssproperty_value> = <cssproperty_grid>
 <cssproperty_value> = <cssproperty_grid-area>
 <cssproperty_value> = <cssproperty_grid-auto-columns>
@@ -904,6 +922,7 @@
 <cssproperty_value> = <cssproperty_grid-template-rows>
 <cssproperty_value> = <cssproperty_height>
 <cssproperty_value> = <cssproperty_hyphens>
+<cssproperty_value> = <cssproperty_image>
 <cssproperty_value> = <cssproperty_image-orientation>
 <cssproperty_value> = <cssproperty_image-rendering>
 <cssproperty_value> = <cssproperty_isolation>
@@ -1379,6 +1398,7 @@
 <cssproperty> = font-variant-ligatures: <cssproperty_font-variant-ligatures>
 <cssproperty> = font-vendor: <cssproperty_font-vendor>
 <cssproperty> = font-weight: <cssproperty_font-weight>
+<cssproperty> = gap: <cssproperty_gap>
 <cssproperty> = grid: <cssproperty_grid>
 <cssproperty> = grid-area: <cssproperty_grid-area>
 <cssproperty> = grid-auto-columns: <cssproperty_grid-auto-columns>
@@ -1582,5 +1602,5 @@
 <cssproperty> = z-index: <cssproperty_z-index>
 <cssproperty> = zoom: <cssproperty_zoom>
 
-!include cssproperties.txt
 
+!include cssproperties.txt

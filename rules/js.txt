@@ -1097,6 +1097,8 @@
 #HTMLAreaElement
 !extends HTMLAreaElement Element
 <new Element> = <HTMLAreaElement>;
+<new DOMString> = <HTMLAreaElement>.accessKey;
+<HTMLAreaElement>.accessKey = "<char min=32 max=122>";
 <new DOMString> = <HTMLAreaElement>.alt;
 <HTMLAreaElement>.alt = "<alt_value>";
 <new DOMString> = <HTMLAreaElement>.coords;
@@ -2222,12 +2224,21 @@
 <FontFaceSet>.onloadingdone = <EventHandler>;
 <new EventHandler> = <FontFaceSet>.onloadingerror;
 <FontFaceSet>.onloadingerror = <EventHandler>;
-<new Promise_sequence_FontFace__> = <FontFaceSet>.load(<DOMString>);
-<new Promise_sequence_FontFace__> = <FontFaceSet>.load(<DOMString>,<DOMString>);
-<new boolean> = <FontFaceSet>.check(<DOMString>);
-<new boolean> = <FontFaceSet>.check(<DOMString>,<DOMString>);
 <new Promise_FontFaceSet_> = <FontFaceSet>.ready;
 <new FontFaceSetLoadStatus> = <FontFaceSet>.status;
+<FontFaceSet>.add(<FontFace>);
+#TODO: check
+<new boolean> = <FontFaceSet>.check(<DOMString>); 
+<new boolean> = <FontFaceSet>.check(<DOMString>,<DOMString>);
+<FontFaceSet>.clear();
+<FontFaceSet>.delete(<FontFace>);
+#TODO: entries, forEach, has, keys, load, values
+<new Promise_sequence_FontFace__> = <FontFaceSet>.load(<DOMString>);
+<new Promise_sequence_FontFace__> = <FontFaceSet>.load(<DOMString>,<DOMString>);
+<new FontFaceSet> = new FontFaceSet(<FontFace>);
+<new FontFaceSet> = new FontFaceSet(<sequence_FontFace_>);
+<new FontFaceSet> = new FontFaceSet([<FontFace>, <FontFace>, <FontFace>]);
+<new FontFaceSet> = new FontFaceSet();
 
 #CSS
 <CSS>.registerProperty(<PropertyDescriptor>);
@@ -2254,13 +2265,16 @@
 
 #FontFace
 <new DOMString> = <FontFace>.family;
-<FontFace>.family = <DOMString>;
+<FontFace>.family = "<cssproperty_font-family>";
 <new DOMString> = <FontFace>.style;
 <FontFace>.style = "<import from=cssgrammar symbol=declaration5>";
+<FontFace>.style = <DOMString>;
 <new DOMString> = <FontFace>.weight;
 <FontFace>.weight = <DOMString>;
 <new DOMString> = <FontFace>.stretch;
 <FontFace>.stretch = <DOMString>;
+<new DOMString> = <FontFace>.display;
+<FontFace>.display = <DOMString>;
 <new DOMString> = <FontFace>.unicodeRange;
 <FontFace>.unicodeRange = <DOMString>;
 <new DOMString> = <FontFace>.variant;
@@ -2270,6 +2284,13 @@
 <new FontFaceLoadStatus> = <FontFace>.status;
 <new Promise_FontFace_> = <FontFace>.load();
 <new Promise_FontFace_> = <FontFace>.loaded;
+<new sequence_FontFace_> = new Array(<FontFace>);
+
+<new DOMString> = <FontFace>.src;
+<FontFace>.src = "<cssproperty_font-src>";
+<new FontFace> = new FontFace("<cssproperty_font-family>", "<cssproperty_font-src>", {});
+<new FontFace> = new FontFace("<cssproperty_font-family>", "<cssproperty_font-src>", {<fontfacedescriptor>});
+<new FontFace> = new FontFace("<cssproperty_font-family>", "<cssproperty_font-src>", {<fontfacedescriptor>, <fontfacedescriptor>, <fontfacedescriptor>});
 
 #CSSViewportRule
 !extends CSSViewportRule CSSRule
@@ -2426,7 +2447,6 @@
 !extends FontFaceSetLoadEvent Event
 <new Event> = <FontFaceSetLoadEvent>;
 <new sequence_FontFace_> = <FontFaceSetLoadEvent>.fontfaces;
-
 
 #Attr
 <new DOMString> = <Attr>.namespaceURI;
