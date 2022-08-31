@@ -50,9 +50,7 @@
 <mathmlelement_token> = <mathmlelement_mtext>
 
 # Interesting content for token elements is generally a single letter or symbol.
-<mathmlelement_token_content p=.3> = <htmlsafestring minlength=1 maxlength=1 min=32 max=126>
-<mathmlelement_token_content p=.3> = <htmlsafestring minlength=1 maxlength=1 min=0x2100 max=0x2BFF>
-<mathmlelement_token_content p=.3> = <htmlsafestring minlength=1 maxlength=1 min=0x1D400 max=0x1D7FF>
+<mathmlelement_token_content> = <htmlsafestring minlength=1 maxlength=1 min=32 max=126>
 <mathmlelement_token_content> = <htmlsafestring min=32 max=126>
 
 # Elements behaving more or less like an <mrow>.
