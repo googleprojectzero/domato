@@ -22,6 +22,7 @@ import os
 import re
 import random
 import argparse
+from pathlib import Path
 
 from grammar import Grammar
 from svg_tags import _SVG_TYPES
@@ -201,18 +202,18 @@ def get_argument_parser():
     parser.add_argument('-n', '--no_of_files', type=int,
                     help='number of files to be generated')
 
+    parser.add_argument('-t', '--template', type=Path, default=(Path(__file__).parent).joinpath('template.html'),
+                    help='template file you want to use')
     return parser
 
 def main():
 
-    fuzzer_dir = os.path.dirname(__file__)
-
-    with open(os.path.join(fuzzer_dir, "template.html"), "r") as f:
-        template = f.read()
-
     parser = get_argument_parser()
     
     args = parser.parse_args()
+
+    with args.template.open("r") as f:
+        template = f.read()
 
     if args.file:
         generate_samples(template, [args.file])

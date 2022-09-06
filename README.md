@@ -27,6 +27,10 @@ To generate a single .html sample run:
 
 `python generator.py --file <output file>`
 
+To generate a single .html sample run using a template you wrote:
+
+`python generator.py --file <output file> --template <your custom template file>`
+
 To generate multiple samples with a single call run:
 
 `python generator.py --output_dir <output directory> --no_of_files <number of output files>`
