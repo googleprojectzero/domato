@@ -271,6 +271,7 @@ Some of the bugs that have been found with Domato:
  - Microsoft JScript: CVE-2017-11903, CVE-2017-11855, CVE-2017-11793, CVE-2017-11906, CVE-2017-11907, CVE-2018-0935, CVE-2018-8353, CVE-2018-8631
  - Microsoft VBScript: CVE-2018-8544, CVE-2018-8552, CVE-2018-8625
  - Mozilla Firefox: CVE-2017-5404, CVE-2017-5447, CVE-2017-5465
+ - Chromium: CVE-2022-3040
 
 #### Disclaimer
 
