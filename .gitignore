@@ -82,3 +82,6 @@ venv.bak/
 
 # Zip
 *.zip
+
+# Mac
+.DS_Store
