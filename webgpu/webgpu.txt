@@ -1,0 +1,312 @@
+
+<bool> = true
+<bool> = false
+
+<TexInt> = 0
+<TexInt> = 1
+<TexInt> = 2
+<TexInt> = 4
+<TexInt> = 8
+<TexInt> = 16
+<TexInt> = 32
+<TexInt> = 64
+<TexInt> = 128
+
+<TexInt_> = 0
+<TexInt_> = 1
+<TexInt_> = 2
+<TexInt_> = 4
+<TexInt_> = 8
+<TexInt_> = 16
+<TexInt_> = 32
+<TexInt_> = 64
+<TexInt_> = 128
+
+<sint> = 0x7fffff00
+<sint> = 0x64
+<sint> = 0x3e8
+<sint> = 0x4141
+<sint> = 0xefff
+<sint> = 0xaa
+<sint> = 0xaf43
+<sint> = -0x5a
+<sint> = true
+<sint> = false
+
+<largeint> = 536870911
+<largeint> = 536870912
+<largeint> = 1073741823
+<largeint> = 1073741824
+<largeint> = 2147483647
+<largeint> = 2147483648
+<largeint> = 4294967295
+<largeint> = 4294967296
+
+<reloadIntervalInt> = 100
+<reloadIntervalInt> = 200
+<reloadIntervalInt> = 500
+<reloadIntervalInt> = 1000
+<reloadIntervalInt> = 10000
+
+<fuzzstring> = <fuzzstringpart>
+<fuzzstring> = <fuzzstringpart> + <fuzzstringpart>
+<fuzzstring> = <fuzzstringpart> + <fuzzstringpart> + <fuzzstringpart>
+<fuzzstringpart> = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+<repeatcount> = 17
+<repeatcount> = 65
+<repeatcount> = 257
+<repeatcount> = 1025
+<repeatcount> = 4097
+<repeatcount> = 65537
+<repeatstr> = String.fromCharCode(<int min=0 max=127>)
+<repeatstr> = String.fromCharCode(<int min=0 max=127>).repeat(<repeatcount>)
+
+<webgpu_buf_size> = <TexInt>
+<webgpu_buf_size> = 256
+<webgpu_buf_size> = 512
+<webgpu_buf_size> = 1024
+<webgpu_buf_size> = 4096
+<webgpu_buf_size> = 16384
+<webgpu_buf_size> = 65536
+
+<webgpu_int> = <TexInt>
+<webgpu_int> = <fuzzint>
+<webgpu_int> = <largeint>
+<webgpu_int> = <sint>
+<webgpu_int> = <repeatcount>
+
+<buffer_usage> = GPUBufferUsage.MAP_READ
+<buffer_usage> = GPUBufferUsage.MAP_WRITE
+<buffer_usage> = GPUBufferUsage.COPY_SRC
+<buffer_usage> = GPUBufferUsage.COPY_DST
+<buffer_usage> = GPUBufferUsage.STORAGE
+<buffer_usage> = GPUBufferUsage.INDEX
+<buffer_usage> = GPUBufferUsage.INDIRECT
+<buffer_usage> = GPUBufferUsage.UNIFORM
+<buffer_usage> = GPUBufferUsage.VERTEX
+<buffer_usage> = GPUBufferUsage.QUERY_RESOLVE
+<buffer_usage> = 0xffff
+<buffer_usage> = 0x<hex><hex><hex><hex>
+<buffer_usage> = 0x003
+<buffer_usage> = 0x005
+<buffer_usage> = 0x006
+<buffer_usage> = 0x007
+<buffer_usage> = 0x<hex><hex><hex>1
+<buffer_usagee> = 0x<hex><hex><hex>2
+<buffer_usage> = 0x<hex><hex><hex>3
+<buffer_usage> = 0x<hex><hex><hex>4
+<buffer_usage> = 0x<hex><hex><hex>5
+<buffer_usage> = 0x<hex><hex><hex>6
+<buffer_usage> = 0x<hex><hex><hex>7
+<buffer_usage> = 0x<hex><hex><hex>9
+<buffer_usage> = 0x<hex><hex>11
+<buffer_usage> = 0x<hex><hex>12
+<buffer_usage_read_storage> = 0x<hex>081
+
+<gpu_map_mode> = GPUMapMode.READ
+<gpu_map_mode> = GPUMapMode.WRITE
+
+<binding_int> = 0
+<binding_int> = 1
+<binding_int> = 2
+
+<binding_visibility> = GPUShaderStage.COMPUTE
+<binding_visibility> = GPUShaderStage.FRAGMENT
+<binding_visibility> = GPUShaderStage.VERTEX
+
+<buffer_binding_type> = "uniform"
+<buffer_binding_type> = "storage"
+<buffer_binding_type> = "read-only-storage"
+<sampler_binding_type> = "filtering"
+<sampler_binding_type> = "non-filtering"
+<sampler_binding_type> = "comparison"
+<texture_binding_type> = "float"
+<texture_binding_type> = "unfilterable-float"
+<texture_binding_type> = "depth"
+<texture_binding_type> = "sint"
+<texture_binding_type> = "uint"
+<storage_texture_binding_type> = "write-only"
+
+<bind_layout_group_binding_type> = <buffer_binding_type>
+<bind_layout_group_binding_type> = <sampler_binding_type>
+<bind_layout_group_binding_type> = <texture_binding_type>
+<bind_layout_group_binding_type> = <storage_texture_binding_type>
+
+<canvas> = canvas0
+<canvas> = canvas1
+<canvas> = canvas2
+<canvas> = canvas3
+<canvas> = canvas4
+
+<canvas_context_types> = "2d"
+<canvas_context_types> = "webgl"
+<canvas_context_types> = "webgl2"
+<canvas_context_types> = "bitmaprenderer"
+
+<matrix> = matrixA
+<matrix> = matrixB
+<matrix> = matrixC
+
+<gpu_texture_dimension> = "1d"
+<gpu_texture_dimension> = "2d"
+<gpu_texture_dimension> = "3d"
+
+<gpu_texture_format> = "r8unorm"
+<gpu_texture_format> = "r8snorm"
+<gpu_texture_format> = "r8uint"
+<gpu_texture_format> = "r8sint"
+<gpu_texture_format> = "r16uint"
+<gpu_texture_format> = "r16sint"
+<gpu_texture_format> = "r16float"
+<gpu_texture_format> = "rg8unorm"
+<gpu_texture_format> = "rg8snorm"
+<gpu_texture_format> = "rg8uint"
+<gpu_texture_format> = "rg8sint"
+<gpu_texture_format> = "r32uint"
+<gpu_texture_format> = "r32sint"
+<gpu_texture_format> = "r32float"
+<gpu_texture_format> = "rg16uint"
+<gpu_texture_format> = "rg16sint"
+<gpu_texture_format> = "rg16float"
+<gpu_texture_format> = "rgba8unorm"
+<gpu_texture_format> = "rgba8unorm-srgb"
+<gpu_texture_format> = "rgba8snorm"
+<gpu_texture_format> = "rgba8uint"
+<gpu_texture_format> = "rgba8sint"
+<gpu_texture_format> = "bgra8unorm"
+<gpu_texture_format> = "bgra8unorm-srgb"
+<gpu_texture_format> = "rgb9e5ufloat"
+<gpu_texture_format> = "rgb10a2unorm"
+<gpu_texture_format> = "rg11b10ufloat"
+<gpu_texture_format> = "rg32uint"
+<gpu_texture_format> = "rg32sint"
+<gpu_texture_format> = "rg32float"
+<gpu_texture_format> = "rgba16uint"
+<gpu_texture_format> = "rgba16sint"
+<gpu_texture_format> = "rgba16float"
+<gpu_texture_format> = "rgba32uint"
+<gpu_texture_format> = "rgba32sint"
+<gpu_texture_format> = "rgba32float"
+<gpu_texture_format> = "stencil8"
+<gpu_texture_format> = "depth16unorm"
+<gpu_texture_format> = "depth24plus"
+<gpu_texture_format> = "depth24plus-stencil8"
+<gpu_texture_format> = "depth32float"
+<gpu_texture_format> = "depth32float-stencil8"
+<gpu_texture_format> = "bc1-rgba-unorm"
+<gpu_texture_format> = "bc1-rgba-unorm-srgb"
+<gpu_texture_format> = "bc2-rgba-unorm"
+<gpu_texture_format> = "bc2-rgba-unorm-srgb"
+<gpu_texture_format> = "bc3-rgba-unorm"
+<gpu_texture_format> = "bc3-rgba-unorm-srgb"
+<gpu_texture_format> = "bc4-r-unorm"
+<gpu_texture_format> = "bc4-r-snorm"
+<gpu_texture_format> = "bc5-rg-unorm"
+<gpu_texture_format> = "bc5-rg-snorm"
+<gpu_texture_format> = "bc6h-rgb-ufloat"
+<gpu_texture_format> = "bc6h-rgb-float"
+<gpu_texture_format> = "bc7-rgba-unorm"
+<gpu_texture_format> = "bc7-rgba-unorm-srgb"
+<gpu_texture_format> = "etc2-rgb8unorm"
+<gpu_texture_format> = "etc2-rgb8unorm-srgb"
+<gpu_texture_format> = "etc2-rgb8a1unorm"
+<gpu_texture_format> = "etc2-rgb8a1unorm-srgb"
+<gpu_texture_format> = "etc2-rgba8unorm"
+<gpu_texture_format> = "etc2-rgba8unorm-srgb"
+<gpu_texture_format> = "eac-r11unorm"
+<gpu_texture_format> = "eac-r11snorm"
+<gpu_texture_format> = "eac-rg11unorm"
+<gpu_texture_format> = "eac-rg11snorm"
+<gpu_texture_format> = "astc-4x4-unorm"
+<gpu_texture_format> = "astc-4x4-unorm-srgb"
+<gpu_texture_format> = "astc-5x4-unorm"
+<gpu_texture_format> = "astc-5x4-unorm-srgb"
+<gpu_texture_format> = "astc-5x5-unorm"
+<gpu_texture_format> = "astc-5x5-unorm-srgb"
+<gpu_texture_format> = "astc-6x5-unorm"
+<gpu_texture_format> = "astc-6x5-unorm-srgb"
+<gpu_texture_format> = "astc-6x6-unorm"
+<gpu_texture_format> = "astc-6x6-unorm-srgb"
+<gpu_texture_format> = "astc-8x5-unorm"
+<gpu_texture_format> = "astc-8x5-unorm-srgb"
+<gpu_texture_format> = "astc-8x6-unorm"
+<gpu_texture_format> = "astc-8x6-unorm-srgb"
+<gpu_texture_format> = "astc-8x8-unorm"
+<gpu_texture_format> = "astc-8x8-unorm-srgb"
+<gpu_texture_format> = "astc-10x5-unorm"
+<gpu_texture_format> = "astc-10x5-unorm-srgb"
+<gpu_texture_format> = "astc-10x6-unorm"
+<gpu_texture_format> = "astc-10x6-unorm-srgb"
+<gpu_texture_format> = "astc-10x8-unorm"
+<gpu_texture_format> = "astc-10x8-unorm-srgb"
+<gpu_texture_format> = "astc-10x10-unorm"
+<gpu_texture_format> = "astc-10x10-unorm-srgb",
+<gpu_texture_format> = "astc-12x10-unorm"
+<gpu_texture_format> = "astc-12x10-unorm-srgb"
+<gpu_texture_format> = "astc-12x12-unorm"
+<gpu_texture_format> = "astc-12x12-unorm-srgb"
+
+<gpu_error_filter> = "out-of-memory"
+<gpu_error_filter> = "validation"
+
+<root root=true> = <lines count=1000>
+
+!include ../rules/common.txt
+#include ../canvas/canvas.txt
+
+!lineguard try { <line> } catch(e) { }
+!varformat fuzzvar%05d
+!begin lines
+setTimeout(function(){location.reload();},<reloadIntervalInt>);
+<new adapter> = await navigator.gpu.requestAdapter();
+<new device> = await <adapter>.requestDevice();
+<new queue> = <device>.queue;
+<new compute_shader> = <device>.createShaderModule({code: wgsl_shader_src});
+<new gpu_buffer_storage> = <device>.createBuffer({mappedAtCreation: <bool>, size: <webgpu_buf_size>, usage: GPUBufferUsage.STORAGE});
+<new gpu_buffer_storage_cpysrc> = <device>.createBuffer({mappedAtCreation: <bool>, size: <webgpu_buf_size>, usage: GPUBufferUsage.STORAGE | GPUBufferUsage.COPY_SRC});
+<new gpu_buffer_cpydst_read> = <device>.createBuffer({mappedAtCreation: <bool>, size: <webgpu_buf_size>, usage: GPUBufferUsage.COPY_DST | GPUBufferUsage.MAP_READ});
+<new gpu_buffer> = <gpu_buffer_storage>;
+<new gpu_buffer> = <gpu_buffer_storage_cpysrc>;
+<new gpu_buffer> = <gpu_buffer_cpydst_read>;
+#<new gpu_buffer> = <device>.createBuffer({mappedAtCreation: <bool>, size: <webgpu_buf_size>, usage: <buffer_usage>});
+<new array_buffer> = <gpu_buffer>.getMappedRange().fill(0x41);
+<new array_buffer> = <gpu_buffer>.getMappedRange();
+<new array_buffer_u8> = new Uint8Array(<gpu_buffer>.getMappedRange());
+<new Float32Array> = Float32Array(<array_buffer>);
+<new Float32Array> = Float32Array(<array_buffer>).set(<matrix>);
+<new Unint8Array> = Uint8Array(<array_buffer>);
+<new Unint8Array> = Uint8Array(<array_buffer>).set(<matrix>);
+for (var i = 0; i <lt> <repeatcount>; i++) {console.log(<Unint8Array>[i]);}
+for (var i = 0; i <lt> <repeatcount>; i++) {console.log(<Float32Array>[i]);}
+<gpu_buffer>.unmap();
+<gpu_buffer>.map(<gpu_map_mode>);
+<gpu_buffer>.mapAsync(<gpu_map_mode>);
+#<new bind_group_layout> = <device>.createBindGroupLayout({entries: [{binding: 0, visibility: <binding_visibility>, buffer: {type: <buffer_binding_type>}}, {binding: 1, visibility: <binding_visibility>, buffer: {type: <bind_layout_group_binding_type>}}, {binding: 2, visibility: <binding_visibility>, buffer: {type: <bind_layout_group_binding_type>}}]});
+<new bind_group_layout> = <device>.createBindGroupLayout({entries: [{binding: 0, visibility: GPUShaderStage.COMPUTE, buffer: {type: "storage"}}, {binding: 1, visibility: GPUShaderStage.COMPUTE, buffer: {type: "storage"}}, {binding: 2, visibility: GPUShaderStage.COMPUTE, buffer: {type: "storage"}}]});
+#<new bind_group> = <device>.createBindGroup({layout: <bind_group_layout>, entries: [{binding: 0, resource: {buffer: <gpuBuffer>}}, {binding: 1, resource: {buffer: <gpuBuffer>}}, {binding: 2, resource: {buffer: <gpuBuffer>}}]});
+activeBuffer = <device>.createBuffer({size: <webgpu_buf_size>, usage: GPUBufferUsage.STORAGE | GPUBufferUsage.COPY_SRC});
+<new bind_group> = <device>.createBindGroup({layout: <bind_group_layout>, entries: [{binding: 0, resource: {buffer: <gpu_buffer_storage>}}, {binding: 1, resource: {buffer: <gpu_buffer_storage>}}, {binding: 2, resource: {buffer: activeBuffer}}]});
+<new compute_pipeline> = <device>.createComputePipeline({layout: <device>.createPipelineLayout({bindGroupLayouts: [<bind_group_layout>]}), compute: {module: <compute_shader>, entryPoint: "main"}});
+<new command_encoder> = <device>.createCommandEncoder();
+<new pass_encoder> = <command_encoder>.beginComputePass();
+<pass_encoder>.setPipeline(<compute_pipeline>);
+<pass_encoder>.setBindGroup(<TexInt>, <bind_group>)
+<new workgroupCount> = Math.ceil(<matrix>[<webgpu_int>] / <webgpu_int>);
+<pass_encoder>.dispatchWorkgroups(<workgroupCount>, <workgroupCount>);
+<pass_encoder>.end();
+<command_encoder>.copyBufferToBuffer(<gpu_buffer_storage_cpysrc>, <webgpu_int>, <gpu_buffer_cpydst_read>, <webgpu_int>, <webgpu_int>);
+<new command_buffer> = <command_encoder>.finish();
+<queue>.submit([<command_buffer>]);
+<new canvas_context> = <canvas>.getContext(<canvas_context_types>);
+<canvas_context>.configure({device: <device>, format: <gpu_texture_format>, usage: <buffer_usage>})
+<canvas>.transferControlToOffscreen();
+<device>.pushErrorScope(<gpu_error_filter>);
+<device>.popErrorScope();
+<device>.pushErrorScope();
+<device>.popErrorScope().then().catch(e => {});
+<new canvas_texture> = <canvas_context>.getCurrentTexture();
+<new canvas_texture_view> = <canvas_texture>.createView();
+<command_encoder>.copyTextureToBuffer({texture: <canvas_texture>}, {buffer: <gpu_buffer>, bytesPerRow: <canvas>.width}, {width: <TexInt>, height: <TexInt>, depthOrArrayLayers: 1});
+for (var i = 0; i <lt> <webgpu_buf_size>; i++) {console.log(<array_buffer_u8>[i]);}
+<new off_screen_canvas> = new OffscreenCanvas(original_image.width, original_image.height);
+!end lines
