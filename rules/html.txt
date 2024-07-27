@@ -1082,7 +1082,7 @@
 <HTMLTableSectionElement> = <lt>tfoot <tfoot_attributes> <attributes><gt><trelements><lt>/tfoot<gt>
 <HTMLTableCellElement> = <lt>th <th_attributes> <attributes><gt><innerelements><lt>/th<gt>
 <HTMLTableSectionElement> = <lt>thead <thead_attributes> <attributes><gt><trelements><lt>/thead<gt>
-<HTMLTimeElement> = <lt>time <time_attributes> <attributes><gt><innerelements><lt>/tt<gt>
+<HTMLTimeElement> = <lt>time <time_attributes> <attributes><gt><innerelements><lt>/time<gt>
 <HTMLTitleElement> = <lt>title <title_attributes> <attributes><gt><htmlsafestring min=32 max=126><lt>/title<gt>
 <HTMLTableRowElement> = <lt>tr <tr_attributes> <attributes><gt><thelements><lt>/tr<gt>
 <HTMLTrackElement> = <lt>track <track_attributes> <attributes><gt><innerelements><lt>/track<gt>
