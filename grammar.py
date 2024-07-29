@@ -28,6 +28,7 @@ import os
 import random
 import re
 import struct
+import copy
 
 _INT_RANGES = {
     'int': [-2147483648, 2147483647],
@@ -283,7 +284,7 @@ class Grammar(object):
         self._add_variable('window', 'Window', context)
 
         while len(context['lines']) < num_lines:
-            tmp_context = context.copy()
+            tmp_context = copy.deepcopy(context)
             try:
                 if (random.random() < self._interesting_line_prob) and (len(tmp_context['interesting_lines']) > 0):
                     tmp_context['force_var_reuse'] = True
