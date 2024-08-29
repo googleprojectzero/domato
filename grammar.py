@@ -931,16 +931,23 @@ class Grammar(object):
         return num_errors
 
     def _include_from_file(self, filename):
+        filepath = os.path.join(self._definitions_dir, filename)
         try:
-            f = open(os.path.join(self._definitions_dir,
-                filename
-            ))
+            f = open(filepath)
             content = f.read()
             f.close()
         except IOError:
             print('Error reading ' + filename)
             return 1
-        return self.parse_from_string(content)
+
+        # we temporarily change the definitions dir to make it relative to the
+        # current file being parsed so that we can safely recursively
+        # include/import other files from it.
+        saved_definitions_dir = self._definitions_dir
+        self._definitions_dir = os.path.dirname(filepath)
+        errors = self.parse_from_string(content)
+        self._definitions_dir = saved_definitions_dir
+        return errors
 
     def parse_from_string(self, grammar_str):
         """Parses grammar rules from string.
