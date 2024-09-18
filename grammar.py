@@ -970,7 +970,7 @@ class Grammar(object):
 
         return 0
 
-    def parse_from_file(self, filename):
+    def parse_from_file(self, filename, extra=None):
         """Parses grammar from file.
 
         Opens a text file, parses it and loads the grammar rules within.
@@ -991,6 +991,10 @@ class Grammar(object):
             print('Error reading ' + filename)
             return 1
         self._definitions_dir = os.path.dirname(filename)
+        
+        if extra:
+            content = extra + content
+
         return self.parse_from_string(content)
 
     def _compute_interesting_indices(self):
