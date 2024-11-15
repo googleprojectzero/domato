@@ -1,0 +1,136 @@
+
+
+<Boolean> = <bool>
+<UnsignedLongLongEnforceRange> = <fuzzint>
+<UnsignedLongEnforceRange> = <fuzzint>
+<LongEnforceRange> = <fuzzint>
+<ArrayBufferViewAllowShared> = <ArrayBuffer>
+<Float> = <float>
+<Double> = <float>
+<UnsignedShortClamp> = <sint>
+<StringUnsignedLongLongEnforceRangeRecord> = {}
+
+<Window nonrecursive> = self
+<Navigator nonrecursive>=navigator
+<WorkerNavigator nonrecursive>=self.navigator
+<DOMWindow nonrecursive> = window
+<Document nonrecursive> = document
+<Document> = <HTMLIFrameElement>.contentWindow.document
+<WindowOrWorkerGlobalScope nonrecursive>=self
+
+<USVString> = <DOMString>
+<GPU>=<Navigator>.gpu
+<DOMString nonrecursive> = "fuzzstr_<int min=0 max=32>"
+
+<OffscreenCanvas> = <Canvas>.transferControlToOffscreen()
+<Canvas>=<OffscreenCanvas>
+
+<Canvas nonrecursive> = html_tag_to_id("canvas", <int min=1 max=256>)
+<ScriptURLString nonrecursive> = <BLOB_URL>
+
+<any> = <fuzzint>
+<bool nonrecursive> = <boolean>
+<boolean nonrecursive> = true
+<boolean nonrecursive> = false
+
+<float_limit> = <fuzzint>
+<double_limit> = <fuzzint>
+<float_limit> = <TexInt>.<TexInt>
+<double_limit> = <TexInt>.<TexInt>
+<long> = <fuzzint>
+<fuzzint> = <TexInt>
+<fuzzint> = <sint>
+<fuzzint> = <largeint>
+
+<BindInt nonrecursive> = 0
+<BindInt nonrecursive> = 1
+<BindInt nonrecursive> = 2
+<BindInt nonrecursive> = 3
+<BindInt nonrecursive> = 4
+<BindInt nonrecursive> = 5
+<BindInt nonrecursive> = 6
+<BindInt nonrecursive> = 7
+<BindInt nonrecursive> = 8
+<BindInt nonrecursive> = 9
+<BindInt nonrecursive> = 10
+<BindInt nonrecursive> = 11
+<BindInt nonrecursive> = 12
+<BindInt nonrecursive> = 13
+<BindInt nonrecursive> = 14
+<BindInt nonrecursive> = 15
+<BindInt nonrecursive> = 16
+<BindInt nonrecursive> = <int min=1 max=640>
+
+<TexInt_>=<TexInt>
+<TexInt nonrecursive> = 0
+<TexInt nonrecursive> = 1
+<TexInt nonrecursive> = 2
+<TexInt nonrecursive> = 4
+<TexInt nonrecursive> = 8
+<TexInt nonrecursive> = 16
+<TexInt nonrecursive> = 32
+<TexInt nonrecursive> = 64
+<TexInt nonrecursive> = 128
+
+<sint nonrecursive> = 0x64
+<sint nonrecursive> = 0x3e8
+<sint nonrecursive> = 0x4141
+<sint nonrecursive> = 0xefff
+<sint nonrecursive> = 0xaa
+<sint nonrecursive> = 0xaf43
+<sint nonrecursive> = -0x9c
+<sint nonrecursive> = true
+<sint nonrecursive> = false
+
+<babyint> = <sint>
+<babyint> = <TexInt>
+<babyint> = <BindInt>
+<babyint> = <int min=1 max=4096>
+
+<allocaint> = 0x100
+<allocaint> = 65536
+<allocaint> = <TexInt>
+<allocaint> = <sint>
+
+<largeint nonrecursive> = 536870911
+<largeint nonrecursive> = 536870912
+<largeint nonrecursive> = 1073741823
+<largeint nonrecursive> = 1073741824
+<largeint nonrecursive> = 2147483647
+<largeint nonrecursive> = 2147483648
+<largeint nonrecursive> = 4294967295
+<largeint nonrecursive> = 4294967296
+
+
+!lineguard try { <line> } catch(e) { }
+!varformat fuzzvar%05d
+!begin lines
+
+<new HTMLIFrameElement nonrecursive> = html_tag_to_id("iframe", <int min=1 max=256>);
+<new HTMLVideoElement nonrecursive> = html_tag_to_id("video", <int min=1 max=256>);
+<new VideoFrame nonrecursive> = html_tag_to_id("video", <int min=1 max=256>);
+<new HTMLCanvasElement nonrecursive> = html_tag_to_id("canvas", <int min=1 max=256>);
+
+
+<new ImageBitmap> = await createImageBitmap(<HTMLVideoElement>,<allocaint>,<allocaint>,<allocaint>,<allocaint>);
+<new ImageBitmap> = await createImageBitmap(<ImageData>,<allocaint>,<allocaint>,<allocaint>,<allocaint>);
+<new ImageBitmap> = await createImageBitmap(<Canvas>,<allocaint>,<allocaint>,<allocaint>,<allocaint>);
+<new VideoFrame> = new VideoFrame(<ImageBitmap>, { timestamp: <allocaint> });
+<new ImageData> = new ImageData(<allocaint>, <allocaint>);
+<new BLOB_URL> = self.URL.createObjectURL(new Blob([worker_blob], { type: 'text/javascript' }));
+<new GPUCanvasContext>=<Canvas>.getContext('webgpu');
+
+
+<new Int8Array> = new Int8Array(<allocaint>);
+<new Int16Array> = new Int16Array(<allocaint>);
+<new Int32Array> = new Int32Array(<allocaint>);
+<new Uint8Array> = new Uint8Array(<allocaint>);
+<new Uint16Array> = new Uint16Array(<allocaint>);
+<new Uint32Array> = new Uint32Array(<allocaint>);
+<new Float32Array> = new Float32Array(<allocaint>);
+<new Float64Array> = new Float64Array(<allocaint>);
+<new Uint8ClampedArray> = new Uint8ClampedArray(<allocaint>);
+
+out_of_scope_gc_flush();
+out_of_scope_gc_flush();
+out_of_scope_gc_flush();
